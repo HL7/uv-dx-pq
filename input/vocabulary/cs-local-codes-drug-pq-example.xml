@@ -768,5 +768,19 @@
     <code value="AssignedPurity"/>
     <display value="Assigned Purity"/>
   </concept>
+<!--  packaging-->
+  <concept>
+  <code value="1d2344"/>
+  <display value="Tape"/>
+  </concept>
   
+  <concept>
+    <code value="200000003208"/>
+    <display value="Plastic"/>
+  </concept>
+  
+  <concept>
+    <code value="112344ss"/>
+    <display value="PVC"/>
+  </concept>
 </CodeSystem>

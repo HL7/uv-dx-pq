@@ -38,4 +38,8 @@
         <code value="Functional"/>
         <display value="Functional"/>
     </concept>
+    <concept>
+    <code value="1123ss"/>
+    <display value="Integrity Test"/>
+    </concept>
 </CodeSystem>

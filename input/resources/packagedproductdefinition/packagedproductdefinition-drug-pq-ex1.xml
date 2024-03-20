@@ -1,361 +1,365 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PackagedProductDefinition xmlns="http://hl7.org/fhir">
-            	<id value="packagedproductdefinition-drug-pq-ex1"/>
-            	<meta>
-            		<profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-drug-pq"/>
-            	</meta>
-            	
-                
-                
-                <packageFor>
-                	<reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
-                </packageFor>
-                
-                <description value="The commercial primary pack is a high-density polyethylene (HDPE) bottle with a child-resistant polypropylene (PP) screw cap.  Inside the bottle is a desiccant, containing silica gel. Induction seal membranes provide additional tamper evidence. For further details of the packaging components, see ‘P.7 Container Closure System for Drug Product’."/>
-                
-                
-                <packaging> 
-                    
-                    
-                    
+    <id value="packagedproductdefinition-drug-pq-ex1"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-drug-pq"/>
+    </meta>
+
+
+
+    <packageFor>
+        <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
+    </packageFor>
+
+    <description value="The commercial primary pack is a high-density polyethylene (HDPE) bottle with a child-resistant polypropylene (PP) screw cap.  Inside the bottle is a desiccant, containing silica gel. Induction seal membranes provide additional tamper evidence. For further details of the packaging components, see ‘P.7 Container Closure System for Drug Product’."/>
+
+
+    <packaging>
+
+
+
+        <type>
+            <coding>
+                <system value="http://hl7.org/fhir/packaging-type"/>
+                <code value="100000073498"/>
+                <display value="Box"/>
+            </coding>
+        </type>
+
+        <material>
+            <coding>
+                <system value="http://hl7.org/fhir/package-material"/>
+                <code value="200000003529"/>
+                <display value="Cardboard"/>
+            </coding>
+        </material>
+        <shelfLifeStorage>
+            <periodDuration>
+
+                <value value="2"/>
+
+                <unit value="year"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="a"/>
+            </periodDuration>
+        </shelfLifeStorage>
+
+        <manufacturer>
+
+            <reference value="Organization/organization-drug-pq-ex1"/>
+        </manufacturer>
+
+        <property>
+            <type>
+                <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/package-property"/>
+                    <code value="Functional"/>
+                    <display value="Functional"/>
+                </coding>
+            </type>
+            <valueBoolean value="false"/>
+        </property>
+        <property>
+            <type>
+                <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/package-property"/>
+                    <code value="Quality Standard"/>
+                    <display value="Quality Standard"/>
+                </coding>
+            </type>
+            <valueCodeableConcept>
+                <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/package-grade"/>
+                    <code value="USP"/>
+                    <display value="USP &lt;661&gt; Plastic Packaging Systems and Their Materials of Construction"/>
+                </coding>
+            </valueCodeableConcept>
+        </property>
+
+
+        <packaging>
+
+
+
+            <type>
+                <coding>
+<!--                    <system value="http://example.org/fhir/code/closureTypes"/>-->
+                    <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                    <code value="1d2344"/>
+                    <display value="Tape"/>
+                </coding>
+            </type>
+            <componentPart value="true"/>
+
+            <material>
+                <coding>
+<!--                    <system value="http://example.org/fhir/code/material"/>-->
+                    <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                    <code value="200000003208"/>
+                    <display value="Plastic"/>
+                </coding>
+            </material>
+
+
+            <manufacturer>
+
+                <reference value="Organization/organization-drug-pq-ex1"/>
+            </manufacturer>
+
+
+            <property>
+                <type>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/package-property"/>
+                        <code value="Quality Specification"/>
+                        <display value="Quality Specification"/>
+                    </coding>
+                </type>
+                <valueCodeableConcept>
+                    <text value="Quality Specification for closure is described"/>
+                </valueCodeableConcept>
+            </property>
+
+
+            <property>
+                <type>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/package-property"/>
+                        <code value="Quality Standard"/>
+                        <display value="Quality Standard"/>
+                    </coding>
+                </type>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/package-grade"/>
+                        <code value="BP"/>
+                        <display value="Closure Quality Standard"/>
+                    </coding>
+                </valueCodeableConcept>
+            </property>
+
+
+            <property>
+                <type>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/package-property"/>
+                        <code value="Narrative"/>
+                        <display value="Narrative"/>
+                    </coding>
+                </type>
+                <valueCodeableConcept>
+                    <text value="Closure - Suitability, protection, safety: conformance to criteria, performance, compabilitity"/>
+                </valueCodeableConcept>
+            </property>
+
+            <property>
+                <type>
+                    <coding>
+                        <!--  <system value="http://example.org/fhir/code/closureProperties"/>-->
+                        <system value="http://terminology.hl7.org/CodeSystem/package-property"/>
+                        <code value="1123ss"/>
+                        <display value="Integrity Test"/>
+                    </coding>
+                </type>
+                <valueCodeableConcept>
+                    <text value="Container–closure integrity test is any package leak test (either physicochemical or microbiological) that detects the presence of a package breach or gap."/>
+                </valueCodeableConcept>
+            </property>
+        </packaging>
+
+
+        <packaging>
+
+
+
+
+            <type>
+
+                <coding>
+                    <system value="http://hl7.org/fhir/packaging-type"/>
+                    <code value="100000073497"/>
+                    <display value="Bottle"/>
+                </coding>
+            </type>
+
+
+            <material>
+                <coding>
+                    <system value="http://hl7.org/fhir/package-material"/>
+                    <code value="200000003203"/>
+                    <display value="Glass"/>
+                </coding>
+            </material>
+
+
+            <manufacturer>
+
+                <reference value="Organization/organization-drug-pq-ex1"/>
+            </manufacturer>
+
+
+            <property>
+                <type>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/package-property"/>
+                        <code value="Quality Specification"/>
+                        <display value="Quality Specification"/>
+                    </coding>
+                </type>
+                <valueCodeableConcept>
+                    <text value="Quality Specification is described"/>
+                </valueCodeableConcept>
+            </property>
+
+            <property>
+                <type>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/package-property"/>
+                        <code value="Quality Standard"/>
+                        <display value="Quality Standard"/>
+                    </coding>
+                </type>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/package-grade"/>
+                        <code value="USP"/>
+                        <display value="USP &lt;661&gt; Plastic Packaging Systems and Their Materials of Construction"/>
+                    </coding>
+                </valueCodeableConcept>
+            </property>
+
+            <property>
+                <type>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/package-property"/>
+                        <code value="Narrative"/>
+                        <display value="Narrative"/>
+                    </coding>
+                </type>
+                <valueCodeableConcept>
+                    <text value="Suitability, protection, safety: conformance to criteria, performance, compabilitity"/>
+                </valueCodeableConcept>
+            </property>
+
+            <property>
+                <type>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/package-property"/>
+                        <code value="Container Size"/>
+                        <display value="Container Size"/>
+                    </coding>
+                </type>
+                <valueQuantity>
+
+                    <value value="250"/>
+
+                    <unit value="ml"/>
+                </valueQuantity>
+            </property>
+
+            <containedItem>
+                <item>
+                    <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+                        <valueCode value="unsupported"/>
+                    </extension>
+                </item>
+                <amount>
+
+                    <value value="100"/>
+
+                    <unit value="mg"/>
+                </amount>
+            </containedItem>
+
+
+            <packaging>
+
+
+
+                <type>
+                    <coding>
+                        <system value="http://example.org/fhir/code/closureTypes"/>
+                        <code value="112344"/>
+                        <display value="Child Proof Cap"/>
+                    </coding>
+                </type>
+                <componentPart value="true"/>
+
+
+                <material>
+                    <coding>
+
+                        <system value="http://example.org/fhir/code/material"/>
+                        <code value="112344ss"/>
+                        <display value="PVC"/>
+                    </coding>
+                </material>
+
+
+                <manufacturer>
+                    <reference value="Organization/organization-drug-pq-ex1"/>
+                </manufacturer>
+
+
+                <property>
                     <type>
                         <coding>
-                        	<system value="http://hl7.org/fhir/packaging-type"/>
-                        	<code value="100000073498"/>
-                        	<display value="Box"/>
+                            <system value="http://terminology.hl7.org/CodeSystem/package-property"/>
+                            <code value="Quality Specification"/>
+                            <display value="Quality Specification"/>
                         </coding>
                     </type>
-                    
-                    <material>
+                    <valueCodeableConcept>
+                        <text value="Quality Specification for closure is described"/>
+                    </valueCodeableConcept>
+                </property>
+
+                <property>
+                    <type>
                         <coding>
-                        	<system value="http://hl7.org/fhir/package-material"/>
-                        	<code value="200000003529"/>
-                        	<display value="Cardboard"/>
+                            <system value="http://terminology.hl7.org/CodeSystem/package-property"/>
+                            <code value="Quality Standard"/>
+                            <display value="Quality Standard"/>
                         </coding>
-                    </material>
-                    <shelfLifeStorage>
-                        <periodDuration>
-                            
-                            <value value="2"/> 
-                            
-                            <unit value="year"/> 
-                            <system value="http://unitsofmeasure.org"/>
-                            <code value="a"/> 
-                        </periodDuration>
-                    </shelfLifeStorage>
-                    
-                    <manufacturer>
-                    	
-                        <reference value="Organization/organization-drug-pq-ex1"/>
-                    </manufacturer>
-                    
-                    <property> 
-                        <type>
-                            <coding>
-                                <system value="http://terminology.hl7.org/CodeSystem/package-property"/>
-                                <code value="Functional"/>
-                                <display value="Functional"/>
-                            </coding>
-                        </type>
-                        <valueBoolean value="false"/>
-                    </property>
-                    <property>
-                        <type>
-                            <coding>
-                            	<system value="http://terminology.hl7.org/CodeSystem/package-property"/>
-                                <code value="Quality Standard"/>
-                                <display value="Quality Standard"/>
-                            </coding>
-                        </type>
-                        <valueCodeableConcept>
-                            <coding>
-                            	<system value="http://terminology.hl7.org/CodeSystem/package-grade"/>
-                                <code value="USP"/>
-                                <display value="USP &lt;661&gt; Plastic Packaging Systems and Their Materials of Construction"/>
-                            </coding>
-                        </valueCodeableConcept>
-                    </property>
-                    
-                    
-                    <packaging>
-                        
-                        
-                        
-                        <type> 
-                            <coding>
-                                <system value="http://example.org/fhir/code/closureTypes"/>
-                                <code value="1d2344"/>
-                                <display value="Tape"/>
-                            </coding>
-                        </type>
-                        <componentPart value="true"/>
-                        
-                        <material> 
-                            <coding>
-                                <system value="http://example.org/fhir/code/material"/>
-                                <code value="200000003208"/>
-                                <display value="Plastic"/>
-                            </coding>
-                        </material>
-                        
-                        
-                        <manufacturer> 
-                        	
-                            <reference value="Organization/organization-drug-pq-ex1"/>
-                        </manufacturer>
-                        
-                        
-                        <property> 
-                            <type>
-                                <coding>
-                                	<system value="http://terminology.hl7.org/CodeSystem/package-property"/>
-                                    <code value="Quality Specification"/>
-                                    <display value="Quality Specification"/>
-                                </coding>
-                            </type>
-                            <valueCodeableConcept>
-                                <text value="Quality Specification for closure is described"/>
-                            </valueCodeableConcept>
-                        </property>
-                        
-                        
-                        <property> 
-                            <type>
-                                <coding>
-                                	<system value="http://terminology.hl7.org/CodeSystem/package-property"/>
-                                    <code value="Quality Standard"/>
-                                    <display value="Quality Standard"/>
-                                </coding>
-                            </type>
-                            <valueCodeableConcept>
-                                <coding>
-                                	<system value="http://terminology.hl7.org/CodeSystem/package-grade"/>
-                                    <code value="BP"/>
-                                    <display value="Closure Quality Standard"/>
-                                </coding>
-                            </valueCodeableConcept>
-                        </property>
-                        
-                        
-                        <property> 
-                            <type>
-                                <coding>
-                                	<system value="http://terminology.hl7.org/CodeSystem/package-property"/>
-                                    <code value="Narrative"/>
-                                    <display value="Narrative"/>
-                                </coding>
-                            </type>
-                            <valueCodeableConcept>
-                                <text value="Closure - Suitability, protection, safety: conformance to criteria, performance, compabilitity"/>
-                            </valueCodeableConcept>
-                        </property>
-                        
-                        <property> 
-                            <type>
-                                <coding>
-                                    <system value="http://example.org/fhir/code/closureProperties"/>
-                                    <code value="1123ss"/>
-                                    <display value="Integrity Test"/>
-                                </coding>
-                            </type>
-                            <valueCodeableConcept>
-                                <text value="Container–closure integrity test is any package leak test (either physicochemical or microbiological) that detects the presence of a package breach or gap."/>
-                            </valueCodeableConcept>
-                        </property>                            
-                    </packaging>
+                    </type>
+                    <valueCodeableConcept>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/package-grade"/>
+                            <code value="BP"/>
+                            <display value="Closure Quality Standard"/>
+                        </coding>
+                    </valueCodeableConcept>
+                </property>
 
-                    
-                    <packaging> 
-                        
-                        
-                        
-                        
-                        <type>
-                            
-                            <coding> 
-                                <system value="http://hl7.org/fhir/packaging-type"/>
-                                <code value="100000073497"/>
-                                <display value="Bottle"/>
-                            </coding>
-                        </type>
-                        
-                        
-                        <material> 
-                            <coding>
-                                <system value="http://hl7.org/fhir/package-material"/>
-                                <code value="200000003203"/>
-                                <display value="Glass"/>
-                            </coding>
-                        </material>
-                        
-                        
-                        <manufacturer> 
-                        	
-                            <reference value="Organization/organization-drug-pq-ex1"/>
-                        </manufacturer>
-                        
-                        
-                        <property> 
-                            <type>
-                                <coding>
-                                	<system value="http://terminology.hl7.org/CodeSystem/package-property"/>
-                                    <code value="Quality Specification"/>
-                                    <display value="Quality Specification"/>
-                                </coding>
-                            </type>
-                            <valueCodeableConcept>
-                                <text value="Quality Specification is described"/>
-                            </valueCodeableConcept>
-                        </property>
-                        
-                        <property> 
-                            <type>
-                                <coding>
-                                	<system value="http://terminology.hl7.org/CodeSystem/package-property"/>
-                                    <code value="Quality Standard"/>
-                                    <display value="Quality Standard"/>
-                                </coding>
-                            </type>
-                            <valueCodeableConcept>
-                                <coding>
-                                    <system value="http://terminology.hl7.org/CodeSystem/package-grade"/>
-                                    <code value="USP"/>
-                                    <display value="USP &lt;661&gt; Plastic Packaging Systems and Their Materials of Construction"/>
-                                </coding>
-                            </valueCodeableConcept>
-                        </property>
-                        
-                        <property> 
-                            <type>
-                                <coding>
-                                	<system value="http://terminology.hl7.org/CodeSystem/package-property"/>
-                                    <code value="Narrative"/>
-                                    <display value="Narrative"/>
-                                </coding>
-                            </type>
-                            <valueCodeableConcept>
-                                <text value="Suitability, protection, safety: conformance to criteria, performance, compabilitity"/>
-                            </valueCodeableConcept>
-                        </property>
-                        
-                        <property> 
-                            <type>
-                                <coding>
-                                	<system value="http://terminology.hl7.org/CodeSystem/package-property"/>
-                                    <code value="Container Size"/>
-                                    <display value="Container Size"/>
-                                </coding>
-                            </type>
-                            <valueQuantity>
-                                
-                                <value value="250"/> 
-                                
-                                <unit value="ml"/>   
-                            </valueQuantity>
-                        </property>
-                        
-                        <containedItem> 
-                            <item>
-                                <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-                                    <valueCode value="unsupported"/>
-                                </extension>
-                            </item>
-                            <amount>
-                                
-                                <value value="100"/> 
-                                
-                                <unit value="mg"/>   
-                            </amount>
-                        </containedItem>    
-                        
-                        
-                        <packaging> 
-                            
-                            
-                            
-                            <type> 
-                                <coding>
-                                    <system value="http://example.org/fhir/code/closureTypes"/>
-                                    <code value="112344"/>
-                                    <display value="Child Proof Cap"/>
-                                </coding>
-                            </type>
-                            <componentPart value="true"/>
+                <property>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/package-property"/>
+                            <code value="Narrative"/>
+                            <display value="Narrative"/>
+                        </coding>
+                    </type>
+                    <valueCodeableConcept>
+                        <text value="Closure - Suitability, protection, safety: conformance to criteria, performance, compabilitity"/>
+                    </valueCodeableConcept>
+                </property>
 
-                            
-                            <material> 
-                                <coding>
-                                    
-                                    <system value="http://example.org/fhir/code/material"/>
-                                    <code value="112344ss"/>
-                                    <display value="PVC"/>
-                                </coding>
-                            </material>
-                            
-                            
-                            <manufacturer> 
-                                <reference value="Organization/organization-drug-pq-ex1"/>
-                            </manufacturer>
+                <property>
+                    <type>
+                        <coding>
+                            <!--<system value="http://example.org/fhir/code/closureProperties"/>-->
+                            <system value="http://terminology.hl7.org/CodeSystem/package-property"/>
+                            <code value="1123ss"/>
+                            <display value="Integrity Test"/>
+                        </coding>
+                    </type>
+                    <valueCodeableConcept>
+                        <text value="Container–closure integrity test is any package leak test (either physicochemical or microbiological) that detects the presence of a package breach or gap."/>
+                    </valueCodeableConcept>
+                </property>
+            </packaging>
 
-                            
-                            <property> 
-                                <type>
-                                    <coding>
-                                    	<system value="http://terminology.hl7.org/CodeSystem/package-property"/>
-                                        <code value="Quality Specification"/>
-                                        <display value="Quality Specification"/>
-                                    </coding>
-                                </type>
-                                <valueCodeableConcept>
-                                    <text value="Quality Specification for closure is described"/>
-                                </valueCodeableConcept>
-                            </property>
-                            
-                            <property> 
-                                <type>
-                                    <coding>
-                                    	<system value="http://terminology.hl7.org/CodeSystem/package-property"/>
-                                        <code value="Quality Standard"/>
-                                        <display value="Quality Standard"/>
-                                    </coding>
-                                </type>
-                                <valueCodeableConcept>
-                                    <coding>
-                                    	<system value="http://terminology.hl7.org/CodeSystem/package-grade"/>
-                                        <code value="BP"/>
-                                        <display value="Closure Quality Standard"/>
-                                    </coding>
-                                </valueCodeableConcept>
-                            </property>
-                            
-                            <property> 
-                                <type>
-                                    <coding>
-                                    	<system value="http://terminology.hl7.org/CodeSystem/package-property"/>
-                                        <code value="Narrative"/>
-                                        <display value="Narrative"/>
-                                    </coding>
-                                </type>
-                                <valueCodeableConcept>
-                                    <text value="Closure - Suitability, protection, safety: conformance to criteria, performance, compabilitity"/>
-                                </valueCodeableConcept>
-                            </property>
-                            
-                            <property> 
-                                <type>
-                                    <coding>
-                                        <system value="http://example.org/fhir/code/closureProperties"/>
-                                        <code value="1123ss"/>
-                                        <display value="Integrity Test"/>
-                                    </coding>
-                                </type>
-                                <valueCodeableConcept>
-                                    <text value="Container–closure integrity test is any package leak test (either physicochemical or microbiological) that detects the presence of a package breach or gap."/>
-                                </valueCodeableConcept>
-                            </property>                            
-                        </packaging>
-                
-                        
-                    </packaging>
-                </packaging>
-            </PackagedProductDefinition>
+
+        </packaging>
+    </packaging>
+</PackagedProductDefinition>
