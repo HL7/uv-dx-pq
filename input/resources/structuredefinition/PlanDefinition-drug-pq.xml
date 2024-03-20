@@ -174,15 +174,47 @@
 
         <element id="PlanDefinition.action.code">
             <path value="PlanDefinition.action.code"/>
+            <mustSupport value="true"/>
+<!--            OPTIONS using IPS pattern-->
+            <binding>
+                <extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-binding">
+                    <extension url="purpose">
+                        <valueCode value="extensible"/>
+                    </extension>
+                    <extension url="valueSet">
+                        <valueCanonical value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-manufacturingStep-pq"/>
+                    </extension>
+                </extension>
+                
+                <extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-binding">
+                    <extension url="purpose">
+                        <valueCode value="extensible"/>
+                    </extension>
+                    <extension url="valueSet">
+                        <valueCanonical value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-characterizationStep-pq"/>
+                    </extension>
+                </extension>
+                
+                <extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-binding">
+                    <extension url="purpose">
+                        <valueCode value="extensible"/>
+                    </extension>
+                    <extension url="valueSet">
+                        <valueCanonical value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-specification-type-pq"/>
+                    </extension>
+                </extension>
+                
+                <strength value="example"/>
+                <valueSet value="http://hl7.org/fhir/ValueSet/action-code"/>
+            </binding>
         </element>
-        <element id="PlanDefinition.action.code.coding">
+        
+<!--        SLICING .code DOES NOT WORK-->
+<!--        <element id="PlanDefinition.action.code.coding">
             <path value="PlanDefinition.action.code.coding"/>
             <slicing>
                 <discriminator>
-                    <!--                    <type value="pattern"/> -->
-                    <!--                    "pattern" has been depricated-->
                     <type value="value"/>
-                    <!--                    <path value="code"/>-->
                     <path value="$this"/>
                 </discriminator>
                 <ordered value="false"/>
@@ -222,7 +254,7 @@
                 <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-specification-type-pq"/>
             </binding>
         </element>
-
+-->
         <element id="PlanDefinition.action.participant.typeReference.extension">
             <path value="PlanDefinition.action.participant.typeReference.extension"/>
             <slicing>
