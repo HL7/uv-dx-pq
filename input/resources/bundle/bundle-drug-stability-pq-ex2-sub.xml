@@ -111,7 +111,7 @@
             <!--            Added type (8/22/2023)-->
             <type>
                <coding>
-                  <system value="http://example.org/fhir/code/planType"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-plan-type"/>
                   <code value="1244588"/>
                   <display value="Stability Study Protocol"/>
                </coding>

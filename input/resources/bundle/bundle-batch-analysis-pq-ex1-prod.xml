@@ -21,7 +21,7 @@
             <!-- Added (8/22/2023)-->
             <type>
                <coding>
-                  <system value="http://example.org/fhir/code/planType"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-plan-type"/>
                   <code value="1244577"/>
                   <display value="Specification Protocol"/>
                </coding>
@@ -3054,7 +3054,7 @@
             <title value="Process 1.0"/>
             <type>
                <coding>
-                  <system value="http://example.org/fhir/code/planType"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-plan-type"/>
                   <code value="1244566"/>
                   <display value="Manufacturing Process"/>
                </coding>
