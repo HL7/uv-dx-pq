@@ -43,4 +43,23 @@
         <code value="ICH-M7-class-5"/>
         <display value="ICH M7 classification = Class 5"/>
     </concept>
+    
+    <concept>
+        <code value="positive"/>
+        <display value="Positive"/>
+    </concept>
+    <concept>
+        <code value="negative"/>
+        <display value="Negative"/>
+    </concept>
+    
+    <concept>
+        <code value="class-2"/>
+        <display value="Class 2"/>
+    </concept>
+    <concept>
+        <code value="class-5"/>
+        <display value="Class 5"/>
+    </concept>
+
 </CodeSystem>
