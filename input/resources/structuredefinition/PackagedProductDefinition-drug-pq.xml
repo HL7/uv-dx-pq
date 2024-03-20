@@ -93,20 +93,8 @@
       </binding>
     </element>
     
-    <!--    SIMPLE PATTERN for 2 packaging.property.value[x]-->
-<!--    <element id="PackagedProductDefinition.packaging.property.value[x]">
-      <path value="PackagedProductDefinition.packaging.property.value[x]"/>
-      <mustSupport value="true"/>
-      <binding>
-        <strength value="example"/>
-<!-\-        Listing 2 value sets here does not work. Only one shows-\->
-        <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-color-pq"/>
-        <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-grade-pq"/>
-      </binding>
-    </element>  -->
-<!--    END-->
     
-<!--    SLICING PATTERN-->
+<!--    SLICING PATTERN based on IPS Lab Observation-->
     <element id="PackagedProductDefinition.packaging.property.value[x]">
       <path value="PackagedProductDefinition.packaging.property.value[x]"/>
       <slicing>
@@ -136,129 +124,13 @@
             <valueCanonical value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-color-pq"/>
           </extension>
         </extension>
-<!--        <extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-binding">
-          <extension url="purpose">
-            <valueCode value="extensible"/>
-          </extension>
-          <extension url="valueSet">
-            <valueCanonical value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-grade-pq"/>
-          </extension>
-        </extension>-->
         <strength value="example"/>
         <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-grade-pq"/>
       </binding>
     </element>
     <!--    END-->
     
-<!--    EXAMPLE from IPS Lab Observation-->
-<!--    <element id="Observation.value[x]:valueCodeableConcept">
-      <path value="Observation.value[x]"/>
-      <sliceName value="valueCodeableConcept"/>
-      <type>
-        <code value="CodeableConcept"/>
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
-      </type>
-      <mustSupport value="true"/>
-      <binding>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-binding">
-          <extension url="purpose">
-            <valueCode value="candidate"/>
-          </extension>
-          <extension url="valueSet">
-            <valueCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/results-blood-group-snomed-ct-ips-free-set"/>
-          </extension>
-          <extension url="documentation">
-            <valueMarkdown value="Additional conformance binding to a blood group findings value set for laboratory result values from the SNOMED CT IPS free set for use globally (in SNOMED member and non-member jurisdictions)."/>
-          </extension>
-        </extension>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-binding">
-          <extension url="purpose">
-            <valueCode value="candidate"/>
-          </extension>
-          <extension url="valueSet">
-            <valueCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/results-presence-absence-snomed-ct-ips-free-set"/>
-          </extension>
-          <extension url="documentation">
-            <valueMarkdown value="Additional conformance binding to a presence and absence findings (qualifier values) value set for laboratory result values from the SNOMED CT IPS free set for use globally (in SNOMED member and non-member jurisdictions)."/>
-          </extension>
-        </extension>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-binding">
-          <extension url="purpose">
-            <valueCode value="candidate"/>
-          </extension>
-          <extension url="valueSet">
-            <valueCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/results-microorganism-snomed-ct-ips-free-set"/>
-          </extension>
-          <extension url="documentation">
-            <valueMarkdown value="Additional conformance binding to a microorganisms value set for laboratory result values from the SNOMED CT IPS free set for use globally (in SNOMED member and non-member jurisdictions)."/>
-          </extension>
-        </extension>
-        <strength value="preferred"/>
-        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/results-coded-values-laboratory-uv-ips"/>
-      </binding>
-    </element>-->
-    <!--    END-->
-    
-    
-<!--    EXTENSION PATTERN-->
-<!--    <element id="PackagedProductDefinition.packaging.property.value[x]:valueCodeableConcept.extension">
-      <path value="PackagedProductDefinition.packaging.property.value[x].extension"/>
-      <slicing>
-        <discriminator>
-          <type value="value"/>
-          <path value="url"/>
-        </discriminator>
-        <rules value="open"/>
-      </slicing>
-      <short value="Additional content defined by implementations"/>
-      <min value="0"/>
-      <max value="*"/>
-      <type>
-        <code value="Extension"/>
-      </type>
-    </element>
-    
-    <element id="PackagedProductDefinition.packaging.property.value[x]:valueCodeableConcept.coding">
-      <path value="PackagedProductDefinition.packaging.property.value[x].coding"/>
-      <slicing>
-        <discriminator>
-          <type value="value"/>
-<!-\-          <path value="url"/>-\->
-<!-\-          <type value="pattern"/>-\->
-          <path value="$this"/>
-        </discriminator>
-        <rules value="open"/>
-      </slicing>
-      <type>
-        <code value="Coding"/>
-      </type>
-    </element>
-    <element id="PackagedProductDefinition.packaging.property.value[x]:valueCodeableConcept.coding:color">
-      <path value="PackagedProductDefinition.packaging.property.value[x].coding"/>
-      <sliceName value="color"/>
-      <short value="color"/>
-      <type>
-        <code value="Coding"/>
-      </type>
-      <binding>
-        <strength value="example"/>
-        <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-color-pq"/>
-      </binding>
-    </element>
-    <element id="PackagedProductDefinition.packaging.property.value[x]:valueCodeableConcept.coding:quality-standard">
-      <path value="PackagedProductDefinition.packaging.property.value[x].coding"/>
-      <sliceName value="quality-standard"/>
-      <short value="quality-standard"/>
-      <type>
-        <code value="Coding"/>
-      </type>
-      <binding>
-        <strength value="example"/>
-        <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-grade-pq"/>
-      </binding>
-    </element>-->
 
-<!--END-->
     <element id="PackagedProductDefinition.packaging.containedItem">
       <path value="PackagedProductDefinition.packaging.containedItem"/>
       <mustSupport value="true"/>
