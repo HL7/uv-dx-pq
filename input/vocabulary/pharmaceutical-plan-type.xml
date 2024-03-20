@@ -9,7 +9,7 @@
     <description value="This code system contains codes for pharmaceutical plan type."/>
     <caseSensitive value="true"/>
     <content value="complete"/>
-    
+
     <concept>
         <code value="analytical-procedure"/>
         <display value="Analytical Procedure"/>
@@ -26,12 +26,31 @@
         <code value="container-specification"/>
         <display value="Container Specification"/>
     </concept>
-<concept>
-    <code value="product-compatibility"/>
-    <display value="Product Compatibility"/>
-</concept>
+    <concept>
+        <code value="product-compatibility"/>
+        <display value="Product Compatibility"/>
+    </concept>
     <concept>
         <code value="elucidation-of-structure"/>
         <display value="Elucidation of Structure"/>
+    </concept>
+
+    <concept>
+        <code value="1244577"/>
+        <display value="Specification Protocol"/>
+    </concept>
+
+    <concept>
+        <code value="1244566"/>
+        <display value="Manufacturing Process"/>
+    </concept>
+
+    <concept>
+        <code value="1244578"/>
+        <display value="Reference Standard Analysis"/>
+    </concept>
+    <concept>
+        <code value="1244588"/>
+        <display value="Stability Study Protocol"/>
     </concept>
 </CodeSystem>
