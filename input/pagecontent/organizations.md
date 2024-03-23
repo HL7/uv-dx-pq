@@ -12,9 +12,9 @@ Details about each facility or legal entity involved in the manufacture of the m
 ### Examples
 **CTD section synthetic source data samples** (PDF):
 - 3.2.P.3 Manufacture
-    - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.3.1_Manufacturer(s).pdf">3.2.P.3.1 Manufacturer(s)</a>
+    - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.P.3.1_Manufacturers.pdf">3.2.P.3.1 Manufacturer(s)</a>
 - 3.2.S.2 Manufacture
-    - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.S.2.1_Manufacturer(s).pdf">3.2.S.2.1 Manufacturer(s)</a>
+    - <a href="https://github.com/HL7/uv-dx-pq/raw/master/input/examples-pdf/3.2.S.2.1_Manufacturers.pdf">3.2.S.2.1 Manufacturer(s)</a>
 
 **XML and JSON examples** of synthetic quality data:
 - <a href="Bundle-bundle-organizations-pq-ex1.xml.html">Organization example XML</a>

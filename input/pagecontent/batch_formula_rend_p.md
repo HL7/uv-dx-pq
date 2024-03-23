@@ -1,4 +1,4 @@
-The HTML rendering below shows a synthetic Quality data example for Common Technical Document (CTD) Module 3: Quality, sections ...
+The HTML rendering below shows a synthetic Quality data example for Common Technical Document (CTD) Module 3: Quality, section 3.2.P.3 Manufacture, subsection 3.2.P.3.2 Batch Formula.
 <html>
 <body>
 <div class="divBody">

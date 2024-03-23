@@ -1,4 +1,4 @@
-The HTML rendering below shows a synthetic Quality data example for Common Technical Document (CTD) Module 3: Quality, sections ...
+The HTML rendering below shows a synthetic Quality data example for Common Technical Document (CTD) Module 3: Quality, section 3.2.S.5 Reference Standards or Materials.
 <html>
 <body>
 <div class="divBody">

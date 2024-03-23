@@ -15,7 +15,7 @@ Details about the drug substance and drug product nomenclature; structure; physi
 <tr><td>Composition</td><td>Textual information about the product</td></tr> 
 </table>
 
-#### Examples
+##### Examples
 **CTD section synthetic source data samples** (PDF):
 
 - 3.2.P.2 Pharmaceutical Development
@@ -33,7 +33,7 @@ Details about the drug substance and drug product nomenclature; structure; physi
 <tr><td><img src="microbial_attributes_resources.png" width="450"/></td></tr>
 </table>
 
-#### Resources
+##### Resources
 
 <table>
 <tr><td>MedicinalProductDefinition</td><td>The drug product (Stelbat tablets, 20mg)</td></tr> 
@@ -42,7 +42,7 @@ Details about the drug substance and drug product nomenclature; structure; physi
 <tr><td>Observation</td><td>The results of a specific test mentioned in the Observation Definition</td></tr> 
 </table>
 
-#### Examples
+##### Examples
 **CTD section synthetic source data samples** (PDF):
 
 - 3.2.P.2 Pharmaceutical Development
@@ -60,7 +60,7 @@ Details about the drug substance and drug product nomenclature; structure; physi
 <tr><td><img src="product_excipients.png" width="600"/></td></tr>
 </table>
 
-#### Resources
+##### Resources
 <table>
 <tr><td>MedicinalProductDefinition</td><td>The drug product (Stelbat tablets, 20mg)</td></tr> 
 <tr><td>Ingredient</td><td>The excipients that make up the drug product</td></tr> 
@@ -68,7 +68,7 @@ Details about the drug substance and drug product nomenclature; structure; physi
 <tr><td>Substance Definition</td><td>Chemical or biological details about substance(s) associated with the ingredient</td></tr> 
 </table>
 
-#### Examples
+##### Examples
 **CTD section synthetic source data samples** (PDF):
 
 - 3.2.P.4 Control of Excipients
@@ -88,11 +88,13 @@ Details about the drug substance and drug product nomenclature; structure; physi
 <table>
 <tr><td><img src="general_properties_substance.png" width="350"/></td></tr>
 </table>
+
+##### Resources
 <table>
 <tr><td>Substance Definition</td><td>Properties of the substance</td></tr> 
 </table>
 
-#### Examples
+##### Examples
 **CTD section synthetic source data samples** (PDF):
 
 - 3.2.S.1 General Information
@@ -111,6 +113,7 @@ Details about the drug substance and drug product nomenclature; structure; physi
 <tr><td><img src="substance_characterization_resources.png" width="700"/></td></tr>
 </table>
 
+##### Resources
 <table>
 <tr><td>SubstanceDefinition</td><td>The substance being characterized</td></tr> 
 <tr><td>Substance</td><td>Identifying information about an actual batch of substance (an instance)</td></tr> 
@@ -121,7 +124,7 @@ Details about the drug substance and drug product nomenclature; structure; physi
 <tr><td>Organization</td><td>(not illustrated above): The company/site that performed the testing or manufacturing</td></tr> 
 </table>
 
-#### Examples
+##### Examples
 **CTD section synthetic source data samples** (PDF):
 
 - 3.2.S.3 Characterisation

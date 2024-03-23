@@ -41,7 +41,8 @@ The 14 pharmaceutical Quality (PQ) domains and their supporting sub-domains, in 
   </tr>
   <tr>
     <td class="tg-0lax">2. Composition</td>
-    <td class="tg-0lax">3.2.P.1 Description and Composition of the Drug Product<br>3.2.P.6 Reference Standards or Materials</td>
+    <td class="tg-0lax">3.2.P.1 Description and Composition of the Drug Product
+    <br>&nbsp;&nbsp;&nbsp;3.2.P.6 Reference Standards or Materials</td>
     <td class="tg-0lax">3.2.S.5 Reference Standards or Materials</td>
   </tr>
   <tr>

@@ -1,4 +1,4 @@
-The HTML rendering below shows a synthetic Quality data example for Common Technical Document (CTD) Module 3: Quality, section 3.2.S.1 General Information, 3.2.S.1.3 General Properties.
+The HTML rendering below shows a synthetic Quality data example for Common Technical Document (CTD) Module 3: Quality, section 3.2.S.3 Characterisation, subsection 3.2.S.3.1 Elucidation of Structure and Other Characteristics.
 <html>
 <body>
 <div class="divBody">

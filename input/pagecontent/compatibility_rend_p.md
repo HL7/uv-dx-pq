@@ -1,4 +1,4 @@
-The HTML rendering below shows a synthetic Quality data example for Common Technical Document (CTD) Module 3: Quality, sections ...
+The HTML rendering below shows a synthetic Quality data example for Common Technical Document (CTD) Module 3: Quality, section 3.2.P.2 Pharmaceutical Development, subsection 3.2.P.2.6 Compatibility.
 <html>
 <body>
 <div class="divBody">

@@ -23,7 +23,7 @@ Provide details about drug substance and drug product components, materials, and
 - <a href="Bundle-bundle-drug-product-composition-pq-ex1.json.html">Product Composition example JSON</a>
 
 **HTML presentation example** of synthetic quality data:
-- <a href="composition_rend_s.html">Product Composition</a>  - Note that HTML examples represent ways to create human-readable output using structured quality data (see section 1.2 Scope).
+- <a href="composition_rend_p.html">Product Composition</a>  - Note that HTML examples represent ways to create human-readable output using structured quality data (see section 1.2 Scope).
 
 
 ### Drug Reference Standards
