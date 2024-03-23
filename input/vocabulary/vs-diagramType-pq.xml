@@ -6,7 +6,7 @@
     <title value="Diagram Types"/>
     <status value="active"/>
     <experimental value="false"/>
-    <description value="This valueset contains codes for diagram type."/>
+    <description value="This value set contains codes for diagram type."/>
 
     <compose>
         <include>

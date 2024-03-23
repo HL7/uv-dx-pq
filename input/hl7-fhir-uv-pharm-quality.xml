@@ -783,7 +783,7 @@
                 <display value="Substance - Drug"/>
             </reference>
             <name value="Substance - Drug"/>
-            <description value="This Substance profile represents identifying information about an actual batch of aubstance (an instance)."/>
+            <description value="This Substance profile represents identifying information about an actual batch of substance (an instance)."/>
             <isExample value="false"/>
             <groupingId value="building-blocks-1"/>
         </resource>
@@ -882,7 +882,7 @@
                 <reference value="Ingredient/ingredient-drug-pq-ex1"/>
             </reference>
             <name value="Ingredient - Drug - example"/>
-            <description value="Example of Ingredient - Drug containung one substance."/>
+            <description value="Example of Ingredient - Drug containing one substance."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Ingredient-drug-pq"/>
             <groupingId value="building-blocks-2"/>
@@ -947,7 +947,7 @@
                 <reference value="Observation/observation-test-result-lt25c-i1-degradation-imp1"/>
             </reference>
             <name value="Observation - Test Result - example 2"/>
-            <description value="Example of Observation - Test Result of Degradation Product 'Impurity 1' qualtity from longTerm25X test."/>
+            <description value="Example of Observation - Test Result of Degradation Product 'Impurity 1' quality from longTerm25X test."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
             <groupingId value="building-blocks-2"/>
@@ -1107,7 +1107,7 @@
                 <reference value="Procedure/procedure-drug-pq-ex2"/>
             </reference>
             <name value="Procedure - Drug - example 2"/>
-            <description value="Example of Procedure - Drug for Lyophilization Homogeneneity."/>
+            <description value="Example of Procedure - Drug for Lyophilization Homogeneity."/>
             <isExample value="true"/>
             <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Procedure-drug-pq"/>
             <groupingId value="building-blocks-2"/>
@@ -1251,7 +1251,7 @@
                 <display value="Extension - Batch Number of Items"/>
             </reference>
             <name value="Extension - Batch Number of Items"/>
-            <description value="The numer of items (e.g., tablets) produced in a manufacturing batch."/>
+            <description value="The number of items (e.g., tablets) produced in a manufacturing batch."/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1338,7 +1338,7 @@
                 <display value="Extension - Container Orientation"/>
             </reference>
             <name value="Extension - Container Orientation"/>
-            <description value="The spatial orientaton of the container when tested, for instance horizontal or vertical"/>
+            <description value="The spatial orientation of the container when tested, for instance horizontal or vertical"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1360,7 +1360,7 @@
                 <display value="Extension - History of Process"/>
             </reference>
             <name value="Extension - History of Process"/>
-            <description value="An textual description of the previous versions, decisions and development of this process"/>
+            <description value="A textual description of the previous versions, decisions and development of this process"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1459,7 +1459,7 @@
                 <display value="Extension - Plan Document Reference"/>
             </reference>
             <name value="Extension - Plan Document Reference"/>
-            <description value="A link to a doucment, or image, that describes the process of this plan"/>
+            <description value="A link to a document or image that describes the process of this plan"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1470,7 +1470,7 @@
                 <display value="Extension - Process Parameters"/>
             </reference>
             <name value="Extension - Process Parameters"/>
-            <description value="A property value or setting that this process step must use e.g. a certain temperature or duration"/>
+            <description value="A property value or setting that this process step must use, e.g., a certain temperature or duration"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
@@ -1591,7 +1591,7 @@
                 <display value="Extension - Target Fill Weight"/>
             </reference>
             <name value="Extension - Target Fill Weight"/>
-            <description value="The desired amount of substance in each item to be made from the batch (e.g. a vial)"/>
+            <description value="The desired amount of substance in each item to be made from the batch (e.g., a vial)"/>
             <isExample value="false"/>
             <groupingId value="extensions1"/>
         </resource>
