@@ -6,7 +6,7 @@
   <name value="BundleContainerClosureSystemPq"/>
   <title value="Bundle – Container Closure System PQ"/>
   <status value="active"/>
-  <description value="TBD"/>
+  <description value="Container Closure System domain: This Bundle profile represents the structured data in CTD sections 3.2.P.7 Container Closure System and 3.2.S.6 Container Closure System."/>
   <fhirVersion value="5.0.0"/>
   <kind value="resource"/>
   <abstract value="false"/>

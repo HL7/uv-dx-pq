@@ -7,7 +7,7 @@
   <name value="BundleDrugSubstanceSpecificationPq"/>
   <title value="Bundle – Drug Substance Specification PQ"/>
   <status value="active"/>
-  <description value="Bundle – Drug Substance Specification PQ"/>
+  <description value="Specification domain: This Bundle profile represents the structured data used in CTD section 3.2.S.4 Control of Drug Substance, subsection 3.2.S.4.1 Specification."/>
   <fhirVersion value="5.0.0"/>
   <kind value="resource"/>
   <abstract value="false"/>

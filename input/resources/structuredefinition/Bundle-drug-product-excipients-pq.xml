@@ -7,7 +7,7 @@
   <name value="BundleDrugProductExcipientsPq"/>
   <title value="Bundle – Drug Product Excipients PQ"/>
   <status value="active"/>
-  <description value="Bundle – Drug Product Excipients PQ"/>
+  <description value="Identification domain: This Bundle profile represents the structured data used in CTD section 3.2.P.4 Control of Excipients, subsections 3.2.P.4.5 Excipients of Human or Animal Origin and 3.2.P.4.6 Novel Excipients."/>
   <fhirVersion value="5.0.0"/>
   <kind value="resource"/>
   <abstract value="false"/>

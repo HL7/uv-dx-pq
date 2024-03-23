@@ -6,7 +6,7 @@
   <name value="BundleBatchAnalysisPq"/>
   <title value="Bundle – Batch Analysis PQ"/>
   <status value="active"/>
-  <description value="TBD"/>
+  <description value="Batch Analysis domain: This Bundle profile represents the structured data used in CTD section 3.2.P.5 Control of Drug Product, subsection 3.2.P.5.4 Batch Analyses and CTD section 3.2.S.4 Control of Drug Substance, subsection 3.2.S.4.4 Batch Analyses."/>
   <fhirVersion value="5.0.0"/>
   <kind value="resource"/>
   <abstract value="false"/>

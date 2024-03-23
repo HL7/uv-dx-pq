@@ -24,7 +24,7 @@
             <value value="http://www.hl7.org/Special/committees/rcrim"/>
         </telecom>
     </contact>
-    <description value="***Content TBD***&#xA;&#xA;This IG is developed for the Data exchange industry – Pharmaceutical Quality (PQ) project &#xA;* [Project Proposal: PSS-2137](https://jira.hl7.org/browse/PSS-2137)&#xA;* [Project Scope Statement: PSS-2145](https://jira.hl7.org/browse/PSS-2145)"/>
+    <description value="This IG is developed for the HL7 International Pharmaceutical Quality (PQ) - Industry Use Case project, sponsored by the Biomedical Research and Regulation Work Group &#xA;* [Project Proposal: PSS-2137](https://jira.hl7.org/browse/PSS-2137)&#xA;* [Project Scope Statement: PSS-2145](https://jira.hl7.org/browse/PSS-2145)"/>
     <jurisdiction>
         <coding>
             <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>

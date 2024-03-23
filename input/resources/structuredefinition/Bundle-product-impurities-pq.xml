@@ -6,7 +6,7 @@
   <name value="BundleProductImpuritiesPq"/>
   <title value="Bundle - Product Impurities PQ"/>
   <status value="active"/>
-  <description value="TBD"/>
+  <description value="Impurities domain: This Bundle profile represents the structured data used in CTD section 3.2.P.5 Control of Drug Product, subsection 3.2.P.5.5 Characterisation of Impurities and CTD section 3.2.S.3 Characterisation, subsection 3.2.S.3.2 Impurities."/>
   <fhirVersion value="5.0.0"/>
   <kind value="resource"/>
   <abstract value="false"/>
