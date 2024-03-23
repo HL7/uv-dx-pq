@@ -1,4 +1,4 @@
-This implementation guide defines resources to support many scenarios. Following  use cases  are provided to facilitate implementers understanding how to use and apply this guide. These examples are based on the assumption that the manufacturer owns or has access to the data repository (storage server) that houses test results that are structured in conformance with this implementation guide.
+This implementation guide defines resources to support many scenarios. The following use cases are provided to facilitate implementers understanding how to use and apply this guide. These examples are based on the assumption that the manufacturer owns or has access to the data repository (storage server) that houses test results that are structured in conformance with this implementation guide.
 
 ### Stability (new to 18 months)
 A sponsor plans to create a new stability study for a medicinal product with a proposed shelf-life of 18 months at 5 °C, with supporting stability data. Using a FHIR-based exchange mechanism, the sponsor takes the following approach:
@@ -7,13 +7,13 @@ A sponsor plans to create a new stability study for a medicinal product with a p
 
 Using the [Global Substance Registration System (G-SRS)](https://gsrs.ncats.nih.gov/ginas/app/beta/) as a reference, the sponsor builds a list of Substance Definition and Ingredient resources to support the creation of a Medicinal Product Definition resource. For each medicinal product, the sponsor creates a list of Medication resources for each applicable batch.
 
-Together, the medicinal product, ingredients, substances, and batch details provides a detailed account of what is about to be tested in this stability study. 
+Together, the medicinal product, ingredients, substances, and batch details provide a detailed account of what is about to be tested in this stability study. 
 
 The resources associated with the medicinal products, ingredients, substances, and batch details only need to be created once. Once created they form a library of content that can be versioned and reused as needed for the stability use case or other use cases where needed.
 
 **Step 2: Develop tests details**
 
-Create a library of tests by creating one ObservationDefinion resource per test. E.g., Identification, Assay by HPLC, Dissolution. The ObservationDefinition resource includes details such as the name, identifier, method, and test criteria. As noted above, once the library of tests have been created, that content can be versioned and reused as needed.
+Create a library of tests by creating one ObservationDefinition resource per test. E.g., Identification, Assay by HPLC, Dissolution. The ObservationDefinition resource includes details such as the name, identifier, method, and test criteria. As noted above, once the library of tests has been created, that content can be versioned and reused as needed.
 
 Create an ActivityDefinition resource as a means of grouping all of the tests needed for the study.
 
@@ -51,7 +51,7 @@ A sponsor plans to submit a request to a health authority to update the shelf li
 
 **Step 1: Acquire previously used stability study data from the library**
 
-From the PQ data repository (or library), the sponsor pulls up the previously submitted Stability Bundle.
+From the pharmaceutical Quality data repository (or library), the sponsor pulls up the previously submitted Stability Bundle.
 
 **Step 2: Update**
 
@@ -61,7 +61,7 @@ The sponsor decides to use the previously submitted Bundle as is, except for the
 - Specimen Storage
 - Stability Test Result
 
-The sponsor’s PQ data repository creates new versions of the existing resources. This facilitates the sponsor’s ability to perform tracking and lifecycle management activities on what data is available, where it was used or submitted, and its status.
+The sponsor’s Quality data repository creates new versions of the existing resources. This facilitates the sponsor’s ability to perform tracking and lifecycle management activities on what data is available, where it was used or submitted, and its status.
 
 **Step 3: Send to regulator**
 
@@ -79,7 +79,7 @@ The sponsor receives questions from the health authority on the updated Bundle s
 
 **Step 6: Update resources**
 
-From the PQ data repository, the sponsor updates the Specification Bundle for Drug Product, adding the new test method with its acceptance criteria.
+From the Quality data repository, the sponsor updates the Specification Bundle for Drug Product, adding the new test method with its acceptance criteria.
 
 **Step 7: Send response to regulator questions**
 
@@ -87,14 +87,14 @@ The updated Specification Bundle is submitted in response to the regulator’s r
 
 **Step 8: Receive regulator approval**
 
-The regulator provides notice that the specification change and shelf-life extension are approved. From there, the sponsor can take the necessary steps to update the status of the dataset in their PQ repository.
+The regulator provides notice that the specification change and shelf-life extension are approved. From there, the sponsor can take the necessary steps to update the status of the dataset in their Quality repository.
 
 
 ### Test Specification Change
 A sponsor plans to execute a change in the drug substance identity method and acceptance criteria, which will necessitate a change in the drug substance specification. The sponsor will send the details of the desired change to a contract manufacturing partner (CMO) to conduct the change assessment. To build the change request in FHIR, as described above in the previous examples, the sponsor will need to download and update the Specification Bundle before submitting it to the CMO.
 
 **Step 1: Acquire previously used data from the library**
-To assist with the process of updating the Bundle, the sponsor can access the ObservationDefinition resources that serve as a comprehensive list of analytical procedures and test methods that will be maintained in a public repository, which can be pulled into the PQ Profile Library. Sponsors can access the test library via RESTful API, select the desired tests needed for their specification, and download them into their local repository.
+To assist with the process of updating the Bundle, the sponsor can access the ObservationDefinition resources that serve as a comprehensive list of analytical procedures and test methods that will be maintained in a public repository, which can be pulled into the Quality Profile Library. Sponsors can access the test library via RESTful API, select the desired tests needed for their specification, and download them into their local repository.
 
 **Step 2: Build test specification**
 
@@ -124,8 +124,8 @@ As described previously, the sponsor can download the Organization resource from
 
 Update the information contained within the relevant Organization resource(s). E.g., create a new version to capture a new name; add alias names for this organization in a different language; show a change in address, or add additional identifiers.
 
-The sponsor may update the information for internal or external audit tracking of facilities. Similar to the Specification bundle, the Organization Bundle may leverage auto-population capabilities based on connectivity to external databases containing Organization information, such as the EMA’s Organisation Management System or FDA’s Data Dashboard (SPOR - Organisations Management System, 2023, FDA Data Dashboard, 2023). The Organization profile within the PQ Library can contain all identifiers and addresses for a given site, and specific attributes (E.g., SPOR Organisation ID, Firm Establishment Identifier (FEI), Data Universal Number System (DUNS) number) can be pulled into Bundles on an as-needed basis to support both global information management as well as compliance with regional requirements. This functionality reduces or eliminates the need for manual entry, drives consistency, and allows for reuse of information across Bundles.
+The sponsor may update the information for internal or external audit tracking of facilities. Similar to the Specification bundle, the Organization Bundle may leverage auto-population capabilities based on connectivity to external databases containing Organization information, such as the EMA’s Organisation Management Service (OMS) or U.S. FDA’s Data Dashboard. The Organization profile within the Quality Library can contain all identifiers and addresses for a given site, and specific attributes (e.g., SPOR Organisation ID, Firm Establishment Identifier (FEI), Data Universal Number System (DUNS) number) can be pulled into Bundles on an as-needed basis to support both global information management as well as compliance with regional requirements. This functionality reduces or eliminates the need for manual entry, drives consistency, and allows for reuse of information across Bundles.
 
 **Step 3: Send or receive Organization data**
 
-The updated Organization resource(s) can now be send to an external party (CMO, regulator, or others) using RESTful API. 
+The updated Organization resource(s) can now be sent to an external party (CMO, regulator, or others) using RESTful API. 

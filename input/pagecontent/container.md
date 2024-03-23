@@ -34,7 +34,7 @@ Details about primary and secondary packaging components for drug substance and 
 <table>
 <tr><td>Substance Definition</td><td>Definition of this drug substance itself (Stelbatolol)</td></tr> 
 <tr><td>Ingredient</td><td>Connection to the substance as something manufactured (used here mainly for linkage)</td></tr> 
-<tr><td>ManufacturedItem Definition</td><td>The substance as a physical type of substance that can be packaged (used here mainly for linkage)</td></tr> 
+<tr><td>ManufacturedItemDefinition</td><td>The substance as a physical type of substance that can be packaged (used here mainly for linkage)</td></tr> 
 <tr><td>PackagedProductDefinition</td><td>Information about the packaging for the drug substance</td></tr> 
 </table>
 

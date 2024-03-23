@@ -5,20 +5,23 @@ This implementation guide defines a universal realm FHIR specification for the c
 **In-scope**
 - Products regulated as drugs (Small and large molecule medicinal products together with their functional and non-functional packing components; prescription, over the counter and hospital products)
 - Developmental and authorized medicinal products
-- Data exchange within a biopharmaceuticalcompany, between companies, or between companies and their industry stakeholders (e.g., contract labs, contract manufacturers) (See Background/Considerations for Implementation for further detail on this topic.)
+- Data exchange within a biopharmaceutical company, between companies, or between companies and their industry stakeholders (e.g., contract labs, contract manufacturers) (See Background/Considerations for Implementation for further detail on this topic.)
 
 
 **Out of scope**
 - Products regulated as devices
 - Veterinary drugs
 - Data exchange with National Competent Authorities / national regulatory authorities for medicinal product authorization and maintenance.
-- Instructions on how to transform from the default FHIR XML or JSON described in this IG to another format required by a national competent health authority (e.g., Word, PDF).
+- Instructions on how to transform from the default FHIR XML or JSON described in this IG to another format required by National Competent Authorities / national regulatory authorities (e.g., Word, PDF).
 
 **Note:**
 - Devices and veterinary drugs are only out of scope for version 1.0.0 of the implementation guide. New product lines will be brought in scope in future iterations.
-- This implementation guide is designed to serve as a standard for structuring and exchanging pharmaceutical quality content; i.e., a content exchange standard. This implementation guide is not a submission standard and is therefore not intended for submission to national competent authorities  National Competent Authorities / national regulatory authorities for medicinal product authorization. 
-- Biopharmaceutical sponsors are expected to reference and adhere to the relevant national regulatory guidance when preparing data for submission to national competent authorities National Competent Authorities / national regulatory authorities  responsible for medicinal product authorization. E.g., Health Canada’s [Filing submissions electronically](https://www.canada.ca/en/health-canada/services/drugs-health-products/drug-products/applications-submissions/guidance-documents/filing-submissions-electronically.html) webpage; US FDA’s [Electronic Regulatory Submission and Review](https://www.fda.gov/drugs/forms-submission-requirements/electronic-regulatory-submission-and-review) webpage
-(and the developing project for [PQ/CMC FHIR Submissions to FDA](https://confluence.hl7.org/display/BRR/Pharmaceutical+Quality+%28PQ%29+-+Regulatory+Use+Case)); or The EMA’s [eSubmission](https://esubmission.ema.europa.eu/) website.
+- This implementation guide is designed to serve as a standard for structuring and exchanging pharmaceutical quality content; i.e., a content exchange standard. This implementation guide is not a submission standard and is therefore not intended for submission to National Competent Authorities / national regulatory authorities for medicinal product authorization. 
+- Biopharmaceutical sponsors are expected to reference and adhere to the relevant national regulatory guidance when preparing data for submission to National Competent Authorities / national regulatory authorities responsible for medicinal product authorization. 
+E.g., Health Canada [Filing submissions electronically](https://www.canada.ca/en/health-canada/services/drugs-health-products/drug-products/applications-submissions/guidance-documents/filing-submissions-electronically.html) webpage;
+U.S. Food & Drug Administration (FDA) [Electronic Regulatory Submission and Review](https://www.fda.gov/drugs/forms-submission-requirements/electronic-regulatory-submission-and-review) webpage
+(and the developing project for [PQ/CMC FHIR Submissions to U.S. FDA](https://confluence.hl7.org/display/BRR/Pharmaceutical+Quality+%28PQ%29+-+Regulatory+Use+Case));
+or the European Medicines Agency (EMA) [eSubmission](https://esubmission.ema.europa.eu/) website.
 
 ### Technical Overview
 This implementation guide is based upon FHIR version 5.0.0 and is a Universal Realm Specification.
@@ -47,7 +50,7 @@ In an effort to adopt a more efficient operating model, the biopharmaceutical in
 - The third, which is about to begin, is the post-2023 era, it will be defined by structured data, in its most granular form, delivered via high-frequency application programming interfaces (APIs) and processed by artificial intelligence (AI) agents. Advanced automation, low effort, high volume, high frequency, and high throughput.
 
 
-***Figure: Advancement of the Submission and Decision-Making Ecosystems:*** The biopharmaceutical industry has undergone previous transformation from paper-based submission to electronic paper submission. The industry is at the beginning of the next iteration of transformation, as signified by a transition to FHIR API data submission. This will be followed by further advancement as AI algorithms become increasingly prevalent. As the industry progresses in its journey towards digital maturity, faster submission and review processes will be made possible.
+***Figure: Advancement of the Submission and Decision-Making Ecosystems:*** The biopharmaceutical industry has undergone a previous transformation from paper-based submission to electronic paper submission. The industry is at the beginning of the next iteration of transformation, as signified by a transition to FHIR API data submission. This will be followed by further advancement as AI algorithms become increasingly prevalent. As the industry progresses in its journey towards digital maturity, faster submission and review processes will be made possible.
 <table><tr><td><img src="pharm_industry_timeline.png" /></td></tr></table>
 
 Currently, the end-to-end timescale for the pharmaceutical regulatory workflow is measured in months and years. This new paradigm, facilitated by this implementation guide, will use FHIR APIs and other supporting technologies to reduce the potential time for data exchange from months to days, hours, minutes, and eventually sub-seconds.
@@ -76,7 +79,7 @@ The following figure depicts (1) a potential future data pipeline for implemente
 In summary, this potential future data pipeline could work as follows, 
 - Step I: FHIR data is sent to the sponsor’s partners to conduct a particular activity on their behalf (e.g., run a stability study). The sponsor’s partner returns FHIR Data to the sponsor from source systems (e.g., LIMS) into systems designed to manage regulatory information.
 - Step II: Regulatory systems collate the data into individual Resources and Profiles (See Domains Overview for further detail). This may include a mix of submittable and non-submittable content (e.g., transactional details). When preparing for a regulatory submission, the submittable content is extracted and bundled to prepare for further transformation.
-- Step III: The submittable content needs to be transformed from the default FHIR XML or FHIR JSON format to a submission ready format compliant with the relevant standards prescribed by each regulator (Refer to national regulatory guidance for those submission requirements). With the right software, the FHIR compliant XML or JSON can be transformed into any output format stipulated by any regulator. The transformer(s) should be designed to make the output comply with content and style requirements as needed.
+- Step III: The submittable content needs to be transformed from the default FHIR XML or FHIR JSON format to a submission ready format compliant with the relevant standards prescribed by each regulator (refer to national regulatory guidance for those submission requirements). With the right software, the FHIR compliant XML or JSON can be transformed into any output format stipulated by any regulator. The transformer(s) should be designed to make the output comply with content and style requirements as needed.
 - Step IV: The submission ready output undergoes validation, or any other required processing steps, to confirm compliance with a national regulator’s defined technical and business rules.
 - Step V: The validated submission ready output is delivered via the regulator’s accepted method of exchange (e.g., FHIR compliant API, Electronic Submission Gateway, physical mail).
 

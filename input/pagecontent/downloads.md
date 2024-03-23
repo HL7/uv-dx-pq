@@ -12,4 +12,4 @@ In addition there are format specific definitions files.
 
 * [XML](examples.xml.zip)
 * [JSON](examples.json.zip)
-* [TTl](examples.ttl.zip)
+* [TTL](examples.ttl.zip)

@@ -10,7 +10,7 @@ Details about impurity identification and characterization.
 #### Resources
 <table>
 <tr><td>MedicinalProductDefinition</td><td>The drug product (Stelbat tablets, 20mg)</td></tr>  
-<tr><td>SubstanceDefinition</td><td>The documented impurites</td></tr>
+<tr><td>SubstanceDefinition</td><td>The documented impurities</td></tr>
 <tr><td>Medication</td><td>Describes the batches of the product that underwent testing for impurities</td></tr>
 <tr><td>Observation</td><td>The results of testing for impurities in the batches</td></tr>
 <tr><td>Organization</td><td>The company/site that performed the testing, or manufactured the batch</td></tr>

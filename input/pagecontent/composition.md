@@ -10,7 +10,7 @@ Provide details about drug substance and drug product components, materials, and
  
 <tr><td>MedicinalProductDefinition</td><td>The drug product (Stelbat tablets, 20mg)</td></tr>  
 <tr><td>Ingredient</td><td>The active ingredient (stelbatalol) and other ingredients that make up the product</td></tr> 
-<tr><td>SubstanceDefinition</td><td>The documented impurites</td></tr>
+<tr><td>SubstanceDefinition</td><td>The documented impurities</td></tr>
 <tr><td>PackagedProductDefinition</td><td>Information about the packaging for the product</td></tr>
 
 </table>

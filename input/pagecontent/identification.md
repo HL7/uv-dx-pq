@@ -112,7 +112,7 @@ Details about the drug substance and drug product nomenclature; structure; physi
 </table>
 
 <table>
-<tr><td>SubstanceDefinition</td><td>The substance being characterised</td></tr> 
+<tr><td>SubstanceDefinition</td><td>The substance being characterized</td></tr> 
 <tr><td>Substance</td><td>Identifying information about an actual batch of substance (an instance)</td></tr> 
 <tr><td>PlanDefinition</td><td>Describes the tests for the characterization</td></tr> 
 <tr><td>ObservationDefinition</td><td>Each individual stability test and their acceptance criteria</td></tr> 

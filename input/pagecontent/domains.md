@@ -4,8 +4,8 @@ Rather than recreating the legacy table of contents format in FHIR, pharmaceutic
 
 Each domain has a page that describes its objective and provides a component diagram (where applicable), description of components, and examples.
 
-### Figure: Pharmaceutical Quality (PQ) FHIR IG Data Domains
-The 14 PQ domains and their supporting sub-domains, in which each domain is based on a major PQ concept, such as Stability or Container Closure System. The subdomains contain individual data elements (not pictured) which capture the desired level of granularity needed for effective data exchange and communication of data across multiple parties.
+### Figure: Pharmaceutical Quality FHIR IG Data Domains
+The 14 pharmaceutical Quality (PQ) domains and their supporting sub-domains, in which each domain is based on a major Quality concept, such as Stability or Container Closure System. The subdomains contain individual data elements (not pictured) which capture the desired level of granularity needed for effective data exchange and communication of data across multiple parties.
 <table><tr><td><img src="all-domains-dx-PQ.png" usemap="#hotspots"/></td></tr></table>
 
 ### Table: Mapping the legacy ICH CTD Drug Substance and Drug Product sections to the new FHIR Quality Domains
@@ -31,7 +31,7 @@ The 14 PQ domains and their supporting sub-domains, in which each domain is base
     <td class="tg-0lax">3.2.P.2 Pharmaceutical Development
         <br>&nbsp;&nbsp;&nbsp;3.2.P.2.2 Drug Product 
         <br>&nbsp;&nbsp;&nbsp;3.2.P.2.5 Microbiological Attributes
-    <br>3.2.P.4 Control of Excipients  
+    <br>3.2.P.4 Control of Excipients
         <br>&nbsp;&nbsp;&nbsp;3.2.P.4.5 Excipients of Human or Animal Origin 
         <br>&nbsp;&nbsp;&nbsp;3.2.P.4.6 Novel Excipients</td>
     <td class="tg-0lax">3.2.S.1 General Information
@@ -132,7 +132,7 @@ The 14 PQ domains and their supporting sub-domains, in which each domain is base
 </tbody>
 </table>
 
-### Matrix: Reuse of FHIR Component Building Blocks Across PQ Domains
+### Matrix: Reuse of FHIR Component Building Blocks Across Pharmaceutical Quality Domains
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -145,7 +145,7 @@ The 14 PQ domains and their supporting sub-domains, in which each domain is base
 <table class="tg">
 <thead>
   <tr>
-    <td class="tg-0lax">Pharmaceutical&nbsp;&nbsp;&nbsp;Quality (Industry) FHIR IG component profiles</td>
+    <td class="tg-0lax">Pharmaceutical Quality (Industry) FHIR IG component profiles</td>
     <td class="tg-0lax">1. Drug Identification </td>
     <td class="tg-0lax">2. Composition</td>
     <td class="tg-0lax">3. Impurities</td>
@@ -164,7 +164,7 @@ The 14 PQ domains and their supporting sub-domains, in which each domain is base
   </thead>
   <tbody>
   <tr>
-    <td class="tg-0lax">ActivityDefinition&nbsp;&nbsp;&nbsp;- Test Drug PQ</td>
+    <td class="tg-0lax">ActivityDefinition - Test</td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
@@ -181,7 +181,7 @@ The 14 PQ domains and their supporting sub-domains, in which each domain is base
     <td class="tg-0lax"></td>
   </tr>
   <tr>
-    <td class="tg-0lax">Composition&nbsp;&nbsp;&nbsp;- Drug PQ</td>
+    <td class="tg-0lax">Composition - Drug</td>
     <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
@@ -198,7 +198,7 @@ The 14 PQ domains and their supporting sub-domains, in which each domain is base
     <td class="tg-0lax"></td>
   </tr>
   <tr>
-    <td class="tg-0lax">DeviceDefinition&nbsp;&nbsp;&nbsp;- Drug PQ</td>
+    <td class="tg-0lax">DeviceDefinition - Drug</td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
@@ -215,7 +215,7 @@ The 14 PQ domains and their supporting sub-domains, in which each domain is base
     <td class="tg-0lax"></td>
   </tr>
   <tr>
-    <td class="tg-0lax">DiagnosticReport&nbsp;&nbsp;&nbsp;- Analysis Drug PQ</td>
+    <td class="tg-0lax">DiagnosticReport - Drug Analysis</td>
     <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
@@ -232,7 +232,7 @@ The 14 PQ domains and their supporting sub-domains, in which each domain is base
     <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
   </tr>
   <tr>
-    <td class="tg-0lax">DocumentReference&nbsp;&nbsp;&nbsp;- Drug PQ</td>
+    <td class="tg-0lax">DocumentReference - Drug</td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
@@ -249,7 +249,7 @@ The 14 PQ domains and their supporting sub-domains, in which each domain is base
     <td class="tg-0lax"></td>
   </tr>
   <tr>
-    <td class="tg-0lax">Ingredient&nbsp;&nbsp;&nbsp;- Drug PQ</td>
+    <td class="tg-0lax">Ingredient - Drug</td>
     <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
@@ -266,7 +266,7 @@ The 14 PQ domains and their supporting sub-domains, in which each domain is base
     <td class="tg-0lax"></td>
   </tr>
   <tr>
-    <td class="tg-0lax">ManufacturedItemDefinition&nbsp;&nbsp;&nbsp;- Drug PQ</td>
+    <td class="tg-0lax">ManufacturedItemDefinition - Drug</td>
     <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
@@ -283,7 +283,7 @@ The 14 PQ domains and their supporting sub-domains, in which each domain is base
     <td class="tg-0lax"></td>
   </tr>
   <tr>
-    <td class="tg-0lax">Medication&nbsp;&nbsp;&nbsp;- Batch Information Drug PQ</td>
+    <td class="tg-0lax">Medication - Batch Information</td>
     <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
@@ -300,7 +300,7 @@ The 14 PQ domains and their supporting sub-domains, in which each domain is base
     <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
   </tr>
   <tr>
-    <td class="tg-0lax">MedicinalProductDefinition&nbsp;&nbsp;&nbsp;- Drug Product PQ</td>
+    <td class="tg-0lax">MedicinalProductDefinition - Drug Product</td>
     <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
@@ -317,7 +317,7 @@ The 14 PQ domains and their supporting sub-domains, in which each domain is base
     <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
   </tr>
   <tr>
-    <td class="tg-0lax">Observation&nbsp;&nbsp;&nbsp;- Test Result Drug PQ</td>
+    <td class="tg-0lax">Observation - Test Result</td>
     <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
@@ -334,7 +334,7 @@ The 14 PQ domains and their supporting sub-domains, in which each domain is base
     <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
   </tr>
   <tr>
-    <td class="tg-0lax">ObservationDefinition&nbsp;&nbsp;&nbsp;- Test Method Drug PQ</td>
+    <td class="tg-0lax">ObservationDefinition - Test Method</td>
     <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
@@ -351,7 +351,7 @@ The 14 PQ domains and their supporting sub-domains, in which each domain is base
     <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
   </tr>
   <tr>
-    <td class="tg-0lax">Organization&nbsp;&nbsp;&nbsp;- Drug PQ</td>
+    <td class="tg-0lax">Organization - Drug</td>
     <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
@@ -368,7 +368,7 @@ The 14 PQ domains and their supporting sub-domains, in which each domain is base
     <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
   </tr>
   <tr>
-    <td class="tg-0lax">PackagedProductDefinition&nbsp;&nbsp;&nbsp;- Drug PQ</td>
+    <td class="tg-0lax">PackagedProductDefinition - Drug</td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
@@ -385,7 +385,7 @@ The 14 PQ domains and their supporting sub-domains, in which each domain is base
     <td class="tg-0lax"></td>
   </tr>
   <tr>
-    <td class="tg-0lax">PlanDefinition&nbsp;&nbsp;&nbsp;- Drug PQ</td>
+    <td class="tg-0lax">PlanDefinition - Drug</td>
     <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
@@ -402,7 +402,7 @@ The 14 PQ domains and their supporting sub-domains, in which each domain is base
     <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
   </tr>
   <tr>
-    <td class="tg-0lax">Procedure&nbsp;&nbsp;&nbsp;- Drug PQ</td>
+    <td class="tg-0lax">Procedure - Drug</td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
@@ -418,25 +418,8 @@ The 14 PQ domains and their supporting sub-domains, in which each domain is base
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
   </tr>
-  <tr>
-    <td class="tg-0lax">SpecimenDefinition&nbsp;&nbsp;&nbsp;- Drug PQ</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Specimen&nbsp;&nbsp;&nbsp;- Drug PQ</td>
+    <tr>
+    <td class="tg-0lax">Specimen - Drug</td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
@@ -453,37 +436,54 @@ The 14 PQ domains and their supporting sub-domains, in which each domain is base
     <td class="tg-0lax"></td>
   </tr>
   <tr>
-    <td class="tg-0lax">SubstanceDefinition&nbsp;&nbsp;&nbsp;- Component Substance Drug PQ</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">SpecimenDefinition - Drug</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
     <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
     <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+    <tr>
+    <td class="tg-0lax">Substance - Drug</td>
     <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
     <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
     <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
     <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax"></td>
     <td class="tg-0lax"></td>
   </tr>
   <tr>
-    <td class="tg-0lax">Substance&nbsp;&nbsp;&nbsp;- Drug PQ</td>
+    <td class="tg-0lax">SubstanceDefinition - Component Drug</td>
     <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
     <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
     <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
     <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
+    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
     <td class="tg-0lax"></td>
   </tr>
 </tbody>
@@ -510,6 +510,6 @@ The 14 PQ domains and their supporting sub-domains, in which each domain is base
 </map>
 
 ### Summary of Domain Resources
-The resources that are used across all domains are summarised in this diagram:
+The resources that are used across all domains are summarized in this diagram:
 <table><tr><td><img src="resources overview (complete).png" width="800"/></td></tr></table>
 
