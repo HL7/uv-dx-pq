@@ -6,7 +6,7 @@
     <name value="ObservationDefinitionTestMethodPq"/>
     <title value="ObservationDefinition - Test Method PQ"/>
     <status value="active"/>
-    <description value="TBD"/>
+    <description value="This ObservationDefinition profile represents information about pharmaceutical quality (PQ) tests and acceptance criteria."/>
     <fhirVersion value="5.0.0"/>
     <kind value="resource"/>
     <abstract value="false"/>
