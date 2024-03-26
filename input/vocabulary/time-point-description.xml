@@ -3,7 +3,7 @@
     <id value="time-point-description"/>
     <url value="http://terminology.hl7.org/CodeSystem/time-point-description"/>
     <name value="CsTimePointDescription"/>
-    <title value="Time Point Description"/>
+    <title value="Time Point Description Codes"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This code system contains codes for time point description."/>

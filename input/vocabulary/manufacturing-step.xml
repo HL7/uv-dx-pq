@@ -3,7 +3,7 @@
     <id value="manufacturing-step"/>
     <url value="http://terminology.hl7.org/CodeSystem/manufacturing-step"/>
     <name value="CsManufacturingStep"/>
-    <title value="Manufacturing Step"/>
+    <title value="Manufacturing Step Codes"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This code system contains codes for manufacturing step."/>

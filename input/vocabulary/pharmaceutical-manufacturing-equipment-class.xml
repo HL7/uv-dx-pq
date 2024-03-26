@@ -3,7 +3,7 @@
     <id value="pharmaceutical-manufacturing-equipment-class"/>
     <url value="http://terminology.hl7.org/CodeSystem/pharmaceutical-manufacturing-equipment-class"/>
     <name value="CsPharmMnfEquipmentClass"/>
-    <title value="Pharmaceutical Manufacturing Equipment Class"/>
+    <title value="Pharmaceutical Manufacturing Equipment Class Codes"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This code system contains codes for pharmaceutical manufacturing equipment class."/>

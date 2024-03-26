@@ -3,7 +3,7 @@
     <id value="package-property"/>
     <url value="http://terminology.hl7.org/CodeSystem/package-property"/>
     <name value="CsPackageProperty"/>
-    <title value="Package Property"/>
+    <title value="Package Property Codes"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This code system contains codes for package property."/>

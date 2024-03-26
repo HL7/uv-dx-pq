@@ -3,7 +3,7 @@
     <id value="drug-substance-or-product-color"/>
     <url value="http://terminology.hl7.org/CodeSystem/drug-substance-or-product-color"/>
     <name value="CsDrugSubstanceProductColor"/>
-    <title value="Drug Substance or Product Color"/>
+    <title value="Drug Substance or Product Color Codes"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This code system contains codes for color in drug substances or products."/>

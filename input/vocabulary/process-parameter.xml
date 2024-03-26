@@ -3,7 +3,7 @@
     <id value="process-parameter"/>
     <url value="http://terminology.hl7.org/CodeSystem/process-parameter"/>
     <name value="CsProcessParameter"/>
-    <title value="Process Parameter"/>
+    <title value="Process Parameter Codes"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This code system contains codes for process parameter."/>

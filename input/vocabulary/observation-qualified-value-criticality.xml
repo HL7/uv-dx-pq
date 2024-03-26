@@ -3,7 +3,7 @@
     <id value="observation-qualified-value-criticality"/>
     <url value="http://terminology.hl7.org/CodeSystem/observation-qualified-value-criticality"/>
     <name value="CsObsQualifiedValueCriticalityPQ"/>
-    <title value="Observation Qualified Value Criticality"/>
+    <title value="Observation Qualified Value Criticality Codes"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This code system contains codes for observation qualified value criticality."/>
