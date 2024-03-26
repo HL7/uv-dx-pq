@@ -8,7 +8,7 @@
     <url value="http://hl7.org/fhir/uv/pharm-quality/ActivityDefinition/activitydefinition-test-drug-pq-ex1"/>
     <title value="Example of ActivityDefinition - Test for test set: Long-term - 25°C/60% RH - XYZ."/>
     <status value="active"/>
-    <observationRequirement value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/longTerm25X"/>
-    <observationRequirement value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/longTerm25Y"/>
-    <observationRequirement value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/longTerm25Z"/>
+    <observationRequirement value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/longTerm25X"></observationRequirement>
+    <observationRequirement value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/longTerm25Y"></observationRequirement>
+    <observationRequirement value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/longTerm25Z"></observationRequirement>
 </ActivityDefinition>
