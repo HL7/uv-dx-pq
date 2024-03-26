@@ -131,7 +131,7 @@
                         <text value="Test"/>
                      </code>
                      <!--ObservationDefinition/ParticleSize-->
-                     <definitionCanonical value="ObservationDefinition/12e7e672-40a6-4136-3c1f-b8ba6a7d046e"/>
+                     <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4136-3c1f-b8ba6a7d046e"/>
                   </action>
                </action>
                <action>
