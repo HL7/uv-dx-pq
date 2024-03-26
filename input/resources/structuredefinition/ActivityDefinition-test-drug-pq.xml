@@ -24,8 +24,9 @@
     <element id="ActivityDefinition.observationRequirement">
       <path value="ActivityDefinition.observationRequirement"/>
       <type>
-        <code value="canonical"/>
+<!--        <code value="canonical"/>-->
         <targetProfile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
+<!--        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ObservationDefinition"/>-->
       </type>
       <mustSupport value="true"/>
     </element>
