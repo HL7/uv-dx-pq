@@ -3,7 +3,7 @@
     <id value="diagram-type"/>
     <url value="http://terminology.hl7.org/CodeSystem/diagram-type"/>
     <name value="CsDiagramType"/>
-    <title value="Diagram Type"/>
+    <title value="Diagram Type Codes"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This code system contains codes for diagram type."/>

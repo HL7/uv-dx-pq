@@ -3,7 +3,7 @@
     <id value="structure-characterization-technique"/>
     <url value="http://terminology.hl7.org/CodeSystem/structure-characterization-technique"/>
     <name value="CsStructureCharacterizationTechnique"/>
-    <title value="Structure Characterization Technique"/>
+    <title value="Structure Characterization Technique Codes"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This code system contains codes for structure characterization technique in pharmaceutical quality."/>

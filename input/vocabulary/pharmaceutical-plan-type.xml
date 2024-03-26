@@ -3,7 +3,7 @@
     <id value="pharmaceutical-plan-type"/>
     <url value="http://terminology.hl7.org/CodeSystem/pharmaceutical-plan-type"/>
     <name value="CsPharmPlanType"/>
-    <title value="Pharmaceutical Plan Type"/>
+    <title value="Pharmaceutical Plan Type Codes"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This code system contains codes for pharmaceutical plan type."/>

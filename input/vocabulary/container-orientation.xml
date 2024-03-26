@@ -3,7 +3,7 @@
     <id value="container-orientation"/>
     <url value="http://terminology.hl7.org/CodeSystem/container-orientation"/>
     <name value="CsContainerOrientation"/>
-    <title value="Container Orientation"/>
+    <title value="Container Orientation Codes"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This code system contains codes for container orientation."/>

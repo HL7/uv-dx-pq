@@ -3,7 +3,7 @@
     <id value="package-grade"/>
     <url value="http://terminology.hl7.org/CodeSystem/package-grade"/>
     <name value="CsPackageGrade"/>
-    <title value="Package Grade"/>
+    <title value="Package Grade Codes"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This code system contains codes for package grade."/>

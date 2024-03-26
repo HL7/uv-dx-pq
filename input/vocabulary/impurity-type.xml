@@ -3,7 +3,7 @@
     <id value="impurity-type"/>
     <url value="http://terminology.hl7.org/CodeSystem/impurity-type"/>
     <name value="CsImpurityType"/>
-    <title value="Impurity Type"/>
+    <title value="Impurity Type Codes"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This code system contains codes for impurity type."/>

@@ -3,7 +3,7 @@
     <id value="impurity-origin"/>
     <url value="http://terminology.hl7.org/CodeSystem/impurity-origin"/>
     <name value="CsImpurityOrigin"/>
-    <title value="Impurity Origin"/>
+    <title value="Impurity Origin Codes"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This code system contains codes for impurity origin."/>

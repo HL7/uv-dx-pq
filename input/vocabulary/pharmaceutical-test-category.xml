@@ -3,7 +3,7 @@
     <id value="pharmaceutical-test-category"/>
     <url value="http://terminology.hl7.org/CodeSystem/pharmaceutical-test-category"/>
     <name value="CsPharmTestCategory"/>
-    <title value="Pharmaceutical Test Category"/>
+    <title value="Pharmaceutical Test Category Codes"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This code system contains codes for pharmaceutical test category."/>

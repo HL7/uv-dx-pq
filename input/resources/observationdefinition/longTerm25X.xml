@@ -6,7 +6,8 @@
         <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
     </meta>
     <url value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/longTerm25X"/>
-    <title value="X"/>
+<!--    <title value="X"/>-->
+    <title value="longTerm25X"/>
     <status value="active"/>
     <code>
         <text value="Battery of tests 'X' at 25°C/60% RH"/>
