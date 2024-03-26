@@ -43,10 +43,6 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Observation.id">
-            <path value="Observation.id"/>
-            <mustSupport value="true"/>
-        </element>
         <element id="Observation.status">
             <path value="Observation.status"/>
             <mustSupport value="true"/>
