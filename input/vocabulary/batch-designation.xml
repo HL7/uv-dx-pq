@@ -3,7 +3,7 @@
     <id value="batch-designation"/>
     <url value="http://terminology.hl7.org/CodeSystem/batch-designation"/>
     <name value="CsBatchDesignationPQ"/>
-    <title value="Batch Designation"/>
+    <title value="Batch Designation Codes"/>
     <status value="active"/>
     <experimental value="false"/>
     <description value="This code system contains codes for batch designation in pharmaceutical quality."/>
