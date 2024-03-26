@@ -5,16 +5,16 @@
     <meta>
         <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
     </meta>
-                <url value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/longTerm30Y"/>
-        <title value="Y"/>
-        <status value="active"/>
-        <code>
-            <text value="Battery of tests 'Y' at 30°C/65% RH"/>
-        </code>
-        <specimen>
-            <reference value="SpecimenDefinition/specimenDefStoredAt30"/>
-        </specimen>
-        <hasMember>
-            <reference value="ObservationDefinition/Identification"/>
-        </hasMember>
+    <url value="http://example-server.com/fhir/ObservationDefinition/longTerm30Y"/>
+    <title value="Y"/>
+    <status value="active"/>
+    <code>
+        <text value="Battery of tests 'Y' at 30°C/65% RH"/>
+    </code>
+    <specimen>
+        <reference value="SpecimenDefinition/specimenDefStoredAt30"/>
+    </specimen>
+    <hasMember>
+        <reference value="ObservationDefinition/Identification"/>
+    </hasMember>
 </ObservationDefinition>

@@ -5,25 +5,25 @@
     <meta>
         <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
     </meta>
-                <url value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/longTerm30X"/>
-        <title value="X"/>
-        <status value="active"/>
-        <code>
-            <text value="Battery of tests 'X' at 30°C/65% RH"/>
-        </code>
-        <specimen>
-            <reference value="SpecimenDefinition/specimenDefStoredAt30"/>
-        </specimen>
-        <hasMember>
-            <reference value="ObservationDefinition/Description"/>
-<!--            <reference value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Description"/>-->
-        </hasMember>
-        <hasMember>
-            <reference value="ObservationDefinition/Assay"/>
-<!--            <reference value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Assay"/>-->
-        </hasMember>
-        <hasMember>
-            <reference value="ObservationDefinition/Impurities"/>
-<!--            <reference value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Impurities"/>-->
-        </hasMember>
+    <url value="http://example-server.com/fhir/ObservationDefinition/longTerm30X"/>
+    <title value="X"/>
+    <status value="active"/>
+    <code>
+        <text value="Battery of tests 'X' at 30°C/65% RH"/>
+    </code>
+    <specimen>
+        <reference value="SpecimenDefinition/specimenDefStoredAt30"/>
+    </specimen>
+    <hasMember>
+        <reference value="ObservationDefinition/Description"/>
+        <!--            <reference value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Description"/>-->
+    </hasMember>
+    <hasMember>
+        <reference value="ObservationDefinition/Assay"/>
+        <!--            <reference value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Assay"/>-->
+    </hasMember>
+    <hasMember>
+        <reference value="ObservationDefinition/Impurities"/>
+        <!--            <reference value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/Impurities"/>-->
+    </hasMember>
 </ObservationDefinition>

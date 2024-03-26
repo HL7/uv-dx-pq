@@ -5,7 +5,7 @@
     <meta>
         <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
     </meta>
-    <url value="http://hl7.org/fhir/uv/pharm-quality/ObservationDefinition/longTerm25Z"/>
+    <url value="http://example-server.com/fhir/ObservationDefinition/longTerm25Z"/>
     <title value="Z"/>
     <status value="active"/>
     <code>
