@@ -135,7 +135,7 @@
     </element>
     
 <!--    NEW entry for binary image-->
-<!--    <element id="Bundle.entry:Image">
+    <element id="Bundle.entry:Image">
       <path value="Bundle.entry"/>
       <sliceName value="Image"/>
       <min value="0"/>
@@ -144,9 +144,9 @@
       <path value="Bundle.entry.resource"/>
       <type>
         <code value="Resource"/>
-        <profile value="http://hl7.org/fhir/binary.html"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Binary"/>
       </type>
       <mustSupport value="true"/>
-    </element>-->
+    </element>
   </differential>
 </StructureDefinition>
