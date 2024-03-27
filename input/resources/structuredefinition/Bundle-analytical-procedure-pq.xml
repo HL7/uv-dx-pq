@@ -133,5 +133,20 @@
           value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DeviceDefinition-drug-pq"/>
       </type>
     </element>
+    
+<!--    NEW entry for binary image-->
+    <element id="Bundle.entry:Image">
+      <path value="Bundle.entry"/>
+      <sliceName value="Image"/>
+      <min value="0"/>
+    </element>
+    <element id="Bundle.entry:Image.resource">
+      <path value="Bundle.entry.resource"/>
+      <type>
+        <code value="Resource"/>
+        <profile value="http://hl7.org/fhir/binary.html"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
   </differential>
 </StructureDefinition>
