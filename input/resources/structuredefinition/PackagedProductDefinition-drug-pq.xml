@@ -93,7 +93,6 @@
       </binding>
     </element>
     
-    
 <!--    SLICING PATTERN based on IPS Lab Observation-->
     <element id="PackagedProductDefinition.packaging.property.value[x]">
       <path value="PackagedProductDefinition.packaging.property.value[x]"/>
@@ -130,7 +129,6 @@
     </element>
     <!--    END-->
     
-
     <element id="PackagedProductDefinition.packaging.containedItem">
       <path value="PackagedProductDefinition.packaging.containedItem"/>
       <mustSupport value="true"/>
@@ -146,7 +144,7 @@
 <!--      <definition value="Allows containers (and parts of containers) within containers, still as a part of a single packaged product. See also PackagedProductDefinition.packaging.containedItem.item(PackagedProductDefinition)."/>-->
 <!--      <min value="0"/>
       <max value="*"/>-->
-      <!--<contentReference value="#PackagedProductDefinition.packaging"/>-->
+      <contentReference value="#PackagedProductDefinition.packaging"/>
       <mustSupport value="true"/>
 <!--      <isModifier value="false"/>
       <isSummary value="true"/>-->
@@ -157,21 +155,17 @@
     </element>
     
     <!--ADDED-->
-    <element id="PackagedProductDefinition.packaging.packaging.property">
+<!--    <element id="PackagedProductDefinition.packaging.packaging.property">
       <path value="PackagedProductDefinition.packaging.packaging.property"/>
-<!--      <slicing>
+<!-\-      <slicing>
         <discriminator>
           <type value="type"/>
           <path value="resource"/>
         </discriminator>
         <rules value="open"/>
-      </slicing>-->
+      </slicing>-\->
       <mustSupport value="true"/>
-    </element>
-    
-    
-
-    
+    </element>-->
     
   </differential>
 </StructureDefinition>
