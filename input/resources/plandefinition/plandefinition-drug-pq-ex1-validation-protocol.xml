@@ -42,15 +42,15 @@
                         <code><text value="FormulationBufferPreparationProcessParameterStep"/></code>
                   <action>
                             <code><text value="Conclusion"/></code>
-                     <definitionCanonical value="ObservationDefinition/conclusion"/>
+                      <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/conclusion"/>
                   </action>
                   <action>
                             <code><text value="Test"/></code>
-                     <definitionCanonical value="ObservationDefinition/bufferVesselMixingSpeed"/>
+                      <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/bufferVesselMixingSpeed"/>
                   </action>
                   <action>
                             <code><text value="Test"/></code>
-                     <definitionCanonical value="ObservationDefinition/bufferVesselMixingTime"/>
+                      <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/bufferVesselMixingTime"/>
                   </action>
                </action>
             </action>
@@ -70,23 +70,23 @@
                         <code><text value="???"/></code>
                         <action>
                             <code><text value="Test"/></code>
-                            <definitionCanonical value="ObservationDefinition/FBPPIpH"/>
+                            <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/FBPPIpH"/>
                         </action>
                         <action>
                             <code><text value="Test"/></code>
-                            <definitionCanonical value="ObservationDefinition/Osmolality"/>
+                            <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/Osmolality"/>
                         </action>
                         <action>
                             <code><text value="Test"/></code>
-                            <definitionCanonical value="ObservationDefinition/Conductivity"/>
+                            <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/Conductivity"/>
                         </action>
                         <action>
                             <code><text value="Test"/></code>
-                            <definitionCanonical value="ObservationDefinition/Bioburden"/>
+                            <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/Bioburden"/>
                         </action>
                         <action>
                             <code><text value="Test"/></code>
-                            <definitionCanonical value="ObservationDefinition/BacterialEndotoxins"/>
+                            <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/BacterialEndotoxins"/>
                         </action>
                     </action>
                 </action>
@@ -106,19 +106,19 @@
                         <code><text value="???"/></code>
                         <action>
                             <code><text value="Test"/></code>
-                            <definitionCanonical value="ObservationDefinition/ThawingTemp"/>
+                            <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/ThawingTemp"/>
                         </action>
                         <action>
                             <code><text value="Test"/></code>
-                            <definitionCanonical value="ObservationDefinition/ThawingTime"/>
+                            <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/ThawingTime"/>
                         </action>
                         <action>
                             <code><text value="Test"/></code>
-                            <definitionCanonical value="ObservationDefinition/formulationVesselMixingSpeed"/>
+                            <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/formulationVesselMixingSpeed"/>
                         </action>
                         <action>
                             <code><text value="Test"/></code>
-                            <definitionCanonical value="ObservationDefinition/formulationVesselMixingTime"/>
+                            <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/formulationVesselMixingTime"/>
                         </action>
                     </action>
                 </action>
@@ -139,23 +139,23 @@
                         <code><text value="???"/></code>
                         <action>
                             <code><text value="Test"/></code>
-                            <definitionCanonical value="ObservationDefinition/ThawingFBPPIpH"/>
+                            <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/ThawingFBPPIpH"/>
                         </action>
                         <action>
                             <code><text value="Test"/></code>
-                            <definitionCanonical value="ObservationDefinition/ThawingOsmolality"/>
+                            <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/ThawingOsmolality"/>
                         </action>
                         <action>
                             <code><text value="Test"/></code>
-                            <definitionCanonical value="ObservationDefinition/ThawingConductivity"/>
+                            <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/ThawingConductivity"/>
                         </action>
                         <action>
                             <code><text value="Test"/></code>
-                            <definitionCanonical value="ObservationDefinition/ThawingBacterialEndotoxins"/>
+                            <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/ThawingBacterialEndotoxins"/>
                         </action>
                         <action>
                             <code><text value="Test"/></code>
-                            <definitionCanonical value="ObservationDefinition/Polysorbate"/>
+                            <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/Polysorbate"/>
                         </action>
                     </action>
                 </action>
@@ -173,7 +173,7 @@
                     </code>
                     <action>
                         <code><text value="Test"/></code>
-                        <definitionCanonical value="ObservationDefinition/FiltrationPressure"/>
+                        <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/FiltrationPressure"/>
                     </action>
                 </action>
                 
@@ -190,11 +190,11 @@
                </code>
                <action>
                         <code><text value="Test"/></code>
-                        <definitionCanonical value="ObservationDefinition/PreFiltrationBioburden"/>
+                   <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/PreFiltrationBioburden"/>
                     </action>
                     <action>
                         <code><text value="Test"/></code>
-                        <definitionCanonical value="ObservationDefinition/PostFiltrationFilterIntegrity"/>
+                        <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/PostFiltrationFilterIntegrity"/>
                     </action>
                 </action>
                 
@@ -211,7 +211,7 @@
                     </code>
                     <action>
                         <code><text value="Test"/></code>
-                        <definitionCanonical value="ObservationDefinition/MediaHoldTime"/>
+                        <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/MediaHoldTime"/>
                     </action>
                 </action>
                 
@@ -228,11 +228,11 @@
                     </code>
                     <action>
                         <code><text value="Test"/></code>
-                        <definitionCanonical value="ObservationDefinition/MediaBioburden"/>
+                        <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/MediaBioburden"/>
                     </action>
                     <action>
                         <code><text value="Test"/></code>
-                        <definitionCanonical value="ObservationDefinition/GrowthPromotion"/>
+                        <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/GrowthPromotion"/>
                     </action>
                 </action>
                 <action>
@@ -248,15 +248,15 @@
                     </code>
                     <action>
                         <code><text value="Test"/></code>
-                        <definitionCanonical value="ObservationDefinition/SE-UHPLCMainPeak"/>
+                        <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/SE-UHPLCMainPeak"/>
                     </action>
                     <action>
                         <code><text value="Test"/></code>
-                        <definitionCanonical value="ObservationDefinition/SE-UHPLCMainPeakGraph"/>
+                        <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/SE-UHPLCMainPeakGraph"/>
                     </action>
                     <action>
                         <code><text value="Test"/></code>
-                        <definitionCanonical value="ObservationDefinition/SE-UHPLCHMW"/>
+                        <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/SE-UHPLCHMW"/>
                     </action>
                 </action>
 
@@ -273,7 +273,7 @@
             		</code>
             		<action>
             			<code><text value="Test"/></code>
-            			<definitionCanonical value="ObservationDefinition/FillWeight"/>
+            		    <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/FillWeight"/>
             		</action>
             	</action>
             	
@@ -291,7 +291,7 @@
             		</code>
             		<action>
             			<code><text value="Conclusion"/></code>
-            			<definitionCanonical value="ObservationDefinition/conclusionHomogeneity"/>
+            		    <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/conclusionHomogeneity"/>
             		</action>
             		
             	</action>
@@ -309,11 +309,11 @@
             		</code>
             		<action>
             			<code><text value="Test"/></code>
-            			<definitionCanonical value="ObservationDefinition/ProteinConcentration"/>
+            		    <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/ProteinConcentration"/>
             		</action>
             		<action>
             			<code><text value="Test"/></code>
-            			<definitionCanonical value="ObservationDefinition/Polysorbate80Concentration"/>
+            		    <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/Polysorbate80Concentration"/>
             		</action>
             	</action>
             	
@@ -330,11 +330,11 @@
             		</code>
             		<action>
             			<code><text value="Test"/></code>
-            			<definitionCanonical value="ObservationDefinition/ProteinConcentrationStats"/>
+            		    <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/ProteinConcentrationStats"/>
             		</action>
             		<action>
             			<code><text value="Test"/></code>
-            			<definitionCanonical value="ObservationDefinition/Polysorbate80Concentration"/>
+            		    <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/Polysorbate80Concentration"/>
             		</action>
             	</action>
             	
@@ -351,11 +351,11 @@
             		</code>
             		<action>
             			<code><text value="Test"/></code>
-            			<definitionCanonical value="ObservationDefinition/ResidualMoisture"/>
+            		    <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/ResidualMoisture"/>
             		</action>
             		<action>
             			<code><text value="Definition"/></code>
-            			<definitionCanonical value="ActivityDefinition/LyophilizationAct"/>
+            		    <definitionCanonical value="http://example-server.com/fhir/ActivityDefinition/LyophilizationAct"/>
             		</action>
             	</action>
 
@@ -372,12 +372,12 @@
             		</code>
             		<action>
             			<code><text value="Test"/></code>
-            			<definitionCanonical value="ObservationDefinition/SE-UHPLCMainPeakLyoph"/>
+            		    <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/SE-UHPLCMainPeakLyoph"/>
             			
             		</action>
             		<action>
             			<code><text value="Test"/></code>
-            			<definitionCanonical value="ObservationDefinition/SE-UHPLCHMWLyoph"/>
+            		    <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/SE-UHPLCHMWLyoph"/>
             			
             		</action>
             	</action>

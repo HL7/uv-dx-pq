@@ -41,63 +41,63 @@
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/TestDate-->
-                  <definitionCanonical value="ObservationDefinition/13033a89-927a-10e0-503e-5f901bdca31f"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/13033a89-927a-10e0-503e-5f901bdca31f"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/Appearance-->
-                  <definitionCanonical value="ObservationDefinition/13033a89-927a-10e0-503e-5f901bdca30f"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/13033a89-927a-10e0-503e-5f901bdca30f"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/Identification-->
-                  <definitionCanonical value="ObservationDefinition/8395ae1d-5064-0ab7-a297-6b20285b2230"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/8395ae1d-5064-0ab7-a297-6b20285b2230"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/IdentificationNMR-->
-                  <definitionCanonical value="ObservationDefinition/8395ae1d-5064-0ab7-a297-6b20285b2231"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/8395ae1d-5064-0ab7-a297-6b20285b2231"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/Impurities-->
-                  <definitionCanonical value="ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/Water-->
-                  <definitionCanonical value="ObservationDefinition/17b322fe-53ea-6c1f-521b-3b148ac05eb4"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/17b322fe-53ea-6c1f-521b-3b148ac05eb4"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/Solvents-->
-                  <definitionCanonical value="ObservationDefinition/2daba8ca-211f-4f4b-4028-16c30fe22ee8"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/2daba8ca-211f-4f4b-4028-16c30fe22ee8"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/Elemental-->
-                  <definitionCanonical value="ObservationDefinition/0634020c-8729-99fc-7637-89799d7c445b"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/0634020c-8729-99fc-7637-89799d7c445b"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/AssignedPurity-->
-                  <definitionCanonical value="ObservationDefinition/0634020c-8729-99fc-7637-897a9d7c445b"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/0634020c-8729-99fc-7637-897a9d7c445b"/>
                </action>
             </action>
          </PlanDefinition>

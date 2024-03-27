@@ -49,28 +49,28 @@
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/ElementalAnalysisCarbon-->
-                  <definitionCanonical value="ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/ElementalAnalysisHydrogen-->
-                  <definitionCanonical value="ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e73"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e73"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/ElementalAnalysisNitrogen-->
-                  <definitionCanonical value="ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e74"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e74"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/ElementalAnalysisFlourine-->
-                  <definitionCanonical value="ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e75"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e75"/>
                </action>
             </action>
             <action>
@@ -89,28 +89,28 @@
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/IonAnalysisCarbon-->
-                  <definitionCanonical value="ObservationDefinition/fd17b5d6-9fe1-91c3-2d06-47cb5b295e72"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c3-2d06-47cb5b295e72"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/IonAnalysisHydrogen-->
-                  <definitionCanonical value="ObservationDefinition/fd17b5d6-9fe1-91c4-2d06-47cb5b295e72"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c4-2d06-47cb5b295e72"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/IonAnalysisNitrogen-->
-                  <definitionCanonical value="ObservationDefinition/fd18b5d6-9fe1-91c4-2d06-47cb5b295e72"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/fd18b5d6-9fe1-91c4-2d06-47cb5b295e72"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/IonAnalysisFlourine-->
-                  <definitionCanonical value="ObservationDefinition/fd17b5d6-9fe1-91c5-2d06-47cb5b295e72"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c5-2d06-47cb5b295e72"/>
                </action>
             </action>
             <action>
@@ -129,7 +129,7 @@
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/Structure-->
-                  <definitionCanonical value="ObservationDefinition/fd17b5d6-9ff1-91c5-2d06-47cb5b295e72"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9ff1-91c5-2d06-47cb5b295e72"/>
                </action>
             </action>
             <action>
@@ -148,7 +148,7 @@
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/NMR-->
-                  <definitionCanonical value="ObservationDefinition/fd17b5d6-9fe2-91c2-2d06-47cb5b295e72"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe2-91c2-2d06-47cb5b295e72"/>
                </action>
             </action>
             <action>
@@ -167,7 +167,7 @@
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/MolecularStructure-->
-                  <definitionCanonical value="ObservationDefinition/fd17b5d6-9ff1-91c5-2d06-47cb5b295e74"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9ff1-91c5-2d06-47cb5b295e74"/>
                </action>
             </action>
             <action>
@@ -186,7 +186,7 @@
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/Diffractogram-->
-                  <definitionCanonical value="ObservationDefinition/fd17b5d6-9ff1-91c5-2d06-47cb5b295e73"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9ff1-91c5-2d06-47cb5b295e73"/>
                </action>
             </action>
             <action>
@@ -205,7 +205,7 @@
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/Absorption-->
-                  <definitionCanonical value="ObservationDefinition/fd17b5d6-9ff1-91c5-2d06-47cb5b295e75"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9ff1-91c5-2d06-47cb5b295e75"/>
                </action>
             </action>
          </PlanDefinition>

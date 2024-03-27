@@ -128,7 +128,7 @@
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/Step1Yield-->
-                  <definitionCanonical value="ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72"/>
                </action>
             </action>
             <action>
@@ -145,14 +145,14 @@
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/ResidualWaterContent-->
-                  <definitionCanonical value="ObservationDefinition/fc27b5d6-9fe1-91c2-2d16-57cb5b295e72"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/fc27b5d6-9fe1-91c2-2d16-57cb5b295e72"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/ResidualStartingMaterial1byHPLC-->
-                  <definitionCanonical value="ObservationDefinition/fc27b5d6-9ff1-91c2-2d16-57cb5b295e72"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/fc27b5d6-9ff1-91c2-2d16-57cb5b295e72"/>
                </action>
             </action>
             <action>
@@ -169,21 +169,21 @@
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/AppearanceSubstance-->
-                  <definitionCanonical value="ObservationDefinition/fc07b5d5-9fe1-92c2-2d06-57cb5b295e72"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/fc07b5d5-9fe1-92c2-2d06-57cb5b295e72"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/IdentificationSubstance-->
-                  <definitionCanonical value="ObservationDefinition/3b1e878e-4bc9-8864-862f-e28b21233e8d"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/3b1e878e-4bc9-8864-862f-e28b21233e8d"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/AssaySubstance-->
-                  <definitionCanonical value="ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
                </action>
             </action>
             <action>
@@ -264,7 +264,7 @@
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/Step2Yield-->
-                  <definitionCanonical value="ObservationDefinition/fd17b5d7-9fe1-91c2-2d06-47cb5b295e72"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d7-9fe1-91c2-2d06-47cb5b295e72"/>
                </action>
             </action>
          </PlanDefinition>

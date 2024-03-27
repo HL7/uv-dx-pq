@@ -57,21 +57,21 @@
                         <text value="Conclusion"/>
                      </code>
                      <!--ObservationDefinition/conclusion-->
-                     <definitionCanonical value="ObservationDefinition/22515a3c-5034-448a-9c19-938ce1958424"/>
+                     <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/22515a3c-5034-448a-9c19-938ce1958424"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
                      <!--ObservationDefinition/bufferVesselMixingSpeed-->
-                     <definitionCanonical value="ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72"/>
+                     <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
                      <!--ObservationDefinition/bufferVesselMixingTime-->
-                     <definitionCanonical value="ObservationDefinition/fc17b5d5-9fe1-91c2-2d06-47cb5b295e73"/>
+                     <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/fc17b5d5-9fe1-91c2-2d06-47cb5b295e73"/>
                   </action>
                </action>
             </action>
@@ -95,35 +95,35 @@
                         <text value="Test"/>
                      </code>
                      <!--ObservationDefinition/FBPPIpH-->
-                     <definitionCanonical value="ObservationDefinition/fc17b5d6-9fe1-91c2-2d16-47cb5b295e72"/>
+                     <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/fc17b5d6-9fe1-91c2-2d16-47cb5b295e72"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
                      <!--ObservationDefinition/Osmolality-->
-                     <definitionCanonical value="ObservationDefinition/64525a3c-5034-448a-9c19-938ce1958424"/>
+                     <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/64525a3c-5034-448a-9c19-938ce1958424"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
                      <!--ObservationDefinition/Conductivity-->
-                     <definitionCanonical value="ObservationDefinition/64515a3c-5134-448a-9c19-939ce1958424"/>
+                     <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/64515a3c-5134-448a-9c19-939ce1958424"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
                      <!--ObservationDefinition/Bioburden-->
-                     <definitionCanonical value="ObservationDefinition/64515b3c-5134-448a-9c19-939ce1958424"/>
+                     <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/64515b3c-5134-448a-9c19-939ce1958424"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
                      <!--ObservationDefinition/BacterialEndotoxins-->
-                     <definitionCanonical value="ObservationDefinition/64515b3c-5134-448a-9c19-949ce1958424"/>
+                     <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/64515b3c-5134-448a-9c19-949ce1958424"/>
                   </action>
                </action>
             </action>
@@ -147,28 +147,28 @@
                         <text value="Test"/>
                      </code>
                      <!--ObservationDefinition/ThawingTemp-->
-                     <definitionCanonical value="ObservationDefinition/74515a3c-5034-448a-9c19-938ce1958424"/>
+                     <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/74515a3c-5034-448a-9c19-938ce1958424"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
                      <!--ObservationDefinition/ThawingTime-->
-                     <definitionCanonical value="ObservationDefinition/fc27b5d6-9fe2-91c2-2d16-47cb5b295e72"/>
+                     <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/fc27b5d6-9fe2-91c2-2d16-47cb5b295e72"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
                      <!--ObservationDefinition/formulationVesselMixingSpeed-->
-                     <definitionCanonical value="ObservationDefinition/fc17b5d5-9fe1-91c2-2d06-47cb5b295e72"/>
+                     <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/fc17b5d5-9fe1-91c2-2d06-47cb5b295e72"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
                      <!--ObservationDefinition/formulationVesselMixingTime-->
-                     <definitionCanonical value="ObservationDefinition/fc27b5d5-9fe1-92c2-2d06-47cb5b295e73"/>
+                     <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/fc27b5d5-9fe1-92c2-2d06-47cb5b295e73"/>
                   </action>
                </action>
             </action>
@@ -192,35 +192,35 @@
                         <text value="Test"/>
                      </code>
                      <!--ObservationDefinition/ThawingFBPPIpH-->
-                     <definitionCanonical value="ObservationDefinition/fc27b5d6-9fe1-91c2-2d16-47cb5b295e72"/>
+                     <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/fc27b5d6-9fe1-91c2-2d16-47cb5b295e72"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
                      <!--ObservationDefinition/ThawingOsmolality-->
-                     <definitionCanonical value="ObservationDefinition/64515a3c-5034-448a-9c19-938ce1958424"/>
+                     <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/64515a3c-5034-448a-9c19-938ce1958424"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
                      <!--ObservationDefinition/ThawingConductivity-->
-                     <definitionCanonical value="ObservationDefinition/74515a3c-5134-448a-9c19-939ce1958424"/>
+                     <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/74515a3c-5134-448a-9c19-939ce1958424"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
                      <!--ObservationDefinition/ThawingBacterialEndotoxins-->
-                     <definitionCanonical value="ObservationDefinition/64515b4c-5134-448a-9c19-949ce1958424"/>
+                     <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/64515b4c-5134-448a-9c19-949ce1958424"/>
                   </action>
                   <action>
                      <code>
                         <text value="Test"/>
                      </code>
                      <!--ObservationDefinition/Polysorbate-->
-                     <definitionCanonical value="ObservationDefinition/64515b3c-5134-448a-9c19-949ce1958434"/>
+                     <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/64515b3c-5134-448a-9c19-949ce1958434"/>
                   </action>
                </action>
             </action>
@@ -238,7 +238,7 @@
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/FiltrationPressure-->
-                  <definitionCanonical value="ObservationDefinition/74515b3c-5134-448a-9c19-949ce1958434"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/74515b3c-5134-448a-9c19-949ce1958434"/>
                </action>
             </action>
             <action>
@@ -255,14 +255,14 @@
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/PreFiltrationBioburden-->
-                  <definitionCanonical value="ObservationDefinition/64515b3c-5134-448a-9c19-939ce1958434"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/64515b3c-5134-448a-9c19-939ce1958434"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/PostFiltrationFilterIntegrity-->
-                  <definitionCanonical value="ObservationDefinition/75515b3c-5134-448a-9c19-949ce1958434"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/75515b3c-5134-448a-9c19-949ce1958434"/>
                </action>
             </action>
             <action>
@@ -279,7 +279,7 @@
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/MediaHoldTime-->
-                  <definitionCanonical value="ObservationDefinition/75515c3c-5134-448a-9c19-949ce1958434"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/75515c3c-5134-448a-9c19-949ce1958434"/>
                </action>
             </action>
             <action>
@@ -296,14 +296,14 @@
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/MediaBioburden-->
-                  <definitionCanonical value="ObservationDefinition/64515b3c-5134-448a-9c19-939ce1958524"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/64515b3c-5134-448a-9c19-939ce1958524"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/GrowthPromotion-->
-                  <definitionCanonical value="ObservationDefinition/64515b3c-5134-448a-9d19-939ce1958524"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/64515b3c-5134-448a-9d19-939ce1958524"/>
                </action>
             </action>
             <action>
@@ -320,21 +320,21 @@
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/SE-UHPLCMainPeak-->
-                  <definitionCanonical value="ObservationDefinition/64525a3d-5034-448a-9c19-938ce1958424"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/64525a3d-5034-448a-9c19-938ce1958424"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/SE-UHPLCMainPeakGraph-->
-                  <definitionCanonical value="ObservationDefinition/64525a4d-5034-448a-9c19-938ce1958424"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/64525a4d-5034-448a-9c19-938ce1958424"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/SE-UHPLCHMW-->
-                  <definitionCanonical value="ObservationDefinition/64525a33-5034-448a-9c19-938ce1958424"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/64525a33-5034-448a-9c19-938ce1958424"/>
                </action>
             </action>
             <action>
@@ -351,7 +351,7 @@
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/FillWeight-->
-                  <definitionCanonical value="ObservationDefinition/64515b3c-5134-448a-9c19-939ce2958524"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/64515b3c-5134-448a-9c19-939ce2958524"/>
                </action>
             </action>
             <action>
@@ -369,7 +369,7 @@
                      <text value="Conclusion"/>
                   </code>
                   <!--ObservationDefinition/conclusionHomogeneity-->
-                  <definitionCanonical value="ObservationDefinition/22525a3c-5035-448a-9c19-938ce1958424"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/22525a3c-5035-448a-9c19-938ce1958424"/>
                </action>
                <!-- no tests just a conclusion -->
             </action>
@@ -387,14 +387,14 @@
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/ProteinConcentration-->
-                  <definitionCanonical value="ObservationDefinition/74515b3c-5134-448a-9c19-939ce1958524"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/74515b3c-5134-448a-9c19-939ce1958524"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/Polysorbate80Concentration-->
-                  <definitionCanonical value="ObservationDefinition/74515b3c-5234-448a-9c19-939ce1958524"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/74515b3c-5234-448a-9c19-939ce1958524"/>
                </action>
             </action>
             <action>
@@ -411,14 +411,14 @@
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/ProteinConcentrationStats-->
-                  <definitionCanonical value="ObservationDefinition/74515b3c-5134-448a-9c19-939ce1958534"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/74515b3c-5134-448a-9c19-939ce1958534"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/Polysorbate80Concentration-->
-                  <definitionCanonical value="ObservationDefinition/74515b3c-5234-448a-9c19-939ce1958524"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/74515b3c-5234-448a-9c19-939ce1958524"/>
                </action>
             </action>
             <action>
@@ -435,14 +435,14 @@
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/ResidualMoisture-->
-                  <definitionCanonical value="ObservationDefinition/fc27b6d6-9fe2-91c2-2d16-47cb5b295e72"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/fc27b6d6-9fe2-91c2-2d16-47cb5b295e72"/>
                </action>
                <action>
                   <code>
                      <text value="Definition"/>
                   </code>
                   <!--ActivityDefinition/LyophilizationAct-->
-                  <definitionCanonical value="ActivityDefinition/b664977d-799d-a1ce-928a-6def2a9955bd"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ActivityDefinition/b664977d-799d-a1ce-928a-6def2a9955bd"/>
                </action>
             </action>
             <action>
@@ -459,7 +459,7 @@
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/SE-UHPLCMainPeakLyoph-->
-                  <definitionCanonical value="ObservationDefinition/64525a3d-5134-448a-9c19-938ce1958424"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/64525a3d-5134-448a-9c19-938ce1958424"/>
                   <!-- there are 2 types of obs that correspond to this. Ones per batch, with a %, and ones that are not per batch and have a conclusion (and a number of samples)-->
                </action>
                <action>
@@ -467,7 +467,7 @@
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/SE-UHPLCHMWLyoph-->
-                  <definitionCanonical value="ObservationDefinition/64525a3d-5144-448a-9c19-938ce1958424"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/64525a3d-5144-448a-9c19-938ce1958424"/>
                   <!-- there are 2 types of obs that correspond to this. Ones per batch, with a %, and ones that are not per batch and have a conclusion (and a number of samples)-->
                </action>
             </action>

@@ -34,49 +34,49 @@
                 <code>
                     <text value="Test"/>
                 </code>
-                            <definitionCanonical value="ObservationDefinition/Description"/>
+                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/Description"/>
             </action>
             <action>
                 <code>
                     <text value="Test"/>
                 </code>
-                            <definitionCanonical value="ObservationDefinition/Identification"/>
+                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/Identification"/>
             </action>
             <action>
                 <code>
                     <text value="Test"/>
                 </code>
-                            <definitionCanonical value="ObservationDefinition/Assay"/>
+                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/Assay"/>
             </action>
             <action>
                 <code>
                     <text value="Test"/>
                 </code>
-                            <definitionCanonical value="ObservationDefinition/Degradation"/>
+                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/Degradation"/>
             </action>
             <action>
                 <code>
                     <text value="Test"/>
                 </code>
-                            <definitionCanonical value="ObservationDefinition/Dissolution"/>
+                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/Dissolution"/>
             </action>
             <action>
                 <code>
                     <text value="Test"/>
                 </code>
-                            <definitionCanonical value="ObservationDefinition/Uniformity"/>
+                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/Uniformity"/>
             </action>
             <action>
                 <code>
                     <text value="Test"/>
                 </code>
-                            <definitionCanonical value="ObservationDefinition/Microbiological"/>
+                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/Microbiological"/>
             </action>
             <action>
                 <code>
                     <text value="Test"/>
                 </code>
-                            <definitionCanonical value="ObservationDefinition/Water"/>
+                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/Water"/>
             </action>
         </action>
         <action>
@@ -93,49 +93,49 @@
                 <code>
                     <text value="Test"/>
                 </code>
-                            <definitionCanonical value="ObservationDefinition/DescriptionEnd"/>
+                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/DescriptionEnd"/>
             </action>
             <action>
                 <code>
                     <text value="Test"/>
                 </code>
-                            <definitionCanonical value="ObservationDefinition/IdentificationEnd"/>
+                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/IdentificationEnd"/>
             </action>
             <action>
                 <code>
                     <text value="Test"/>
                 </code>
-                            <definitionCanonical value="ObservationDefinition/AssayEnd"/>
+                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/AssayEnd"/>
             </action>
             <action>
                 <code>
                     <text value="Test"/>
                 </code>
-                            <definitionCanonical value="ObservationDefinition/DegradationEnd"/>
+                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/DegradationEnd"/>
             </action>
             <action>
                 <code>
                     <text value="Test"/>
                 </code>
-                            <definitionCanonical value="ObservationDefinition/DissolutionEnd"/>
+                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/DissolutionEnd"/>
             </action>
             <action>
                 <code>
                     <text value="Test"/>
                 </code>
-                            <definitionCanonical value="ObservationDefinition/UniformityEnd"/>
+                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/UniformityEnd"/>
             </action>
             <action>
                 <code>
                     <text value="Test"/>
                 </code>
-                            <definitionCanonical value="ObservationDefinition/MicrobiologicalEnd"/>
+                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/MicrobiologicalEnd"/>
             </action>
             <action>
                 <code>
                     <text value="Test"/>
                 </code>
-                            <definitionCanonical value="ObservationDefinition/WaterEnd"/>
+                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/WaterEnd"/>
             </action>
         </action>
     </action>

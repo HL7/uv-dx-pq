@@ -167,7 +167,7 @@
                         <title value="XYZ"/>
                         <!-- Long term -->
                         <!--ActivityDefinition/activitydefinition-test-drug-pq-ex1-->
-                        <definitionCanonical value="ActivityDefinition/4bfe1ee8-91ed-5c1b-3045-c749bb9d1d90"/>
+                        <definitionCanonical value="http://example-server.com/fhir/ActivityDefinition/4bfe1ee8-91ed-5c1b-3045-c749bb9d1d90"/>
                      </action>
                   </action>
                   <!-- 3 months -->
@@ -196,7 +196,7 @@
                      <action>
                         <title value="X"/>
                         <!--ActivityDefinition/activitydefinition-stability-test-dxpq-ex1-->
-                        <definitionCanonical value="ActivityDefinition/610ca25c-6126-6117-8d4d-9458ccc33ce2"/>
+                        <definitionCanonical value="http://example-server.com/fhir/ActivityDefinition/610ca25c-6126-6117-8d4d-9458ccc33ce2"/>
                      </action>
                   </action>
                   <!-- 6 months -->
@@ -224,7 +224,7 @@
                      <action>
                         <title value="X"/>
                         <!--ActivityDefinition/activityLongTerm25X-6-->
-                        <definitionCanonical value="ActivityDefinition/d99c1b63-2d32-4887-8157-525cc8ae4732"/>
+                        <definitionCanonical value="http://example-server.com/fhir/ActivityDefinition/d99c1b63-2d32-4887-8157-525cc8ae4732"/>
                      </action>
                   </action>
                   <!-- 9 months -->
@@ -252,7 +252,7 @@
                      <action>
                         <title value="X"/>
                         <!--ActivityDefinition/activityLongTerm25X-9-->
-                        <definitionCanonical value="ActivityDefinition/38704856-0acf-95f0-000f-a933b6862fa0"/>
+                        <definitionCanonical value="http://example-server.com/fhir/ActivityDefinition/38704856-0acf-95f0-000f-a933b6862fa0"/>
                      </action>
                   </action>
                   <!-- 12 months -->
@@ -280,7 +280,7 @@
                      <action>
                         <title value="XY"/>
                         <!--ActivityDefinition/activityLongTerm25XY-12-->
-                        <definitionCanonical value="ActivityDefinition/f19a68b0-4ba1-7288-635e-12783035935b"/>
+                        <definitionCanonical value="http://example-server.com/fhir/ActivityDefinition/f19a68b0-4ba1-7288-635e-12783035935b"/>
                      </action>
                   </action>
                   <!-- 18 months -->
@@ -308,7 +308,7 @@
                      <action>
                         <title value="XY"/>
                         <!--ActivityDefinition/activityLongTerm25XY-18-->
-                        <definitionCanonical value="ActivityDefinition/ce2df6ab-5087-435c-35cb-a84572e756a2"/>
+                        <definitionCanonical value="http://example-server.com/fhir/ActivityDefinition/ce2df6ab-5087-435c-35cb-a84572e756a2"/>
                      </action>
                   </action>
                   <!-- 24 months -->
@@ -336,7 +336,7 @@
                      <action>
                         <title value="XY"/>
                         <!--ActivityDefinition/activityLongTerm25XY-24-->
-                        <definitionCanonical value="ActivityDefinition/cf2df6ab-5087-435c-35cb-a84572e756a2"/>
+                        <definitionCanonical value="http://example-server.com/fhir/ActivityDefinition/cf2df6ab-5087-435c-35cb-a84572e756a2"/>
                      </action>
                   </action>
                </action>
@@ -369,7 +369,7 @@
                      <action>
                         <title value="XYZ"/>
                         <!--ActivityDefinition/activityAccelerated40XYZ-Initial-->
-                        <definitionCanonical value="ActivityDefinition/6b96124b-1a44-0b6b-6783-d6c49360230b"/>
+                        <definitionCanonical value="http://example-server.com/fhir/ActivityDefinition/6b96124b-1a44-0b6b-6783-d6c49360230b"/>
                      </action>
                   </action>
                   <action>
@@ -396,7 +396,7 @@
                      <action>
                         <title value="X"/>
                         <!--ActivityDefinition/activityAccelerated40X-3-->
-                        <definitionCanonical value="ActivityDefinition/096e3f32-798e-6792-76ad-4ea783521c50"/>
+                        <definitionCanonical value="http://example-server.com/fhir/ActivityDefinition/096e3f32-798e-6792-76ad-4ea783521c50"/>
                      </action>
                   </action>
                   <action>
@@ -423,7 +423,7 @@
                      <action>
                         <title value="X"/>
                         <!--ActivityDefinition/activityAccelerated40X-6-->
-                        <definitionCanonical value="ActivityDefinition/77f86b13-8193-3df7-8362-ab5e79ba541d"/>
+                        <definitionCanonical value="http://example-server.com/fhir/ActivityDefinition/77f86b13-8193-3df7-8362-ab5e79ba541d"/>
                      </action>
                   </action>
                   <action>

@@ -210,7 +210,7 @@
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/VisualInspection-->
-                  <definitionCanonical value="ObservationDefinition/64525b3c-5134-448a-9d19-939ce1958524"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/64525b3c-5134-448a-9d19-939ce1958524"/>
                </action>
                <action>
                   <description value="Material Identification"/>
@@ -218,7 +218,7 @@
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/InfraredSpectroscopy-->
-                  <definitionCanonical value="ObservationDefinition/64525b3c-5134-448a-9d19-939ce1958525"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/64525b3c-5134-448a-9d19-939ce1958525"/>
                </action>
                <action>
                   <description value="Material Conformity"/>
@@ -226,7 +226,7 @@
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/SupplierCertificateofAnalysis-->
-                  <definitionCanonical value="ObservationDefinition/64525b3c-5134-448a-9d19-939ce1958535"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/64525b3c-5134-448a-9d19-939ce1958535"/>
                </action>
             </action>
          </PlanDefinition>

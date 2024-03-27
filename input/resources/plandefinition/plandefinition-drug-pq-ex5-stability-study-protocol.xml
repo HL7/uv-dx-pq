@@ -53,7 +53,7 @@
                     <!-- the categories to do at this step -->
                     <title value="XYZ"/>
                     <!-- Long term -->
-                            	<definitionCanonical value="ActivityDefinition/activityLongTerm25XYZ-Initial"/>
+                    <definitionCanonical value="http://example-server.com/fhir/ActivityDefinition/activityLongTerm25XYZ-Initial"/>
                 </action>
             </action>
  <!--           

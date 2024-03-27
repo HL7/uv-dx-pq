@@ -41,63 +41,63 @@
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/Description-->
-                  <definitionCanonical value="ObservationDefinition/13033a89-927a-10e0-503e-5f901bdca30f"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/13033a89-927a-10e0-503e-5f901bdca30f"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/Identification-->
-                  <definitionCanonical value="ObservationDefinition/8395ae1d-5064-0ab7-a297-6b20285b2230"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/8395ae1d-5064-0ab7-a297-6b20285b2230"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/Assay-->
-                  <definitionCanonical value="ObservationDefinition/2117208e-4185-9091-1f86-cce37b121838"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/2117208e-4185-9091-1f86-cce37b121838"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/Impurities-->
-                  <definitionCanonical value="ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/Mutagenic-->
-                  <definitionCanonical value="ObservationDefinition/0634020c-8729-99fc-7637-89799d7c445b"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/0634020c-8729-99fc-7637-89799d7c445b"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/Enantiomeric-->
-                  <definitionCanonical value="ObservationDefinition/4e67725b-20c8-158e-9d53-1810bfa58d87"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/4e67725b-20c8-158e-9d53-1810bfa58d87"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/Solvents-->
-                  <definitionCanonical value="ObservationDefinition/2daba8ca-211f-4f4b-4028-16c30fe22ee8"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/2daba8ca-211f-4f4b-4028-16c30fe22ee8"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/Water-->
-                  <definitionCanonical value="ObservationDefinition/17b322fe-53ea-6c1f-521b-3b148ac05eb4"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/17b322fe-53ea-6c1f-521b-3b148ac05eb4"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/Particles-->
-                  <definitionCanonical value="ObservationDefinition/11fcfe6b-7498-132b-2def-efae51b302d4"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/11fcfe6b-7498-132b-2def-efae51b302d4"/>
                </action>
             </action>
          </PlanDefinition>
