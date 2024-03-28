@@ -144,6 +144,36 @@
     </element>
     <!--    END-->
     
+    <element id="PackagedProductDefinition.packaging.property.value[x]:valueQuantity">
+      <path value="PackagedProductDefinition.packaging.property.value[x]"/>
+      <sliceName value="valueQuantity"/>
+      <type>
+        <code value="Quantity"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="PackagedProductDefinition.packaging.property.value[x]:valueQuantity.system">
+      <path value="PackagedProductDefinition.packaging.property.value[x].system"/>
+      <patternUri value="http://unitsofmeasure.org"/>
+    </element>
+    <element id="PackagedProductDefinition.packaging.property.value[x]:valueQuantity.code">
+      <path value="PackagedProductDefinition.packaging.property.value[x].code"/> 
+      <binding>
+        <strength value="required"/>
+        <description value="UCUM codes for unit"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-UnitsOfMeasureCaseSensitive"/>
+      </binding>
+    </element>
+
+    <element id="PackagedProductDefinition.packaging.property.value[x]:valueBoolean">
+      <path value="PackagedProductDefinition.packaging.property.value[x]"/>
+      <sliceName value="valueBoolean"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+
     <element id="PackagedProductDefinition.packaging.containedItem">
       <path value="PackagedProductDefinition.packaging.containedItem"/>
       <mustSupport value="true"/>
