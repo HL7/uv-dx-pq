@@ -44,13 +44,29 @@
 
     <element id="PackagedProductDefinition.packaging.type">
       <path value="PackagedProductDefinition.packaging.type"/>
+      <slicing>
+        <discriminator>
+          <type value="type"/>
+          <path value="$this"/>
+        </discriminator>
+        <ordered value="false"/>
+        <rules value="open"/> 
+      </slicing>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
       <mustSupport value="true"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="PackagingType"/>
+<!--        Added option for closure type-->
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-binding">
+          <extension url="purpose">
+            <valueCode value="extensible"/>
+          </extension>
+          <extension url="valueSet">
+            <valueCanonical value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-closureTypes-pq"/>
+          </extension>
         </extension>
-        <strength value="preferred"/>
-        <description value="A high level categorisation of a package."/>
+        <strength value="example"/>
         <valueSet value="http://hl7.org/fhir/ValueSet/packaging-type"/>
       </binding>
     </element>
@@ -155,32 +171,9 @@
     
     <element id="PackagedProductDefinition.packaging.packaging">
       <path value="PackagedProductDefinition.packaging.packaging"/>
-<!--      <short value="Allows containers (and parts of containers) within containers, still as a part of single packaged product"/>-->
-<!--      <definition value="Allows containers (and parts of containers) within containers, still as a part of a single packaged product. See also PackagedProductDefinition.packaging.containedItem.item(PackagedProductDefinition)."/>-->
-<!--      <min value="0"/>
-      <max value="*"/>-->
       <contentReference value="#PackagedProductDefinition.packaging"/>
       <mustSupport value="true"/>
-<!--      <isModifier value="false"/>
-      <isSummary value="true"/>-->
-<!--      <mapping>
-        <identity value="idmp"/>
-        <map value="(link from Package Item (Container) to itself)"/>
-      </mapping>-->
     </element>
-    
-    <!--ADDED-->
-<!--    <element id="PackagedProductDefinition.packaging.packaging.property">
-      <path value="PackagedProductDefinition.packaging.packaging.property"/>
-<!-\-      <slicing>
-        <discriminator>
-          <type value="type"/>
-          <path value="resource"/>
-        </discriminator>
-        <rules value="open"/>
-      </slicing>-\->
-      <mustSupport value="true"/>
-    </element>-->
     
   </differential>
 </StructureDefinition>
