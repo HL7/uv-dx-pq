@@ -82,9 +82,13 @@
     <element id="PackagedProductDefinition.packaging.property">
       <path value="PackagedProductDefinition.packaging.property"/>
       <slicing>  
-        <discriminator> 
+<!--        <discriminator> 
           <type value="value"/>
           <path value="code"/>
+        </discriminator>-->
+        <discriminator>
+          <type value="type"/>
+          <path value="$this"/>
         </discriminator>
         <ordered value="false"/>
           <rules value="open"/>
