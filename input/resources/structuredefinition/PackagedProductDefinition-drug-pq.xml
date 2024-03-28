@@ -57,15 +57,6 @@
       </type>
       <mustSupport value="true"/>
       <binding>
-<!--        Added option for closure type-->
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-binding">
-          <extension url="purpose">
-            <valueCode value="extensible"/>
-          </extension>
-          <extension url="valueSet">
-            <valueCanonical value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-closureTypes-pq"/>
-          </extension>
-        </extension>
         <strength value="example"/>
         <valueSet value="http://hl7.org/fhir/ValueSet/packaging-type"/>
       </binding>
