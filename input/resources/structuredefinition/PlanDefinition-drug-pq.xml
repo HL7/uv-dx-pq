@@ -108,7 +108,6 @@
             <mustSupport value="true"/>
             <binding>
                 <!--                <strength value="preferred"/>
-                <description value="Indicates the level of importance associated with reaching or sustaining a goal."/>
                 <valueSet value="http://hl7.org/fhir/ValueSet/goal-priority"/>-->
                 <strength value="example"/>
                 <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-goalPriority-pq"/>

@@ -87,8 +87,6 @@
             <path value="ObservationDefinition.qualifiedValue.extension"/>
             <sliceName value="qualified-value-text"/>
             <short value="qualified-value-text"/>
-<!--            <min value="0"/>
-            <max value="1"/>-->
             <type>
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq"/>
@@ -99,8 +97,6 @@
             <path value="ObservationDefinition.qualifiedValue.extension"/>
             <sliceName value="qualified-value-display"/>
             <short value="qualified-value-display"/>
-            <!--            <min value="0"/>
-            <max value="1"/>-->
             <type>
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-display-pq"/>
@@ -111,8 +107,6 @@
             <path value="ObservationDefinition.qualifiedValue.extension"/>
             <sliceName value="qualified-value-target"/>
             <short value="qualified-value-target"/>
-            <!--            <min value="0"/>
-            <max value="1"/>-->
             <type>
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-target-pq"/>
@@ -123,8 +117,6 @@
             <path value="ObservationDefinition.qualifiedValue.extension"/>
             <sliceName value="qualified-value-criticality"/>
             <short value="qualified-value-criticality"/>
-            <!--            <min value="0"/>
-            <max value="1"/>-->
             <type>
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-criticality-pq"/>

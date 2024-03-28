@@ -12,22 +12,11 @@
     <kind value="complex-type"/>
     <abstract value="false"/>
 
-<!--    <context>
-        <type value="element"/>
-        <expression value="Bundle"/>
-    </context>
-    <context>
-        <type value="element"/>
-        <expression value="Bundle.entry.resource"/>
-    </context>-->
     <context>
         <type value="element"/>
         <expression value="Substance"/>
     </context>
-<!--    <context>
-        <type value="element"/>
-        <expression value="Extension"/>
-    </context>-->
+
     <type value="Extension"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
     <derivation value="constraint"/>

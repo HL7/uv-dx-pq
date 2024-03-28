@@ -7,7 +7,6 @@
     <title value="Extension - Plan Document Reference PQ"/>
     <status value="active"/>
     <description value="A link to a document or image that describes the process of this plan"/>
-<!--    <fhirVersion value="5.0.0-snapshot3"/>-->
     <kind value="complex-type"/>
     <abstract value="false"/>
     <context>

@@ -19,14 +19,7 @@
         <type value="element"/>
         <expression value="DiagnosticReport"/>
     </context>
-<!--    <context>
-        <type value="element"/>
-        <expression value="Bundle"/>
-    </context>
-    <context>
-        <type value="element"/>
-        <expression value="ResearchStudy"/>
-    </context>-->
+
     <type value="Extension"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
     <derivation value="constraint"/>
@@ -34,10 +27,7 @@
         <element id="Extension">
             <path value="Extension"/>
         </element>
-<!--        <element id="Extension.extension">
-            <path value="Extension.extension"/>
-            <max value="0"/>
-        </element>-->
+
         <element id="Extension.url">
             <path value="Extension.url"/>
             <fixedUri value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-container-orientation-pq"/>

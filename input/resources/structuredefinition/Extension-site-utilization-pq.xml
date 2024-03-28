@@ -10,10 +10,6 @@
     <fhirVersion value="5.0.0-snapshot3"/>
     <kind value="complex-type"/>
     <abstract value="false"/>
-<!--    <context>
-        <type value="element"/>
-        <expression value="MedicinalProduct"/>
-    </context>-->
     
     <context>
         <type value="element"/>

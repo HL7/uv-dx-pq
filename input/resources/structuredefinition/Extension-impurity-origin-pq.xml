@@ -11,22 +11,10 @@
     <kind value="complex-type"/>
     <abstract value="false"/>
 
-<!--    <context>
-        <type value="element"/>
-        <expression value="SubstanceDefinition"/>
-    </context>-->
     <context>
         <type value="element"/>
         <expression value="SubstanceDefinition.relationship"/>
     </context>
-<!--    <context>
-        <type value="element"/>
-        <expression value="Bundle"/>
-    </context>
-    <context>
-        <type value="element"/>
-        <expression value="Bundle.entry.resource"/>
-    </context>-->
     
     <type value="Extension"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>

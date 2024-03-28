@@ -130,9 +130,6 @@
             <min value="1"/>
             <binding>
                 <strength value="preferred"/>
-<!--                <valueSet value="http://hl7.org/fhir/uv/emedicinal-product-info/ValueSet/country"/>-->
-<!--                <valueSet value="http://hl7.org/fhir/uv/emedicinal-product-info/STU1/ValueSet-country"/>-->
-                <!--<valueSet value="http://hl7.org/fhir/uv/emedicinal-product-info/ValueSet-country"/>-->
                 <valueSet value="http://hl7.org/fhir/uv/pharm-quality/ValueSet/vs-country-pq"/>
             </binding>
         </element>
