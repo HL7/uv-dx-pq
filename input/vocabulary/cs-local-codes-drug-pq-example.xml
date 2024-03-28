@@ -9,7 +9,6 @@
   <description value="This example code system contains temporary example codes used in pharmaceutical quality industry."/>
   <caseSensitive value="true"/>
   <content value="complete"/>
-  <!-- The following concepts were originally assigned to code system http://dummy.loinc.org -->
 
   <!-- Concepts used in MedicinalProductDefinition.characteristic.type-->
   <concept>
@@ -73,10 +72,6 @@
     <code value="WWWH"/>
     <display value="Water Content Homogeneity"/>
   </concept>
-  <!--concept>
-    <code value="xxx"/>
-    <display value="Assay"/>
-  </concept-->
   <concept>
     <code value="SAMP"/>
     <display value="Number of Samples"/>
@@ -85,18 +80,10 @@
     <code value="DGP"/>
     <display value="Degradation Products"/>
   </concept>
-  <!--concept>
-    <code value="Drug Substance Related Organic impurities"/>
-    <display value="Drug Substance Related Organic impurities"/>
-  </concept-->
   <concept>
     <code value="DGP-s"/>
     <display value="Drug Substance Related Organic impurities"/>
   </concept>
-  <!--concept>
-    <code value="DGP-p"/>
-    <display value="Degradation Products"/>
-  </concept-->
   <concept>
     <code value="IMP"/>
     <display value="Impurity"/>
@@ -105,27 +92,14 @@
     <code value="Impurities"/>
     <display value="Impurities"/>
   </concept>
-
   <concept>
     <code value="WWW"/>
     <display value="Water Content"/>
   </concept>
-  <!--concept>
-    <code value="XXX"/>
-    <display value="Assay"/>
-  </concept-->
   <concept>
     <code value="Microbiological Quality"/>
     <display value="Microbiological Quality"/>
   </concept>
-  <!--concept>
-    <code value="ZZZ"/>
-    <display value="Uniformity of dosage units (by weight)"/>
-  </concept-->
-  <!--concept>
-    <code value="AAA"/>
-    <display value="Assay"/>
-  </concept-->
   <concept>
     <code value="ASSAY"/>
     <display value="Assay"/>
@@ -168,10 +142,6 @@
     <code value="enantiomeric-purity"/>
     <display value="Enantiomeric purity"/>
   </concept>
-  <!--concept>
-    <code value="identification"/>
-    <display value="Identification"/>
-  </concept-->
   <concept>
     <code value="IDT"/>
     <display value="Identification"/>
@@ -531,10 +501,6 @@
     <code value="Growth Promotion - End"/>
     <display value="Growth Promotion - End"/>
   </concept>
-  <!--concept>
-    <code value="Growth Promotion"/>
-    <display value="Growth Promotion"/>
-  </concept-->
   <concept>
     <code value="GrowthPromotion"/>
     <display value="Growth Promotion"/>
@@ -555,10 +521,6 @@
     <code value="MediaChallengeRun"/>
     <display value="Media Challenge Run"/>
   </concept>
-  <!--concept>
-    <code value="osmolality"/>
-    <display value="osmolality"/>
-  </concept-->
   <concept>
     <code value="Osmolality"/>
     <display value="Osmolality"/>
@@ -575,11 +537,6 @@
     <code value="pH"/>
     <display value="pH"/>
   </concept>
-  <!-- todo dupe -->
-  <!--concept>
-    <code value="PH"/>
-    <display value="pH Level"/>
-  </concept-->
   <concept>
     <code value="Polysorbate 80 (% w/v)"/>
     <display value="Polysorbate 80 (% w/v)"/>
@@ -688,10 +645,6 @@
     <code value="Protein Concentration - Middle - Min"/>
     <display value="Protein Concentration - Middle - Min"/>
   </concept>
-  <!--concept>
-    <code value="Protein Concentration (mg/mL)"/>
-    <display value="Protein Concentration (mg/mL)"/>
-  </concept-->
   <concept>
     <code value="Protein Concentration Statistics"/>
     <display value="Protein Concentration Statistics"/>

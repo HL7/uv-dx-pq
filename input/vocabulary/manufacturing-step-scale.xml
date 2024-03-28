@@ -12,7 +12,7 @@
 
     <concept>
         <code value="PROD"/>
-        <display value="Production Scale"/> <!-- or "Commercial" -->
+        <display value="Production Scale"/>
     </concept>
     <concept>
         <code value="LAB"/>

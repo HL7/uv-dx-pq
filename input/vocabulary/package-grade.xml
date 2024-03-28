@@ -18,10 +18,6 @@
         <code value="NF-PH-Eur"/>
         <display value="NF / Ph Eur"/>
     </concept>
-    <!--concept>
-        <code value="NF / Ph Eur"/>
-        <display value="NF / Ph Eur"/>
-    </concept-->
     <concept>
         <code value="BP"/>
         <display value="Closure Quality Standard"/>
