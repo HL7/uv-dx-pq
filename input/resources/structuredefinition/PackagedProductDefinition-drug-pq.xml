@@ -81,6 +81,14 @@
 
     <element id="PackagedProductDefinition.packaging.property">
       <path value="PackagedProductDefinition.packaging.property"/>
+      <slicing>  
+        <discriminator> 
+          <type value="value"/>
+          <path value="code"/>
+        </discriminator>
+        <ordered value="false"/>
+          <rules value="open"/>
+      </slicing>
       <mustSupport value="true"/>
     </element>
     
