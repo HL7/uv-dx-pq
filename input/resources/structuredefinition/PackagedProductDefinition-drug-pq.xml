@@ -81,18 +81,6 @@
 
     <element id="PackagedProductDefinition.packaging.property">
       <path value="PackagedProductDefinition.packaging.property"/>
-      <slicing>  
-<!--        <discriminator> 
-          <type value="value"/>
-          <path value="code"/>
-        </discriminator>-->
-        <discriminator>
-          <type value="value"/>
-          <path value="value"/>
-        </discriminator>
-        <ordered value="false"/>
-          <rules value="open"/>
-      </slicing>
       <mustSupport value="true"/>
     </element>
     
@@ -116,6 +104,21 @@
         <ordered value="false"/>
         <rules value="open"/> 
       </slicing>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <type>
+        <code value="Quantity"/>
+      </type>
+      <type>
+        <code value="date"/>
+      </type>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <type>
+        <code value="Attachment"/>
+      </type>
       <mustSupport value="true"/>
     </element>        
     
