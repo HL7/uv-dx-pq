@@ -44,20 +44,13 @@
 
     <element id="PackagedProductDefinition.packaging.type">
       <path value="PackagedProductDefinition.packaging.type"/>
-      <slicing>
-        <discriminator>
-          <type value="type"/>
-          <path value="$this"/>
-        </discriminator>
-        <ordered value="false"/>
-        <rules value="open"/> 
-      </slicing>
-      <type>
-        <code value="CodeableConcept"/>
-      </type>
       <mustSupport value="true"/>
       <binding>
-        <strength value="example"/>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="PackagingType"/>
+        </extension>
+        <strength value="preferred"/>
+        <description value="A high level categorisation of a package."/>
         <valueSet value="http://hl7.org/fhir/ValueSet/packaging-type"/>
       </binding>
     </element>
