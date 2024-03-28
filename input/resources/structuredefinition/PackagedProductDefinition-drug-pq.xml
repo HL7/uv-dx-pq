@@ -87,8 +87,8 @@
           <path value="code"/>
         </discriminator>-->
         <discriminator>
-          <type value="type"/>
-          <path value="$this"/>
+          <type value="value"/>
+          <path value="value"/>
         </discriminator>
         <ordered value="false"/>
           <rules value="open"/>
