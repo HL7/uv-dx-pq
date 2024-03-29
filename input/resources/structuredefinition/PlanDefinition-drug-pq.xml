@@ -35,6 +35,7 @@
             <path value="PlanDefinition.extension"/>
             <sliceName value="plan-document-reference"/>
             <short value="plan-document-reference"/>
+            <min value="0"/>
             <type>
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-plan-document-reference-pq"/>
@@ -45,6 +46,7 @@
             <path value="PlanDefinition.extension"/>
             <sliceName value="history-of-process"/>
             <short value="history-of-process"/>
+            <min value="0"/>
             <type>
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-history-of-process-pq"/>
