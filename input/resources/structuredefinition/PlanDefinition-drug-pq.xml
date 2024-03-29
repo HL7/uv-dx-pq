@@ -16,10 +16,10 @@
         <element id="PlanDefinition">
             <path value="PlanDefinition"/>
         </element>
-        <element id="PlanDefinition.contained">
+        <!--<element id="PlanDefinition.contained">
             <path value="PlanDefinition.contained"/>
             <mustSupport value="true"/>
-        </element>
+        </element>-->
         <element id="PlanDefinition.extension">
             <path value="PlanDefinition.extension"/>
             <slicing>
