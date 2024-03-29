@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PlanDefinition xmlns="http://hl7.org/fhir">
     <!-- Contained in Accumulus FHIR Product Example - Batch Analysis (3-13-2023) -->
-<!--    <id value="manufacturingProcess"/>-->
+    <!--    <id value="manufacturingProcess"/>-->
     <id value="plandefinition-drug-pq-ex4-mnf-process"/>
     <meta>
         <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
@@ -14,14 +14,14 @@
     <title value="Process 1.0"/>
     <type>
         <coding>
-                        <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-plan-type"/>
+            <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-plan-type"/>
             <code value="1244566"/>
             <display value="Manufacturing Process"/>
         </coding>
     </type>
     <status value="active"/>
-                
-                <subjectReference>
-                    <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
-                </subjectReference> 
+
+    <subjectReference>
+        <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
+    </subjectReference>
 </PlanDefinition>

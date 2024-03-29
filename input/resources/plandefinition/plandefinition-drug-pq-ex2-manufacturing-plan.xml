@@ -1,155 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- manufacturing plan from Accumulus FHIR Product Example - Process Validation - biologic -->
 <PlanDefinition xmlns="http://hl7.org/fhir">
-<!--            <id value="manufacturingProcess-subset-unlinked"/>-->
-            <!-- indicate this is as subset of the resource. In practice it would have it all -->
+    <!--            <id value="manufacturingProcess-subset-unlinked"/>-->
+    <!-- indicate this is as subset of the resource. In practice it would have it all -->
     <id value="plandefinition-drug-pq-ex2-manufacturing-plan"/>
-            <meta>
-                <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
-                <tag>
-                    <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
-                    <code value="SUBSETTED"/>
-                </tag>
-            </meta>
-                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-history-of-process-pq">
-                <valueMarkdown value="This can be text about the history"/>
-            </extension>
-                <url value="http://hl7.org/fhir/uv/pharm-quality/PlanDefinition/plandefinition-drug-pq-ex2-manufacturing-plan"/>
-            <title value="Process 1.0"/>
-            <type>
+    <meta>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
+        <tag>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+            <code value="SUBSETTED"/>
+        </tag>
+    </meta>
+    <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-history-of-process-pq">
+        <valueMarkdown value="This can be text about the history"/>
+    </extension>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/PlanDefinition/plandefinition-drug-pq-ex2-manufacturing-plan"/>
+    <title value="Process 1.0"/>
+    <type>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+            <code value="workflow-definition"/>
+            <display value="Workflow Definition"/>
+        </coding>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-plan-type"/>
+            <code value="manufacturing-process"/>
+            <display value="Manufacturing Process"/>
+        </coding>
+    </type>
+    <status value="active"/>
+    <!-- #83 -->
+    <subjectReference>
+        <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
+    </subjectReference>
+    <description value="Narrative description of manufacturing process (5)"/>
+    <!-- #85 -->
+    <goal id="goal-control-pH">
+        <category>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-test-category"/>
+                <code value="C123456"/>
+                <display value="Physical Property"/>
+            </coding>
+        </category>
+        <description>
+            <text value="Controls - pH"/>
+            <!-- this is mandatory, even though we don't really want it -->
+        </description>
+        <priority>
+            <coding>
+                <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-pq-example"/>
+                <code value="critical"/>
+                <display value="Critical"/>
+            </coding>
+        </priority>
+        <target>
+            <measure>
                 <coding>
-                    <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
-                    <code value="workflow-definition"/>
-                    <display value="Workflow Definition"/>
+                    <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                    <code value="pH"/>
+                    <display value="pH"/>
                 </coding>
+                <text value="pH must be in range 6.9 to 7.1"/>
+            </measure>
+            <!--detailString value="can also be a string"-->
+            <detailRange>
+                <low>
+                    <value value="6.9"/>
+                    <unit value="pH"/>
+                </low>
+                <high>
+                    <value value="7.1"/>
+                    <unit value="pH"/>
+                </high>
+            </detailRange>
+        </target>
+    </goal>
+    <goal id="goal-control-water-content">
+        <category>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-test-category"/>
+                <code value="C123456"/>
+                <display value="Physical Property"/>
+            </coding>
+        </category>
+        <description>
+            <text value="Controls - Water Content"/>
+            <!-- this is mandatory, even though we don't really want it -->
+        </description>
+        <priority>
+            <coding>
+                <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-pq-example"/>
+                <code value="critical"/>
+                <display value="Critical"/>
+            </coding>
+        </priority>
+        <target>
+            <measure>
                 <coding>
-                    <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-plan-type"/>
-                    <code value="manufacturing-process"/>
-                    <display value="Manufacturing Process"/>
+                    <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                    <code value="WaterContent"/>
+                    <display value="Water content"/>
                 </coding>
-            </type>
-            <status value="active"/>
-            <!-- #83 -->
-            <subjectReference>
-                <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
-            </subjectReference>
-            <description value="Narrative description of manufacturing process (5)"/>
-            <!-- #85 -->
-            <goal id="goal-control-pH">
-                <category>
-                    <coding>
-                        <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-test-category"/>
-                        <code value="C123456"/>
-                        <display value="Physical Property"/>
-                    </coding>
-                </category>
-                <description>
-                    <text value="Controls - pH"/>
-                    <!-- this is mandatory, even though we don't really want it -->
-                </description>
-                <priority>
-                    <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-pq-example"/>
-                        <code value="critical"/>
-                        <display value="Critical"/>
-                    </coding>
-                </priority>
-                <target>
-                    <measure>
-                        <coding>
-                            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
-                                <code value="pH"/>
-                                <display value="pH"/>
-                        </coding>
-                        <text value="pH must be in range 6.9 to 7.1"/>
-                    </measure>
-                    <!--detailString value="can also be a string"-->
-                    <detailRange>
-                        <low>
-                            <value value="6.9"/>
-                            <unit value="pH"/>
-                        </low>
-                        <high>
-                            <value value="7.1"/>
-                            <unit value="pH"/>
-                        </high>
-                    </detailRange>
-                </target>
-            </goal>
-            <goal id="goal-control-water-content">
-                <category>
-                    <coding>
-                        <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-test-category"/>
-                        <code value="C123456"/>
-                        <display value="Physical Property"/>
-                    </coding>
-                </category>
-                <description>
-                    <text value="Controls - Water Content"/>
-                    <!-- this is mandatory, even though we don't really want it -->
-                </description>
-                <priority>
-                    <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-pq-example"/>
-                        <code value="critical"/>
-                        <display value="Critical"/>
-                    </coding>
-                </priority>
-                <target>
-                    <measure>
-                        <coding>
-                            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
-                            <code value="WaterContent"/>
-                            <display value="Water content"/>
-                        </coding>
-                        <text value="Under 2%"/>
-                    </measure>
-                    <!--detailString value="can also be a string"-->
-                    <detailRange>
-                        <high>
-                            <value value="2"/>
-                            <unit value="%"/>
-                        </high>
-                    </detailRange>
-                </target>
-            </goal>
-            <goal id="goal-control-particle-size">
-                <category>
-                    <coding>
-                        <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-test-category"/>
-                        <code value="C123456"/>
-                        <display value="Physical Property"/>
-                    </coding>
-                </category>
-                <description>
-                    <text value="Controls - Particle Size"/>
-                </description>
-                <priority>
-                    <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-pq-example"/>
-                        <code value="critical"/>
-                        <display value="Critical"/>
-                    </coding>
-                </priority>
-                <target>
-                    <measure>
-                        <coding>
-                            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
-                            <code value="particle-size"/>
-                                <display value="Particle Size"/>
-                        </coding>
-                        <text value="Under 200 microns"/>
-                    </measure>
-                    <!--detailString value="can also be a string"-->
-                    <detailRange>
-                        <high>
-                            <value value="200"/>
-                            <unit value="microns"/>
-                        </high>
-                    </detailRange>
-                </target>
-            </goal>
-            <!--actor>
+                <text value="Under 2%"/>
+            </measure>
+            <!--detailString value="can also be a string"-->
+            <detailRange>
+                <high>
+                    <value value="2"/>
+                    <unit value="%"/>
+                </high>
+            </detailRange>
+        </target>
+    </goal>
+    <goal id="goal-control-particle-size">
+        <category>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-test-category"/>
+                <code value="C123456"/>
+                <display value="Physical Property"/>
+            </coding>
+        </category>
+        <description>
+            <text value="Controls - Particle Size"/>
+        </description>
+        <priority>
+            <coding>
+                <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-pq-example"/>
+                <code value="critical"/>
+                <display value="Critical"/>
+            </coding>
+        </priority>
+        <target>
+            <measure>
+                <coding>
+                    <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                    <code value="particle-size"/>
+                    <display value="Particle Size"/>
+                </coding>
+                <text value="Under 200 microns"/>
+            </measure>
+            <!--detailString value="can also be a string"-->
+            <detailRange>
+                <high>
+                    <value value="200"/>
+                    <unit value="microns"/>
+                </high>
+            </detailRange>
+        </target>
+    </goal>
+    <!--actor>
                 <option>
                     <typeReference>
                         <reference value="DeviceDefinition/mixing-vessel"/>
@@ -177,6 +177,6 @@
                     </role>
                 </option>
             </actor-->
-            <!-- another outer action can be the whole thing, if needed -->
-            <!-- removed the main actions for brevity (see manufacturing example) -->
-        </PlanDefinition>
+    <!-- another outer action can be the whole thing, if needed -->
+    <!-- removed the main actions for brevity (see manufacturing example) -->
+</PlanDefinition>
