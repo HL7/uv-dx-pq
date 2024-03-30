@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PlanDefinition xmlns="http://hl7.org/fhir">
     <!--            <id value="specificationProtocol"/>-->
-    
+
     <id value="plandefinition-drug-pq-ex3-drug-specification"/>
-                <meta>
-                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
-                </meta>
+    <meta>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
+    </meta>
     <url value="http://hl7.org/fhir/uv/pharm-quality/PlanDefinition/plandefinition-drug-pq-ex3-drug-specification"/>
     <title value="SPECIFICATION(S) FOR DRUG PRODUCT"/>
     <status value="active"/>
     <subjectReference>
-<!--        <reference value="MedicinalProductDefinition/product"/>-->
+        <!--        <reference value="MedicinalProductDefinition/product"/>-->
         <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
     </subjectReference>
     <description value="Narrative description of specifications"/>

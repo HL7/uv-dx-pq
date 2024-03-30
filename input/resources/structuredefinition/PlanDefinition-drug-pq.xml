@@ -164,7 +164,7 @@
         <element id="PlanDefinition.action.code">
             <path value="PlanDefinition.action.code"/>
             <mustSupport value="true"/>
-<!--            OPTIONS using IPS pattern-->
+            <!--            OPTIONS using IPS pattern-->
             <binding>
                 <extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-binding">
                     <extension url="purpose">
@@ -194,7 +194,7 @@
                 <valueSet value="http://hl7.org/fhir/ValueSet/action-code"/>
             </binding>
         </element>
-   
+
         <element id="PlanDefinition.action.participant.typeReference.extension">
             <path value="PlanDefinition.action.participant.typeReference.extension"/>
             <slicing>

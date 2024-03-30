@@ -1,385 +1,465 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- validation protocol from Accumulus FHIR Product Example - Process Validation - biologic-->
 <PlanDefinition xmlns="http://hl7.org/fhir">
-<!--            <id value="validationProtocol"/>-->
-   <id value="plandefinition-drug-pq-ex1-validation-protocol"/>
-   <meta>
-      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
-   </meta>
-                <url value="http://hl7.org/fhir/uv/pharm-quality/PlanDefinition/plandefinition-drug-pq-ex1-validation-protocol"/>
-            <title value="DP PROCESS VALIDATION"/>
-            <type>
-               <coding>
-                  <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
-                  <code value="workflow-definition"/>
-                  <display value="Workflow Definition"/>
-               </coding>
-               <coding>
-                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-plan-type"/>
-                  <code value="process-validation"/>
-                  <display value="Process Validation"/>
-               </coding>
-            </type>
-            <status value="active"/>
-            <subjectReference>
-               <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
-            </subjectReference>
-            <description value="Pre-defined validation acceptance criteria were established based on manufacturing development data derived from process characterization studies..."/>
+    <!--            <id value="validationProtocol"/>-->
+    <id value="plandefinition-drug-pq-ex1-validation-protocol"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
+    </meta>
+    <url value="http://hl7.org/fhir/uv/pharm-quality/PlanDefinition/plandefinition-drug-pq-ex1-validation-protocol"/>
+    <title value="DP PROCESS VALIDATION"/>
+    <type>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+            <code value="workflow-definition"/>
+            <display value="Workflow Definition"/>
+        </coding>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-plan-type"/>
+            <code value="process-validation"/>
+            <display value="Process Validation"/>
+        </coding>
+    </type>
+    <status value="active"/>
+    <subjectReference>
+        <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
+    </subjectReference>
+    <description value="Pre-defined validation acceptance criteria were established based on manufacturing development data derived from process characterization studies..."/>
+    <action>
+        <title value="Formulation Buffer Preparation Process Parameter Step"/>
+        <code>
+            <coding>
+                <!--                     <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
+                <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step"/>
+                <code value="FormulationBufferPreparationProcessParameterStep"/>
+                <display value="Formulation Buffer Preparation Process Parameter Step"/>
+            </coding>
+            <text value="Formulation Buffer Preparation Process Parameter Step"/>
+        </code>
+        <action>
+            <!-- this level is not really needed here, could remove. But in the case where there are different timings, it is needed, so it is here for consistency -->
+            <title value="Formulation Buffer Preparation Process Parameter Step"/>
+            <code>
+                <text value="FormulationBufferPreparationProcessParameterStep"/>
+            </code>
             <action>
-               <title value="Formulation Buffer Preparation Process Parameter Step"/>
-               <code>
-                  <coding>
-<!--                     <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
-                      <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step"/>
-                     <code value="FormulationBufferPreparationProcessParameterStep"/>
-                     <display value="Formulation Buffer Preparation Process Parameter Step"/>
-                  </coding>
-                  <text value="Formulation Buffer Preparation Process Parameter Step"/>
-               </code>
-               <action>
-                    	<!-- this level is not really needed here, could remove. But in the case where there are different timings, it is needed, so it is here for consistency -->
-                  <title value="Formulation Buffer Preparation Process Parameter Step"/>
-                        <code><text value="FormulationBufferPreparationProcessParameterStep"/></code>
-                  <action>
-                            <code><text value="Conclusion"/></code>
-                      <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/conclusion"/>
-                  </action>
-                  <action>
-                            <code><text value="Test"/></code>
-                      <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/bufferVesselMixingSpeed"/>
-                  </action>
-                  <action>
-                            <code><text value="Test"/></code>
-                      <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/bufferVesselMixingTime"/>
-                  </action>
-               </action>
+                <code>
+                    <text value="Conclusion"/>
+                </code>
+                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/conclusion"/>
             </action>
             <action>
-               <title value="Formulation Buffer Preparation Performance Indicator Results"/>
-               <code>
-                  <coding>
-<!--                     <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
-                      <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step"/>
-                     <code value="FormulationBufferPreparationPerformanceIndicatorStep"/>
-                     <display value="Formulation Buffer Preparation Performance Indicator Results"/>
-                  </coding>
-                  <!--text value="Overall set of actions"/-->
-               </code>
-               <action>
-                  <title value="???"/>
-                        <code><text value="???"/></code>
-                        <action>
-                            <code><text value="Test"/></code>
-                            <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/FBPPIpH"/>
-                        </action>
-                        <action>
-                            <code><text value="Test"/></code>
-                            <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/Osmolality"/>
-                        </action>
-                        <action>
-                            <code><text value="Test"/></code>
-                            <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/Conductivity"/>
-                        </action>
-                        <action>
-                            <code><text value="Test"/></code>
-                            <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/Bioburden"/>
-                        </action>
-                        <action>
-                            <code><text value="Test"/></code>
-                            <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/BacterialEndotoxins"/>
-                        </action>
-                    </action>
-                </action>
+                <code>
+                    <text value="Test"/>
+                </code>
+                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/bufferVesselMixingSpeed"/>
+            </action>
             <action>
-               <title value="Thawing and Formulation Process Parameter Results"/>
-               <code>
-                  <coding>
-<!--                     <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
-                      <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step"/>
-                     <code value="ThawingandFormulationProcessParameterResultsStep"/>
-                     <display value="Thawing and Formulation Process Parameter Resultss"/>
-                  </coding>
-                  <!--text value="Overall set of actions"/-->
-               </code>
-               <action>
-                  <title value="???"/>
-                        <code><text value="???"/></code>
-                        <action>
-                            <code><text value="Test"/></code>
-                            <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/ThawingTemp"/>
-                        </action>
-                        <action>
-                            <code><text value="Test"/></code>
-                            <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/ThawingTime"/>
-                        </action>
-                        <action>
-                            <code><text value="Test"/></code>
-                            <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/formulationVesselMixingSpeed"/>
-                        </action>
-                        <action>
-                            <code><text value="Test"/></code>
-                            <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/formulationVesselMixingTime"/>
-                        </action>
-                    </action>
-                </action>
-                <action>
-                  	
-					<title value="Thawing and Formulation Performance Indicator Results"/>
-                    <code>
-                        <coding>
-<!--                            <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
-                            <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step"/>
-                            <code value="ThawingandFormulationPerformanceIndicatorResultsStep"/>
-                            <display value="Thawing and Formulation Performance Indicator Results"/>
-                        </coding>
-                        
-                    </code>
-                    <action>
-                        <title value="???"/>
-                        <code><text value="???"/></code>
-                        <action>
-                            <code><text value="Test"/></code>
-                            <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/ThawingFBPPIpH"/>
-                        </action>
-                        <action>
-                            <code><text value="Test"/></code>
-                            <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/ThawingOsmolality"/>
-                        </action>
-                        <action>
-                            <code><text value="Test"/></code>
-                            <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/ThawingConductivity"/>
-                        </action>
-                        <action>
-                            <code><text value="Test"/></code>
-                            <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/ThawingBacterialEndotoxins"/>
-                        </action>
-                        <action>
-                            <code><text value="Test"/></code>
-                            <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/Polysorbate"/>
-                        </action>
-                    </action>
-                </action>
+                <code>
+                    <text value="Test"/>
+                </code>
+                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/bufferVesselMixingTime"/>
+            </action>
+        </action>
+    </action>
+    <action>
+        <title value="Formulation Buffer Preparation Performance Indicator Results"/>
+        <code>
+            <coding>
+                <!--                     <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
+                <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step"/>
+                <code value="FormulationBufferPreparationPerformanceIndicatorStep"/>
+                <display value="Formulation Buffer Preparation Performance Indicator Results"/>
+            </coding>
+            <!--text value="Overall set of actions"/-->
+        </code>
+        <action>
+            <title value="???"/>
+            <code>
+                <text value="???"/>
+            </code>
+            <action>
+                <code>
+                    <text value="Test"/>
+                </code>
+                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/FBPPIpH"/>
+            </action>
+            <action>
+                <code>
+                    <text value="Test"/>
+                </code>
+                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/Osmolality"/>
+            </action>
+            <action>
+                <code>
+                    <text value="Test"/>
+                </code>
+                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/Conductivity"/>
+            </action>
+            <action>
+                <code>
+                    <text value="Test"/>
+                </code>
+                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/Bioburden"/>
+            </action>
+            <action>
+                <code>
+                    <text value="Test"/>
+                </code>
+                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/BacterialEndotoxins"/>
+            </action>
+        </action>
+    </action>
+    <action>
+        <title value="Thawing and Formulation Process Parameter Results"/>
+        <code>
+            <coding>
+                <!--                     <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
+                <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step"/>
+                <code value="ThawingandFormulationProcessParameterResultsStep"/>
+                <display value="Thawing and Formulation Process Parameter Resultss"/>
+            </coding>
+            <!--text value="Overall set of actions"/-->
+        </code>
+        <action>
+            <title value="???"/>
+            <code>
+                <text value="???"/>
+            </code>
+            <action>
+                <code>
+                    <text value="Test"/>
+                </code>
+                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/ThawingTemp"/>
+            </action>
+            <action>
+                <code>
+                    <text value="Test"/>
+                </code>
+                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/ThawingTime"/>
+            </action>
+            <action>
+                <code>
+                    <text value="Test"/>
+                </code>
+                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/formulationVesselMixingSpeed"/>
+            </action>
+            <action>
+                <code>
+                    <text value="Test"/>
+                </code>
+                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/formulationVesselMixingTime"/>
+            </action>
+        </action>
+    </action>
+    <action>
 
-                <action>
-                	
-                    <title value="Bioburden Reduction Filtration Process Parameter Results"/>
-                    <code>
-                        <coding>
-<!--                            <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
-                            <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step"/>
-                            <code value="BioburdenReductionFiltrationProcessParameterResultsStep"/>
-                            <display value="Bioburden Reduction Filtration Process Parameter Results"/>
-                        </coding>
-                    </code>
-                    <action>
-                        <code><text value="Test"/></code>
-                        <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/FiltrationPressure"/>
-                    </action>
-                </action>
-                
-                <action>
-                  	
-                    <title value="Bioburden Reduction Filtration Performance Indicator Results"/>
-                    <code>
-                        <coding>
-<!--                     <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
-                            <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step"/>
-                     <code value="BioburdenReductionFiltrationPerformanceIndicatorResultsStep"/>
-                            <display value="Bioburden Reduction Filtration Performance Indicator Results"/>
-                  </coding>
-               </code>
-               <action>
-                        <code><text value="Test"/></code>
-                   <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/PreFiltrationBioburden"/>
-                    </action>
-                    <action>
-                        <code><text value="Test"/></code>
-                        <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/PostFiltrationFilterIntegrity"/>
-                    </action>
-                </action>
-                
-                <action>
-                	
-                    <title value="Media Challenge Hold Times"/>
-                    <code>
-                        <coding>
-<!--                            <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
-                            <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step"/>
-                            <code value="MediaChallengeHoldTimesStep"/>
-                            <display value="Media Challenge Hold Times"/>
-                        </coding>
-                    </code>
-                    <action>
-                        <code><text value="Test"/></code>
-                        <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/MediaHoldTime"/>
-                    </action>
-                </action>
-                
-                <action>
-                	
-                    <title value="Media Challenge Results"/>
-                    <code>
-                        <coding>
-<!--                            <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
-                            <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step"/>
-                            <code value="MediaChallengeResultsStep"/>
-                            <display value="Media Challenge Results"/>
-                        </coding>
-                    </code>
-                    <action>
-                        <code><text value="Test"/></code>
-                        <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/MediaBioburden"/>
-                    </action>
-                    <action>
-                        <code><text value="Test"/></code>
-                        <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/GrowthPromotion"/>
-                    </action>
-                </action>
-                <action>
-                	
-                    <title value="Filtered Formulated Drug Product Performance Indicator Results"/>
-                    <code>
-                        <coding>
-<!--                            <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
-                            <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step"/>
-                            <code value="FilteredFormulatedDrugProductPerformanceIndicatorResultsStep"/>
-                            <display value="Filtered Formulated Drug Product Performance Indicator Results"/>
-                        </coding>
-                    </code>
-                    <action>
-                        <code><text value="Test"/></code>
-                        <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/SE-UHPLCMainPeak"/>
-                    </action>
-                    <action>
-                        <code><text value="Test"/></code>
-                        <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/SE-UHPLCMainPeakGraph"/>
-                    </action>
-                    <action>
-                        <code><text value="Test"/></code>
-                        <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/SE-UHPLCHMW"/>
-                    </action>
-                </action>
+        <title value="Thawing and Formulation Performance Indicator Results"/>
+        <code>
+            <coding>
+                <!--                            <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
+                <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step"/>
+                <code value="ThawingandFormulationPerformanceIndicatorResultsStep"/>
+                <display value="Thawing and Formulation Performance Indicator Results"/>
+            </coding>
 
-            	<action>
-                	
-            		<title value="Fill Weight Summary"/>
-            		<code>
-            			<coding>
-<!--            				<system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
-            			    <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step"/>
-            				<code value="FillWeightSummaryStep"/>
-            				<display value="Fill Weight Summary"/>
-            			</coding>
-            		</code>
-            		<action>
-            			<code><text value="Test"/></code>
-            		    <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/FillWeight"/>
-            		</action>
-            	</action>
-            	
-            	<action>
-		        	
-            		<title value="Filling Homogeneity Quality Attributes"/>
-            		<code>
-            			<coding>
-<!--            				<system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
-            			    <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step"/>
-            				<code value="FillingHomogeneityQualityAttributesStep"/>
-            				<display value="Filling Homogeneity Quality Attributes"/>
-            			</coding>
-            			<text value="Filling Homogeneity Quality Attributes"/>
-            		</code>
-            		<action>
-            			<code><text value="Conclusion"/></code>
-            		    <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/conclusionHomogeneity"/>
-            		</action>
-            		
-            	</action>
-            	
-            	<action>
-		        	
-            		<title value="Filling Results Summary"/>
-            		<code>
-            			<coding>
-<!--            				<system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
-            			    <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step"/>
-            				<code value="FillingResultsSummaryStep"/>
-            				<display value="Filling Results Summary"/>
-            			</coding>
-            		</code>
-            		<action>
-            			<code><text value="Test"/></code>
-            		    <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/ProteinConcentration"/>
-            		</action>
-            		<action>
-            			<code><text value="Test"/></code>
-            		    <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/Polysorbate80Concentration"/>
-            		</action>
-            	</action>
-            	
-            	<action>
-		        	
-            		<title value="Statistical Evaluation of Homogeneity Data"/>
-            		<code>
-            			<coding>
-<!--            				<system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
-            			    <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step"/>
-            				<code value="StatisticalEvaluationOfHomogeneityDataStep"/>
-            				<display value="Statistical Evaluation of Homogeneity Data"/>
-            			</coding>
-            		</code>
-            		<action>
-            			<code><text value="Test"/></code>
-            		    <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/ProteinConcentrationStats"/>
-            		</action>
-            		<action>
-            			<code><text value="Test"/></code>
-            		    <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/Polysorbate80Concentration"/>
-            		</action>
-            	</action>
-            	
-            	<action>
-                	
-            		<title value="Consistency of the Lyophilization Process"/>
-            		<code>
-            			<coding>
-<!--            				<system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
-            			    <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step"/>
-            				<code value="ConsistencyoftheLyophilizationProcessStep"/>
-            				<display value="Consistency of the Lyophilization Process"/>
-            			</coding>
-            		</code>
-            		<action>
-            			<code><text value="Test"/></code>
-            		    <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/ResidualMoisture"/>
-            		</action>
-            		<action>
-            			<code><text value="Definition"/></code>
-            		    <definitionCanonical value="http://example-server.com/fhir/ActivityDefinition/LyophilizationAct"/>
-            		</action>
-            	</action>
+        </code>
+        <action>
+            <title value="???"/>
+            <code>
+                <text value="???"/>
+            </code>
+            <action>
+                <code>
+                    <text value="Test"/>
+                </code>
+                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/ThawingFBPPIpH"/>
+            </action>
+            <action>
+                <code>
+                    <text value="Test"/>
+                </code>
+                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/ThawingOsmolality"/>
+            </action>
+            <action>
+                <code>
+                    <text value="Test"/>
+                </code>
+                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/ThawingConductivity"/>
+            </action>
+            <action>
+                <code>
+                    <text value="Test"/>
+                </code>
+                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/ThawingBacterialEndotoxins"/>
+            </action>
+            <action>
+                <code>
+                    <text value="Test"/>
+                </code>
+                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/Polysorbate"/>
+            </action>
+        </action>
+    </action>
 
-            	<action>
-					
-             		<title value="Lyophilization Homogeneity"/>
-            		<code>
-            			<coding>
-<!--            				<system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
-            			    <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step"/>
-            				<code value="LyophilizationHomogeneityStep"/>
-            				<display value="Lyophilization Homogeneity Results"/>
-            			</coding>
-            		</code>
-            		<action>
-            			<code><text value="Test"/></code>
-            		    <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/SE-UHPLCMainPeakLyoph"/>
-            			
-            		</action>
-            		<action>
-            			<code><text value="Test"/></code>
-            		    <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/SE-UHPLCHMWLyoph"/>
-            			
-            		</action>
-            	</action>
-            	
-            </PlanDefinition>
+    <action>
+
+        <title value="Bioburden Reduction Filtration Process Parameter Results"/>
+        <code>
+            <coding>
+                <!--                            <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
+                <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step"/>
+                <code value="BioburdenReductionFiltrationProcessParameterResultsStep"/>
+                <display value="Bioburden Reduction Filtration Process Parameter Results"/>
+            </coding>
+        </code>
+        <action>
+            <code>
+                <text value="Test"/>
+            </code>
+            <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/FiltrationPressure"/>
+        </action>
+    </action>
+
+    <action>
+
+        <title value="Bioburden Reduction Filtration Performance Indicator Results"/>
+        <code>
+            <coding>
+                <!--                     <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
+                <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step"/>
+                <code value="BioburdenReductionFiltrationPerformanceIndicatorResultsStep"/>
+                <display value="Bioburden Reduction Filtration Performance Indicator Results"/>
+            </coding>
+        </code>
+        <action>
+            <code>
+                <text value="Test"/>
+            </code>
+            <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/PreFiltrationBioburden"/>
+        </action>
+        <action>
+            <code>
+                <text value="Test"/>
+            </code>
+            <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/PostFiltrationFilterIntegrity"/>
+        </action>
+    </action>
+
+    <action>
+
+        <title value="Media Challenge Hold Times"/>
+        <code>
+            <coding>
+                <!--                            <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
+                <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step"/>
+                <code value="MediaChallengeHoldTimesStep"/>
+                <display value="Media Challenge Hold Times"/>
+            </coding>
+        </code>
+        <action>
+            <code>
+                <text value="Test"/>
+            </code>
+            <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/MediaHoldTime"/>
+        </action>
+    </action>
+
+    <action>
+
+        <title value="Media Challenge Results"/>
+        <code>
+            <coding>
+                <!--                            <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
+                <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step"/>
+                <code value="MediaChallengeResultsStep"/>
+                <display value="Media Challenge Results"/>
+            </coding>
+        </code>
+        <action>
+            <code>
+                <text value="Test"/>
+            </code>
+            <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/MediaBioburden"/>
+        </action>
+        <action>
+            <code>
+                <text value="Test"/>
+            </code>
+            <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/GrowthPromotion"/>
+        </action>
+    </action>
+    <action>
+
+        <title value="Filtered Formulated Drug Product Performance Indicator Results"/>
+        <code>
+            <coding>
+                <!--                            <system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
+                <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step"/>
+                <code value="FilteredFormulatedDrugProductPerformanceIndicatorResultsStep"/>
+                <display value="Filtered Formulated Drug Product Performance Indicator Results"/>
+            </coding>
+        </code>
+        <action>
+            <code>
+                <text value="Test"/>
+            </code>
+            <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/SE-UHPLCMainPeak"/>
+        </action>
+        <action>
+            <code>
+                <text value="Test"/>
+            </code>
+            <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/SE-UHPLCMainPeakGraph"/>
+        </action>
+        <action>
+            <code>
+                <text value="Test"/>
+            </code>
+            <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/SE-UHPLCHMW"/>
+        </action>
+    </action>
+
+    <action>
+
+        <title value="Fill Weight Summary"/>
+        <code>
+            <coding>
+                <!--            				<system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
+                <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step"/>
+                <code value="FillWeightSummaryStep"/>
+                <display value="Fill Weight Summary"/>
+            </coding>
+        </code>
+        <action>
+            <code>
+                <text value="Test"/>
+            </code>
+            <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/FillWeight"/>
+        </action>
+    </action>
+
+    <action>
+
+        <title value="Filling Homogeneity Quality Attributes"/>
+        <code>
+            <coding>
+                <!--            				<system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
+                <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step"/>
+                <code value="FillingHomogeneityQualityAttributesStep"/>
+                <display value="Filling Homogeneity Quality Attributes"/>
+            </coding>
+            <text value="Filling Homogeneity Quality Attributes"/>
+        </code>
+        <action>
+            <code>
+                <text value="Conclusion"/>
+            </code>
+            <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/conclusionHomogeneity"/>
+        </action>
+
+    </action>
+
+    <action>
+
+        <title value="Filling Results Summary"/>
+        <code>
+            <coding>
+                <!--            				<system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
+                <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step"/>
+                <code value="FillingResultsSummaryStep"/>
+                <display value="Filling Results Summary"/>
+            </coding>
+        </code>
+        <action>
+            <code>
+                <text value="Test"/>
+            </code>
+            <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/ProteinConcentration"/>
+        </action>
+        <action>
+            <code>
+                <text value="Test"/>
+            </code>
+            <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/Polysorbate80Concentration"/>
+        </action>
+    </action>
+
+    <action>
+
+        <title value="Statistical Evaluation of Homogeneity Data"/>
+        <code>
+            <coding>
+                <!--            				<system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
+                <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step"/>
+                <code value="StatisticalEvaluationOfHomogeneityDataStep"/>
+                <display value="Statistical Evaluation of Homogeneity Data"/>
+            </coding>
+        </code>
+        <action>
+            <code>
+                <text value="Test"/>
+            </code>
+            <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/ProteinConcentrationStats"/>
+        </action>
+        <action>
+            <code>
+                <text value="Test"/>
+            </code>
+            <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/Polysorbate80Concentration"/>
+        </action>
+    </action>
+
+    <action>
+
+        <title value="Consistency of the Lyophilization Process"/>
+        <code>
+            <coding>
+                <!--            				<system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
+                <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step"/>
+                <code value="ConsistencyoftheLyophilizationProcessStep"/>
+                <display value="Consistency of the Lyophilization Process"/>
+            </coding>
+        </code>
+        <action>
+            <code>
+                <text value="Test"/>
+            </code>
+            <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/ResidualMoisture"/>
+        </action>
+        <action>
+            <code>
+                <text value="Definition"/>
+            </code>
+            <definitionCanonical value="http://example-server.com/fhir/ActivityDefinition/LyophilizationAct"/>
+        </action>
+    </action>
+
+    <action>
+
+        <title value="Lyophilization Homogeneity"/>
+        <code>
+            <coding>
+                <!--            				<system value="http://temp.hl7.org/fhir/us/pq-cmc/CodeSystem/manufacturing-step"/>-->
+                <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step"/>
+                <code value="LyophilizationHomogeneityStep"/>
+                <display value="Lyophilization Homogeneity Results"/>
+            </coding>
+        </code>
+        <action>
+            <code>
+                <text value="Test"/>
+            </code>
+            <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/SE-UHPLCMainPeakLyoph"/>
+
+        </action>
+        <action>
+            <code>
+                <text value="Test"/>
+            </code>
+            <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/SE-UHPLCHMWLyoph"/>
+
+        </action>
+    </action>
+
+</PlanDefinition>

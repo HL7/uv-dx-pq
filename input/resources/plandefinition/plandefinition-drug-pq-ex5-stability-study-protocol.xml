@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PlanDefinition xmlns="http://hl7.org/fhir">
-    <!-- Contained in Accumulus FHIR Product Example - Stability (2-24-2023) -->   
+    <!-- Contained in Accumulus FHIR Product Example - Stability (2-24-2023) -->
     <!--        <id value="stabilityStudyProtocol"/>-->
     <id value="plandefinition-drug-pq-ex5-stability-study-protocol"/>
-                <meta>
-                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
-                </meta>
+    <meta>
+        <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
+    </meta>
     <url value="http://hl7.org/fhir/uv/pharm-quality/PlanDefinition/plandefinition-drug-pq-ex5-stability-study-protocol"/>
     <title value="Stability Monitoring Program"/>
-                <type>
-                    <coding>
-                        <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-plan-type"/>
-                        <code value="1244588"/>
-                        <display value="Stability Study Protocol"/>
-                    </coding>
-                </type>
+    <type>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-plan-type"/>
+            <code value="1244588"/>
+            <display value="Stability Study Protocol"/>
+        </coding>
+    </type>
     <status value="active"/>
-                <subjectReference>
-                    <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
-                </subjectReference>
+    <subjectReference>
+        <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"/>
+    </subjectReference>
     <description value="Narrative description of Stability Study"/>
     <!-- new "tabular" style -->
     <action>
-                    <title value="Stability Test Protocol for Long-term and Accelerated Storage of Stelbat Tablets, 20 mg"/>
+        <title value="Stability Test Protocol for Long-term and Accelerated Storage of Stelbat Tablets, 20 mg"/>
         <action>
             <!-- TODO add codes here for the different levels? -->
             <title value="Long-Term"/>
@@ -56,7 +56,7 @@
                     <definitionCanonical value="http://example-server.com/fhir/ActivityDefinition/activityLongTerm25XYZ-Initial"/>
                 </action>
             </action>
- <!--           
+            <!--           
             <action>
                 <!-\- 3 months -\->
                 <title value="3"/>
@@ -195,7 +195,7 @@
         -->
         </action>
         <!-- end of long term -->
-<!--        <action>
+        <!--        <action>
             <title value="Accelerated"/>
             <description value="40°C/75% RH"/>
             <!-\- 0 months - but results for this are not needed, because and zero months is the same for both long term and accelerated -\->
