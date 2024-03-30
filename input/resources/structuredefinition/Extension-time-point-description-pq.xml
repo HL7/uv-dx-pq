@@ -7,7 +7,7 @@
     <title value="Extension - Time Point Description PQ"/>
     <status value="active"/>
     <description value="A code that further describes a time point, such as 'delayed start'"/>
-    <fhirVersion value="5.0.0-snapshot3"/>
+    <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>
     <abstract value="false"/>
     

@@ -7,7 +7,7 @@
     <title value="Extension - Batch Storage Duration PQ"/>
     <status value="active"/>
     <description value="The length of time for which a batch is stored, before being tested"/>
-    <fhirVersion value="5.0.0-snapshot3"/>
+    <fhirVersion value="5.0.0"/>
     <kind value="complex-type"/>
     <abstract value="false"/>
     <context>
