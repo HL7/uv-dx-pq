@@ -6,7 +6,7 @@
     <meta>
         <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
     </meta>
-    <url value="http://hl7.org/fhir/uv/pharm-quality/PlanDefinition/plandefinition-drug-pq-ex5-stability-study-protocol"/>
+    <url value="http://example.org/plandefinition-drug-pq-ex5-stability-study-protocol"/>
     <title value="Stability Monitoring Program"/>
     <type>
         <coding>

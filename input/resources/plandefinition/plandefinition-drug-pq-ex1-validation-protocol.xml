@@ -6,7 +6,7 @@
     <meta>
         <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
     </meta>
-    <url value="http://hl7.org/fhir/uv/pharm-quality/PlanDefinition/plandefinition-drug-pq-ex1-validation-protocol"/>
+    <url value="http://example.org/plandefinition-drug-pq-ex1-validation-protocol"/>
     <title value="DP PROCESS VALIDATION"/>
     <type>
         <coding>
