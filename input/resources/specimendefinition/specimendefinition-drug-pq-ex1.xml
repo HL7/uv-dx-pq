@@ -4,9 +4,10 @@
     <!--    <id value="specimenDefStoredAt25"/>-->
     <id value="specimendefinition-drug-pq-ex1"/>
     <meta>
-                    <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-drug-pq"/>
+    	<profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-drug-pq"/>
     </meta>
-                <url value="http://hl7.org/fhir/uv/pharm-quality/SpecimenDefinition/specimendefinition-drug-pq-ex1"/>
+                
+    <url value="http://example-server.com/fhir/SpecimenDefinition/specimendefinition-drug-pq-ex1"/>
     <status value="active"/>
     <typeTested>
         <preference value="preferred"/>

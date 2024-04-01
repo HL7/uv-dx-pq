@@ -5,7 +5,7 @@
     <meta>
                     <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-drug-pq"/>
     </meta>
-                <url value="http://hl7.org/fhir/uv/pharm-quality/SpecimenDefinition/specimenDefStoredAt30"/>
+                <url value="http://example-server.com/fhir/SpecimenDefinition/specimenDefStoredAt30"/>
     <status value="active"/>
     <typeTested>
         <preference value="preferred"/>
