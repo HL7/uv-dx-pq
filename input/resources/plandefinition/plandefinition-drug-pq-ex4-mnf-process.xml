@@ -10,7 +10,7 @@
     <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-history-of-process-pq">
         <valueMarkdown value="Process has no history recorded yet"/>
     </extension>
-    <url value="http://example.org/plandefinition-drug-pq-ex4-mnf-process"/>
+                <url value="http://example-server.com/fhir/PlanDefinition/plandefinition-drug-pq-ex4-mnf-process"/>
     <title value="Process 1.0"/>
     <type>
         <coding>
