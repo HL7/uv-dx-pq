@@ -66,14 +66,14 @@
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/CEX-HPLCAcidicPeak-->
-                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/54bb47fd-8964-4f96-6495-b2bec7f161e8"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/74525a3d-5034-448a-9c19-938ce1958424"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/CEX-HPLCMainPeak-->
-                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/74525a3d-5034-448a-9c19-938ce1958424"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/74525a3d-5034-448a-9c19-938ce1958425"/>
                </action>
             </action>
          </PlanDefinition>
