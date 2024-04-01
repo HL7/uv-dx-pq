@@ -7,7 +7,7 @@
     </meta>
     <url value="http://example-server.com/fhir/ObservationDefinition/longTerm25X"/>
 <!--    <title value="X"/>-->
-    <title value="longTerm25X"/>
+                <title value="X"/>
     <status value="active"/>
     <code>
         <text value="Battery of tests 'X' at 25°C/60% RH"/>
