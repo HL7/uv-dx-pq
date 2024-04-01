@@ -14,7 +14,7 @@
     <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-history-of-process-pq">
         <valueMarkdown value="This can be text about the history"/>
     </extension>
-    <url value="http://example.org/plandefinition-drug-pq-ex2-manufacturing-plan"/>
+                <url value="http://example-server.com/fhir/PlanDefinition/plandefinition-drug-pq-ex2-manufacturing-plan"/>
     <title value="Process 1.0"/>
     <type>
         <coding>
