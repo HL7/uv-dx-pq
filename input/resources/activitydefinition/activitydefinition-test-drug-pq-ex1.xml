@@ -5,7 +5,7 @@
     <meta>
         <profile  value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-test-drug-pq"/>
     </meta>
-    <url value="http://example.org/activitydefinition-test-drug-pq-ex1"/>
+                <url value="http://example-server.com/fhir/ActivityDefinition/activitydefinition-test-drug-pq-ex1"/>
     <title value="Example of ActivityDefinition - Test for test set: Long-term - 25°C/60% RH - XYZ."/>
     <status value="active"/>
     <observationRequirement value="http://example-server.com/fhir/ObservationDefinition/longTerm25X"/>
