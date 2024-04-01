@@ -41,7 +41,7 @@
                      <text value="Test"/>
                   </code>
                   <!--ObservationDefinition/TestDate-->
-                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/13033a89-927a-10e0-503e-5f901bdca31f"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/13033a89-927a-10e0-503e-5f901bdcb30f"/>
                </action>
                <action>
                   <code>
