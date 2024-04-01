@@ -6,7 +6,7 @@
     <meta>
         <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
     </meta>
-    <url value="http://example.org/plandefinition-drug-pq-ex5-stability-study-protocol"/>
+                <url value="http://example-server.com/fhir/PlanDefinition/plandefinition-drug-pq-ex5-stability-study-protocol"/>
     <title value="Stability Monitoring Program"/>
     <type>
         <coding>
@@ -53,7 +53,8 @@
                     <!-- the categories to do at this step -->
                     <title value="XYZ"/>
                     <!-- Long term -->
-                    <definitionCanonical value="http://example-server.com/fhir/ActivityDefinition/activityLongTerm25XYZ-Initial"/>
+                    <!--definitionCanonical value="http://example-server.com/fhir/ActivityDefinition/activityLongTerm25XYZ-Initial"/-->
+                                <definitionCanonical value="http://example-server.com/fhir/ActivityDefinition/4bfe1ee8-91ed-5c1b-3045-c749bb9d1d90"/>
                 </action>
             </action>
             <!--           
