@@ -6,7 +6,7 @@
     <meta>
         <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
     </meta>
-    <url value="http://example.org/plandefinition-drug-pq-ex3-drug-specification"/>
+                <url value="http://example-server.com/fhir/PlanDefinition/plandefinition-drug-pq-ex3-drug-specification"/>
     <title value="SPECIFICATION(S) FOR DRUG PRODUCT"/>
     <status value="active"/>
     <subjectReference>
@@ -34,49 +34,57 @@
                 <code>
                     <text value="Test"/>
                 </code>
-                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/Description"/>
+                <!--<definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/Description"/>-->
+							<definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/77e7020a-270c-6bed-2e55-28e9e942546c"/>
             </action>
             <action>
                 <code>
                     <text value="Test"/>
                 </code>
-                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/Identification"/>
+                <!--<definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/Identification"/>-->
+							<definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/0d0ef4cf-242c-1cb1-81c4-c41837ee9a12"/>
             </action>
             <action>
                 <code>
                     <text value="Test"/>
                 </code>
-                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/Assay"/>
+                <!--<definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/Assay"/>-->
+							<definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/c0f05343-5b98-6073-1a0f-873aaf4f59bc"/>
             </action>
             <action>
                 <code>
                     <text value="Test"/>
                 </code>
-                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/Degradation"/>
+                <!--<definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/Degradation"/>-->
+							<definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/a3d4d23a-800a-684a-6a47-fcfe44e06041"/>
             </action>
             <action>
                 <code>
                     <text value="Test"/>
                 </code>
-                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/Dissolution"/>
+                <!--<definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/Dissolution"/>-->
+							<definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/bb11322b-9470-4f13-91b5-c8a5253380eb"/>
             </action>
             <action>
                 <code>
                     <text value="Test"/>
                 </code>
-                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/Uniformity"/>
+                <!--<definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/Uniformity"/>-->
+							<definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/e7e2fe59-5433-5cc0-84b1-d5f30032790c"/>
             </action>
             <action>
                 <code>
                     <text value="Test"/>
                 </code>
-                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/Microbiological"/>
+                <!--<definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/Microbiological"/>-->
+							<definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/64972eb3-99ee-7eae-2f63-733e5ae84f71"/>
             </action>
             <action>
                 <code>
                     <text value="Test"/>
                 </code>
-                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/Water"/>
+                <!--<definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/Water"/>-->
+                            <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/6ce8ab6d-55e2-0412-5fb1-ab33763f30b1"/>
             </action>
         </action>
         <action>
@@ -93,49 +101,57 @@
                 <code>
                     <text value="Test"/>
                 </code>
-                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/DescriptionEnd"/>
+                <!--<definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/DescriptionEnd"/>-->
+							<definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/d24ce3cd-213d-4935-97cf-8e2dd03721ec"/>
             </action>
             <action>
                 <code>
                     <text value="Test"/>
                 </code>
-                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/IdentificationEnd"/>
+                <!--definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/IdentificationEnd"/-->
+							<definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/f77ba972-5ef8-a178-9a5f-fe7f54da7499"/>
             </action>
             <action>
                 <code>
                     <text value="Test"/>
                 </code>
-                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/AssayEnd"/>
+                <!--<definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/AssayEnd"/>-->
+							<definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/f4a74fd3-876e-38ce-021f-04e5a8fb6a3f"/>
             </action>
             <action>
                 <code>
                     <text value="Test"/>
                 </code>
-                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/DegradationEnd"/>
+                <!--<definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/DegradationEnd"/>-->
+							<definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/ef72eeb7-211a-3c16-8460-8725ca43584f"/>
             </action>
             <action>
                 <code>
                     <text value="Test"/>
                 </code>
-                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/DissolutionEnd"/>
+                <!--<definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/DissolutionEnd"/>-->
+							<definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/6fa69a2d-5a9f-a391-76e6-bbdfba0b45ea"/>
             </action>
             <action>
                 <code>
                     <text value="Test"/>
                 </code>
-                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/UniformityEnd"/>
+                <!--<definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/UniformityEnd"/>-->
+							<definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/43dbc2a3-00c4-6f79-6b11-63768b412aa3"/>
             </action>
             <action>
                 <code>
                     <text value="Test"/>
                 </code>
-                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/MicrobiologicalEnd"/>
+                <!--<definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/MicrobiologicalEnd"/>-->
+							<definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/e582e504-36ec-3b50-4043-51bf1147124e"/>
             </action>
             <action>
                 <code>
                     <text value="Test"/>
                 </code>
-                <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/WaterEnd"/>
+                <!--<definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/WaterEnd"/>-->
+							<definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/91391017-774b-5c77-93fa-642534278851"/>
             </action>
         </action>
     </action>
