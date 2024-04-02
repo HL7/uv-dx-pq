@@ -55,7 +55,7 @@ In an effort to adopt a more efficient operating model, the biopharmaceutical in
 
 Currently, the end-to-end timescale for the pharmaceutical regulatory workflow is measured in months and years. This new paradigm, facilitated by this implementation guide, will use FHIR APIs and other supporting technologies to reduce the potential time for data exchange from months to days, hours, minutes, and eventually sub-seconds.
 
-Establishing a viable, real-time method to exchange product quality information across biopharmaceutical manufacturing organizations can help to facilitate technology transfer, allow enhanced monitoring of external or disseminated facilities, and can potentially support developing advanced manufacturing methodologies, such as point-of-care manufacturing.
+Establishing a viable, real-time method to exchange product quality information across biopharmaceutical manufacturing organizations can help to facilitate technology transfer, allow enhanced monitoring of facilities, and can potentially support developing advanced manufacturing methodologies, such as point-of-care manufacturing.
 
 Importantly, spurring innovation in the biopharmaceutical sector is only one benefit of this real-time data exchange approach. Ultimately, the approaches highlighted within this implementation guide will help bring high quality medicinal products to market faster, and in a more cost-effective manner. This will also help create more robust manufacturing processes and more manageable global supply chains. This in turn will help reduce manufacturing down time, reduce the chance of shortages, and increase product quality and data compliance. Taken together, each of these benefits will enable speedier patient access to new treatments and minimize the post-approval life-cycle management burden for sponsors, while contributing favorably to overall global patient experience.
 
@@ -104,3 +104,10 @@ This guide is developed and produced through the efforts of Health Level Seven I
 The project team appreciates the support and sponsorship of the HL7 Public Health Work Group, and all volunteers and staff associated with the creation of this resource. The team appreciates the comments and input from the biopharmaceutical community as well as the HL7 volunteers who participate in the Biomedical Research and Regulation Work Group.
 
 Health Level Seven, HL7, FHIR and the [FLAME DESIGN] are registered trademarks of Health Level Seven International, registered in the US Trademark Office. For acknowledgement of terminology content, please see the [IP Statements section](general_design.html#ip-statements).
+
+### Providing Feedback
+Please suggest improvements and provide notes about issues through [HL7's Jira Software](https://jira.hl7.org/) (free account and log-in required).
+
+HL7's Confluence pages provide guidance on submitting [Specifcation Feedback](https://confluence.hl7.org/display/HL7/Specification+Feedback#SpecificationFeedback-newSubmittingnewfeedback) in Jira.
+
+See also the HL7 FHIR Community Chat [Zulip](https://chat.fhir.org/) stream "dx-PQ IG pharma quality - industry" for discussion about the Pharmaceutical Quality (Industry) FHIR IG and BR&R Pharmaceutical Quality (PQ) - Industry Use Case project.
