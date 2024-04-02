@@ -15,7 +15,7 @@ A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/CAS' could no
 No definition can be found for the system http://standardterms.edqm.eu, and the property 'class' is not a generally known property, so the property might not be valid, or understood by the terminology ecosystem. In case its useful, the list of generally known properties for all systems is {2}
 No definition can be found for the system http://standardterms.edqm.eu, and the property 'domain' is not a generally known property, so the property might not be valid, or understood by the terminology ecosystem. In case its useful, the list of generally known properties for all systems is {2}
 
-# Example files for  ActivityDefinition & PlanDefinition are flagged as possibly needing an OID.”
+# Example files for ActivityDefinition & PlanDefinition are flagged as possibly needing an OID.”
 This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 
 # Example files for ActivityDefinition & PlanDefinition have the WG extension (http://hl7.org/fhir/StructureDefinition/structuredefinition-wg)  added by the Publisher, causing a slicing issue.
