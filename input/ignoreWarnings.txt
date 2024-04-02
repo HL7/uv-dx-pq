@@ -15,6 +15,12 @@ A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/CAS' could no
 No definition can be found for the system http://standardterms.edqm.eu, and the property 'class' is not a generally known property, so the property might not be valid, or understood by the terminology ecosystem. In case its useful, the list of generally known properties for all systems is {2}
 No definition can be found for the system http://standardterms.edqm.eu, and the property 'domain' is not a generally known property, so the property might not be valid, or understood by the terminology ecosystem. In case its useful, the list of generally known properties for all systems is {2}
 
+# Example files for  ActivityDefinition & PlanDefinition are flagged as possibly needing an OID.”
+This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+
+# Example files for ActivityDefinition & PlanDefinition have the WG extension (http://hl7.org/fhir/StructureDefinition/structuredefinition-wg)  added by the Publisher, causing a slicing issue.
+This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+
 # This IG contains 8 example codes systems, which are not expected to be moved to THO.
 Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 
