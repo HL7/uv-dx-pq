@@ -50,8 +50,9 @@
                         <valueString value="100 cc HDPE Bottle 2 g desiccant"/>
                      </extension>
                   </extension>
+                  <!-- local extensions -->
                </extension>
-               <!-- local extensions -->
+               <!-- local extensions now outside the batch -->
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                   <valueDateTime value="2019-09-08"/>
                </extension>
@@ -118,8 +119,9 @@
                         <valueString value="100 cc HDPE Bottle 2 g desiccant"/>
                      </extension>
                   </extension>
+                  <!-- local extensions -->
                </extension>
-               <!-- local extensions -->
+               <!-- local extensions (now outside the batch) -->
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq">
                   <valueQuantity>
                      <value value="4.8"/>
@@ -186,8 +188,9 @@
                         <valueString value="100 cc HDPE Bottle 2 g desiccant"/>
                      </extension>
                   </extension>
+                  <!-- local extensions -->
                </extension>
-               <!-- local extensions -->
+               <!-- local extensions (now outside the batch) -->
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
                   <valueDateTime value="2019-09-08"/>
                </extension>
@@ -221,6 +224,14 @@
                <system value="urn:oid:2.16.840.1.113883.4.82"/>
                <value value="3010027650"/>
             </identifier>
+            <active value="true"/>
+            <type>
+               <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type"/>
+                  <code value="drug-product-manufacture"/>
+                  <display value="Drug Product Manufacture"/>
+               </coding>
+            </type>
             <name value="AAA Pharmaceutical, Inc."/>
             <contact>
                <address>
@@ -239,6 +250,18 @@
       <resource>
          <Organization>
             <id value="packaging"/>
+            <identifier>
+               <system value="urn:oid:2.16.840.1.113883.4.82"/>
+               <value value="3008816891"/>
+            </identifier>
+            <active value="true"/>
+            <type>
+               <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type"/>
+                  <code value="packaging"/>
+                  <display value="Packaging"/>
+               </coding>
+            </type>
             <name value="MySite"/>
          </Organization>
       </resource>
@@ -269,7 +292,7 @@
                <productName value="Stelbat Tablets, 20mg"/>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-pq-example"/>
                      <code value="Proprietary"/>
                      <display value="Proprietary"/>
                   </coding>

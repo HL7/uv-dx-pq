@@ -42,7 +42,7 @@
                <property>
                   <type>
                      <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/package-property"/>
                         <code value="Quality Specification"/>
                         <display value="Quality Specification"/>
                      </coding>
@@ -54,7 +54,7 @@
                <property>
                   <type>
                      <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-packageProperty-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/package-property"/>
                         <code value="Quality Specification"/>
                         <display value="Quality Specification"/>
                      </coding>
@@ -170,7 +170,7 @@
                   <display value="Workflow Definition"/>
                </coding>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-plan-type"/>
                   <code value="container-specification"/>
                   <display value="Container Specification"/>
                </coding>
@@ -184,7 +184,7 @@
                <title value="Container Specification"/>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-specification-type-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-specification-type-pq-example"/>
                      <code value="Container Specification"/>
                      <display value="Container Specification"/>
                   </coding>
@@ -195,21 +195,24 @@
                   <code>
                      <text value="Test"/>
                   </code>
-                  <definitionCanonical value="ObservationDefinition/VisualInspection"/>
+                  <!--definitionCanonical value="ObservationDefinition/VisualInspection"/-->
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/64525b3c-5134-448a-9d19-939ce1958524"/>
                </action>
                <action>
                   <description value="Material Identification"/>
                   <code>
                      <text value="Test"/>
                   </code>
-                  <definitionCanonical value="ObservationDefinition/InfraredSpectroscopy"/>
+                  <!--definitionCanonical value="ObservationDefinition/InfraredSpectroscopy"/-->
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/64525b3c-5134-448a-9d19-939ce1958525"/>
                </action>
                <action>
                   <description value="Material Conformity"/>
                   <code>
                      <text value="Test"/>
                   </code>
-                  <definitionCanonical value="ObservationDefinition/SupplierCertificateofAnalysis"/>
+                  <!--definitionCanonical value="ObservationDefinition/SupplierCertificateofAnalysis"/-->
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/64525b3c-5134-448a-9d19-939ce1958535"/>
                </action>
             </action>
          </PlanDefinition>
@@ -225,7 +228,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="VisualInspection"/>
                   <display value="VisualInspection"/>
                </coding>
@@ -248,7 +251,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="InfraredSpectroscopy"/>
                   <display value="InfraredSpectroscopy"/>
                </coding>
@@ -271,7 +274,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="SupplierCertificateofAnalysis"/>
                   <display value="SupplierCertificateofAnalysis"/>
                </coding>

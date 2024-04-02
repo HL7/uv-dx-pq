@@ -22,7 +22,7 @@
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-impurity-origin-pq">
                   <valueCodeableConcept>
                      <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-origin-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/impurity-origin"/>
                         <code value="enantiomer"/>
                         <display value="Enantiomer"/>
                      </coding>
@@ -40,7 +40,7 @@
                      <display value="Impurity Of"/>
                   </coding>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-type-local-pq"/>
+                     <system value="http://terminology.hl7.org/CodeSystem/impurity-type"/>
                      <code value="CH-IMP"/>
                      <display value="Chiral Impurity"/>
                   </coding>
@@ -51,7 +51,7 @@
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-impurity-origin-pq">
                   <valueCodeableConcept>
                      <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-origin-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/impurity-origin"/>
                         <code value="process"/>
                         <display value="Process Impurity"/>
                      </coding>
@@ -68,7 +68,7 @@
                      <display value="Impurity Of"/>
                   </coding>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-type-local-pq"/>
+                     <system value="http://terminology.hl7.org/CodeSystem/impurity-type"/>
                      <code value="PR-IMP"/>
                      <display value="Process impurity"/>
                   </coding>
@@ -79,7 +79,7 @@
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-impurity-origin-pq">
                   <valueCodeableConcept>
                      <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-origin-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/impurity-origin"/>
                         <code value="process"/>
                         <display value="Process Impurity"/>
                      </coding>
@@ -96,7 +96,7 @@
                      <display value="Impurity Of"/>
                   </coding>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-type-local-pq"/>
+                     <system value="http://terminology.hl7.org/CodeSystem/impurity-type"/>
                      <code value="PR-IMP"/>
                      <display value="Process impurity"/>
                   </coding>
@@ -107,7 +107,7 @@
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-impurity-origin-pq">
                   <valueCodeableConcept>
                      <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-origin-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/impurity-origin"/>
                         <code value="starting-material"/>
                         <display value="Starting Material"/>
                      </coding>
@@ -124,7 +124,7 @@
                      <display value="Impurity Of"/>
                   </coding>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-type-local-pq"/>
+                     <system value="http://terminology.hl7.org/CodeSystem/impurity-type"/>
                      <code value="ST-IMP"/>
                      <display value="Starting material, forced degradation product"/>
                   </coding>
@@ -135,7 +135,7 @@
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-impurity-origin-pq">
                   <valueCodeableConcept>
                      <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-origin-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/impurity-origin"/>
                         <code value="intermediate-material"/>
                         <display value="Intermediate Material"/>
                      </coding>
@@ -152,7 +152,7 @@
                      <display value="Impurity Of"/>
                   </coding>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-impurity-type-local-pq"/>
+                     <system value="http://terminology.hl7.org/CodeSystem/impurity-type"/>
                      <code value="INT-IMP"/>
                      <display value="Process intermediate, forced degradation product"/>
                   </coding>
@@ -180,14 +180,14 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicityClassificationType-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                      <code value="1233444"/>
                      <display value="Rule-based (Q)Sar"/>
                   </coding>
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicity-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-pq-example"/>
                      <code value="negative"/>
                      <display value="Negative"/>
                   </coding>
@@ -196,14 +196,14 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicityClassificationType-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                      <code value="123555"/>
                      <display value="Statistical (Q)Sar"/>
                   </coding>
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicity-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-pq-example"/>
                      <code value="negative"/>
                      <display value="Negative"/>
                   </coding>
@@ -212,14 +212,14 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicityClassificationType-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                      <code value="123556"/>
                      <display value="ICH M7 Classification"/>
                   </coding>
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ich-m7-classification-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-pq-example"/>
                      <code value="class-5"/>
                      <display value="Class 5"/>
                   </coding>
@@ -228,7 +228,7 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicityClassificationType-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                      <code value="123557"/>
                      <display value="Mutagenicity Comment"/>
                   </coding>
@@ -286,14 +286,14 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicityClassificationType-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                      <code value="1233444"/>
                      <display value="Rule-based (Q)Sar"/>
                   </coding>
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicity-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-pq-example"/>
                      <code value="negative"/>
                      <display value="Negative"/>
                   </coding>
@@ -302,14 +302,14 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicityClassificationType-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                      <code value="123555"/>
                      <display value="Statistical (Q)Sar"/>
                   </coding>
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicity-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-pq-example"/>
                      <code value="negative"/>
                      <display value="Negative"/>
                   </coding>
@@ -318,14 +318,14 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicityClassificationType-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                      <code value="123556"/>
                      <display value="ICH M7 Classification"/>
                   </coding>
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ich-m7-classification-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-pq-example"/>
                      <code value="class-5"/>
                      <display value="Class 5"/>
                   </coding>
@@ -334,7 +334,7 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicityClassificationType-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                      <code value="123557"/>
                      <display value="Mutagenicity Comment"/>
                   </coding>
@@ -392,14 +392,14 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicityClassificationType-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                      <code value="1233444"/>
                      <display value="Rule-based (Q)Sar"/>
                   </coding>
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicity-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-pq-example"/>
                      <code value="negative"/>
                      <display value="Negative"/>
                   </coding>
@@ -408,14 +408,14 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicityClassificationType-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                      <code value="123555"/>
                      <display value="Statistical (Q)Sar"/>
                   </coding>
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicity-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-pq-example"/>
                      <code value="negative"/>
                      <display value="Negative"/>
                   </coding>
@@ -424,14 +424,14 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicityClassificationType-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                      <code value="123556"/>
                      <display value="ICH M7 Classification"/>
                   </coding>
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ich-m7-classification-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-pq-example"/>
                      <code value="class-5"/>
                      <display value="Class 5"/>
                   </coding>
@@ -440,7 +440,7 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicityClassificationType-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                      <code value="123557"/>
                      <display value="Mutagenicity Comment"/>
                   </coding>
@@ -503,14 +503,14 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicityClassificationType-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                      <code value="1233444"/>
                      <display value="Rule-based (Q)Sar"/>
                   </coding>
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicity-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-pq-example"/>
                      <code value="negative"/>
                      <display value="Negative"/>
                   </coding>
@@ -519,14 +519,14 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicityClassificationType-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                      <code value="123555"/>
                      <display value="Statistical (Q)Sar"/>
                   </coding>
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicity-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-pq-example"/>
                      <code value="negative"/>
                      <display value="Negative"/>
                   </coding>
@@ -535,14 +535,14 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicityClassificationType-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                      <code value="123556"/>
                      <display value="ICH M7 Classification"/>
                   </coding>
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ich-m7-classification-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-pq-example"/>
                      <code value="class-5"/>
                      <display value="Class 5"/>
                   </coding>
@@ -551,7 +551,7 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicityClassificationType-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                      <code value="123557"/>
                      <display value="Mutagenicity Comment"/>
                   </coding>
@@ -648,14 +648,14 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicityClassificationType-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                      <code value="1233444"/>
                      <display value="Rule-based (Q)Sar"/>
                   </coding>
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicity-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-pq-example"/>
                      <code value="positive"/>
                      <display value="Positive"/>
                   </coding>
@@ -664,14 +664,14 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicityClassificationType-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                      <code value="123555"/>
                      <display value="Statistical (Q)Sar"/>
                   </coding>
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicity-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-pq-example"/>
                      <code value="positive"/>
                      <display value="Positive"/>
                   </coding>
@@ -680,14 +680,14 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicityClassificationType-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                      <code value="123556"/>
                      <display value="ICH M7 Classification"/>
                   </coding>
                </type>
                <valueCodeableConcept>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ich-m7-classification-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-pq-example"/>
                      <code value="class-2"/>
                      <display value="Class 2"/>
                   </coding>
@@ -696,7 +696,7 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-mutagenicityClassificationType-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                      <code value="123557"/>
                      <display value="Mutagenicity Comment"/>
                   </coding>
@@ -752,6 +752,14 @@
                <system value="urn:oid:2.16.840.1.113883.4.82"/>
                <value value="3003040516"/>
             </identifier>
+            <active value="true"/>
+            <type>
+               <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type"/>
+                  <code value="drug-substance-manufacture"/>
+                  <display value="Drug Substance Manufacture"/>
+               </coding>
+            </type>
             <name value="AAA Molybdenum Products, Inc."/>
             <contact>
                <address>

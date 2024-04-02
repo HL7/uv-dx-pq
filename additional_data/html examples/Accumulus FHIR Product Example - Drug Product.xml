@@ -185,7 +185,7 @@
             <characteristic>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="physicochemical"/>
                      <display value="Physicochemical properties"/>
                   </coding>
@@ -197,7 +197,7 @@
             <characteristic>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="pH"/>
                      <display value="pH"/>
                   </coding>
@@ -209,7 +209,7 @@
             <characteristic>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="ionic-strength"/>
                      <display value="Ionic Strength"/>
                   </coding>
@@ -240,7 +240,7 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-pq-example"/>
                      <code value="overage-by-mass"/>
                      <display value="Overage by mass (%)"/>
                   </coding>
@@ -254,7 +254,7 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-pq-example"/>
                      <code value="overage-reason"/>
                      <display value="Overage reason"/>
                   </coding>
@@ -271,6 +271,19 @@
       <resource>
          <Organization>
             <id value="organization-drug-pq-ex1"/>
+            <identifier>
+                    <!-- FDA establishment identifier -->
+               <system value="urn:oid:2.16.840.1.113883.4.82"/>
+               <value value="3003040516"/>
+            </identifier>
+            <active value="true"/>
+            <type>
+               <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type"/>
+                  <code value="drug-substance-manufacture"/>
+                  <display value="Drug Substance Manufacture"/>
+               </coding>
+            </type>
             <name value="AAA Molybdenum Products, Inc."/>
          </Organization>
       </resource>

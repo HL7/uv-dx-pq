@@ -31,7 +31,7 @@
                <productName value="Stalbatolol"/>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-pq-example"/>
                      <code value="Proprietary"/>
                      <display value="Proprietary"/>
                   </coding>
@@ -52,7 +52,7 @@
                </extension>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                      <code value="solubility-water"/>
                      <display value="Solubility purified water"/>
                   </coding>
@@ -61,7 +61,7 @@
             <characteristic>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
                      <code value="water-content"/>
                      <display value="Water content"/>
                   </coding>
@@ -84,6 +84,14 @@
                <system value="urn:oid:2.16.840.1.113883.4.82"/>
                <value value="3010027651"/>
             </identifier>
+            <active value="true"/>
+            <type>
+               <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type"/>
+                  <code value="drug-substance-manufacture"/>
+                  <display value="Drug Substance Manufacture"/>
+               </coding>
+            </type>
             <name value="Modified Sugar, Inc."/>
             <contact>
                <address>
@@ -107,6 +115,14 @@
                <system value="urn:oid:2.16.840.1.113883.4.82"/>
                <value value="3012027651"/>
             </identifier>
+            <active value="true"/>
+            <type>
+               <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type"/>
+                  <code value="drug-substance-manufacture"/>
+                  <display value="Drug Substance Manufacture"/>
+               </coding>
+            </type>
             <name value="Plasma Source, Inc."/>
             <contact>
                <address>

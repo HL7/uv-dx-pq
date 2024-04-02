@@ -19,7 +19,7 @@
                   <display value="Workflow Definition"/>
                </coding>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-plan-type"/>
                   <code value="analytical-procedure"/>
                   <display value="Analytical Procedure"/>
                </coding>
@@ -33,7 +33,7 @@
                   <extension url="parameter">
                      <valueCodeableConcept>
                         <coding>
-                           <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-processParameter-local-pq"/>
+                           <system value="http://terminology.hl7.org/CodeSystem/process-parameter"/>
                            <code value="OPTICAL"/>
                            <display value="Optical properties"/>
                         </coding>
@@ -47,7 +47,7 @@
                   <extension url="parameter">
                      <valueCodeableConcept>
                         <coding>
-                           <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-processParameter-local-pq"/>
+                           <system value="http://terminology.hl7.org/CodeSystem/process-parameter"/>
                            <code value="THEORY"/>
                            <display value="Theory"/>
                         </coding>
@@ -61,7 +61,7 @@
                   <extension url="parameter">
                      <valueCodeableConcept>
                         <coding>
-                           <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-processParameter-local-pq"/>
+                           <system value="http://terminology.hl7.org/CodeSystem/process-parameter"/>
                            <code value="STIR"/>
                            <display value="Stir Time"/>
                         </coding>
@@ -88,7 +88,7 @@
                   </typeReference>
                   <role>
                      <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/manufacturing-participant-role"/>
                         <code value="dispersant"/>
                         <display value="Dispersant"/>
                      </coding>
@@ -105,7 +105,7 @@
                   </typeReference>
                   <role>
                      <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/manufacturing-participant-role"/>
                         <code value="ResultingMaterial"/>
                         <display value="Resulting Material"/>
                      </coding>
@@ -124,7 +124,8 @@
                      <code>
                         <text value="Test"/>
                      </code>
-                     <definitionCanonical value="ObservationDefinition/ParticleSize"/>
+                     <!--definitionCanonical value="ObservationDefinition/ParticleSize"/-->
+                     <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4136-3c1f-b8ba6a7d046e"/>
                   </action>
                </action>
                <action>
@@ -228,7 +229,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="Obscuration"/>
                   <display value="Obscuration"/>
                </coding>
@@ -265,7 +266,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="Refractive index"/>
                   <display value="Refractive index"/>
                </coding>
@@ -296,7 +297,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="Particle Size RSD"/>
                   <display value="Particle Size RSD"/>
                </coding>

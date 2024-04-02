@@ -19,7 +19,7 @@
                   <display value="Workflow Definition"/>
                </coding>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-plan-type"/>
                   <code value="elucidation-of-structure"/>
                   <display value="Elucidation of Structure"/>
                </coding>
@@ -36,7 +36,7 @@
                <description value="Description of this step"/>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-characterizationStep-local-pq"/>
+                     <system value="http://terminology.hl7.org/CodeSystem/structure-characterization-technique"/>
                      <code value="elemental-analyis"/>
                      <display value="Elemental Analyis"/>
                   </coding>
@@ -45,25 +45,25 @@
                   <code>
                      <text value="Test"/>
                   </code>
-                  <definitionCanonical value="ObservationDefinition/ElementalAnalysisCarbon"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
-                  <definitionCanonical value="ObservationDefinition/ElementalAnalysisHydrogen"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e73"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
-                  <definitionCanonical value="ObservationDefinition/ElementalAnalysisNitrogen"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e74"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
-                  <definitionCanonical value="ObservationDefinition/ElementalAnalysisFlourine"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e75"/>
                </action>
             </action>
             <action>
@@ -73,7 +73,7 @@
                <description value="Description of this step"/>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-characterizationStep-local-pq"/>
+                     <system value="http://terminology.hl7.org/CodeSystem/structure-characterization-technique"/>
                      <code value="ion-analyis"/>
                      <display value="Ion Analyis"/>
                   </coding>
@@ -82,25 +82,25 @@
                   <code>
                      <text value="Test"/>
                   </code>
-                  <definitionCanonical value="ObservationDefinition/IonAnalysisCarbon"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c3-2d06-47cb5b295e72"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
-                  <definitionCanonical value="ObservationDefinition/IonAnalysisHydrogen"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c4-2d06-47cb5b295e72"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
-                  <definitionCanonical value="ObservationDefinition/IonAnalysisNitrogen"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/fd18b5d6-9fe1-91c4-2d06-47cb5b295e72"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
-                  <definitionCanonical value="ObservationDefinition/IonAnalysisFlourine"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c5-2d06-47cb5b295e72"/>
                </action>
             </action>
             <action>
@@ -110,7 +110,7 @@
                <description value="Description of this step"/>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-characterizationStep-local-pq"/>
+                     <system value="http://terminology.hl7.org/CodeSystem/structure-characterization-technique"/>
                      <code value="structure"/>
                      <display value="Structure"/>
                   </coding>
@@ -119,7 +119,7 @@
                   <code>
                      <text value="Test"/>
                   </code>
-                  <definitionCanonical value="ObservationDefinition/Structure"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9ff1-91c5-2d06-47cb5b295e72"/>
                </action>
             </action>
             <action>
@@ -129,7 +129,7 @@
                <description value="Description of this step"/>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-characterizationStep-local-pq"/>
+                     <system value="http://terminology.hl7.org/CodeSystem/structure-characterization-technique"/>
                      <code value="nmr"/>
                      <display value="NMR"/>
                   </coding>
@@ -138,7 +138,7 @@
                   <code>
                      <text value="Test"/>
                   </code>
-                  <definitionCanonical value="ObservationDefinition/NMR"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe2-91c2-2d06-47cb5b295e72"/>
                </action>
             </action>
             <action>
@@ -148,7 +148,7 @@
                <description value="Description of this step"/>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-characterizationStep-local-pq"/>
+                     <system value="http://terminology.hl7.org/CodeSystem/structure-characterization-technique"/>
                      <code value="MolecularStructure"/>
                      <display value="Molecular Structure"/>
                   </coding>
@@ -157,7 +157,7 @@
                   <code>
                      <text value="Test"/>
                   </code>
-                  <definitionCanonical value="ObservationDefinition/MolecularStructure"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9ff1-91c5-2d06-47cb5b295e74"/>
                </action>
             </action>
             <action>
@@ -167,7 +167,7 @@
                <description value="Description of this step"/>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-characterizationStep-local-pq"/>
+                     <system value="http://terminology.hl7.org/CodeSystem/structure-characterization-technique"/>
                      <code value="diffractogram"/>
                      <display value="Diffractogram"/>
                   </coding>
@@ -176,7 +176,7 @@
                   <code>
                      <text value="Test"/>
                   </code>
-                  <definitionCanonical value="ObservationDefinition/Diffractogram"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9ff1-91c5-2d06-47cb5b295e73"/>
                </action>
             </action>
             <action>
@@ -186,7 +186,7 @@
                <description value="Description of this step"/>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-characterizationStep-local-pq"/>
+                     <system value="http://terminology.hl7.org/CodeSystem/structure-characterization-technique"/>
                      <code value="absorption"/>
                      <display value="Absorption"/>
                   </coding>
@@ -195,7 +195,7 @@
                   <code>
                      <text value="Test"/>
                   </code>
-                  <definitionCanonical value="ObservationDefinition/Absorption"/>
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9ff1-91c5-2d06-47cb5b295e75"/>
                </action>
             </action>
          </PlanDefinition>
@@ -217,7 +217,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-report-type"/>
                   <code value="Characterization Report"/>
                   <display value="Characterization Report"/>
                </coding>
@@ -294,7 +294,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="ElementalAnalysisCarbon"/>
                   <display value="Elemental Analysis Carbon (%)"/>
                </coding>
@@ -327,12 +327,12 @@
       <resource>
          <ObservationDefinition>
             <id value="ElementalAnalysisHydrogen"/>
-            <url value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e73"/>
             <title value="H"/>
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="ElementalAnalysisHydrogen"/>
                   <display value="Elemental Analysis Hydrogen (%)"/>
                </coding>
@@ -365,12 +365,12 @@
       <resource>
          <ObservationDefinition>
             <id value="ElementalAnalysisNitrogen"/>
-            <url value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e74"/>
             <title value="N"/>
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="ElementalAnalysisNitrogen"/>
                   <display value="Elemental Analysis Nitrogen (%)"/>
                </coding>
@@ -403,12 +403,12 @@
       <resource>
          <ObservationDefinition>
             <id value="ElementalAnalysisFlourine"/>
-            <url value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e75"/>
             <title value="F"/>
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="ElementalAnalysisFlourine"/>
                   <display value="Elemental Analysis Flourine (%)"/>
                </coding>
@@ -441,12 +441,12 @@
       <resource>
          <ObservationDefinition>
             <id value="IonAnalysisCarbon"/>
-            <url value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c3-2d06-47cb5b295e72"/>
             <title value="C"/>
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="IonAnalysisCarbon"/>
                   <display value="Ion Analysis Carbon (%)"/>
                </coding>
@@ -469,7 +469,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="IonAnalysisCarbonMassAccuracy"/>
                      <display value="Ion Analysis Carbon - Mass Accuracy"/>
                   </coding>
@@ -483,12 +483,12 @@
       <resource>
          <ObservationDefinition>
             <id value="IonAnalysisHydrogen"/>
-            <url value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c4-2d06-47cb5b295e72"/>
             <title value="H"/>
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="IonAnalysisHydrogen"/>
                   <display value="Ion Analysis Hydrogen (%)"/>
                </coding>
@@ -516,12 +516,12 @@
       <resource>
          <ObservationDefinition>
             <id value="IonAnalysisNitrogen"/>
-            <url value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/fd18b5d6-9fe1-91c4-2d06-47cb5b295e72"/>
             <title value="N"/>
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="IonAnalysisNitrogen"/>
                   <display value="Ion Analysis Nitrogen (%)"/>
                </coding>
@@ -549,12 +549,12 @@
       <resource>
          <ObservationDefinition>
             <id value="IonAnalysisFlourine"/>
-            <url value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c5-2d06-47cb5b295e72"/>
             <title value="F"/>
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="IonAnalysisFlourine"/>
                   <display value="Ion Analysis Flourine (%)"/>
                </coding>
@@ -582,12 +582,12 @@
       <resource>
          <ObservationDefinition>
             <id value="NMR"/>
-            <url value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe2-91c2-2d06-47cb5b295e72"/>
             <title value="NMR"/>
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="NMR"/>
                   <display value="NMR"/>
                </coding>
@@ -597,7 +597,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="NMR-H"/>
                      <display value="NMR-H"/>
                   </coding>
@@ -606,7 +606,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="NMR-C"/>
                      <display value="NMR-C"/>
                   </coding>
@@ -615,7 +615,7 @@
             <component> <!-- are expected to have a component that says number of samples -->
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="POS"/>
                      <display value="Structure Position"/>
                   </coding>
@@ -629,12 +629,12 @@
       <resource>
          <ObservationDefinition>
             <id value="Structure"/>
-            <url value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9ff1-91c5-2d06-47cb5b295e72"/>
             <title value="Structure (needed?)"/>
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="Chemical Structure"/>
                   <display value="Chemical Structure"/>
                </coding>
@@ -648,12 +648,12 @@
       <resource>
          <ObservationDefinition>
             <id value="Diffractogram"/>
-            <url value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e73"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9ff1-91c5-2d06-47cb5b295e73"/>
             <title value="Diffractogram (todo needed?)"/>
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="Diffractogram"/>
                   <display value="Diffractogram"/>
                </coding>
@@ -667,11 +667,11 @@
       <resource>
          <ObservationDefinition>
             <id value="MolecularStructure"/>
-            <url value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e74"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9ff1-91c5-2d06-47cb5b295e74"/>
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="MolecularStructure"/>
                   <display value="Molecular Structure"/>
                </coding>
@@ -685,11 +685,11 @@
       <resource>
          <ObservationDefinition>
             <id value="Absorption"/>
-            <url value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e75"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9ff1-91c5-2d06-47cb5b295e75"/>
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="Absorption"/>
                   <display value="Absorption"/>
                </coding>
@@ -706,10 +706,11 @@
             <instantiatesReference>
                <reference value="ObservationDefinition/ElementalAnalysisCarbon"/>
             </instantiatesReference>
+            <!--<instantiatesCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72"/>-->
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="ElementalAnalysisCarbon"/>
                   <display value="Elemental Analysis Carbon (%)"/>
                </coding>
@@ -737,10 +738,11 @@
             <instantiatesReference>
                <reference value="ObservationDefinition/ElementalAnalysisHydrogen"/>
             </instantiatesReference>
+            <!--<instantiatesCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e73"/>-->
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="ElementalAnalysisHydrogen"/>
                   <display value="Elemental Analysis Hydrogen (%)"/>
                </coding>
@@ -768,10 +770,11 @@
             <instantiatesReference>
                <reference value="ObservationDefinition/ElementalAnalysisNitrogen"/>
             </instantiatesReference>
+            <!--<instantiatesCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e74"></instantiatesCanonical>-->
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="ElementalAnalysisNitrogen"/>
                   <display value="Elemental Analysis Nitrogen (%)"/>
                </coding>
@@ -799,10 +802,11 @@
             <instantiatesReference>
                <reference value="ObservationDefinition/ElementalAnalysisFlourine"/>
             </instantiatesReference>
+            <!--<instantiatesCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e75"></instantiatesCanonical>-->
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="ElementalAnalysisFlourine"/>
                   <display value="Elemental Analysis Flourine (%)"/>
                </coding>
@@ -830,10 +834,11 @@
             <instantiatesReference>
                <reference value="ObservationDefinition/IonAnalysisCarbon"/>
             </instantiatesReference>
+            <!--<instantiatesCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c3-2d06-47cb5b295e72"></instantiatesCanonical>-->
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="IonAnalysisCarbon"/>
                   <display value="Ion Analysis Carbon (%)"/>
                </coding>
@@ -852,7 +857,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="IonAnalysisCarbonMassAccuracy"/>
                      <display value="Ion Analysis Carbon - Mass Accuracy"/>
                   </coding>
@@ -876,10 +881,11 @@
             <instantiatesReference>
                <reference value="ObservationDefinition/IonAnalysisHydrogen"/>
             </instantiatesReference>
+            <!--<instantiatesCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c4-2d06-47cb5b295e72"></instantiatesCanonical>-->
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="IonAnalysisHydrogen"/>
                   <display value="Ion Analysis Hydrogen (%)"/>
                </coding>
@@ -898,7 +904,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="IonAnalysisHydrogenMassAccuracy"/>
                      <display value="Ion Analysis Hydrogen - Mass Accuracy"/>
                   </coding>
@@ -922,10 +928,11 @@
             <instantiatesReference>
                <reference value="ObservationDefinition/IonAnalysisNitrogen"/>
             </instantiatesReference>
+            <!--<instantiatesCanonical value="http://example-server.com/fhir/ObservationDefinition/fd18b5d6-9fe1-91c4-2d06-47cb5b295e72"></instantiatesCanonical>-->
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="IonAnalysisNitrogen"/>
                   <display value="Ion Analysis Nitrogen (%)"/>
                </coding>
@@ -944,7 +951,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="IonAnalysisNitrogenMassAccuracy"/>
                      <display value="Ion Analysis Nitrogen - Mass Accuracy"/>
                   </coding>
@@ -968,10 +975,11 @@
             <instantiatesReference>
                <reference value="ObservationDefinition/IonAnalysisFlourine"/>
             </instantiatesReference>
+            <!--<instantiatesCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c5-2d06-47cb5b295e72"></instantiatesCanonical>-->
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="IonAnalysisFlourine"/>
                   <display value="Ion Analysis Flourine (%)"/>
                </coding>
@@ -990,7 +998,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="IonAnalysisFlourineMassAccuracy"/>
                      <display value="Ion Analysis Flourine - Mass Accuracy"/>
                   </coding>
@@ -1014,10 +1022,11 @@
             <instantiatesReference>
                <reference value="ObservationDefinition/NMR"/>
             </instantiatesReference>
+            <!--<instantiatesCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe2-91c2-2d06-47cb5b295e72"/>-->
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="NMR"/>
                   <display value="nmr"/>
                </coding>
@@ -1034,7 +1043,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="NMR-H"/>
                      <display value="NMR-H"/>
                   </coding>
@@ -1044,7 +1053,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="NMR-C"/>
                      <display value="NMR-C"/>
                   </coding>
@@ -1054,7 +1063,7 @@
             <component> <!-- are expected to have a component that says number of samples -->
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="POS"/>
                      <display value="Structure Position"/>
                   </coding>
@@ -1072,10 +1081,11 @@
             <instantiatesReference>
                <reference value="ObservationDefinition/NMR"/>
             </instantiatesReference>
+            <!--<instantiatesCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe2-91c2-2d06-47cb5b295e72"/>-->
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="NMR"/>
                   <display value="nmr"/>
                </coding>
@@ -1091,7 +1101,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="NMR-H"/>
                      <display value="NMR-H"/>
                   </coding>
@@ -1101,7 +1111,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="NMR-C"/>
                      <display value="NMR-C"/>
                   </coding>
@@ -1111,7 +1121,7 @@
             <component><!-- are expected to have a component that says number of samples -->
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="POS"/>
                      <display value="Structure Position"/>
                   </coding>
@@ -1129,10 +1139,11 @@
             <instantiatesReference>
                <reference value="ObservationDefinition/NMR"/>
             </instantiatesReference>
+            <!--<instantiatesCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe2-91c2-2d06-47cb5b295e72"/>-->
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="NMR"/>
                   <display value="nmr"/>
                </coding>
@@ -1148,7 +1159,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="NMR-H"/>
                      <display value="NMR-H"/>
                   </coding>
@@ -1158,7 +1169,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="NMR-C"/>
                      <display value="NMR-C"/>
                   </coding>
@@ -1173,7 +1184,7 @@
             <component><!-- are expected to have a component that says number of samples -->
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="POS"/>
                      <display value="Structure Position"/>
                   </coding>
@@ -1191,10 +1202,11 @@
             <instantiatesReference>
                <reference value="ObservationDefinition/NMR"/>
             </instantiatesReference>
+            <!--<instantiatesCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe2-91c2-2d06-47cb5b295e72"></instantiatesCanonical>-->
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="NMR"/>
                   <display value="nmr"/>
                </coding>
@@ -1210,7 +1222,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="NMR-H"/>
                      <display value="NMR-H"/>
                   </coding>
@@ -1225,7 +1237,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="NMR-C"/>
                      <display value="NMR-C"/>
                   </coding>
@@ -1235,7 +1247,7 @@
             <component><!-- are expected to have a component that says number of samples -->
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="POS"/>
                      <display value="Structure Position"/>
                   </coding>
@@ -1253,10 +1265,11 @@
             <instantiatesReference>
                <reference value="ObservationDefinition/NMR"/>
             </instantiatesReference>
+            <!--<instantiatesCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe2-91c2-2d06-47cb5b295e72"></instantiatesCanonical>-->
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="NMR"/>
                   <display value="nmr"/>
                </coding>
@@ -1272,7 +1285,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="NMR-H"/>
                      <display value="NMR-H"/>
                   </coding>
@@ -1282,7 +1295,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="NMR-C"/>
                      <display value="NMR-C"/>
                   </coding>
@@ -1292,7 +1305,7 @@
             <component><!-- are expected to have a component that says number of samples -->
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="POS"/>
                      <display value="Structure Position"/>
                   </coding>
@@ -1310,10 +1323,11 @@
             <instantiatesReference>
                <reference value="ObservationDefinition/NMR"/>
             </instantiatesReference>
+            <!--<instantiatesCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe2-91c2-2d06-47cb5b295e72"></instantiatesCanonical>-->
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="NMR"/>
                   <display value="nmr"/>
                </coding>
@@ -1329,7 +1343,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="NMR-H"/>
                      <display value="NMR-H"/>
                   </coding>
@@ -1339,7 +1353,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="NMR-C"/>
                      <display value="NMR-C"/>
                   </coding>
@@ -1349,7 +1363,7 @@
             <component><!-- are expected to have a component that says number of samples -->
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="POS"/>
                      <display value="Structure Position"/>
                   </coding>
@@ -1367,10 +1381,11 @@
             <instantiatesReference>
                <reference value="ObservationDefinition/NMR"/>
             </instantiatesReference>
+            <!--<instantiatesCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe2-91c2-2d06-47cb5b295e72"></instantiatesCanonical>-->
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="NMR"/>
                   <display value="nmr"/>
                </coding>
@@ -1386,7 +1401,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="NMR-H"/>
                      <display value="NMR-H"/>
                   </coding>
@@ -1396,7 +1411,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="NMR-C"/>
                      <display value="NMR-C"/>
                   </coding>
@@ -1406,7 +1421,7 @@
             <component><!-- are expected to have a component that says number of samples -->
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="POS"/>
                      <display value="Structure Position"/>
                   </coding>
@@ -1446,6 +1461,14 @@
                <system value="urn:oid:2.16.840.1.113883.4.82"/>
                <value value="3003040516"/>
             </identifier>
+            <active value="true"/>
+            <type>
+               <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type"/>
+                  <code value="drug-substance-manufacture"/>
+                  <display value="Drug Substance Manufacture"/>
+               </coding>
+            </type>
             <name value="AAA Molybdenum Products, Inc."/>
             <contact>
                <address>
@@ -1466,6 +1489,18 @@
          <Organization>
 				<!--testing lab-->
             <id value="378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            <identifier>
+               <system value="urn:oid:2.16.840.1.113883.4.82"/>
+               <value value="3007270600"/>
+            </identifier>
+            <active value="true"/>
+            <type>
+               <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type"/>
+                  <code value="analytical-testing-release"/>
+                  <display value="Analytical Testing - Release"/>
+               </coding>
+            </type>
             <name value="Testing Lab"/>
          </Organization>
       </resource>
@@ -1536,10 +1571,11 @@
             <instantiatesReference>
                <reference value="ObservationDefinition/Structure"/>
             </instantiatesReference>
+            <!--<instantiatesCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9ff1-91c5-2d06-47cb5b295e72"/>-->
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="Chemical Structure"/>
                   <display value="Chemical Structure"/>
                </coding>
@@ -1567,10 +1603,11 @@
             <instantiatesReference>
                <reference value="ObservationDefinition/Diffractogram"/>
             </instantiatesReference>
+            <!--<instantiatesCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9ff1-91c5-2d06-47cb5b295e73"/>-->
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="X-Ray Powder Diffractogram"/>
                   <display value="X-Ray Powder Diffractogram"/>
                </coding>
@@ -1598,10 +1635,11 @@
             <instantiatesReference>
                <reference value="ObservationDefinition/MolecularStructure"/>
             </instantiatesReference>
+            <!--<instantiatesCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9ff1-91c5-2d06-47cb5b295e74"/>-->
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="MolecularStructure"/>
                   <display value="Molecular Structure"/>
                </coding>
@@ -1629,10 +1667,11 @@
             <instantiatesReference>
                <reference value="ObservationDefinition/Absorption"/>
             </instantiatesReference>
+            <!--<instantiatesCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9ff1-91c5-2d06-47cb5b295e75"/>-->
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="Absorption"/>
                   <display value="Absorption"/>
                </coding>

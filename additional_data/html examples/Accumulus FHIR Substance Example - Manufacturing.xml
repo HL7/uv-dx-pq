@@ -23,7 +23,7 @@
             <url value="http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a"/>
             <type>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-plan-type"/>
                   <code value="manufacturing-process"/>
                   <display value="Manufacturing Process"/>
                </coding>
@@ -36,7 +36,7 @@
             <goal id="goal-control-pH">
                <category>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-testCategory-local-pq"/>
+                     <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-test-category"/>
                      <code value="C123456"/>
                      <display value="Physical Property"/>
                   </coding>
@@ -47,7 +47,7 @@
                </description>
                <priority>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-pq-example"/>
                      <code value="critical"/>
                      <display value="Critical"/>
                   </coding>
@@ -55,7 +55,7 @@
                <target>
                   <measure>
                      <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                         <code value="pH"/>
                         <display value="pH"/>
                      </coding>
@@ -77,7 +77,7 @@
             <goal id="goal-control-temp">
                <category>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-testCategory-local-pq"/>
+                     <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-test-category"/>
                      <code value="C123456"/>
                      <display value="Physical Property"/>
                   </coding>
@@ -88,7 +88,7 @@
                </description>
                <priority>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-pq-example"/>
                      <code value="non-critical"/>
                      <display value="Non-critical"/>
                   </coding>
@@ -96,7 +96,7 @@
                <target>
                   <measure>
                      <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                         <code value="TEMP"/>
                         <display value="Temperature"/>
                      </coding>
@@ -117,7 +117,7 @@
             <action>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
+                     <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step"/>
                      <code value="overall process"/>
                      <display value="Overall Process"/>
                   </coding>
@@ -126,7 +126,7 @@
                <action>
                   <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq">
                      <valueCoding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step-scale"/>
                         <code value="PROD"/>
                         <display value="Production Scale"/>
                      </valueCoding>
@@ -135,7 +135,7 @@
                      <extension url="parameter">
                         <valueCodeableConcept>
                            <coding>
-                              <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-processParameter-local-pq"/>
+                              <system value="http://terminology.hl7.org/CodeSystem/process-parameter"/>
                               <code value="SPEED"/>
                               <display value="Mix speed"/>
                            </coding>
@@ -152,7 +152,7 @@
                   <description value="Description of this step"/>
                   <code>
                      <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step"/>
                         <code value="particleSizeReduction"/>
                         <display value="Particle Size Reduction"/>
                      </coding>
@@ -173,7 +173,7 @@
                      </typeReference>
                      <role>
                         <coding>
-                           <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq"/>
+                           <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-manufacturing-equipment-class"/>
                            <code value="Compression Milling"/>
                            <display value="Compression Milling"/>
                         </coding>
@@ -186,10 +186,12 @@
                               <reference value="SubstanceDefinition/startingMaterial"/>
                            </valueReference>
                         </extension>
+                        <display value="Starting Material"/>
+                        <!-- added to suppress warning caused by the lack of a true reference, due to it being in extension -->
                      </typeReference>
                      <role>
                         <coding>
-                           <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
+                           <system value="http://terminology.hl7.org/CodeSystem/manufacturing-participant-role"/>
                            <code value="StartingMaterial"/>
                            <display value="Starting Material"/>
                         </coding>
@@ -202,12 +204,14 @@
                               <reference value="SubstanceDefinition/processingMaterial"/>
                            </valueReference>
                         </extension>
+                        <display value="Processing Material"/>
+                        <!-- added to suppress warning caused by the lack of a true reference, due to it being in extension -->
                      </typeReference>
                      <role>
                         <coding>
-                           <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
+                           <system value="http://terminology.hl7.org/CodeSystem/manufacturing-participant-role"/>
                            <code value="ProcessingMaterial"/>
-                           <display value="ProcessingMaterial"/>
+                           <display value="Processing Material"/>
                         </coding>
                      </role>
                   </participant>
@@ -218,10 +222,12 @@
                               <reference value="SubstanceDefinition/resultingMaterial"/>
                            </valueReference>
                         </extension>
+                        <display value="Resulting Material"/>
+                        <!-- added to suppress warning caused by the lack of a true reference, due to it being in extension -->
                      </typeReference>
                      <role>
                         <coding>
-                           <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
+                           <system value="http://terminology.hl7.org/CodeSystem/manufacturing-participant-role"/>
                            <code value="ResultingMaterial"/>
                            <display value="Resulting Material"/>
                         </coding>
@@ -257,7 +263,7 @@
             <property>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceProperty-local-pq"/>
+                     <system value="http://terminology.hl7.org/CodeSystem/device-property"/>
                      <code value="Maximum Speed"/>
                      <display value="Maximum Speed"/>
                   </coding>
@@ -288,7 +294,7 @@
             <status value="current"/>
             <type>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-diagramType-local-pq"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/diagram-type"/>
                   <code value="ProcessFlowDiagram"/>
                   <display value="Process Flow Diagram"/>
                </coding>
@@ -340,6 +346,14 @@
                <system value="urn:oid:2.16.840.1.113883.4.82"/>
                <value value="3003040516"/>
             </identifier>
+            <active value="true"/>
+            <type>
+               <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type"/>
+                  <code value="drug-substance-manufacture"/>
+                  <display value="Drug Substance Manufacture"/>
+               </coding>
+            </type>
             <name value="AAA Molybdenum Products, Inc."/>
             <contact>
                <address>

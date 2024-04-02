@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?><!-- _TARGET-RESOURCE-EXTRA_=MedicinalProductDefinition -->
 <Bundle xmlns="http://hl7.org/fhir">
     <!-- Product compatibility -->
    <id value="bundle-drug-product-compatibility-pq-ex1"/>
@@ -23,7 +23,7 @@
                   <display value="Workflow Definition"/>
                </coding>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-plan-type"/>
                   <code value="product-compatibility"/>
                   <display value="Product Compatibility"/>
                </coding>
@@ -39,7 +39,7 @@
                <!-- needs some other code -->
                <!--code>
                         <coding>
-                            <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
+                            <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step"/>
                             <code value="FilteredFormulatedDrugProductPerformanceIndicatorResultsStep"/>
                             <display value="Filtered Formulated Drug Product Performance Indicator Results"/>
                         </coding>
@@ -48,25 +48,31 @@
                   <code>
                      <text value="Test"/>
                   </code>
-                  <definitionCanonical value="ObservationDefinition/SE-UHPLCMainPeak"/>
+                  <!-- this is not seen by normal code -->
+                  <!--definitionCanonical value="ObservationDefinition/SE-UHPLCMainPeak"/-->
+                  <!--definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/SE-UHPLCMainPeak"/-->
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/64525a3d-5034-448a-9c19-938ce1958424"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
-                  <definitionCanonical value="ObservationDefinition/SE-UHPLCHMW"/>
+                  <!--definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/SE-UHPLCHMW"/-->
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/64525a33-5034-448a-9c19-938ce1958424"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
-                  <definitionCanonical value="ObservationDefinition/CEX-HPLCAcidicPeak"/>
+                  <!--definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/CEX-HPLCAcidicPeak"/-->
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/74525a3d-5034-448a-9c19-938ce1958424"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
-                  <definitionCanonical value="ObservationDefinition/CEX-HPLCMainPeak"/>
+                  <!--definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/CEX-HPLCMainPeak"/-->
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/74525a3d-5034-448a-9c19-938ce1958425"/>
                </action>
             </action>
          </PlanDefinition>
@@ -89,7 +95,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-report-type"/>
                   <code value="Product Compatibility Report"/>
                   <display value="Product Compatibility Report"/>
                </coding>
@@ -133,7 +139,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="SE-UHPLCMainPeak"/>
                   <display value="SE-UHPLC Main Peak"/>
                </coding>
@@ -142,7 +148,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="SE-UHPLCMainPeak-15"/>
                      <display value="SE-UHPLC Main Peak - 15"/>
                   </coding>
@@ -151,7 +157,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="SE-UHPLCMainPeak-25"/>
                      <display value="SE-UHPLC Main Peak - 25"/>
                   </coding>
@@ -170,7 +176,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="SE-UHPLCHMW"/>
                   <display value="SE-UHPLC HMW"/>
                </coding>
@@ -179,7 +185,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="SE-UHPLCHMW-15"/>
                      <display value="SE-UHPLC HMW - 15"/>
                   </coding>
@@ -188,7 +194,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="SE-UHPLCHMW-25"/>
                      <display value="SE-UHPLC HMW - 25"/>
                   </coding>
@@ -207,7 +213,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="CEX-HPLCAcidicPeak"/>
                   <display value="CEX-HPLC Acidic Peak"/>
                </coding>
@@ -216,7 +222,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="CEX-HPLCAcidicPeak-15"/>
                      <display value="CEX-HPLC Acidic Peak - 15"/>
                   </coding>
@@ -225,7 +231,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="CEX-HPLCAcidicPeak-25"/>
                      <display value="CEX-HPLC Acidic Peak - 25"/>
                   </coding>
@@ -239,12 +245,12 @@
       <resource>
          <ObservationDefinition>
             <id value="CEX-HPLCMainPeak"/>
-            <url value="http://example-server.com/fhir/ObservationDefinition/74525a3d-5034-448a-9c19-938ce1958424"/>
+            <url value="http://example-server.com/fhir/ObservationDefinition/74525a3d-5034-448a-9c19-938ce1958425"/>
             <title value="CEX-HPLC % Main Peak"/>
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="CEX-HPLCMainPeak"/>
                   <display value="CEX-HPLC Main Peak"/>
                </coding>
@@ -253,7 +259,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="CEX-HPLCMainPeak-15"/>
                      <display value="CEX-HPLC Main Peak - 15"/>
                   </coding>
@@ -262,7 +268,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="CEX-HPLCMainPeak-25"/>
                      <display value="CEX-HPLC Main Peak - 25"/>
                   </coding>
@@ -282,7 +288,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="SE-UHPLCMainPeak"/>
                   <display value="SE-UHPLC Main Peak"/>
                </coding>
@@ -298,7 +304,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="SE-UHPLCMainPeak-15"/>
                      <display value="SE-UHPLC Main Peak - 15"/>
                   </coding>
@@ -311,7 +317,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="SE-UHPLCMainPeak-25"/>
                      <display value="SE-UHPLC Main Peak - 25"/>
                   </coding>
@@ -335,7 +341,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="SE-UHPLCMainPeak"/>
                   <display value="SE-UHPLC Main Peak"/>
                </coding>
@@ -351,7 +357,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="SE-UHPLCMainPeak-15"/>
                      <display value="SE-UHPLC Main Peak - 15"/>
                   </coding>
@@ -364,7 +370,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="SE-UHPLCMainPeak-25"/>
                      <display value="SE-UHPLC Main Peak - 25"/>
                   </coding>
@@ -388,7 +394,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="SE-UHPLCHMW"/>
                   <display value="SE-UHPLC HMW"/>
                </coding>
@@ -404,7 +410,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="SE-UHPLCHMW-15"/>
                      <display value="SE-UHPLC HMW - 15"/>
                   </coding>
@@ -417,7 +423,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="SE-UHPLCHMW-25"/>
                      <display value="SE-UHPLC HMW - 25"/>
                   </coding>
@@ -441,7 +447,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="SE-UHPLCHMW"/>
                   <display value="SE-UHPLC HMW"/>
                </coding>
@@ -457,7 +463,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="SE-UHPLCHMW-15"/>
                      <display value="SE-UHPLC HMW - 15"/>
                   </coding>
@@ -470,7 +476,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="SE-UHPLCHMW-25"/>
                      <display value="SE-UHPLC HMW - 25"/>
                   </coding>
@@ -494,7 +500,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="CEX-HPLCMainPeak"/>
                   <display value="CEX-HPLC Main Peak"/>
                </coding>
@@ -510,7 +516,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="CEX-HPLCMainPeak-15"/>
                      <display value="CEX-HPLC Main Peak - 15"/>
                   </coding>
@@ -523,7 +529,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="CEX-HPLCMainPeak-25"/>
                      <display value="CEX-HPLC Main Peak - 25"/>
                   </coding>
@@ -547,7 +553,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="CEX-HPLCMainPeak"/>
                   <display value="CEX-HPLC Main Peak"/>
                </coding>
@@ -563,7 +569,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="CEX-HPLCMainPeak-15"/>
                      <display value="CEX-HPLC Main Peak - 15"/>
                   </coding>
@@ -576,7 +582,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="CEX-HPLCMainPeak-25"/>
                      <display value="CEX-HPLC Main Peak - 25"/>
                   </coding>
@@ -600,7 +606,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="CEX-HPLCAcidicPeak"/>
                   <display value="CEX-HPLC Acidic Peak"/>
                </coding>
@@ -616,7 +622,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="CEX-HPLCAcidicPeak-15"/>
                      <display value="CEX-HPLC Acidic Peak - 15"/>
                   </coding>
@@ -630,7 +636,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="CEX-HPLCAcidicPeak-25"/>
                      <display value="CEX-HPLC Acidic Peak - 25"/>
                   </coding>
@@ -655,7 +661,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="CEX-HPLCAcidicPeak"/>
                   <display value="CEX-HPLC Acidic Peak"/>
                </coding>
@@ -671,7 +677,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="CEX-HPLCAcidicPeak-15"/>
                      <display value="CEX-HPLC Acidic Peak - 15"/>
                   </coding>
@@ -685,7 +691,7 @@
             <component>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                      <code value="CEX-HPLCAcidicPeak-25"/>
                      <display value="CEX-HPLC Acidic Peak - 25"/>
                   </coding>
@@ -770,6 +776,18 @@
       <resource>
          <Organization>
             <id value="378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            <identifier>
+               <system value="urn:oid:2.16.840.1.113883.4.82"/>
+               <value value="3007270600"/>
+            </identifier>
+            <active value="true"/>
+            <type>
+               <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type"/>
+                  <code value="analytical-testing-release"/>
+                  <display value="Analytical Testing - Release"/>
+               </coding>
+            </type>
             <name value="Testing Lab"/>
          </Organization>
       </resource>

@@ -17,7 +17,7 @@
                <productName value="Stalbatolol"/>
                <type>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq"/>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-pq-example"/>
                      <code value="Proprietary"/>
                      <display value="Proprietary"/>
                   </coding>
@@ -38,7 +38,7 @@
             <packageFor>
                <reference value="MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1"/>
             </packageFor>
-            <description value="The commercial primary pack is a high-density polyethylene (HDPE) bottle with a child-resistant polypropylene (PP) screw cap.  Inside the bottle is a desiccant, containing silica gel. Induction seal membranes provide additional tamper evidence. For further details of the packaging components, see ‘P.7 Container Closure System for Drug Product’. "/>
+            <description value="The commercial primary pack is a high-density polyethylene (HDPE) bottle with a child-resistant polypropylene (PP) screw cap.  Inside the bottle is a desiccant, containing silica gel. Induction seal membranes provide additional tamper evidence. For further details of the packaging components, see ‘P.7 Container Closure System for Drug Product’."/>
          </PackagedProductDefinition>
       </resource>
    </entry>
@@ -107,7 +107,7 @@
             </role>
             <function>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/ingredient-function"/>
                   <code value="diluent"/>
                   <display value="Diluent"/>
                </coding>
@@ -159,7 +159,7 @@
             </role>
             <function>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/ingredient-function"/>
                   <code value="disintegrant"/>
                   <display value="Disintegrant"/>
                </coding>
@@ -211,7 +211,7 @@
             </role>
             <function>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/ingredient-function"/>
                   <code value="disintegrant"/>
                   <display value="Disintegrant"/>
                </coding>
@@ -263,7 +263,7 @@
             </role>
             <function>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/ingredient-function"/>
                   <code value="lubricant"/>
                   <display value="Lubricant"/>
                </coding>
@@ -304,7 +304,7 @@
             <id value="substance1"/>
             <grade>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/package-grade"/>
                   <code value="in-house"/>
                   <display value="In-house"/>
                </coding>
@@ -322,7 +322,7 @@
             <id value="sd-excipient1"/>
             <grade>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/package-grade"/>
                   <code value="NF-PH-Eur"/>
                   <display value="NF / Ph Eur"/>
                </coding>
@@ -340,7 +340,7 @@
             <id value="sd-excipient2"/>
             <grade>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/package-grade"/>
                   <code value="NF-PH-Eur"/>
                   <display value="NF / Ph Eur"/>
                </coding>
@@ -358,7 +358,7 @@
             <id value="sd-excipient3"/>
             <grade>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/package-grade"/>
                   <code value="NF-PH-Eur"/>
                   <display value="NF / Ph Eur"/>
                </coding>
@@ -376,7 +376,7 @@
             <id value="sd-excipient4"/>
             <grade>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/package-grade"/>
                   <code value="NF-PH-Eur"/>
                   <display value="NF / Ph Eur"/>
                </coding>

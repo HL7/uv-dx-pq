@@ -21,7 +21,7 @@
                   <display value="Workflow Definition"/>
                </coding>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-plan-type"/>
                   <code value="process-validation"/>
                   <display value="Process Validation"/>
                </coding>
@@ -34,7 +34,7 @@
             <action>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq">
                   <valueCoding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq"/>
+                     <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step-scale"/>
                      <code value="PROD"/>
                      <display value="Production Scale"/>
                   </valueCoding>
@@ -43,7 +43,7 @@
                   <extension url="parameter">
                      <valueCodeableConcept>
                         <coding>
-                           <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-processParameter-local-pq"/>
+                           <system value="http://terminology.hl7.org/CodeSystem/process-parameter"/>
                            <code value="SPEED"/>
                            <display value="Mix speed"/>
                         </coding>
@@ -61,7 +61,7 @@
                <description value="Description of this step"/>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
+                     <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step"/>
                      <code value="particleSizeReduction"/>
                      <display value="Particle Size Reduction"/>
                   </coding>
@@ -78,7 +78,7 @@
                   </typeReference>
                   <role>
                      <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/manufacturing-participant-role"/>
                         <code value="StartingMaterial"/>
                         <display value="Starting Material"/>
                      </coding>
@@ -95,7 +95,7 @@
                   </typeReference>
                   <role>
                      <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/manufacturing-participant-role"/>
                         <code value="IntermediateMaterial"/>
                         <display value="Intermediate Material"/>
                      </coding>
@@ -112,7 +112,7 @@
                   </typeReference>
                   <role>
                      <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/manufacturing-participant-role"/>
                         <code value="ResultingMaterial"/>
                         <display value="Resulting Material"/>
                      </coding>
@@ -122,14 +122,15 @@
                   <code>
                      <text value="Test"/>
                   </code>
-                  <definitionCanonical value="ObservationDefinition/Step1Yield"/>
+                  <!--<definitionCanonical value="ObservationDefinition/Step1Yield"/>-->
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72"/>
                </action>
             </action>
             <action>
                <title value="Step 1 In-Process Control Data"/>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
+                     <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step"/>
                      <code value="Step1In-ProcessControlData"/>
                      <display value="Step 1 In-Process Control Data"/>
                   </coding>
@@ -138,20 +139,22 @@
                   <code>
                      <text value="Test"/>
                   </code>
-                  <definitionCanonical value="ObservationDefinition/ResidualWaterContent"/>
+                  <!--<definitionCanonical value="ObservationDefinition/ResidualWaterContent"/>-->
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/fc27b5d6-9fe1-91c2-2d16-57cb5b295e72"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
-                  <definitionCanonical value="ObservationDefinition/ResidualStartingMaterial1byHPLC"/>
+                  <!--<definitionCanonical value="ObservationDefinition/ResidualStartingMaterial1byHPLC"/>-->
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/fc27b5d6-9ff1-91c2-2d16-57cb5b295e72"/>
                </action>
             </action>
             <action>
                <title value="Step 1 DS Release Testing Results"/>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
+                     <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step"/>
                      <code value="Step1DSReleaseTestingResults"/>
                      <display value="Step 1 DS Release Testing Results"/>
                   </coding>
@@ -160,25 +163,28 @@
                   <code>
                      <text value="Test"/>
                   </code>
-                  <definitionCanonical value="ObservationDefinition/AppearanceSubstance"/>
+                  <!--<definitionCanonical value="ObservationDefinition/AppearanceSubstance"/>-->
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/fc07b5d5-9fe1-92c2-2d06-57cb5b295e72"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
-                  <definitionCanonical value="ObservationDefinition/IdentificationSubstance"/>
+                  <!-- <definitionCanonical value="ObservationDefinition/IdentificationSubstance"/>-->
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/3b1e878e-4bc9-8864-862f-e28b21233e8d"/>
                </action>
                <action>
                   <code>
                      <text value="Test"/>
                   </code>
-                  <definitionCanonical value="ObservationDefinition/AssaySubstance"/>
+                  <!-- <definitionCanonical value="ObservationDefinition/AssaySubstance"/>-->
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d045e"/>
                </action>
             </action>
             <action>
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq">
                   <valueCoding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq"/>
+                     <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step-scale"/>
                      <code value="PROD"/>
                      <display value="Production Scale"/>
                   </valueCoding>
@@ -188,7 +194,7 @@
                <description value="Description of this step"/>
                <code>
                   <coding>
-                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq"/>
+                     <system value="http://terminology.hl7.org/CodeSystem/manufacturing-step"/>
                      <code value="drying"/>
                      <display value="Drying"/>
                   </coding>
@@ -205,7 +211,7 @@
                   </typeReference>
                   <role>
                      <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/manufacturing-participant-role"/>
                         <code value="StartingMaterial"/>
                         <display value="Starting Material"/>
                      </coding>
@@ -222,7 +228,7 @@
                   </typeReference>
                   <role>
                      <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/manufacturing-participant-role"/>
                         <code value="IntermediateMaterial"/>
                         <display value="Intermediate Material"/>
                      </coding>
@@ -239,7 +245,7 @@
                   </typeReference>
                   <role>
                      <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/manufacturing-participant-role"/>
                         <code value="ResultingMaterial"/>
                         <display value="Resulting Material"/>
                      </coding>
@@ -249,7 +255,8 @@
                   <code>
                      <text value="Test"/>
                   </code>
-                  <definitionCanonical value="ObservationDefinition/Step2Yield"/>
+                  <!--<definitionCanonical value="ObservationDefinition/Step2Yield"/>-->
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d7-9fe1-91c2-2d06-47cb5b295e72"/>
                </action>
             </action>
          </PlanDefinition>
@@ -271,7 +278,7 @@
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq"/>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-report-type"/>
                   <code value="Process Validation Report"/>
                   <display value="Process Validation Report"/>
                </coding>
@@ -336,7 +343,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="Appearance"/>
                   <display value="Appearance"/>
                </coding>
@@ -363,7 +370,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="IDT"/>
                   <display value="Identification"/>
                </coding>
@@ -390,7 +397,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="ASSAY"/>
                   <display value="Assay"/>
                </coding>
@@ -428,7 +435,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="Yield (%)"/>
                   <display value="Yield (%)"/>
                </coding>
@@ -447,7 +454,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="Yield (%)"/>
                   <display value="Yield (%)"/>
                </coding>
@@ -466,7 +473,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="ResidualWaterContent"/>
                   <display value="Residual Water Content (w/w%)"/>
                </coding>
@@ -476,7 +483,7 @@
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-criticality-pq">
                   <valueCodeableConcept>
                      <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-qualifiedValueCriticality-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-qualified-value-criticality"/>
                         <code value="Non-critical"/>
                         <display value="Non-critical"/>
                      </coding>
@@ -505,7 +512,7 @@
             <status value="active"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="Reaction conversion: Residual Starting Material 1 by HPLC"/>
                   <display value="Reaction conversion: Residual Starting Material 1 by HPLC"/>
                </coding>
@@ -515,7 +522,7 @@
                <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-criticality-pq">
                   <valueCodeableConcept>
                      <coding>
-                        <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-qualifiedValueCriticality-local-pq"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-qualified-value-criticality"/>
                         <code value="critical"/>
                         <display value="Critical"/>
                      </coding>
@@ -542,10 +549,11 @@
             <instantiatesReference>
                <reference value="ObservationDefinition/AppearanceSubstance"/>
             </instantiatesReference>
+            <!--<instantiatesCanonical value="http://example-server.com/fhir/ObservationDefinition/fc07b5d5-9fe1-92c2-2d06-57cb5b295e72"/>-->
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="Appearance"/>
                   <display value="Appearance"/>
                </coding>
@@ -570,10 +578,11 @@
             <instantiatesReference>
                <reference value="ObservationDefinition/AppearanceSubstance"/>
             </instantiatesReference>
+            <!--<instantiatesCanonical value="http://example-server.com/fhir/ObservationDefinition/fc07b5d5-9fe1-92c2-2d06-57cb5b295e72"/>-->
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="Appearance"/>
                   <display value="Appearance"/>
                </coding>
@@ -598,10 +607,11 @@
             <instantiatesReference>
                <reference value="ObservationDefinition/AppearanceSubstance"/>
             </instantiatesReference>
+            <!--<instantiatesCanonical value="http://example-server.com/fhir/ObservationDefinition/fc07b5d5-9fe1-92c2-2d06-57cb5b295e72"/>-->
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="Appearance"/>
                   <display value="Appearance"/>
                </coding>
@@ -626,10 +636,11 @@
             <instantiatesReference>
                <reference value="ObservationDefinition/IdentificationSubstance"/>
             </instantiatesReference>
+            <!--<instantiatesCanonical value="http://example-server.com/fhir/ObservationDefinition/3b1e878e-4bc9-8864-862f-e28b21233e8d"/>-->
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="IDT"/>
                   <display value="Identification"/>
                </coding>
@@ -654,10 +665,11 @@
             <instantiatesReference>
                <reference value="ObservationDefinition/IdentificationSubstance"/>
             </instantiatesReference>
+            <!--<instantiatesCanonical value="http://example-server.com/fhir/ObservationDefinition/3b1e878e-4bc9-8864-862f-e28b21233e8d"/>-->
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="IDT"/>
                   <display value="Identification"/>
                </coding>
@@ -682,10 +694,11 @@
             <instantiatesReference>
                <reference value="ObservationDefinition/IdentificationSubstance"/>
             </instantiatesReference>
+            <!--<instantiatesCanonical value="http://example-server.com/fhir/ObservationDefinition/3b1e878e-4bc9-8864-862f-e28b21233e8d"/>-->
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="IDT"/>
                   <display value="Identification"/>
                </coding>
@@ -710,10 +723,11 @@
             <instantiatesReference>
                <reference value="ObservationDefinition/Step1Yield"/>
             </instantiatesReference>
+            <!--<instantiatesCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72"/>-->
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="Yield (%)"/>
                   <display value="Yield (%)"/>
                </coding>
@@ -741,10 +755,11 @@
             <instantiatesReference>
                <reference value="ObservationDefinition/Step1Yield"/>
             </instantiatesReference>
+            <!--<instantiatesCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72"/>-->
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="Yield (%)"/>
                   <display value="Yield (%)"/>
                </coding>
@@ -772,10 +787,11 @@
             <instantiatesReference>
                <reference value="ObservationDefinition/Step1Yield"/>
             </instantiatesReference>
+            <!--<instantiatesCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9fe1-91c2-2d06-47cb5b295e72"/>-->
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="Yield (%)"/>
                   <display value="Yield (%)"/>
                </coding>
@@ -803,10 +819,11 @@
             <instantiatesReference>
                <reference value="ObservationDefinition/Step2Yield"/>
             </instantiatesReference>
+            <!--<instantiatesCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d7-9fe1-91c2-2d06-47cb5b295e72"/>-->
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="Yield (%)"/>
                   <display value="Yield (%)"/>
                </coding>
@@ -834,10 +851,11 @@
             <instantiatesReference>
                <reference value="ObservationDefinition/Step2Yield"/>
             </instantiatesReference>
+            <!--<instantiatesCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d7-9fe1-91c2-2d06-47cb5b295e72"/>-->
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="Yield (%)"/>
                   <display value="Yield (%)"/>
                </coding>
@@ -865,10 +883,11 @@
             <instantiatesReference>
                <reference value="ObservationDefinition/Step2Yield"/>
             </instantiatesReference>
+            <!--<instantiatesCanonical value="http://example-server.com/fhir/ObservationDefinition/fd17b5d7-9fe1-91c2-2d06-47cb5b295e72"/>-->
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="Yield (%)"/>
                   <display value="Yield (%)"/>
                </coding>
@@ -896,10 +915,11 @@
             <instantiatesReference>
                <reference value="ObservationDefinition/ResidualWaterContent"/>
             </instantiatesReference>
+            <!--<instantiatesCanonical value="http://example-server.com/fhir/ObservationDefinition/fc27b5d6-9fe1-91c2-2d16-57cb5b295e72"/>-->
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="ResidualWaterContent"/>
                   <display value="Residual Water Content (w/w%)"/>
                </coding>
@@ -927,10 +947,11 @@
             <instantiatesReference>
                <reference value="ObservationDefinition/ResidualWaterContent"/>
             </instantiatesReference>
+            <!--<instantiatesCanonical value="http://example-server.com/fhir/ObservationDefinition/fc27b5d6-9fe1-91c2-2d16-57cb5b295e72"/>-->
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="ResidualWaterContent"/>
                   <display value="Residual Water Content (w/w%)"/>
                </coding>
@@ -958,10 +979,11 @@
             <instantiatesReference>
                <reference value="ObservationDefinition/ResidualWaterContent"/>
             </instantiatesReference>
+            <!--<instantiatesCanonical value="http://example-server.com/fhir/ObservationDefinition/fc27b5d6-9fe1-91c2-2d16-57cb5b295e72"/>-->
             <status value="final"/>
             <code>
                <coding>
-                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq"/>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
                   <code value="ResidualWaterContent"/>
                   <display value="Residual Water Content (w/w%)"/>
                </coding>
@@ -991,6 +1013,14 @@
                <system value="urn:oid:2.16.840.1.113883.4.82"/>
                <value value="3003040516"/>
             </identifier>
+            <active value="true"/>
+            <type>
+               <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type"/>
+                  <code value="drug-substance-manufacture"/>
+                  <display value="Drug Substance Manufacture"/>
+               </coding>
+            </type>
             <name value="AAA Molybdenum Products, Inc."/>
             <contact>
                <address>
@@ -1011,6 +1041,18 @@
          <Organization>
                 <!--testing lab-->
             <id value="378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            <identifier>
+               <system value="urn:oid:2.16.840.1.113883.4.82"/>
+               <value value="3007270600"/>
+            </identifier>
+            <active value="true"/>
+            <type>
+               <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type"/>
+                  <code value="analytical-testing-release"/>
+                  <display value="Analytical Testing - Release"/>
+               </coding>
+            </type>
             <name value="Testing Lab"/>
          </Organization>
       </resource>
@@ -1513,6 +1555,14 @@
                <system value="urn:oid:2.16.840.1.113883.4.82"/>
                <value value="3003040516"/>
             </identifier>
+            <active value="true"/>
+            <type>
+               <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type"/>
+                  <code value="drug-substance-manufacture"/>
+                  <display value="Drug Substance Manufacture"/>
+               </coding>
+            </type>
             <name value="AAA Molybdenum Products, Inc."/>
             <contact>
                <address>
