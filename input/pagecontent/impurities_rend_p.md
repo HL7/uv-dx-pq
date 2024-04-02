@@ -41,7 +41,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-report-type&quot;/>
                         <code value=&quot;Impurities Report&quot;/>
                         <display value=&quot;Impurities Report&quot;/>
                     </coding>
@@ -217,6 +217,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3010027650&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;AAA Pharmaceutical, Inc.&quot;/>
                 <contact>
                     <address>
@@ -238,7 +246,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -261,7 +269,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -286,7 +294,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -303,7 +311,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -328,7 +336,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -345,7 +353,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -370,7 +378,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -387,7 +395,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -412,7 +420,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -429,7 +437,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -454,7 +462,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -471,7 +479,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -496,7 +504,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -519,7 +527,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -544,7 +552,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -567,7 +575,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -592,7 +600,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -615,7 +623,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -640,7 +648,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -657,7 +665,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -682,7 +690,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -705,7 +713,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -730,7 +738,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -747,7 +755,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -772,7 +780,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -795,7 +803,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -820,7 +828,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -843,7 +851,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -868,7 +876,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -891,7 +899,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -916,7 +924,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -939,7 +947,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -964,7 +972,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -987,7 +995,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -1012,7 +1020,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -1035,7 +1043,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -1060,7 +1068,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -1077,7 +1085,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -1102,7 +1110,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -1119,7 +1127,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -1144,7 +1152,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -1161,7 +1169,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -1186,7 +1194,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -1208,7 +1216,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -1233,7 +1241,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -1255,7 +1263,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -1280,7 +1288,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -1302,7 +1310,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -1327,7 +1335,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;impurityClassificationMCP&quot;/>
                             <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>
                         </coding>
@@ -1356,7 +1364,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;impurityClassificationMCP&quot;/>
                             <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>
                         </coding>
@@ -1385,7 +1393,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;impurityClassificationMCP&quot;/>
                             <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>
                         </coding>
@@ -1414,7 +1422,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;impurityClassificationMCP&quot;/>
                             <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>
                         </coding>
@@ -1443,7 +1451,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;impurityClassificationMCP&quot;/>
                             <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>
                         </coding>
@@ -1472,7 +1480,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;impurityClassificationMCP&quot;/>
                             <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>
                         </coding>
@@ -1501,7 +1509,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;impurityClassificationMCP&quot;/>
                             <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>
                         </coding>
@@ -1530,7 +1538,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;impurityClassificationMCP&quot;/>
                             <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>
                         </coding>
@@ -1617,7 +1625,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     <productName value=&quot;Stelbat Tablets, 20mg&quot;/>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-pq-example&quot;/>
                             <code value=&quot;Proprietary&quot;/>
                             <display value=&quot;Proprietary&quot;/>
                         </coding>
@@ -1646,6 +1654,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     <value value=&quot;3007270600&quot;/>
                     <!-- could also use assigner here, for #74 -->
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;/>
                 <contact>
                     <address>
@@ -1663,11 +1679,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
 <div class="debugOff"><span title="
 <Bundle>
     <meta>
-        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-impurities-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-impurities-pq</span></div>
+        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-impurities-pq&quot;>">Profile: </span><span title="
+<Bundle>
+    <meta>
+        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-impurities-pq&quot;>">http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-impurities-pq</span></div>
 <div><span title="
 <Bundle>
     ...
-    <type value=&quot;collection&quot;>">Type: </span><span><span>collection</span></span></div>
+    <type value=&quot;collection&quot;>">Type: <span>collection</span></span></div>
 </div>
 </div>
 <div>
@@ -1692,7 +1711,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-report-type&quot;/>
                         <code value=&quot;Impurities Report&quot;/>
                         <display value=&quot;Impurities Report&quot;/>
                     </coding>
@@ -1781,9 +1800,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
             <DiagnosticReport>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-report-type&quot;/>
                         <code value=&quot;Impurities Report&quot;/>
-                        <display value=&quot;Impurities Report&quot;/>">Impurities Report<span class="greyOff"> [Impurities Report]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq)</span></span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/diagnosticreport.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/diagnosticreport.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/diagnosticreport.html#tt-uml">R6</a>]</span><div class="debugOff">id: diagnosticreport-product-impurities</div>
+                        <display value=&quot;Impurities Report&quot;/>">Impurities Report<span class="greyOff"> [Impurities Report]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-report-type)</span></span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/diagnosticreport.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/diagnosticreport.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/diagnosticreport.html#tt-uml">R6</a>]</span><div class="debugOff">id: diagnosticreport-product-impurities</div>
 <div class="debugOff"> fullUrl: urn:uuid:6f4a3311-92c5-2b4a-533e-76341e414c63</div>
 <div class="debugOff"></div>
 <div class="debugOff"><span title="
@@ -1792,7 +1811,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
         <resource>
             <DiagnosticReport>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-analysis-drug-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-analysis-drug-pq</span></div>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-analysis-drug-pq&quot;>">Profile: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-analysis-drug-pq&quot;>">http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-analysis-drug-pq</span></div>
 <div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
@@ -1828,9 +1853,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
         <resource>
             <DiagnosticReport>
                 ...
-                <status value=&quot;final&quot;>">Status: </span><span>final</span></div>
+                <status value=&quot;final&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <status value=&quot;final&quot;>"><span>final</span></span></div>
 </div>
-<div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
@@ -1839,19 +1869,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-report-type&quot;/>
                         <code value=&quot;Impurities Report&quot;/>
                         <display value=&quot;Impurities Report&quot;/>
-                    </coding>">Code: </span><span><span title="
+                    </coding>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
             <DiagnosticReport>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-report-type&quot;/>
                         <code value=&quot;Impurities Report&quot;/>
-                        <display value=&quot;Impurities Report&quot;/>">Impurities Report<span class="greyOff"> [Impurities Report]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-reportType-local-pq)</span></span></span></div>
+                        <display value=&quot;Impurities Report&quot;/>">Impurities Report<span class="greyOff"> [Impurities Report]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-report-type)</span></span></span></div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
 <div><span title="
@@ -1860,7 +1890,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
         <resource>
             <DiagnosticReport>
                 ...
-                <conclusion value=&quot;1. Elemental Impurities - No elemental impurities are intentionally added during the manufacturing of drug product...&quot;>">Conclusion: </span><span>1. Elemental Impurities - No elemental impurities are intentionally added during the manufacturing of drug product...</span></div>
+                <conclusion value=&quot;1. Elemental Impurities - No elemental impurities are intentionally added during the manufacturing of drug product...&quot;>">Conclusion: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <conclusion value=&quot;1. Elemental Impurities - No elemental impurities are intentionally added during the manufacturing of drug product...&quot;>">1. Elemental Impurities - No elemental impurities are intentionally added during the manufacturing of drug product...</span></div>
 <div class="summaryHiddenOff">
 <div class="indent compl2"><span title="
 <Bundle>
@@ -1881,6 +1917,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <value value=&quot;3007270600&quot;/>
                     <!-- could also use assigner here, for #74 -->
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;/>
                 <contact>
                     <address>
@@ -1908,13 +1952,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3007270600&quot;/>
-                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -2357,7 +2433,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -2380,7 +2456,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -2400,9 +2476,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impCd</div><div class="debugOff"> fullUrl: urn:uuid:ab7997fa-7b46-1175-3f01-6f6997f7878a</div><div class="summaryHiddenOff"></div><div><span title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impCd</div><div class="debugOff"> fullUrl: urn:uuid:ab7997fa-7b46-1175-3f01-6f6997f7878a</div><div class="summaryHiddenOff"></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2414,7 +2490,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
         <resource>
             <Observation>
                 ...
-                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+                <status value=&quot;final&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>"><span>final</span></span></div></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2422,20 +2504,20 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
-                    <text value=&quot;Degradation Products&quot;/>">Code: </span><span><span title="
+                    <text value=&quot;Degradation Products&quot;/>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -2554,6 +2636,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3010027650&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;AAA Pharmaceutical, Inc.&quot;/>
                 <contact>
                     <address>
@@ -2581,13 +2671,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <!-- FDA establishment identifier -->
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>">Drug Product Manufacture<span class="greyOff"> [drug-product-manufacture]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -2648,7 +2770,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -2670,9 +2792,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2680,10 +2802,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
-                        </coding>">Code: </span><span><span title="
+                        </coding>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -2691,9 +2813,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div><div title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -2737,6 +2859,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <value value=&quot;3007270600&quot;/>
                     <!-- could also use assigner here, for #74 -->
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;/>
                 <contact>
                     <address>
@@ -2764,13 +2894,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3007270600&quot;/>
-                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -2832,7 +2994,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -2849,7 +3011,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -2869,9 +3031,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impCd-2</div><div class="debugOff"> fullUrl: urn:uuid:4052f28b-64a2-392d-35e4-ec8e912434d2</div><div class="summaryHiddenOff"></div><div><span title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impCd-2</div><div class="debugOff"> fullUrl: urn:uuid:4052f28b-64a2-392d-35e4-ec8e912434d2</div><div class="summaryHiddenOff"></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2883,7 +3045,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
         <resource>
             <Observation>
                 ...
-                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+                <status value=&quot;final&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>"><span>final</span></span></div></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2891,20 +3059,20 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
-                    <text value=&quot;Degradation Products&quot;/>">Code: </span><span><span title="
+                    <text value=&quot;Degradation Products&quot;/>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -2916,7 +3084,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
         <resource>
             <Observation>
                 ...
-                <valueString value=&quot;ND&quot;>">Value: </span><span>ND</span></div></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+                <valueString value=&quot;ND&quot;>">Value: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueString value=&quot;ND&quot;>">ND</span></div></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3009,6 +3183,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3010027650&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;AAA Pharmaceutical, Inc.&quot;/>
                 <contact>
                     <address>
@@ -3036,13 +3218,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <!-- FDA establishment identifier -->
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>">Drug Product Manufacture<span class="greyOff"> [drug-product-manufacture]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -3103,7 +3317,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -3125,9 +3339,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3135,10 +3349,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
-                        </coding>">Code: </span><span><span title="
+                        </coding>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -3146,9 +3360,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div><div title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -3192,6 +3406,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <value value=&quot;3007270600&quot;/>
                     <!-- could also use assigner here, for #74 -->
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;/>
                 <contact>
                     <address>
@@ -3219,13 +3441,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3007270600&quot;/>
-                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -3287,7 +3541,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -3304,7 +3558,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -3324,9 +3578,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impCd-3</div><div class="debugOff"> fullUrl: urn:uuid:34ebc51d-8105-0589-3c8d-e7aa6bd0a06c</div><div class="summaryHiddenOff"></div><div><span title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impCd-3</div><div class="debugOff"> fullUrl: urn:uuid:34ebc51d-8105-0589-3c8d-e7aa6bd0a06c</div><div class="summaryHiddenOff"></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3338,7 +3592,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
         <resource>
             <Observation>
                 ...
-                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+                <status value=&quot;final&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>"><span>final</span></span></div></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3346,20 +3606,20 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
-                    <text value=&quot;Degradation Products&quot;/>">Code: </span><span><span title="
+                    <text value=&quot;Degradation Products&quot;/>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -3371,7 +3631,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
         <resource>
             <Observation>
                 ...
-                <valueString value=&quot;ND&quot;>">Value: </span><span>ND</span></div></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+                <valueString value=&quot;ND&quot;>">Value: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueString value=&quot;ND&quot;>">ND</span></div></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3464,6 +3730,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3010027650&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;AAA Pharmaceutical, Inc.&quot;/>
                 <contact>
                     <address>
@@ -3491,13 +3765,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <!-- FDA establishment identifier -->
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>">Drug Product Manufacture<span class="greyOff"> [drug-product-manufacture]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -3558,7 +3864,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -3580,9 +3886,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3590,10 +3896,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
-                        </coding>">Code: </span><span><span title="
+                        </coding>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -3601,9 +3907,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div><div title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -3647,6 +3953,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <value value=&quot;3007270600&quot;/>
                     <!-- could also use assigner here, for #74 -->
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;/>
                 <contact>
                     <address>
@@ -3674,13 +3988,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3007270600&quot;/>
-                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -3742,7 +4088,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -3759,7 +4105,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -3779,9 +4125,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impPb</div><div class="debugOff"> fullUrl: urn:uuid:2940bf11-05bf-6ce2-3c64-457d0d1f9913</div><div class="summaryHiddenOff"></div><div><span title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impPb</div><div class="debugOff"> fullUrl: urn:uuid:2940bf11-05bf-6ce2-3c64-457d0d1f9913</div><div class="summaryHiddenOff"></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3793,7 +4139,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
         <resource>
             <Observation>
                 ...
-                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+                <status value=&quot;final&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>"><span>final</span></span></div></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3801,20 +4153,20 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
-                    <text value=&quot;Degradation Products&quot;/>">Code: </span><span><span title="
+                    <text value=&quot;Degradation Products&quot;/>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -3826,7 +4178,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
         <resource>
             <Observation>
                 ...
-                <valueString value=&quot;ND&quot;>">Value: </span><span>ND</span></div></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+                <valueString value=&quot;ND&quot;>">Value: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueString value=&quot;ND&quot;>">ND</span></div></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3921,6 +4279,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3010027650&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;AAA Pharmaceutical, Inc.&quot;/>
                 <contact>
                     <address>
@@ -3948,13 +4314,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <!-- FDA establishment identifier -->
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>">Drug Product Manufacture<span class="greyOff"> [drug-product-manufacture]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -4015,7 +4413,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -4037,9 +4435,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -4047,10 +4445,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
-                        </coding>">Code: </span><span><span title="
+                        </coding>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -4058,9 +4456,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div><div title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -4104,6 +4502,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <value value=&quot;3007270600&quot;/>
                     <!-- could also use assigner here, for #74 -->
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;/>
                 <contact>
                     <address>
@@ -4131,13 +4537,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3007270600&quot;/>
-                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -4199,7 +4637,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -4216,7 +4654,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -4236,9 +4674,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impPb-2</div><div class="debugOff"> fullUrl: urn:uuid:332b1e76-6f70-2b4e-5d0c-f22a0e042d3e</div><div class="summaryHiddenOff"></div><div><span title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impPb-2</div><div class="debugOff"> fullUrl: urn:uuid:332b1e76-6f70-2b4e-5d0c-f22a0e042d3e</div><div class="summaryHiddenOff"></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -4250,7 +4688,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
         <resource>
             <Observation>
                 ...
-                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+                <status value=&quot;final&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>"><span>final</span></span></div></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -4258,20 +4702,20 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
-                    <text value=&quot;Degradation Products&quot;/>">Code: </span><span><span title="
+                    <text value=&quot;Degradation Products&quot;/>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -4283,7 +4727,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
         <resource>
             <Observation>
                 ...
-                <valueString value=&quot;ND&quot;>">Value: </span><span>ND</span></div></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+                <valueString value=&quot;ND&quot;>">Value: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueString value=&quot;ND&quot;>">ND</span></div></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -4376,6 +4826,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3010027650&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;AAA Pharmaceutical, Inc.&quot;/>
                 <contact>
                     <address>
@@ -4403,13 +4861,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <!-- FDA establishment identifier -->
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>">Drug Product Manufacture<span class="greyOff"> [drug-product-manufacture]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -4470,7 +4960,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -4492,9 +4982,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -4502,10 +4992,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
-                        </coding>">Code: </span><span><span title="
+                        </coding>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -4513,9 +5003,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div><div title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -4559,6 +5049,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <value value=&quot;3007270600&quot;/>
                     <!-- could also use assigner here, for #74 -->
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;/>
                 <contact>
                     <address>
@@ -4586,13 +5084,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3007270600&quot;/>
-                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -4654,7 +5184,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -4671,7 +5201,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -4691,9 +5221,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impPb-3</div><div class="debugOff"> fullUrl: urn:uuid:f0a13a3b-2e8b-594f-6874-6050511e4c57</div><div class="summaryHiddenOff"></div><div><span title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impPb-3</div><div class="debugOff"> fullUrl: urn:uuid:f0a13a3b-2e8b-594f-6874-6050511e4c57</div><div class="summaryHiddenOff"></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -4705,7 +5235,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
         <resource>
             <Observation>
                 ...
-                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+                <status value=&quot;final&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>"><span>final</span></span></div></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -4713,20 +5249,20 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
-                    <text value=&quot;Degradation Products&quot;/>">Code: </span><span><span title="
+                    <text value=&quot;Degradation Products&quot;/>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -4738,7 +5274,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
         <resource>
             <Observation>
                 ...
-                <valueString value=&quot;ND&quot;>">Value: </span><span>ND</span></div></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+                <valueString value=&quot;ND&quot;>">Value: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueString value=&quot;ND&quot;>">ND</span></div></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -4831,6 +5373,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3010027650&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;AAA Pharmaceutical, Inc.&quot;/>
                 <contact>
                     <address>
@@ -4858,13 +5408,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <!-- FDA establishment identifier -->
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>">Drug Product Manufacture<span class="greyOff"> [drug-product-manufacture]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -4925,7 +5507,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -4947,9 +5529,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -4957,10 +5539,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
-                        </coding>">Code: </span><span><span title="
+                        </coding>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -4968,9 +5550,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div><div title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -5014,6 +5596,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <value value=&quot;3007270600&quot;/>
                     <!-- could also use assigner here, for #74 -->
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;/>
                 <contact>
                     <address>
@@ -5041,13 +5631,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3007270600&quot;/>
-                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -5109,7 +5731,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -5132,7 +5754,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -5152,9 +5774,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impAs</div><div class="debugOff"> fullUrl: urn:uuid:7fe7ccd7-6449-0186-2282-3eeb4cf6a795</div><div class="summaryHiddenOff"></div><div><span title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impAs</div><div class="debugOff"> fullUrl: urn:uuid:7fe7ccd7-6449-0186-2282-3eeb4cf6a795</div><div class="summaryHiddenOff"></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -5166,7 +5788,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
         <resource>
             <Observation>
                 ...
-                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+                <status value=&quot;final&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>"><span>final</span></span></div></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -5174,20 +5802,20 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
-                    <text value=&quot;Degradation Products&quot;/>">Code: </span><span><span title="
+                    <text value=&quot;Degradation Products&quot;/>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -5306,6 +5934,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3010027650&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;AAA Pharmaceutical, Inc.&quot;/>
                 <contact>
                     <address>
@@ -5333,13 +5969,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <!-- FDA establishment identifier -->
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>">Drug Product Manufacture<span class="greyOff"> [drug-product-manufacture]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -5400,7 +6068,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -5422,9 +6090,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -5432,10 +6100,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
-                        </coding>">Code: </span><span><span title="
+                        </coding>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -5443,9 +6111,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div><div title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -5489,6 +6157,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <value value=&quot;3007270600&quot;/>
                     <!-- could also use assigner here, for #74 -->
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;/>
                 <contact>
                     <address>
@@ -5516,13 +6192,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3007270600&quot;/>
-                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -5584,7 +6292,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -5607,7 +6315,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -5627,9 +6335,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impAs-2</div><div class="debugOff"> fullUrl: urn:uuid:be016630-8754-7414-9014-21e020ad66c6</div><div class="summaryHiddenOff"></div><div><span title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impAs-2</div><div class="debugOff"> fullUrl: urn:uuid:be016630-8754-7414-9014-21e020ad66c6</div><div class="summaryHiddenOff"></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -5641,7 +6349,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
         <resource>
             <Observation>
                 ...
-                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+                <status value=&quot;final&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>"><span>final</span></span></div></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -5649,20 +6363,20 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
-                    <text value=&quot;Degradation Products&quot;/>">Code: </span><span><span title="
+                    <text value=&quot;Degradation Products&quot;/>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -5779,6 +6493,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3010027650&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;AAA Pharmaceutical, Inc.&quot;/>
                 <contact>
                     <address>
@@ -5806,13 +6528,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <!-- FDA establishment identifier -->
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>">Drug Product Manufacture<span class="greyOff"> [drug-product-manufacture]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -5873,7 +6627,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -5895,9 +6649,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -5905,10 +6659,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
-                        </coding>">Code: </span><span><span title="
+                        </coding>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -5916,9 +6670,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div><div title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -5962,6 +6716,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <value value=&quot;3007270600&quot;/>
                     <!-- could also use assigner here, for #74 -->
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;/>
                 <contact>
                     <address>
@@ -5989,13 +6751,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3007270600&quot;/>
-                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -6057,7 +6851,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -6080,7 +6874,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -6100,9 +6894,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impAs-3</div><div class="debugOff"> fullUrl: urn:uuid:92568f68-78f3-908c-6935-ff5f3d574dd6</div><div class="summaryHiddenOff"></div><div><span title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impAs-3</div><div class="debugOff"> fullUrl: urn:uuid:92568f68-78f3-908c-6935-ff5f3d574dd6</div><div class="summaryHiddenOff"></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -6114,7 +6908,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
         <resource>
             <Observation>
                 ...
-                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+                <status value=&quot;final&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>"><span>final</span></span></div></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -6122,20 +6922,20 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
-                    <text value=&quot;Degradation Products&quot;/>">Code: </span><span><span title="
+                    <text value=&quot;Degradation Products&quot;/>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -6252,6 +7052,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3010027650&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;AAA Pharmaceutical, Inc.&quot;/>
                 <contact>
                     <address>
@@ -6279,13 +7087,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <!-- FDA establishment identifier -->
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>">Drug Product Manufacture<span class="greyOff"> [drug-product-manufacture]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -6346,7 +7186,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -6368,9 +7208,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -6378,10 +7218,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
-                        </coding>">Code: </span><span><span title="
+                        </coding>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -6389,9 +7229,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div><div title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -6435,6 +7275,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <value value=&quot;3007270600&quot;/>
                     <!-- could also use assigner here, for #74 -->
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;/>
                 <contact>
                     <address>
@@ -6462,13 +7310,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3007270600&quot;/>
-                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -6530,7 +7410,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -6547,7 +7427,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -6567,9 +7447,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impHg</div><div class="debugOff"> fullUrl: urn:uuid:7fe7ccd7-6449-0186-2282-3eeb4cf6a796</div><div class="summaryHiddenOff"></div><div><span title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impHg</div><div class="debugOff"> fullUrl: urn:uuid:7fe7ccd7-6449-0186-2282-3eeb4cf6a796</div><div class="summaryHiddenOff"></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -6581,7 +7461,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
         <resource>
             <Observation>
                 ...
-                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+                <status value=&quot;final&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>"><span>final</span></span></div></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -6589,20 +7475,20 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
-                    <text value=&quot;Degradation Products&quot;/>">Code: </span><span><span title="
+                    <text value=&quot;Degradation Products&quot;/>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -6614,7 +7500,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
         <resource>
             <Observation>
                 ...
-                <valueString value=&quot;ND&quot;>">Value: </span><span>ND</span></div></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+                <valueString value=&quot;ND&quot;>">Value: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueString value=&quot;ND&quot;>">ND</span></div></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -6709,6 +7601,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3010027650&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;AAA Pharmaceutical, Inc.&quot;/>
                 <contact>
                     <address>
@@ -6736,13 +7636,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <!-- FDA establishment identifier -->
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>">Drug Product Manufacture<span class="greyOff"> [drug-product-manufacture]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -6803,7 +7735,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -6825,9 +7757,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -6835,10 +7767,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
-                        </coding>">Code: </span><span><span title="
+                        </coding>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -6846,9 +7778,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div><div title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -6892,6 +7824,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <value value=&quot;3007270600&quot;/>
                     <!-- could also use assigner here, for #74 -->
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;/>
                 <contact>
                     <address>
@@ -6919,13 +7859,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3007270600&quot;/>
-                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -6987,7 +7959,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -7010,7 +7982,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -7030,9 +8002,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impHg-2</div><div class="debugOff"> fullUrl: urn:uuid:be016630-8754-7414-9014-21e020ad66c7</div><div class="summaryHiddenOff"></div><div><span title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impHg-2</div><div class="debugOff"> fullUrl: urn:uuid:be016630-8754-7414-9014-21e020ad66c7</div><div class="summaryHiddenOff"></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -7044,7 +8016,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
         <resource>
             <Observation>
                 ...
-                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+                <status value=&quot;final&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>"><span>final</span></span></div></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -7052,20 +8030,20 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
-                    <text value=&quot;Degradation Products&quot;/>">Code: </span><span><span title="
+                    <text value=&quot;Degradation Products&quot;/>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -7182,6 +8160,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3010027650&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;AAA Pharmaceutical, Inc.&quot;/>
                 <contact>
                     <address>
@@ -7209,13 +8195,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <!-- FDA establishment identifier -->
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>">Drug Product Manufacture<span class="greyOff"> [drug-product-manufacture]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -7276,7 +8294,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -7298,9 +8316,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -7308,10 +8326,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
-                        </coding>">Code: </span><span><span title="
+                        </coding>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -7319,9 +8337,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div><div title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -7365,6 +8383,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <value value=&quot;3007270600&quot;/>
                     <!-- could also use assigner here, for #74 -->
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;/>
                 <contact>
                     <address>
@@ -7392,13 +8418,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3007270600&quot;/>
-                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -7460,7 +8518,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -7477,7 +8535,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -7497,9 +8555,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impHg-3</div><div class="debugOff"> fullUrl: urn:uuid:92568f68-78f3-908c-6935-ff5f3d574dd7</div><div class="summaryHiddenOff"></div><div><span title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impHg-3</div><div class="debugOff"> fullUrl: urn:uuid:92568f68-78f3-908c-6935-ff5f3d574dd7</div><div class="summaryHiddenOff"></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -7511,7 +8569,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
         <resource>
             <Observation>
                 ...
-                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+                <status value=&quot;final&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>"><span>final</span></span></div></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -7519,20 +8583,20 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
-                    <text value=&quot;Degradation Products&quot;/>">Code: </span><span><span title="
+                    <text value=&quot;Degradation Products&quot;/>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -7544,7 +8608,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
         <resource>
             <Observation>
                 ...
-                <valueString value=&quot;ND&quot;>">Value: </span><span>ND</span></div></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+                <valueString value=&quot;ND&quot;>">Value: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueString value=&quot;ND&quot;>">ND</span></div></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -7637,6 +8707,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3010027650&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;AAA Pharmaceutical, Inc.&quot;/>
                 <contact>
                     <address>
@@ -7664,13 +8742,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <!-- FDA establishment identifier -->
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>">Drug Product Manufacture<span class="greyOff"> [drug-product-manufacture]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -7731,7 +8841,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -7753,9 +8863,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -7763,10 +8873,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
-                        </coding>">Code: </span><span><span title="
+                        </coding>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -7774,9 +8884,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div><div title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -7820,6 +8930,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <value value=&quot;3007270600&quot;/>
                     <!-- could also use assigner here, for #74 -->
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;/>
                 <contact>
                     <address>
@@ -7847,13 +8965,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3007270600&quot;/>
-                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -7915,7 +9065,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -7938,7 +9088,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -7958,9 +9108,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impCo</div><div class="debugOff"> fullUrl: urn:uuid:a0ba0f6d-8ec0-846a-a70d-f6bca6d01a12</div><div class="summaryHiddenOff"></div><div><span title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impCo</div><div class="debugOff"> fullUrl: urn:uuid:a0ba0f6d-8ec0-846a-a70d-f6bca6d01a12</div><div class="summaryHiddenOff"></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -7972,7 +9122,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
         <resource>
             <Observation>
                 ...
-                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+                <status value=&quot;final&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>"><span>final</span></span></div></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -7980,20 +9136,20 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
-                    <text value=&quot;Degradation Products&quot;/>">Code: </span><span><span title="
+                    <text value=&quot;Degradation Products&quot;/>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -8112,6 +9268,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3010027650&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;AAA Pharmaceutical, Inc.&quot;/>
                 <contact>
                     <address>
@@ -8139,13 +9303,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <!-- FDA establishment identifier -->
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>">Drug Product Manufacture<span class="greyOff"> [drug-product-manufacture]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -8206,7 +9402,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -8228,9 +9424,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -8238,10 +9434,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
-                        </coding>">Code: </span><span><span title="
+                        </coding>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -8249,9 +9445,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div><div title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -8295,6 +9491,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <value value=&quot;3007270600&quot;/>
                     <!-- could also use assigner here, for #74 -->
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;/>
                 <contact>
                     <address>
@@ -8322,13 +9526,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3007270600&quot;/>
-                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -8390,7 +9626,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -8413,7 +9649,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -8433,9 +9669,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impCo-2</div><div class="debugOff"> fullUrl: urn:uuid:d8533dcb-03f8-5997-6ccf-4f9b6f7a5745</div><div class="summaryHiddenOff"></div><div><span title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impCo-2</div><div class="debugOff"> fullUrl: urn:uuid:d8533dcb-03f8-5997-6ccf-4f9b6f7a5745</div><div class="summaryHiddenOff"></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -8447,7 +9683,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
         <resource>
             <Observation>
                 ...
-                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+                <status value=&quot;final&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>"><span>final</span></span></div></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -8455,20 +9697,20 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
-                    <text value=&quot;Degradation Products&quot;/>">Code: </span><span><span title="
+                    <text value=&quot;Degradation Products&quot;/>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -8585,6 +9827,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3010027650&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;AAA Pharmaceutical, Inc.&quot;/>
                 <contact>
                     <address>
@@ -8612,13 +9862,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <!-- FDA establishment identifier -->
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>">Drug Product Manufacture<span class="greyOff"> [drug-product-manufacture]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -8679,7 +9961,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -8701,9 +9983,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -8711,10 +9993,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
-                        </coding>">Code: </span><span><span title="
+                        </coding>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -8722,9 +10004,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div><div title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -8768,6 +10050,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <value value=&quot;3007270600&quot;/>
                     <!-- could also use assigner here, for #74 -->
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;/>
                 <contact>
                     <address>
@@ -8795,13 +10085,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3007270600&quot;/>
-                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -8863,7 +10185,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -8886,7 +10208,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -8906,9 +10228,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impCo-3</div><div class="debugOff"> fullUrl: urn:uuid:7cec19a2-34a7-6b80-3d60-083b2cc64fcb</div><div class="summaryHiddenOff"></div><div><span title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impCo-3</div><div class="debugOff"> fullUrl: urn:uuid:7cec19a2-34a7-6b80-3d60-083b2cc64fcb</div><div class="summaryHiddenOff"></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -8920,7 +10242,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
         <resource>
             <Observation>
                 ...
-                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+                <status value=&quot;final&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>"><span>final</span></span></div></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -8928,20 +10256,20 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
-                    <text value=&quot;Degradation Products&quot;/>">Code: </span><span><span title="
+                    <text value=&quot;Degradation Products&quot;/>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -9058,6 +10386,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3010027650&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;AAA Pharmaceutical, Inc.&quot;/>
                 <contact>
                     <address>
@@ -9085,13 +10421,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <!-- FDA establishment identifier -->
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>">Drug Product Manufacture<span class="greyOff"> [drug-product-manufacture]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -9152,7 +10520,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -9174,9 +10542,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -9184,10 +10552,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
-                        </coding>">Code: </span><span><span title="
+                        </coding>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -9195,9 +10563,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div><div title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -9241,6 +10609,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <value value=&quot;3007270600&quot;/>
                     <!-- could also use assigner here, for #74 -->
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;/>
                 <contact>
                     <address>
@@ -9268,13 +10644,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3007270600&quot;/>
-                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -9336,7 +10744,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -9359,7 +10767,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -9379,9 +10787,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impV</div><div class="debugOff"> fullUrl: urn:uuid:27aa47fd-7964-4f96-6495-b2bec7f160e7</div><div class="summaryHiddenOff"></div><div><span title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impV</div><div class="debugOff"> fullUrl: urn:uuid:27aa47fd-7964-4f96-6495-b2bec7f160e7</div><div class="summaryHiddenOff"></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -9393,7 +10801,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
         <resource>
             <Observation>
                 ...
-                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+                <status value=&quot;final&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>"><span>final</span></span></div></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -9401,20 +10815,20 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
-                    <text value=&quot;Degradation Products&quot;/>">Code: </span><span><span title="
+                    <text value=&quot;Degradation Products&quot;/>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -9533,6 +10947,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3010027650&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;AAA Pharmaceutical, Inc.&quot;/>
                 <contact>
                     <address>
@@ -9560,13 +10982,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <!-- FDA establishment identifier -->
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>">Drug Product Manufacture<span class="greyOff"> [drug-product-manufacture]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -9627,7 +11081,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -9649,9 +11103,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -9659,10 +11113,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
-                        </coding>">Code: </span><span><span title="
+                        </coding>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -9670,9 +11124,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div><div title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -9716,6 +11170,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <value value=&quot;3007270600&quot;/>
                     <!-- could also use assigner here, for #74 -->
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;/>
                 <contact>
                     <address>
@@ -9743,13 +11205,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3007270600&quot;/>
-                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -9811,7 +11305,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -9834,7 +11328,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -9854,9 +11348,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impV-2</div><div class="debugOff"> fullUrl: urn:uuid:6a78bcde-4781-226c-946e-a4b6915c1899</div><div class="summaryHiddenOff"></div><div><span title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impV-2</div><div class="debugOff"> fullUrl: urn:uuid:6a78bcde-4781-226c-946e-a4b6915c1899</div><div class="summaryHiddenOff"></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -9868,7 +11362,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
         <resource>
             <Observation>
                 ...
-                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+                <status value=&quot;final&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>"><span>final</span></span></div></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -9876,20 +11376,20 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
-                    <text value=&quot;Degradation Products&quot;/>">Code: </span><span><span title="
+                    <text value=&quot;Degradation Products&quot;/>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -10006,6 +11506,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3010027650&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;AAA Pharmaceutical, Inc.&quot;/>
                 <contact>
                     <address>
@@ -10033,13 +11541,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <!-- FDA establishment identifier -->
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>">Drug Product Manufacture<span class="greyOff"> [drug-product-manufacture]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -10100,7 +11640,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -10122,9 +11662,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -10132,10 +11672,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
-                        </coding>">Code: </span><span><span title="
+                        </coding>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -10143,9 +11683,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div><div title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -10189,6 +11729,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <value value=&quot;3007270600&quot;/>
                     <!-- could also use assigner here, for #74 -->
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;/>
                 <contact>
                     <address>
@@ -10216,13 +11764,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3007270600&quot;/>
-                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -10284,7 +11864,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -10307,7 +11887,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -10327,9 +11907,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impV-3</div><div class="debugOff"> fullUrl: urn:uuid:f9f11088-7527-947c-3d3f-e71b32e13c78</div><div class="summaryHiddenOff"></div><div><span title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impV-3</div><div class="debugOff"> fullUrl: urn:uuid:f9f11088-7527-947c-3d3f-e71b32e13c78</div><div class="summaryHiddenOff"></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -10341,7 +11921,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
         <resource>
             <Observation>
                 ...
-                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+                <status value=&quot;final&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>"><span>final</span></span></div></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -10349,20 +11935,20 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
-                    <text value=&quot;Degradation Products&quot;/>">Code: </span><span><span title="
+                    <text value=&quot;Degradation Products&quot;/>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -10479,6 +12065,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3010027650&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;AAA Pharmaceutical, Inc.&quot;/>
                 <contact>
                     <address>
@@ -10506,13 +12100,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <!-- FDA establishment identifier -->
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>">Drug Product Manufacture<span class="greyOff"> [drug-product-manufacture]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -10573,7 +12199,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -10595,9 +12221,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -10605,10 +12231,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
-                        </coding>">Code: </span><span><span title="
+                        </coding>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -10616,9 +12242,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div><div title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -10662,6 +12288,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <value value=&quot;3007270600&quot;/>
                     <!-- could also use assigner here, for #74 -->
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;/>
                 <contact>
                     <address>
@@ -10689,13 +12323,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3007270600&quot;/>
-                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -10757,7 +12423,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -10774,7 +12440,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -10794,9 +12460,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impNi</div><div class="debugOff"> fullUrl: urn:uuid:27aa47fd-7964-4f96-6495-b2bec7f160e8</div><div class="summaryHiddenOff"></div><div><span title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impNi</div><div class="debugOff"> fullUrl: urn:uuid:27aa47fd-7964-4f96-6495-b2bec7f160e8</div><div class="summaryHiddenOff"></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -10808,7 +12474,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
         <resource>
             <Observation>
                 ...
-                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+                <status value=&quot;final&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>"><span>final</span></span></div></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -10816,20 +12488,20 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
-                    <text value=&quot;Degradation Products&quot;/>">Code: </span><span><span title="
+                    <text value=&quot;Degradation Products&quot;/>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -10841,7 +12513,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
         <resource>
             <Observation>
                 ...
-                <valueString value=&quot;ND&quot;>">Value: </span><span>ND</span></div></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+                <valueString value=&quot;ND&quot;>">Value: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueString value=&quot;ND&quot;>">ND</span></div></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -10936,6 +12614,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3010027650&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;AAA Pharmaceutical, Inc.&quot;/>
                 <contact>
                     <address>
@@ -10963,13 +12649,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <!-- FDA establishment identifier -->
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>">Drug Product Manufacture<span class="greyOff"> [drug-product-manufacture]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -11030,7 +12748,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -11052,9 +12770,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -11062,10 +12780,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
-                        </coding>">Code: </span><span><span title="
+                        </coding>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -11073,9 +12791,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div><div title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -11119,6 +12837,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <value value=&quot;3007270600&quot;/>
                     <!-- could also use assigner here, for #74 -->
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;/>
                 <contact>
                     <address>
@@ -11146,13 +12872,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3007270600&quot;/>
-                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -11214,7 +12972,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -11231,7 +12989,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -11251,9 +13009,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impNi-2</div><div class="debugOff"> fullUrl: urn:uuid:6a78bcde-4781-226c-946e-a4b6915c1890</div><div class="summaryHiddenOff"></div><div><span title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impNi-2</div><div class="debugOff"> fullUrl: urn:uuid:6a78bcde-4781-226c-946e-a4b6915c1890</div><div class="summaryHiddenOff"></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -11265,7 +13023,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
         <resource>
             <Observation>
                 ...
-                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+                <status value=&quot;final&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>"><span>final</span></span></div></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -11273,20 +13037,20 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
-                    <text value=&quot;Degradation Products&quot;/>">Code: </span><span><span title="
+                    <text value=&quot;Degradation Products&quot;/>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -11298,7 +13062,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
         <resource>
             <Observation>
                 ...
-                <valueString value=&quot;ND&quot;>">Value: </span><span>ND</span></div></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+                <valueString value=&quot;ND&quot;>">Value: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueString value=&quot;ND&quot;>">ND</span></div></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -11391,6 +13161,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3010027650&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;AAA Pharmaceutical, Inc.&quot;/>
                 <contact>
                     <address>
@@ -11418,13 +13196,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <!-- FDA establishment identifier -->
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>">Drug Product Manufacture<span class="greyOff"> [drug-product-manufacture]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -11485,7 +13295,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -11507,9 +13317,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -11517,10 +13327,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
-                        </coding>">Code: </span><span><span title="
+                        </coding>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -11528,9 +13338,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div><div title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -11574,6 +13384,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <value value=&quot;3007270600&quot;/>
                     <!-- could also use assigner here, for #74 -->
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;/>
                 <contact>
                     <address>
@@ -11601,13 +13419,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3007270600&quot;/>
-                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -11669,7 +13519,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -11686,7 +13536,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -11706,9 +13556,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impNi-3</div><div class="debugOff"> fullUrl: urn:uuid:f9f11088-7527-947c-3d3f-e71b32e13c79</div><div class="summaryHiddenOff"></div><div><span title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impNi-3</div><div class="debugOff"> fullUrl: urn:uuid:f9f11088-7527-947c-3d3f-e71b32e13c79</div><div class="summaryHiddenOff"></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -11720,7 +13570,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
         <resource>
             <Observation>
                 ...
-                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+                <status value=&quot;final&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>"><span>final</span></span></div></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -11728,20 +13584,20 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
-                    <text value=&quot;Degradation Products&quot;/>">Code: </span><span><span title="
+                    <text value=&quot;Degradation Products&quot;/>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -11753,7 +13609,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
         <resource>
             <Observation>
                 ...
-                <valueString value=&quot;ND&quot;>">Value: </span><span>ND</span></div></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
+                <valueString value=&quot;ND&quot;>">Value: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <valueString value=&quot;ND&quot;>">ND</span></div></div><div class="summaryHiddenOff"></div><div class="indent obsl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -11846,6 +13708,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3010027650&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;AAA Pharmaceutical, Inc.&quot;/>
                 <contact>
                     <address>
@@ -11873,13 +13743,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <!-- FDA establishment identifier -->
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>">Drug Product Manufacture<span class="greyOff"> [drug-product-manufacture]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -11940,7 +13842,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -11962,9 +13864,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -11972,10 +13874,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
-                        </coding>">Code: </span><span><span title="
+                        </coding>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -11983,9 +13885,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div><div title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -12029,6 +13931,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <value value=&quot;3007270600&quot;/>
                     <!-- could also use assigner here, for #74 -->
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;/>
                 <contact>
                     <address>
@@ -12056,13 +13966,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3007270600&quot;/>
-                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -12124,7 +14066,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -12146,7 +14088,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -12166,9 +14108,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impCu</div><div class="debugOff"> fullUrl: urn:uuid:27aa47fd-7964-4f96-6495-b2bec7f160e9</div><div class="summaryHiddenOff"></div><div><span title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impCu</div><div class="debugOff"> fullUrl: urn:uuid:27aa47fd-7964-4f96-6495-b2bec7f160e9</div><div class="summaryHiddenOff"></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -12180,7 +14122,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
         <resource>
             <Observation>
                 ...
-                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+                <status value=&quot;final&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>"><span>final</span></span></div></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -12188,20 +14136,20 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
-                    <text value=&quot;Degradation Products&quot;/>">Code: </span><span><span title="
+                    <text value=&quot;Degradation Products&quot;/>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -12318,6 +14266,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3010027650&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;AAA Pharmaceutical, Inc.&quot;/>
                 <contact>
                     <address>
@@ -12345,13 +14301,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <!-- FDA establishment identifier -->
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>">Drug Product Manufacture<span class="greyOff"> [drug-product-manufacture]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -12412,7 +14400,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -12434,9 +14422,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -12444,10 +14432,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
-                        </coding>">Code: </span><span><span title="
+                        </coding>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -12455,9 +14443,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div><div title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -12501,6 +14489,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <value value=&quot;3007270600&quot;/>
                     <!-- could also use assigner here, for #74 -->
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;/>
                 <contact>
                     <address>
@@ -12528,13 +14524,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3007270600&quot;/>
-                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -12596,7 +14624,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -12618,7 +14646,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -12638,9 +14666,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impCu-2</div><div class="debugOff"> fullUrl: urn:uuid:6a78bcde-4781-226c-946e-a4b6915c189b</div><div class="summaryHiddenOff"></div><div><span title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impCu-2</div><div class="debugOff"> fullUrl: urn:uuid:6a78bcde-4781-226c-946e-a4b6915c189b</div><div class="summaryHiddenOff"></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -12652,7 +14680,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
         <resource>
             <Observation>
                 ...
-                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+                <status value=&quot;final&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>"><span>final</span></span></div></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -12660,20 +14694,20 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
-                    <text value=&quot;Degradation Products&quot;/>">Code: </span><span><span title="
+                    <text value=&quot;Degradation Products&quot;/>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -12788,6 +14822,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3010027650&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;AAA Pharmaceutical, Inc.&quot;/>
                 <contact>
                     <address>
@@ -12815,13 +14857,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <!-- FDA establishment identifier -->
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>">Drug Product Manufacture<span class="greyOff"> [drug-product-manufacture]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -12882,7 +14956,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -12904,9 +14978,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -12914,10 +14988,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
-                        </coding>">Code: </span><span><span title="
+                        </coding>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -12925,9 +14999,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div><div title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -12971,6 +15045,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <value value=&quot;3007270600&quot;/>
                     <!-- could also use assigner here, for #74 -->
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;/>
                 <contact>
                     <address>
@@ -12998,13 +15080,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3007270600&quot;/>
-                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -13066,7 +15180,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <status value=&quot;final&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -13088,7 +15202,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -13108,9 +15222,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impCu-3</div><div class="debugOff"> fullUrl: urn:uuid:f9f11088-7527-947c-3d3f-e71b32e13c70</div><div class="summaryHiddenOff"></div><div><span title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observation.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observation.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observation.html#tt-uml">R6</a>]</span><div class="debugOff">id: observationDegradation-impCu-3</div><div class="debugOff"> fullUrl: urn:uuid:f9f11088-7527-947c-3d3f-e71b32e13c70</div><div class="summaryHiddenOff"></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -13122,7 +15236,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
         <resource>
             <Observation>
                 ...
-                <status value=&quot;final&quot;>">Status: </span><span>final</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+                <status value=&quot;final&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <status value=&quot;final&quot;>"><span>final</span></span></div></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -13130,20 +15250,20 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
-                    <text value=&quot;Degradation Products&quot;/>">Code: </span><span><span title="
+                    <text value=&quot;Degradation Products&quot;/>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
             <Observation>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Degradation Products</span></span></div><div class="summaryHiddenOff"></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -13258,6 +15378,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3010027650&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;AAA Pharmaceutical, Inc.&quot;/>
                 <contact>
                     <address>
@@ -13285,13 +15413,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <!-- FDA establishment identifier -->
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>">Drug Product Manufacture<span class="greyOff"> [drug-product-manufacture]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -13352,7 +15512,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -13374,9 +15534,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -13384,10 +15544,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
-                        </coding>">Code: </span><span><span title="
+                        </coding>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -13395,9 +15555,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div><div title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -13441,6 +15601,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <value value=&quot;3007270600&quot;/>
                     <!-- could also use assigner here, for #74 -->
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;/>
                 <contact>
                     <address>
@@ -13468,13 +15636,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3007270600&quot;/>
-                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <!-- could also use assigner here, for #74 -->">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -13595,7 +15795,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <productName value=&quot;Stelbat Tablets, 20mg&quot;/>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-pq-example&quot;/>
                             <code value=&quot;Proprietary&quot;/>
                             <display value=&quot;Proprietary&quot;/>
                         </coding>
@@ -13621,7 +15821,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <productName value=&quot;Stelbat Tablets, 20mg&quot;/>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-pq-example&quot;/>
                             <code value=&quot;Proprietary&quot;/>
                             <display value=&quot;Proprietary&quot;/>
                         </coding>
@@ -13645,7 +15845,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     ...
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-pq-example&quot;/>
                             <code value=&quot;Proprietary&quot;/>
                             <display value=&quot;Proprietary&quot;/>
                         </coding>">Name type: </span><span title="
@@ -13656,9 +15856,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <name>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-pq-example&quot;/>
                             <code value=&quot;Proprietary&quot;/>
-                            <display value=&quot;Proprietary&quot;/>">Proprietary<span class="greyOff"> [Proprietary]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq)</span></span></div>
+                            <display value=&quot;Proprietary&quot;/>">Proprietary<span class="greyOff"> [Proprietary]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-pq-example)</span></span></div>
 <div title="
 <Bundle>
     <entry>
@@ -13683,7 +15883,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
         <resource>
             <MedicinalProductDefinition>
                 ...
-                <description value=&quot;Textual description of the product&quot;>">Description: </span><span>Textual description of the product</span></div>
+                <description value=&quot;Textual description of the product&quot;>">Description: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <MedicinalProductDefinition>
+                ...
+                <description value=&quot;Textual description of the product&quot;>">Textual description of the product</span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -13742,7 +15948,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;impurityClassificationMCP&quot;/>
                             <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>
                         </coding>
@@ -13774,7 +15980,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                             <system value=&quot;http://snomed.info/sct&quot;/>
                             <code value=&quot;66586000&quot;/>
                             <display value=&quot;Cadmium (substance)&quot;/>
-                        </coding>">Code: </span><span><span title="
+                        </coding>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -13799,7 +16005,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;impurityClassificationMCP&quot;/>
                             <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>
                         </coding>
@@ -13814,7 +16020,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;impurityClassificationMCP&quot;/>
                             <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>
                         </coding>">Type: <span title="
@@ -13825,9 +16031,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;impurityClassificationMCP&quot;/>
-                            <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>">Impurity Classification - Mutagenic and Carcinogenic Potential<span class="greyOff"> [impurityClassificationMCP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq)</span></span></span></div>
+                            <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>">Impurity Classification - Mutagenic and Carcinogenic Potential<span class="greyOff"> [impurityClassificationMCP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example)</span></span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -13859,7 +16065,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;impurityClassificationMCP&quot;/>
                             <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>
                         </coding>
@@ -13891,7 +16097,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                             <system value=&quot;http://snomed.info/sct&quot;/>
                             <code value=&quot;88488004&quot;/>
                             <display value=&quot;Lead (substance)&quot;/>
-                        </coding>">Code: </span><span><span title="
+                        </coding>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -13916,7 +16122,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;impurityClassificationMCP&quot;/>
                             <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>
                         </coding>
@@ -13931,7 +16137,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;impurityClassificationMCP&quot;/>
                             <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>
                         </coding>">Type: <span title="
@@ -13942,9 +16148,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;impurityClassificationMCP&quot;/>
-                            <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>">Impurity Classification - Mutagenic and Carcinogenic Potential<span class="greyOff"> [impurityClassificationMCP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq)</span></span></span></div>
+                            <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>">Impurity Classification - Mutagenic and Carcinogenic Potential<span class="greyOff"> [impurityClassificationMCP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example)</span></span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -13976,7 +16182,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;impurityClassificationMCP&quot;/>
                             <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>
                         </coding>
@@ -14008,7 +16214,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                             <system value=&quot;http://snomed.info/sct&quot;/>
                             <code value=&quot;47809000&quot;/>
                             <display value=&quot;Arsenic (substance)&quot;/>
-                        </coding>">Code: </span><span><span title="
+                        </coding>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -14033,7 +16239,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;impurityClassificationMCP&quot;/>
                             <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>
                         </coding>
@@ -14048,7 +16254,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;impurityClassificationMCP&quot;/>
                             <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>
                         </coding>">Type: <span title="
@@ -14059,9 +16265,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;impurityClassificationMCP&quot;/>
-                            <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>">Impurity Classification - Mutagenic and Carcinogenic Potential<span class="greyOff"> [impurityClassificationMCP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq)</span></span></span></div>
+                            <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>">Impurity Classification - Mutagenic and Carcinogenic Potential<span class="greyOff"> [impurityClassificationMCP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example)</span></span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -14093,7 +16299,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;impurityClassificationMCP&quot;/>
                             <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>
                         </coding>
@@ -14125,7 +16331,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                             <system value=&quot;http://snomed.info/sct&quot;/>
                             <code value=&quot;45262002&quot;/>
                             <display value=&quot;Mercury (substance)&quot;/>
-                        </coding>">Code: </span><span><span title="
+                        </coding>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -14150,7 +16356,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;impurityClassificationMCP&quot;/>
                             <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>
                         </coding>
@@ -14165,7 +16371,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;impurityClassificationMCP&quot;/>
                             <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>
                         </coding>">Type: <span title="
@@ -14176,9 +16382,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;impurityClassificationMCP&quot;/>
-                            <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>">Impurity Classification - Mutagenic and Carcinogenic Potential<span class="greyOff"> [impurityClassificationMCP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq)</span></span></span></div>
+                            <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>">Impurity Classification - Mutagenic and Carcinogenic Potential<span class="greyOff"> [impurityClassificationMCP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example)</span></span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -14210,7 +16416,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;impurityClassificationMCP&quot;/>
                             <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>
                         </coding>
@@ -14242,7 +16448,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                             <system value=&quot;http://snomed.info/sct&quot;/>
                             <code value=&quot;54808007&quot;/>
                             <display value=&quot;Cobalt (substance)&quot;/>
-                        </coding>">Code: </span><span><span title="
+                        </coding>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -14267,7 +16473,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;impurityClassificationMCP&quot;/>
                             <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>
                         </coding>
@@ -14282,7 +16488,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;impurityClassificationMCP&quot;/>
                             <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>
                         </coding>">Type: <span title="
@@ -14293,9 +16499,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;impurityClassificationMCP&quot;/>
-                            <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>">Impurity Classification - Mutagenic and Carcinogenic Potential<span class="greyOff"> [impurityClassificationMCP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq)</span></span></span></div>
+                            <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>">Impurity Classification - Mutagenic and Carcinogenic Potential<span class="greyOff"> [impurityClassificationMCP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example)</span></span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -14327,7 +16533,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;impurityClassificationMCP&quot;/>
                             <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>
                         </coding>
@@ -14359,7 +16565,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                             <system value=&quot;http://snomed.info/sct&quot;/>
                             <code value=&quot;66925006&quot;/>
                             <display value=&quot;Copper (substance)&quot;/>
-                        </coding>">Code: </span><span><span title="
+                        </coding>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -14384,7 +16590,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;impurityClassificationMCP&quot;/>
                             <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>
                         </coding>
@@ -14399,7 +16605,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;impurityClassificationMCP&quot;/>
                             <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>
                         </coding>">Type: <span title="
@@ -14410,9 +16616,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;impurityClassificationMCP&quot;/>
-                            <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>">Impurity Classification - Mutagenic and Carcinogenic Potential<span class="greyOff"> [impurityClassificationMCP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq)</span></span></span></div>
+                            <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>">Impurity Classification - Mutagenic and Carcinogenic Potential<span class="greyOff"> [impurityClassificationMCP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example)</span></span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -14444,7 +16650,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;impurityClassificationMCP&quot;/>
                             <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>
                         </coding>
@@ -14476,7 +16682,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                             <system value=&quot;http://snomed.info/sct&quot;/>
                             <code value=&quot;18925001&quot;/>
                             <display value=&quot;Vanadium (substance)&quot;/>
-                        </coding>">Code: </span><span><span title="
+                        </coding>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -14501,7 +16707,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;impurityClassificationMCP&quot;/>
                             <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>
                         </coding>
@@ -14516,7 +16722,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;impurityClassificationMCP&quot;/>
                             <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>
                         </coding>">Type: <span title="
@@ -14527,9 +16733,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;impurityClassificationMCP&quot;/>
-                            <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>">Impurity Classification - Mutagenic and Carcinogenic Potential<span class="greyOff"> [impurityClassificationMCP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq)</span></span></span></div>
+                            <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>">Impurity Classification - Mutagenic and Carcinogenic Potential<span class="greyOff"> [impurityClassificationMCP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example)</span></span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -14561,7 +16767,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;impurityClassificationMCP&quot;/>
                             <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>
                         </coding>
@@ -14593,7 +16799,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                             <system value=&quot;http://snomed.info/sct&quot;/>
                             <code value=&quot;33396006&quot;/>
                             <display value=&quot;Nickel (substance)&quot;/>
-                        </coding>">Code: </span><span><span title="
+                        </coding>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -14618,7 +16824,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;impurityClassificationMCP&quot;/>
                             <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>
                         </coding>
@@ -14633,7 +16839,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;impurityClassificationMCP&quot;/>
                             <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>
                         </coding>">Type: <span title="
@@ -14644,9 +16850,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;impurityClassificationMCP&quot;/>
-                            <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>">Impurity Classification - Mutagenic and Carcinogenic Potential<span class="greyOff"> [impurityClassificationMCP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substancePropertyType-local-pq)</span></span></span></div>
+                            <display value=&quot;Impurity Classification - Mutagenic and Carcinogenic Potential&quot;/>">Impurity Classification - Mutagenic and Carcinogenic Potential<span class="greyOff"> [impurityClassificationMCP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example)</span></span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -14753,6 +16959,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3010027650&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;AAA Pharmaceutical, Inc.&quot;/>
                 <contact>
                     <address>
@@ -14780,13 +16994,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <!-- FDA establishment identifier -->
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>">Drug Product Manufacture<span class="greyOff"> [drug-product-manufacture]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -14924,6 +17170,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3010027650&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;AAA Pharmaceutical, Inc.&quot;/>
                 <contact>
                     <address>
@@ -14951,13 +17205,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <!-- FDA establishment identifier -->
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>">Drug Product Manufacture<span class="greyOff"> [drug-product-manufacture]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -15095,6 +17381,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3010027650&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;AAA Pharmaceutical, Inc.&quot;/>
                 <contact>
                     <address>
@@ -15122,13 +17416,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
                 <identifier>
                     <!-- FDA establishment identifier -->
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>">Drug Product Manufacture<span class="greyOff"> [drug-product-manufacture]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -15217,6 +17543,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
 	    border-radius: 5px;
 	    visibility:visible; /* this is so that the outer border doesn't hide these */
     }
+    .indent-right {
+        margin-right:0.7em;
+    }
     .indent-no-border {
         margin-left:1em; 	/* controls line to line indent */
         text-indent:-1em; 	/* moves text back to right, so that other parts of the div are still at the left */
@@ -15271,6 +17600,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticRepo
 
     .cui { background-Color:#d9d2e9 }
     .cuidetails { background-Color:#e6e1f0 }
+    .cuidetails2 { background-Color:#ebe9f0 }
 
     .sbd,.hcs { background-Color:#affad5 }
     .sbddetails,.hcsl2 { background-Color:#c7fce2 }

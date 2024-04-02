@@ -58,49 +58,57 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Description&quot;/>
+                            <!--                            <definitionCanonical value=&quot;ObservationDefinition/Description&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/77e7020a-270c-6bed-2e55-28e9e942546c&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Identification&quot;/>
+                            <!--                            <definitionCanonical value=&quot;ObservationDefinition/Identification&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/0d0ef4cf-242c-1cb1-81c4-c41837ee9a12&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Assay&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/Assay&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/c0f05343-5b98-6073-1a0f-873aaf4f59bc&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Degradation&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/Degradation&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/a3d4d23a-800a-684a-6a47-fcfe44e06041&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Dissolution&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/Dissolution&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/bb11322b-9470-4f13-91b5-c8a5253380eb&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Uniformity&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/Uniformity&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/e7e2fe59-5433-5cc0-84b1-d5f30032790c&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Microbiological&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/Microbiological&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/64972eb3-99ee-7eae-2f63-733e5ae84f71&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Water&quot;/>
+                            <!--definitionCanonical value=&quot;ObservationDefinition/Water&quot;/-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/6ce8ab6d-55e2-0412-5fb1-ab33763f30b1&quot;/>
                         </action>
                     </action>
                     <action>
@@ -117,49 +125,57 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/DescriptionEnd&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/DescriptionEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/d24ce3cd-213d-4935-97cf-8e2dd03721ec&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/IdentificationEnd&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/IdentificationEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/f77ba972-5ef8-a178-9a5f-fe7f54da7499&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/AssayEnd&quot;/>
+                            <!--                            <definitionCanonical value=&quot;ObservationDefinition/AssayEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/f4a74fd3-876e-38ce-021f-04e5a8fb6a3f&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/DegradationEnd&quot;/>
+                            <!--                            <definitionCanonical value=&quot;ObservationDefinition/DegradationEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/ef72eeb7-211a-3c16-8460-8725ca43584f&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/DissolutionEnd&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/DissolutionEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/6fa69a2d-5a9f-a391-76e6-bbdfba0b45ea&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/UniformityEnd&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/UniformityEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/43dbc2a3-00c4-6f79-6b11-63768b412aa3&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/MicrobiologicalEnd&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/MicrobiologicalEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/e582e504-36ec-3b50-4043-51bf1147124e&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/WaterEnd&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/WaterEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/91391017-774b-5c77-93fa-642534278851&quot;/>
                         </action>
                     </action>
                 </action>
@@ -176,7 +192,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DESC&quot;/>
                         <display value=&quot;Description&quot;/>
                     </coding>
@@ -203,7 +219,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DESC&quot;/>
                         <display value=&quot;Description&quot;/>
                     </coding>
@@ -227,7 +243,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;IDT&quot;/>
                         <display value=&quot;Identification&quot;/>
                     </coding>
@@ -254,7 +270,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;IDT&quot;/>
                         <display value=&quot;Identification&quot;/>
                     </coding>
@@ -278,7 +294,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;ASSAY&quot;/>
                         <display value=&quot;Assay&quot;/>
                     </coding>
@@ -305,7 +321,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;ASSAY&quot;/>
                         <display value=&quot;Assay&quot;/>
                     </coding>
@@ -329,7 +345,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -397,7 +413,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     <!-- are expected to have a component that says what impurity this one is -->
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -416,7 +432,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -481,7 +497,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     <!-- are expected to have a component that says what impurity this one is -->
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -500,7 +516,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;Dissolution&quot;/>
                         <display value=&quot;Dissolution&quot;/>
                     </coding>
@@ -527,7 +543,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;Dissolution&quot;/>
                         <display value=&quot;Dissolution&quot;/>
                     </coding>
@@ -554,7 +570,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;WaterContent&quot;/>
                         <display value=&quot;Water Content&quot;/>
                     </coding>
@@ -584,7 +600,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;WaterContent&quot;/>
                         <display value=&quot;Water Content&quot;/>
                     </coding>
@@ -614,7 +630,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;Microbiological Quality&quot;/>
                         <display value=&quot;Microbiological Quality&quot;/>
                     </coding>
@@ -641,7 +657,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;Microbiological Quality&quot;/>
                         <display value=&quot;Microbiological Quality&quot;/>
                     </coding>
@@ -668,7 +684,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;uniformity-dosage&quot;/>
                         <display value=&quot;uniformity of dosage units (by weight)&quot;/>
                     </coding>
@@ -695,7 +711,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;uniformity-dosage&quot;/>
                         <display value=&quot;uniformity of dosage units (by weight)&quot;/>
                     </coding>
@@ -735,7 +751,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     <productName value=&quot;Stelbat Tablets, 20mg&quot;/>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-pq-example&quot;/>
                             <code value=&quot;Proprietary&quot;/>
                             <display value=&quot;Proprietary&quot;/>
                         </coding>
@@ -804,6 +820,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3003040516&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-substance-manufacture&quot;/>
+                        <display value=&quot;Drug Substance Manufacture&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;AAA Molybdenum Products, Inc.&quot;/>
                 <contact>
                     <address>
@@ -822,11 +846,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
 <div class="debugOff"><span title="
 <Bundle>
     <meta>
-        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-specification-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-specification-pq</span></div>
+        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-specification-pq&quot;>">Profile: </span><span title="
+<Bundle>
+    <meta>
+        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-specification-pq&quot;>">http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-specification-pq</span></div>
 <div><span title="
 <Bundle>
     ...
-    <type value=&quot;collection&quot;>">Type: </span><span><span>collection</span></span></div>
+    <type value=&quot;collection&quot;>">Type: <span>collection</span></span></div>
 </div>
 </div>
 <div>
@@ -868,49 +895,57 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Description&quot;/>
+                            <!--                            <definitionCanonical value=&quot;ObservationDefinition/Description&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/77e7020a-270c-6bed-2e55-28e9e942546c&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Identification&quot;/>
+                            <!--                            <definitionCanonical value=&quot;ObservationDefinition/Identification&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/0d0ef4cf-242c-1cb1-81c4-c41837ee9a12&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Assay&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/Assay&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/c0f05343-5b98-6073-1a0f-873aaf4f59bc&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Degradation&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/Degradation&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/a3d4d23a-800a-684a-6a47-fcfe44e06041&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Dissolution&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/Dissolution&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/bb11322b-9470-4f13-91b5-c8a5253380eb&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Uniformity&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/Uniformity&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/e7e2fe59-5433-5cc0-84b1-d5f30032790c&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Microbiological&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/Microbiological&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/64972eb3-99ee-7eae-2f63-733e5ae84f71&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Water&quot;/>
+                            <!--definitionCanonical value=&quot;ObservationDefinition/Water&quot;/-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/6ce8ab6d-55e2-0412-5fb1-ab33763f30b1&quot;/>
                         </action>
                     </action>
                     <action>
@@ -927,49 +962,57 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/DescriptionEnd&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/DescriptionEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/d24ce3cd-213d-4935-97cf-8e2dd03721ec&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/IdentificationEnd&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/IdentificationEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/f77ba972-5ef8-a178-9a5f-fe7f54da7499&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/AssayEnd&quot;/>
+                            <!--                            <definitionCanonical value=&quot;ObservationDefinition/AssayEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/f4a74fd3-876e-38ce-021f-04e5a8fb6a3f&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/DegradationEnd&quot;/>
+                            <!--                            <definitionCanonical value=&quot;ObservationDefinition/DegradationEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/ef72eeb7-211a-3c16-8460-8725ca43584f&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/DissolutionEnd&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/DissolutionEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/6fa69a2d-5a9f-a391-76e6-bbdfba0b45ea&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/UniformityEnd&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/UniformityEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/43dbc2a3-00c4-6f79-6b11-63768b412aa3&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/MicrobiologicalEnd&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/MicrobiologicalEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/e582e504-36ec-3b50-4043-51bf1147124e&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/WaterEnd&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/WaterEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/91391017-774b-5c77-93fa-642534278851&quot;/>
                         </action>
                     </action>
                 </action>" id="PlanDefinition-plandefinition-drug-pq-ex3-drug-specification">Plan</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/plandefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/plandefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/plandefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: plandefinition-drug-pq-ex3-drug-specification</div>
@@ -982,7 +1025,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <PlanDefinition>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq</span></div>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq&quot;>">Profile: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq&quot;>">http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq</span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -996,7 +1045,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <PlanDefinition>
                 ...
-                <description value=&quot;Narrative description of specifications&quot;>">Description: </span><span>Narrative description of specifications</span></div>
+                <description value=&quot;Narrative description of specifications&quot;>">Description: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                ...
+                <description value=&quot;Narrative description of specifications&quot;>">Narrative description of specifications</span></div>
 <div class="summaryHiddenOff">
 <div class="debugOff"><span title="
 <Bundle>
@@ -1004,7 +1059,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <PlanDefinition>
                 ...
-                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+                <status value=&quot;active&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                ...
+                <status value=&quot;active&quot;>"><span>active</span></span></div>
 </div>
 <div></div><span><span title="
 <Bundle>
@@ -1042,49 +1103,57 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Description&quot;/>
+                            <!--                            <definitionCanonical value=&quot;ObservationDefinition/Description&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/77e7020a-270c-6bed-2e55-28e9e942546c&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Identification&quot;/>
+                            <!--                            <definitionCanonical value=&quot;ObservationDefinition/Identification&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/0d0ef4cf-242c-1cb1-81c4-c41837ee9a12&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Assay&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/Assay&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/c0f05343-5b98-6073-1a0f-873aaf4f59bc&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Degradation&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/Degradation&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/a3d4d23a-800a-684a-6a47-fcfe44e06041&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Dissolution&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/Dissolution&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/bb11322b-9470-4f13-91b5-c8a5253380eb&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Uniformity&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/Uniformity&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/e7e2fe59-5433-5cc0-84b1-d5f30032790c&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Microbiological&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/Microbiological&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/64972eb3-99ee-7eae-2f63-733e5ae84f71&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Water&quot;/>
+                            <!--definitionCanonical value=&quot;ObservationDefinition/Water&quot;/-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/6ce8ab6d-55e2-0412-5fb1-ab33763f30b1&quot;/>
                         </action>
                     </action>
                     <action>
@@ -1101,49 +1170,57 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/DescriptionEnd&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/DescriptionEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/d24ce3cd-213d-4935-97cf-8e2dd03721ec&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/IdentificationEnd&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/IdentificationEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/f77ba972-5ef8-a178-9a5f-fe7f54da7499&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/AssayEnd&quot;/>
+                            <!--                            <definitionCanonical value=&quot;ObservationDefinition/AssayEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/f4a74fd3-876e-38ce-021f-04e5a8fb6a3f&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/DegradationEnd&quot;/>
+                            <!--                            <definitionCanonical value=&quot;ObservationDefinition/DegradationEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/ef72eeb7-211a-3c16-8460-8725ca43584f&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/DissolutionEnd&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/DissolutionEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/6fa69a2d-5a9f-a391-76e6-bbdfba0b45ea&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/UniformityEnd&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/UniformityEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/43dbc2a3-00c4-6f79-6b11-63768b412aa3&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/MicrobiologicalEnd&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/MicrobiologicalEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/e582e504-36ec-3b50-4043-51bf1147124e&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/WaterEnd&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/WaterEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/91391017-774b-5c77-93fa-642534278851&quot;/>
                         </action>
                     </action>
                 </action>">Subject</span><div ondblclick="summaryHandler(event)" class="indent mpd summaryUnit"><a class="plainLink"><span class="bold" title="MedicinalProductDefinition (id: medicinalproductdefinition-drug-product-pq-ex1)(fullUrl: urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5)
@@ -1172,7 +1249,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <productName value=&quot;Stelbat Tablets, 20mg&quot;/>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-pq-example&quot;/>
                             <code value=&quot;Proprietary&quot;/>
                             <display value=&quot;Proprietary&quot;/>
                         </coding>
@@ -1197,7 +1274,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <productName value=&quot;Stelbat Tablets, 20mg&quot;/>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-pq-example&quot;/>
                             <code value=&quot;Proprietary&quot;/>
                             <display value=&quot;Proprietary&quot;/>
                         </coding>
@@ -1220,7 +1297,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     ...
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-pq-example&quot;/>
                             <code value=&quot;Proprietary&quot;/>
                             <display value=&quot;Proprietary&quot;/>
                         </coding>">Name type: </span><span title="
@@ -1231,9 +1308,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <name>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-pq-example&quot;/>
                             <code value=&quot;Proprietary&quot;/>
-                            <display value=&quot;Proprietary&quot;/>">Proprietary<span class="greyOff"> [Proprietary]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq)</span></span></div><div title="
+                            <display value=&quot;Proprietary&quot;/>">Proprietary<span class="greyOff"> [Proprietary]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-pq-example)</span></span></div><div title="
 <Bundle>
     <entry>
         <resource>
@@ -1254,7 +1331,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <MedicinalProductDefinition>
                 ...
-                <description value=&quot;Textual description of the product&quot;>">Description: </span><span>Textual description of the product</span></div><div><span title="
+                <description value=&quot;Textual description of the product&quot;>">Description: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <MedicinalProductDefinition>
+                ...
+                <description value=&quot;Textual description of the product&quot;>">Textual description of the product</span></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1333,7 +1416,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <Ingredient>
                 ...
-                <status value=&quot;active&quot;>">Status: </span><span>active</span></div><div><span title="
+                <status value=&quot;active&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Ingredient>
+                ...
+                <status value=&quot;active&quot;>"><span>active</span></span></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1364,7 +1453,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                         <reference>
                             <reference value=&quot;SubstanceDefinition/substance1&quot;/>
                         </reference>
-                    </code>">Substance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Ingredient/code, id: productIngredient fullUrl: urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d6)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: substance1)(fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821152)
+                    </code>" class="summaryHiddenOff">Substance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Ingredient/code, id: productIngredient fullUrl: urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d6)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: substance1)(fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821152)
 
 <Bundle>
     <entry>
@@ -1382,7 +1471,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <SubstanceDefinition>
                 <name>
-                    <name value=&quot;Stelbatolol&quot;>">Name: </span><span><span>Stelbatolol</span></span></div></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div class="indent sbddetails2"><span title="
+                    <name value=&quot;Stelbatolol&quot;>">Name: <span>Stelbatolol</span></span></div></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div class="indent sbddetails2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1401,6 +1490,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3003040516&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-substance-manufacture&quot;/>
+                        <display value=&quot;Drug Substance Manufacture&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;AAA Molybdenum Products, Inc.&quot;/>
                 <contact>
                     <address>
@@ -1429,13 +1526,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <identifier>
                     <!-- FDA establishment identifier -->
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;3003040516&quot;/>">3003040516<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <value value=&quot;3003040516&quot;/>">3003040516<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;AAA Molybdenum Products, Inc.&quot;>">Name: </span><span>AAA Molybdenum Products, Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;AAA Molybdenum Products, Inc.&quot;>">Name: </span><span>AAA Molybdenum Products, Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-substance-manufacture&quot;/>
+                        <display value=&quot;Drug Substance Manufacture&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-substance-manufacture&quot;/>
+                        <display value=&quot;Drug Substance Manufacture&quot;/>">Drug Substance Manufacture<span class="greyOff"> [drug-substance-manufacture]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -1503,7 +1632,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <PlanDefinition>
                 <action>
-                    <title value=&quot;Specification(s) for Drug Product&quot;>">Action: </span><span>Specification(s) for Drug Product</span></div><br style="line-height:6px;"><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
+                    <title value=&quot;Specification(s) for Drug Product&quot;>">Action: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <title value=&quot;Specification(s) for Drug Product&quot;>">Specification(s) for Drug Product</span></div><br style="line-height:6px;"><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%">
 <tr>
 <th rowspan="2">Test Procedure</th><th colspan="2">Acceptance Criteria</th>
 <th rowspan="2">Method Reference</th></tr>
@@ -1818,49 +1953,57 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Description&quot;/>
+                            <!--                            <definitionCanonical value=&quot;ObservationDefinition/Description&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/77e7020a-270c-6bed-2e55-28e9e942546c&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Identification&quot;/>
+                            <!--                            <definitionCanonical value=&quot;ObservationDefinition/Identification&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/0d0ef4cf-242c-1cb1-81c4-c41837ee9a12&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Assay&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/Assay&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/c0f05343-5b98-6073-1a0f-873aaf4f59bc&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Degradation&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/Degradation&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/a3d4d23a-800a-684a-6a47-fcfe44e06041&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Dissolution&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/Dissolution&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/bb11322b-9470-4f13-91b5-c8a5253380eb&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Uniformity&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/Uniformity&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/e7e2fe59-5433-5cc0-84b1-d5f30032790c&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Microbiological&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/Microbiological&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/64972eb3-99ee-7eae-2f63-733e5ae84f71&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Water&quot;/>
+                            <!--definitionCanonical value=&quot;ObservationDefinition/Water&quot;/-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/6ce8ab6d-55e2-0412-5fb1-ab33763f30b1&quot;/>
                         </action>
                     </action>
                     <action>
@@ -1877,49 +2020,57 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/DescriptionEnd&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/DescriptionEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/d24ce3cd-213d-4935-97cf-8e2dd03721ec&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/IdentificationEnd&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/IdentificationEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/f77ba972-5ef8-a178-9a5f-fe7f54da7499&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/AssayEnd&quot;/>
+                            <!--                            <definitionCanonical value=&quot;ObservationDefinition/AssayEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/f4a74fd3-876e-38ce-021f-04e5a8fb6a3f&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/DegradationEnd&quot;/>
+                            <!--                            <definitionCanonical value=&quot;ObservationDefinition/DegradationEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/ef72eeb7-211a-3c16-8460-8725ca43584f&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/DissolutionEnd&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/DissolutionEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/6fa69a2d-5a9f-a391-76e6-bbdfba0b45ea&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/UniformityEnd&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/UniformityEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/43dbc2a3-00c4-6f79-6b11-63768b412aa3&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/MicrobiologicalEnd&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/MicrobiologicalEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/e582e504-36ec-3b50-4043-51bf1147124e&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/WaterEnd&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/WaterEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/91391017-774b-5c77-93fa-642534278851&quot;/>
                         </action>
                     </action>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"><span title="
 <Bundle>
@@ -1966,49 +2117,57 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Description&quot;/>
+                            <!--                            <definitionCanonical value=&quot;ObservationDefinition/Description&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/77e7020a-270c-6bed-2e55-28e9e942546c&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Identification&quot;/>
+                            <!--                            <definitionCanonical value=&quot;ObservationDefinition/Identification&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/0d0ef4cf-242c-1cb1-81c4-c41837ee9a12&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Assay&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/Assay&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/c0f05343-5b98-6073-1a0f-873aaf4f59bc&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Degradation&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/Degradation&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/a3d4d23a-800a-684a-6a47-fcfe44e06041&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Dissolution&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/Dissolution&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/bb11322b-9470-4f13-91b5-c8a5253380eb&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Uniformity&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/Uniformity&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/e7e2fe59-5433-5cc0-84b1-d5f30032790c&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Microbiological&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/Microbiological&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/64972eb3-99ee-7eae-2f63-733e5ae84f71&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Water&quot;/>
+                            <!--definitionCanonical value=&quot;ObservationDefinition/Water&quot;/-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/6ce8ab6d-55e2-0412-5fb1-ab33763f30b1&quot;/>
                         </action>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"><span title="
 <Bundle>
     <entry>
@@ -2055,7 +2214,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <action>
                         <timingTiming>
                             <code>
-                                <text value=&quot;Release time&quot;/>">Code: </span><span><span style="white-space:normal;">Release time</span></span></div>
+                                <text value=&quot;Release time&quot;/>">Code: <span style="white-space:normal;">Release time</span></span></div>
 </div>
 </div>
 <div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
@@ -2070,7 +2229,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Description&quot;/>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+                            <!--                            <definitionCanonical value=&quot;ObservationDefinition/Description&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/77e7020a-270c-6bed-2e55-28e9e942546c&quot;/>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -2082,7 +2242,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <code>
                                 <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
 <div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
-<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: plandefinition-drug-pq-ex3-drug-specification fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Description)(fullUrl: urn:uuid:77e7020a-270c-6bed-2e55-28e9e942546c)
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: plandefinition-drug-pq-ex3-drug-specification fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by canonical resource.url</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Description)(fullUrl: urn:uuid:77e7020a-270c-6bed-2e55-28e9e942546c)
 
 <Bundle>
     <entry>
@@ -2094,7 +2254,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DESC&quot;/>
                         <display value=&quot;Description&quot;/>
                     </coding>
@@ -2114,9 +2274,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DESC&quot;/>
-                        <display value=&quot;Description&quot;/>">Description<span class="greyOff"> [DESC]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Description</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Description</div>
+                        <display value=&quot;Description&quot;/>">Description<span class="greyOff"> [DESC]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Description</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Description</div>
 <div class="debugOff"> fullUrl: urn:uuid:77e7020a-270c-6bed-2e55-28e9e942546c</div>
 <div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/77e7020a-270c-6bed-2e55-28e9e942546c</div>
 <div class="summaryHiddenOff">
@@ -2126,7 +2286,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <ObservationDefinition>
                 ...
-                <title value=&quot;Description&quot;>">Title: </span><span>Description</span></div>
+                <title value=&quot;Description&quot;>">Title: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Description&quot;>">Description</span></div>
 </div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
@@ -2137,9 +2303,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <ObservationDefinition>
                 ...
-                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+                <status value=&quot;active&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <status value=&quot;active&quot;>"><span>active</span></span></div>
 </div>
-<div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
@@ -2148,20 +2319,20 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DESC&quot;/>
                         <display value=&quot;Description&quot;/>
                     </coding>
-                    <text value=&quot;Description&quot;/>">Code: </span><span><span title="
+                    <text value=&quot;Description&quot;/>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DESC&quot;/>
-                        <display value=&quot;Description&quot;/>">Description<span class="greyOff"> [DESC]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Description</span></span></div>
+                        <display value=&quot;Description&quot;/>">Description<span class="greyOff"> [DESC]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Description</span></span></div>
 <div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
@@ -2169,7 +2340,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 ...
                 <method>
-                    <text value=&quot;Visual inspection&quot;/>">Method: </span><span><span style="white-space:normal;">Visual inspection</span></span></div>
+                    <text value=&quot;Visual inspection&quot;/>">Method: <span style="white-space:normal;">Visual inspection</span></span></div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
 <div class="indent obsDefl2" title="
@@ -2200,7 +2371,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 <qualifiedValue>
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
-                        <valueString value=&quot;An orange film-coated tablet, debossed with 175 on one side&quot;/>">Text: </span><span>An orange film-coated tablet, debossed with 175 on one side</span></div>
+                        <valueString value=&quot;An orange film-coated tablet, debossed with 175 on one side&quot;/>">Text: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
+                        <valueString value=&quot;An orange film-coated tablet, debossed with 175 on one side&quot;/>"><span>An orange film-coated tablet, debossed with 175 on one side</span></span></div>
 </div>
 </div>
 <div class="summaryHiddenOff"></div>
@@ -2219,7 +2397,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Identification&quot;/>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+                            <!--                            <definitionCanonical value=&quot;ObservationDefinition/Identification&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/0d0ef4cf-242c-1cb1-81c4-c41837ee9a12&quot;/>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -2231,7 +2410,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <code>
                                 <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
 <div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
-<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: plandefinition-drug-pq-ex3-drug-specification fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Identification)(fullUrl: urn:uuid:0d0ef4cf-242c-1cb1-81c4-c41837ee9a12)
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: plandefinition-drug-pq-ex3-drug-specification fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by canonical resource.url</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Identification)(fullUrl: urn:uuid:0d0ef4cf-242c-1cb1-81c4-c41837ee9a12)
 
 <Bundle>
     <entry>
@@ -2243,7 +2422,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;IDT&quot;/>
                         <display value=&quot;Identification&quot;/>
                     </coding>
@@ -2263,9 +2442,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;IDT&quot;/>
-                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [IDT]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Identification</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Identification</div>
+                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [IDT]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Identification</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Identification</div>
 <div class="debugOff"> fullUrl: urn:uuid:0d0ef4cf-242c-1cb1-81c4-c41837ee9a12</div>
 <div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/0d0ef4cf-242c-1cb1-81c4-c41837ee9a12</div>
 <div class="summaryHiddenOff">
@@ -2275,7 +2454,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <ObservationDefinition>
                 ...
-                <title value=&quot;Identification&quot;>">Title: </span><span>Identification</span></div>
+                <title value=&quot;Identification&quot;>">Title: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Identification&quot;>">Identification</span></div>
 </div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
@@ -2286,9 +2471,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <ObservationDefinition>
                 ...
-                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+                <status value=&quot;active&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <status value=&quot;active&quot;>"><span>active</span></span></div>
 </div>
-<div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
@@ -2297,20 +2487,20 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;IDT&quot;/>
                         <display value=&quot;Identification&quot;/>
                     </coding>
-                    <text value=&quot;Identification&quot;/>">Code: </span><span><span title="
+                    <text value=&quot;Identification&quot;/>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;IDT&quot;/>
-                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [IDT]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Identification</span></span></div>
+                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [IDT]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Identification</span></span></div>
 <div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
@@ -2318,7 +2508,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 ...
                 <method>
-                    <text value=&quot;ID by UHPLC&quot;/>">Method: </span><span><span style="white-space:normal;">ID by UHPLC</span></span></div>
+                    <text value=&quot;ID by UHPLC&quot;/>">Method: <span style="white-space:normal;">ID by UHPLC</span></span></div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
 <div class="indent obsDefl2" title="
@@ -2349,7 +2539,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 <qualifiedValue>
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
-                        <valueString value=&quot;Consistent with the retention time and UV spectrum of the reference standard&quot;/>">Text: </span><span>Consistent with the retention time and UV spectrum of the reference standard</span></div>
+                        <valueString value=&quot;Consistent with the retention time and UV spectrum of the reference standard&quot;/>">Text: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
+                        <valueString value=&quot;Consistent with the retention time and UV spectrum of the reference standard&quot;/>"><span>Consistent with the retention time and UV spectrum of the reference standard</span></span></div>
 </div>
 </div>
 <div class="summaryHiddenOff"></div>
@@ -2368,7 +2565,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Assay&quot;/>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/Assay&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/c0f05343-5b98-6073-1a0f-873aaf4f59bc&quot;/>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -2380,7 +2578,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <code>
                                 <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
 <div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
-<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: plandefinition-drug-pq-ex3-drug-specification fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Assay)(fullUrl: urn:uuid:c0f05343-5b98-6073-1a0f-873aaf4f59bc)
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: plandefinition-drug-pq-ex3-drug-specification fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by canonical resource.url</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Assay)(fullUrl: urn:uuid:c0f05343-5b98-6073-1a0f-873aaf4f59bc)
 
 <Bundle>
     <entry>
@@ -2392,7 +2590,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;ASSAY&quot;/>
                         <display value=&quot;Assay&quot;/>
                     </coding>
@@ -2412,9 +2610,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;ASSAY&quot;/>
-                        <display value=&quot;Assay&quot;/>">Assay<span class="greyOff"> [ASSAY]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Assay</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Assay</div>
+                        <display value=&quot;Assay&quot;/>">Assay<span class="greyOff"> [ASSAY]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Assay</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Assay</div>
 <div class="debugOff"> fullUrl: urn:uuid:c0f05343-5b98-6073-1a0f-873aaf4f59bc</div>
 <div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/c0f05343-5b98-6073-1a0f-873aaf4f59bc</div>
 <div class="summaryHiddenOff">
@@ -2424,7 +2622,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <ObservationDefinition>
                 ...
-                <title value=&quot;Assay&quot;>">Title: </span><span>Assay</span></div>
+                <title value=&quot;Assay&quot;>">Title: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Assay&quot;>">Assay</span></div>
 </div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
@@ -2435,9 +2639,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <ObservationDefinition>
                 ...
-                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+                <status value=&quot;active&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <status value=&quot;active&quot;>"><span>active</span></span></div>
 </div>
-<div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
@@ -2446,20 +2655,20 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;ASSAY&quot;/>
                         <display value=&quot;Assay&quot;/>
                     </coding>
-                    <text value=&quot;Assay&quot;/>">Code: </span><span><span title="
+                    <text value=&quot;Assay&quot;/>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;ASSAY&quot;/>
-                        <display value=&quot;Assay&quot;/>">Assay<span class="greyOff"> [ASSAY]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Assay</span></span></div>
+                        <display value=&quot;Assay&quot;/>">Assay<span class="greyOff"> [ASSAY]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Assay</span></span></div>
 <div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
@@ -2467,7 +2676,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 ...
                 <method>
-                    <text value=&quot;Assay by UHPLC&quot;/>">Method: </span><span><span style="white-space:normal;">Assay by UHPLC</span></span></div>
+                    <text value=&quot;Assay by UHPLC&quot;/>">Method: <span style="white-space:normal;">Assay by UHPLC</span></span></div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
 <div class="indent obsDefl2" title="
@@ -2498,7 +2707,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 <qualifiedValue>
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
-                        <valueString value=&quot;95% to 105% of label claim&quot;/>">Text: </span><span>95% to 105% of label claim</span></div>
+                        <valueString value=&quot;95% to 105% of label claim&quot;/>">Text: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
+                        <valueString value=&quot;95% to 105% of label claim&quot;/>"><span>95% to 105% of label claim</span></span></div>
 </div>
 </div>
 <div class="summaryHiddenOff"></div>
@@ -2517,7 +2733,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Degradation&quot;/>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/Degradation&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/a3d4d23a-800a-684a-6a47-fcfe44e06041&quot;/>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -2529,7 +2746,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <code>
                                 <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
 <div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
-<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: plandefinition-drug-pq-ex3-drug-specification fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Degradation)(fullUrl: urn:uuid:a3d4d23a-800a-684a-6a47-fcfe44e06041)
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: plandefinition-drug-pq-ex3-drug-specification fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by canonical resource.url</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Degradation)(fullUrl: urn:uuid:a3d4d23a-800a-684a-6a47-fcfe44e06041)
 
 <Bundle>
     <entry>
@@ -2541,7 +2758,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -2609,7 +2826,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <!-- are expected to have a component that says what impurity this one is -->
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -2621,9 +2838,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Degradation</div>
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Degradation</div>
 <div class="debugOff"> fullUrl: urn:uuid:a3d4d23a-800a-684a-6a47-fcfe44e06041</div>
 <div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/a3d4d23a-800a-684a-6a47-fcfe44e06041</div>
 <div class="summaryHiddenOff">
@@ -2633,7 +2850,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <ObservationDefinition>
                 ...
-                <title value=&quot;Degradation Products&quot;>">Title: </span><span>Degradation Products</span></div>
+                <title value=&quot;Degradation Products&quot;>">Title: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Degradation Products&quot;>">Degradation Products</span></div>
 </div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
@@ -2644,9 +2867,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <ObservationDefinition>
                 ...
-                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+                <status value=&quot;active&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <status value=&quot;active&quot;>"><span>active</span></span></div>
 </div>
-<div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
@@ -2655,19 +2883,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
-                    </coding>">Code: </span><span><span title="
+                    </coding>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div>
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span></div>
 <div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
@@ -2675,7 +2903,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 ...
                 <method>
-                    <text value=&quot;Degradation products by UHPLC&quot;/>">Method: </span><span><span style="white-space:normal;">Degradation products by UHPLC</span></span></div>
+                    <text value=&quot;Degradation products by UHPLC&quot;/>">Method: <span style="white-space:normal;">Degradation products by UHPLC</span></span></div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
 <div class="indent obsDefl2" title="
@@ -2721,7 +2949,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <qualifiedValue>
                     <appliesTo>
                         <!-- could be a code -->
-                        <text value=&quot;Impurity 1&quot;/>">Applies To: </span><span><span style="white-space:normal;">Impurity 1</span></span></div>
+                        <text value=&quot;Impurity 1&quot;/>">Applies To: <span style="white-space:normal;">Impurity 1</span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -2785,7 +3013,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 <qualifiedValue>
                     <appliesTo>
-                        <text value=&quot;Impurity 2&quot;/>">Applies To: </span><span><span style="white-space:normal;">Impurity 2</span></span></div>
+                        <text value=&quot;Impurity 2&quot;/>">Applies To: <span style="white-space:normal;">Impurity 2</span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -2849,7 +3077,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 <qualifiedValue>
                     <appliesTo>
-                        <text value=&quot;Impurity 3&quot;/>">Applies To: </span><span><span style="white-space:normal;">Impurity 3</span></span></div>
+                        <text value=&quot;Impurity 3&quot;/>">Applies To: <span style="white-space:normal;">Impurity 3</span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -2913,7 +3141,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 <qualifiedValue>
                     <appliesTo>
-                        <text value=&quot;Individual unspecified degradation products&quot;/>">Applies To: </span><span><span style="white-space:normal;">Individual unspecified degradation products</span></span></div>
+                        <text value=&quot;Individual unspecified degradation products&quot;/>">Applies To: <span style="white-space:normal;">Individual unspecified degradation products</span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -2977,7 +3205,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 <qualifiedValue>
                     <appliesTo>
-                        <text value=&quot;Total degradation products&quot;/>">Applies To: </span><span><span style="white-space:normal;">Total degradation products</span></span></div>
+                        <text value=&quot;Total degradation products&quot;/>">Applies To: <span style="white-space:normal;">Total degradation products</span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -3011,7 +3239,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <!-- are expected to have a component that says what impurity this one is -->
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -3025,9 +3253,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3035,10 +3263,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
-                        </coding>">Code: </span><span><span title="
+                        </coding>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -3046,9 +3274,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div>
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span></div>
 </div>
 <div class="summaryHiddenOff"></div>
 </div>
@@ -3066,7 +3294,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Dissolution&quot;/>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/Dissolution&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/bb11322b-9470-4f13-91b5-c8a5253380eb&quot;/>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -3078,7 +3307,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <code>
                                 <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
 <div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
-<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: plandefinition-drug-pq-ex3-drug-specification fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Dissolution)(fullUrl: urn:uuid:bb11322b-9470-4f13-91b5-c8a5253380eb)
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: plandefinition-drug-pq-ex3-drug-specification fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by canonical resource.url</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Dissolution)(fullUrl: urn:uuid:bb11322b-9470-4f13-91b5-c8a5253380eb)
 
 <Bundle>
     <entry>
@@ -3090,7 +3319,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;Dissolution&quot;/>
                         <display value=&quot;Dissolution&quot;/>
                     </coding>
@@ -3110,9 +3339,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;Dissolution&quot;/>
-                        <display value=&quot;Dissolution&quot;/>">Dissolution<span class="greyOff"> [Dissolution]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Dissolution</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Dissolution</div>
+                        <display value=&quot;Dissolution&quot;/>">Dissolution<span class="greyOff"> [Dissolution]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Dissolution</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Dissolution</div>
 <div class="debugOff"> fullUrl: urn:uuid:bb11322b-9470-4f13-91b5-c8a5253380eb</div>
 <div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/bb11322b-9470-4f13-91b5-c8a5253380eb</div>
 <div class="summaryHiddenOff">
@@ -3122,7 +3351,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <ObservationDefinition>
                 ...
-                <title value=&quot;Dissolution&quot;>">Title: </span><span>Dissolution</span></div>
+                <title value=&quot;Dissolution&quot;>">Title: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Dissolution&quot;>">Dissolution</span></div>
 </div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
@@ -3133,9 +3368,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <ObservationDefinition>
                 ...
-                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+                <status value=&quot;active&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <status value=&quot;active&quot;>"><span>active</span></span></div>
 </div>
-<div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
@@ -3144,20 +3384,20 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;Dissolution&quot;/>
                         <display value=&quot;Dissolution&quot;/>
                     </coding>
-                    <text value=&quot;Dissolution&quot;/>">Code: </span><span><span title="
+                    <text value=&quot;Dissolution&quot;/>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;Dissolution&quot;/>
-                        <display value=&quot;Dissolution&quot;/>">Dissolution<span class="greyOff"> [Dissolution]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Dissolution</span></span></div>
+                        <display value=&quot;Dissolution&quot;/>">Dissolution<span class="greyOff"> [Dissolution]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Dissolution</span></span></div>
 <div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
@@ -3165,7 +3405,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 ...
                 <method>
-                    <text value=&quot;Apparatus 2 (paddles), UV measurement&quot;/>">Method: </span><span><span style="white-space:normal;">Apparatus 2 (paddles), UV measurement</span></span></div>
+                    <text value=&quot;Apparatus 2 (paddles), UV measurement&quot;/>">Method: <span style="white-space:normal;">Apparatus 2 (paddles), UV measurement</span></span></div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
 <div class="indent obsDefl2" title="
@@ -3196,7 +3436,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 <qualifiedValue>
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
-                        <valueString value=&quot;Shall comply with the requirements of the harmonised USP/JP/Ph Eur Q=80% at 30 minutes&quot;/>">Text: </span><span>Shall comply with the requirements of the harmonised USP/JP/Ph Eur Q=80% at 30 minutes</span></div>
+                        <valueString value=&quot;Shall comply with the requirements of the harmonised USP/JP/Ph Eur Q=80% at 30 minutes&quot;/>">Text: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
+                        <valueString value=&quot;Shall comply with the requirements of the harmonised USP/JP/Ph Eur Q=80% at 30 minutes&quot;/>"><span>Shall comply with the requirements of the harmonised USP/JP/Ph Eur Q=80% at 30 minutes</span></span></div>
 </div>
 </div>
 <div class="summaryHiddenOff"></div>
@@ -3215,7 +3462,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Uniformity&quot;/>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/Uniformity&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/e7e2fe59-5433-5cc0-84b1-d5f30032790c&quot;/>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -3227,7 +3475,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <code>
                                 <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
 <div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
-<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: plandefinition-drug-pq-ex3-drug-specification fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Uniformity)(fullUrl: urn:uuid:e7e2fe59-5433-5cc0-84b1-d5f30032790c)
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: plandefinition-drug-pq-ex3-drug-specification fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by canonical resource.url</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Uniformity)(fullUrl: urn:uuid:e7e2fe59-5433-5cc0-84b1-d5f30032790c)
 
 <Bundle>
     <entry>
@@ -3239,7 +3487,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;uniformity-dosage&quot;/>
                         <display value=&quot;uniformity of dosage units (by weight)&quot;/>
                     </coding>
@@ -3259,9 +3507,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;uniformity-dosage&quot;/>
-                        <display value=&quot;uniformity of dosage units (by weight)&quot;/>">uniformity of dosage units (by weight)<span class="greyOff"> [uniformity-dosage]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: uniformity of dosage units (by weight)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Uniformity</div>
+                        <display value=&quot;uniformity of dosage units (by weight)&quot;/>">uniformity of dosage units (by weight)<span class="greyOff"> [uniformity-dosage]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: uniformity of dosage units (by weight)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Uniformity</div>
 <div class="debugOff"> fullUrl: urn:uuid:e7e2fe59-5433-5cc0-84b1-d5f30032790c</div>
 <div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/e7e2fe59-5433-5cc0-84b1-d5f30032790c</div>
 <div class="summaryHiddenOff">
@@ -3271,7 +3519,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <ObservationDefinition>
                 ...
-                <title value=&quot;Uniformity of dosage&quot;>">Title: </span><span>Uniformity of dosage</span></div>
+                <title value=&quot;Uniformity of dosage&quot;>">Title: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Uniformity of dosage&quot;>">Uniformity of dosage</span></div>
 </div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
@@ -3282,9 +3536,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <ObservationDefinition>
                 ...
-                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+                <status value=&quot;active&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <status value=&quot;active&quot;>"><span>active</span></span></div>
 </div>
-<div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
@@ -3293,20 +3552,20 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;uniformity-dosage&quot;/>
                         <display value=&quot;uniformity of dosage units (by weight)&quot;/>
                     </coding>
-                    <text value=&quot;uniformity of dosage units (by weight)&quot;/>">Code: </span><span><span title="
+                    <text value=&quot;uniformity of dosage units (by weight)&quot;/>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;uniformity-dosage&quot;/>
-                        <display value=&quot;uniformity of dosage units (by weight)&quot;/>">uniformity of dosage units (by weight)<span class="greyOff"> [uniformity-dosage]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: uniformity of dosage units (by weight)</span></span></div>
+                        <display value=&quot;uniformity of dosage units (by weight)&quot;/>">uniformity of dosage units (by weight)<span class="greyOff"> [uniformity-dosage]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: uniformity of dosage units (by weight)</span></span></div>
 <div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
@@ -3314,7 +3573,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 ...
                 <method>
-                    <text value=&quot;Weight variation&quot;/>">Method: </span><span><span style="white-space:normal;">Weight variation</span></span></div>
+                    <text value=&quot;Weight variation&quot;/>">Method: <span style="white-space:normal;">Weight variation</span></span></div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
 <div class="indent obsDefl2" title="
@@ -3345,7 +3604,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 <qualifiedValue>
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
-                        <valueString value=&quot;Shall comply with the requirements of the harmonised USP/JP/Ph Eur&quot;/>">Text: </span><span>Shall comply with the requirements of the harmonised USP/JP/Ph Eur</span></div>
+                        <valueString value=&quot;Shall comply with the requirements of the harmonised USP/JP/Ph Eur&quot;/>">Text: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
+                        <valueString value=&quot;Shall comply with the requirements of the harmonised USP/JP/Ph Eur&quot;/>"><span>Shall comply with the requirements of the harmonised USP/JP/Ph Eur</span></span></div>
 </div>
 </div>
 <div class="summaryHiddenOff"></div>
@@ -3364,7 +3630,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Microbiological&quot;/>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/Microbiological&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/64972eb3-99ee-7eae-2f63-733e5ae84f71&quot;/>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -3376,7 +3643,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <code>
                                 <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
 <div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
-<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: plandefinition-drug-pq-ex3-drug-specification fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Microbiological)(fullUrl: urn:uuid:64972eb3-99ee-7eae-2f63-733e5ae84f71)
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: plandefinition-drug-pq-ex3-drug-specification fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by canonical resource.url</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Microbiological)(fullUrl: urn:uuid:64972eb3-99ee-7eae-2f63-733e5ae84f71)
 
 <Bundle>
     <entry>
@@ -3388,7 +3655,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;Microbiological Quality&quot;/>
                         <display value=&quot;Microbiological Quality&quot;/>
                     </coding>
@@ -3408,9 +3675,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;Microbiological Quality&quot;/>
-                        <display value=&quot;Microbiological Quality&quot;/>">Microbiological Quality<span class="greyOff"> [Microbiological Quality]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Microbiological Quality</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Microbiological</div>
+                        <display value=&quot;Microbiological Quality&quot;/>">Microbiological Quality<span class="greyOff"> [Microbiological Quality]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Microbiological Quality</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Microbiological</div>
 <div class="debugOff"> fullUrl: urn:uuid:64972eb3-99ee-7eae-2f63-733e5ae84f71</div>
 <div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/64972eb3-99ee-7eae-2f63-733e5ae84f71</div>
 <div class="summaryHiddenOff">
@@ -3420,7 +3687,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <ObservationDefinition>
                 ...
-                <title value=&quot;Microbiological&quot;>">Title: </span><span>Microbiological</span></div>
+                <title value=&quot;Microbiological&quot;>">Title: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Microbiological&quot;>">Microbiological</span></div>
 </div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
@@ -3431,9 +3704,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <ObservationDefinition>
                 ...
-                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+                <status value=&quot;active&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <status value=&quot;active&quot;>"><span>active</span></span></div>
 </div>
-<div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
@@ -3442,20 +3720,20 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;Microbiological Quality&quot;/>
                         <display value=&quot;Microbiological Quality&quot;/>
                     </coding>
-                    <text value=&quot;Microbiological Quality&quot;/>">Code: </span><span><span title="
+                    <text value=&quot;Microbiological Quality&quot;/>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;Microbiological Quality&quot;/>
-                        <display value=&quot;Microbiological Quality&quot;/>">Microbiological Quality<span class="greyOff"> [Microbiological Quality]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Microbiological Quality</span></span></div>
+                        <display value=&quot;Microbiological Quality&quot;/>">Microbiological Quality<span class="greyOff"> [Microbiological Quality]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Microbiological Quality</span></span></div>
 <div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
@@ -3463,7 +3741,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 ...
                 <method>
-                    <text value=&quot;Ph Eur&quot;/>">Method: </span><span><span style="white-space:normal;">Ph Eur</span></span></div>
+                    <text value=&quot;Ph Eur&quot;/>">Method: <span style="white-space:normal;">Ph Eur</span></span></div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
 <div class="indent obsDefl2" title="
@@ -3494,7 +3772,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 <qualifiedValue>
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
-                        <valueString value=&quot;Shall comply with the requirements of the Ph Eur&quot;/>">Text: </span><span>Shall comply with the requirements of the Ph Eur</span></div>
+                        <valueString value=&quot;Shall comply with the requirements of the Ph Eur&quot;/>">Text: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
+                        <valueString value=&quot;Shall comply with the requirements of the Ph Eur&quot;/>"><span>Shall comply with the requirements of the Ph Eur</span></span></div>
 </div>
 </div>
 <div class="summaryHiddenOff"></div>
@@ -3513,7 +3798,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/Water&quot;/>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+                            <!--definitionCanonical value=&quot;ObservationDefinition/Water&quot;/-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/6ce8ab6d-55e2-0412-5fb1-ab33763f30b1&quot;/>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -3525,7 +3811,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <code>
                                 <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
 <div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
-<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: plandefinition-drug-pq-ex3-drug-specification fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Water)(fullUrl: urn:uuid:6ce8ab6d-55e2-0412-5fb1-ab33763f30b1)
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: plandefinition-drug-pq-ex3-drug-specification fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by canonical resource.url</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Water)(fullUrl: urn:uuid:6ce8ab6d-55e2-0412-5fb1-ab33763f30b1)
 
 <Bundle>
     <entry>
@@ -3537,7 +3823,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;WaterContent&quot;/>
                         <display value=&quot;Water Content&quot;/>
                     </coding>
@@ -3560,9 +3846,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;WaterContent&quot;/>
-                        <display value=&quot;Water Content&quot;/>">Water Content<span class="greyOff"> [WaterContent]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Water Content</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Water</div>
+                        <display value=&quot;Water Content&quot;/>">Water Content<span class="greyOff"> [WaterContent]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Water Content</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Water</div>
 <div class="debugOff"> fullUrl: urn:uuid:6ce8ab6d-55e2-0412-5fb1-ab33763f30b1</div>
 <div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/6ce8ab6d-55e2-0412-5fb1-ab33763f30b1</div>
 <div class="summaryHiddenOff">
@@ -3572,7 +3858,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <ObservationDefinition>
                 ...
-                <title value=&quot;Water Content&quot;>">Title: </span><span>Water Content</span></div>
+                <title value=&quot;Water Content&quot;>">Title: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Water Content&quot;>">Water Content</span></div>
 </div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
@@ -3583,9 +3875,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <ObservationDefinition>
                 ...
-                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+                <status value=&quot;active&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <status value=&quot;active&quot;>"><span>active</span></span></div>
 </div>
-<div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
@@ -3594,20 +3891,20 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;WaterContent&quot;/>
                         <display value=&quot;Water Content&quot;/>
                     </coding>
-                    <text value=&quot;Water Content&quot;/>">Code: </span><span><span title="
+                    <text value=&quot;Water Content&quot;/>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;WaterContent&quot;/>
-                        <display value=&quot;Water Content&quot;/>">Water Content<span class="greyOff"> [WaterContent]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Water Content</span></span></div>
+                        <display value=&quot;Water Content&quot;/>">Water Content<span class="greyOff"> [WaterContent]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Water Content</span></span></div>
 <div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
@@ -3615,7 +3912,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 ...
                 <method>
-                    <text value=&quot;USP <921>&quot;/>">Method: </span><span><span style="white-space:normal;">USP <921></span></span></div>
+                    <text value=&quot;USP <921>&quot;/>">Method: <span style="white-space:normal;">USP <921></span></span></div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
 <div class="indent obsDefl2" title="
@@ -3693,49 +3990,57 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/DescriptionEnd&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/DescriptionEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/d24ce3cd-213d-4935-97cf-8e2dd03721ec&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/IdentificationEnd&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/IdentificationEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/f77ba972-5ef8-a178-9a5f-fe7f54da7499&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/AssayEnd&quot;/>
+                            <!--                            <definitionCanonical value=&quot;ObservationDefinition/AssayEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/f4a74fd3-876e-38ce-021f-04e5a8fb6a3f&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/DegradationEnd&quot;/>
+                            <!--                            <definitionCanonical value=&quot;ObservationDefinition/DegradationEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/ef72eeb7-211a-3c16-8460-8725ca43584f&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/DissolutionEnd&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/DissolutionEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/6fa69a2d-5a9f-a391-76e6-bbdfba0b45ea&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/UniformityEnd&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/UniformityEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/43dbc2a3-00c4-6f79-6b11-63768b412aa3&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/MicrobiologicalEnd&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/MicrobiologicalEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/e582e504-36ec-3b50-4043-51bf1147124e&quot;/>
                         </action>
                         <action>
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/WaterEnd&quot;/>
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/WaterEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/91391017-774b-5c77-93fa-642534278851&quot;/>
                         </action>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"><span title="
 <Bundle>
     <entry>
@@ -3782,7 +4087,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <action>
                         <timingTiming>
                             <code>
-                                <text value=&quot;At end of shelf life&quot;/>">Code: </span><span><span style="white-space:normal;">At end of shelf life</span></span></div>
+                                <text value=&quot;At end of shelf life&quot;/>">Code: <span style="white-space:normal;">At end of shelf life</span></span></div>
 </div>
 </div>
 <div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
@@ -3797,7 +4102,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/DescriptionEnd&quot;/>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/DescriptionEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/d24ce3cd-213d-4935-97cf-8e2dd03721ec&quot;/>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -3809,7 +4115,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <code>
                                 <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
 <div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
-<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: plandefinition-drug-pq-ex3-drug-specification fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: DescriptionEnd)(fullUrl: urn:uuid:d24ce3cd-213d-4935-97cf-8e2dd03721ec)
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: plandefinition-drug-pq-ex3-drug-specification fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by canonical resource.url</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: DescriptionEnd)(fullUrl: urn:uuid:d24ce3cd-213d-4935-97cf-8e2dd03721ec)
 
 <Bundle>
     <entry>
@@ -3821,7 +4127,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DESC&quot;/>
                         <display value=&quot;Description&quot;/>
                     </coding>
@@ -3838,9 +4144,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DESC&quot;/>
-                        <display value=&quot;Description&quot;/>">Description<span class="greyOff"> [DESC]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Description</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: DescriptionEnd</div>
+                        <display value=&quot;Description&quot;/>">Description<span class="greyOff"> [DESC]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Description</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: DescriptionEnd</div>
 <div class="debugOff"> fullUrl: urn:uuid:d24ce3cd-213d-4935-97cf-8e2dd03721ec</div>
 <div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/d24ce3cd-213d-4935-97cf-8e2dd03721ec</div>
 <div class="summaryHiddenOff">
@@ -3850,7 +4156,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <ObservationDefinition>
                 ...
-                <title value=&quot;Description&quot;>">Title: </span><span>Description</span></div>
+                <title value=&quot;Description&quot;>">Title: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Description&quot;>">Description</span></div>
 </div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
@@ -3861,9 +4173,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <ObservationDefinition>
                 ...
-                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+                <status value=&quot;active&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <status value=&quot;active&quot;>"><span>active</span></span></div>
 </div>
-<div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
@@ -3872,20 +4189,20 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DESC&quot;/>
                         <display value=&quot;Description&quot;/>
                     </coding>
-                    <text value=&quot;Description&quot;/>">Code: </span><span><span title="
+                    <text value=&quot;Description&quot;/>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DESC&quot;/>
-                        <display value=&quot;Description&quot;/>">Description<span class="greyOff"> [DESC]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Description</span></span></div>
+                        <display value=&quot;Description&quot;/>">Description<span class="greyOff"> [DESC]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Description</span></span></div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
 <div class="indent obsDefl2" title="
@@ -3916,7 +4233,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 <qualifiedValue>
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
-                        <valueString value=&quot;As for release&quot;/>">Text: </span><span>As for release</span></div>
+                        <valueString value=&quot;As for release&quot;/>">Text: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
+                        <valueString value=&quot;As for release&quot;/>"><span>As for release</span></span></div>
 </div>
 </div>
 <div class="summaryHiddenOff"></div>
@@ -3935,7 +4259,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/IdentificationEnd&quot;/>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/IdentificationEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/f77ba972-5ef8-a178-9a5f-fe7f54da7499&quot;/>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -3947,7 +4272,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <code>
                                 <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
 <div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
-<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: plandefinition-drug-pq-ex3-drug-specification fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: IdentificationEnd)(fullUrl: urn:uuid:f77ba972-5ef8-a178-9a5f-fe7f54da7499)
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: plandefinition-drug-pq-ex3-drug-specification fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by canonical resource.url</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: IdentificationEnd)(fullUrl: urn:uuid:f77ba972-5ef8-a178-9a5f-fe7f54da7499)
 
 <Bundle>
     <entry>
@@ -3959,7 +4284,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;IDT&quot;/>
                         <display value=&quot;Identification&quot;/>
                     </coding>
@@ -3976,9 +4301,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;IDT&quot;/>
-                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [IDT]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Identification</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: IdentificationEnd</div>
+                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [IDT]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Identification</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: IdentificationEnd</div>
 <div class="debugOff"> fullUrl: urn:uuid:f77ba972-5ef8-a178-9a5f-fe7f54da7499</div>
 <div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/f77ba972-5ef8-a178-9a5f-fe7f54da7499</div>
 <div class="summaryHiddenOff">
@@ -3988,7 +4313,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <ObservationDefinition>
                 ...
-                <title value=&quot;Identification&quot;>">Title: </span><span>Identification</span></div>
+                <title value=&quot;Identification&quot;>">Title: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Identification&quot;>">Identification</span></div>
 </div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
@@ -3999,9 +4330,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <ObservationDefinition>
                 ...
-                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+                <status value=&quot;active&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <status value=&quot;active&quot;>"><span>active</span></span></div>
 </div>
-<div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
@@ -4010,20 +4346,20 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;IDT&quot;/>
                         <display value=&quot;Identification&quot;/>
                     </coding>
-                    <text value=&quot;Identification&quot;/>">Code: </span><span><span title="
+                    <text value=&quot;Identification&quot;/>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;IDT&quot;/>
-                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [IDT]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Identification</span></span></div>
+                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [IDT]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Identification</span></span></div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
 <div class="indent obsDefl2" title="
@@ -4054,7 +4390,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 <qualifiedValue>
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
-                        <valueString value=&quot;As for release&quot;/>">Text: </span><span>As for release</span></div>
+                        <valueString value=&quot;As for release&quot;/>">Text: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
+                        <valueString value=&quot;As for release&quot;/>"><span>As for release</span></span></div>
 </div>
 </div>
 <div class="summaryHiddenOff"></div>
@@ -4073,7 +4416,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/AssayEnd&quot;/>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+                            <!--                            <definitionCanonical value=&quot;ObservationDefinition/AssayEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/f4a74fd3-876e-38ce-021f-04e5a8fb6a3f&quot;/>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -4085,7 +4429,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <code>
                                 <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
 <div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
-<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: plandefinition-drug-pq-ex3-drug-specification fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: AssayEnd)(fullUrl: urn:uuid:f4a74fd3-876e-38ce-021f-04e5a8fb6a3f)
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: plandefinition-drug-pq-ex3-drug-specification fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by canonical resource.url</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: AssayEnd)(fullUrl: urn:uuid:f4a74fd3-876e-38ce-021f-04e5a8fb6a3f)
 
 <Bundle>
     <entry>
@@ -4097,7 +4441,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;ASSAY&quot;/>
                         <display value=&quot;Assay&quot;/>
                     </coding>
@@ -4114,9 +4458,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;ASSAY&quot;/>
-                        <display value=&quot;Assay&quot;/>">Assay<span class="greyOff"> [ASSAY]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Assay</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: AssayEnd</div>
+                        <display value=&quot;Assay&quot;/>">Assay<span class="greyOff"> [ASSAY]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Assay</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: AssayEnd</div>
 <div class="debugOff"> fullUrl: urn:uuid:f4a74fd3-876e-38ce-021f-04e5a8fb6a3f</div>
 <div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/f4a74fd3-876e-38ce-021f-04e5a8fb6a3f</div>
 <div class="summaryHiddenOff">
@@ -4126,7 +4470,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <ObservationDefinition>
                 ...
-                <title value=&quot;Assay&quot;>">Title: </span><span>Assay</span></div>
+                <title value=&quot;Assay&quot;>">Title: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Assay&quot;>">Assay</span></div>
 </div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
@@ -4137,9 +4487,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <ObservationDefinition>
                 ...
-                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+                <status value=&quot;active&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <status value=&quot;active&quot;>"><span>active</span></span></div>
 </div>
-<div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
@@ -4148,20 +4503,20 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;ASSAY&quot;/>
                         <display value=&quot;Assay&quot;/>
                     </coding>
-                    <text value=&quot;Assay&quot;/>">Code: </span><span><span title="
+                    <text value=&quot;Assay&quot;/>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;ASSAY&quot;/>
-                        <display value=&quot;Assay&quot;/>">Assay<span class="greyOff"> [ASSAY]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Assay</span></span></div>
+                        <display value=&quot;Assay&quot;/>">Assay<span class="greyOff"> [ASSAY]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Assay</span></span></div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
 <div class="indent obsDefl2" title="
@@ -4192,7 +4547,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 <qualifiedValue>
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
-                        <valueString value=&quot;As for release&quot;/>">Text: </span><span>As for release</span></div>
+                        <valueString value=&quot;As for release&quot;/>">Text: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
+                        <valueString value=&quot;As for release&quot;/>"><span>As for release</span></span></div>
 </div>
 </div>
 <div class="summaryHiddenOff"></div>
@@ -4211,7 +4573,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/DegradationEnd&quot;/>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+                            <!--                            <definitionCanonical value=&quot;ObservationDefinition/DegradationEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/ef72eeb7-211a-3c16-8460-8725ca43584f&quot;/>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -4223,7 +4586,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <code>
                                 <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
 <div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
-<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: plandefinition-drug-pq-ex3-drug-specification fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: DegradationEnd)(fullUrl: urn:uuid:ef72eeb7-211a-3c16-8460-8725ca43584f)
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: plandefinition-drug-pq-ex3-drug-specification fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by canonical resource.url</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: DegradationEnd)(fullUrl: urn:uuid:ef72eeb7-211a-3c16-8460-8725ca43584f)
 
 <Bundle>
     <entry>
@@ -4235,7 +4598,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
                     </coding>
@@ -4300,7 +4663,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <!-- are expected to have a component that says what impurity this one is -->
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -4312,9 +4675,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: DegradationEnd</div>
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: DegradationEnd</div>
 <div class="debugOff"> fullUrl: urn:uuid:ef72eeb7-211a-3c16-8460-8725ca43584f</div>
 <div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/ef72eeb7-211a-3c16-8460-8725ca43584f</div>
 <div class="summaryHiddenOff">
@@ -4324,7 +4687,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <ObservationDefinition>
                 ...
-                <title value=&quot;Degradation Products&quot;>">Title: </span><span>Degradation Products</span></div>
+                <title value=&quot;Degradation Products&quot;>">Title: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Degradation Products&quot;>">Degradation Products</span></div>
 </div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
@@ -4335,9 +4704,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <ObservationDefinition>
                 ...
-                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+                <status value=&quot;active&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <status value=&quot;active&quot;>"><span>active</span></span></div>
 </div>
-<div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
@@ -4346,19 +4720,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
                         <display value=&quot;Degradation Products&quot;/>
-                    </coding>">Code: </span><span><span title="
+                    </coding>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP&quot;/>
-                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div>
+                        <display value=&quot;Degradation Products&quot;/>">Degradation Products<span class="greyOff"> [DGP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span></div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
 <div class="indent obsDefl2" title="
@@ -4404,7 +4778,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <qualifiedValue>
                     <appliesTo>
                         <!-- could be a code -->
-                        <text value=&quot;Impurity 1&quot;/>">Applies To: </span><span><span style="white-space:normal;">Impurity 1</span></span></div>
+                        <text value=&quot;Impurity 1&quot;/>">Applies To: <span style="white-space:normal;">Impurity 1</span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -4468,7 +4842,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 <qualifiedValue>
                     <appliesTo>
-                        <text value=&quot;Impurity 2&quot;/>">Applies To: </span><span><span style="white-space:normal;">Impurity 2</span></span></div>
+                        <text value=&quot;Impurity 2&quot;/>">Applies To: <span style="white-space:normal;">Impurity 2</span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -4532,7 +4906,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 <qualifiedValue>
                     <appliesTo>
-                        <text value=&quot;Impurity 3&quot;/>">Applies To: </span><span><span style="white-space:normal;">Impurity 3</span></span></div>
+                        <text value=&quot;Impurity 3&quot;/>">Applies To: <span style="white-space:normal;">Impurity 3</span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -4596,7 +4970,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 <qualifiedValue>
                     <appliesTo>
-                        <text value=&quot;Individual unspecified degradation products&quot;/>">Applies To: </span><span><span style="white-space:normal;">Individual unspecified degradation products</span></span></div>
+                        <text value=&quot;Individual unspecified degradation products&quot;/>">Applies To: <span style="white-space:normal;">Individual unspecified degradation products</span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -4660,7 +5034,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 <qualifiedValue>
                     <appliesTo>
-                        <text value=&quot;Total degradation products&quot;/>">Applies To: </span><span><span style="white-space:normal;">Total degradation products</span></span></div>
+                        <text value=&quot;Total degradation products&quot;/>">Applies To: <span style="white-space:normal;">Total degradation products</span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -4694,7 +5068,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                     <!-- are expected to have a component that says what impurity this one is -->
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
                         </coding>
@@ -4708,9 +5082,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span><div class="summaryHiddenOff"><span title="
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -4718,10 +5092,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
-                        </coding>">Code: </span><span><span title="
+                        </coding>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -4729,9 +5103,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <component>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
-                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div>
+                            <display value=&quot;Impurity&quot;/>">Impurity<span class="greyOff"> [IMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span></div>
 </div>
 <div class="summaryHiddenOff"></div>
 </div>
@@ -4749,7 +5123,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/DissolutionEnd&quot;/>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/DissolutionEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/6fa69a2d-5a9f-a391-76e6-bbdfba0b45ea&quot;/>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -4761,7 +5136,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <code>
                                 <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
 <div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
-<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: plandefinition-drug-pq-ex3-drug-specification fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: DissolutionEnd)(fullUrl: urn:uuid:6fa69a2d-5a9f-a391-76e6-bbdfba0b45ea)
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: plandefinition-drug-pq-ex3-drug-specification fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by canonical resource.url</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: DissolutionEnd)(fullUrl: urn:uuid:6fa69a2d-5a9f-a391-76e6-bbdfba0b45ea)
 
 <Bundle>
     <entry>
@@ -4773,7 +5148,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;Dissolution&quot;/>
                         <display value=&quot;Dissolution&quot;/>
                     </coding>
@@ -4793,9 +5168,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;Dissolution&quot;/>
-                        <display value=&quot;Dissolution&quot;/>">Dissolution<span class="greyOff"> [Dissolution]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Dissolution</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: DissolutionEnd</div>
+                        <display value=&quot;Dissolution&quot;/>">Dissolution<span class="greyOff"> [Dissolution]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Dissolution</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: DissolutionEnd</div>
 <div class="debugOff"> fullUrl: urn:uuid:6fa69a2d-5a9f-a391-76e6-bbdfba0b45ea</div>
 <div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/6fa69a2d-5a9f-a391-76e6-bbdfba0b45ea</div>
 <div class="summaryHiddenOff">
@@ -4805,7 +5180,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <ObservationDefinition>
                 ...
-                <title value=&quot;Dissolution&quot;>">Title: </span><span>Dissolution</span></div>
+                <title value=&quot;Dissolution&quot;>">Title: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Dissolution&quot;>">Dissolution</span></div>
 </div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
@@ -4816,9 +5197,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <ObservationDefinition>
                 ...
-                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+                <status value=&quot;active&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <status value=&quot;active&quot;>"><span>active</span></span></div>
 </div>
-<div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
@@ -4827,20 +5213,20 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;Dissolution&quot;/>
                         <display value=&quot;Dissolution&quot;/>
                     </coding>
-                    <text value=&quot;Dissolution&quot;/>">Code: </span><span><span title="
+                    <text value=&quot;Dissolution&quot;/>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;Dissolution&quot;/>
-                        <display value=&quot;Dissolution&quot;/>">Dissolution<span class="greyOff"> [Dissolution]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Dissolution</span></span></div>
+                        <display value=&quot;Dissolution&quot;/>">Dissolution<span class="greyOff"> [Dissolution]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Dissolution</span></span></div>
 <div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
@@ -4848,7 +5234,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 ...
                 <method>
-                    <text value=&quot;Apparatus 2 (paddles), UV measurement&quot;/>">Method: </span><span><span style="white-space:normal;">Apparatus 2 (paddles), UV measurement</span></span></div>
+                    <text value=&quot;Apparatus 2 (paddles), UV measurement&quot;/>">Method: <span style="white-space:normal;">Apparatus 2 (paddles), UV measurement</span></span></div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
 <div class="indent obsDefl2" title="
@@ -4879,7 +5265,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 <qualifiedValue>
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
-                        <valueString value=&quot;As for release&quot;/>">Text: </span><span>As for release</span></div>
+                        <valueString value=&quot;As for release&quot;/>">Text: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
+                        <valueString value=&quot;As for release&quot;/>"><span>As for release</span></span></div>
 </div>
 </div>
 <div class="summaryHiddenOff"></div>
@@ -4898,7 +5291,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/UniformityEnd&quot;/>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/UniformityEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/43dbc2a3-00c4-6f79-6b11-63768b412aa3&quot;/>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -4910,7 +5304,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <code>
                                 <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
 <div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
-<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: plandefinition-drug-pq-ex3-drug-specification fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: UniformityEnd)(fullUrl: urn:uuid:43dbc2a3-00c4-6f79-6b11-63768b412aa3)
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: plandefinition-drug-pq-ex3-drug-specification fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by canonical resource.url</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: UniformityEnd)(fullUrl: urn:uuid:43dbc2a3-00c4-6f79-6b11-63768b412aa3)
 
 <Bundle>
     <entry>
@@ -4922,7 +5316,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;uniformity-dosage&quot;/>
                         <display value=&quot;uniformity of dosage units (by weight)&quot;/>
                     </coding>
@@ -4939,9 +5333,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;uniformity-dosage&quot;/>
-                        <display value=&quot;uniformity of dosage units (by weight)&quot;/>">uniformity of dosage units (by weight)<span class="greyOff"> [uniformity-dosage]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: uniformity of dosage units (by weight)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: UniformityEnd</div>
+                        <display value=&quot;uniformity of dosage units (by weight)&quot;/>">uniformity of dosage units (by weight)<span class="greyOff"> [uniformity-dosage]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: uniformity of dosage units (by weight)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: UniformityEnd</div>
 <div class="debugOff"> fullUrl: urn:uuid:43dbc2a3-00c4-6f79-6b11-63768b412aa3</div>
 <div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/43dbc2a3-00c4-6f79-6b11-63768b412aa3</div>
 <div class="summaryHiddenOff">
@@ -4951,7 +5345,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <ObservationDefinition>
                 ...
-                <title value=&quot;Uniformity of dosage&quot;>">Title: </span><span>Uniformity of dosage</span></div>
+                <title value=&quot;Uniformity of dosage&quot;>">Title: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Uniformity of dosage&quot;>">Uniformity of dosage</span></div>
 </div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
@@ -4962,9 +5362,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <ObservationDefinition>
                 ...
-                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+                <status value=&quot;active&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <status value=&quot;active&quot;>"><span>active</span></span></div>
 </div>
-<div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
@@ -4973,20 +5378,20 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;uniformity-dosage&quot;/>
                         <display value=&quot;uniformity of dosage units (by weight)&quot;/>
                     </coding>
-                    <text value=&quot;uniformity of dosage units (by weight)&quot;/>">Code: </span><span><span title="
+                    <text value=&quot;uniformity of dosage units (by weight)&quot;/>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;uniformity-dosage&quot;/>
-                        <display value=&quot;uniformity of dosage units (by weight)&quot;/>">uniformity of dosage units (by weight)<span class="greyOff"> [uniformity-dosage]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: uniformity of dosage units (by weight)</span></span></div>
+                        <display value=&quot;uniformity of dosage units (by weight)&quot;/>">uniformity of dosage units (by weight)<span class="greyOff"> [uniformity-dosage]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: uniformity of dosage units (by weight)</span></span></div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
 <div class="indent obsDefl2" title="
@@ -5017,7 +5422,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 <qualifiedValue>
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
-                        <valueString value=&quot;As for release&quot;/>">Text: </span><span>As for release</span></div>
+                        <valueString value=&quot;As for release&quot;/>">Text: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
+                        <valueString value=&quot;As for release&quot;/>"><span>As for release</span></span></div>
 </div>
 </div>
 <div class="summaryHiddenOff"></div>
@@ -5036,7 +5448,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/MicrobiologicalEnd&quot;/>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/MicrobiologicalEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/e582e504-36ec-3b50-4043-51bf1147124e&quot;/>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -5048,7 +5461,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <code>
                                 <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
 <div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
-<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: plandefinition-drug-pq-ex3-drug-specification fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: MicrobiologicalEnd)(fullUrl: urn:uuid:e582e504-36ec-3b50-4043-51bf1147124e)
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: plandefinition-drug-pq-ex3-drug-specification fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by canonical resource.url</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: MicrobiologicalEnd)(fullUrl: urn:uuid:e582e504-36ec-3b50-4043-51bf1147124e)
 
 <Bundle>
     <entry>
@@ -5060,7 +5473,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;Microbiological Quality&quot;/>
                         <display value=&quot;Microbiological Quality&quot;/>
                     </coding>
@@ -5080,9 +5493,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;Microbiological Quality&quot;/>
-                        <display value=&quot;Microbiological Quality&quot;/>">Microbiological Quality<span class="greyOff"> [Microbiological Quality]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Microbiological Quality</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: MicrobiologicalEnd</div>
+                        <display value=&quot;Microbiological Quality&quot;/>">Microbiological Quality<span class="greyOff"> [Microbiological Quality]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Microbiological Quality</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: MicrobiologicalEnd</div>
 <div class="debugOff"> fullUrl: urn:uuid:e582e504-36ec-3b50-4043-51bf1147124e</div>
 <div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/e582e504-36ec-3b50-4043-51bf1147124e</div>
 <div class="summaryHiddenOff">
@@ -5092,7 +5505,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <ObservationDefinition>
                 ...
-                <title value=&quot;Microbiological&quot;>">Title: </span><span>Microbiological</span></div>
+                <title value=&quot;Microbiological&quot;>">Title: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Microbiological&quot;>">Microbiological</span></div>
 </div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
@@ -5103,9 +5522,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <ObservationDefinition>
                 ...
-                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+                <status value=&quot;active&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <status value=&quot;active&quot;>"><span>active</span></span></div>
 </div>
-<div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
@@ -5114,20 +5538,20 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;Microbiological Quality&quot;/>
                         <display value=&quot;Microbiological Quality&quot;/>
                     </coding>
-                    <text value=&quot;Microbiological Quality&quot;/>">Code: </span><span><span title="
+                    <text value=&quot;Microbiological Quality&quot;/>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;Microbiological Quality&quot;/>
-                        <display value=&quot;Microbiological Quality&quot;/>">Microbiological Quality<span class="greyOff"> [Microbiological Quality]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Microbiological Quality</span></span></div>
+                        <display value=&quot;Microbiological Quality&quot;/>">Microbiological Quality<span class="greyOff"> [Microbiological Quality]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Microbiological Quality</span></span></div>
 <div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
@@ -5135,7 +5559,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 ...
                 <method>
-                    <text value=&quot;Ph Eur&quot;/>">Method: </span><span><span style="white-space:normal;">Ph Eur</span></span></div>
+                    <text value=&quot;Ph Eur&quot;/>">Method: <span style="white-space:normal;">Ph Eur</span></span></div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
 <div class="indent obsDefl2" title="
@@ -5166,7 +5590,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 <qualifiedValue>
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
-                        <valueString value=&quot;As for release&quot;/>">Text: </span><span>As for release</span></div>
+                        <valueString value=&quot;As for release&quot;/>">Text: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
+                        <valueString value=&quot;As for release&quot;/>"><span>As for release</span></span></div>
 </div>
 </div>
 <div class="summaryHiddenOff"></div>
@@ -5185,7 +5616,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/WaterEnd&quot;/>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+                            <!--<definitionCanonical value=&quot;ObservationDefinition/WaterEnd&quot;/>-->
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/91391017-774b-5c77-93fa-642534278851&quot;/>"><a id="urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -5197,7 +5629,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                             <code>
                                 <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
 <div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
-<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: plandefinition-drug-pq-ex3-drug-specification fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: WaterEnd)(fullUrl: urn:uuid:91391017-774b-5c77-93fa-642534278851)
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: plandefinition-drug-pq-ex3-drug-specification fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by canonical resource.url</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: WaterEnd)(fullUrl: urn:uuid:91391017-774b-5c77-93fa-642534278851)
 
 <Bundle>
     <entry>
@@ -5209,7 +5641,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;WaterContent&quot;/>
                         <display value=&quot;Water Content&quot;/>
                     </coding>
@@ -5232,9 +5664,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;WaterContent&quot;/>
-                        <display value=&quot;Water Content&quot;/>">Water Content<span class="greyOff"> [WaterContent]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Water Content</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: WaterEnd</div>
+                        <display value=&quot;Water Content&quot;/>">Water Content<span class="greyOff"> [WaterContent]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Water Content</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: WaterEnd</div>
 <div class="debugOff"> fullUrl: urn:uuid:91391017-774b-5c77-93fa-642534278851</div>
 <div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/91391017-774b-5c77-93fa-642534278851</div>
 <div class="summaryHiddenOff">
@@ -5244,7 +5676,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <ObservationDefinition>
                 ...
-                <title value=&quot;Water Content&quot;>">Title: </span><span>Water Content</span></div>
+                <title value=&quot;Water Content&quot;>">Title: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Water Content&quot;>">Water Content</span></div>
 </div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
@@ -5255,9 +5693,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
         <resource>
             <ObservationDefinition>
                 ...
-                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+                <status value=&quot;active&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <status value=&quot;active&quot;>"><span>active</span></span></div>
 </div>
-<div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
@@ -5266,20 +5709,20 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;WaterContent&quot;/>
                         <display value=&quot;Water Content&quot;/>
                     </coding>
-                    <text value=&quot;Water Content&quot;/>">Code: </span><span><span title="
+                    <text value=&quot;Water Content&quot;/>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;WaterContent&quot;/>
-                        <display value=&quot;Water Content&quot;/>">Water Content<span class="greyOff"> [WaterContent]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Water Content</span></span></div>
+                        <display value=&quot;Water Content&quot;/>">Water Content<span class="greyOff"> [WaterContent]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Water Content</span></span></div>
 <div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
@@ -5287,7 +5730,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
             <ObservationDefinition>
                 ...
                 <method>
-                    <text value=&quot;USP <921>&quot;/>">Method: </span><span><span style="white-space:normal;">USP <921></span></span></div>
+                    <text value=&quot;USP <921>&quot;/>">Method: <span style="white-space:normal;">USP <921></span></span></div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
 <div class="indent obsDefl2" title="
@@ -5378,6 +5821,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
 	    border-radius: 5px;
 	    visibility:visible; /* this is so that the outer border doesn't hide these */
     }
+    .indent-right {
+        margin-right:0.7em;
+    }
     .indent-no-border {
         margin-left:1em; 	/* controls line to line indent */
         text-indent:-1em; 	/* moves text back to right, so that other parts of the div are still at the left */
@@ -5432,6 +5878,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition
 
     .cui { background-Color:#d9d2e9 }
     .cuidetails { background-Color:#e6e1f0 }
+    .cuidetails2 { background-Color:#ebe9f0 }
 
     .sbd,.hcs { background-Color:#affad5 }
     .sbddetails,.hcsl2 { background-Color:#c7fce2 }

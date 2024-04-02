@@ -37,7 +37,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                         <display value=&quot;Workflow Definition&quot;/>
                     </coding>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-plan-type&quot;/>
                         <code value=&quot;analytical-procedure&quot;/>
                         <display value=&quot;Analytical Procedure&quot;/>
                     </coding>
@@ -59,7 +59,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                         </typeReference>
                         <role>
                             <coding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-participant-role&quot;/>
                                 <code value=&quot;diluent&quot;/>
                                 <display value=&quot;Diluent&quot;/>
                             </coding>
@@ -76,7 +76,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                         </typeReference>
                         <role>
                             <coding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-participant-role&quot;/>
                                 <code value=&quot;ResultingMaterial&quot;/>
                                 <display value=&quot;Resulting Material&quot;/>
                             </coding>
@@ -95,7 +95,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/SampleAnalysis&quot;/>
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4136-3c1f-b8ba6a7d046e&quot;/>
                         </action>
                     </action>
                 </action>
@@ -160,7 +160,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                         <valueBoolean value=&quot;true&quot;/>
                     </extension>
                     <status value=&quot;additional&quot;/>
-                    <div>
+                    <div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;>
                         <div style=&quot;font-family: 'Times New Roman', Times, serif;&quot;>
                             <p>Determine the amount of Stelbat in each sample replicate as follows:</p>
                             <p>
@@ -200,30 +200,12 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                         </div>
                     </div>
                 </text>
-                <contained>
-                    <Binary>
-                        <id value=&quot;imageResource&quot;/>
-                        <!-- example format -->
-                        <contentType value=&quot;image/png&quot;/>
-                        <!-- data is base 64 encoded, actual bytes of the image png file -->
-                        <data value=&quot;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&quot;/>
-                    </Binary>
-                </contained>
-                <contained>
-                    <Binary>
-                        <id value=&quot;imageResource2&quot;/>
-                        <!-- example format -->
-                        <contentType value=&quot;image/png&quot;/>
-                        <!-- data is base 64 encoded, actual bytes of the image png file -->
-                        <data value=&quot;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&quot;/>
-                    </Binary>
-                </contained>
                 <url value=&quot;http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d045e&quot;/>
                 <title value=&quot;Assay (w/w%)&quot;/>
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;ASSAY&quot;/>
                         <display value=&quot;Assay&quot;/>
                     </coding>
@@ -238,6 +220,30 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
         </resource>
     </entry>
     <entry>
+        <fullUrl value=&quot;urn:uuid:12e7e672-40a6-4036-3c2f-b8ba6a7d046e&quot;/>
+        <resource>
+            <Binary>
+                <id value=&quot;imageResource&quot;/>
+                <!-- example format -->
+                <contentType value=&quot;image/png&quot;/>
+                <!-- data is base 64 encoded, actual bytes of the image png file -->
+                <data value=&quot;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&quot;/>
+            </Binary>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value=&quot;urn:uuid:12e7e672-40a6-4036-3c3f-b8ba6a7d046e&quot;/>
+        <resource>
+            <Binary>
+                <id value=&quot;imageResource2&quot;/>
+                <!-- example format -->
+                <contentType value=&quot;image/png&quot;/>
+                <!-- data is base 64 encoded, actual bytes of the image png file -->
+                <data value=&quot;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&quot;/>
+            </Binary>
+        </resource>
+    </entry>
+    <entry>
         <fullUrl value=&quot;urn:uuid:12e7e672-40a6-4036-3c1f-b8ba6a7d046e&quot;/>
         <resource>
             <ObservationDefinition>
@@ -247,7 +253,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;IDT&quot;/>
                         <display value=&quot;Identification&quot;/>
                     </coding>
@@ -309,7 +315,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                     <productName value=&quot;Stelbat Tablets, 20mg&quot;/>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-pq-example&quot;/>
                             <code value=&quot;Proprietary&quot;/>
                             <display value=&quot;Proprietary&quot;/>
                         </coding>
@@ -332,11 +338,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
 <div class="debugOff"><span title="
 <Bundle>
     <meta>
-        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analytical-procedure-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analytical-procedure-pq</span></div>
+        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analytical-procedure-pq&quot;>">Profile: </span><span title="
+<Bundle>
+    <meta>
+        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analytical-procedure-pq&quot;>">http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analytical-procedure-pq</span></div>
 <div><span title="
 <Bundle>
     ...
-    <type value=&quot;collection&quot;>">Type: </span><span><span>collection</span></span></div>
+    <type value=&quot;collection&quot;>">Type: <span>collection</span></span></div>
 </div>
 </div>
 <div>
@@ -365,7 +374,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                     <productName value=&quot;Stelbat Tablets, 20mg&quot;/>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-pq-example&quot;/>
                             <code value=&quot;Proprietary&quot;/>
                             <display value=&quot;Proprietary&quot;/>
                         </coding>
@@ -391,7 +400,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                     <productName value=&quot;Stelbat Tablets, 20mg&quot;/>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-pq-example&quot;/>
                             <code value=&quot;Proprietary&quot;/>
                             <display value=&quot;Proprietary&quot;/>
                         </coding>
@@ -415,7 +424,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                     ...
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-pq-example&quot;/>
                             <code value=&quot;Proprietary&quot;/>
                             <display value=&quot;Proprietary&quot;/>
                         </coding>">Name type: </span><span title="
@@ -426,9 +435,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                 <name>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-pq-example&quot;/>
                             <code value=&quot;Proprietary&quot;/>
-                            <display value=&quot;Proprietary&quot;/>">Proprietary<span class="greyOff"> [Proprietary]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq)</span></span></div>
+                            <display value=&quot;Proprietary&quot;/>">Proprietary<span class="greyOff"> [Proprietary]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-pq-example)</span></span></div>
 <div title="
 <Bundle>
     <entry>
@@ -508,7 +517,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                         <display value=&quot;Workflow Definition&quot;/>
                     </coding>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-plan-type&quot;/>
                         <code value=&quot;analytical-procedure&quot;/>
                         <display value=&quot;Analytical Procedure&quot;/>
                     </coding>
@@ -530,7 +539,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                         </typeReference>
                         <role>
                             <coding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-participant-role&quot;/>
                                 <code value=&quot;diluent&quot;/>
                                 <display value=&quot;Diluent&quot;/>
                             </coding>
@@ -547,7 +556,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                         </typeReference>
                         <role>
                             <coding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-participant-role&quot;/>
                                 <code value=&quot;ResultingMaterial&quot;/>
                                 <display value=&quot;Resulting Material&quot;/>
                             </coding>
@@ -566,7 +575,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/SampleAnalysis&quot;/>
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4136-3c1f-b8ba6a7d046e&quot;/>
                         </action>
                     </action>
                 </action>" id="PlanDefinition-analyticalProcedure">Plan</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/plandefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/plandefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/plandefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: analyticalProcedure</div>
@@ -592,7 +601,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                         <display value=&quot;Workflow Definition&quot;/>
                     </coding>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-plan-type&quot;/>
                         <code value=&quot;analytical-procedure&quot;/>
                         <display value=&quot;Analytical Procedure&quot;/>
                     </coding>">Type: </span><span title="
@@ -612,9 +621,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                 <type>
                     ...
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-plan-type&quot;/>
                         <code value=&quot;analytical-procedure&quot;/>
-                        <display value=&quot;Analytical Procedure&quot;/>">Analytical Procedure<span class="greyOff"> [analytical-procedure]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq)</span></span></div>
+                        <display value=&quot;Analytical Procedure&quot;/>">Analytical Procedure<span class="greyOff"> [analytical-procedure]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-plan-type)</span></span></div>
 <div class="summaryHiddenOff">
 <div class="debugOff"><span title="
 <Bundle>
@@ -622,7 +631,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
         <resource>
             <PlanDefinition>
                 ...
-                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+                <status value=&quot;active&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                ...
+                <status value=&quot;active&quot;>"><span>active</span></span></div>
 </div>
 <div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
@@ -643,7 +658,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                         </typeReference>
                         <role>
                             <coding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-participant-role&quot;/>
                                 <code value=&quot;diluent&quot;/>
                                 <display value=&quot;Diluent&quot;/>
                             </coding>
@@ -660,7 +675,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                         </typeReference>
                         <role>
                             <coding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-participant-role&quot;/>
                                 <code value=&quot;ResultingMaterial&quot;/>
                                 <display value=&quot;Resulting Material&quot;/>
                             </coding>
@@ -679,7 +694,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/SampleAnalysis&quot;/>
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4136-3c1f-b8ba6a7d046e&quot;/>
                         </action>
                     </action>"><a id="urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f"><span>Action</span></a><span class="summaryShowsOff"><span title="
 <Bundle>
@@ -713,7 +728,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                         </typeReference>
                         <role>
                             <coding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-participant-role&quot;/>
                                 <code value=&quot;diluent&quot;/>
                                 <display value=&quot;Diluent&quot;/>
                             </coding>
@@ -727,10 +742,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                         ...
                         <role>
                             <coding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-participant-role&quot;/>
                                 <code value=&quot;diluent&quot;/>
                                 <display value=&quot;Diluent&quot;/>
-                            </coding>">Role: </span><span><span title="
+                            </coding>">Role: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -739,9 +754,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                     <participant>
                         <role>
                             <coding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-participant-role&quot;/>
                                 <code value=&quot;diluent&quot;/>
-                                <display value=&quot;Diluent&quot;/>">Diluent<span class="greyOff"> [diluent]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq)</span></span></span></div>
+                                <display value=&quot;Diluent&quot;/>">Diluent<span class="greyOff"> [diluent]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/manufacturing-participant-role)</span></span></span></div>
 <div>
 <div class="indent org"><span title="
 <Bundle>
@@ -774,7 +789,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
         <resource>
             <SubstanceDefinition>
                 <name>
-                    <name value=&quot;0.05 % trifluoroacetic acid (TFA) in 50:50 acetonitrile: water (v/v)&quot;>">Name: </span><span><span>0.05 % trifluoroacetic acid (TFA) in 50:50 acetonitrile: water (v/v)</span></span></div>
+                    <name value=&quot;0.05 % trifluoroacetic acid (TFA) in 50:50 acetonitrile: water (v/v)&quot;>">Name: <span>0.05 % trifluoroacetic acid (TFA) in 50:50 acetonitrile: water (v/v)</span></span></div>
 </div>
 </div>
 <div class="summaryHiddenOff"></div>
@@ -802,7 +817,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                         </typeReference>
                         <role>
                             <coding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-participant-role&quot;/>
                                 <code value=&quot;ResultingMaterial&quot;/>
                                 <display value=&quot;Resulting Material&quot;/>
                             </coding>
@@ -816,10 +831,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                         ...
                         <role>
                             <coding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-participant-role&quot;/>
                                 <code value=&quot;ResultingMaterial&quot;/>
                                 <display value=&quot;Resulting Material&quot;/>
-                            </coding>">Role: </span><span><span title="
+                            </coding>">Role: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -828,9 +843,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                     <participant>
                         <role>
                             <coding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-participant-role&quot;/>
                                 <code value=&quot;ResultingMaterial&quot;/>
-                                <display value=&quot;Resulting Material&quot;/>">Resulting Material<span class="greyOff"> [ResultingMaterial]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq)</span></span></span></div>
+                                <display value=&quot;Resulting Material&quot;/>">Resulting Material<span class="greyOff"> [ResultingMaterial]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/manufacturing-participant-role)</span></span></span></div>
 <div>
 <div class="indent org"><span title="
 <Bundle>
@@ -863,7 +878,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
         <resource>
             <SubstanceDefinition>
                 <name>
-                    <name value=&quot;Stelbat in Diluent (approximately 0.36 mg/mL)&quot;>">Name: </span><span><span>Stelbat in Diluent (approximately 0.36 mg/mL)</span></span></div>
+                    <name value=&quot;Stelbat in Diluent (approximately 0.36 mg/mL)&quot;>">Name: <span>Stelbat in Diluent (approximately 0.36 mg/mL)</span></span></div>
 </div>
 </div>
 <div class="summaryHiddenOff"></div>
@@ -940,7 +955,16 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                     <action>
                         <action>
                             ...
-                            <description value=&quot;Transfer 5 tablets into a volumetric flask. Add a portion of the diluent and shake on mechanical shaker until tablets are completely disintegrated. Dilute to volume with diluent. Do not exceed 2 mg/mL in the initial dilution. Filter or centrifuge.&quot;>">Description: </span><span>Transfer 5 tablets into a volumetric flask. Add a portion of the diluent and shake on mechanical shaker until tablets are completely disintegrated. Dilute to volume with diluent. Do not exceed 2 mg/mL in the initial dilution. Filter or centrifuge.</span></div>
+                            <description value=&quot;Transfer 5 tablets into a volumetric flask. Add a portion of the diluent and shake on mechanical shaker until tablets are completely disintegrated. Dilute to volume with diluent. Do not exceed 2 mg/mL in the initial dilution. Filter or centrifuge.&quot;>">Description: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        <action>
+                            ...
+                            <description value=&quot;Transfer 5 tablets into a volumetric flask. Add a portion of the diluent and shake on mechanical shaker until tablets are completely disintegrated. Dilute to volume with diluent. Do not exceed 2 mg/mL in the initial dilution. Filter or centrifuge.&quot;>">Transfer 5 tablets into a volumetric flask. Add a portion of the diluent and shake on mechanical shaker until tablets are completely disintegrated. Dilute to volume with diluent. Do not exceed 2 mg/mL in the initial dilution. Filter or centrifuge.</span></div>
 </div>
 </div>
 </div>
@@ -957,7 +981,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/SampleAnalysis&quot;/>
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4136-3c1f-b8ba6a7d046e&quot;/>
                         </action>"><a id="urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f"><span>Action</span></a><span class="summaryShowsOff"><span title="
 <Bundle>
     <entry>
@@ -987,7 +1011,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                             <code>
                                 <text value=&quot;Test&quot;/>
                             </code>
-                            <definitionCanonical value=&quot;ObservationDefinition/SampleAnalysis&quot;/>"><a id="urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
+                            <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4136-3c1f-b8ba6a7d046e&quot;/>"><a id="urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f"><span>Action</span></a><span class="summaryShowsOff"> - <span style="white-space:normal;">Test</span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -999,7 +1023,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                             <code>
                                 <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
 <div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
-<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: analyticalProcedure fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763furl (canonical): http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: SampleAnalysis)(fullUrl: urn:uuid:12e7e672-40a6-4136-3c1f-b8ba6a7d046e)
+<div class="debugOff"><span>Found a parent (PlanDefinition/action, id: analyticalProcedure fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763furl (canonical): http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by canonical resource.url</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: SampleAnalysis)(fullUrl: urn:uuid:12e7e672-40a6-4136-3c1f-b8ba6a7d046e)
 
 <Bundle>
     <entry>
@@ -1030,7 +1054,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
             <ObservationDefinition>
                 <code>
                     <extension url=&quot;http://hl7.org/fhir/StructureDefinition/data-absent-reason&quot;>
-                        <valueCode value=&quot;unsupported&quot;/>">Data Absent Reason: </span><span>unsupported</span>)</div></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: SampleAnalysis</div>
+                        <valueCode value=&quot;unsupported&quot;/>">Data Absent Reason: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <code>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/data-absent-reason&quot;>
+                        <valueCode value=&quot;unsupported&quot;/>"><span>unsupported</span></span>)</div></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: SampleAnalysis</div>
 <div class="debugOff"> fullUrl: urn:uuid:12e7e672-40a6-4136-3c1f-b8ba6a7d046e</div>
 <div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4136-3c1f-b8ba6a7d046e</div>
 <div class="summaryHiddenOff">
@@ -1040,7 +1071,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
         <resource>
             <ObservationDefinition>
                 ...
-                <title value=&quot;Sample Analysis&quot;>">Title: </span><span>Sample Analysis</span></div>
+                <title value=&quot;Sample Analysis&quot;>">Title: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <title value=&quot;Sample Analysis&quot;>">Sample Analysis</span></div>
 </div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
@@ -1051,9 +1088,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
         <resource>
             <ObservationDefinition>
                 ...
-                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+                <status value=&quot;active&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <status value=&quot;active&quot;>"><span>active</span></span></div>
 </div>
-<div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
@@ -1063,14 +1105,21 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                 <code>
                     <extension url=&quot;http://hl7.org/fhir/StructureDefinition/data-absent-reason&quot;>
                         <valueCode value=&quot;unsupported&quot;/>
-                    </extension>">Code: </span><span><div style="display: inline"> (<span title="
+                    </extension>">Code: <div style="display: inline"> (<span title="
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 <code>
                     <extension url=&quot;http://hl7.org/fhir/StructureDefinition/data-absent-reason&quot;>
-                        <valueCode value=&quot;unsupported&quot;/>">Data Absent Reason: </span><span>unsupported</span>)</div></span></div>
+                        <valueCode value=&quot;unsupported&quot;/>">Data Absent Reason: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <code>
+                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/data-absent-reason&quot;>
+                        <valueCode value=&quot;unsupported&quot;/>"><span>unsupported</span></span>)</div></span></div>
 <div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
@@ -1078,7 +1127,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
         <resource>
             <ObservationDefinition>
                 ...
-                <description value=&quot;Number of Injections: 1 of each preparation&quot;>">Description: </span><span>Number of Injections: 1 of each preparation</span></div>
+                <description value=&quot;Number of Injections: 1 of each preparation&quot;>">Description: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <description value=&quot;Number of Injections: 1 of each preparation&quot;>">Number of Injections: 1 of each preparation</span></div>
 </div>
 <div class="summaryHiddenOff"></div>
 <div class="indent obsDefl2"><span title="
@@ -1113,13 +1168,25 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
         <resource>
             <SpecimenDefinition>
                 ...
-                <status value=&quot;active&quot;>">Status: </span><span>active</span></div><div><span title="
+                <status value=&quot;active&quot;>">Status: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <SpecimenDefinition>
                 ...
-                <description value=&quot;Number of Preparations: 2 (only 1 is required for identity)&quot;>">Description: </span><span>Number of Preparations: 2 (only 1 is required for identity)</span></div><div class="summaryHiddenOff"><div class="indent org2">
+                <status value=&quot;active&quot;>"><span>active</span></span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <SpecimenDefinition>
+                ...
+                <description value=&quot;Number of Preparations: 2 (only 1 is required for identity)&quot;>">Description: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <SpecimenDefinition>
+                ...
+                <description value=&quot;Number of Preparations: 2 (only 1 is required for identity)&quot;>">Number of Preparations: 2 (only 1 is required for identity)</span></div><div class="summaryHiddenOff"><div class="indent org2">
 				Type
 				<div class="indent org3"><div><span title="
 <Bundle>
@@ -1127,7 +1194,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
         <resource>
             <SpecimenDefinition>
                 <typeTested>
-                    <preference value=&quot;preferred&quot;>">Preference: </span><span>preferred</span></div>
+                    <preference value=&quot;preferred&quot;>">Preference: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <SpecimenDefinition>
+                <typeTested>
+                    <preference value=&quot;preferred&quot;>">preferred</span></div>
 						Handling
 						<div class="indent org3"><div><span title="
 <Bundle>
@@ -1155,7 +1228,15 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                 <typeTested>
                     <handling>
                         ...
-                        <instruction value=&quot;at ambient or refrigerated conditions protected from light (may be extended with supporting data)&quot;>">Instruction: </span><span>at ambient or refrigerated conditions protected from light (may be extended with supporting data)</span></div></div></div></div></div></div>
+                        <instruction value=&quot;at ambient or refrigerated conditions protected from light (may be extended with supporting data)&quot;>">Instruction: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <SpecimenDefinition>
+                <typeTested>
+                    <handling>
+                        ...
+                        <instruction value=&quot;at ambient or refrigerated conditions protected from light (may be extended with supporting data)&quot;>">at ambient or refrigerated conditions protected from light (may be extended with supporting data)</span></div></div></div></div></div></div>
 </div>
 <div class="summaryHiddenOff"></div>
 <div class="indent obsDefl2 summaryUnit"><span title="
@@ -1184,7 +1265,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                         <valueBoolean value=&quot;true&quot;/>
                     </extension>
                     <status value=&quot;additional&quot;/>
-                    <div>
+                    <div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;>
                         <div style=&quot;font-family: 'Times New Roman', Times, serif;&quot;>
                             <p>Determine the amount of Stelbat in each sample replicate as follows:</p>
                             <p>
@@ -1224,30 +1305,12 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                         </div>
                     </div>
                 </text>
-                <contained>
-                    <Binary>
-                        <id value=&quot;imageResource&quot;/>
-                        <!-- example format -->
-                        <contentType value=&quot;image/png&quot;/>
-                        <!-- data is base 64 encoded, actual bytes of the image png file -->
-                        <data value=&quot;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&quot;/>
-                    </Binary>
-                </contained>
-                <contained>
-                    <Binary>
-                        <id value=&quot;imageResource2&quot;/>
-                        <!-- example format -->
-                        <contentType value=&quot;image/png&quot;/>
-                        <!-- data is base 64 encoded, actual bytes of the image png file -->
-                        <data value=&quot;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&quot;/>
-                    </Binary>
-                </contained>
                 <url value=&quot;http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d045e&quot;/>
                 <title value=&quot;Assay (w/w%)&quot;/>
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;ASSAY&quot;/>
                         <display value=&quot;Assay&quot;/>
                     </coding>
@@ -1264,9 +1327,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;ASSAY&quot;/>
-                        <display value=&quot;Assay&quot;/>">Assay<span class="greyOff"> [ASSAY]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Assay (w/w%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Assay</div><div class="debugOff"> fullUrl: urn:uuid:12e7e672-40a6-4036-3c1f-b8ba6a7d045e</div><div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d045e</div><div class="indent obsDefl2"><span title="
+                        <display value=&quot;Assay&quot;/>">Assay<span class="greyOff"> [ASSAY]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Assay (w/w%)</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Assay</div><div class="debugOff"> fullUrl: urn:uuid:12e7e672-40a6-4036-3c1f-b8ba6a7d045e</div><div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d045e</div><div class="indent obsDefl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1277,7 +1340,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                         <valueBoolean value=&quot;true&quot;/>
                     </extension>
                     <status value=&quot;additional&quot;/>
-                    <div>
+                    <div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;>
                         <div style=&quot;font-family: 'Times New Roman', Times, serif;&quot;>
                             <p>Determine the amount of Stelbat in each sample replicate as follows:</p>
                             <p>
@@ -1322,7 +1385,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
             <ObservationDefinition>
                 <text>
                     ...
-                    <status value=&quot;additional&quot;>">Status: </span><span>additional</span></div><div class="indent white" title="
+                    <status value=&quot;additional&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <text>
+                    ...
+                    <status value=&quot;additional&quot;>"><span>additional</span></span></div><div class="indent white" title="
                         <div style=&quot;font-family: 'Times New Roman', Times, serif;&quot;>
                             <p>Determine the amount of Stelbat in each sample replicate as follows:</p>
                             <p>
@@ -1367,13 +1437,25 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
         <resource>
             <ObservationDefinition>
                 ...
-                <title value=&quot;Assay (w/w%)&quot;>">Title: </span><span>Assay (w/w%)</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div class="debugOff"><span title="
+                <title value=&quot;Assay (w/w%)&quot;>">Title: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 ...
-                <status value=&quot;active&quot;>">Status: </span><span>active</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+                <title value=&quot;Assay (w/w%)&quot;>">Assay (w/w%)</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <status value=&quot;active&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <status value=&quot;active&quot;>"><span>active</span></span></div></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1381,20 +1463,20 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;ASSAY&quot;/>
                         <display value=&quot;Assay&quot;/>
                     </coding>
-                    <text value=&quot;Assay (w/w%)&quot;/>">Code: </span><span><span title="
+                    <text value=&quot;Assay (w/w%)&quot;/>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;ASSAY&quot;/>
-                        <display value=&quot;Assay&quot;/>">Assay<span class="greyOff"> [ASSAY]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Assay (w/w%)</span></span></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="indent obsDefl2" title="
+                        <display value=&quot;Assay&quot;/>">Assay<span class="greyOff"> [ASSAY]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Assay (w/w%)</span></span></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="indent obsDefl2" title="
 <Bundle>
     <entry>
         <resource>
@@ -1421,7 +1503,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
             <ObservationDefinition>
                 <qualifiedValue>
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
-                        <valueString value=&quot;The %RSD between the two assay results must be ≤ 1.5%&quot;/>">Text: </span><span>The %RSD between the two assay results must be ≤ 1.5%</span></div></div></div><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef"><div class="debugOff"><span>Found a parent (ObservationDefinition/hasMember, id: SampleAnalysis fullUrl: urn:uuid:12e7e672-40a6-4136-3c1f-b8ba6a7d046eurl (canonical): http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4136-3c1f-b8ba6a7d046e)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Identity)(fullUrl: urn:uuid:12e7e672-40a6-4036-3c1f-b8ba6a7d046e)
+                        <valueString value=&quot;The %RSD between the two assay results must be ≤ 1.5%&quot;/>">Text: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
+                        <valueString value=&quot;The %RSD between the two assay results must be ≤ 1.5%&quot;/>"><span>The %RSD between the two assay results must be ≤ 1.5%</span></span></div></div></div><div class="summaryHiddenOff"></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef"><div class="debugOff"><span>Found a parent (ObservationDefinition/hasMember, id: SampleAnalysis fullUrl: urn:uuid:12e7e672-40a6-4136-3c1f-b8ba6a7d046eurl (canonical): http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4136-3c1f-b8ba6a7d046e)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Identity)(fullUrl: urn:uuid:12e7e672-40a6-4036-3c1f-b8ba6a7d046e)
 
 <Bundle>
     <entry>
@@ -1433,7 +1522,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                 <status value=&quot;active&quot;/>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;IDT&quot;/>
                         <display value=&quot;Identification&quot;/>
                     </coding>
@@ -1453,21 +1542,33 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;IDT&quot;/>
-                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [IDT]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Identity</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Identity</div><div class="debugOff"> fullUrl: urn:uuid:12e7e672-40a6-4036-3c1f-b8ba6a7d046e</div><div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d046e</div><div class="summaryHiddenOff"><div><span title="
+                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [IDT]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Identity</span></span></span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/observationdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/observationdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/observationdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: Identity</div><div class="debugOff"> fullUrl: urn:uuid:12e7e672-40a6-4036-3c1f-b8ba6a7d046e</div><div class="debugOff">url (canonical): http://example-server.com/fhir/ObservationDefinition/12e7e672-40a6-4036-3c1f-b8ba6a7d046e</div><div class="summaryHiddenOff"><div><span title="
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 ...
-                <title value=&quot;Identity&quot;>">Title: </span><span>Identity</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div class="debugOff"><span title="
+                <title value=&quot;Identity&quot;>">Title: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 ...
-                <status value=&quot;active&quot;>">Status: </span><span>active</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><span title="
+                <title value=&quot;Identity&quot;>">Identity</span></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <status value=&quot;active&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <status value=&quot;active&quot;>"><span>active</span></span></div></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1475,20 +1576,20 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                 ...
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;IDT&quot;/>
                         <display value=&quot;Identification&quot;/>
                     </coding>
-                    <text value=&quot;Identity&quot;/>">Code: </span><span><span title="
+                    <text value=&quot;Identity&quot;/>">Code: <span title="
 <Bundle>
     <entry>
         <resource>
             <ObservationDefinition>
                 <code>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;IDT&quot;/>
-                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [IDT]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Identity</span></span></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="indent obsDefl2" title="
+                        <display value=&quot;Identification&quot;/>">Identification<span class="greyOff"> [IDT]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Identity</span></span></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="indent obsDefl2" title="
 <Bundle>
     <entry>
         <resource>
@@ -1521,7 +1622,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
             <ObservationDefinition>
                 <qualifiedValue>
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
-                        <valueString value=&quot;1. The retention time ratio of the sample peak to standard peak is within 0.95 to 1.05.&quot;/>">Text: </span><span>1. The retention time ratio of the sample peak to standard peak is within 0.95 to 1.05.</span></div><div><span title="
+                        <valueString value=&quot;1. The retention time ratio of the sample peak to standard peak is within 0.95 to 1.05.&quot;/>">Text: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
+                        <valueString value=&quot;1. The retention time ratio of the sample peak to standard peak is within 0.95 to 1.05.&quot;/>"><span>1. The retention time ratio of the sample peak to standard peak is within 0.95 to 1.05.</span></span></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1529,7 +1637,15 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
                 <qualifiedValue>
                     ...
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
-                        <valueString value=&quot;2. The UV spectrum of the sample peak compares favorably to the UV spectrum of the standard peak from 210 nm to 400 nm.&quot;/>">Text: </span><span>2. The UV spectrum of the sample peak compares favorably to the UV spectrum of the standard peak from 210 nm to 400 nm.</span></div></div></div><div class="summaryHiddenOff"></div></div>
+                        <valueString value=&quot;2. The UV spectrum of the sample peak compares favorably to the UV spectrum of the standard peak from 210 nm to 400 nm.&quot;/>">Text: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    ...
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq&quot;>
+                        <valueString value=&quot;2. The UV spectrum of the sample peak compares favorably to the UV spectrum of the standard peak from 210 nm to 400 nm.&quot;/>"><span>2. The UV spectrum of the sample peak compares favorably to the UV spectrum of the standard peak from 210 nm to 400 nm.</span></span></div></div></div><div class="summaryHiddenOff"></div></div>
 </div>
 </div>
 </div>
@@ -1571,6 +1687,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
 	    transform:translate(-2px, -2px);
 	    border-radius: 5px;
 	    visibility:visible; /* this is so that the outer border doesn't hide these */
+    }
+    .indent-right {
+        margin-right:0.7em;
     }
     .indent-no-border {
         margin-left:1em; 	/* controls line to line indent */
@@ -1626,6 +1745,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analyti
 
     .cui { background-Color:#d9d2e9 }
     .cuidetails { background-Color:#e6e1f0 }
+    .cuidetails2 { background-Color:#ebe9f0 }
 
     .sbd,.hcs { background-Color:#affad5 }
     .sbddetails,.hcsl2 { background-Color:#c7fce2 }

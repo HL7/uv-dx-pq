@@ -1,5 +1,4 @@
 The HTML rendering below shows a synthetic Quality data example for Common Technical Document (CTD) Module 3: Quality, section 3.2.P.2 Pharmaceutical Development, subsection 3.2.P.2.2 Drug Product.
-   
 <html>
 <body>
 <div class="divBody">
@@ -45,7 +44,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     <title value=&quot;3.2.P.2.1.1.1 - Drug Substance&quot;/>
                     <text>
                         <status value=&quot;additional&quot;/>
-                        <div>
+                        <div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;>
                             <p>The compatibility of the drug substance with the excipients listed in 3.2.P.1 should be discussed.
                                 Additionally, key physicochemical characteristics (eg, water content, solubility, particle size
                                 distribution, polymorphic or solid state form) of the drug substance that can influence the
@@ -59,7 +58,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     <title value=&quot;3.2.P.1.1.2 - Excipients&quot;/>
                     <text>
                         <status value=&quot;additional&quot;/>
-                        <div>
+                        <div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;>
                             <p>The choice of excipients listed in 3.2.P.1, their concentration, and the characteristics that can
                                 influence the drug product manufacturability and performance should be discussed relative to
                                 their respective functions.</p>
@@ -93,7 +92,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     <title value=&quot;3.2.P.2.2.1.1 - Formulation History&quot;/>
                     <text>
                         <status value=&quot;additional&quot;/>
-                        <div>
+                        <div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;>
                             <ul>
                                 <li>Drug product description including difference or similarity between the drug product and reference product, if applicable</li>
                                 <li>Propose route of administration (include any dilution or reconstitution necessary)</li>
@@ -121,7 +120,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     <title value=&quot;3.2.P.2.2.1.2 - Formulation Development Studies&quot;/>
                     <text>
                         <status value=&quot;additional&quot;/>
-                        <div>
+                        <div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;>
                             <p>Summary of the formulation developmental studies conducted are provided in Table 2</p>
                             <p>Table 2 - Formulation Development Studies</p>
                             <table>
@@ -149,7 +148,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     <title value=&quot;3.2.P.2.2.4 - Summary for Risk Assessment of Elemental Impurities in Drug Product&quot;/>
                     <text>
                         <status value=&quot;additional&quot;/>
-                        <div>
+                        <div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;>
                             <p>Summary of the risk assessment for product...</p>
                         </div>
                     </text>
@@ -180,7 +179,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <section>
                     <text>
                         <status value=&quot;additional&quot;/>
-                        <div>
+                        <div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;>
                             <p>Text for the risk assessment of elemental impurities in the product</p>
                         </div>
                     </text>
@@ -204,7 +203,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <characteristic>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;physicochemical&quot;/>
                             <display value=&quot;Physicochemical properties&quot;/>
                         </coding>
@@ -216,7 +215,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <characteristic>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;pH&quot;/>
                             <display value=&quot;pH&quot;/>
                         </coding>
@@ -228,7 +227,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <characteristic>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;ionic-strength&quot;/>
                             <display value=&quot;Ionic Strength&quot;/>
                         </coding>
@@ -259,7 +258,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-pq-example&quot;/>
                             <code value=&quot;overage-by-mass&quot;/>
                             <display value=&quot;Overage by mass (%)&quot;/>
                         </coding>
@@ -273,7 +272,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-pq-example&quot;/>
                             <code value=&quot;overage-reason&quot;/>
                             <display value=&quot;Overage reason&quot;/>
                         </coding>
@@ -290,6 +289,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
         <resource>
             <Organization>
                 <id value=&quot;organization-drug-pq-ex1&quot;/>
+                <identifier>
+                    <!-- FDA establishment identifier -->
+                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
+                    <value value=&quot;3003040516&quot;/>
+                </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-substance-manufacture&quot;/>
+                        <display value=&quot;Drug Substance Manufacture&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;AAA Molybdenum Products, Inc.&quot;/>
             </Organization>
         </resource>
@@ -298,11 +310,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
 <div class="debugOff"><span title="
 <Bundle>
     <meta>
-        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-pq</span></div>
+        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-pq&quot;>">Profile: </span><span title="
+<Bundle>
+    <meta>
+        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-pq&quot;>">http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-pq</span></div>
 <div><span title="
 <Bundle>
     ...
-    <type value=&quot;collection&quot;>">Type: </span><span><span>collection</span></span></div><span class="bundle">Warning - Found Composition as first Bundle entry, but not in a document Bundle</span></div>
+    <type value=&quot;collection&quot;>">Type: <span>collection</span></span></div><span class="bundle">Warning - Found Composition as first Bundle entry, but not in a document Bundle</span></div>
 </div>
 <div>
 <div ondblclick="summaryHandler(event)" class="indent mpd summaryUnit"><a class="plainLink"><span class="bold" title="MedicinalProductDefinition (id: medicinalproductdefinition-drug-product-pq-ex1)(fullUrl: urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5)
@@ -321,7 +336,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <characteristic>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;physicochemical&quot;/>
                             <display value=&quot;Physicochemical properties&quot;/>
                         </coding>
@@ -333,7 +348,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <characteristic>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;pH&quot;/>
                             <display value=&quot;pH&quot;/>
                         </coding>
@@ -345,7 +360,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <characteristic>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;ionic-strength&quot;/>
                             <display value=&quot;Ionic Strength&quot;/>
                         </coding>
@@ -374,7 +389,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <characteristic>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;physicochemical&quot;/>
                             <display value=&quot;Physicochemical properties&quot;/>
                         </coding>
@@ -389,7 +404,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <characteristic>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;physicochemical&quot;/>
                             <display value=&quot;Physicochemical properties&quot;/>
                         </coding>">Type: <span title="
@@ -400,9 +415,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <characteristic>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;physicochemical&quot;/>
-                            <display value=&quot;Physicochemical properties&quot;/>">Physicochemical properties<span class="greyOff"> [physicochemical]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div>
+                            <display value=&quot;Physicochemical properties&quot;/>">Physicochemical properties<span class="greyOff"> [physicochemical]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -424,7 +439,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <characteristic>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;pH&quot;/>
                             <display value=&quot;pH&quot;/>
                         </coding>
@@ -439,7 +454,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <characteristic>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;pH&quot;/>
                             <display value=&quot;pH&quot;/>
                         </coding>">Type: <span title="
@@ -450,9 +465,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <characteristic>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;pH&quot;/>
-                            <display value=&quot;pH&quot;/>">pH<span class="greyOff"> [pH]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div>
+                            <display value=&quot;pH&quot;/>">pH<span class="greyOff"> [pH]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -482,7 +497,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <characteristic>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;ionic-strength&quot;/>
                             <display value=&quot;Ionic Strength&quot;/>
                         </coding>
@@ -498,7 +513,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <characteristic>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;ionic-strength&quot;/>
                             <display value=&quot;Ionic Strength&quot;/>
                         </coding>">Type: <span title="
@@ -509,9 +524,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <characteristic>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;ionic-strength&quot;/>
-                            <display value=&quot;Ionic Strength&quot;/>">Ionic Strength<span class="greyOff"> [ionic-strength]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span></span></div>
+                            <display value=&quot;Ionic Strength&quot;/>">Ionic Strength<span class="greyOff"> [ionic-strength]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -563,7 +578,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-pq-example&quot;/>
                             <code value=&quot;overage-by-mass&quot;/>
                             <display value=&quot;Overage by mass (%)&quot;/>
                         </coding>
@@ -577,7 +592,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-pq-example&quot;/>
                             <code value=&quot;overage-reason&quot;/>
                             <display value=&quot;Overage reason&quot;/>
                         </coding>
@@ -591,19 +606,37 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
         <resource>
             <ManufacturedItemDefinition>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-drug-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-drug-pq</span></div><span class="summaryShowsOff"></span><div><span title="
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-drug-pq&quot;>">Profile: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ManufacturedItemDefinition>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-drug-pq&quot;>">http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedItemDefinition-drug-pq</span></div><span class="summaryShowsOff"></span><div><span title="
 <Bundle>
     <entry>
         <resource>
             <ManufacturedItemDefinition>
                 ...
-                <name value=&quot;Stelbatolol 5mg tablet&quot;>">Name: </span><span>Stelbatolol 5mg tablet</span></div><div class="summaryHiddenOff"><div class="debugOff"><span title="
+                <name value=&quot;Stelbatolol 5mg tablet&quot;>">Name: </span><span title="
 <Bundle>
     <entry>
         <resource>
             <ManufacturedItemDefinition>
                 ...
-                <status value=&quot;active&quot;>">Status: </span><span>active</span></div><div class="summaryHiddenOff"><div class="indent manl2"><span title="
+                <name value=&quot;Stelbatolol 5mg tablet&quot;>">Stelbatolol 5mg tablet</span></div><div class="summaryHiddenOff"><div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ManufacturedItemDefinition>
+                ...
+                <status value=&quot;active&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ManufacturedItemDefinition>
+                ...
+                <status value=&quot;active&quot;>"><span>active</span></span></div><div class="summaryHiddenOff"><div class="indent manl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -612,7 +645,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-pq-example&quot;/>
                             <code value=&quot;overage-by-mass&quot;/>
                             <display value=&quot;Overage by mass (%)&quot;/>
                         </coding>
@@ -628,7 +661,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-pq-example&quot;/>
                             <code value=&quot;overage-by-mass&quot;/>
                             <display value=&quot;Overage by mass (%)&quot;/>
                         </coding>">Type: <span title="
@@ -639,9 +672,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-pq-example&quot;/>
                             <code value=&quot;overage-by-mass&quot;/>
-                            <display value=&quot;Overage by mass (%)&quot;/>">Overage by mass (%)<span class="greyOff"> [overage-by-mass]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-local-pq)</span></span></span></div><div><span title="
+                            <display value=&quot;Overage by mass (%)&quot;/>">Overage by mass (%)<span class="greyOff"> [overage-by-mass]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-pq-example)</span></span></span></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -668,7 +701,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-pq-example&quot;/>
                             <code value=&quot;overage-reason&quot;/>
                             <display value=&quot;Overage reason&quot;/>
                         </coding>
@@ -683,7 +716,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-pq-example&quot;/>
                             <code value=&quot;overage-reason&quot;/>
                             <display value=&quot;Overage reason&quot;/>
                         </coding>">Type: <span title="
@@ -694,9 +727,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-pq-example&quot;/>
                             <code value=&quot;overage-reason&quot;/>
-                            <display value=&quot;Overage reason&quot;/>">Overage reason<span class="greyOff"> [overage-reason]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-local-pq)</span></span></span></div><div><span title="
+                            <display value=&quot;Overage reason&quot;/>">Overage reason<span class="greyOff"> [overage-reason]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufactured-item-property-pq-example)</span></span></span></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -730,7 +763,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                     <title value=&quot;3.2.P.2.1.1.1 - Drug Substance&quot;/>
                     <text>
                         <status value=&quot;additional&quot;/>
-                        <div>
+                        <div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;>
                             <p>The compatibility of the drug substance with the excipients listed in 3.2.P.1 should be discussed.
                                 Additionally, key physicochemical characteristics (eg, water content, solubility, particle size
                                 distribution, polymorphic or solid state form) of the drug substance that can influence the
@@ -744,7 +777,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                     <title value=&quot;3.2.P.1.1.2 - Excipients&quot;/>
                     <text>
                         <status value=&quot;additional&quot;/>
-                        <div>
+                        <div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;>
                             <p>The choice of excipients listed in 3.2.P.1, their concentration, and the characteristics that can
                                 influence the drug product manufacturability and performance should be discussed relative to
                                 their respective functions.</p>
@@ -780,7 +813,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
         <resource>
             <Composition>
                 ...
-                <status value=&quot;final&quot;>">Status: </span><span>final</span></div>
+                <status value=&quot;final&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Composition>
+                ...
+                <status value=&quot;final&quot;>"><span>final</span></span></div>
 </div>
 <div><span title="
 <Bundle>
@@ -803,13 +842,76 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
         <resource>
             <Organization>
                 <id value=&quot;organization-drug-pq-ex1&quot;/>
-                <name value=&quot;AAA Molybdenum Products, Inc.&quot;/>" id="Organization-organization-drug-pq-ex1">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: organization-drug-pq-ex1</div><div class="debugOff"> fullUrl: urn:uuid:9fe98cfa-9246-8313-0fc5-d15e613b5d6d</div><span class="summaryShowsOff"> - AAA Molybdenum Products, Inc.</span><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+                <identifier>
+                    <!-- FDA establishment identifier -->
+                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
+                    <value value=&quot;3003040516&quot;/>
+                </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-substance-manufacture&quot;/>
+                        <display value=&quot;Drug Substance Manufacture&quot;/>
+                    </coding>
+                </type>
+                <name value=&quot;AAA Molybdenum Products, Inc.&quot;/>" id="Organization-organization-drug-pq-ex1">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: organization-drug-pq-ex1</div><div class="debugOff"> fullUrl: urn:uuid:9fe98cfa-9246-8313-0fc5-d15e613b5d6d</div><span class="summaryShowsOff"> - AAA Molybdenum Products, Inc.</span><div class="summaryHiddenOff"><div><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;AAA Molybdenum Products, Inc.&quot;>">Name: </span><span>AAA Molybdenum Products, Inc.</span></div></div></div>
+                <identifier>
+                    <!-- FDA establishment identifier -->
+                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
+                    <value value=&quot;3003040516&quot;/>">Identifier: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <identifier>
+                    <!-- FDA establishment identifier -->
+                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
+                    <value value=&quot;3003040516&quot;/>">3003040516<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;AAA Molybdenum Products, Inc.&quot;>">Name: </span><span>AAA Molybdenum Products, Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-substance-manufacture&quot;/>
+                        <display value=&quot;Drug Substance Manufacture&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-substance-manufacture&quot;/>
+                        <display value=&quot;Drug Substance Manufacture&quot;/>">Drug Substance Manufacture<span class="greyOff"> [drug-substance-manufacture]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div></div></div>
 </div>
 <div class="indent compl2"><span title="
 <Bundle>
@@ -821,7 +923,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                     <title value=&quot;3.2.P.2.1.1.1 - Drug Substance&quot;/>
                     <text>
                         <status value=&quot;additional&quot;/>
-                        <div>
+                        <div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;>
                             <p>The compatibility of the drug substance with the excipients listed in 3.2.P.1 should be discussed.
                                 Additionally, key physicochemical characteristics (eg, water content, solubility, particle size
                                 distribution, polymorphic or solid state form) of the drug substance that can influence the
@@ -846,7 +948,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                     ...
                     <text>
                         <status value=&quot;additional&quot;/>
-                        <div>
+                        <div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;>
                             <p>The compatibility of the drug substance with the excipients listed in 3.2.P.1 should be discussed.
                                 Additionally, key physicochemical characteristics (eg, water content, solubility, particle size
                                 distribution, polymorphic or solid state form) of the drug substance that can influence the
@@ -860,7 +962,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
             <Composition>
                 <section>
                     <text>
-                        <status value=&quot;additional&quot;>">Status: </span><span>additional</span></div>
+                        <status value=&quot;additional&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Composition>
+                <section>
+                    <text>
+                        <status value=&quot;additional&quot;>"><span>additional</span></span></div>
 <div class="indent compText" title="
                             <p>The compatibility of the drug substance with the excipients listed in 3.2.P.1 should be discussed.
                                 Additionally, key physicochemical characteristics (eg, water content, solubility, particle size
@@ -890,7 +999,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                     <title value=&quot;3.2.P.1.1.2 - Excipients&quot;/>
                     <text>
                         <status value=&quot;additional&quot;/>
-                        <div>
+                        <div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;>
                             <p>The choice of excipients listed in 3.2.P.1, their concentration, and the characteristics that can
                                 influence the drug product manufacturability and performance should be discussed relative to
                                 their respective functions.</p>
@@ -912,7 +1021,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
                     ...
                     <text>
                         <status value=&quot;additional&quot;/>
-                        <div>
+                        <div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;>
                             <p>The choice of excipients listed in 3.2.P.1, their concentration, and the characteristics that can
                                 influence the drug product manufacturability and performance should be discussed relative to
                                 their respective functions.</p>
@@ -923,7 +1032,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ManufacturedIt
             <Composition>
                 <section>
                     <text>
-                        <status value=&quot;additional&quot;>">Status: </span><span>additional</span></div>
+                        <status value=&quot;additional&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Composition>
+                <section>
+                    <text>
+                        <status value=&quot;additional&quot;>"><span>additional</span></span></div>
 <div class="indent compText" title="
                             <p>The choice of excipients listed in 3.2.P.1, their concentration, and the characteristics that can
                                 influence the drug product manufacturability and performance should be discussed relative to
@@ -965,7 +1081,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-dr
                     <title value=&quot;3.2.P.2.2.1.1 - Formulation History&quot;/>
                     <text>
                         <status value=&quot;additional&quot;/>
-                        <div>
+                        <div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;>
                             <ul>
                                 <li>Drug product description including difference or similarity between the drug product and reference product, if applicable</li>
                                 <li>Propose route of administration (include any dilution or reconstitution necessary)</li>
@@ -993,7 +1109,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-dr
                     <title value=&quot;3.2.P.2.2.1.2 - Formulation Development Studies&quot;/>
                     <text>
                         <status value=&quot;additional&quot;/>
-                        <div>
+                        <div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;>
                             <p>Summary of the formulation developmental studies conducted are provided in Table 2</p>
                             <p>Table 2 - Formulation Development Studies</p>
                             <table>
@@ -1021,7 +1137,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-dr
                     <title value=&quot;3.2.P.2.2.4 - Summary for Risk Assessment of Elemental Impurities in Drug Product&quot;/>
                     <text>
                         <status value=&quot;additional&quot;/>
-                        <div>
+                        <div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;>
                             <p>Summary of the risk assessment for product...</p>
                         </div>
                     </text>
@@ -1034,7 +1150,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-dr
         <resource>
             <Composition>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-drug-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-drug-pq</span></div>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-drug-pq&quot;>">Profile: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Composition>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-drug-pq&quot;>">http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-drug-pq</span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -1063,7 +1185,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-dr
         <resource>
             <Composition>
                 ...
-                <status value=&quot;final&quot;>">Status: </span><span>final</span></div>
+                <status value=&quot;final&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Composition>
+                ...
+                <status value=&quot;final&quot;>"><span>final</span></span></div>
 </div>
 <div><span title="
 <Bundle>
@@ -1086,13 +1214,76 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-dr
         <resource>
             <Organization>
                 <id value=&quot;organization-drug-pq-ex1&quot;/>
-                <name value=&quot;AAA Molybdenum Products, Inc.&quot;/>" id="Organization-organization-drug-pq-ex1">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: organization-drug-pq-ex1</div><div class="debugOff"> fullUrl: urn:uuid:9fe98cfa-9246-8313-0fc5-d15e613b5d6d</div><span class="summaryShowsOff"> - AAA Molybdenum Products, Inc.</span><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+                <identifier>
+                    <!-- FDA establishment identifier -->
+                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
+                    <value value=&quot;3003040516&quot;/>
+                </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-substance-manufacture&quot;/>
+                        <display value=&quot;Drug Substance Manufacture&quot;/>
+                    </coding>
+                </type>
+                <name value=&quot;AAA Molybdenum Products, Inc.&quot;/>" id="Organization-organization-drug-pq-ex1">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: organization-drug-pq-ex1</div><div class="debugOff"> fullUrl: urn:uuid:9fe98cfa-9246-8313-0fc5-d15e613b5d6d</div><span class="summaryShowsOff"> - AAA Molybdenum Products, Inc.</span><div class="summaryHiddenOff"><div><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;AAA Molybdenum Products, Inc.&quot;>">Name: </span><span>AAA Molybdenum Products, Inc.</span></div></div></div>
+                <identifier>
+                    <!-- FDA establishment identifier -->
+                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
+                    <value value=&quot;3003040516&quot;/>">Identifier: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <identifier>
+                    <!-- FDA establishment identifier -->
+                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
+                    <value value=&quot;3003040516&quot;/>">3003040516<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;AAA Molybdenum Products, Inc.&quot;>">Name: </span><span>AAA Molybdenum Products, Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-substance-manufacture&quot;/>
+                        <display value=&quot;Drug Substance Manufacture&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-substance-manufacture&quot;/>
+                        <display value=&quot;Drug Substance Manufacture&quot;/>">Drug Substance Manufacture<span class="greyOff"> [drug-substance-manufacture]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div></div></div>
 </div>
 <div class="indent compl2"><span title="
 <Bundle>
@@ -1104,7 +1295,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-dr
                     <title value=&quot;3.2.P.2.2.1.1 - Formulation History&quot;/>
                     <text>
                         <status value=&quot;additional&quot;/>
-                        <div>
+                        <div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;>
                             <ul>
                                 <li>Drug product description including difference or similarity between the drug product and reference product, if applicable</li>
                                 <li>Propose route of administration (include any dilution or reconstitution necessary)</li>
@@ -1143,7 +1334,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-dr
                     ...
                     <text>
                         <status value=&quot;additional&quot;/>
-                        <div>
+                        <div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;>
                             <ul>
                                 <li>Drug product description including difference or similarity between the drug product and reference product, if applicable</li>
                                 <li>Propose route of administration (include any dilution or reconstitution necessary)</li>
@@ -1171,7 +1362,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-dr
             <Composition>
                 <section>
                     <text>
-                        <status value=&quot;additional&quot;>">Status: </span><span>additional</span></div>
+                        <status value=&quot;additional&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Composition>
+                <section>
+                    <text>
+                        <status value=&quot;additional&quot;>"><span>additional</span></span></div>
 <div class="indent compText" title="
                             <ul>
                                 <li>Drug product description including difference or similarity between the drug product and reference product, if applicable</li>
@@ -1229,7 +1427,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-dr
                     <title value=&quot;3.2.P.2.2.1.2 - Formulation Development Studies&quot;/>
                     <text>
                         <status value=&quot;additional&quot;/>
-                        <div>
+                        <div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;>
                             <p>Summary of the formulation developmental studies conducted are provided in Table 2</p>
                             <p>Table 2 - Formulation Development Studies</p>
                             <table>
@@ -1268,7 +1466,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-dr
                     ...
                     <text>
                         <status value=&quot;additional&quot;/>
-                        <div>
+                        <div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;>
                             <p>Summary of the formulation developmental studies conducted are provided in Table 2</p>
                             <p>Table 2 - Formulation Development Studies</p>
                             <table>
@@ -1296,7 +1494,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-dr
             <Composition>
                 <section>
                     <text>
-                        <status value=&quot;additional&quot;>">Status: </span><span>additional</span></div>
+                        <status value=&quot;additional&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Composition>
+                <section>
+                    <text>
+                        <status value=&quot;additional&quot;>"><span>additional</span></span></div>
 <div class="indent compText" title="
                             <p>Summary of the formulation developmental studies conducted are provided in Table 2</p>
                             <p>Table 2 - Formulation Development Studies</p>
@@ -1354,7 +1559,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-dr
                     <title value=&quot;3.2.P.2.2.4 - Summary for Risk Assessment of Elemental Impurities in Drug Product&quot;/>
                     <text>
                         <status value=&quot;additional&quot;/>
-                        <div>
+                        <div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;>
                             <p>Summary of the risk assessment for product...</p>
                         </div>
                     </text>" id="urn:uuid:a1694a7a-aafa-4cbe-8135-c788a9a4d3d5">Section</span><div><span title="
@@ -1374,7 +1579,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-dr
                     ...
                     <text>
                         <status value=&quot;additional&quot;/>
-                        <div>
+                        <div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;>
                             <p>Summary of the risk assessment for product...</p>
                         </div>" id="urn:uuid:a1694a7a-aafa-4cbe-8135-c788a9a4d3d5">Text</span><div><span title="
 <Bundle>
@@ -1383,7 +1588,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-dr
             <Composition>
                 <section>
                     <text>
-                        <status value=&quot;additional&quot;>">Status: </span><span>additional</span></div>
+                        <status value=&quot;additional&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Composition>
+                <section>
+                    <text>
+                        <status value=&quot;additional&quot;>"><span>additional</span></span></div>
 <div class="indent compText" title="
                             <p>Summary of the risk assessment for product...</p>">
 <div xmlns="http://www.w3.org/1999/xhtml">
@@ -1420,7 +1632,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-dr
                 <section>
                     <text>
                         <status value=&quot;additional&quot;/>
-                        <div>
+                        <div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;>
                             <p>Text for the risk assessment of elemental impurities in the product</p>
                         </div>
                     </text>
@@ -1433,7 +1645,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-dr
         <resource>
             <Composition>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-drug-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-drug-pq</span></div>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-drug-pq&quot;>">Profile: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Composition>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-drug-pq&quot;>">http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-drug-pq</span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -1462,7 +1680,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-dr
         <resource>
             <Composition>
                 ...
-                <status value=&quot;final&quot;>">Status: </span><span>final</span></div>
+                <status value=&quot;final&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Composition>
+                ...
+                <status value=&quot;final&quot;>"><span>final</span></span></div>
 </div>
 <div><span title="
 <Bundle>
@@ -1485,13 +1709,76 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-dr
         <resource>
             <Organization>
                 <id value=&quot;organization-drug-pq-ex1&quot;/>
-                <name value=&quot;AAA Molybdenum Products, Inc.&quot;/>" id="Organization-organization-drug-pq-ex1">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: organization-drug-pq-ex1</div><div class="debugOff"> fullUrl: urn:uuid:9fe98cfa-9246-8313-0fc5-d15e613b5d6d</div><span class="summaryShowsOff"> - AAA Molybdenum Products, Inc.</span><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div><span title="
+                <identifier>
+                    <!-- FDA establishment identifier -->
+                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
+                    <value value=&quot;3003040516&quot;/>
+                </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-substance-manufacture&quot;/>
+                        <display value=&quot;Drug Substance Manufacture&quot;/>
+                    </coding>
+                </type>
+                <name value=&quot;AAA Molybdenum Products, Inc.&quot;/>" id="Organization-organization-drug-pq-ex1">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: organization-drug-pq-ex1</div><div class="debugOff"> fullUrl: urn:uuid:9fe98cfa-9246-8313-0fc5-d15e613b5d6d</div><span class="summaryShowsOff"> - AAA Molybdenum Products, Inc.</span><div class="summaryHiddenOff"><div><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;AAA Molybdenum Products, Inc.&quot;>">Name: </span><span>AAA Molybdenum Products, Inc.</span></div></div></div>
+                <identifier>
+                    <!-- FDA establishment identifier -->
+                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
+                    <value value=&quot;3003040516&quot;/>">Identifier: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <identifier>
+                    <!-- FDA establishment identifier -->
+                    <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
+                    <value value=&quot;3003040516&quot;/>">3003040516<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;AAA Molybdenum Products, Inc.&quot;>">Name: </span><span>AAA Molybdenum Products, Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-substance-manufacture&quot;/>
+                        <display value=&quot;Drug Substance Manufacture&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-substance-manufacture&quot;/>
+                        <display value=&quot;Drug Substance Manufacture&quot;/>">Drug Substance Manufacture<span class="greyOff"> [drug-substance-manufacture]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div></div></div>
 </div>
 <div class="indent compl2"><span title="
 <Bundle>
@@ -1502,7 +1789,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-dr
                 <section>
                     <text>
                         <status value=&quot;additional&quot;/>
-                        <div>
+                        <div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;>
                             <p>Text for the risk assessment of elemental impurities in the product</p>
                         </div>
                     </text>" id="urn:uuid:a1694a8a-aafa-4cbe-8135-c788a9a4d3d5">Section</span><div class="summaryHiddenOff">
@@ -1514,7 +1801,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-dr
                 <section>
                     <text>
                         <status value=&quot;additional&quot;/>
-                        <div>
+                        <div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;>
                             <p>Text for the risk assessment of elemental impurities in the product</p>
                         </div>" id="urn:uuid:a1694a8a-aafa-4cbe-8135-c788a9a4d3d5">Text</span><div><span title="
 <Bundle>
@@ -1523,7 +1810,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-dr
             <Composition>
                 <section>
                     <text>
-                        <status value=&quot;additional&quot;>">Status: </span><span>additional</span></div>
+                        <status value=&quot;additional&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Composition>
+                <section>
+                    <text>
+                        <status value=&quot;additional&quot;>"><span>additional</span></span></div>
 <div class="indent compText" title="
                             <p>Text for the risk assessment of elemental impurities in the product</p>">
 <div xmlns="http://www.w3.org/1999/xhtml">
@@ -1567,6 +1861,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-dr
 	    transform:translate(-2px, -2px);
 	    border-radius: 5px;
 	    visibility:visible; /* this is so that the outer border doesn't hide these */
+    }
+    .indent-right {
+        margin-right:0.7em;
     }
     .indent-no-border {
         margin-left:1em; 	/* controls line to line indent */
@@ -1622,6 +1919,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-dr
 
     .cui { background-Color:#d9d2e9 }
     .cuidetails { background-Color:#e6e1f0 }
+    .cuidetails2 { background-Color:#ebe9f0 }
 
     .sbd,.hcs { background-Color:#affad5 }
     .sbddetails,.hcsl2 { background-Color:#c7fce2 }

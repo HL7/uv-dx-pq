@@ -33,6 +33,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3010027650&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;AAA Pharmaceutical, Inc.&quot;/>
                 <contact>
                     <address>
@@ -51,11 +59,22 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
         <resource>
             <Organization>
                 <id value=&quot;manufacturer2&quot;/>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq&quot;/>
+                </meta>
                 <identifier>
                     <!-- FDA establishment identifier -->
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;2246707&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;AAA Pharmaceutical, Inc.&quot;/>
                 <contact>
                     <address>
@@ -74,10 +93,21 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
         <resource>
             <Organization>
                 <id value=&quot;capManufacturer&quot;/>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq&quot;/>
+                </meta>
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3008816891&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;packaging&quot;/>
+                        <display value=&quot;Packaging&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;A+ Secure Packaging, LLC&quot;/>
                 <contact>
                     <address>
@@ -96,10 +126,21 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
         <resource>
             <Organization>
                 <id value=&quot;bottleManufacturer&quot;/>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq&quot;/>
+                </meta>
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;2244725&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;packaging&quot;/>
+                        <display value=&quot;Packaging&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;Acupac Packaging Inc.&quot;/>
                 <contact>
                     <address>
@@ -122,6 +163,21 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3003367682&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-stability&quot;/>
+                        <display value=&quot;Analytical Testing - Stability&quot;/>
+                    </coding>
+                </type>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;A &amp; M STABTEST Labor für Analytik und Stabilitätsprüfung&quot;/>
                 <contact>
                     <address>
@@ -140,10 +196,28 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
         <resource>
             <Organization>
                 <id value=&quot;tester&quot;/>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq&quot;/>
+                </meta>
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3007270600&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-stability&quot;/>
+                        <display value=&quot;Analytical Testing - Stability&quot;/>
+                    </coding>
+                </type>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;/>
                 <contact>
                     <address>
@@ -161,11 +235,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
 <div class="debugOff"><span title="
 <Bundle>
     <meta>
-        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organizations-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organizations-pq</span></div>
+        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organizations-pq&quot;>">Profile: </span><span title="
+<Bundle>
+    <meta>
+        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organizations-pq&quot;>">http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organizations-pq</span></div>
 <div><span title="
 <Bundle>
     ...
-    <type value=&quot;collection&quot;>">Type: </span><span><span>collection</span></span></div>
+    <type value=&quot;collection&quot;>">Type: <span>collection</span></span></div>
 </div>
 </div>
 <div>
@@ -181,6 +258,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3010027650&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;AAA Pharmaceutical, Inc.&quot;/>
                 <contact>
                     <address>
@@ -211,6 +296,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
                     <!-- FDA establishment identifier -->
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3010027650&quot;/>">3010027650<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div>
+<div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div>
 </div>
 <div class="summaryHiddenOff">
 <div><span title="
@@ -220,6 +318,27 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
             <Organization>
                 ...
                 <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div>
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>">Drug Product Manufacture<span class="greyOff"> [drug-product-manufacture]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div>
 <div class="indent org2">
 					Contact
 					<div><span title="
@@ -277,17 +396,29 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
 </div>
 </div>
 <div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Organization (id: manufacturer2)(fullUrl: urn:uuid:33cdead0-6b1c-4c11-3094-bed90e7c727b)
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq 
 
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 <id value=&quot;manufacturer2&quot;/>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq&quot;/>
+                </meta>
                 <identifier>
                     <!-- FDA establishment identifier -->
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;2246707&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;AAA Pharmaceutical, Inc.&quot;/>
                 <contact>
                     <address>
@@ -298,7 +429,21 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
                         <country value=&quot;USA&quot;/>
                     </address>
                 </contact>" id="Organization-manufacturer2">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: manufacturer2</div>
-<div class="debugOff"> fullUrl: urn:uuid:33cdead0-6b1c-4c11-3094-bed90e7c727b</div><span class="summaryShowsOff"> - AAA Pharmaceutical, Inc.</span><div class="summaryHiddenOff">
+<div class="debugOff"> fullUrl: urn:uuid:33cdead0-6b1c-4c11-3094-bed90e7c727b</div>
+<div class="debugOff"></div>
+<div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq&quot;>">Profile: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq&quot;>">http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq</span></div><span class="summaryShowsOff"> - AAA Pharmaceutical, Inc.</span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -318,6 +463,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
                     <!-- FDA establishment identifier -->
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;2246707&quot;/>">2246707<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div>
+<div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div>
 </div>
 <div class="summaryHiddenOff">
 <div><span title="
@@ -327,6 +485,27 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
             <Organization>
                 ...
                 <name value=&quot;AAA Pharmaceutical, Inc.&quot;>">Name: </span><span>AAA Pharmaceutical, Inc.</span></div>
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-product-manufacture&quot;/>
+                        <display value=&quot;Drug Product Manufacture&quot;/>">Drug Product Manufacture<span class="greyOff"> [drug-product-manufacture]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div>
 <div class="indent org2">
 					Contact
 					<div><span title="
@@ -384,16 +563,28 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
 </div>
 </div>
 <div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Organization (id: capManufacturer)(fullUrl: urn:uuid:16d3bbe6-6ce1-5d99-9a55-b2b52e907cb0)
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq 
 
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 <id value=&quot;capManufacturer&quot;/>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq&quot;/>
+                </meta>
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3008816891&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;packaging&quot;/>
+                        <display value=&quot;Packaging&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;A+ Secure Packaging, LLC&quot;/>
                 <contact>
                     <address>
@@ -404,7 +595,21 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
                         <country value=&quot;USA&quot;/>
                     </address>
                 </contact>" id="Organization-capManufacturer">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: capManufacturer</div>
-<div class="debugOff"> fullUrl: urn:uuid:16d3bbe6-6ce1-5d99-9a55-b2b52e907cb0</div><span class="summaryShowsOff"> - A+ Secure Packaging, LLC</span><div class="summaryHiddenOff">
+<div class="debugOff"> fullUrl: urn:uuid:16d3bbe6-6ce1-5d99-9a55-b2b52e907cb0</div>
+<div class="debugOff"></div>
+<div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq&quot;>">Profile: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq&quot;>">http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq</span></div><span class="summaryShowsOff"> - A+ Secure Packaging, LLC</span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -422,6 +627,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3008816891&quot;/>">3008816891<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div>
+<div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div>
 </div>
 <div class="summaryHiddenOff">
 <div><span title="
@@ -431,6 +649,27 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
             <Organization>
                 ...
                 <name value=&quot;A+ Secure Packaging, LLC&quot;>">Name: </span><span>A+ Secure Packaging, LLC</span></div>
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;packaging&quot;/>
+                        <display value=&quot;Packaging&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;packaging&quot;/>
+                        <display value=&quot;Packaging&quot;/>">Packaging<span class="greyOff"> [packaging]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div>
 <div class="indent org2">
 					Contact
 					<div><span title="
@@ -488,16 +727,28 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
 </div>
 </div>
 <div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Organization (id: bottleManufacturer)(fullUrl: urn:uuid:4db6d77b-4a0d-2b1c-0409-753790811c28)
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq 
 
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 <id value=&quot;bottleManufacturer&quot;/>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq&quot;/>
+                </meta>
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;2244725&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;packaging&quot;/>
+                        <display value=&quot;Packaging&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;Acupac Packaging Inc.&quot;/>
                 <contact>
                     <address>
@@ -508,7 +759,21 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
                         <country value=&quot;USA&quot;/>
                     </address>
                 </contact>" id="Organization-bottleManufacturer">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: bottleManufacturer</div>
-<div class="debugOff"> fullUrl: urn:uuid:4db6d77b-4a0d-2b1c-0409-753790811c28</div><span class="summaryShowsOff"> - Acupac Packaging Inc.</span><div class="summaryHiddenOff">
+<div class="debugOff"> fullUrl: urn:uuid:4db6d77b-4a0d-2b1c-0409-753790811c28</div>
+<div class="debugOff"></div>
+<div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq&quot;>">Profile: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq&quot;>">http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq</span></div><span class="summaryShowsOff"> - Acupac Packaging Inc.</span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -526,6 +791,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;2244725&quot;/>">2244725<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div>
+<div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div>
 </div>
 <div class="summaryHiddenOff">
 <div><span title="
@@ -535,6 +813,27 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
             <Organization>
                 ...
                 <name value=&quot;Acupac Packaging Inc.&quot;>">Name: </span><span>Acupac Packaging Inc.</span></div>
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;packaging&quot;/>
+                        <display value=&quot;Packaging&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;packaging&quot;/>
+                        <display value=&quot;Packaging&quot;/>">Packaging<span class="greyOff"> [packaging]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div>
 <div class="indent org2">
 					Contact
 					<div><span title="
@@ -602,6 +901,21 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3003367682&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-stability&quot;/>
+                        <display value=&quot;Analytical Testing - Stability&quot;/>
+                    </coding>
+                </type>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;A &amp; M STABTEST Labor für Analytik und Stabilitätsprüfung&quot;/>
                 <contact>
                     <address>
@@ -630,6 +944,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3003367682&quot;/>">3003367682<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div>
+<div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div>
 </div>
 <div class="summaryHiddenOff">
 <div><span title="
@@ -639,6 +966,48 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
             <Organization>
                 ...
                 <name value=&quot;A &amp; M STABTEST Labor für Analytik und Stabilitätsprüfung&quot;>">Name: </span><span>A &amp; M STABTEST Labor für Analytik und Stabilitätsprüfung</span></div>
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-stability&quot;/>
+                        <display value=&quot;Analytical Testing - Stability&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-stability&quot;/>
+                        <display value=&quot;Analytical Testing - Stability&quot;/>">Analytical Testing - Stability<span class="greyOff"> [analytical-testing-stability]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div>
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div>
 <div class="indent org2">
 					Contact
 					<div><span title="
@@ -696,16 +1065,35 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
 </div>
 </div>
 <div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Organization (id: tester)(fullUrl: urn:uuid:bb56d49f-4914-2191-6354-2c20f3c76d85)
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq 
 
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 <id value=&quot;tester&quot;/>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq&quot;/>
+                </meta>
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3007270600&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-stability&quot;/>
+                        <display value=&quot;Analytical Testing - Stability&quot;/>
+                    </coding>
+                </type>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;/>
                 <contact>
                     <address>
@@ -716,7 +1104,21 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
                         <country value=&quot;USA&quot;/>
                     </address>
                 </contact>" id="Organization-tester">Organization</span></a><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/organization.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/organization.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/organization.html#tt-uml">R6</a>]</span><div class="debugOff">id: tester</div>
-<div class="debugOff"> fullUrl: urn:uuid:bb56d49f-4914-2191-6354-2c20f3c76d85</div><span class="summaryShowsOff"> - Advanced Analytical Testing Laboratories Inc.</span><div class="summaryHiddenOff">
+<div class="debugOff"> fullUrl: urn:uuid:bb56d49f-4914-2191-6354-2c20f3c76d85</div>
+<div class="debugOff"></div>
+<div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq&quot;>">Profile: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq&quot;>">http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq</span></div><span class="summaryShowsOff"> - Advanced Analytical Testing Laboratories Inc.</span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -734,6 +1136,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
                 <identifier>
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3007270600&quot;/>">3007270600<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div>
+<div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div>
 </div>
 <div class="summaryHiddenOff">
 <div><span title="
@@ -743,6 +1158,48 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
             <Organization>
                 ...
                 <name value=&quot;Advanced Analytical Testing Laboratories Inc.&quot;>">Name: </span><span>Advanced Analytical Testing Laboratories Inc.</span></div>
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-stability&quot;/>
+                        <display value=&quot;Analytical Testing - Stability&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-stability&quot;/>
+                        <display value=&quot;Analytical Testing - Stability&quot;/>">Analytical Testing - Stability<span class="greyOff"> [analytical-testing-stability]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div>
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;analytical-testing-release&quot;/>
+                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div>
 <div class="indent org2">
 					Contact
 					<div><span title="
@@ -831,6 +1288,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
 	    border-radius: 5px;
 	    visibility:visible; /* this is so that the outer border doesn't hide these */
     }
+    .indent-right {
+        margin-right:0.7em;
+    }
     .indent-no-border {
         margin-left:1em; 	/* controls line to line indent */
         text-indent:-1em; 	/* moves text back to right, so that other parts of the div are still at the left */
@@ -885,6 +1345,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organiz
 
     .cui { background-Color:#d9d2e9 }
     .cuidetails { background-Color:#e6e1f0 }
+    .cuidetails2 { background-Color:#ebe9f0 }
 
     .sbd,.hcs { background-Color:#affad5 }
     .sbddetails,.hcsl2 { background-Color:#c7fce2 }

@@ -49,7 +49,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     <productName value=&quot;Stalbatolol&quot;/>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-pq-example&quot;/>
                             <code value=&quot;Proprietary&quot;/>
                             <display value=&quot;Proprietary&quot;/>
                         </coding>
@@ -70,7 +70,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     </extension>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-water&quot;/>
                             <display value=&quot;Solubility purified water&quot;/>
                         </coding>
@@ -79,7 +79,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <characteristic>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;water-content&quot;/>
                             <display value=&quot;Water content&quot;/>
                         </coding>
@@ -102,6 +102,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3010027651&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-substance-manufacture&quot;/>
+                        <display value=&quot;Drug Substance Manufacture&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;Modified Sugar, Inc.&quot;/>
                 <contact>
                     <address>
@@ -125,6 +133,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3012027651&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-substance-manufacture&quot;/>
+                        <display value=&quot;Drug Substance Manufacture&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;Plasma Source, Inc.&quot;/>
                 <contact>
                     <address>
@@ -283,11 +299,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
 <div class="debugOff"><span title="
 <Bundle>
     <meta>
-        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-excipients-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-excipients-pq</span></div>
+        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-excipients-pq&quot;>">Profile: </span><span title="
+<Bundle>
+    <meta>
+        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-excipients-pq&quot;>">http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-excipients-pq</span></div>
 <div><span title="
 <Bundle>
     ...
-    <type value=&quot;collection&quot;>">Type: </span><span><span>collection</span></span></div>
+    <type value=&quot;collection&quot;>">Type: <span>collection</span></span></div>
 </div>
 </div>
 <div>
@@ -317,7 +336,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     <productName value=&quot;Stalbatolol&quot;/>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-pq-example&quot;/>
                             <code value=&quot;Proprietary&quot;/>
                             <display value=&quot;Proprietary&quot;/>
                         </coding>
@@ -338,7 +357,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     </extension>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-water&quot;/>
                             <display value=&quot;Solubility purified water&quot;/>
                         </coding>
@@ -347,7 +366,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <characteristic>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;water-content&quot;/>
                             <display value=&quot;Water content&quot;/>
                         </coding>
@@ -367,7 +386,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     <productName value=&quot;Stalbatolol&quot;/>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-pq-example&quot;/>
                             <code value=&quot;Proprietary&quot;/>
                             <display value=&quot;Proprietary&quot;/>
                         </coding>
@@ -381,7 +400,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     ...
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-pq-example&quot;/>
                             <code value=&quot;Proprietary&quot;/>
                             <display value=&quot;Proprietary&quot;/>
                         </coding>">Name type: </span><span title="
@@ -392,9 +411,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <name>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-pq-example&quot;/>
                             <code value=&quot;Proprietary&quot;/>
-                            <display value=&quot;Proprietary&quot;/>">Proprietary<span class="greyOff"> [Proprietary]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq)</span></span></div>
+                            <display value=&quot;Proprietary&quot;/>">Proprietary<span class="greyOff"> [Proprietary]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-pq-example)</span></span></div>
 </div>
 <div class="summaryHiddenOff">
 <div><span title="
@@ -403,7 +422,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
         <resource>
             <MedicinalProductDefinition>
                 ...
-                <description value=&quot;Stelbatalol is formulated as an immediate-release, oral, solid dosage form in strengths of 20 mg of the free base equivalent. The 20 mg strength is presented as an orange, round, film coated tablet, debossed with '175' on one side.&quot;>">Description: </span><span>Stelbatalol is formulated as an immediate-release, oral, solid dosage form in strengths of 20 mg of the free base equivalent. The 20 mg strength is presented as an orange, round, film coated tablet, debossed with '175' on one side.</span></div>
+                <description value=&quot;Stelbatalol is formulated as an immediate-release, oral, solid dosage form in strengths of 20 mg of the free base equivalent. The 20 mg strength is presented as an orange, round, film coated tablet, debossed with '175' on one side.&quot;>">Description: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <MedicinalProductDefinition>
+                ...
+                <description value=&quot;Stelbatalol is formulated as an immediate-release, oral, solid dosage form in strengths of 20 mg of the free base equivalent. The 20 mg strength is presented as an orange, round, film coated tablet, debossed with '175' on one side.&quot;>">Stelbatalol is formulated as an immediate-release, oral, solid dosage form in strengths of 20 mg of the free base equivalent. The 20 mg strength is presented as an orange, round, film coated tablet, debossed with '175' on one side.</span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -468,7 +493,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     </extension>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-water&quot;/>
                             <display value=&quot;Solubility purified water&quot;/>
                         </coding>
@@ -481,7 +506,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     ...
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-water&quot;/>
                             <display value=&quot;Solubility purified water&quot;/>
                         </coding>">Type: <span title="
@@ -492,9 +517,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <characteristic>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-water&quot;/>
-                            <display value=&quot;Solubility purified water&quot;/>">Solubility purified water<span class="greyOff"> [solubility-water]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq)</span></span></span></div>
+                            <display value=&quot;Solubility purified water&quot;/>">Solubility purified water<span class="greyOff"> [solubility-water]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example)</span></span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -544,7 +569,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <characteristic>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;water-content&quot;/>
                             <display value=&quot;Water content&quot;/>
                         </coding>
@@ -560,7 +585,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <characteristic>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;water-content&quot;/>
                             <display value=&quot;Water content&quot;/>
                         </coding>">Type: <span title="
@@ -571,9 +596,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <characteristic>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;water-content&quot;/>
-                            <display value=&quot;Water content&quot;/>">Water content<span class="greyOff"> [water-content]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq)</span></span></span></div>
+                            <display value=&quot;Water content&quot;/>">Water content<span class="greyOff"> [water-content]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example)</span></span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -750,7 +775,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
         <resource>
             <Ingredient>
                 ...
-                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+                <status value=&quot;active&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Ingredient>
+                ...
+                <status value=&quot;active&quot;>"><span>active</span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -780,7 +811,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
             <Ingredient>
                 ...
                 <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-novel-excipient-pq&quot;>
-                    <valueBoolean value=&quot;true&quot;/>">Novel Excipient?: </span><span>true</span></div>
+                    <valueBoolean value=&quot;true&quot;/>">Novel Excipient?: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Ingredient>
+                ...
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-novel-excipient-pq&quot;>
+                    <valueBoolean value=&quot;true&quot;/>"><span>true</span></span></div>
 <div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
@@ -788,7 +826,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
             <Ingredient>
                 ...
                 <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-suitability-for-use-pq&quot;>
-                    <valueString value=&quot;Excipient has been certified for use in human medicinal products&quot;/>">Suitability for Use: </span><span>Excipient has been certified for use in human medicinal products</span></div>
+                    <valueString value=&quot;Excipient has been certified for use in human medicinal products&quot;/>">Suitability for Use: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Ingredient>
+                ...
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-suitability-for-use-pq&quot;>
+                    <valueString value=&quot;Excipient has been certified for use in human medicinal products&quot;/>"><span>Excipient has been certified for use in human medicinal products</span></span></div>
 <div class="indent ingsub"><span title="
 <Bundle>
     <entry>
@@ -800,7 +845,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                         <reference>
                             <reference value=&quot;SubstanceDefinition/pg&quot;/>
                         </reference>
-                    </code>">Substance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
+                    </code>" class="summaryHiddenOff">Substance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
 <div class="debugOff"><span>Found a parent (Ingredient/code, id: ingredient1 fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a6b)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: pg)(fullUrl: urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380474)
 
 <Bundle>
@@ -837,7 +882,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
         <resource>
             <SubstanceDefinition>
                 <name>
-                    <name value=&quot;Pegylated glucose&quot;>">Name: </span><span><span>Pegylated glucose</span></span></div>
+                    <name value=&quot;Pegylated glucose&quot;>">Name: <span>Pegylated glucose</span></span></div>
 </div>
 </div>
 <div class="summaryHiddenOff"></div>
@@ -858,7 +903,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                             <code value=&quot;Mineral&quot;/>
                             <display value=&quot;mineral&quot;/>
                             <!-- to mean &quot;non-biological&quot; -->
-                        </coding>">Type: </span><span><span title="
+                        </coding>">Type: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -882,7 +927,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                             <system value=&quot;urn:iso:std:iso:3166&quot;/>
                             <code value=&quot;GBR&quot;/>
                             <display value=&quot;United Kingdom&quot;/>
-                        </coding>">Country Of Origin: </span><span><span title="
+                        </coding>">Country Of Origin: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -922,6 +967,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3010027651&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-substance-manufacture&quot;/>
+                        <display value=&quot;Drug Substance Manufacture&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;Modified Sugar, Inc.&quot;/>
                 <contact>
                     <address>
@@ -952,6 +1005,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     <!-- FDA establishment identifier -->
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3010027651&quot;/>">3010027651<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div>
+<div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div>
 </div>
 <div class="summaryHiddenOff">
 <div><span title="
@@ -961,6 +1027,27 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
             <Organization>
                 ...
                 <name value=&quot;Modified Sugar, Inc.&quot;>">Name: </span><span>Modified Sugar, Inc.</span></div>
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-substance-manufacture&quot;/>
+                        <display value=&quot;Drug Substance Manufacture&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-substance-manufacture&quot;/>
+                        <display value=&quot;Drug Substance Manufacture&quot;/>">Drug Substance Manufacture<span class="greyOff"> [drug-substance-manufacture]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div>
 <div class="indent org2">
 					Contact
 					<div><span title="
@@ -1069,7 +1156,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
         <resource>
             <Ingredient>
                 ...
-                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+                <status value=&quot;active&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Ingredient>
+                ...
+                <status value=&quot;active&quot;>"><span>active</span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -1099,7 +1192,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
             <Ingredient>
                 ...
                 <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-suitability-for-use-pq&quot;>
-                    <valueString value=&quot;Excipient is derived from plasma certified to originate from healthy animals and is irradiated prior to distribution.  In addition, albumin is not prepared with the use of other ruminant materials.&quot;/>">Suitability for Use: </span><span>Excipient is derived from plasma certified to originate from healthy animals and is irradiated prior to distribution.  In addition, albumin is not prepared with the use of other ruminant materials.</span></div>
+                    <valueString value=&quot;Excipient is derived from plasma certified to originate from healthy animals and is irradiated prior to distribution.  In addition, albumin is not prepared with the use of other ruminant materials.&quot;/>">Suitability for Use: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Ingredient>
+                ...
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-suitability-for-use-pq&quot;>
+                    <valueString value=&quot;Excipient is derived from plasma certified to originate from healthy animals and is irradiated prior to distribution.  In addition, albumin is not prepared with the use of other ruminant materials.&quot;/>"><span>Excipient is derived from plasma certified to originate from healthy animals and is irradiated prior to distribution.  In addition, albumin is not prepared with the use of other ruminant materials.</span></span></div>
 <div class="indent ingsub"><span title="
 <Bundle>
     <entry>
@@ -1111,7 +1211,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                         <reference>
                             <reference value=&quot;SubstanceDefinition/dga&quot;/>
                         </reference>
-                    </code>">Substance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
+                    </code>" class="summaryHiddenOff">Substance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
 <div class="debugOff"><span>Found a parent (Ingredient/code, id: ingredient2 fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a7b)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: dga)(fullUrl: urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380475)
 
 <Bundle>
@@ -1161,7 +1261,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
         <resource>
             <SubstanceDefinition>
                 <name>
-                    <name value=&quot;Deactivated goat albumin&quot;>">Name: </span><span><span>Deactivated goat albumin</span></span></div>
+                    <name value=&quot;Deactivated goat albumin&quot;>">Name: <span>Deactivated goat albumin</span></span></div>
 </div>
 </div>
 <div class="summaryHiddenOff"></div>
@@ -1181,7 +1281,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                             <system value=&quot;http://hl7.org/fhir/substance-source-material-type&quot;/>
                             <code value=&quot;Animal&quot;/>
                             <display value=&quot;animal&quot;/>
-                        </coding>">Type: </span><span><span title="
+                        </coding>">Type: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -1204,7 +1304,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                             <system value=&quot;http://hl7.org/fhir/substance-source-material-part&quot;/>
                             <code value=&quot;Animal&quot;/>
                             <display value=&quot;animal&quot;/>
-                        </coding>">Species: </span><span><span title="
+                        </coding>">Species: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -1227,7 +1327,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                             <system value=&quot;http://hl7.org/fhir/substance-source-material-type&quot;/>
                             <code value=&quot;Animal&quot;/>
                             <display value=&quot;animal&quot;/>
-                        </coding>">Part: </span><span><span title="
+                        </coding>">Part: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -1250,7 +1350,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                             <system value=&quot;urn:iso:std:iso:3166&quot;/>
                             <code value=&quot;USA&quot;/>
                             <display value=&quot;United States of America&quot;/>
-                        </coding>">Country Of Origin: </span><span><span title="
+                        </coding>">Country Of Origin: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -1290,6 +1390,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3012027651&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-substance-manufacture&quot;/>
+                        <display value=&quot;Drug Substance Manufacture&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;Plasma Source, Inc.&quot;/>
                 <contact>
                     <address>
@@ -1320,6 +1428,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     <!-- FDA establishment identifier -->
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3012027651&quot;/>">3012027651<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div>
+<div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div>
 </div>
 <div class="summaryHiddenOff">
 <div><span title="
@@ -1329,6 +1450,27 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
             <Organization>
                 ...
                 <name value=&quot;Plasma Source, Inc.&quot;>">Name: </span><span>Plasma Source, Inc.</span></div>
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-substance-manufacture&quot;/>
+                        <display value=&quot;Drug Substance Manufacture&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-substance-manufacture&quot;/>
+                        <display value=&quot;Drug Substance Manufacture&quot;/>">Drug Substance Manufacture<span class="greyOff"> [drug-substance-manufacture]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div>
 <div class="indent org2">
 					Contact
 					<div><span title="
@@ -1423,6 +1565,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
 	    border-radius: 5px;
 	    visibility:visible; /* this is so that the outer border doesn't hide these */
     }
+    .indent-right {
+        margin-right:0.7em;
+    }
     .indent-no-border {
         margin-left:1em; 	/* controls line to line indent */
         text-indent:-1em; 	/* moves text back to right, so that other parts of the div are still at the left */
@@ -1477,6 +1622,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
 
     .cui { background-Color:#d9d2e9 }
     .cuidetails { background-Color:#e6e1f0 }
+    .cuidetails2 { background-Color:#ebe9f0 }
 
     .sbd,.hcs { background-Color:#affad5 }
     .sbddetails,.hcsl2 { background-Color:#c7fce2 }

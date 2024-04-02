@@ -15,12 +15,12 @@ The HTML rendering below shows a synthetic Quality data example for Common Techn
 <div class="bundleBorder">
 <div class="debugOff">
 <div class="bundle"><a class="plainLink"><span class="bold" title="Bundle (id: bundle-drug-substance-general-properties-pq-ex1)
-Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-characterization-pq 
+Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-general-properties-pq 
 
 <Bundle>
     <id value=&quot;bundle-drug-substance-general-properties-pq-ex1&quot;/>
     <meta>
-        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-characterization-pq&quot;/>
+        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-general-properties-pq&quot;/>
     </meta>
     <type value=&quot;collection&quot;/>
     <entry>
@@ -31,7 +31,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;appearance&quot;/>
                             <display value=&quot;Appearance&quot;/>
                         </coding>
@@ -43,14 +43,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-water-pheur&quot;/>
                             <display value=&quot;Solubility purified water (PhEur)&quot;/>
                         </coding>
                     </type>
                     <valueCodeableConcept>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-solubility-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-pq-example&quot;/>
                             <code value=&quot;sol-free&quot;/>
                             <display value=&quot;Freely soluble&quot;/>
                         </coding>
@@ -72,7 +72,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     </extension>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-water-pheur&quot;/>
                             <display value=&quot;Solubility purified water (PhEur)&quot;/>
                         </coding>
@@ -82,14 +82,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-acetone-pheur&quot;/>
                             <display value=&quot;Solubility Acetone (PhEur)&quot;/>
                         </coding>
                     </type>
                     <valueCodeableConcept>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-solubility-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-pq-example&quot;/>
                             <code value=&quot;sol-slight&quot;/>
                             <display value=&quot;Slightly soluble&quot;/>
                         </coding>
@@ -111,7 +111,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     </extension>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-acetone-pheur&quot;/>
                             <display value=&quot;Solubility acetone (PhEur)&quot;/>
                         </coding>
@@ -121,14 +121,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-ethanol-pheur&quot;/>
                             <display value=&quot;Solubility Ethanol (PhEur)&quot;/>
                         </coding>
                     </type>
                     <valueCodeableConcept>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-solubility-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-pq-example&quot;/>
                             <code value=&quot;sol-soluble&quot;/>
                             <display value=&quot;Soluble&quot;/>
                         </coding>
@@ -150,7 +150,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     </extension>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-ethanol-pheur&quot;/>
                             <display value=&quot;Solubility ethanol (PhEur)&quot;/>
                         </coding>
@@ -160,7 +160,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-aq-water-2h-approx&quot;/>
                             <display value=&quot;Solubility at saturation in Purifed Water after 2 hours (approx)&quot;/>
                         </coding>
@@ -173,7 +173,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-aq-glucose-2h-approx&quot;/>
                             <display value=&quot;Solubility at saturation in Glucose (5%) after 2 hours (approx)&quot;/>
                         </coding>
@@ -188,7 +188,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-pq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCoding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                                 <code value=&quot;pH&quot;/>
                                 <display value=&quot;pH&quot;/>
                             </valueCoding>
@@ -201,7 +201,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     </extension>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-usp-ph&quot;/>
                             <display value=&quot;Solubility as a function of pH in USP buffers&quot;/>
                         </coding>
@@ -215,7 +215,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-pq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCoding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                                 <code value=&quot;pH&quot;/>
                                 <display value=&quot;pH&quot;/>
                             </valueCoding>
@@ -228,7 +228,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     </extension>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-usp-ph&quot;/>
                             <display value=&quot;Solubility as a function of pH in USP buffers&quot;/>
                         </coding>
@@ -253,7 +253,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-pq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCoding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                                 <code value=&quot;concentration&quot;/>
                                 <display value=&quot;Concentration&quot;/>
                             </valueCoding>
@@ -268,7 +268,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-pq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCoding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                                 <code value=&quot;temperature&quot;/>
                                 <display value=&quot;Temperature&quot;/>
                             </valueCoding>
@@ -282,7 +282,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     </extension>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;ph-aq&quot;/>
                             <display value=&quot;pH in aqueous solution&quot;/>
                         </coding>
@@ -291,14 +291,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;hygroscopy&quot;/>
                             <display value=&quot;Hygroscopy&quot;/>
                         </coding>
                     </type>
                     <valueCodeableConcept>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;hygroscopy-hygroscopic&quot;/>
                             <display value=&quot;Hygroscopic&quot;/>
                         </coding>
@@ -320,11 +320,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
 <div class="debugOff"><span title="
 <Bundle>
     <meta>
-        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-characterization-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-characterization-pq</span></div>
+        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-general-properties-pq&quot;>">Profile: </span><span title="
+<Bundle>
+    <meta>
+        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-general-properties-pq&quot;>">http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-general-properties-pq</span></div>
 <div><span title="
 <Bundle>
     ...
-    <type value=&quot;collection&quot;>">Type: </span><span><span>collection</span></span></div>
+    <type value=&quot;collection&quot;>">Type: <span>collection</span></span></div>
 </div>
 </div>
 <div>
@@ -338,7 +341,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;appearance&quot;/>
                             <display value=&quot;Appearance&quot;/>
                         </coding>
@@ -350,14 +353,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-water-pheur&quot;/>
                             <display value=&quot;Solubility purified water (PhEur)&quot;/>
                         </coding>
                     </type>
                     <valueCodeableConcept>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-solubility-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-pq-example&quot;/>
                             <code value=&quot;sol-free&quot;/>
                             <display value=&quot;Freely soluble&quot;/>
                         </coding>
@@ -379,7 +382,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     </extension>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-water-pheur&quot;/>
                             <display value=&quot;Solubility purified water (PhEur)&quot;/>
                         </coding>
@@ -389,14 +392,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-acetone-pheur&quot;/>
                             <display value=&quot;Solubility Acetone (PhEur)&quot;/>
                         </coding>
                     </type>
                     <valueCodeableConcept>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-solubility-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-pq-example&quot;/>
                             <code value=&quot;sol-slight&quot;/>
                             <display value=&quot;Slightly soluble&quot;/>
                         </coding>
@@ -418,7 +421,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     </extension>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-acetone-pheur&quot;/>
                             <display value=&quot;Solubility acetone (PhEur)&quot;/>
                         </coding>
@@ -428,14 +431,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-ethanol-pheur&quot;/>
                             <display value=&quot;Solubility Ethanol (PhEur)&quot;/>
                         </coding>
                     </type>
                     <valueCodeableConcept>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-solubility-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-pq-example&quot;/>
                             <code value=&quot;sol-soluble&quot;/>
                             <display value=&quot;Soluble&quot;/>
                         </coding>
@@ -457,7 +460,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     </extension>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-ethanol-pheur&quot;/>
                             <display value=&quot;Solubility ethanol (PhEur)&quot;/>
                         </coding>
@@ -467,7 +470,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-aq-water-2h-approx&quot;/>
                             <display value=&quot;Solubility at saturation in Purifed Water after 2 hours (approx)&quot;/>
                         </coding>
@@ -480,7 +483,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-aq-glucose-2h-approx&quot;/>
                             <display value=&quot;Solubility at saturation in Glucose (5%) after 2 hours (approx)&quot;/>
                         </coding>
@@ -495,7 +498,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-pq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCoding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                                 <code value=&quot;pH&quot;/>
                                 <display value=&quot;pH&quot;/>
                             </valueCoding>
@@ -508,7 +511,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     </extension>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-usp-ph&quot;/>
                             <display value=&quot;Solubility as a function of pH in USP buffers&quot;/>
                         </coding>
@@ -522,7 +525,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-pq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCoding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                                 <code value=&quot;pH&quot;/>
                                 <display value=&quot;pH&quot;/>
                             </valueCoding>
@@ -535,7 +538,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     </extension>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-usp-ph&quot;/>
                             <display value=&quot;Solubility as a function of pH in USP buffers&quot;/>
                         </coding>
@@ -560,7 +563,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-pq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCoding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                                 <code value=&quot;concentration&quot;/>
                                 <display value=&quot;Concentration&quot;/>
                             </valueCoding>
@@ -575,7 +578,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-pq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCoding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                                 <code value=&quot;temperature&quot;/>
                                 <display value=&quot;Temperature&quot;/>
                             </valueCoding>
@@ -589,7 +592,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     </extension>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;ph-aq&quot;/>
                             <display value=&quot;pH in aqueous solution&quot;/>
                         </coding>
@@ -598,14 +601,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;hygroscopy&quot;/>
                             <display value=&quot;Hygroscopy&quot;/>
                         </coding>
                     </type>
                     <valueCodeableConcept>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;hygroscopy-hygroscopic&quot;/>
                             <display value=&quot;Hygroscopic&quot;/>
                         </coding>
@@ -667,7 +670,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     ...
                     <valueCodeableConcept>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-solubility-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-pq-example&quot;/>
                             <code value=&quot;sol-free&quot;/>
                             <display value=&quot;Freely soluble&quot;/>
                         </coding>
@@ -713,7 +716,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     ...
                     <valueCodeableConcept>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-solubility-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-pq-example&quot;/>
                             <code value=&quot;sol-slight&quot;/>
                             <display value=&quot;Slightly soluble&quot;/>
                         </coding>
@@ -759,7 +762,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     ...
                     <valueCodeableConcept>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-solubility-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-pq-example&quot;/>
                             <code value=&quot;sol-soluble&quot;/>
                             <display value=&quot;Soluble&quot;/>
                         </coding>
@@ -798,7 +801,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-aq-water-2h-approx&quot;/>
                             <display value=&quot;Solubility at saturation in Purifed Water after 2 hours (approx)&quot;/>">  Purified Water</span></td>
 <td>~<span title="
@@ -821,7 +824,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-aq-glucose-2h-approx&quot;/>
                             <display value=&quot;Solubility at saturation in Glucose (5%) after 2 hours (approx)&quot;/>">  Glucose (5%)</span></td>
 <td>~<span title="
@@ -901,7 +904,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     ...
                     <valueCodeableConcept>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;hygroscopy-hygroscopic&quot;/>
                             <display value=&quot;Hygroscopic&quot;/>
                         </coding>
@@ -930,7 +933,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
         <resource>
             <SubstanceDefinition>
                 <name>
-                    <name value=&quot;Stelbatolol&quot;>">Name: </span><span><span>Stelbatolol</span></span></div>
+                    <name value=&quot;Stelbatolol&quot;>">Name: <span>Stelbatolol</span></span></div>
 </div>
 </div>
 <div class="summaryHiddenOff"></div>
@@ -946,7 +949,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;appearance&quot;/>
                             <display value=&quot;Appearance&quot;/>
                         </coding>
@@ -961,7 +964,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;appearance&quot;/>
                             <display value=&quot;Appearance&quot;/>
                         </coding>">Type: <span title="
@@ -972,9 +975,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;appearance&quot;/>
-                            <display value=&quot;Appearance&quot;/>">Appearance<span class="greyOff"> [appearance]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq)</span></span></span></div>
+                            <display value=&quot;Appearance&quot;/>">Appearance<span class="greyOff"> [appearance]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example)</span></span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -996,14 +999,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-water-pheur&quot;/>
                             <display value=&quot;Solubility purified water (PhEur)&quot;/>
                         </coding>
                     </type>
                     <valueCodeableConcept>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-solubility-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-pq-example&quot;/>
                             <code value=&quot;sol-free&quot;/>
                             <display value=&quot;Freely soluble&quot;/>
                         </coding>
@@ -1016,7 +1019,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-water-pheur&quot;/>
                             <display value=&quot;Solubility purified water (PhEur)&quot;/>
                         </coding>">Type: <span title="
@@ -1027,9 +1030,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-water-pheur&quot;/>
-                            <display value=&quot;Solubility purified water (PhEur)&quot;/>">Solubility purified water (PhEur)<span class="greyOff"> [solubility-water-pheur]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq)</span></span></span></div>
+                            <display value=&quot;Solubility purified water (PhEur)&quot;/>">Solubility purified water (PhEur)<span class="greyOff"> [solubility-water-pheur]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example)</span></span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -1039,7 +1042,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     ...
                     <valueCodeableConcept>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-solubility-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-pq-example&quot;/>
                             <code value=&quot;sol-free&quot;/>
                             <display value=&quot;Freely soluble&quot;/>
                         </coding>
@@ -1051,9 +1054,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <property>
                     <valueCodeableConcept>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-solubility-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-pq-example&quot;/>
                             <code value=&quot;sol-free&quot;/>
-                            <display value=&quot;Freely soluble&quot;/>">Freely soluble<span class="greyOff"> [sol-free]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-solubility-local-pq)</span></span><span style="white-space:normal;"> - Text: freely soluble</span></span></div>
+                            <display value=&quot;Freely soluble&quot;/>">Freely soluble<span class="greyOff"> [sol-free]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-pq-example)</span></span><span style="white-space:normal;"> - Text: freely soluble</span></span></div>
 </div>
 </div>
 <div class="summaryHiddenOff">
@@ -1078,7 +1081,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     </extension>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-water-pheur&quot;/>
                             <display value=&quot;Solubility purified water (PhEur)&quot;/>
                         </coding>
@@ -1091,7 +1094,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     ...
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-water-pheur&quot;/>
                             <display value=&quot;Solubility purified water (PhEur)&quot;/>
                         </coding>">Type: <span title="
@@ -1102,9 +1105,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-water-pheur&quot;/>
-                            <display value=&quot;Solubility purified water (PhEur)&quot;/>">Solubility purified water (PhEur)<span class="greyOff"> [solubility-water-pheur]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq)</span></span></span></div>
+                            <display value=&quot;Solubility purified water (PhEur)&quot;/>">Solubility purified water (PhEur)<span class="greyOff"> [solubility-water-pheur]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example)</span></span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -1154,14 +1157,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-acetone-pheur&quot;/>
                             <display value=&quot;Solubility Acetone (PhEur)&quot;/>
                         </coding>
                     </type>
                     <valueCodeableConcept>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-solubility-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-pq-example&quot;/>
                             <code value=&quot;sol-slight&quot;/>
                             <display value=&quot;Slightly soluble&quot;/>
                         </coding>
@@ -1174,7 +1177,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-acetone-pheur&quot;/>
                             <display value=&quot;Solubility Acetone (PhEur)&quot;/>
                         </coding>">Type: <span title="
@@ -1185,9 +1188,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-acetone-pheur&quot;/>
-                            <display value=&quot;Solubility Acetone (PhEur)&quot;/>">Solubility Acetone (PhEur)<span class="greyOff"> [solubility-acetone-pheur]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq)</span></span></span></div>
+                            <display value=&quot;Solubility Acetone (PhEur)&quot;/>">Solubility Acetone (PhEur)<span class="greyOff"> [solubility-acetone-pheur]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example)</span></span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -1197,7 +1200,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     ...
                     <valueCodeableConcept>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-solubility-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-pq-example&quot;/>
                             <code value=&quot;sol-slight&quot;/>
                             <display value=&quot;Slightly soluble&quot;/>
                         </coding>
@@ -1209,9 +1212,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <property>
                     <valueCodeableConcept>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-solubility-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-pq-example&quot;/>
                             <code value=&quot;sol-slight&quot;/>
-                            <display value=&quot;Slightly soluble&quot;/>">Slightly soluble<span class="greyOff"> [sol-slight]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-solubility-local-pq)</span></span><span style="white-space:normal;"> - Text: slightly soluble</span></span></div>
+                            <display value=&quot;Slightly soluble&quot;/>">Slightly soluble<span class="greyOff"> [sol-slight]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-pq-example)</span></span><span style="white-space:normal;"> - Text: slightly soluble</span></span></div>
 </div>
 </div>
 <div class="summaryHiddenOff">
@@ -1236,7 +1239,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     </extension>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-acetone-pheur&quot;/>
                             <display value=&quot;Solubility acetone (PhEur)&quot;/>
                         </coding>
@@ -1249,7 +1252,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     ...
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-acetone-pheur&quot;/>
                             <display value=&quot;Solubility acetone (PhEur)&quot;/>
                         </coding>">Type: <span title="
@@ -1260,9 +1263,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-acetone-pheur&quot;/>
-                            <display value=&quot;Solubility acetone (PhEur)&quot;/>">Solubility acetone (PhEur)<span class="greyOff"> [solubility-acetone-pheur]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq)</span></span></span></div>
+                            <display value=&quot;Solubility acetone (PhEur)&quot;/>">Solubility acetone (PhEur)<span class="greyOff"> [solubility-acetone-pheur]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example)</span></span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -1312,14 +1315,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-ethanol-pheur&quot;/>
                             <display value=&quot;Solubility Ethanol (PhEur)&quot;/>
                         </coding>
                     </type>
                     <valueCodeableConcept>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-solubility-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-pq-example&quot;/>
                             <code value=&quot;sol-soluble&quot;/>
                             <display value=&quot;Soluble&quot;/>
                         </coding>
@@ -1332,7 +1335,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-ethanol-pheur&quot;/>
                             <display value=&quot;Solubility Ethanol (PhEur)&quot;/>
                         </coding>">Type: <span title="
@@ -1343,9 +1346,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-ethanol-pheur&quot;/>
-                            <display value=&quot;Solubility Ethanol (PhEur)&quot;/>">Solubility Ethanol (PhEur)<span class="greyOff"> [solubility-ethanol-pheur]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq)</span></span></span></div>
+                            <display value=&quot;Solubility Ethanol (PhEur)&quot;/>">Solubility Ethanol (PhEur)<span class="greyOff"> [solubility-ethanol-pheur]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example)</span></span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -1355,7 +1358,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     ...
                     <valueCodeableConcept>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-solubility-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-pq-example&quot;/>
                             <code value=&quot;sol-soluble&quot;/>
                             <display value=&quot;Soluble&quot;/>
                         </coding>
@@ -1367,9 +1370,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <property>
                     <valueCodeableConcept>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-solubility-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-pq-example&quot;/>
                             <code value=&quot;sol-soluble&quot;/>
-                            <display value=&quot;Soluble&quot;/>">Soluble<span class="greyOff"> [sol-soluble]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-solubility-local-pq)</span></span><span style="white-space:normal;"> - Text: soluble</span></span></div>
+                            <display value=&quot;Soluble&quot;/>">Soluble<span class="greyOff"> [sol-soluble]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-value-pq-example)</span></span><span style="white-space:normal;"> - Text: soluble</span></span></div>
 </div>
 </div>
 <div class="summaryHiddenOff">
@@ -1394,7 +1397,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     </extension>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-ethanol-pheur&quot;/>
                             <display value=&quot;Solubility ethanol (PhEur)&quot;/>
                         </coding>
@@ -1407,7 +1410,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     ...
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-ethanol-pheur&quot;/>
                             <display value=&quot;Solubility ethanol (PhEur)&quot;/>
                         </coding>">Type: <span title="
@@ -1418,9 +1421,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-ethanol-pheur&quot;/>
-                            <display value=&quot;Solubility ethanol (PhEur)&quot;/>">Solubility ethanol (PhEur)<span class="greyOff"> [solubility-ethanol-pheur]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq)</span></span></span></div>
+                            <display value=&quot;Solubility ethanol (PhEur)&quot;/>">Solubility ethanol (PhEur)<span class="greyOff"> [solubility-ethanol-pheur]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example)</span></span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -1470,7 +1473,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-aq-water-2h-approx&quot;/>
                             <display value=&quot;Solubility at saturation in Purifed Water after 2 hours (approx)&quot;/>
                         </coding>
@@ -1486,7 +1489,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-aq-water-2h-approx&quot;/>
                             <display value=&quot;Solubility at saturation in Purifed Water after 2 hours (approx)&quot;/>
                         </coding>">Type: <span title="
@@ -1497,9 +1500,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-aq-water-2h-approx&quot;/>
-                            <display value=&quot;Solubility at saturation in Purifed Water after 2 hours (approx)&quot;/>">Solubility at saturation in Purifed Water after 2 hours (approx)<span class="greyOff"> [solubility-aq-water-2h-approx]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq)</span></span></span></div>
+                            <display value=&quot;Solubility at saturation in Purifed Water after 2 hours (approx)&quot;/>">Solubility at saturation in Purifed Water after 2 hours (approx)<span class="greyOff"> [solubility-aq-water-2h-approx]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example)</span></span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -1531,7 +1534,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-aq-glucose-2h-approx&quot;/>
                             <display value=&quot;Solubility at saturation in Glucose (5%) after 2 hours (approx)&quot;/>
                         </coding>
@@ -1548,7 +1551,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-aq-glucose-2h-approx&quot;/>
                             <display value=&quot;Solubility at saturation in Glucose (5%) after 2 hours (approx)&quot;/>
                         </coding>
@@ -1560,9 +1563,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-aq-glucose-2h-approx&quot;/>
-                            <display value=&quot;Solubility at saturation in Glucose (5%) after 2 hours (approx)&quot;/>">Solubility at saturation in Glucose (5%) after 2 hours (approx)<span class="greyOff"> [solubility-aq-glucose-2h-approx]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq)</span></span><span style="white-space:normal;"> - Text: Glucose solution (5%)</span></span></div>
+                            <display value=&quot;Solubility at saturation in Glucose (5%) after 2 hours (approx)&quot;/>">Solubility at saturation in Glucose (5%) after 2 hours (approx)<span class="greyOff"> [solubility-aq-glucose-2h-approx]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example)</span></span><span style="white-space:normal;"> - Text: Glucose solution (5%)</span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -1595,7 +1598,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-pq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCoding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                                 <code value=&quot;pH&quot;/>
                                 <display value=&quot;pH&quot;/>
                             </valueCoding>
@@ -1608,7 +1611,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     </extension>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-usp-ph&quot;/>
                             <display value=&quot;Solubility as a function of pH in USP buffers&quot;/>
                         </coding>
@@ -1625,7 +1628,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     ...
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-usp-ph&quot;/>
                             <display value=&quot;Solubility as a function of pH in USP buffers&quot;/>
                         </coding>">Type: <span title="
@@ -1636,9 +1639,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-usp-ph&quot;/>
-                            <display value=&quot;Solubility as a function of pH in USP buffers&quot;/>">Solubility as a function of pH in USP buffers<span class="greyOff"> [solubility-usp-ph]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq)</span></span></span></div>
+                            <display value=&quot;Solubility as a function of pH in USP buffers&quot;/>">Solubility as a function of pH in USP buffers<span class="greyOff"> [solubility-usp-ph]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example)</span></span></span></div>
 <div class="indent sbddetails2">
 <div><span title="
 <Bundle>
@@ -1649,7 +1652,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-pq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCoding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                                 <code value=&quot;pH&quot;/>
                                 <display value=&quot;pH&quot;/>
                             </valueCoding>">Parameter: </span><span title="
@@ -1661,9 +1664,21 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-pq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCoding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                                 <code value=&quot;pH&quot;/>
-                                <display value=&quot;pH&quot;/>">pH<span class="greyOff"> [pH]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq)</span></span></div>
+                                <display value=&quot;pH&quot;/>
+                            </valueCoding>"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <SubstanceDefinition>
+                <property>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-pq&quot;>
+                        <extension url=&quot;parameter&quot;>
+                            <valueCoding>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
+                                <code value=&quot;pH&quot;/>
+                                <display value=&quot;pH&quot;/>">pH<span class="greyOff"> [pH]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example)</span></span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -1716,7 +1731,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-pq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCoding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                                 <code value=&quot;pH&quot;/>
                                 <display value=&quot;pH&quot;/>
                             </valueCoding>
@@ -1729,7 +1744,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     </extension>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-usp-ph&quot;/>
                             <display value=&quot;Solubility as a function of pH in USP buffers&quot;/>
                         </coding>
@@ -1746,7 +1761,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     ...
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-usp-ph&quot;/>
                             <display value=&quot;Solubility as a function of pH in USP buffers&quot;/>
                         </coding>">Type: <span title="
@@ -1757,9 +1772,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;solubility-usp-ph&quot;/>
-                            <display value=&quot;Solubility as a function of pH in USP buffers&quot;/>">Solubility as a function of pH in USP buffers<span class="greyOff"> [solubility-usp-ph]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq)</span></span></span></div>
+                            <display value=&quot;Solubility as a function of pH in USP buffers&quot;/>">Solubility as a function of pH in USP buffers<span class="greyOff"> [solubility-usp-ph]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example)</span></span></span></div>
 <div class="indent sbddetails2">
 <div><span title="
 <Bundle>
@@ -1770,7 +1785,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-pq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCoding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                                 <code value=&quot;pH&quot;/>
                                 <display value=&quot;pH&quot;/>
                             </valueCoding>">Parameter: </span><span title="
@@ -1782,9 +1797,21 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-pq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCoding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                                 <code value=&quot;pH&quot;/>
-                                <display value=&quot;pH&quot;/>">pH<span class="greyOff"> [pH]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq)</span></span></div>
+                                <display value=&quot;pH&quot;/>
+                            </valueCoding>"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <SubstanceDefinition>
+                <property>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-pq&quot;>
+                        <extension url=&quot;parameter&quot;>
+                            <valueCoding>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
+                                <code value=&quot;pH&quot;/>
+                                <display value=&quot;pH&quot;/>">pH<span class="greyOff"> [pH]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example)</span></span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -1847,7 +1874,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-pq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCoding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                                 <code value=&quot;concentration&quot;/>
                                 <display value=&quot;Concentration&quot;/>
                             </valueCoding>
@@ -1862,7 +1889,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-pq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCoding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                                 <code value=&quot;temperature&quot;/>
                                 <display value=&quot;Temperature&quot;/>
                             </valueCoding>
@@ -1876,7 +1903,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     </extension>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;ph-aq&quot;/>
                             <display value=&quot;pH in aqueous solution&quot;/>
                         </coding>
@@ -1889,7 +1916,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     ...
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;ph-aq&quot;/>
                             <display value=&quot;pH in aqueous solution&quot;/>
                         </coding>">Type: <span title="
@@ -1900,9 +1927,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;ph-aq&quot;/>
-                            <display value=&quot;pH in aqueous solution&quot;/>">pH in aqueous solution<span class="greyOff"> [ph-aq]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq)</span></span></span></div>
+                            <display value=&quot;pH in aqueous solution&quot;/>">pH in aqueous solution<span class="greyOff"> [ph-aq]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example)</span></span></span></div>
 <div class="indent sbddetails2">
 <div><span title="
 <Bundle>
@@ -1913,7 +1940,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-pq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCoding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                                 <code value=&quot;concentration&quot;/>
                                 <display value=&quot;Concentration&quot;/>
                             </valueCoding>">Parameter: </span><span title="
@@ -1925,9 +1952,21 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-pq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCoding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                                 <code value=&quot;concentration&quot;/>
-                                <display value=&quot;Concentration&quot;/>">Concentration<span class="greyOff"> [concentration]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq)</span></span></div>
+                                <display value=&quot;Concentration&quot;/>
+                            </valueCoding>"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <SubstanceDefinition>
+                <property>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-pq&quot;>
+                        <extension url=&quot;parameter&quot;>
+                            <valueCoding>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
+                                <code value=&quot;concentration&quot;/>
+                                <display value=&quot;Concentration&quot;/>">Concentration<span class="greyOff"> [concentration]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example)</span></span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -1960,7 +1999,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-pq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCoding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                                 <code value=&quot;temperature&quot;/>
                                 <display value=&quot;Temperature&quot;/>
                             </valueCoding>">Parameter: </span><span title="
@@ -1972,9 +2011,21 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-pq&quot;>
                         <extension url=&quot;parameter&quot;>
                             <valueCoding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                                 <code value=&quot;temperature&quot;/>
-                                <display value=&quot;Temperature&quot;/>">Temperature<span class="greyOff"> [temperature]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq)</span></span></div>
+                                <display value=&quot;Temperature&quot;/>
+                            </valueCoding>"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <SubstanceDefinition>
+                <property>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-substance-property-parameter-pq&quot;>
+                        <extension url=&quot;parameter&quot;>
+                            <valueCoding>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
+                                <code value=&quot;temperature&quot;/>
+                                <display value=&quot;Temperature&quot;/>">Temperature<span class="greyOff"> [temperature]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example)</span></span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -2042,14 +2093,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;hygroscopy&quot;/>
                             <display value=&quot;Hygroscopy&quot;/>
                         </coding>
                     </type>
                     <valueCodeableConcept>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;hygroscopy-hygroscopic&quot;/>
                             <display value=&quot;Hygroscopic&quot;/>
                         </coding>
@@ -2062,7 +2113,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;hygroscopy&quot;/>
                             <display value=&quot;Hygroscopy&quot;/>
                         </coding>">Type: <span title="
@@ -2073,9 +2124,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;hygroscopy&quot;/>
-                            <display value=&quot;Hygroscopy&quot;/>">Hygroscopy<span class="greyOff"> [hygroscopy]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq)</span></span></span></div>
+                            <display value=&quot;Hygroscopy&quot;/>">Hygroscopy<span class="greyOff"> [hygroscopy]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example)</span></span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -2085,7 +2136,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     ...
                     <valueCodeableConcept>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;hygroscopy-hygroscopic&quot;/>
                             <display value=&quot;Hygroscopic&quot;/>
                         </coding>
@@ -2097,9 +2148,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <property>
                     <valueCodeableConcept>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example&quot;/>
                             <code value=&quot;hygroscopy-hygroscopic&quot;/>
-                            <display value=&quot;Hygroscopic&quot;/>">Hygroscopic<span class="greyOff"> [hygroscopy-hygroscopic]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-local-pq)</span></span><span style="white-space:normal;"> - Text: Hygroscopic</span></span></div>
+                            <display value=&quot;Hygroscopic&quot;/>">Hygroscopic<span class="greyOff"> [hygroscopy-hygroscopic]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example)</span></span><span style="white-space:normal;"> - Text: Hygroscopic</span></span></div>
 </div>
 </div>
 <div class="indent sbddetails"><span title="
@@ -2119,7 +2170,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
             <SubstanceDefinition>
                 <structure>
                     <stereochemistry>
-                        <text value=&quot;One asymmetric center and one axis of chirality; (S,M) - enantiomer&quot;/>">Stereochemistry: </span><span><span style="white-space:normal;">One asymmetric center and one axis of chirality; (S,M) - enantiomer</span></span></div>
+                        <text value=&quot;One asymmetric center and one axis of chirality; (S,M) - enantiomer&quot;/>">Stereochemistry: <span style="white-space:normal;">One asymmetric center and one axis of chirality; (S,M) - enantiomer</span></span></div>
 </div>
 </div>
 </div>
@@ -2157,6 +2208,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
 	    transform:translate(-2px, -2px);
 	    border-radius: 5px;
 	    visibility:visible; /* this is so that the outer border doesn't hide these */
+    }
+    .indent-right {
+        margin-right:0.7em;
     }
     .indent-no-border {
         margin-left:1em; 	/* controls line to line indent */
@@ -2212,6 +2266,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
 
     .cui { background-Color:#d9d2e9 }
     .cuidetails { background-Color:#e6e1f0 }
+    .cuidetails2 { background-Color:#ebe9f0 }
 
     .sbd,.hcs { background-Color:#affad5 }
     .sbddetails,.hcsl2 { background-Color:#c7fce2 }

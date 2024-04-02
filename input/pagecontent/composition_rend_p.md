@@ -35,7 +35,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     <productName value=&quot;Stalbatolol&quot;/>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-pq-example&quot;/>
                             <code value=&quot;Proprietary&quot;/>
                             <display value=&quot;Proprietary&quot;/>
                         </coding>
@@ -56,7 +56,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <packageFor>
                     <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
                 </packageFor>
-                <description value=&quot;The commercial primary pack is a high-density polyethylene (HDPE) bottle with a child-resistant polypropylene (PP) screw cap.  Inside the bottle is a desiccant, containing silica gel. Induction seal membranes provide additional tamper evidence. For further details of the packaging components, see ‘P.7 Container Closure System for Drug Product’. &quot;/>
+                <description value=&quot;The commercial primary pack is a high-density polyethylene (HDPE) bottle with a child-resistant polypropylene (PP) screw cap.  Inside the bottle is a desiccant, containing silica gel. Induction seal membranes provide additional tamper evidence. For further details of the packaging components, see ‘P.7 Container Closure System for Drug Product’.&quot;/>
             </PackagedProductDefinition>
         </resource>
     </entry>
@@ -125,7 +125,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 </role>
                 <function>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/ingredient-function&quot;/>
                         <code value=&quot;diluent&quot;/>
                         <display value=&quot;Diluent&quot;/>
                     </coding>
@@ -177,7 +177,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 </role>
                 <function>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/ingredient-function&quot;/>
                         <code value=&quot;disintegrant&quot;/>
                         <display value=&quot;Disintegrant&quot;/>
                     </coding>
@@ -229,7 +229,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 </role>
                 <function>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/ingredient-function&quot;/>
                         <code value=&quot;disintegrant&quot;/>
                         <display value=&quot;Disintegrant&quot;/>
                     </coding>
@@ -281,7 +281,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 </role>
                 <function>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/ingredient-function&quot;/>
                         <code value=&quot;lubricant&quot;/>
                         <display value=&quot;Lubricant&quot;/>
                     </coding>
@@ -322,7 +322,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <id value=&quot;substance1&quot;/>
                 <grade>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/package-grade&quot;/>
                         <code value=&quot;in-house&quot;/>
                         <display value=&quot;In-house&quot;/>
                     </coding>
@@ -340,7 +340,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <id value=&quot;sd-excipient1&quot;/>
                 <grade>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/package-grade&quot;/>
                         <code value=&quot;NF-PH-Eur&quot;/>
                         <display value=&quot;NF / Ph Eur&quot;/>
                     </coding>
@@ -358,7 +358,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <id value=&quot;sd-excipient2&quot;/>
                 <grade>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/package-grade&quot;/>
                         <code value=&quot;NF-PH-Eur&quot;/>
                         <display value=&quot;NF / Ph Eur&quot;/>
                     </coding>
@@ -376,7 +376,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <id value=&quot;sd-excipient3&quot;/>
                 <grade>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/package-grade&quot;/>
                         <code value=&quot;NF-PH-Eur&quot;/>
                         <display value=&quot;NF / Ph Eur&quot;/>
                     </coding>
@@ -394,7 +394,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <id value=&quot;sd-excipient4&quot;/>
                 <grade>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/package-grade&quot;/>
                         <code value=&quot;NF-PH-Eur&quot;/>
                         <display value=&quot;NF / Ph Eur&quot;/>
                     </coding>
@@ -409,11 +409,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
 <div class="debugOff"><span title="
 <Bundle>
     <meta>
-        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-composition-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-composition-pq</span></div>
+        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-composition-pq&quot;>">Profile: </span><span title="
+<Bundle>
+    <meta>
+        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-composition-pq&quot;>">http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-composition-pq</span></div>
 <div><span title="
 <Bundle>
     ...
-    <type value=&quot;collection&quot;>">Type: </span><span><span>collection</span></span></div>
+    <type value=&quot;collection&quot;>">Type: <span>collection</span></span></div>
 </div>
 </div>
 <div>
@@ -429,7 +432,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     <productName value=&quot;Stalbatolol&quot;/>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-pq-example&quot;/>
                             <code value=&quot;Proprietary&quot;/>
                             <display value=&quot;Proprietary&quot;/>
                         </coding>
@@ -445,7 +448,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     <productName value=&quot;Stalbatolol&quot;/>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-pq-example&quot;/>
                             <code value=&quot;Proprietary&quot;/>
                             <display value=&quot;Proprietary&quot;/>
                         </coding>
@@ -459,7 +462,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                     ...
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-pq-example&quot;/>
                             <code value=&quot;Proprietary&quot;/>
                             <display value=&quot;Proprietary&quot;/>
                         </coding>">Name type: </span><span title="
@@ -470,9 +473,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                 <name>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-pq-example&quot;/>
                             <code value=&quot;Proprietary&quot;/>
-                            <display value=&quot;Proprietary&quot;/>">Proprietary<span class="greyOff"> [Proprietary]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq)</span></span></div>
+                            <display value=&quot;Proprietary&quot;/>">Proprietary<span class="greyOff"> [Proprietary]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-pq-example)</span></span></div>
 </div>
 <div class="summaryHiddenOff">
 <div><span title="
@@ -481,7 +484,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
         <resource>
             <MedicinalProductDefinition>
                 ...
-                <description value=&quot;Stelbatalol is formulated as an immediate-release, oral, solid dosage form in strengths of 20 mg of the free base equivalent. The 20 mg strength is presented as an orange, round, film coated tablet, debossed with '175' on one side.&quot;>">Description: </span><span>Stelbatalol is formulated as an immediate-release, oral, solid dosage form in strengths of 20 mg of the free base equivalent. The 20 mg strength is presented as an orange, round, film coated tablet, debossed with '175' on one side.</span></div>
+                <description value=&quot;Stelbatalol is formulated as an immediate-release, oral, solid dosage form in strengths of 20 mg of the free base equivalent. The 20 mg strength is presented as an orange, round, film coated tablet, debossed with '175' on one side.&quot;>">Description: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <MedicinalProductDefinition>
+                ...
+                <description value=&quot;Stelbatalol is formulated as an immediate-release, oral, solid dosage form in strengths of 20 mg of the free base equivalent. The 20 mg strength is presented as an orange, round, film coated tablet, debossed with '175' on one side.&quot;>">Stelbatalol is formulated as an immediate-release, oral, solid dosage form in strengths of 20 mg of the free base equivalent. The 20 mg strength is presented as an orange, round, film coated tablet, debossed with '175' on one side.</span></div>
 </div>
 <div class="htmlTableRemove"><br style="line-height:6px;"><div class="indent org">
 <div class="indent-no-border"><span><b>Description</b><br><br style="line-height:6px;"><a href="#MedicinalProductDefinition-medicinalproductdefinition-drug-product-dxpq-ex1" class="plainlink">Stelbatalol is formulated as an immediate-release, oral, solid dosage form in strengths of 20 mg of the free base equivalent. The 20 mg strength is presented as an orange, round, film coated tablet, debossed with '175' on one side.</a></span><br style="line-height:6px;"><br style="line-height:6px;"><span><b>Composition</b><br></span><br style="line-height:6px;"><span>Qualitative and Quantitative Composition</span><br><br style="line-height:6px;"><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%;">
@@ -694,7 +703,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
 <td></td>
 <td></td>
 </tr>
-</table><br style="line-height:6px;"><span><b>Container closure system</b><br></span><br style="line-height:6px;"><a href="#PackagedProductDefinition-packagedproductdefinition-dxpq-ex1" class="plainlink">The commercial primary pack is a high-density polyethylene (HDPE) bottle with a child-resistant polypropylene (PP) screw cap.  Inside the bottle is a desiccant, containing silica gel. Induction seal membranes provide additional tamper evidence. For further details of the packaging components, see ‘P.7 Container Closure System for Drug Product’. </a></div>
+</table><br style="line-height:6px;"><span><b>Container closure system</b><br></span><br style="line-height:6px;"><a href="#PackagedProductDefinition-packagedproductdefinition-dxpq-ex1" class="plainlink">The commercial primary pack is a high-density polyethylene (HDPE) bottle with a child-resistant polypropylene (PP) screw cap.  Inside the bottle is a desiccant, containing silica gel. Induction seal membranes provide additional tamper evidence. For further details of the packaging components, see ‘P.7 Container Closure System for Drug Product’.</a></div>
 </div><br style="line-height:6px;"></div>
 <div class="summaryHiddenOff"></div>
 <div class="indent ppd summaryUnit" ondblclick="summaryHandler(event)"><sup class="rotate-left" title="arrow indicates that this PackagedProductDefinition resource points back to the parent MedicinalProductDefinition, instead of being linked forwards from it - via PackagedProductDefinition.packageFor">↸</sup><span class="debugOff">arrow indicates that this PackagedProductDefinition resource points back to the parent MedicinalProductDefinition, instead of being linked forwards from it - via PackagedProductDefinition.packageFor<br></span><span class="bold" title="PackagedProductDefinition (id: packagedproductdefinition-dxpq-ex1)(fullUrl: urn:uuid:88a068e2-1d97-337b-3b9c-4b3f14bc3923)
@@ -711,7 +720,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                 <packageFor>
                     <reference value=&quot;MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1&quot;/>
                 </packageFor>
-                <description value=&quot;The commercial primary pack is a high-density polyethylene (HDPE) bottle with a child-resistant polypropylene (PP) screw cap.  Inside the bottle is a desiccant, containing silica gel. Induction seal membranes provide additional tamper evidence. For further details of the packaging components, see ‘P.7 Container Closure System for Drug Product’. &quot;/>" id="PackagedProductDefinition-packagedproductdefinition-dxpq-ex1"><a class="plainLink">Package</a></span><span class="summaryShowsOff"></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/packagedproductdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/packagedproductdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/packagedproductdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: packagedproductdefinition-dxpq-ex1</div>
+                <description value=&quot;The commercial primary pack is a high-density polyethylene (HDPE) bottle with a child-resistant polypropylene (PP) screw cap.  Inside the bottle is a desiccant, containing silica gel. Induction seal membranes provide additional tamper evidence. For further details of the packaging components, see ‘P.7 Container Closure System for Drug Product’.&quot;/>" id="PackagedProductDefinition-packagedproductdefinition-dxpq-ex1"><a class="plainLink">Package</a></span><span class="summaryShowsOff"></span><span class="debugOff"> [documentation <a target="_blank" href="http://hl7.org/fhir/R4/packagedproductdefinition.html#tt-uml">R4</a> <a target="_blank" href="http://hl7.org/fhir/packagedproductdefinition.html#tt-uml">R5</a> <a target="_blank" href="http://build.fhir.org/packagedproductdefinition.html#tt-uml">R6</a>]</span><div class="debugOff">id: packagedproductdefinition-dxpq-ex1</div>
 <div class="debugOff"> fullUrl: urn:uuid:88a068e2-1d97-337b-3b9c-4b3f14bc3923</div>
 <div class="debugOff"></div>
 <div class="debugOff"><span title="
@@ -720,7 +729,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
         <resource>
             <PackagedProductDefinition>
                 <meta>
-                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-drug-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-drug-pq</span></div>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-drug-pq&quot;>">Profile: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PackagedProductDefinition>
+                <meta>
+                    <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-drug-pq&quot;>">http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-drug-pq</span></div>
 <div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
@@ -728,7 +743,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
         <resource>
             <PackagedProductDefinition>
                 ...
-                <description value=&quot;The commercial primary pack is a high-density polyethylene (HDPE) bottle with a child-resistant polypropylene (PP) screw cap.  Inside the bottle is a desiccant, containing silica gel. Induction seal membranes provide additional tamper evidence. For further details of the packaging components, see ‘P.7 Container Closure System for Drug Product’. &quot;>">Description: </span><span>The commercial primary pack is a high-density polyethylene (HDPE) bottle with a child-resistant polypropylene (PP) screw cap.  Inside the bottle is a desiccant, containing silica gel. Induction seal membranes provide additional tamper evidence. For further details of the packaging components, see ‘P.7 Container Closure System for Drug Product’. </span></div>
+                <description value=&quot;The commercial primary pack is a high-density polyethylene (HDPE) bottle with a child-resistant polypropylene (PP) screw cap.  Inside the bottle is a desiccant, containing silica gel. Induction seal membranes provide additional tamper evidence. For further details of the packaging components, see ‘P.7 Container Closure System for Drug Product’.&quot;>">Description: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PackagedProductDefinition>
+                ...
+                <description value=&quot;The commercial primary pack is a high-density polyethylene (HDPE) bottle with a child-resistant polypropylene (PP) screw cap.  Inside the bottle is a desiccant, containing silica gel. Induction seal membranes provide additional tamper evidence. For further details of the packaging components, see ‘P.7 Container Closure System for Drug Product’.&quot;>">The commercial primary pack is a high-density polyethylene (HDPE) bottle with a child-resistant polypropylene (PP) screw cap.  Inside the bottle is a desiccant, containing silica gel. Induction seal membranes provide additional tamper evidence. For further details of the packaging components, see ‘P.7 Container Closure System for Drug Product’.</span></div>
 </div>
 </div>
 <div class="indent ing summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="Ingredient (id: ingredient1)(fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a65)
@@ -792,7 +813,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
         <resource>
             <Ingredient>
                 ...
-                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+                <status value=&quot;active&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Ingredient>
+                ...
+                <status value=&quot;active&quot;>"><span>active</span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -846,7 +873,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                             <value value=&quot;97.9&quot;/>
                             <unit value=&quot;% w/w&quot;/>
                         </concentrationQuantity>
-                    </strength>">Substance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
+                    </strength>" class="summaryHiddenOff">Substance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
 <div class="debugOff"><span>Found a parent (Ingredient/code, id: ingredient1 fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a65)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: substance1)(fullUrl: urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380474)
 
 <Bundle>
@@ -856,7 +883,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                 <id value=&quot;substance1&quot;/>
                 <grade>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/package-grade&quot;/>
                         <code value=&quot;in-house&quot;/>
                         <display value=&quot;In-house&quot;/>
                     </coding>
@@ -873,7 +900,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
         <resource>
             <SubstanceDefinition>
                 <name>
-                    <name value=&quot;Stelbatolol&quot;>">Name: </span><span><span>Stelbatolol</span></span></div>
+                    <name value=&quot;Stelbatolol&quot;>">Name: <span>Stelbatolol</span></span></div>
 </div>
 </div>
 <div class="summaryHiddenOff"></div>
@@ -886,19 +913,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                 ...
                 <grade>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/package-grade&quot;/>
                         <code value=&quot;in-house&quot;/>
                         <display value=&quot;In-house&quot;/>
-                    </coding>">Grade: </span><span><span title="
+                    </coding>">Grade: <span title="
 <Bundle>
     <entry>
         <resource>
             <SubstanceDefinition>
                 <grade>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/package-grade&quot;/>
                         <code value=&quot;in-house&quot;/>
-                        <display value=&quot;In-house&quot;/>">In-house<span class="greyOff"> [in-house]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq)</span></span></span></div>
+                        <display value=&quot;In-house&quot;/>">In-house<span class="greyOff"> [in-house]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/package-grade)</span></span></span></div>
 </div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
@@ -988,7 +1015,17 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                         <concentrationQuantity>
                             <value value=&quot;97.9&quot;/>
                             <unit value=&quot;% w/w&quot;/>
-                        </concentrationQuantity>">Strength</span><div class="indent ingsubstr"><span title="
+                        </concentrationQuantity>">Strength</span><div class="indent ingsubstr">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Ingredient>
+                <substance>
+                    <strength>
+                        <concentrationQuantity>
+                            <value value=&quot;97.9&quot;/>
+                            <unit value=&quot;% w/w&quot;/>">Concentration Quantity: </span><span title="
 <Bundle>
     <entry>
         <resource>
@@ -998,6 +1035,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                         <concentrationQuantity>
                             <value value=&quot;97.9&quot;/>
                             <unit value=&quot;% w/w&quot;/>">97.9% w/w</span></div>
+</div>
 </div>
 </div>
 </div>
@@ -1023,7 +1061,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                 </role>
                 <function>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/ingredient-function&quot;/>
                         <code value=&quot;diluent&quot;/>
                         <display value=&quot;Diluent&quot;/>
                     </coding>
@@ -1070,7 +1108,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
         <resource>
             <Ingredient>
                 ...
-                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+                <status value=&quot;active&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Ingredient>
+                ...
+                <status value=&quot;active&quot;>"><span>active</span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -1100,7 +1144,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                 ...
                 <function>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/ingredient-function&quot;/>
                         <code value=&quot;diluent&quot;/>
                         <display value=&quot;Diluent&quot;/>
                     </coding>">Function: </span><span title="
@@ -1110,9 +1154,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
             <Ingredient>
                 <function>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/ingredient-function&quot;/>
                         <code value=&quot;diluent&quot;/>
-                        <display value=&quot;Diluent&quot;/>">Diluent<span class="greyOff"> [diluent]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq)</span></span></div>
+                        <display value=&quot;Diluent&quot;/>">Diluent<span class="greyOff"> [diluent]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/ingredient-function)</span></span></div>
 </div>
 <div class="indent ingsub"><span title="
 <Bundle>
@@ -1144,7 +1188,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                             <value value=&quot;1&quot;/>
                             <unit value=&quot;% w/w&quot;/>
                         </concentrationQuantity>
-                    </strength>">Substance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
+                    </strength>" class="summaryHiddenOff">Substance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
 <div class="debugOff"><span>Found a parent (Ingredient/code, id: excipient1 fullUrl: urn:uuid:b89ed9d3-80f9-0cfb-70a1-5a6572e73a65)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: sd-excipient1)(fullUrl: urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380475)
 
 <Bundle>
@@ -1154,7 +1198,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                 <id value=&quot;sd-excipient1&quot;/>
                 <grade>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/package-grade&quot;/>
                         <code value=&quot;NF-PH-Eur&quot;/>
                         <display value=&quot;NF / Ph Eur&quot;/>
                     </coding>
@@ -1171,7 +1215,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
         <resource>
             <SubstanceDefinition>
                 <name>
-                    <name value=&quot;Mannitol&quot;>">Name: </span><span><span>Mannitol</span></span></div>
+                    <name value=&quot;Mannitol&quot;>">Name: <span>Mannitol</span></span></div>
 </div>
 </div>
 <div class="summaryHiddenOff"></div>
@@ -1184,19 +1228,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                 ...
                 <grade>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/package-grade&quot;/>
                         <code value=&quot;NF-PH-Eur&quot;/>
                         <display value=&quot;NF / Ph Eur&quot;/>
-                    </coding>">Grade: </span><span><span title="
+                    </coding>">Grade: <span title="
 <Bundle>
     <entry>
         <resource>
             <SubstanceDefinition>
                 <grade>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/package-grade&quot;/>
                         <code value=&quot;NF-PH-Eur&quot;/>
-                        <display value=&quot;NF / Ph Eur&quot;/>">NF / Ph Eur<span class="greyOff"> [NF-PH-Eur]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq)</span></span></span></div>
+                        <display value=&quot;NF / Ph Eur&quot;/>">NF / Ph Eur<span class="greyOff"> [NF-PH-Eur]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/package-grade)</span></span></span></div>
 </div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
@@ -1283,7 +1327,17 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                         <concentrationQuantity>
                             <value value=&quot;1&quot;/>
                             <unit value=&quot;% w/w&quot;/>
-                        </concentrationQuantity>">Strength</span><div class="indent ingsubstr"><span title="
+                        </concentrationQuantity>">Strength</span><div class="indent ingsubstr">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Ingredient>
+                <substance>
+                    <strength>
+                        <concentrationQuantity>
+                            <value value=&quot;1&quot;/>
+                            <unit value=&quot;% w/w&quot;/>">Concentration Quantity: </span><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1293,6 +1347,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                         <concentrationQuantity>
                             <value value=&quot;1&quot;/>
                             <unit value=&quot;% w/w&quot;/>">1% w/w</span></div>
+</div>
 </div>
 </div>
 </div>
@@ -1318,7 +1373,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                 </role>
                 <function>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/ingredient-function&quot;/>
                         <code value=&quot;disintegrant&quot;/>
                         <display value=&quot;Disintegrant&quot;/>
                     </coding>
@@ -1365,7 +1420,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
         <resource>
             <Ingredient>
                 ...
-                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+                <status value=&quot;active&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Ingredient>
+                ...
+                <status value=&quot;active&quot;>"><span>active</span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -1395,7 +1456,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                 ...
                 <function>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/ingredient-function&quot;/>
                         <code value=&quot;disintegrant&quot;/>
                         <display value=&quot;Disintegrant&quot;/>
                     </coding>">Function: </span><span title="
@@ -1405,9 +1466,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
             <Ingredient>
                 <function>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/ingredient-function&quot;/>
                         <code value=&quot;disintegrant&quot;/>
-                        <display value=&quot;Disintegrant&quot;/>">Disintegrant<span class="greyOff"> [disintegrant]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq)</span></span></div>
+                        <display value=&quot;Disintegrant&quot;/>">Disintegrant<span class="greyOff"> [disintegrant]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/ingredient-function)</span></span></div>
 </div>
 <div class="indent ingsub"><span title="
 <Bundle>
@@ -1439,7 +1500,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                             <value value=&quot;0.5&quot;/>
                             <unit value=&quot;% w/w&quot;/>
                         </concentrationQuantity>
-                    </strength>">Substance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
+                    </strength>" class="summaryHiddenOff">Substance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
 <div class="debugOff"><span>Found a parent (Ingredient/code, id: excipient2 fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-71a1-5a6572e73a65)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: sd-excipient2)(fullUrl: urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380476)
 
 <Bundle>
@@ -1449,7 +1510,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                 <id value=&quot;sd-excipient2&quot;/>
                 <grade>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/package-grade&quot;/>
                         <code value=&quot;NF-PH-Eur&quot;/>
                         <display value=&quot;NF / Ph Eur&quot;/>
                     </coding>
@@ -1466,7 +1527,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
         <resource>
             <SubstanceDefinition>
                 <name>
-                    <name value=&quot;Maize starch&quot;>">Name: </span><span><span>Maize starch</span></span></div>
+                    <name value=&quot;Maize starch&quot;>">Name: <span>Maize starch</span></span></div>
 </div>
 </div>
 <div class="summaryHiddenOff"></div>
@@ -1479,19 +1540,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                 ...
                 <grade>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/package-grade&quot;/>
                         <code value=&quot;NF-PH-Eur&quot;/>
                         <display value=&quot;NF / Ph Eur&quot;/>
-                    </coding>">Grade: </span><span><span title="
+                    </coding>">Grade: <span title="
 <Bundle>
     <entry>
         <resource>
             <SubstanceDefinition>
                 <grade>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/package-grade&quot;/>
                         <code value=&quot;NF-PH-Eur&quot;/>
-                        <display value=&quot;NF / Ph Eur&quot;/>">NF / Ph Eur<span class="greyOff"> [NF-PH-Eur]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq)</span></span></span></div>
+                        <display value=&quot;NF / Ph Eur&quot;/>">NF / Ph Eur<span class="greyOff"> [NF-PH-Eur]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/package-grade)</span></span></span></div>
 </div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
@@ -1578,7 +1639,17 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                         <concentrationQuantity>
                             <value value=&quot;0.5&quot;/>
                             <unit value=&quot;% w/w&quot;/>
-                        </concentrationQuantity>">Strength</span><div class="indent ingsubstr"><span title="
+                        </concentrationQuantity>">Strength</span><div class="indent ingsubstr">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Ingredient>
+                <substance>
+                    <strength>
+                        <concentrationQuantity>
+                            <value value=&quot;0.5&quot;/>
+                            <unit value=&quot;% w/w&quot;/>">Concentration Quantity: </span><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1588,6 +1659,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                         <concentrationQuantity>
                             <value value=&quot;0.5&quot;/>
                             <unit value=&quot;% w/w&quot;/>">0.5% w/w</span></div>
+</div>
 </div>
 </div>
 </div>
@@ -1613,7 +1685,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                 </role>
                 <function>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/ingredient-function&quot;/>
                         <code value=&quot;disintegrant&quot;/>
                         <display value=&quot;Disintegrant&quot;/>
                     </coding>
@@ -1660,7 +1732,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
         <resource>
             <Ingredient>
                 ...
-                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+                <status value=&quot;active&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Ingredient>
+                ...
+                <status value=&quot;active&quot;>"><span>active</span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -1690,7 +1768,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                 ...
                 <function>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/ingredient-function&quot;/>
                         <code value=&quot;disintegrant&quot;/>
                         <display value=&quot;Disintegrant&quot;/>
                     </coding>">Function: </span><span title="
@@ -1700,9 +1778,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
             <Ingredient>
                 <function>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/ingredient-function&quot;/>
                         <code value=&quot;disintegrant&quot;/>
-                        <display value=&quot;Disintegrant&quot;/>">Disintegrant<span class="greyOff"> [disintegrant]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq)</span></span></div>
+                        <display value=&quot;Disintegrant&quot;/>">Disintegrant<span class="greyOff"> [disintegrant]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/ingredient-function)</span></span></div>
 </div>
 <div class="indent ingsub"><span title="
 <Bundle>
@@ -1734,7 +1812,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                             <value value=&quot;0.25&quot;/>
                             <unit value=&quot;% w/w&quot;/>
                         </concentrationQuantity>
-                    </strength>">Substance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
+                    </strength>" class="summaryHiddenOff">Substance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
 <div class="debugOff"><span>Found a parent (Ingredient/code, id: excipient3 fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a66)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: sd-excipient3)(fullUrl: urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380477)
 
 <Bundle>
@@ -1744,7 +1822,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                 <id value=&quot;sd-excipient3&quot;/>
                 <grade>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/package-grade&quot;/>
                         <code value=&quot;NF-PH-Eur&quot;/>
                         <display value=&quot;NF / Ph Eur&quot;/>
                     </coding>
@@ -1761,7 +1839,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
         <resource>
             <SubstanceDefinition>
                 <name>
-                    <name value=&quot;Calcium carboxymethylcellulose&quot;>">Name: </span><span><span>Calcium carboxymethylcellulose</span></span></div>
+                    <name value=&quot;Calcium carboxymethylcellulose&quot;>">Name: <span>Calcium carboxymethylcellulose</span></span></div>
 </div>
 </div>
 <div class="summaryHiddenOff"></div>
@@ -1774,19 +1852,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                 ...
                 <grade>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/package-grade&quot;/>
                         <code value=&quot;NF-PH-Eur&quot;/>
                         <display value=&quot;NF / Ph Eur&quot;/>
-                    </coding>">Grade: </span><span><span title="
+                    </coding>">Grade: <span title="
 <Bundle>
     <entry>
         <resource>
             <SubstanceDefinition>
                 <grade>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/package-grade&quot;/>
                         <code value=&quot;NF-PH-Eur&quot;/>
-                        <display value=&quot;NF / Ph Eur&quot;/>">NF / Ph Eur<span class="greyOff"> [NF-PH-Eur]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq)</span></span></span></div>
+                        <display value=&quot;NF / Ph Eur&quot;/>">NF / Ph Eur<span class="greyOff"> [NF-PH-Eur]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/package-grade)</span></span></span></div>
 </div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
@@ -1873,7 +1951,17 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                         <concentrationQuantity>
                             <value value=&quot;0.25&quot;/>
                             <unit value=&quot;% w/w&quot;/>
-                        </concentrationQuantity>">Strength</span><div class="indent ingsubstr"><span title="
+                        </concentrationQuantity>">Strength</span><div class="indent ingsubstr">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Ingredient>
+                <substance>
+                    <strength>
+                        <concentrationQuantity>
+                            <value value=&quot;0.25&quot;/>
+                            <unit value=&quot;% w/w&quot;/>">Concentration Quantity: </span><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1883,6 +1971,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                         <concentrationQuantity>
                             <value value=&quot;0.25&quot;/>
                             <unit value=&quot;% w/w&quot;/>">0.25% w/w</span></div>
+</div>
 </div>
 </div>
 </div>
@@ -1908,7 +1997,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                 </role>
                 <function>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/ingredient-function&quot;/>
                         <code value=&quot;lubricant&quot;/>
                         <display value=&quot;Lubricant&quot;/>
                     </coding>
@@ -1955,7 +2044,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
         <resource>
             <Ingredient>
                 ...
-                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+                <status value=&quot;active&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Ingredient>
+                ...
+                <status value=&quot;active&quot;>"><span>active</span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -1985,7 +2080,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                 ...
                 <function>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/ingredient-function&quot;/>
                         <code value=&quot;lubricant&quot;/>
                         <display value=&quot;Lubricant&quot;/>
                     </coding>">Function: </span><span title="
@@ -1995,9 +2090,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
             <Ingredient>
                 <function>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/ingredient-function&quot;/>
                         <code value=&quot;lubricant&quot;/>
-                        <display value=&quot;Lubricant&quot;/>">Lubricant<span class="greyOff"> [lubricant]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-ingredientFunction-local-pq)</span></span></div>
+                        <display value=&quot;Lubricant&quot;/>">Lubricant<span class="greyOff"> [lubricant]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/ingredient-function)</span></span></div>
 </div>
 <div class="indent ingsub"><span title="
 <Bundle>
@@ -2029,7 +2124,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                             <value value=&quot;0.35&quot;/>
                             <unit value=&quot;% w/w&quot;/>
                         </concentrationQuantity>
-                    </strength>">Substance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
+                    </strength>" class="summaryHiddenOff">Substance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
 <div class="debugOff"><span>Found a parent (Ingredient/code, id: excipient4 fullUrl: urn:uuid:b89ed9d3-80f9-0cfb-70a1-5a6572e73a66)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: sd-excipient4)(fullUrl: urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380478)
 
 <Bundle>
@@ -2039,7 +2134,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                 <id value=&quot;sd-excipient4&quot;/>
                 <grade>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/package-grade&quot;/>
                         <code value=&quot;NF-PH-Eur&quot;/>
                         <display value=&quot;NF / Ph Eur&quot;/>
                     </coding>
@@ -2056,7 +2151,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
         <resource>
             <SubstanceDefinition>
                 <name>
-                    <name value=&quot;Magnesium stearate&quot;>">Name: </span><span><span>Magnesium stearate</span></span></div>
+                    <name value=&quot;Magnesium stearate&quot;>">Name: <span>Magnesium stearate</span></span></div>
 </div>
 </div>
 <div class="summaryHiddenOff"></div>
@@ -2069,19 +2164,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                 ...
                 <grade>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/package-grade&quot;/>
                         <code value=&quot;NF-PH-Eur&quot;/>
                         <display value=&quot;NF / Ph Eur&quot;/>
-                    </coding>">Grade: </span><span><span title="
+                    </coding>">Grade: <span title="
 <Bundle>
     <entry>
         <resource>
             <SubstanceDefinition>
                 <grade>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/package-grade&quot;/>
                         <code value=&quot;NF-PH-Eur&quot;/>
-                        <display value=&quot;NF / Ph Eur&quot;/>">NF / Ph Eur<span class="greyOff"> [NF-PH-Eur]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-grade-local-pq)</span></span></span></div>
+                        <display value=&quot;NF / Ph Eur&quot;/>">NF / Ph Eur<span class="greyOff"> [NF-PH-Eur]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/package-grade)</span></span></span></div>
 </div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
@@ -2168,7 +2263,17 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                         <concentrationQuantity>
                             <value value=&quot;0.35&quot;/>
                             <unit value=&quot;% w/w&quot;/>
-                        </concentrationQuantity>">Strength</span><div class="indent ingsubstr"><span title="
+                        </concentrationQuantity>">Strength</span><div class="indent ingsubstr">
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Ingredient>
+                <substance>
+                    <strength>
+                        <concentrationQuantity>
+                            <value value=&quot;0.35&quot;/>
+                            <unit value=&quot;% w/w&quot;/>">Concentration Quantity: </span><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2178,6 +2283,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
                         <concentrationQuantity>
                             <value value=&quot;0.35&quot;/>
                             <unit value=&quot;% w/w&quot;/>">0.35% w/w</span></div>
+</div>
 </div>
 </div>
 </div>
@@ -2217,6 +2323,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
 	    transform:translate(-2px, -2px);
 	    border-radius: 5px;
 	    visibility:visible; /* this is so that the outer border doesn't hide these */
+    }
+    .indent-right {
+        margin-right:0.7em;
     }
     .indent-no-border {
         margin-left:1em; 	/* controls line to line indent */
@@ -2272,6 +2381,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProduc
 
     .cui { background-Color:#d9d2e9 }
     .cuidetails { background-Color:#e6e1f0 }
+    .cuidetails2 { background-Color:#ebe9f0 }
 
     .sbd,.hcs { background-Color:#affad5 }
     .sbddetails,.hcsl2 { background-Color:#c7fce2 }

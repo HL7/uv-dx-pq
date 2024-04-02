@@ -41,7 +41,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <url value=&quot;http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a&quot;/>
                 <type>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-plan-type&quot;/>
                         <code value=&quot;manufacturing-process&quot;/>
                         <display value=&quot;Manufacturing Process&quot;/>
                     </coding>
@@ -54,7 +54,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <goal id=&quot;goal-control-pH&quot;>
                     <category>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-testCategory-local-pq&quot;/>
+                            <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-test-category&quot;/>
                             <code value=&quot;C123456&quot;/>
                             <display value=&quot;Physical Property&quot;/>
                         </coding>
@@ -65,7 +65,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     </description>
                     <priority>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-pq-example&quot;/>
                             <code value=&quot;critical&quot;/>
                             <display value=&quot;Critical&quot;/>
                         </coding>
@@ -73,7 +73,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     <target>
                         <measure>
                             <coding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                                 <code value=&quot;pH&quot;/>
                                 <display value=&quot;pH&quot;/>
                             </coding>
@@ -95,7 +95,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <goal id=&quot;goal-control-temp&quot;>
                     <category>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-testCategory-local-pq&quot;/>
+                            <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-test-category&quot;/>
                             <code value=&quot;C123456&quot;/>
                             <display value=&quot;Physical Property&quot;/>
                         </coding>
@@ -106,7 +106,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     </description>
                     <priority>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-pq-example&quot;/>
                             <code value=&quot;non-critical&quot;/>
                             <display value=&quot;Non-critical&quot;/>
                         </coding>
@@ -114,7 +114,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     <target>
                         <measure>
                             <coding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                                 <code value=&quot;TEMP&quot;/>
                                 <display value=&quot;Temperature&quot;/>
                             </coding>
@@ -135,7 +135,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <action>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
+                            <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-step&quot;/>
                             <code value=&quot;overall process&quot;/>
                             <display value=&quot;Overall Process&quot;/>
                         </coding>
@@ -144,7 +144,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     <action>
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq&quot;>
                             <valueCoding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq&quot;/>
+                                <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-step-scale&quot;/>
                                 <code value=&quot;PROD&quot;/>
                                 <display value=&quot;Production Scale&quot;/>
                             </valueCoding>
@@ -153,7 +153,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                             <extension url=&quot;parameter&quot;>
                                 <valueCodeableConcept>
                                     <coding>
-                                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-processParameter-local-pq&quot;/>
+                                        <system value=&quot;http://terminology.hl7.org/CodeSystem/process-parameter&quot;/>
                                         <code value=&quot;SPEED&quot;/>
                                         <display value=&quot;Mix speed&quot;/>
                                     </coding>
@@ -170,7 +170,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                         <description value=&quot;Description of this step&quot;/>
                         <code>
                             <coding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
+                                <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-step&quot;/>
                                 <code value=&quot;particleSizeReduction&quot;/>
                                 <display value=&quot;Particle Size Reduction&quot;/>
                             </coding>
@@ -191,7 +191,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                             </typeReference>
                             <role>
                                 <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq&quot;/>
+                                    <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-manufacturing-equipment-class&quot;/>
                                     <code value=&quot;Compression Milling&quot;/>
                                     <display value=&quot;Compression Milling&quot;/>
                                 </coding>
@@ -204,10 +204,12 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                                         <reference value=&quot;SubstanceDefinition/startingMaterial&quot;/>
                                     </valueReference>
                                 </extension>
+                                <display value=&quot;Starting Material&quot;/>
+                                <!-- added to suppress warning caused by the lack of a true reference, due to it being in extension -->
                             </typeReference>
                             <role>
                                 <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                    <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-participant-role&quot;/>
                                     <code value=&quot;StartingMaterial&quot;/>
                                     <display value=&quot;Starting Material&quot;/>
                                 </coding>
@@ -220,12 +222,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                                         <reference value=&quot;SubstanceDefinition/processingMaterial&quot;/>
                                     </valueReference>
                                 </extension>
+                                <display value=&quot;Processing Material&quot;/>
+                                <!-- added to suppress warning caused by the lack of a true reference, due to it being in extension -->
                             </typeReference>
                             <role>
                                 <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                    <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-participant-role&quot;/>
                                     <code value=&quot;ProcessingMaterial&quot;/>
-                                    <display value=&quot;ProcessingMaterial&quot;/>
+                                    <display value=&quot;Processing Material&quot;/>
                                 </coding>
                             </role>
                         </participant>
@@ -236,10 +240,12 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                                         <reference value=&quot;SubstanceDefinition/resultingMaterial&quot;/>
                                     </valueReference>
                                 </extension>
+                                <display value=&quot;Resulting Material&quot;/>
+                                <!-- added to suppress warning caused by the lack of a true reference, due to it being in extension -->
                             </typeReference>
                             <role>
                                 <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                    <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-participant-role&quot;/>
                                     <code value=&quot;ResultingMaterial&quot;/>
                                     <display value=&quot;Resulting Material&quot;/>
                                 </coding>
@@ -275,7 +281,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceProperty-local-pq&quot;/>
+                            <system value=&quot;http://terminology.hl7.org/CodeSystem/device-property&quot;/>
                             <code value=&quot;Maximum Speed&quot;/>
                             <display value=&quot;Maximum Speed&quot;/>
                         </coding>
@@ -306,7 +312,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <status value=&quot;current&quot;/>
                 <type>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-diagramType-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/diagram-type&quot;/>
                         <code value=&quot;ProcessFlowDiagram&quot;/>
                         <display value=&quot;Process Flow Diagram&quot;/>
                     </coding>
@@ -358,6 +364,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3003040516&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-substance-manufacture&quot;/>
+                        <display value=&quot;Drug Substance Manufacture&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;AAA Molybdenum Products, Inc.&quot;/>
                 <contact>
                     <address>
@@ -415,11 +429,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
 <div class="debugOff"><span title="
 <Bundle>
     <meta>
-        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-manufacturing-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-manufacturing-pq</span></div>
+        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-manufacturing-pq&quot;>">Profile: </span><span title="
+<Bundle>
+    <meta>
+        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-manufacturing-pq&quot;>">http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-manufacturing-pq</span></div>
 <div><span title="
 <Bundle>
     ...
-    <type value=&quot;collection&quot;>">Type: </span><span><span>collection</span></span></div>
+    <type value=&quot;collection&quot;>">Type: <span>collection</span></span></div>
 </div>
 </div>
 <div>
@@ -443,7 +460,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <url value=&quot;http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a&quot;/>
                 <type>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-plan-type&quot;/>
                         <code value=&quot;manufacturing-process&quot;/>
                         <display value=&quot;Manufacturing Process&quot;/>
                     </coding>
@@ -456,7 +473,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <goal id=&quot;goal-control-pH&quot;>
                     <category>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-testCategory-local-pq&quot;/>
+                            <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-test-category&quot;/>
                             <code value=&quot;C123456&quot;/>
                             <display value=&quot;Physical Property&quot;/>
                         </coding>
@@ -467,7 +484,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     </description>
                     <priority>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-pq-example&quot;/>
                             <code value=&quot;critical&quot;/>
                             <display value=&quot;Critical&quot;/>
                         </coding>
@@ -475,7 +492,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     <target>
                         <measure>
                             <coding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                                 <code value=&quot;pH&quot;/>
                                 <display value=&quot;pH&quot;/>
                             </coding>
@@ -497,7 +514,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <goal id=&quot;goal-control-temp&quot;>
                     <category>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-testCategory-local-pq&quot;/>
+                            <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-test-category&quot;/>
                             <code value=&quot;C123456&quot;/>
                             <display value=&quot;Physical Property&quot;/>
                         </coding>
@@ -508,7 +525,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     </description>
                     <priority>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-pq-example&quot;/>
                             <code value=&quot;non-critical&quot;/>
                             <display value=&quot;Non-critical&quot;/>
                         </coding>
@@ -516,7 +533,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     <target>
                         <measure>
                             <coding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                                 <code value=&quot;TEMP&quot;/>
                                 <display value=&quot;Temperature&quot;/>
                             </coding>
@@ -537,7 +554,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <action>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
+                            <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-step&quot;/>
                             <code value=&quot;overall process&quot;/>
                             <display value=&quot;Overall Process&quot;/>
                         </coding>
@@ -546,7 +563,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     <action>
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq&quot;>
                             <valueCoding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq&quot;/>
+                                <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-step-scale&quot;/>
                                 <code value=&quot;PROD&quot;/>
                                 <display value=&quot;Production Scale&quot;/>
                             </valueCoding>
@@ -555,7 +572,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                             <extension url=&quot;parameter&quot;>
                                 <valueCodeableConcept>
                                     <coding>
-                                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-processParameter-local-pq&quot;/>
+                                        <system value=&quot;http://terminology.hl7.org/CodeSystem/process-parameter&quot;/>
                                         <code value=&quot;SPEED&quot;/>
                                         <display value=&quot;Mix speed&quot;/>
                                     </coding>
@@ -572,7 +589,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                         <description value=&quot;Description of this step&quot;/>
                         <code>
                             <coding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
+                                <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-step&quot;/>
                                 <code value=&quot;particleSizeReduction&quot;/>
                                 <display value=&quot;Particle Size Reduction&quot;/>
                             </coding>
@@ -593,7 +610,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                             </typeReference>
                             <role>
                                 <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq&quot;/>
+                                    <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-manufacturing-equipment-class&quot;/>
                                     <code value=&quot;Compression Milling&quot;/>
                                     <display value=&quot;Compression Milling&quot;/>
                                 </coding>
@@ -606,10 +623,12 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                                         <reference value=&quot;SubstanceDefinition/startingMaterial&quot;/>
                                     </valueReference>
                                 </extension>
+                                <display value=&quot;Starting Material&quot;/>
+                                <!-- added to suppress warning caused by the lack of a true reference, due to it being in extension -->
                             </typeReference>
                             <role>
                                 <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                    <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-participant-role&quot;/>
                                     <code value=&quot;StartingMaterial&quot;/>
                                     <display value=&quot;Starting Material&quot;/>
                                 </coding>
@@ -622,12 +641,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                                         <reference value=&quot;SubstanceDefinition/processingMaterial&quot;/>
                                     </valueReference>
                                 </extension>
+                                <display value=&quot;Processing Material&quot;/>
+                                <!-- added to suppress warning caused by the lack of a true reference, due to it being in extension -->
                             </typeReference>
                             <role>
                                 <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                    <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-participant-role&quot;/>
                                     <code value=&quot;ProcessingMaterial&quot;/>
-                                    <display value=&quot;ProcessingMaterial&quot;/>
+                                    <display value=&quot;Processing Material&quot;/>
                                 </coding>
                             </role>
                         </participant>
@@ -638,10 +659,12 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                                         <reference value=&quot;SubstanceDefinition/resultingMaterial&quot;/>
                                     </valueReference>
                                 </extension>
+                                <display value=&quot;Resulting Material&quot;/>
+                                <!-- added to suppress warning caused by the lack of a true reference, due to it being in extension -->
                             </typeReference>
                             <role>
                                 <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                    <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-participant-role&quot;/>
                                     <code value=&quot;ResultingMaterial&quot;/>
                                     <display value=&quot;Resulting Material&quot;/>
                                 </coding>
@@ -669,7 +692,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
         <resource>
             <PlanDefinition>
                 ...
-                <description value=&quot;Narrative description of substance manufacturing process&quot;>">Description: </span><span>Narrative description of substance manufacturing process</span></div>
+                <description value=&quot;Narrative description of substance manufacturing process&quot;>">Description: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                ...
+                <description value=&quot;Narrative description of substance manufacturing process&quot;>">Narrative description of substance manufacturing process</span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -678,7 +707,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 ...
                 <type>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-plan-type&quot;/>
                         <code value=&quot;manufacturing-process&quot;/>
                         <display value=&quot;Manufacturing Process&quot;/>
                     </coding>">Type: </span><span title="
@@ -688,9 +717,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
             <PlanDefinition>
                 <type>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-plan-type&quot;/>
                         <code value=&quot;manufacturing-process&quot;/>
-                        <display value=&quot;Manufacturing Process&quot;/>">Manufacturing Process<span class="greyOff"> [manufacturing-process]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq)</span></span></div>
+                        <display value=&quot;Manufacturing Process&quot;/>">Manufacturing Process<span class="greyOff"> [manufacturing-process]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-plan-type)</span></span></div>
 <div class="summaryHiddenOff">
 <div class="debugOff"><span title="
 <Bundle>
@@ -698,7 +727,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
         <resource>
             <PlanDefinition>
                 ...
-                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+                <status value=&quot;active&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                ...
+                <status value=&quot;active&quot;>"><span>active</span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -706,7 +741,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
             <PlanDefinition>
                 ...
                 <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-history-of-process-pq&quot;>
-                    <valueMarkdown value=&quot;This can be text about the history&quot;/>">History: </span><span>This can be text about the history</span></div>
+                    <valueMarkdown value=&quot;This can be text about the history&quot;/>">History: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                ...
+                <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-history-of-process-pq&quot;>
+                    <valueMarkdown value=&quot;This can be text about the history&quot;/>"><span>This can be text about the history</span></span></div>
 </div>
 <div></div><span><span title="
 <Bundle>
@@ -727,7 +769,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <url value=&quot;http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a&quot;/>
                 <type>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-planType-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-plan-type&quot;/>
                         <code value=&quot;manufacturing-process&quot;/>
                         <display value=&quot;Manufacturing Process&quot;/>
                     </coding>
@@ -740,7 +782,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <goal id=&quot;goal-control-pH&quot;>
                     <category>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-testCategory-local-pq&quot;/>
+                            <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-test-category&quot;/>
                             <code value=&quot;C123456&quot;/>
                             <display value=&quot;Physical Property&quot;/>
                         </coding>
@@ -751,7 +793,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     </description>
                     <priority>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-pq-example&quot;/>
                             <code value=&quot;critical&quot;/>
                             <display value=&quot;Critical&quot;/>
                         </coding>
@@ -759,7 +801,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     <target>
                         <measure>
                             <coding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                                 <code value=&quot;pH&quot;/>
                                 <display value=&quot;pH&quot;/>
                             </coding>
@@ -781,7 +823,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <goal id=&quot;goal-control-temp&quot;>
                     <category>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-testCategory-local-pq&quot;/>
+                            <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-test-category&quot;/>
                             <code value=&quot;C123456&quot;/>
                             <display value=&quot;Physical Property&quot;/>
                         </coding>
@@ -792,7 +834,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     </description>
                     <priority>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-pq-example&quot;/>
                             <code value=&quot;non-critical&quot;/>
                             <display value=&quot;Non-critical&quot;/>
                         </coding>
@@ -800,7 +842,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     <target>
                         <measure>
                             <coding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                                 <code value=&quot;TEMP&quot;/>
                                 <display value=&quot;Temperature&quot;/>
                             </coding>
@@ -821,7 +863,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <action>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
+                            <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-step&quot;/>
                             <code value=&quot;overall process&quot;/>
                             <display value=&quot;Overall Process&quot;/>
                         </coding>
@@ -830,7 +872,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     <action>
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq&quot;>
                             <valueCoding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq&quot;/>
+                                <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-step-scale&quot;/>
                                 <code value=&quot;PROD&quot;/>
                                 <display value=&quot;Production Scale&quot;/>
                             </valueCoding>
@@ -839,7 +881,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                             <extension url=&quot;parameter&quot;>
                                 <valueCodeableConcept>
                                     <coding>
-                                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-processParameter-local-pq&quot;/>
+                                        <system value=&quot;http://terminology.hl7.org/CodeSystem/process-parameter&quot;/>
                                         <code value=&quot;SPEED&quot;/>
                                         <display value=&quot;Mix speed&quot;/>
                                     </coding>
@@ -856,7 +898,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                         <description value=&quot;Description of this step&quot;/>
                         <code>
                             <coding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
+                                <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-step&quot;/>
                                 <code value=&quot;particleSizeReduction&quot;/>
                                 <display value=&quot;Particle Size Reduction&quot;/>
                             </coding>
@@ -877,7 +919,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                             </typeReference>
                             <role>
                                 <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq&quot;/>
+                                    <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-manufacturing-equipment-class&quot;/>
                                     <code value=&quot;Compression Milling&quot;/>
                                     <display value=&quot;Compression Milling&quot;/>
                                 </coding>
@@ -890,10 +932,12 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                                         <reference value=&quot;SubstanceDefinition/startingMaterial&quot;/>
                                     </valueReference>
                                 </extension>
+                                <display value=&quot;Starting Material&quot;/>
+                                <!-- added to suppress warning caused by the lack of a true reference, due to it being in extension -->
                             </typeReference>
                             <role>
                                 <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                    <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-participant-role&quot;/>
                                     <code value=&quot;StartingMaterial&quot;/>
                                     <display value=&quot;Starting Material&quot;/>
                                 </coding>
@@ -906,12 +950,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                                         <reference value=&quot;SubstanceDefinition/processingMaterial&quot;/>
                                     </valueReference>
                                 </extension>
+                                <display value=&quot;Processing Material&quot;/>
+                                <!-- added to suppress warning caused by the lack of a true reference, due to it being in extension -->
                             </typeReference>
                             <role>
                                 <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                    <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-participant-role&quot;/>
                                     <code value=&quot;ProcessingMaterial&quot;/>
-                                    <display value=&quot;ProcessingMaterial&quot;/>
+                                    <display value=&quot;Processing Material&quot;/>
                                 </coding>
                             </role>
                         </participant>
@@ -922,10 +968,12 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                                         <reference value=&quot;SubstanceDefinition/resultingMaterial&quot;/>
                                     </valueReference>
                                 </extension>
+                                <display value=&quot;Resulting Material&quot;/>
+                                <!-- added to suppress warning caused by the lack of a true reference, due to it being in extension -->
                             </typeReference>
                             <role>
                                 <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                    <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-participant-role&quot;/>
                                     <code value=&quot;ResultingMaterial&quot;/>
                                     <display value=&quot;Resulting Material&quot;/>
                                 </coding>
@@ -962,7 +1010,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
         <resource>
             <SubstanceDefinition>
                 <name>
-                    <name value=&quot;Stelbatolol&quot;>">Name: </span><span><span>Stelbatolol</span></span></div></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div class="indent sbddetails2"><span title="
+                    <name value=&quot;Stelbatolol&quot;>">Name: <span>Stelbatolol</span></span></div></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div class="indent sbddetails2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -981,6 +1029,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3003040516&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-substance-manufacture&quot;/>
+                        <display value=&quot;Drug Substance Manufacture&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;AAA Molybdenum Products, Inc.&quot;/>
                 <contact>
                     <address>
@@ -1009,13 +1065,45 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product
                 <identifier>
                     <!-- FDA establishment identifier -->
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
-                    <value value=&quot;3003040516&quot;/>">3003040516<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+                    <value value=&quot;3003040516&quot;/>">3003040516<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div><div class="debugOff"><span title="
 <Bundle>
     <entry>
         <resource>
             <Organization>
                 ...
-                <name value=&quot;AAA Molybdenum Products, Inc.&quot;>">Name: </span><span>AAA Molybdenum Products, Inc.</span></div><div class="indent org2">
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div></div><div class="summaryHiddenOff"><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <name value=&quot;AAA Molybdenum Products, Inc.&quot;>">Name: </span><span>AAA Molybdenum Products, Inc.</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-substance-manufacture&quot;/>
+                        <display value=&quot;Drug Substance Manufacture&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-substance-manufacture&quot;/>
+                        <display value=&quot;Drug Substance Manufacture&quot;/>">Drug Substance Manufacture<span class="greyOff"> [drug-substance-manufacture]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div><div class="indent org2">
 					Contact
 					<div><span title="
 <Bundle>
@@ -1098,7 +1186,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                 <status value=&quot;current&quot;/>
                 <type>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-diagramType-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/diagram-type&quot;/>
                         <code value=&quot;ProcessFlowDiagram&quot;/>
                         <display value=&quot;Process Flow Diagram&quot;/>
                     </coding>
@@ -1116,7 +1204,13 @@ Updated: 2023-01-12T17:57:08.898+00:00
         <resource>
             <DocumentReference>
                 <meta>
-                    <versionId value=&quot;1&quot;>">Version: </span><span>1</span></div>
+                    <versionId value=&quot;1&quot;>">Version: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <DocumentReference>
+                <meta>
+                    <versionId value=&quot;1&quot;>">1</span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -1139,7 +1233,14 @@ Updated: 2023-01-12T17:57:08.898+00:00
             <DocumentReference>
                 <meta>
                     ...
-                    <source value=&quot;#n4xHiP0iat7deVDt&quot;>">Source: </span><span>#n4xHiP0iat7deVDt</span></div>
+                    <source value=&quot;#n4xHiP0iat7deVDt&quot;>">Source: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <DocumentReference>
+                <meta>
+                    ...
+                    <source value=&quot;#n4xHiP0iat7deVDt&quot;>">#n4xHiP0iat7deVDt</span></div>
 </div>
 <div class="summaryHiddenOff">
 <div><span title="
@@ -1165,7 +1266,13 @@ Updated: 2023-01-12T17:57:08.898+00:00
         <resource>
             <DocumentReference>
                 ...
-                <status value=&quot;current&quot;>">Status: </span><span>current</span></div>
+                <status value=&quot;current&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <DocumentReference>
+                ...
+                <status value=&quot;current&quot;>"><span>current</span></span></div>
 </div>
 <div><span title="
 <Bundle>
@@ -1175,7 +1282,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                 ...
                 <type>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-diagramType-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/diagram-type&quot;/>
                         <code value=&quot;ProcessFlowDiagram&quot;/>
                         <display value=&quot;Process Flow Diagram&quot;/>
                     </coding>">Type: </span><span title="
@@ -1185,9 +1292,9 @@ Updated: 2023-01-12T17:57:08.898+00:00
             <DocumentReference>
                 <type>
                     <coding>
-                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-diagramType-local-pq&quot;/>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/diagram-type&quot;/>
                         <code value=&quot;ProcessFlowDiagram&quot;/>
-                        <display value=&quot;Process Flow Diagram&quot;/>">Process Flow Diagram<span class="greyOff"> [ProcessFlowDiagram]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-diagramType-local-pq)</span></span></div>
+                        <display value=&quot;Process Flow Diagram&quot;/>">Process Flow Diagram<span class="greyOff"> [ProcessFlowDiagram]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/diagram-type)</span></span></div>
 <div class="summaryHiddenOff">
 				Content
 				<div class="indent org2">
@@ -1198,7 +1305,14 @@ Updated: 2023-01-12T17:57:08.898+00:00
             <DocumentReference>
                 <content>
                     <attachment>
-                        <url value=&quot;https://example.org/docStore/flow-001&quot;>">url: </span><span>https://example.org/docStore/flow-001</span></div>
+                        <url value=&quot;https://example.org/docStore/flow-001&quot;>">url: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <DocumentReference>
+                <content>
+                    <attachment>
+                        <url value=&quot;https://example.org/docStore/flow-001&quot;>">https://example.org/docStore/flow-001</span></div>
 </div>
 </div>
 </div>
@@ -1211,7 +1325,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                 <action>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
+                            <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-step&quot;/>
                             <code value=&quot;overall process&quot;/>
                             <display value=&quot;Overall Process&quot;/>
                         </coding>
@@ -1220,7 +1334,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                     <action>
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq&quot;>
                             <valueCoding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq&quot;/>
+                                <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-step-scale&quot;/>
                                 <code value=&quot;PROD&quot;/>
                                 <display value=&quot;Production Scale&quot;/>
                             </valueCoding>
@@ -1229,7 +1343,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                             <extension url=&quot;parameter&quot;>
                                 <valueCodeableConcept>
                                     <coding>
-                                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-processParameter-local-pq&quot;/>
+                                        <system value=&quot;http://terminology.hl7.org/CodeSystem/process-parameter&quot;/>
                                         <code value=&quot;SPEED&quot;/>
                                         <display value=&quot;Mix speed&quot;/>
                                     </coding>
@@ -1246,7 +1360,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                         <description value=&quot;Description of this step&quot;/>
                         <code>
                             <coding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
+                                <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-step&quot;/>
                                 <code value=&quot;particleSizeReduction&quot;/>
                                 <display value=&quot;Particle Size Reduction&quot;/>
                             </coding>
@@ -1267,7 +1381,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                             </typeReference>
                             <role>
                                 <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq&quot;/>
+                                    <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-manufacturing-equipment-class&quot;/>
                                     <code value=&quot;Compression Milling&quot;/>
                                     <display value=&quot;Compression Milling&quot;/>
                                 </coding>
@@ -1280,10 +1394,12 @@ Updated: 2023-01-12T17:57:08.898+00:00
                                         <reference value=&quot;SubstanceDefinition/startingMaterial&quot;/>
                                     </valueReference>
                                 </extension>
+                                <display value=&quot;Starting Material&quot;/>
+                                <!-- added to suppress warning caused by the lack of a true reference, due to it being in extension -->
                             </typeReference>
                             <role>
                                 <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                    <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-participant-role&quot;/>
                                     <code value=&quot;StartingMaterial&quot;/>
                                     <display value=&quot;Starting Material&quot;/>
                                 </coding>
@@ -1296,12 +1412,14 @@ Updated: 2023-01-12T17:57:08.898+00:00
                                         <reference value=&quot;SubstanceDefinition/processingMaterial&quot;/>
                                     </valueReference>
                                 </extension>
+                                <display value=&quot;Processing Material&quot;/>
+                                <!-- added to suppress warning caused by the lack of a true reference, due to it being in extension -->
                             </typeReference>
                             <role>
                                 <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                    <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-participant-role&quot;/>
                                     <code value=&quot;ProcessingMaterial&quot;/>
-                                    <display value=&quot;ProcessingMaterial&quot;/>
+                                    <display value=&quot;Processing Material&quot;/>
                                 </coding>
                             </role>
                         </participant>
@@ -1312,10 +1430,12 @@ Updated: 2023-01-12T17:57:08.898+00:00
                                         <reference value=&quot;SubstanceDefinition/resultingMaterial&quot;/>
                                     </valueReference>
                                 </extension>
+                                <display value=&quot;Resulting Material&quot;/>
+                                <!-- added to suppress warning caused by the lack of a true reference, due to it being in extension -->
                             </typeReference>
                             <role>
                                 <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                    <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-participant-role&quot;/>
                                     <code value=&quot;ResultingMaterial&quot;/>
                                     <display value=&quot;Resulting Material&quot;/>
                                 </coding>
@@ -1341,9 +1461,9 @@ Updated: 2023-01-12T17:57:08.898+00:00
                 <action>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
+                            <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-step&quot;/>
                             <code value=&quot;overall process&quot;/>
-                            <display value=&quot;Overall Process&quot;/>">Overall Process<span class="greyOff"> [overall process]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq)</span></span><span style="white-space:normal;"> - Text: overall process</span></span></span><div class="summaryHiddenOff">
+                            <display value=&quot;Overall Process&quot;/>">Overall Process<span class="greyOff"> [overall process]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/manufacturing-step)</span></span><span style="white-space:normal;"> - Text: overall process</span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -1352,7 +1472,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                 <action>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
+                            <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-step&quot;/>
                             <code value=&quot;overall process&quot;/>
                             <display value=&quot;Overall Process&quot;/>
                         </coding>
@@ -1364,9 +1484,9 @@ Updated: 2023-01-12T17:57:08.898+00:00
                 <action>
                     <code>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
+                            <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-step&quot;/>
                             <code value=&quot;overall process&quot;/>
-                            <display value=&quot;Overall Process&quot;/>">Overall Process<span class="greyOff"> [overall process]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq)</span></span><span style="white-space:normal;"> - Text: overall process</span></div>
+                            <display value=&quot;Overall Process&quot;/>">Overall Process<span class="greyOff"> [overall process]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/manufacturing-step)</span></span><span style="white-space:normal;"> - Text: overall process</span></div>
 </div>
 <div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
 <Bundle>
@@ -1378,7 +1498,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                     <action>
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq&quot;>
                             <valueCoding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq&quot;/>
+                                <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-step-scale&quot;/>
                                 <code value=&quot;PROD&quot;/>
                                 <display value=&quot;Production Scale&quot;/>
                             </valueCoding>
@@ -1387,7 +1507,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                             <extension url=&quot;parameter&quot;>
                                 <valueCodeableConcept>
                                     <coding>
-                                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-processParameter-local-pq&quot;/>
+                                        <system value=&quot;http://terminology.hl7.org/CodeSystem/process-parameter&quot;/>
                                         <code value=&quot;SPEED&quot;/>
                                         <display value=&quot;Mix speed&quot;/>
                                     </coding>
@@ -1404,7 +1524,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                         <description value=&quot;Description of this step&quot;/>
                         <code>
                             <coding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
+                                <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-step&quot;/>
                                 <code value=&quot;particleSizeReduction&quot;/>
                                 <display value=&quot;Particle Size Reduction&quot;/>
                             </coding>
@@ -1425,7 +1545,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                             </typeReference>
                             <role>
                                 <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq&quot;/>
+                                    <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-manufacturing-equipment-class&quot;/>
                                     <code value=&quot;Compression Milling&quot;/>
                                     <display value=&quot;Compression Milling&quot;/>
                                 </coding>
@@ -1438,10 +1558,12 @@ Updated: 2023-01-12T17:57:08.898+00:00
                                         <reference value=&quot;SubstanceDefinition/startingMaterial&quot;/>
                                     </valueReference>
                                 </extension>
+                                <display value=&quot;Starting Material&quot;/>
+                                <!-- added to suppress warning caused by the lack of a true reference, due to it being in extension -->
                             </typeReference>
                             <role>
                                 <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                    <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-participant-role&quot;/>
                                     <code value=&quot;StartingMaterial&quot;/>
                                     <display value=&quot;Starting Material&quot;/>
                                 </coding>
@@ -1454,12 +1576,14 @@ Updated: 2023-01-12T17:57:08.898+00:00
                                         <reference value=&quot;SubstanceDefinition/processingMaterial&quot;/>
                                     </valueReference>
                                 </extension>
+                                <display value=&quot;Processing Material&quot;/>
+                                <!-- added to suppress warning caused by the lack of a true reference, due to it being in extension -->
                             </typeReference>
                             <role>
                                 <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                    <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-participant-role&quot;/>
                                     <code value=&quot;ProcessingMaterial&quot;/>
-                                    <display value=&quot;ProcessingMaterial&quot;/>
+                                    <display value=&quot;Processing Material&quot;/>
                                 </coding>
                             </role>
                         </participant>
@@ -1470,10 +1594,12 @@ Updated: 2023-01-12T17:57:08.898+00:00
                                         <reference value=&quot;SubstanceDefinition/resultingMaterial&quot;/>
                                     </valueReference>
                                 </extension>
+                                <display value=&quot;Resulting Material&quot;/>
+                                <!-- added to suppress warning caused by the lack of a true reference, due to it being in extension -->
                             </typeReference>
                             <role>
                                 <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                    <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-participant-role&quot;/>
                                     <code value=&quot;ResultingMaterial&quot;/>
                                     <display value=&quot;Resulting Material&quot;/>
                                 </coding>
@@ -1507,9 +1633,9 @@ Updated: 2023-01-12T17:57:08.898+00:00
                     <action>
                         <code>
                             <coding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
+                                <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-step&quot;/>
                                 <code value=&quot;particleSizeReduction&quot;/>
-                                <display value=&quot;Particle Size Reduction&quot;/>">Particle Size Reduction<span class="greyOff"> [particleSizeReduction]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq)</span></span></span></span><div class="summaryHiddenOff">
+                                <display value=&quot;Particle Size Reduction&quot;/>">Particle Size Reduction<span class="greyOff"> [particleSizeReduction]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/manufacturing-step)</span></span></span></span><div class="summaryHiddenOff">
 <div><span title="
 <Bundle>
     <entry>
@@ -1518,7 +1644,15 @@ Updated: 2023-01-12T17:57:08.898+00:00
                 <action>
                     <action>
                         ...
-                        <prefix value=&quot;1&quot;>">Step (prefix): </span><span>1</span></div>
+                        <prefix value=&quot;1&quot;>">Step (prefix): </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        ...
+                        <prefix value=&quot;1&quot;>">1</span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -1529,7 +1663,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                         ...
                         <code>
                             <coding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
+                                <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-step&quot;/>
                                 <code value=&quot;particleSizeReduction&quot;/>
                                 <display value=&quot;Particle Size Reduction&quot;/>
                             </coding>
@@ -1542,9 +1676,9 @@ Updated: 2023-01-12T17:57:08.898+00:00
                     <action>
                         <code>
                             <coding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq&quot;/>
+                                <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-step&quot;/>
                                 <code value=&quot;particleSizeReduction&quot;/>
-                                <display value=&quot;Particle Size Reduction&quot;/>">Particle Size Reduction<span class="greyOff"> [particleSizeReduction]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStep-local-pq)</span></span></div>
+                                <display value=&quot;Particle Size Reduction&quot;/>">Particle Size Reduction<span class="greyOff"> [particleSizeReduction]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/manufacturing-step)</span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -1553,7 +1687,15 @@ Updated: 2023-01-12T17:57:08.898+00:00
                 <action>
                     <action>
                         ...
-                        <description value=&quot;Description of this step&quot;>">Description: </span><span>Description of this step</span></div>
+                        <description value=&quot;Description of this step&quot;>">Description: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        ...
+                        <description value=&quot;Description of this step&quot;>">Description of this step</span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -1563,7 +1705,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                     <action>
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq&quot;>
                             <valueCoding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq&quot;/>
+                                <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-step-scale&quot;/>
                                 <code value=&quot;PROD&quot;/>
                                 <display value=&quot;Production Scale&quot;/>
                             </valueCoding>">Scale: </span><span title="
@@ -1575,9 +1717,21 @@ Updated: 2023-01-12T17:57:08.898+00:00
                     <action>
                         <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq&quot;>
                             <valueCoding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq&quot;/>
+                                <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-step-scale&quot;/>
                                 <code value=&quot;PROD&quot;/>
-                                <display value=&quot;Production Scale&quot;/>">Production Scale<span class="greyOff"> [PROD]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingStepScale-local-pq)</span></span></div>
+                                <display value=&quot;Production Scale&quot;/>
+                            </valueCoding>"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-step-scale-pq&quot;>
+                            <valueCoding>
+                                <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-step-scale&quot;/>
+                                <code value=&quot;PROD&quot;/>
+                                <display value=&quot;Production Scale&quot;/>">Production Scale<span class="greyOff"> [PROD]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/manufacturing-step-scale)</span></span></span></div>
 <div class="summaryHiddenOff" title="
 <Bundle>
     <entry>
@@ -1597,7 +1751,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                 <goal id=&quot;goal-control-pH&quot;>
                     <category>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-testCategory-local-pq&quot;/>
+                            <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-test-category&quot;/>
                             <code value=&quot;C123456&quot;/>
                             <display value=&quot;Physical Property&quot;/>
                         </coding>
@@ -1608,7 +1762,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                     </description>
                     <priority>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-pq-example&quot;/>
                             <code value=&quot;critical&quot;/>
                             <display value=&quot;Critical&quot;/>
                         </coding>
@@ -1616,7 +1770,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                     <target>
                         <measure>
                             <coding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                                 <code value=&quot;pH&quot;/>
                                 <display value=&quot;pH&quot;/>
                             </coding>
@@ -1652,7 +1806,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                 <goal id=&quot;goal-control-pH&quot;>
                     <category>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-testCategory-local-pq&quot;/>
+                            <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-test-category&quot;/>
                             <code value=&quot;C123456&quot;/>
                             <display value=&quot;Physical Property&quot;/>
                         </coding>">Category: </span><span title="
@@ -1663,9 +1817,9 @@ Updated: 2023-01-12T17:57:08.898+00:00
                 <goal id=&quot;goal-control-pH&quot;>
                     <category>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-testCategory-local-pq&quot;/>
+                            <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-test-category&quot;/>
                             <code value=&quot;C123456&quot;/>
-                            <display value=&quot;Physical Property&quot;/>">Physical Property<span class="greyOff"> [C123456]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-testCategory-local-pq)</span></span></div>
+                            <display value=&quot;Physical Property&quot;/>">Physical Property<span class="greyOff"> [C123456]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-test-category)</span></span></div>
 </div>
 <div><span title="
 <Bundle>
@@ -1676,7 +1830,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                     ...
                     <priority>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-pq-example&quot;/>
                             <code value=&quot;critical&quot;/>
                             <display value=&quot;Critical&quot;/>
                         </coding>">Priority: </span><span title="
@@ -1687,9 +1841,9 @@ Updated: 2023-01-12T17:57:08.898+00:00
                 <goal id=&quot;goal-control-pH&quot;>
                     <priority>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-pq-example&quot;/>
                             <code value=&quot;critical&quot;/>
-                            <display value=&quot;Critical&quot;/>">Critical<span class="greyOff"> [critical]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-local-pq)</span></span></div>
+                            <display value=&quot;Critical&quot;/>">Critical<span class="greyOff"> [critical]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-pq-example)</span></span></div>
 <div class="indent planl3"><span title="
 <Bundle>
     <entry>
@@ -1700,7 +1854,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                     <target>
                         <measure>
                             <coding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                                 <code value=&quot;pH&quot;/>
                                 <display value=&quot;pH&quot;/>
                             </coding>
@@ -1725,7 +1879,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                     <target>
                         <measure>
                             <coding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                                 <code value=&quot;pH&quot;/>
                                 <display value=&quot;pH&quot;/>
                             </coding>
@@ -1738,9 +1892,9 @@ Updated: 2023-01-12T17:57:08.898+00:00
                     <target>
                         <measure>
                             <coding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                                 <code value=&quot;pH&quot;/>
-                                <display value=&quot;pH&quot;/>">pH<span class="greyOff"> [pH]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Long description of the acceptance criteria - pH must be in range 6.9 to 7.1</span></div>
+                                <display value=&quot;pH&quot;/>">pH<span class="greyOff"> [pH]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Long description of the acceptance criteria - pH must be in range 6.9 to 7.1</span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -1802,7 +1956,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                 <goal id=&quot;goal-control-temp&quot;>
                     <category>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-testCategory-local-pq&quot;/>
+                            <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-test-category&quot;/>
                             <code value=&quot;C123456&quot;/>
                             <display value=&quot;Physical Property&quot;/>
                         </coding>
@@ -1813,7 +1967,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                     </description>
                     <priority>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-pq-example&quot;/>
                             <code value=&quot;non-critical&quot;/>
                             <display value=&quot;Non-critical&quot;/>
                         </coding>
@@ -1821,7 +1975,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                     <target>
                         <measure>
                             <coding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                                 <code value=&quot;TEMP&quot;/>
                                 <display value=&quot;Temperature&quot;/>
                             </coding>
@@ -1855,7 +2009,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                 <goal id=&quot;goal-control-temp&quot;>
                     <category>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-testCategory-local-pq&quot;/>
+                            <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-test-category&quot;/>
                             <code value=&quot;C123456&quot;/>
                             <display value=&quot;Physical Property&quot;/>
                         </coding>">Category: </span><span title="
@@ -1866,9 +2020,9 @@ Updated: 2023-01-12T17:57:08.898+00:00
                 <goal id=&quot;goal-control-temp&quot;>
                     <category>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-testCategory-local-pq&quot;/>
+                            <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-test-category&quot;/>
                             <code value=&quot;C123456&quot;/>
-                            <display value=&quot;Physical Property&quot;/>">Physical Property<span class="greyOff"> [C123456]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-testCategory-local-pq)</span></span></div>
+                            <display value=&quot;Physical Property&quot;/>">Physical Property<span class="greyOff"> [C123456]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-test-category)</span></span></div>
 </div>
 <div><span title="
 <Bundle>
@@ -1879,7 +2033,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                     ...
                     <priority>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-pq-example&quot;/>
                             <code value=&quot;non-critical&quot;/>
                             <display value=&quot;Non-critical&quot;/>
                         </coding>">Priority: </span><span title="
@@ -1890,9 +2044,9 @@ Updated: 2023-01-12T17:57:08.898+00:00
                 <goal id=&quot;goal-control-temp&quot;>
                     <priority>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-pq-example&quot;/>
                             <code value=&quot;non-critical&quot;/>
-                            <display value=&quot;Non-critical&quot;/>">Non-critical<span class="greyOff"> [non-critical]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-local-pq)</span></span></div>
+                            <display value=&quot;Non-critical&quot;/>">Non-critical<span class="greyOff"> [non-critical]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-pq-example)</span></span></div>
 <div class="indent planl3"><span title="
 <Bundle>
     <entry>
@@ -1903,7 +2057,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                     <target>
                         <measure>
                             <coding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                                 <code value=&quot;TEMP&quot;/>
                                 <display value=&quot;Temperature&quot;/>
                             </coding>
@@ -1926,7 +2080,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                     <target>
                         <measure>
                             <coding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                                 <code value=&quot;TEMP&quot;/>
                                 <display value=&quot;Temperature&quot;/>
                             </coding>
@@ -1939,9 +2093,9 @@ Updated: 2023-01-12T17:57:08.898+00:00
                     <target>
                         <measure>
                             <coding>
-                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq&quot;/>
+                                <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                                 <code value=&quot;TEMP&quot;/>
-                                <display value=&quot;Temperature&quot;/>">Temperature<span class="greyOff"> [TEMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq)</span></span><span style="white-space:normal;"> - Text: Long description of the control value - Temperature must be below 150°C</span></div>
+                                <display value=&quot;Temperature&quot;/>">Temperature<span class="greyOff"> [TEMP]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example)</span></span><span style="white-space:normal;"> - Text: Long description of the control value - Temperature must be below 150°C</span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -1985,7 +2139,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                             <extension url=&quot;parameter&quot;>
                                 <valueCodeableConcept>
                                     <coding>
-                                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-processParameter-local-pq&quot;/>
+                                        <system value=&quot;http://terminology.hl7.org/CodeSystem/process-parameter&quot;/>
                                         <code value=&quot;SPEED&quot;/>
                                         <display value=&quot;Mix speed&quot;/>
                                     </coding>
@@ -2009,7 +2163,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                             <extension url=&quot;parameter&quot;>
                                 <valueCodeableConcept>
                                     <coding>
-                                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-processParameter-local-pq&quot;/>
+                                        <system value=&quot;http://terminology.hl7.org/CodeSystem/process-parameter&quot;/>
                                         <code value=&quot;SPEED&quot;/>
                                         <display value=&quot;Mix speed&quot;/>
                                     </coding>
@@ -2024,9 +2178,24 @@ Updated: 2023-01-12T17:57:08.898+00:00
                             <extension url=&quot;parameter&quot;>
                                 <valueCodeableConcept>
                                     <coding>
-                                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-processParameter-local-pq&quot;/>
+                                        <system value=&quot;http://terminology.hl7.org/CodeSystem/process-parameter&quot;/>
                                         <code value=&quot;SPEED&quot;/>
-                                        <display value=&quot;Mix speed&quot;/>">Mix speed<span class="greyOff"> [SPEED]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-processParameter-local-pq)</span></span></div>
+                                        <display value=&quot;Mix speed&quot;/>
+                                    </coding>
+                                </valueCodeableConcept>"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-process-parameters-pq&quot;>
+                            <extension url=&quot;parameter&quot;>
+                                <valueCodeableConcept>
+                                    <coding>
+                                        <system value=&quot;http://terminology.hl7.org/CodeSystem/process-parameter&quot;/>
+                                        <code value=&quot;SPEED&quot;/>
+                                        <display value=&quot;Mix speed&quot;/>">Mix speed<span class="greyOff"> [SPEED]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/process-parameter)</span></span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -2051,6 +2220,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                                     <value value=&quot;1500&quot;/>
                                     <unit value=&quot;rpm&quot;/>">1500 rpm</span></div>
 </div>
+<div>
 <div class="indent planl3"><span title="
 <Bundle>
     <entry>
@@ -2071,7 +2241,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                 <action>
                     <action>
                         <documentation>
-                            <type value=&quot;specification-of&quot;>">Type: </span><span><span>specification-of</span></span></div>
+                            <type value=&quot;specification-of&quot;>">Type: <span>specification-of</span></span></div>
 <div class="indent org summaryUnit" ondblclick="summaryHandler(event)">
 <div class="debugOff"><span>Found a parent (PlanDefinition/resourceReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="DocumentReference (id: DocumentReference-image)(fullUrl: urn:uuid:74d4c070-6596-8252-8ad9-afa515a41fef)
 
@@ -2094,7 +2264,13 @@ Updated: 2023-01-12T17:57:08.898+00:00
         <resource>
             <DocumentReference>
                 ...
-                <status value=&quot;current&quot;>">Status: </span><span>current</span></div>
+                <status value=&quot;current&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <DocumentReference>
+                ...
+                <status value=&quot;current&quot;>"><span>current</span></span></div>
 </div>
 <div class="summaryHiddenOff">
 				Content
@@ -2106,7 +2282,15 @@ Updated: 2023-01-12T17:57:08.898+00:00
             <DocumentReference>
                 <content>
                     <attachment>
-                        <url value=&quot;https://www.accumulus.org/wp-content/uploads/2022/05/Accumulus_Logo_horizontal.png&quot;>">url: </span><span><a href="https://www.accumulus.org/wp-content/uploads/2022/05/Accumulus_Logo_horizontal.png">https://www.accumulus.org/wp-content/uploads/2022/05/Accumulus_Logo_horizontal.png</a></span></div>
+                        <url value=&quot;https://www.accumulus.org/wp-content/uploads/2022/05/Accumulus_Logo_horizontal.png&quot;>">url: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <DocumentReference>
+                <content>
+                    <attachment>
+                        <url value=&quot;https://www.accumulus.org/wp-content/uploads/2022/05/Accumulus_Logo_horizontal.png&quot;>"><a href="https://www.accumulus.org/wp-content/uploads/2022/05/Accumulus_Logo_horizontal.png">https://www.accumulus.org/wp-content/uploads/2022/05/Accumulus_Logo_horizontal.png</a></span></div>
+</div>
 </div>
 </div>
 </div>
@@ -2126,7 +2310,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                             </typeReference>
                             <role>
                                 <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq&quot;/>
+                                    <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-manufacturing-equipment-class&quot;/>
                                     <code value=&quot;Compression Milling&quot;/>
                                     <display value=&quot;Compression Milling&quot;/>
                                 </coding>
@@ -2141,10 +2325,10 @@ Updated: 2023-01-12T17:57:08.898+00:00
                             ...
                             <role>
                                 <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq&quot;/>
+                                    <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-manufacturing-equipment-class&quot;/>
                                     <code value=&quot;Compression Milling&quot;/>
                                     <display value=&quot;Compression Milling&quot;/>
-                                </coding>">Role: </span><span><span title="
+                                </coding>">Role: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -2154,9 +2338,9 @@ Updated: 2023-01-12T17:57:08.898+00:00
                         <participant>
                             <role>
                                 <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq&quot;/>
+                                    <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-manufacturing-equipment-class&quot;/>
                                     <code value=&quot;Compression Milling&quot;/>
-                                    <display value=&quot;Compression Milling&quot;/>">Compression Milling<span class="greyOff"> [Compression Milling]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-equipmentClass-local-pq)</span></span></span></div>
+                                    <display value=&quot;Compression Milling&quot;/>">Compression Milling<span class="greyOff"> [Compression Milling]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-manufacturing-equipment-class)</span></span></span></div>
 <div class="indent devd summaryUnit" ondblclick="summaryHandler(event)">
 <div class="debugOff"><span>Found a parent (PlanDefinition/typeReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="DeviceDefinition (id: impeller)(fullUrl: urn:uuid:82a39a18-91cf-a19d-76c1-a9e8bad9494c)
 
@@ -2172,7 +2356,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceProperty-local-pq&quot;/>
+                            <system value=&quot;http://terminology.hl7.org/CodeSystem/device-property&quot;/>
                             <code value=&quot;Maximum Speed&quot;/>
                             <display value=&quot;Maximum Speed&quot;/>
                         </coding>
@@ -2204,7 +2388,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceProperty-local-pq&quot;/>
+                            <system value=&quot;http://terminology.hl7.org/CodeSystem/device-property&quot;/>
                             <code value=&quot;Maximum Speed&quot;/>
                             <display value=&quot;Maximum Speed&quot;/>
                         </coding>
@@ -2220,7 +2404,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceProperty-local-pq&quot;/>
+                            <system value=&quot;http://terminology.hl7.org/CodeSystem/device-property&quot;/>
                             <code value=&quot;Maximum Speed&quot;/>
                             <display value=&quot;Maximum Speed&quot;/>
                         </coding>">Type: <span title="
@@ -2231,9 +2415,9 @@ Updated: 2023-01-12T17:57:08.898+00:00
                 <property>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceProperty-local-pq&quot;/>
+                            <system value=&quot;http://terminology.hl7.org/CodeSystem/device-property&quot;/>
                             <code value=&quot;Maximum Speed&quot;/>
-                            <display value=&quot;Maximum Speed&quot;/>">Maximum Speed<span class="greyOff"> [Maximum Speed]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-deviceProperty-local-pq)</span></span></span></div>
+                            <display value=&quot;Maximum Speed&quot;/>">Maximum Speed<span class="greyOff"> [Maximum Speed]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/device-property)</span></span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -2273,10 +2457,12 @@ Updated: 2023-01-12T17:57:08.898+00:00
                                         <reference value=&quot;SubstanceDefinition/startingMaterial&quot;/>
                                     </valueReference>
                                 </extension>
+                                <display value=&quot;Starting Material&quot;/>
+                                <!-- added to suppress warning caused by the lack of a true reference, due to it being in extension -->
                             </typeReference>
                             <role>
                                 <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                    <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-participant-role&quot;/>
                                     <code value=&quot;StartingMaterial&quot;/>
                                     <display value=&quot;Starting Material&quot;/>
                                 </coding>
@@ -2291,10 +2477,10 @@ Updated: 2023-01-12T17:57:08.898+00:00
                             ...
                             <role>
                                 <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                    <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-participant-role&quot;/>
                                     <code value=&quot;StartingMaterial&quot;/>
                                     <display value=&quot;Starting Material&quot;/>
-                                </coding>">Role: </span><span><span title="
+                                </coding>">Role: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -2304,9 +2490,22 @@ Updated: 2023-01-12T17:57:08.898+00:00
                         <participant>
                             <role>
                                 <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                    <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-participant-role&quot;/>
                                     <code value=&quot;StartingMaterial&quot;/>
-                                    <display value=&quot;Starting Material&quot;/>">Starting Material<span class="greyOff"> [StartingMaterial]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq)</span></span></span></div>
+                                    <display value=&quot;Starting Material&quot;/>">Starting Material<span class="greyOff"> [StartingMaterial]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/manufacturing-participant-role)</span></span></span></div>
+<div>
+<div class="indent org"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        <participant>
+                            <typeReference>
+                                ...
+                                <display value=&quot;Starting Material&quot;>">Display: Starting Material</span></div>
+</div>
 <div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
 <div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: startingMaterial)(fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821153)
 
@@ -2330,7 +2529,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
         <resource>
             <SubstanceDefinition>
                 <name>
-                    <name value=&quot;Stelbatosubstance&quot;>">Name: </span><span><span>Stelbatosubstance</span></span></div>
+                    <name value=&quot;Stelbatosubstance&quot;>">Name: <span>Stelbatosubstance</span></span></div>
 </div>
 </div>
 <div class="summaryHiddenOff"></div>
@@ -2358,6 +2557,14 @@ Updated: 2023-01-12T17:57:08.898+00:00
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3003040516&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-substance-manufacture&quot;/>
+                        <display value=&quot;Drug Substance Manufacture&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;AAA Molybdenum Products, Inc.&quot;/>
                 <contact>
                     <address>
@@ -2389,6 +2596,19 @@ Updated: 2023-01-12T17:57:08.898+00:00
                     <!-- FDA establishment identifier -->
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3003040516&quot;/>">3003040516<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div>
+<div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div>
 </div>
 <div class="summaryHiddenOff">
 <div><span title="
@@ -2398,6 +2618,27 @@ Updated: 2023-01-12T17:57:08.898+00:00
             <Organization>
                 ...
                 <name value=&quot;AAA Molybdenum Products, Inc.&quot;>">Name: </span><span>AAA Molybdenum Products, Inc.</span></div>
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-substance-manufacture&quot;/>
+                        <display value=&quot;Drug Substance Manufacture&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-substance-manufacture&quot;/>
+                        <display value=&quot;Drug Substance Manufacture&quot;/>">Drug Substance Manufacture<span class="greyOff"> [drug-substance-manufacture]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div>
 <div class="indent org2">
 					Contact
 					<div><span title="
@@ -2484,12 +2725,14 @@ Updated: 2023-01-12T17:57:08.898+00:00
                                         <reference value=&quot;SubstanceDefinition/processingMaterial&quot;/>
                                     </valueReference>
                                 </extension>
+                                <display value=&quot;Processing Material&quot;/>
+                                <!-- added to suppress warning caused by the lack of a true reference, due to it being in extension -->
                             </typeReference>
                             <role>
                                 <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                    <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-participant-role&quot;/>
                                     <code value=&quot;ProcessingMaterial&quot;/>
-                                    <display value=&quot;ProcessingMaterial&quot;/>
+                                    <display value=&quot;Processing Material&quot;/>
                                 </coding>
                             </role>">Participant</span><div><span title="
 <Bundle>
@@ -2502,10 +2745,10 @@ Updated: 2023-01-12T17:57:08.898+00:00
                             ...
                             <role>
                                 <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                    <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-participant-role&quot;/>
                                     <code value=&quot;ProcessingMaterial&quot;/>
-                                    <display value=&quot;ProcessingMaterial&quot;/>
-                                </coding>">Role: </span><span><span title="
+                                    <display value=&quot;Processing Material&quot;/>
+                                </coding>">Role: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -2515,9 +2758,22 @@ Updated: 2023-01-12T17:57:08.898+00:00
                         <participant>
                             <role>
                                 <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                    <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-participant-role&quot;/>
                                     <code value=&quot;ProcessingMaterial&quot;/>
-                                    <display value=&quot;ProcessingMaterial&quot;/>">ProcessingMaterial<span class="greyOff"> [ProcessingMaterial]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq)</span></span></span></div>
+                                    <display value=&quot;Processing Material&quot;/>">Processing Material<span class="greyOff"> [ProcessingMaterial]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/manufacturing-participant-role)</span></span></span></div>
+<div>
+<div class="indent org"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        <participant>
+                            <typeReference>
+                                ...
+                                <display value=&quot;Processing Material&quot;>">Display: Processing Material</span></div>
+</div>
 <div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
 <div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: processingMaterial)(fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821155)
 
@@ -2541,7 +2797,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
         <resource>
             <SubstanceDefinition>
                 <name>
-                    <name value=&quot;Processohol&quot;>">Name: </span><span><span>Processohol</span></span></div>
+                    <name value=&quot;Processohol&quot;>">Name: <span>Processohol</span></span></div>
 </div>
 </div>
 <div class="summaryHiddenOff"></div>
@@ -2569,6 +2825,14 @@ Updated: 2023-01-12T17:57:08.898+00:00
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3003040516&quot;/>
                 </identifier>
+                <active value=&quot;true&quot;/>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-substance-manufacture&quot;/>
+                        <display value=&quot;Drug Substance Manufacture&quot;/>
+                    </coding>
+                </type>
                 <name value=&quot;AAA Molybdenum Products, Inc.&quot;/>
                 <contact>
                     <address>
@@ -2600,6 +2864,19 @@ Updated: 2023-01-12T17:57:08.898+00:00
                     <!-- FDA establishment identifier -->
                     <system value=&quot;urn:oid:2.16.840.1.113883.4.82&quot;/>
                     <value value=&quot;3003040516&quot;/>">3003040516<span class="greyOff"> (urn:oid:2.16.840.1.113883.4.82)</span></span></div>
+<div class="debugOff"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>">Active: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <active value=&quot;true&quot;>"><span>true</span></span></div>
 </div>
 <div class="summaryHiddenOff">
 <div><span title="
@@ -2609,6 +2886,27 @@ Updated: 2023-01-12T17:57:08.898+00:00
             <Organization>
                 ...
                 <name value=&quot;AAA Molybdenum Products, Inc.&quot;>">Name: </span><span>AAA Molybdenum Products, Inc.</span></div>
+<div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                ...
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-substance-manufacture&quot;/>
+                        <display value=&quot;Drug Substance Manufacture&quot;/>
+                    </coding>">Type: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Organization>
+                <type>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
+                        <code value=&quot;drug-substance-manufacture&quot;/>
+                        <display value=&quot;Drug Substance Manufacture&quot;/>">Drug Substance Manufacture<span class="greyOff"> [drug-substance-manufacture]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div>
 <div class="indent org2">
 					Contact
 					<div><span title="
@@ -2695,10 +2993,12 @@ Updated: 2023-01-12T17:57:08.898+00:00
                                         <reference value=&quot;SubstanceDefinition/resultingMaterial&quot;/>
                                     </valueReference>
                                 </extension>
+                                <display value=&quot;Resulting Material&quot;/>
+                                <!-- added to suppress warning caused by the lack of a true reference, due to it being in extension -->
                             </typeReference>
                             <role>
                                 <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                    <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-participant-role&quot;/>
                                     <code value=&quot;ResultingMaterial&quot;/>
                                     <display value=&quot;Resulting Material&quot;/>
                                 </coding>
@@ -2713,10 +3013,10 @@ Updated: 2023-01-12T17:57:08.898+00:00
                             ...
                             <role>
                                 <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                    <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-participant-role&quot;/>
                                     <code value=&quot;ResultingMaterial&quot;/>
                                     <display value=&quot;Resulting Material&quot;/>
-                                </coding>">Role: </span><span><span title="
+                                </coding>">Role: <span title="
 <Bundle>
     <entry>
         <resource>
@@ -2726,9 +3026,22 @@ Updated: 2023-01-12T17:57:08.898+00:00
                         <participant>
                             <role>
                                 <coding>
-                                    <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq&quot;/>
+                                    <system value=&quot;http://terminology.hl7.org/CodeSystem/manufacturing-participant-role&quot;/>
                                     <code value=&quot;ResultingMaterial&quot;/>
-                                    <display value=&quot;Resulting Material&quot;/>">Resulting Material<span class="greyOff"> [ResultingMaterial]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-manufacturingParticipantRole-local-pq)</span></span></span></div>
+                                    <display value=&quot;Resulting Material&quot;/>">Resulting Material<span class="greyOff"> [ResultingMaterial]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/manufacturing-participant-role)</span></span></span></div>
+<div>
+<div class="indent org"><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <PlanDefinition>
+                <action>
+                    <action>
+                        <participant>
+                            <typeReference>
+                                ...
+                                <display value=&quot;Resulting Material&quot;>">Display: Resulting Material</span></div>
+</div>
 <div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
 <div class="debugOff"><span>Found a parent (PlanDefinition/valueReference, id: manufacturingProcess-unlinked fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: resultingMaterial)(fullUrl: urn:uuid:c458791f-7cb8-428e-83f7-8a205f821154)
 
@@ -2749,7 +3062,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
         <resource>
             <SubstanceDefinition>
                 <name>
-                    <name value=&quot;Resultothane&quot;>">Name: </span><span><span>Resultothane</span></span></div>
+                    <name value=&quot;Resultothane&quot;>">Name: <span>Resultothane</span></span></div>
 </div>
 </div>
 <div class="summaryHiddenOff"></div>
@@ -2794,6 +3107,9 @@ Updated: 2023-01-12T17:57:08.898+00:00
 	    transform:translate(-2px, -2px);
 	    border-radius: 5px;
 	    visibility:visible; /* this is so that the outer border doesn't hide these */
+    }
+    .indent-right {
+        margin-right:0.7em;
     }
     .indent-no-border {
         margin-left:1em; 	/* controls line to line indent */
@@ -2849,6 +3165,7 @@ Updated: 2023-01-12T17:57:08.898+00:00
 
     .cui { background-Color:#d9d2e9 }
     .cuidetails { background-Color:#e6e1f0 }
+    .cuidetails2 { background-Color:#ebe9f0 }
 
     .sbd,.hcs { background-Color:#affad5 }
     .sbddetails,.hcsl2 { background-Color:#c7fce2 }

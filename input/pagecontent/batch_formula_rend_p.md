@@ -34,7 +34,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
                     <productName value=&quot;Stalbatolol&quot;/>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-pq-example&quot;/>
                             <code value=&quot;Proprietary&quot;/>
                             <display value=&quot;Proprietary&quot;/>
                         </coding>
@@ -381,13 +381,11 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
                     </strengthQuantity>
                 </ingredient>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;batchQuantity&quot;>
-                            <valueQuantity>
-                                <value value=&quot;722000&quot;/>
-                                <unit value=&quot;tablets&quot;/>
-                            </valueQuantity>
-                        </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-items-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;722000&quot;/>
+                            <unit value=&quot;tablets&quot;/>
+                        </valueQuantity>
                     </extension>
                     <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                         <extension url=&quot;batchQuantity&quot;>
@@ -536,13 +534,11 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
                     </strengthQuantity>
                 </ingredient>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;batchQuantity&quot;>
-                            <valueQuantity>
-                                <value value=&quot;371000&quot;/>
-                                <unit value=&quot;tablets&quot;/>
-                            </valueQuantity>
-                        </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-items-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;371000&quot;/>
+                            <unit value=&quot;tablets&quot;/>
+                        </valueQuantity>
                     </extension>
                     <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                         <extension url=&quot;batchQuantity&quot;>
@@ -560,11 +556,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
 <div class="debugOff"><span title="
 <Bundle>
     <meta>
-        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-formula-pq&quot;>">Profile: </span><span>http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-formula-pq</span></div>
+        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-formula-pq&quot;>">Profile: </span><span title="
+<Bundle>
+    <meta>
+        <profile value=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-formula-pq&quot;>">http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-formula-pq</span></div>
 <div><span title="
 <Bundle>
     ...
-    <type value=&quot;collection&quot;>">Type: </span><span><span>collection</span></span></div>
+    <type value=&quot;collection&quot;>">Type: <span>collection</span></span></div>
 </div>
 </div>
 <div>
@@ -579,7 +578,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
                     <productName value=&quot;Stalbatolol&quot;/>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-pq-example&quot;/>
                             <code value=&quot;Proprietary&quot;/>
                             <display value=&quot;Proprietary&quot;/>
                         </coding>
@@ -595,7 +594,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
                     <productName value=&quot;Stalbatolol&quot;/>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-pq-example&quot;/>
                             <code value=&quot;Proprietary&quot;/>
                             <display value=&quot;Proprietary&quot;/>
                         </coding>
@@ -609,7 +608,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
                     ...
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-pq-example&quot;/>
                             <code value=&quot;Proprietary&quot;/>
                             <display value=&quot;Proprietary&quot;/>
                         </coding>">Name type: </span><span title="
@@ -620,9 +619,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
                 <name>
                     <type>
                         <coding>
-                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq&quot;/>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-pq-example&quot;/>
                             <code value=&quot;Proprietary&quot;/>
-                            <display value=&quot;Proprietary&quot;/>">Proprietary<span class="greyOff"> [Proprietary]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-local-pq)</span></span></div>
+                            <display value=&quot;Proprietary&quot;/>">Proprietary<span class="greyOff"> [Proprietary]</span><span class="greyOff"> (http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-pq-example)</span></span></div>
 </div>
 <div class="summaryHiddenOff"></div><br style="line-height:6px;"><div class="htmlTableRemove">
 <div class="indent org">
@@ -642,11 +641,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;batchQuantity&quot;>
-                            <valueQuantity>
-                                <value value=&quot;722000&quot;/>
-                                <unit value=&quot;tablets&quot;/>">722000 tablets</a></span><span>.</span><br><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%;">
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-items-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;722000&quot;/>
+                            <unit value=&quot;tablets&quot;/>">722000 tablets</a></span><span>.</span><br><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%;">
 <tr>
 <th></th>
 <th><b>mg/tablet</b></th>
@@ -820,11 +818,10 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
         <resource>
             <Medication>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;batchQuantity&quot;>
-                            <valueQuantity>
-                                <value value=&quot;371000&quot;/>
-                                <unit value=&quot;tablets&quot;/>">371000 tablets</a></span><span>.</span><br><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%;">
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-items-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;371000&quot;/>
+                            <unit value=&quot;tablets&quot;/>">371000 tablets</a></span><span>.</span><br><br style="line-height:6px;"><table class="rounded-corners white" id="tabularModeTable" style="width:70%;">
 <tr>
 <th></th>
 <th><b>mg/tablet</b></th>
@@ -1040,7 +1037,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
         <resource>
             <Ingredient>
                 ...
-                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+                <status value=&quot;active&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Ingredient>
+                ...
+                <status value=&quot;active&quot;>"><span>active</span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -1087,7 +1090,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
                                 <unit value=&quot;tablet&quot;/>
                             </denominator>
                         </presentationRatio>
-                    </strength>">Substance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
+                    </strength>" class="summaryHiddenOff">Substance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
 <div class="debugOff"><span>Found a parent (Ingredient/code, id: ingredient1 fullUrl: urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a65)<br>which is linked to this by resource.id</span></div>
 <div class="debugOff"><span>Found a parent (Substance/code, id: substanceIngredient-1 fullUrl: (none))<br>which is linked to this by resource.id</span></div>
 <div class="debugOff"><span>Found a parent (Substance/code, id: substanceIngredient-1 fullUrl: (none))<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: substance1)(fullUrl: urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380474)
@@ -1109,7 +1112,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
         <resource>
             <SubstanceDefinition>
                 <name>
-                    <name value=&quot;Stelbatolol&quot;>">Name: </span><span><span>Stelbatolol</span></span></div>
+                    <name value=&quot;Stelbatolol&quot;>">Name: <span>Stelbatolol</span></span></div>
 </div>
 </div>
 <div class="summaryHiddenOff"></div>
@@ -1245,7 +1248,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
         <resource>
             <Ingredient>
                 ...
-                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+                <status value=&quot;active&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Ingredient>
+                ...
+                <status value=&quot;active&quot;>"><span>active</span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -1291,7 +1300,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
                                 <unit value=&quot;tablet&quot;/>
                             </denominator>
                         </presentationRatio>
-                    </strength>">Substance</span><div>
+                    </strength>" class="summaryHiddenOff">Substance</span><div>
 <div class="indent org"><span title="
 <Bundle>
     <entry>
@@ -1417,7 +1426,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
         <resource>
             <Ingredient>
                 ...
-                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+                <status value=&quot;active&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Ingredient>
+                ...
+                <status value=&quot;active&quot;>"><span>active</span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -1463,7 +1478,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
                                 <unit value=&quot;tablet&quot;/>
                             </denominator>
                         </presentationRatio>
-                    </strength>">Substance</span><div>
+                    </strength>" class="summaryHiddenOff">Substance</span><div>
 <div class="indent org"><span title="
 <Bundle>
     <entry>
@@ -1589,7 +1604,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
         <resource>
             <Ingredient>
                 ...
-                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+                <status value=&quot;active&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Ingredient>
+                ...
+                <status value=&quot;active&quot;>"><span>active</span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -1635,7 +1656,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
                                 <unit value=&quot;tablet&quot;/>
                             </denominator>
                         </presentationRatio>
-                    </strength>">Substance</span><div>
+                    </strength>" class="summaryHiddenOff">Substance</span><div>
 <div class="indent org"><span title="
 <Bundle>
     <entry>
@@ -1761,7 +1782,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
         <resource>
             <Ingredient>
                 ...
-                <status value=&quot;active&quot;>">Status: </span><span>active</span></div>
+                <status value=&quot;active&quot;>">Status: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Ingredient>
+                ...
+                <status value=&quot;active&quot;>"><span>active</span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -1807,7 +1834,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
                                 <unit value=&quot;tablet&quot;/>
                             </denominator>
                         </presentationRatio>
-                    </strength>">Substance</span><div>
+                    </strength>" class="summaryHiddenOff">Substance</span><div>
 <div class="indent org"><span title="
 <Bundle>
     <entry>
@@ -2018,13 +2045,11 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
                     </strengthQuantity>
                 </ingredient>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;batchQuantity&quot;>
-                            <valueQuantity>
-                                <value value=&quot;722000&quot;/>
-                                <unit value=&quot;tablets&quot;/>
-                            </valueQuantity>
-                        </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-items-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;722000&quot;/>
+                            <unit value=&quot;tablets&quot;/>
+                        </valueQuantity>
                     </extension>
                     <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                         <extension url=&quot;batchQuantity&quot;>
@@ -2095,7 +2120,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
                 <contained>
                     <Substance>
                         ...
-                        <instance value=&quot;false&quot;>">Instance: </span><span><span>false</span></span></div><div><div class="indent sbddetails"><div></div><span><span title="
+                        <instance value=&quot;false&quot;>">Instance: <span>false</span></span></div><div><div class="indent sbddetails"><div></div><span><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2113,7 +2138,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
             <Medication>
                 <ingredient>
                     ...
-                    <isActive value=&quot;true&quot;>">Active ingredient: </span><span><span>true</span></span></div><div><span title="
+                    <isActive value=&quot;true&quot;>">Active ingredient: <span>true</span></span></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2170,7 +2195,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
                 <contained>
                     <Substance>
                         ...
-                        <instance value=&quot;false&quot;>">Instance: </span><span><span>false</span></span></div><div><div class="indent sbddetails"><div></div><span><span title="
+                        <instance value=&quot;false&quot;>">Instance: <span>false</span></span></div><div><div class="indent sbddetails"><div></div><span><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2197,7 +2222,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
             <Medication>
                 <ingredient>
                     ...
-                    <isActive value=&quot;false&quot;>">Active ingredient: </span><span><span>false</span></span></div><div><span title="
+                    <isActive value=&quot;false&quot;>">Active ingredient: <span>false</span></span></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2254,7 +2279,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
                 <contained>
                     <Substance>
                         ...
-                        <instance value=&quot;false&quot;>">Instance: </span><span><span>false</span></span></div><div><div class="indent sbddetails"><div></div><span><span title="
+                        <instance value=&quot;false&quot;>">Instance: <span>false</span></span></div><div><div class="indent sbddetails"><div></div><span><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2281,7 +2306,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
             <Medication>
                 <ingredient>
                     ...
-                    <isActive value=&quot;false&quot;>">Active ingredient: </span><span><span>false</span></span></div><div><span title="
+                    <isActive value=&quot;false&quot;>">Active ingredient: <span>false</span></span></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2338,7 +2363,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
                 <contained>
                     <Substance>
                         ...
-                        <instance value=&quot;false&quot;>">Instance: </span><span><span>false</span></span></div><div><div class="indent sbddetails"><div></div><span><span title="
+                        <instance value=&quot;false&quot;>">Instance: <span>false</span></span></div><div><div class="indent sbddetails"><div></div><span><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2365,7 +2390,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
             <Medication>
                 <ingredient>
                     ...
-                    <isActive value=&quot;false&quot;>">Active ingredient: </span><span><span>false</span></span></div><div><span title="
+                    <isActive value=&quot;false&quot;>">Active ingredient: <span>false</span></span></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2422,7 +2447,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
                 <contained>
                     <Substance>
                         ...
-                        <instance value=&quot;false&quot;>">Instance: </span><span><span>false</span></span></div><div><div class="indent sbddetails"><div></div><span><span title="
+                        <instance value=&quot;false&quot;>">Instance: <span>false</span></span></div><div><div class="indent sbddetails"><div></div><span><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2449,7 +2474,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
             <Medication>
                 <ingredient>
                     ...
-                    <isActive value=&quot;false&quot;>">Active ingredient: </span><span><span>false</span></span></div><div><span title="
+                    <isActive value=&quot;false&quot;>">Active ingredient: <span>false</span></span></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2474,13 +2499,11 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
             <Medication>
                 ...
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;batchQuantity&quot;>
-                            <valueQuantity>
-                                <value value=&quot;722000&quot;/>
-                                <unit value=&quot;tablets&quot;/>
-                            </valueQuantity>
-                        </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-items-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;722000&quot;/>
+                            <unit value=&quot;tablets&quot;/>
+                        </valueQuantity>
                     </extension>
                     <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                         <extension url=&quot;batchQuantity&quot;>
@@ -2490,38 +2513,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
                             </valueQuantity>
                         </extension>
                     </extension>">Batch</span><div class="summaryHiddenOff"><div class="indent medl3"><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Medication>
-                <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;batchQuantity&quot;>
-                            <valueQuantity>
-                                <value value=&quot;722000&quot;/>
-                                <unit value=&quot;tablets&quot;/>
-                            </valueQuantity>
-                        </extension>">Manufacturing</span><div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Medication>
-                <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;batchQuantity&quot;>
-                            <valueQuantity>
-                                <value value=&quot;722000&quot;/>
-                                <unit value=&quot;tablets&quot;/>">Quantity: </span><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Medication>
-                <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;batchQuantity&quot;>
-                            <valueQuantity>
-                                <value value=&quot;722000&quot;/>
-                                <unit value=&quot;tablets&quot;/>">722000 tablets</span></div></div><div class="indent medl3"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2554,7 +2545,25 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
                         <extension url=&quot;batchQuantity&quot;>
                             <valueQuantity>
                                 <value value=&quot;130&quot;/>
-                                <unit value=&quot;kg&quot;/>">130 kg</span></div></div></div></div></div></div><div class="indent med summaryUnit" ondblclick="summaryHandler(event)"><sup class="rotate-left" title="arrow indicates that this Medication resource points back to the parent MedicinalProductDefinition, instead of being linked forwards from it - via extension http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">↸</sup><span class="debugOff">arrow indicates that this Medication resource points back to the parent MedicinalProductDefinition, instead of being linked forwards from it - via extension http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq<br></span><a class="plainLink"><span class="bold" title="Medication (id: medication-batch-formula-2-unlinked)(fullUrl: urn:uuid:bf17176f-9779-180b-5c59-e58cddc11071)
+                                <unit value=&quot;kg&quot;/>">130 kg</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-items-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;722000&quot;/>
+                            <unit value=&quot;tablets&quot;/>">Items: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-items-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;722000&quot;/>
+                            <unit value=&quot;tablets&quot;/>">722000 tablets</span></div></div></div></div></div></div><div class="indent med summaryUnit" ondblclick="summaryHandler(event)"><sup class="rotate-left" title="arrow indicates that this Medication resource points back to the parent MedicinalProductDefinition, instead of being linked forwards from it - via extension http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">↸</sup><span class="debugOff">arrow indicates that this Medication resource points back to the parent MedicinalProductDefinition, instead of being linked forwards from it - via extension http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq<br></span><a class="plainLink"><span class="bold" title="Medication (id: medication-batch-formula-2-unlinked)(fullUrl: urn:uuid:bf17176f-9779-180b-5c59-e58cddc11071)
 
 <Bundle>
     <entry>
@@ -2691,13 +2700,11 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
                     </strengthQuantity>
                 </ingredient>
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;batchQuantity&quot;>
-                            <valueQuantity>
-                                <value value=&quot;371000&quot;/>
-                                <unit value=&quot;tablets&quot;/>
-                            </valueQuantity>
-                        </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-items-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;371000&quot;/>
+                            <unit value=&quot;tablets&quot;/>
+                        </valueQuantity>
                     </extension>
                     <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                         <extension url=&quot;batchQuantity&quot;>
@@ -2768,7 +2775,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
                 <contained>
                     <Substance>
                         ...
-                        <instance value=&quot;false&quot;>">Instance: </span><span><span>false</span></span></div><div><div class="indent sbddetails"><div></div><span><span title="
+                        <instance value=&quot;false&quot;>">Instance: <span>false</span></span></div><div><div class="indent sbddetails"><div></div><span><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2786,7 +2793,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
             <Medication>
                 <ingredient>
                     ...
-                    <isActive value=&quot;true&quot;>">Active ingredient: </span><span><span>true</span></span></div><div><span title="
+                    <isActive value=&quot;true&quot;>">Active ingredient: <span>true</span></span></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2843,7 +2850,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
                 <contained>
                     <Substance>
                         ...
-                        <instance value=&quot;false&quot;>">Instance: </span><span><span>false</span></span></div><div><div class="indent sbddetails"><div></div><span><span title="
+                        <instance value=&quot;false&quot;>">Instance: <span>false</span></span></div><div><div class="indent sbddetails"><div></div><span><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2870,7 +2877,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
             <Medication>
                 <ingredient>
                     ...
-                    <isActive value=&quot;false&quot;>">Active ingredient: </span><span><span>false</span></span></div><div><span title="
+                    <isActive value=&quot;false&quot;>">Active ingredient: <span>false</span></span></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2927,7 +2934,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
                 <contained>
                     <Substance>
                         ...
-                        <instance value=&quot;false&quot;>">Instance: </span><span><span>false</span></span></div><div><div class="indent sbddetails"><div></div><span><span title="
+                        <instance value=&quot;false&quot;>">Instance: <span>false</span></span></div><div><div class="indent sbddetails"><div></div><span><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2954,7 +2961,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
             <Medication>
                 <ingredient>
                     ...
-                    <isActive value=&quot;false&quot;>">Active ingredient: </span><span><span>false</span></span></div><div><span title="
+                    <isActive value=&quot;false&quot;>">Active ingredient: <span>false</span></span></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3011,7 +3018,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
                 <contained>
                     <Substance>
                         ...
-                        <instance value=&quot;false&quot;>">Instance: </span><span><span>false</span></span></div><div><div class="indent sbddetails"><div></div><span><span title="
+                        <instance value=&quot;false&quot;>">Instance: <span>false</span></span></div><div><div class="indent sbddetails"><div></div><span><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3038,7 +3045,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
             <Medication>
                 <ingredient>
                     ...
-                    <isActive value=&quot;false&quot;>">Active ingredient: </span><span><span>false</span></span></div><div><span title="
+                    <isActive value=&quot;false&quot;>">Active ingredient: <span>false</span></span></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3095,7 +3102,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
                 <contained>
                     <Substance>
                         ...
-                        <instance value=&quot;false&quot;>">Instance: </span><span><span>false</span></span></div><div><div class="indent sbddetails"><div></div><span><span title="
+                        <instance value=&quot;false&quot;>">Instance: <span>false</span></span></div><div><div class="indent sbddetails"><div></div><span><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3122,7 +3129,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
             <Medication>
                 <ingredient>
                     ...
-                    <isActive value=&quot;false&quot;>">Active ingredient: </span><span><span>false</span></span></div><div><span title="
+                    <isActive value=&quot;false&quot;>">Active ingredient: <span>false</span></span></div><div><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3147,13 +3154,11 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
             <Medication>
                 ...
                 <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;batchQuantity&quot;>
-                            <valueQuantity>
-                                <value value=&quot;371000&quot;/>
-                                <unit value=&quot;tablets&quot;/>
-                            </valueQuantity>
-                        </extension>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-items-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;371000&quot;/>
+                            <unit value=&quot;tablets&quot;/>
+                        </valueQuantity>
                     </extension>
                     <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
                         <extension url=&quot;batchQuantity&quot;>
@@ -3163,38 +3168,6 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
                             </valueQuantity>
                         </extension>
                     </extension>">Batch</span><div class="summaryHiddenOff"><div class="indent medl3"><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Medication>
-                <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;batchQuantity&quot;>
-                            <valueQuantity>
-                                <value value=&quot;371000&quot;/>
-                                <unit value=&quot;tablets&quot;/>
-                            </valueQuantity>
-                        </extension>">Manufacturing</span><div><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Medication>
-                <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;batchQuantity&quot;>
-                            <valueQuantity>
-                                <value value=&quot;371000&quot;/>
-                                <unit value=&quot;tablets&quot;/>">Quantity: </span><span title="
-<Bundle>
-    <entry>
-        <resource>
-            <Medication>
-                <batch>
-                    <extension url=&quot;http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch&quot;>
-                        <extension url=&quot;batchQuantity&quot;>
-                            <valueQuantity>
-                                <value value=&quot;371000&quot;/>
-                                <unit value=&quot;tablets&quot;/>">371000 tablets</span></div></div><div class="indent medl3"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3227,7 +3200,25 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
                         <extension url=&quot;batchQuantity&quot;>
                             <valueQuantity>
                                 <value value=&quot;65&quot;/>
-                                <unit value=&quot;kg&quot;/>">65 kg</span></div></div></div></div></div></div>
+                                <unit value=&quot;kg&quot;/>">65 kg</span></div><div><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-items-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;371000&quot;/>
+                            <unit value=&quot;tablets&quot;/>">Items: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Medication>
+                <batch>
+                    <extension url=&quot;http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-items-pq&quot;>
+                        <valueQuantity>
+                            <value value=&quot;371000&quot;/>
+                            <unit value=&quot;tablets&quot;/>">371000 tablets</span></div></div></div></div></div></div>
 </div>
 <div></div>
 </div>
@@ -3264,6 +3255,9 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
 	    transform:translate(-2px, -2px);
 	    border-radius: 5px;
 	    visibility:visible; /* this is so that the outer border doesn't hide these */
+    }
+    .indent-right {
+        margin-right:0.7em;
     }
     .indent-no-border {
         margin-left:1em; 	/* controls line to line indent */
@@ -3319,6 +3313,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-f
 
     .cui { background-Color:#d9d2e9 }
     .cuidetails { background-Color:#e6e1f0 }
+    .cuidetails2 { background-Color:#ebe9f0 }
 
     .sbd,.hcs { background-Color:#affad5 }
     .sbddetails,.hcsl2 { background-Color:#c7fce2 }
