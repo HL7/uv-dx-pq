@@ -44,6 +44,16 @@
         <version value="5.0.0"/>
     </dependsOn>
     <definition>
+        <!-- Parameter for assigning OIDs -->
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+            <extension url="code">
+                <valueCode value="auto-oid-root"/>
+            </extension>
+            <extension url="value">
+                <valueString value="2.16.840.1.113883.4.642.40.41"/>
+            </extension>
+        </extension>
+        
         <!-- New groupings to satisfy FHIR-44114 -->
 
         <grouping id="domain-bundle-profiles">
@@ -2130,10 +2140,11 @@
             </page>
         </page>
         <!-- Parameter for assigning OIDs -->
-        <parameter>
+<!--        <parameter>
             <code value="auto-oid-root"/>
             <value value="2.16.840.1.113883.4.642.40.41"/>
-        </parameter>
+        </parameter>-->
+        
 
         <!-- Special URL parameters for provisional THO code systems -->
         <parameter>
