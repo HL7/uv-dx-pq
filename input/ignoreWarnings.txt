@@ -1,6 +1,6 @@
 == Suppressed Messages ==
 
-# Information messages about reference to deprecated items.
+# Information messages about reference to deprecated item: http://hl7.org/fhir/ValueSet/jurisdiction, which is being added by the Publisher to 7 profiles for the following base resources: ActivityDefinition, MedicinalProductDefinition, ObservationDefinition, PackagedProductDefinition, PlanDefinition, SpecimenDefinition, SubstanceDefinition. Recommendation is to ignore it for now (https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/http.3A.2F.2Fhl7.2Eorg.2Ffhir.2FValueSet.2Fjurisdiction.20deprecated.20warnin)
 Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
 
 # Information messages about reference to draft status items.
@@ -15,9 +15,9 @@ A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/CAS' could no
 No definition can be found for the system http://standardterms.edqm.eu, and the property 'class' is not a generally known property, so the property might not be valid, or understood by the terminology ecosystem. In case its useful, the list of generally known properties for all systems is {2}
 No definition can be found for the system http://standardterms.edqm.eu, and the property 'domain' is not a generally known property, so the property might not be valid, or understood by the terminology ecosystem. In case its useful, the list of generally known properties for all systems is {2}
 
-# Example files for ActivityDefinition & PlanDefinition are flagged as possibly needing an OID.
-This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-
-# This IG contains 8 example codes systems, which are not expected to be moved to THO.
+# This IG contains 8 example codes systems, which are not expected to be moved to THO. The concepts in the code systems are ONLY used to create value sets bound with Example binding strength and the name of each code system ends in the string "Example" to clarify that the code system is only to be used for example bindings and should not be used in production instances (see https://confluence.hl7.org/display/TSMG/Terminology+Play+Book).
 Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
+
+# Known OID error
+The value provided ('auto-oid-root') was not found in the value set 'ig-parameters Codes ValueSet' (http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.1.0), and a code is required from this value set (error message = The System URI could not be determined for the code 'auto-oid-root' in the ValueSet 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.1.0'; The provided code '#auto-oid-root' was not found in the value set 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.1.0')
 
