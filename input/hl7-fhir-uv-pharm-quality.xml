@@ -2130,13 +2130,14 @@
             </page>
         </page>
         <!-- Parameters for assigning OIDs -->
-<!--        <parameter>
+        <parameter>
             <code>
                 <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
                 <code value="auto-oid-root"/>
+                <value value="2.16.840.1.113883.4.642.40.41" />
             </code>
-            <value value="true"/>
-        </parameter>-->
+<!--            <value value="true"/>-->
+        </parameter>
 
         <!-- Special URL parameters for provisional THO code systems -->
         <parameter>
