@@ -2129,10 +2129,10 @@
                 <generation value="markdown"/>
             </page>
         </page>
-        <!-- Parameters for assigning OIDs -->
+        <!-- Parameter for assigning OIDs -->
         <parameter>
             <code>
-                <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+                <!--<system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>-->
                 <code value="auto-oid-root"/>
                 <value value="2.16.840.1.113883.4.642.40.41" />
             </code>
