@@ -19,5 +19,7 @@ No definition can be found for the system http://standardterms.edqm.eu, and the 
 Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 
 # Known OID error
-The value provided ('auto-oid-root') was not found in the value set 'ig-parameters Codes ValueSet' (http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.1.0), and a code is required from this value set (error message = The System URI could not be determined for the code 'auto-oid-root' in the ValueSet 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.1.0'; The provided code '#auto-oid-root' was not found in the value set 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.1.0')
+ERROR: ImplementationGuide/hl7.fhir.uv.pharm-quality: ImplementationGuide​.definition​.extension[0]​.extension[0]​.value​.ofType(code): The value provided ('auto-oid-root') was not found in the value set 'ig-parameters Codes ValueSet' (http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.1.0), and a code is required from this value set (error message = The System URI could not be determined for the code 'auto-oid-root' in the ValueSet 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.1.0'; The provided code '#auto-oid-root' was not found in the value set 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.1.0')
+
+
 
