@@ -110,4 +110,4 @@ Please suggest improvements and provide notes about issues through [HL7's Jira S
 
 HL7's Confluence pages provide guidance on submitting [Specifcation Feedback](https://confluence.hl7.org/display/HL7/Specification+Feedback#SpecificationFeedback-newSubmittingnewfeedback) in Jira.
 
-See also the HL7 FHIR Community Chat [Zulip](https://chat.fhir.org/) stream "dx-PQ IG pharma quality - industry" for discussion about the Pharmaceutical Quality (Industry) FHIR IG and BR&R Pharmaceutical Quality (PQ) - Industry Use Case project.
+See also the HL7 FHIR Community Chat [Zulip](https://chat.fhir.org/) stream [Pharm Quality Industry IG](https://chat.fhir.org/#narrow/stream/394867-Pharm-Quality-Industry-IG) for discussion about the Pharmaceutical Quality (Industry) FHIR IG and BR&R Pharmaceutical Quality (PQ) - Industry Use Case project.
