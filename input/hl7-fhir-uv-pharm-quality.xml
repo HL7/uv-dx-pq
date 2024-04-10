@@ -2131,12 +2131,8 @@
         </page>
         <!-- Parameter for assigning OIDs -->
         <parameter>
-            <code>
-                <!--<system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>-->
-                <code value="auto-oid-root"/>
-                <value value="2.16.840.1.113883.4.642.40.41" />
-            </code>
-<!--            <value value="true"/>-->
+            <code value="auto-oid-root"/>
+            <value value="2.16.840.1.113883.4.642.40.41"/>
         </parameter>
 
         <!-- Special URL parameters for provisional THO code systems -->
@@ -2182,7 +2178,7 @@
             </code>
             <value value="http://terminology.hl7.org/CodeSystem/drug-substance-or-product-color"/>
         </parameter>
-        
+
         <parameter>
             <code>
                 <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
