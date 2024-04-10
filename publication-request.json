@@ -1,14 +1,10 @@
 {
   "package-id" : "hl7.fhir.uv.pharm-quality",
-  "version" : "1.0.0-ballot",
-  "path" : "http://hl7.org/fhir/uv/pharm-quality/2024Jan",
+  "version" : "1.0.0",
+  "path" : "http://hl7.org/fhir/uv/pharm-quality",
   "mode" : "working",
-  "status" : "ballot",
+  "status" : "trial-use",
   "sequence" : "STU1",
-  "desc" : "The January 2024 Ballot Version is the first ballot of this implementation guide.",
-  "first" : "true",
-  "title" : "Pharmaceutical Quality (Industry)",
-  "ci-build" : "http://build.fhir.org/ig/HL7/uv-dx-pq",
-  "category" : "Pharmaceutical",
-  "introduction" : "The FHIR resource profiles specified in this implementation guide represent data in the ICH Quality Guidelines (https://www.ich.org/page/quality-guidelines). This implementation guide defines universal realm structured data elements to support structured authoring (e.g., master data; advanced analysis) for the creation and exchange of Quality information internationally."
+  "desc" : "STU 1",
+  "first" : "false"
 }
