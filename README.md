@@ -5,3 +5,5 @@ This repository is for the Pharmaceutical Quality (Industry) FHIR IG, created by
 - Project Scope Statement: [PSS-2145](https://jira.hl7.org/browse/PSS-2145)
 - Project Confluence page: [Pharmaceutical Quality (PQ) - Industry Use Case](https://confluence.hl7.org/display/BRR/Pharmaceutical+Quality+%28PQ%29+-+Industry+Use+Case)
 - CI Build: [HL7 / uv-dx-pq](https://build.fhir.org/ig/HL7/uv-dx-pq/)
+
+The “additional_data” folder contains additional examples and testing files.
