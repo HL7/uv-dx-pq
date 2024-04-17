@@ -2324,7 +2324,7 @@
                 <code value="releaselabel"/>
             </code>
             <!--            <value value="ballot"/>-->
-            <value value="trial-use"/>
+            <value value="STU1"/>
         </parameter>
 
     </definition>
