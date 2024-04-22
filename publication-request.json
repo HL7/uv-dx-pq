@@ -1,9 +1,9 @@
 {
   "package-id" : "hl7.fhir.uv.pharm-quality",
   "version" : "1.0.0",
-  "path" : "http://hl7.org/fhir/uv/pharm-quality/STU1",
+  "path" : "http://hl7.org/fhir/uv/pharm-quality",
   "mode" : "milestone",
-  "status" : "release",
+  "status" : "trial-use",
   "sequence" : "STU1",
   "desc" : "STU 1",
   "first" : "false"
