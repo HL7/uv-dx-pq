@@ -11,7 +11,7 @@ Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/plan-definit
 # Chemical abstract codes (CAS) code system is specified as content 'not-present' in THO, so the code cannot be validated.
 A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/CAS' could not be found, so the code cannot be validated
 
-# The EDQM code system and the 'class' and 'domain' properties that are defined in the EDQM CodeSystem resource are fully supported in tx.fhir.org. The value sets defined with these properties are being correctly expanded and rendered by the Publisher, so these messages appear to be generated due to an IG Publisher tooling issue.
+# The EDQM code system and the 'class' and 'domain' properties that are defined in the EDQM CodeSystem resource are fully supported in tx.fhir.org. The value sets defined with these properties are being correctly expanded and rendered by the Publisher, so these messages appear to be generated due to an IG Publisher tooling issue (see IG Publisher GitHub issue: https://github.com/HL7/fhir-ig-publisher/issues/885).
 No definition can be found for the system http://standardterms.edqm.eu, and the property 'class' is not a generally known property, so the property might not be valid, or understood by the terminology ecosystem. In case its useful, the list of generally known properties for all systems is {2}
 No definition can be found for the system http://standardterms.edqm.eu, and the property 'domain' is not a generally known property, so the property might not be valid, or understood by the terminology ecosystem. In case its useful, the list of generally known properties for all systems is {2}
 
