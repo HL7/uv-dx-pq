@@ -3,7 +3,7 @@
   "version" : "1.0.0",
   "path" : "http://hl7.org/fhir/uv/pharm-quality/STU1",
   "mode" : "milestone",
-  "status" : "trial-use",
+  "status" : "release",
   "sequence" : "STU1",
   "desc" : "STU 1",
   "first" : "false"
