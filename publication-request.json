@@ -4,6 +4,7 @@
   "path" : "http://hl7.org/fhir/uv/pharm-quality/STU1",
   "mode" : "milestone",
   "status" : "trial-use",
-  "sequence" : "STU 1",
-  "desc" : "STU 1"
+  "sequence" : "STU1",
+  "desc" : "STU 1",
+  "first" : "false"
 }
