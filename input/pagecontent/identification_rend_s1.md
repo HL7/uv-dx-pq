@@ -8,9 +8,8 @@ The HTML rendering below shows a synthetic Quality data example for Common Techn
 					</p>
 </div>
 <div class="greyable">
-<div class="controls remove"><span> </span><span class="button" onclick="toggleSummary(this)" title="summary view">summary on</span><span> </span><span class="button" onclick="toggleCodes(this)" title="details of code systems">show codes</span><span> </span><span class="button" onclick="toggleDebug(this)" title="extra technical info">show debug</span><span style="float:right; margin-right:3px;"><span class="buttonNoUnderlineHidden" onclick="toggleLowerControls(this)"><sup title="expand this"> v </sup></span><span class="buttonNoUnderline" onclick="toggleRemove(this)"><sup title="close this">x</sup></span></span><span> </span><span class="button" onclick="toggleRemoveTask(this)" title="details of tasks for changes">hide task</span><span> </span><span class="button" onclick="toggleRemoveProvenance(this)" title="details of provenance for changes">hide provenance</span><span> </span><span class="button" onclick="toggleRemoveTables(this)" title="tabular data">hide tables</span><br><span> </span><span class="button" onclick="toggleDarkMode(this)" title="darkened display">dark mode</span><span> </span><span class="button" onclick="toggleApplyGreyscale(this)" title="grey and white display">greyscale</span><span> </span><span class="button" onclick="toggleBlackAndWhite(this,false)" title="black and white display">b&amp;w</span><span> </span><span class="button" onclick="togglePlainMode(this);" title="plain text display">text only</span></div>
 <div class="divBody">
-<div style="position:relative" class="summaryUnit" ondblclick="summaryHandler(event)">
+<div style="position:relative" class="summaryUnit">
 <div class="debugOffBorder">
 <div class="bundleBorder">
 <div class="debugOff">
@@ -1850,11 +1849,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
 <div><span title="
 <Bundle>
     ...
-    <type value=&quot;collection&quot;>">Type: <span>collection</span></span></div>
+    <type value=&quot;collection&quot;>">Type: </span><span title="
+<Bundle>
+    ...
+    <type value=&quot;collection&quot;>"><span>collection</span></span></div>
 </div>
 </div>
 <div>
-<div class="org indent"><span class="bold">Substance Characterization - Substance, on Stelbatolol</span><br><br style="line-height:6px;"><div ondblclick="summaryHandler(event)" class="indent summaryUnit comp"><a class="plainLink"><span class="bold" title="DiagnosticReport (id: processValidationReport)(fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)
+<div class="org indent"><span class="bold">Substance Characterization - Substance, on Stelbatolol</span><br><br style="line-height:6px;"><div class="indent summaryUnit comp"><a class="plainLink"><span class="bold" title="DiagnosticReport (id: processValidationReport)(fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)
 
 <Bundle>
     <entry>
@@ -1981,7 +1983,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                         <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-report-type&quot;/>
                         <code value=&quot;Characterization Report&quot;/>
                         <display value=&quot;Characterization Report&quot;/>
-                    </coding>">Code: <span title="
+                    </coding>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-report-type&quot;/>
+                        <code value=&quot;Characterization Report&quot;/>
+                        <display value=&quot;Characterization Report&quot;/>
+                    </coding>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2482,7 +2495,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
             <DiagnosticReport>
                 ...
                 <result>
-                    <reference value=&quot;Observation/fig11xray&quot;/>">Result</span><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: elementalAnalysisCarbon)(fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)
+                    <reference value=&quot;Observation/fig11xray&quot;/>">Result</span><div class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: elementalAnalysisCarbon)(fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)
 
 <Bundle>
     <entry>
@@ -2551,7 +2564,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                         <code value=&quot;ElementalAnalysisCarbon&quot;/>
                         <display value=&quot;Elemental Analysis Carbon (%)&quot;/>
                     </coding>
-                    <text value=&quot;Elemental Analysis Carbon (%)&quot;/>">Code: <span title="
+                    <text value=&quot;Elemental Analysis Carbon (%)&quot;/>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                        <code value=&quot;ElementalAnalysisCarbon&quot;/>
+                        <display value=&quot;Elemental Analysis Carbon (%)&quot;/>
+                    </coding>
+                    <text value=&quot;Elemental Analysis Carbon (%)&quot;/>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2621,7 +2646,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
             <Observation>
                 ...
                 <performer>
-                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisCarbon fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisHydrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisNitrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisFlourine fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisCarbon fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisHydrogen fullUrl: urn:uuid:9c56948c-4a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisNitrogen fullUrl: urn:uuid:9c56948c-5a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisFlourine fullUrl: urn:uuid:9c56948c-6a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr3 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e72)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr4 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e73)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr5 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr6 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d16-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr8 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d26-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr9 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d36-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr10 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d46-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: structure fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig11xray fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig10molecularstructure fullUrl: urn:uuid:9c56948c-2b39-6619-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig8absorption fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit"><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisCarbon fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisHydrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisNitrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisFlourine fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisCarbon fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisHydrogen fullUrl: urn:uuid:9c56948c-4a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisNitrogen fullUrl: urn:uuid:9c56948c-5a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisFlourine fullUrl: urn:uuid:9c56948c-6a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr3 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e72)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr4 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e73)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr5 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr6 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d16-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr8 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d26-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr9 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d36-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr10 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d46-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: structure fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig11xray fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig10molecularstructure fullUrl: urn:uuid:9c56948c-2b39-6619-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig8absorption fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
 
 <Bundle>
     <entry>
@@ -2695,7 +2720,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <coding>
                         <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
                         <code value=&quot;analytical-testing-release&quot;/>
-                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div></div></div></div></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: elementalAnalysisHydrogen)(fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a34)
+                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div></div></div></div></div></div><div class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: elementalAnalysisHydrogen)(fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a34)
 
 <Bundle>
     <entry>
@@ -2764,7 +2789,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                         <code value=&quot;ElementalAnalysisHydrogen&quot;/>
                         <display value=&quot;Elemental Analysis Hydrogen (%)&quot;/>
                     </coding>
-                    <text value=&quot;Elemental Analysis Hydrogen (%)&quot;/>">Code: <span title="
+                    <text value=&quot;Elemental Analysis Hydrogen (%)&quot;/>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                        <code value=&quot;ElementalAnalysisHydrogen&quot;/>
+                        <display value=&quot;Elemental Analysis Hydrogen (%)&quot;/>
+                    </coding>
+                    <text value=&quot;Elemental Analysis Hydrogen (%)&quot;/>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2834,7 +2871,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
             <Observation>
                 ...
                 <performer>
-                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisCarbon fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisHydrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisNitrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisFlourine fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisCarbon fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisHydrogen fullUrl: urn:uuid:9c56948c-4a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisNitrogen fullUrl: urn:uuid:9c56948c-5a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisFlourine fullUrl: urn:uuid:9c56948c-6a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr3 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e72)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr4 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e73)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr5 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr6 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d16-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr8 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d26-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr9 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d36-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr10 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d46-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: structure fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig11xray fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig10molecularstructure fullUrl: urn:uuid:9c56948c-2b39-6619-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig8absorption fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit"><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisCarbon fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisHydrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisNitrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisFlourine fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisCarbon fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisHydrogen fullUrl: urn:uuid:9c56948c-4a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisNitrogen fullUrl: urn:uuid:9c56948c-5a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisFlourine fullUrl: urn:uuid:9c56948c-6a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr3 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e72)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr4 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e73)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr5 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr6 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d16-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr8 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d26-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr9 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d36-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr10 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d46-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: structure fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig11xray fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig10molecularstructure fullUrl: urn:uuid:9c56948c-2b39-6619-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig8absorption fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
 
 <Bundle>
     <entry>
@@ -2908,7 +2945,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <coding>
                         <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
                         <code value=&quot;analytical-testing-release&quot;/>
-                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div></div></div></div></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: elementalAnalysisNitrogen)(fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35)
+                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div></div></div></div></div></div><div class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: elementalAnalysisNitrogen)(fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35)
 
 <Bundle>
     <entry>
@@ -2977,7 +3014,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                         <code value=&quot;ElementalAnalysisNitrogen&quot;/>
                         <display value=&quot;Elemental Analysis Nitrogen (%)&quot;/>
                     </coding>
-                    <text value=&quot;Elemental Analysis Nitrogen (%)&quot;/>">Code: <span title="
+                    <text value=&quot;Elemental Analysis Nitrogen (%)&quot;/>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                        <code value=&quot;ElementalAnalysisNitrogen&quot;/>
+                        <display value=&quot;Elemental Analysis Nitrogen (%)&quot;/>
+                    </coding>
+                    <text value=&quot;Elemental Analysis Nitrogen (%)&quot;/>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3047,7 +3096,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
             <Observation>
                 ...
                 <performer>
-                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisCarbon fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisHydrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisNitrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisFlourine fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisCarbon fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisHydrogen fullUrl: urn:uuid:9c56948c-4a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisNitrogen fullUrl: urn:uuid:9c56948c-5a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisFlourine fullUrl: urn:uuid:9c56948c-6a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr3 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e72)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr4 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e73)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr5 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr6 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d16-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr8 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d26-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr9 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d36-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr10 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d46-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: structure fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig11xray fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig10molecularstructure fullUrl: urn:uuid:9c56948c-2b39-6619-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig8absorption fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit"><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisCarbon fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisHydrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisNitrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisFlourine fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisCarbon fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisHydrogen fullUrl: urn:uuid:9c56948c-4a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisNitrogen fullUrl: urn:uuid:9c56948c-5a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisFlourine fullUrl: urn:uuid:9c56948c-6a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr3 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e72)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr4 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e73)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr5 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr6 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d16-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr8 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d26-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr9 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d36-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr10 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d46-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: structure fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig11xray fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig10molecularstructure fullUrl: urn:uuid:9c56948c-2b39-6619-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig8absorption fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
 
 <Bundle>
     <entry>
@@ -3121,7 +3170,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <coding>
                         <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
                         <code value=&quot;analytical-testing-release&quot;/>
-                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div></div></div></div></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: elementalAnalysisFlourine)(fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a35)
+                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div></div></div></div></div></div><div class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: elementalAnalysisFlourine)(fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a35)
 
 <Bundle>
     <entry>
@@ -3190,7 +3239,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                         <code value=&quot;ElementalAnalysisFlourine&quot;/>
                         <display value=&quot;Elemental Analysis Flourine (%)&quot;/>
                     </coding>
-                    <text value=&quot;Elemental Analysis Flourine (%)&quot;/>">Code: <span title="
+                    <text value=&quot;Elemental Analysis Flourine (%)&quot;/>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                        <code value=&quot;ElementalAnalysisFlourine&quot;/>
+                        <display value=&quot;Elemental Analysis Flourine (%)&quot;/>
+                    </coding>
+                    <text value=&quot;Elemental Analysis Flourine (%)&quot;/>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3260,7 +3321,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
             <Observation>
                 ...
                 <performer>
-                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisCarbon fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisHydrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisNitrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisFlourine fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisCarbon fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisHydrogen fullUrl: urn:uuid:9c56948c-4a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisNitrogen fullUrl: urn:uuid:9c56948c-5a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisFlourine fullUrl: urn:uuid:9c56948c-6a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr3 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e72)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr4 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e73)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr5 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr6 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d16-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr8 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d26-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr9 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d36-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr10 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d46-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: structure fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig11xray fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig10molecularstructure fullUrl: urn:uuid:9c56948c-2b39-6619-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig8absorption fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit"><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisCarbon fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisHydrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisNitrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisFlourine fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisCarbon fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisHydrogen fullUrl: urn:uuid:9c56948c-4a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisNitrogen fullUrl: urn:uuid:9c56948c-5a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisFlourine fullUrl: urn:uuid:9c56948c-6a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr3 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e72)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr4 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e73)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr5 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr6 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d16-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr8 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d26-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr9 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d36-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr10 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d46-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: structure fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig11xray fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig10molecularstructure fullUrl: urn:uuid:9c56948c-2b39-6619-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig8absorption fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
 
 <Bundle>
     <entry>
@@ -3334,7 +3395,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <coding>
                         <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
                         <code value=&quot;analytical-testing-release&quot;/>
-                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div></div></div></div></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: ionAnalysisCarbon)(fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a33)
+                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div></div></div></div></div></div><div class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: ionAnalysisCarbon)(fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a33)
 
 <Bundle>
     <entry>
@@ -3418,7 +3479,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                         <code value=&quot;IonAnalysisCarbon&quot;/>
                         <display value=&quot;Ion Analysis Carbon (%)&quot;/>
                     </coding>
-                    <text value=&quot;Ion Analysis Carbon (%)&quot;/>">Code: <span title="
+                    <text value=&quot;Ion Analysis Carbon (%)&quot;/>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                        <code value=&quot;IonAnalysisCarbon&quot;/>
+                        <display value=&quot;Ion Analysis Carbon (%)&quot;/>
+                    </coding>
+                    <text value=&quot;Ion Analysis Carbon (%)&quot;/>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3537,7 +3610,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IonAnalysisCarbonMassAccuracy&quot;/>
                             <display value=&quot;Ion Analysis Carbon - Mass Accuracy&quot;/>
-                        </coding>">Code: <span title="
+                        </coding>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                            <code value=&quot;IonAnalysisCarbonMassAccuracy&quot;/>
+                            <display value=&quot;Ion Analysis Carbon - Mass Accuracy&quot;/>
+                        </coding>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3580,7 +3664,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
             <Observation>
                 ...
                 <performer>
-                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisCarbon fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisHydrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisNitrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisFlourine fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisCarbon fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisHydrogen fullUrl: urn:uuid:9c56948c-4a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisNitrogen fullUrl: urn:uuid:9c56948c-5a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisFlourine fullUrl: urn:uuid:9c56948c-6a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr3 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e72)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr4 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e73)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr5 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr6 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d16-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr8 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d26-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr9 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d36-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr10 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d46-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: structure fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig11xray fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig10molecularstructure fullUrl: urn:uuid:9c56948c-2b39-6619-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig8absorption fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit"><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisCarbon fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisHydrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisNitrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisFlourine fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisCarbon fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisHydrogen fullUrl: urn:uuid:9c56948c-4a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisNitrogen fullUrl: urn:uuid:9c56948c-5a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisFlourine fullUrl: urn:uuid:9c56948c-6a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr3 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e72)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr4 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e73)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr5 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr6 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d16-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr8 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d26-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr9 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d36-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr10 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d46-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: structure fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig11xray fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig10molecularstructure fullUrl: urn:uuid:9c56948c-2b39-6619-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig8absorption fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
 
 <Bundle>
     <entry>
@@ -3654,7 +3738,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <coding>
                         <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
                         <code value=&quot;analytical-testing-release&quot;/>
-                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div></div></div></div></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: ionAnalysisHydrogen)(fullUrl: urn:uuid:9c56948c-4a39-6609-1c01-4d197ea57a34)
+                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div></div></div></div></div></div><div class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: ionAnalysisHydrogen)(fullUrl: urn:uuid:9c56948c-4a39-6609-1c01-4d197ea57a34)
 
 <Bundle>
     <entry>
@@ -3738,7 +3822,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                         <code value=&quot;IonAnalysisHydrogen&quot;/>
                         <display value=&quot;Ion Analysis Hydrogen (%)&quot;/>
                     </coding>
-                    <text value=&quot;Ion Analysis Hydrogen (%)&quot;/>">Code: <span title="
+                    <text value=&quot;Ion Analysis Hydrogen (%)&quot;/>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                        <code value=&quot;IonAnalysisHydrogen&quot;/>
+                        <display value=&quot;Ion Analysis Hydrogen (%)&quot;/>
+                    </coding>
+                    <text value=&quot;Ion Analysis Hydrogen (%)&quot;/>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3857,7 +3953,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IonAnalysisHydrogenMassAccuracy&quot;/>
                             <display value=&quot;Ion Analysis Hydrogen - Mass Accuracy&quot;/>
-                        </coding>">Code: <span title="
+                        </coding>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                            <code value=&quot;IonAnalysisHydrogenMassAccuracy&quot;/>
+                            <display value=&quot;Ion Analysis Hydrogen - Mass Accuracy&quot;/>
+                        </coding>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3900,7 +4007,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
             <Observation>
                 ...
                 <performer>
-                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisCarbon fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisHydrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisNitrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisFlourine fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisCarbon fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisHydrogen fullUrl: urn:uuid:9c56948c-4a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisNitrogen fullUrl: urn:uuid:9c56948c-5a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisFlourine fullUrl: urn:uuid:9c56948c-6a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr3 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e72)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr4 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e73)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr5 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr6 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d16-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr8 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d26-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr9 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d36-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr10 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d46-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: structure fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig11xray fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig10molecularstructure fullUrl: urn:uuid:9c56948c-2b39-6619-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig8absorption fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit"><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisCarbon fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisHydrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisNitrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisFlourine fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisCarbon fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisHydrogen fullUrl: urn:uuid:9c56948c-4a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisNitrogen fullUrl: urn:uuid:9c56948c-5a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisFlourine fullUrl: urn:uuid:9c56948c-6a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr3 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e72)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr4 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e73)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr5 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr6 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d16-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr8 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d26-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr9 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d36-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr10 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d46-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: structure fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig11xray fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig10molecularstructure fullUrl: urn:uuid:9c56948c-2b39-6619-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig8absorption fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
 
 <Bundle>
     <entry>
@@ -3974,7 +4081,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <coding>
                         <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
                         <code value=&quot;analytical-testing-release&quot;/>
-                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div></div></div></div></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: ionAnalysisNitrogen)(fullUrl: urn:uuid:9c56948c-5a39-6609-1c01-4d197ea57a35)
+                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div></div></div></div></div></div><div class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: ionAnalysisNitrogen)(fullUrl: urn:uuid:9c56948c-5a39-6609-1c01-4d197ea57a35)
 
 <Bundle>
     <entry>
@@ -4058,7 +4165,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                         <code value=&quot;IonAnalysisNitrogen&quot;/>
                         <display value=&quot;Ion Analysis Nitrogen (%)&quot;/>
                     </coding>
-                    <text value=&quot;Ion Analysis Nitrogen (%)&quot;/>">Code: <span title="
+                    <text value=&quot;Ion Analysis Nitrogen (%)&quot;/>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                        <code value=&quot;IonAnalysisNitrogen&quot;/>
+                        <display value=&quot;Ion Analysis Nitrogen (%)&quot;/>
+                    </coding>
+                    <text value=&quot;Ion Analysis Nitrogen (%)&quot;/>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -4177,7 +4296,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IonAnalysisNitrogenMassAccuracy&quot;/>
                             <display value=&quot;Ion Analysis Nitrogen - Mass Accuracy&quot;/>
-                        </coding>">Code: <span title="
+                        </coding>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                            <code value=&quot;IonAnalysisNitrogenMassAccuracy&quot;/>
+                            <display value=&quot;Ion Analysis Nitrogen - Mass Accuracy&quot;/>
+                        </coding>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -4220,7 +4350,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
             <Observation>
                 ...
                 <performer>
-                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisCarbon fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisHydrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisNitrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisFlourine fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisCarbon fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisHydrogen fullUrl: urn:uuid:9c56948c-4a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisNitrogen fullUrl: urn:uuid:9c56948c-5a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisFlourine fullUrl: urn:uuid:9c56948c-6a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr3 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e72)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr4 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e73)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr5 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr6 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d16-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr8 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d26-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr9 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d36-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr10 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d46-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: structure fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig11xray fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig10molecularstructure fullUrl: urn:uuid:9c56948c-2b39-6619-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig8absorption fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit"><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisCarbon fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisHydrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisNitrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisFlourine fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisCarbon fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisHydrogen fullUrl: urn:uuid:9c56948c-4a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisNitrogen fullUrl: urn:uuid:9c56948c-5a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisFlourine fullUrl: urn:uuid:9c56948c-6a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr3 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e72)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr4 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e73)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr5 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr6 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d16-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr8 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d26-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr9 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d36-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr10 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d46-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: structure fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig11xray fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig10molecularstructure fullUrl: urn:uuid:9c56948c-2b39-6619-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig8absorption fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
 
 <Bundle>
     <entry>
@@ -4294,7 +4424,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <coding>
                         <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
                         <code value=&quot;analytical-testing-release&quot;/>
-                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div></div></div></div></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: ionAnalysisFlourine)(fullUrl: urn:uuid:9c56948c-6a39-6609-1c01-4d197ea57a35)
+                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div></div></div></div></div></div><div class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: ionAnalysisFlourine)(fullUrl: urn:uuid:9c56948c-6a39-6609-1c01-4d197ea57a35)
 
 <Bundle>
     <entry>
@@ -4378,7 +4508,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                         <code value=&quot;IonAnalysisFlourine&quot;/>
                         <display value=&quot;Ion Analysis Flourine (%)&quot;/>
                     </coding>
-                    <text value=&quot;Ion Analysis Flourine (%)&quot;/>">Code: <span title="
+                    <text value=&quot;Ion Analysis Flourine (%)&quot;/>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                        <code value=&quot;IonAnalysisFlourine&quot;/>
+                        <display value=&quot;Ion Analysis Flourine (%)&quot;/>
+                    </coding>
+                    <text value=&quot;Ion Analysis Flourine (%)&quot;/>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -4497,7 +4639,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IonAnalysisFlourineMassAccuracy&quot;/>
                             <display value=&quot;Ion Analysis Flourine - Mass Accuracy&quot;/>
-                        </coding>">Code: <span title="
+                        </coding>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                            <code value=&quot;IonAnalysisFlourineMassAccuracy&quot;/>
+                            <display value=&quot;Ion Analysis Flourine - Mass Accuracy&quot;/>
+                        </coding>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -4540,7 +4693,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
             <Observation>
                 ...
                 <performer>
-                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisCarbon fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisHydrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisNitrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisFlourine fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisCarbon fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisHydrogen fullUrl: urn:uuid:9c56948c-4a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisNitrogen fullUrl: urn:uuid:9c56948c-5a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisFlourine fullUrl: urn:uuid:9c56948c-6a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr3 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e72)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr4 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e73)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr5 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr6 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d16-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr8 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d26-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr9 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d36-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr10 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d46-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: structure fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig11xray fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig10molecularstructure fullUrl: urn:uuid:9c56948c-2b39-6619-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig8absorption fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit"><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisCarbon fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisHydrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisNitrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisFlourine fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisCarbon fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisHydrogen fullUrl: urn:uuid:9c56948c-4a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisNitrogen fullUrl: urn:uuid:9c56948c-5a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisFlourine fullUrl: urn:uuid:9c56948c-6a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr3 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e72)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr4 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e73)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr5 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr6 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d16-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr8 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d26-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr9 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d36-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr10 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d46-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: structure fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig11xray fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig10molecularstructure fullUrl: urn:uuid:9c56948c-2b39-6619-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig8absorption fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
 
 <Bundle>
     <entry>
@@ -4614,7 +4767,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <coding>
                         <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
                         <code value=&quot;analytical-testing-release&quot;/>
-                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div></div></div></div></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: nmr3)(fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e72)
+                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div></div></div></div></div></div><div class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: nmr3)(fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e72)
 
 <Bundle>
     <entry>
@@ -4711,7 +4864,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                         <code value=&quot;NMR&quot;/>
                         <display value=&quot;nmr&quot;/>
                     </coding>
-                    <text value=&quot;NMR&quot;/>">Code: <span title="
+                    <text value=&quot;NMR&quot;/>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                        <code value=&quot;NMR&quot;/>
+                        <display value=&quot;nmr&quot;/>
+                    </coding>
+                    <text value=&quot;NMR&quot;/>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -4821,7 +4986,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;NMR-H&quot;/>
                             <display value=&quot;NMR-H&quot;/>
-                        </coding>">Code: <span title="
+                        </coding>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                            <code value=&quot;NMR-H&quot;/>
+                            <display value=&quot;NMR-H&quot;/>
+                        </coding>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -4889,7 +5065,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;NMR-C&quot;/>
                             <display value=&quot;NMR-C&quot;/>
-                        </coding>">Code: <span title="
+                        </coding>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                            <code value=&quot;NMR-C&quot;/>
+                            <display value=&quot;NMR-C&quot;/>
+                        </coding>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -4958,7 +5145,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;POS&quot;/>
                             <display value=&quot;Structure Position&quot;/>
-                        </coding>">Code: <span title="
+                        </coding>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                            <code value=&quot;POS&quot;/>
+                            <display value=&quot;Structure Position&quot;/>
+                        </coding>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -4996,7 +5194,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
             <Observation>
                 ...
                 <performer>
-                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisCarbon fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisHydrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisNitrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisFlourine fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisCarbon fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisHydrogen fullUrl: urn:uuid:9c56948c-4a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisNitrogen fullUrl: urn:uuid:9c56948c-5a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisFlourine fullUrl: urn:uuid:9c56948c-6a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr3 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e72)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr4 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e73)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr5 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr6 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d16-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr8 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d26-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr9 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d36-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr10 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d46-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: structure fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig11xray fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig10molecularstructure fullUrl: urn:uuid:9c56948c-2b39-6619-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig8absorption fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit"><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisCarbon fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisHydrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisNitrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisFlourine fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisCarbon fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisHydrogen fullUrl: urn:uuid:9c56948c-4a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisNitrogen fullUrl: urn:uuid:9c56948c-5a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisFlourine fullUrl: urn:uuid:9c56948c-6a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr3 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e72)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr4 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e73)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr5 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr6 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d16-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr8 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d26-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr9 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d36-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr10 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d46-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: structure fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig11xray fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig10molecularstructure fullUrl: urn:uuid:9c56948c-2b39-6619-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig8absorption fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
 
 <Bundle>
     <entry>
@@ -5070,7 +5268,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <coding>
                         <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
                         <code value=&quot;analytical-testing-release&quot;/>
-                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div></div></div></div></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: nmr4)(fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e73)
+                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div></div></div></div></div></div><div class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: nmr4)(fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e73)
 
 <Bundle>
     <entry>
@@ -5166,7 +5364,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                         <code value=&quot;NMR&quot;/>
                         <display value=&quot;nmr&quot;/>
                     </coding>
-                    <text value=&quot;NMR&quot;/>">Code: <span title="
+                    <text value=&quot;NMR&quot;/>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                        <code value=&quot;NMR&quot;/>
+                        <display value=&quot;nmr&quot;/>
+                    </coding>
+                    <text value=&quot;NMR&quot;/>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -5275,7 +5485,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;NMR-H&quot;/>
                             <display value=&quot;NMR-H&quot;/>
-                        </coding>">Code: <span title="
+                        </coding>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                            <code value=&quot;NMR-H&quot;/>
+                            <display value=&quot;NMR-H&quot;/>
+                        </coding>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -5343,7 +5564,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;NMR-C&quot;/>
                             <display value=&quot;NMR-C&quot;/>
-                        </coding>">Code: <span title="
+                        </coding>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                            <code value=&quot;NMR-C&quot;/>
+                            <display value=&quot;NMR-C&quot;/>
+                        </coding>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -5412,7 +5644,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;POS&quot;/>
                             <display value=&quot;Structure Position&quot;/>
-                        </coding>">Code: <span title="
+                        </coding>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                            <code value=&quot;POS&quot;/>
+                            <display value=&quot;Structure Position&quot;/>
+                        </coding>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -5450,7 +5693,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
             <Observation>
                 ...
                 <performer>
-                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisCarbon fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisHydrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisNitrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisFlourine fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisCarbon fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisHydrogen fullUrl: urn:uuid:9c56948c-4a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisNitrogen fullUrl: urn:uuid:9c56948c-5a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisFlourine fullUrl: urn:uuid:9c56948c-6a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr3 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e72)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr4 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e73)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr5 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr6 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d16-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr8 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d26-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr9 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d36-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr10 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d46-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: structure fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig11xray fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig10molecularstructure fullUrl: urn:uuid:9c56948c-2b39-6619-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig8absorption fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit"><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisCarbon fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisHydrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisNitrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisFlourine fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisCarbon fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisHydrogen fullUrl: urn:uuid:9c56948c-4a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisNitrogen fullUrl: urn:uuid:9c56948c-5a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisFlourine fullUrl: urn:uuid:9c56948c-6a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr3 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e72)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr4 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e73)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr5 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr6 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d16-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr8 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d26-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr9 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d36-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr10 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d46-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: structure fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig11xray fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig10molecularstructure fullUrl: urn:uuid:9c56948c-2b39-6619-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig8absorption fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
 
 <Bundle>
     <entry>
@@ -5524,7 +5767,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <coding>
                         <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
                         <code value=&quot;analytical-testing-release&quot;/>
-                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div></div></div></div></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: nmr5)(fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74)
+                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div></div></div></div></div></div><div class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: nmr5)(fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74)
 
 <Bundle>
     <entry>
@@ -5625,7 +5868,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                         <code value=&quot;NMR&quot;/>
                         <display value=&quot;nmr&quot;/>
                     </coding>
-                    <text value=&quot;NMR&quot;/>">Code: <span title="
+                    <text value=&quot;NMR&quot;/>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                        <code value=&quot;NMR&quot;/>
+                        <display value=&quot;nmr&quot;/>
+                    </coding>
+                    <text value=&quot;NMR&quot;/>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -5739,7 +5994,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;NMR-H&quot;/>
                             <display value=&quot;NMR-H&quot;/>
-                        </coding>">Code: <span title="
+                        </coding>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                            <code value=&quot;NMR-H&quot;/>
+                            <display value=&quot;NMR-H&quot;/>
+                        </coding>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -5812,7 +6078,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;NMR-C&quot;/>
                             <display value=&quot;NMR-C&quot;/>
-                        </coding>">Code: <span title="
+                        </coding>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                            <code value=&quot;NMR-C&quot;/>
+                            <display value=&quot;NMR-C&quot;/>
+                        </coding>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -5906,7 +6183,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;POS&quot;/>
                             <display value=&quot;Structure Position&quot;/>
-                        </coding>">Code: <span title="
+                        </coding>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                            <code value=&quot;POS&quot;/>
+                            <display value=&quot;Structure Position&quot;/>
+                        </coding>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -5944,7 +6232,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
             <Observation>
                 ...
                 <performer>
-                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisCarbon fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisHydrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisNitrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisFlourine fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisCarbon fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisHydrogen fullUrl: urn:uuid:9c56948c-4a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisNitrogen fullUrl: urn:uuid:9c56948c-5a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisFlourine fullUrl: urn:uuid:9c56948c-6a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr3 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e72)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr4 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e73)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr5 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr6 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d16-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr8 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d26-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr9 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d36-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr10 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d46-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: structure fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig11xray fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig10molecularstructure fullUrl: urn:uuid:9c56948c-2b39-6619-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig8absorption fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit"><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisCarbon fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisHydrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisNitrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisFlourine fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisCarbon fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisHydrogen fullUrl: urn:uuid:9c56948c-4a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisNitrogen fullUrl: urn:uuid:9c56948c-5a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisFlourine fullUrl: urn:uuid:9c56948c-6a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr3 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e72)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr4 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e73)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr5 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr6 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d16-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr8 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d26-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr9 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d36-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr10 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d46-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: structure fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig11xray fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig10molecularstructure fullUrl: urn:uuid:9c56948c-2b39-6619-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig8absorption fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
 
 <Bundle>
     <entry>
@@ -6018,7 +6306,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <coding>
                         <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
                         <code value=&quot;analytical-testing-release&quot;/>
-                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div></div></div></div></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: nmr6)(fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d16-47cb5b295e74)
+                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div></div></div></div></div></div><div class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: nmr6)(fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d16-47cb5b295e74)
 
 <Bundle>
     <entry>
@@ -6119,7 +6407,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                         <code value=&quot;NMR&quot;/>
                         <display value=&quot;nmr&quot;/>
                     </coding>
-                    <text value=&quot;NMR&quot;/>">Code: <span title="
+                    <text value=&quot;NMR&quot;/>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                        <code value=&quot;NMR&quot;/>
+                        <display value=&quot;nmr&quot;/>
+                    </coding>
+                    <text value=&quot;NMR&quot;/>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -6238,7 +6538,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;NMR-H&quot;/>
                             <display value=&quot;NMR-H&quot;/>
-                        </coding>">Code: <span title="
+                        </coding>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                            <code value=&quot;NMR-H&quot;/>
+                            <display value=&quot;NMR-H&quot;/>
+                        </coding>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -6331,7 +6642,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;NMR-C&quot;/>
                             <display value=&quot;NMR-C&quot;/>
-                        </coding>">Code: <span title="
+                        </coding>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                            <code value=&quot;NMR-C&quot;/>
+                            <display value=&quot;NMR-C&quot;/>
+                        </coding>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -6400,7 +6722,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;POS&quot;/>
                             <display value=&quot;Structure Position&quot;/>
-                        </coding>">Code: <span title="
+                        </coding>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                            <code value=&quot;POS&quot;/>
+                            <display value=&quot;Structure Position&quot;/>
+                        </coding>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -6438,7 +6771,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
             <Observation>
                 ...
                 <performer>
-                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisCarbon fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisHydrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisNitrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisFlourine fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisCarbon fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisHydrogen fullUrl: urn:uuid:9c56948c-4a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisNitrogen fullUrl: urn:uuid:9c56948c-5a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisFlourine fullUrl: urn:uuid:9c56948c-6a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr3 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e72)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr4 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e73)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr5 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr6 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d16-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr8 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d26-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr9 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d36-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr10 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d46-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: structure fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig11xray fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig10molecularstructure fullUrl: urn:uuid:9c56948c-2b39-6619-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig8absorption fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit"><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisCarbon fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisHydrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisNitrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisFlourine fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisCarbon fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisHydrogen fullUrl: urn:uuid:9c56948c-4a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisNitrogen fullUrl: urn:uuid:9c56948c-5a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisFlourine fullUrl: urn:uuid:9c56948c-6a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr3 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e72)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr4 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e73)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr5 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr6 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d16-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr8 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d26-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr9 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d36-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr10 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d46-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: structure fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig11xray fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig10molecularstructure fullUrl: urn:uuid:9c56948c-2b39-6619-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig8absorption fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
 
 <Bundle>
     <entry>
@@ -6512,7 +6845,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <coding>
                         <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
                         <code value=&quot;analytical-testing-release&quot;/>
-                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div></div></div></div></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: nmr8)(fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d26-47cb5b295e74)
+                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div></div></div></div></div></div><div class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: nmr8)(fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d26-47cb5b295e74)
 
 <Bundle>
     <entry>
@@ -6608,7 +6941,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                         <code value=&quot;NMR&quot;/>
                         <display value=&quot;nmr&quot;/>
                     </coding>
-                    <text value=&quot;NMR&quot;/>">Code: <span title="
+                    <text value=&quot;NMR&quot;/>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                        <code value=&quot;NMR&quot;/>
+                        <display value=&quot;nmr&quot;/>
+                    </coding>
+                    <text value=&quot;NMR&quot;/>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -6717,7 +7062,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;NMR-H&quot;/>
                             <display value=&quot;NMR-H&quot;/>
-                        </coding>">Code: <span title="
+                        </coding>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                            <code value=&quot;NMR-H&quot;/>
+                            <display value=&quot;NMR-H&quot;/>
+                        </coding>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -6785,7 +7141,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;NMR-C&quot;/>
                             <display value=&quot;NMR-C&quot;/>
-                        </coding>">Code: <span title="
+                        </coding>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                            <code value=&quot;NMR-C&quot;/>
+                            <display value=&quot;NMR-C&quot;/>
+                        </coding>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -6854,7 +7221,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;POS&quot;/>
                             <display value=&quot;Structure Position&quot;/>
-                        </coding>">Code: <span title="
+                        </coding>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                            <code value=&quot;POS&quot;/>
+                            <display value=&quot;Structure Position&quot;/>
+                        </coding>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -6892,7 +7270,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
             <Observation>
                 ...
                 <performer>
-                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisCarbon fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisHydrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisNitrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisFlourine fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisCarbon fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisHydrogen fullUrl: urn:uuid:9c56948c-4a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisNitrogen fullUrl: urn:uuid:9c56948c-5a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisFlourine fullUrl: urn:uuid:9c56948c-6a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr3 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e72)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr4 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e73)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr5 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr6 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d16-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr8 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d26-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr9 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d36-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr10 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d46-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: structure fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig11xray fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig10molecularstructure fullUrl: urn:uuid:9c56948c-2b39-6619-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig8absorption fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit"><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisCarbon fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisHydrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisNitrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisFlourine fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisCarbon fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisHydrogen fullUrl: urn:uuid:9c56948c-4a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisNitrogen fullUrl: urn:uuid:9c56948c-5a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisFlourine fullUrl: urn:uuid:9c56948c-6a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr3 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e72)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr4 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e73)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr5 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr6 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d16-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr8 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d26-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr9 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d36-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr10 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d46-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: structure fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig11xray fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig10molecularstructure fullUrl: urn:uuid:9c56948c-2b39-6619-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig8absorption fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
 
 <Bundle>
     <entry>
@@ -6966,7 +7344,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <coding>
                         <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
                         <code value=&quot;analytical-testing-release&quot;/>
-                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div></div></div></div></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: nmr9)(fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d36-47cb5b295e74)
+                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div></div></div></div></div></div><div class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: nmr9)(fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d36-47cb5b295e74)
 
 <Bundle>
     <entry>
@@ -7062,7 +7440,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                         <code value=&quot;NMR&quot;/>
                         <display value=&quot;nmr&quot;/>
                     </coding>
-                    <text value=&quot;NMR&quot;/>">Code: <span title="
+                    <text value=&quot;NMR&quot;/>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                        <code value=&quot;NMR&quot;/>
+                        <display value=&quot;nmr&quot;/>
+                    </coding>
+                    <text value=&quot;NMR&quot;/>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -7171,7 +7561,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;NMR-H&quot;/>
                             <display value=&quot;NMR-H&quot;/>
-                        </coding>">Code: <span title="
+                        </coding>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                            <code value=&quot;NMR-H&quot;/>
+                            <display value=&quot;NMR-H&quot;/>
+                        </coding>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -7239,7 +7640,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;NMR-C&quot;/>
                             <display value=&quot;NMR-C&quot;/>
-                        </coding>">Code: <span title="
+                        </coding>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                            <code value=&quot;NMR-C&quot;/>
+                            <display value=&quot;NMR-C&quot;/>
+                        </coding>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -7308,7 +7720,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;POS&quot;/>
                             <display value=&quot;Structure Position&quot;/>
-                        </coding>">Code: <span title="
+                        </coding>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                            <code value=&quot;POS&quot;/>
+                            <display value=&quot;Structure Position&quot;/>
+                        </coding>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -7346,7 +7769,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
             <Observation>
                 ...
                 <performer>
-                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisCarbon fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisHydrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisNitrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisFlourine fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisCarbon fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisHydrogen fullUrl: urn:uuid:9c56948c-4a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisNitrogen fullUrl: urn:uuid:9c56948c-5a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisFlourine fullUrl: urn:uuid:9c56948c-6a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr3 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e72)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr4 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e73)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr5 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr6 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d16-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr8 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d26-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr9 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d36-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr10 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d46-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: structure fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig11xray fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig10molecularstructure fullUrl: urn:uuid:9c56948c-2b39-6619-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig8absorption fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit"><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisCarbon fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisHydrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisNitrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisFlourine fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisCarbon fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisHydrogen fullUrl: urn:uuid:9c56948c-4a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisNitrogen fullUrl: urn:uuid:9c56948c-5a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisFlourine fullUrl: urn:uuid:9c56948c-6a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr3 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e72)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr4 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e73)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr5 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr6 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d16-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr8 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d26-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr9 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d36-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr10 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d46-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: structure fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig11xray fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig10molecularstructure fullUrl: urn:uuid:9c56948c-2b39-6619-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig8absorption fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
 
 <Bundle>
     <entry>
@@ -7420,7 +7843,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <coding>
                         <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
                         <code value=&quot;analytical-testing-release&quot;/>
-                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div></div></div></div></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: nmr10)(fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d46-47cb5b295e74)
+                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div></div></div></div></div></div><div class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: nmr10)(fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d46-47cb5b295e74)
 
 <Bundle>
     <entry>
@@ -7516,7 +7939,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                         <code value=&quot;NMR&quot;/>
                         <display value=&quot;nmr&quot;/>
                     </coding>
-                    <text value=&quot;NMR&quot;/>">Code: <span title="
+                    <text value=&quot;NMR&quot;/>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                        <code value=&quot;NMR&quot;/>
+                        <display value=&quot;nmr&quot;/>
+                    </coding>
+                    <text value=&quot;NMR&quot;/>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -7625,7 +8060,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;NMR-H&quot;/>
                             <display value=&quot;NMR-H&quot;/>
-                        </coding>">Code: <span title="
+                        </coding>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                            <code value=&quot;NMR-H&quot;/>
+                            <display value=&quot;NMR-H&quot;/>
+                        </coding>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -7693,7 +8139,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;NMR-C&quot;/>
                             <display value=&quot;NMR-C&quot;/>
-                        </coding>">Code: <span title="
+                        </coding>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                            <code value=&quot;NMR-C&quot;/>
+                            <display value=&quot;NMR-C&quot;/>
+                        </coding>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -7741,7 +8198,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;POS&quot;/>
                             <display value=&quot;Structure Position&quot;/>
-                        </coding>">Code: <span title="
+                        </coding>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                            <code value=&quot;POS&quot;/>
+                            <display value=&quot;Structure Position&quot;/>
+                        </coding>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -7779,7 +8247,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
             <Observation>
                 ...
                 <performer>
-                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisCarbon fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisHydrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisNitrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisFlourine fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisCarbon fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisHydrogen fullUrl: urn:uuid:9c56948c-4a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisNitrogen fullUrl: urn:uuid:9c56948c-5a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisFlourine fullUrl: urn:uuid:9c56948c-6a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr3 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e72)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr4 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e73)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr5 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr6 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d16-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr8 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d26-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr9 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d36-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr10 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d46-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: structure fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig11xray fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig10molecularstructure fullUrl: urn:uuid:9c56948c-2b39-6619-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig8absorption fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit"><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisCarbon fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisHydrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisNitrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisFlourine fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisCarbon fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisHydrogen fullUrl: urn:uuid:9c56948c-4a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisNitrogen fullUrl: urn:uuid:9c56948c-5a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisFlourine fullUrl: urn:uuid:9c56948c-6a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr3 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e72)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr4 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e73)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr5 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr6 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d16-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr8 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d26-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr9 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d36-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr10 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d46-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: structure fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig11xray fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig10molecularstructure fullUrl: urn:uuid:9c56948c-2b39-6619-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig8absorption fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
 
 <Bundle>
     <entry>
@@ -7853,7 +8321,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <coding>
                         <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
                         <code value=&quot;analytical-testing-release&quot;/>
-                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div></div></div></div></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: structure)(fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)
+                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div></div></div></div></div></div><div class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: structure)(fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)
 
 <Bundle>
     <entry>
@@ -7922,7 +8390,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                         <code value=&quot;Chemical Structure&quot;/>
                         <display value=&quot;Chemical Structure&quot;/>
                     </coding>
-                    <text value=&quot;Chemical Structure&quot;/>">Code: <span title="
+                    <text value=&quot;Chemical Structure&quot;/>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                        <code value=&quot;Chemical Structure&quot;/>
+                        <display value=&quot;Chemical Structure&quot;/>
+                    </coding>
+                    <text value=&quot;Chemical Structure&quot;/>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -7996,7 +8476,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
             <Observation>
                 ...
                 <performer>
-                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisCarbon fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisHydrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisNitrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisFlourine fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisCarbon fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisHydrogen fullUrl: urn:uuid:9c56948c-4a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisNitrogen fullUrl: urn:uuid:9c56948c-5a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisFlourine fullUrl: urn:uuid:9c56948c-6a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr3 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e72)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr4 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e73)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr5 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr6 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d16-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr8 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d26-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr9 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d36-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr10 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d46-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: structure fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig11xray fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig10molecularstructure fullUrl: urn:uuid:9c56948c-2b39-6619-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig8absorption fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit"><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisCarbon fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisHydrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisNitrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisFlourine fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisCarbon fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisHydrogen fullUrl: urn:uuid:9c56948c-4a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisNitrogen fullUrl: urn:uuid:9c56948c-5a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisFlourine fullUrl: urn:uuid:9c56948c-6a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr3 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e72)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr4 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e73)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr5 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr6 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d16-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr8 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d26-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr9 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d36-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr10 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d46-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: structure fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig11xray fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig10molecularstructure fullUrl: urn:uuid:9c56948c-2b39-6619-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig8absorption fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
 
 <Bundle>
     <entry>
@@ -8070,7 +8550,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <coding>
                         <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
                         <code value=&quot;analytical-testing-release&quot;/>
-                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div></div></div></div></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: fig11xray)(fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34)
+                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div></div></div></div></div></div><div class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: fig11xray)(fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34)
 
 <Bundle>
     <entry>
@@ -8139,7 +8619,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                         <code value=&quot;X-Ray Powder Diffractogram&quot;/>
                         <display value=&quot;X-Ray Powder Diffractogram&quot;/>
                     </coding>
-                    <text value=&quot;X-Ray Powder Diffractogram&quot;/>">Code: <span title="
+                    <text value=&quot;X-Ray Powder Diffractogram&quot;/>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                        <code value=&quot;X-Ray Powder Diffractogram&quot;/>
+                        <display value=&quot;X-Ray Powder Diffractogram&quot;/>
+                    </coding>
+                    <text value=&quot;X-Ray Powder Diffractogram&quot;/>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -8213,7 +8705,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
             <Observation>
                 ...
                 <performer>
-                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisCarbon fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisHydrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisNitrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisFlourine fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisCarbon fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisHydrogen fullUrl: urn:uuid:9c56948c-4a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisNitrogen fullUrl: urn:uuid:9c56948c-5a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisFlourine fullUrl: urn:uuid:9c56948c-6a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr3 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e72)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr4 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e73)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr5 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr6 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d16-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr8 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d26-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr9 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d36-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr10 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d46-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: structure fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig11xray fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig10molecularstructure fullUrl: urn:uuid:9c56948c-2b39-6619-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig8absorption fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit"><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisCarbon fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisHydrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisNitrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisFlourine fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisCarbon fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisHydrogen fullUrl: urn:uuid:9c56948c-4a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisNitrogen fullUrl: urn:uuid:9c56948c-5a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisFlourine fullUrl: urn:uuid:9c56948c-6a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr3 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e72)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr4 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e73)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr5 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr6 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d16-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr8 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d26-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr9 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d36-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr10 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d46-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: structure fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig11xray fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig10molecularstructure fullUrl: urn:uuid:9c56948c-2b39-6619-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig8absorption fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
 
 <Bundle>
     <entry>
@@ -8287,7 +8779,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <coding>
                         <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
                         <code value=&quot;analytical-testing-release&quot;/>
-                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div></div></div></div></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: fig10molecularstructure)(fullUrl: urn:uuid:9c56948c-2b39-6619-1c01-4d197ea57a34)
+                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div></div></div></div></div></div><div class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: fig10molecularstructure)(fullUrl: urn:uuid:9c56948c-2b39-6619-1c01-4d197ea57a34)
 
 <Bundle>
     <entry>
@@ -8356,7 +8848,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                         <code value=&quot;MolecularStructure&quot;/>
                         <display value=&quot;Molecular Structure&quot;/>
                     </coding>
-                    <text value=&quot;MolecularStructure&quot;/>">Code: <span title="
+                    <text value=&quot;MolecularStructure&quot;/>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                        <code value=&quot;MolecularStructure&quot;/>
+                        <display value=&quot;Molecular Structure&quot;/>
+                    </coding>
+                    <text value=&quot;MolecularStructure&quot;/>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -8430,7 +8934,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
             <Observation>
                 ...
                 <performer>
-                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisCarbon fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisHydrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisNitrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisFlourine fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisCarbon fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisHydrogen fullUrl: urn:uuid:9c56948c-4a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisNitrogen fullUrl: urn:uuid:9c56948c-5a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisFlourine fullUrl: urn:uuid:9c56948c-6a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr3 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e72)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr4 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e73)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr5 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr6 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d16-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr8 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d26-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr9 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d36-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr10 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d46-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: structure fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig11xray fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig10molecularstructure fullUrl: urn:uuid:9c56948c-2b39-6619-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig8absorption fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit"><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisCarbon fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisHydrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisNitrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisFlourine fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisCarbon fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisHydrogen fullUrl: urn:uuid:9c56948c-4a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisNitrogen fullUrl: urn:uuid:9c56948c-5a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisFlourine fullUrl: urn:uuid:9c56948c-6a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr3 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e72)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr4 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e73)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr5 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr6 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d16-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr8 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d26-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr9 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d36-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr10 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d46-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: structure fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig11xray fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig10molecularstructure fullUrl: urn:uuid:9c56948c-2b39-6619-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig8absorption fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
 
 <Bundle>
     <entry>
@@ -8504,7 +9008,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <coding>
                         <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type&quot;/>
                         <code value=&quot;analytical-testing-release&quot;/>
-                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div></div></div></div></div></div><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: fig8absorption)(fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a35)
+                        <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div></div></div></div></div></div><div class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: fig8absorption)(fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a35)
 
 <Bundle>
     <entry>
@@ -8573,7 +9077,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                         <code value=&quot;Absorption&quot;/>
                         <display value=&quot;Absorption&quot;/>
                     </coding>
-                    <text value=&quot;Absorption&quot;/>">Code: <span title="
+                    <text value=&quot;Absorption&quot;/>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                        <code value=&quot;Absorption&quot;/>
+                        <display value=&quot;Absorption&quot;/>
+                    </coding>
+                    <text value=&quot;Absorption&quot;/>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -8647,7 +9163,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
             <Observation>
                 ...
                 <performer>
-                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisCarbon fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisHydrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisNitrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisFlourine fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisCarbon fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisHydrogen fullUrl: urn:uuid:9c56948c-4a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisNitrogen fullUrl: urn:uuid:9c56948c-5a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisFlourine fullUrl: urn:uuid:9c56948c-6a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr3 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e72)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr4 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e73)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr5 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr6 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d16-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr8 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d26-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr9 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d36-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr10 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d46-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: structure fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig11xray fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig10molecularstructure fullUrl: urn:uuid:9c56948c-2b39-6619-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig8absorption fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit"><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisCarbon fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisHydrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisNitrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: elementalAnalysisFlourine fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisCarbon fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisHydrogen fullUrl: urn:uuid:9c56948c-4a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisNitrogen fullUrl: urn:uuid:9c56948c-5a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: ionAnalysisFlourine fullUrl: urn:uuid:9c56948c-6a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr3 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e72)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr4 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e73)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr5 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr6 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d16-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr8 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d26-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr9 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d36-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: nmr10 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d46-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: structure fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig11xray fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig10molecularstructure fullUrl: urn:uuid:9c56948c-2b39-6619-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/performer, id: fig8absorption fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
 
 <Bundle>
     <entry>
@@ -8724,7 +9240,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                         <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div></div></div></div></div></div>
 </div>
 </div>
-<div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)">
+<div class="indent sbd summaryUnit">
 <div class="debugOff"><span>Found a parent (PlanDefinition/subjectReference, id: characterizationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763furl (canonical): http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by resource.id</span></div>
 <div class="debugOff"><span>Found a parent (Substance/code, id: substance-dxpq-ex1-unlinked fullUrl: urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: substancedefinition-component-substance-dxpq-ex1)(fullUrl: urn:uuid:57a9af63-315d-1585-a261-0e337b289390)
 Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-drug-pq 
@@ -8766,7 +9282,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefin
         <resource>
             <SubstanceDefinition>
                 <name>
-                    <name value=&quot;Stelbatolol&quot;>">Name: <span>Stelbatolol</span></span></div>
+                    <name value=&quot;Stelbatolol&quot;>">Name: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <SubstanceDefinition>
+                <name>
+                    <name value=&quot;Stelbatolol&quot;>"><span>Stelbatolol</span></span></div>
 </div>
 </div>
 <div class="summaryHiddenOff"></div>
@@ -8779,7 +9301,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefin
             <SubstanceDefinition>
                 ...
                 <manufacturer>
-                    <reference value=&quot;Organization/organization-dxpq-ex1&quot;/>">Manufacturer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)">
+                    <reference value=&quot;Organization/organization-dxpq-ex1&quot;/>">Manufacturer</span><div class="indent org summaryUnit">
 <div class="debugOff"><span>Found a parent (SubstanceDefinition/manufacturer, id: substancedefinition-component-substance-dxpq-ex1 fullUrl: urn:uuid:57a9af63-315d-1585-a261-0e337b289390)<br>which is linked to this by resource.id</span></div>
 <div class="debugOff"><span>Found a parent (Substance/valueReference, id: substance-dxpq-ex1-unlinked fullUrl: urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: organization-dxpq-ex1)(fullUrl: urn:uuid:49d2f0c0-4b28-9271-8aaf-2996a8b9739c)
 Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq 
@@ -8962,7 +9484,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
 </div>
 <div class="summaryHiddenOff">
 <div></div>Subject of Plan: Elucidation of Structure (<a href="#PlanDefinition-characterizationProtocol" title="click to see target - id=characterizationProtocol">PlanDefinition</a>)<span class="debugOff"> id: characterizationProtocol</span></div>
-<div class="indent sbddetails"><span title="Substance resource extension linking back to SubstanceDefinition: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">Batch Instance</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/subject, id: elementalAnalysisCarbon fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: elementalAnalysisHydrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: elementalAnalysisNitrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: elementalAnalysisFlourine fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: ionAnalysisCarbon fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: ionAnalysisHydrogen fullUrl: urn:uuid:9c56948c-4a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: ionAnalysisNitrogen fullUrl: urn:uuid:9c56948c-5a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: ionAnalysisFlourine fullUrl: urn:uuid:9c56948c-6a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: nmr3 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e72)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: nmr4 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e73)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: nmr5 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: nmr6 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d16-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: nmr8 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d26-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: nmr9 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d36-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: nmr10 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d46-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: structure fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: fig11xray fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: fig10molecularstructure fullUrl: urn:uuid:9c56948c-2b39-6619-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: fig8absorption fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Substance (id: substance-dxpq-ex1-unlinked)(fullUrl: urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595b)
+<div class="indent sbddetails"><span title="Substance resource extension linking back to SubstanceDefinition: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">Batch Instance</span><div class="indent sbd summaryUnit"><div class="debugOff"><span>Found a parent (Observation/subject, id: elementalAnalysisCarbon fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: elementalAnalysisHydrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: elementalAnalysisNitrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: elementalAnalysisFlourine fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: ionAnalysisCarbon fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: ionAnalysisHydrogen fullUrl: urn:uuid:9c56948c-4a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: ionAnalysisNitrogen fullUrl: urn:uuid:9c56948c-5a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: ionAnalysisFlourine fullUrl: urn:uuid:9c56948c-6a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: nmr3 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e72)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: nmr4 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e73)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: nmr5 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: nmr6 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d16-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: nmr8 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d26-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: nmr9 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d36-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: nmr10 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d46-47cb5b295e74)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: structure fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: fig11xray fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: fig10molecularstructure fullUrl: urn:uuid:9c56948c-2b39-6619-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: fig8absorption fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Substance (id: substance-dxpq-ex1-unlinked)(fullUrl: urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595b)
 Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq 
 
 <Bundle>
@@ -9037,7 +9559,13 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug
         <resource>
             <Substance>
                 ...
-                <instance value=&quot;true&quot;>">Instance: <span>true</span></span></div><div class="summaryHiddenOff"><span title="
+                <instance value=&quot;true&quot;>">Instance: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Substance>
+                ...
+                <instance value=&quot;true&quot;>"><span>true</span></span></div><div class="summaryHiddenOff"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -9210,7 +9738,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug
                     <extension url=&quot;assignedManufacturer&quot;>
                         <valueReference>
                             <reference value=&quot;Organization/organization-dxpq-ex1&quot;/>
-                        </valueReference>">Manufacturer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (SubstanceDefinition/manufacturer, id: substancedefinition-component-substance-dxpq-ex1 fullUrl: urn:uuid:57a9af63-315d-1585-a261-0e337b289390)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/valueReference, id: substance-dxpq-ex1-unlinked fullUrl: urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: organization-dxpq-ex1)(fullUrl: urn:uuid:49d2f0c0-4b28-9271-8aaf-2996a8b9739c)
+                        </valueReference>">Manufacturer</span><div class="indent org summaryUnit"><div class="debugOff"><span>Found a parent (SubstanceDefinition/manufacturer, id: substancedefinition-component-substance-dxpq-ex1 fullUrl: urn:uuid:57a9af63-315d-1585-a261-0e337b289390)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Substance/valueReference, id: substance-dxpq-ex1-unlinked fullUrl: urn:uuid:fc078762-81c5-5656-9744-13c7ad1e595b)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: organization-dxpq-ex1)(fullUrl: urn:uuid:49d2f0c0-4b28-9271-8aaf-2996a8b9739c)
 Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq 
 
 <Bundle>
@@ -9378,7 +9906,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
 <div class="summaryHiddenOff"></div>
 </div>
 </div>
-<div class="org indent"><span class="bold">Report Specification</span><div class="indent plan summaryUnit" ondblclick="summaryHandler(event)">
+<div class="org indent"><span class="bold">Report Specification</span><div class="indent plan summaryUnit">
 <div class="debugOff"><span>Found a parent (DiagnosticReport/valueReference, id: processValidationReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="PlanDefinition (id: characterizationProtocol)(fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f)
 
 <Bundle>
@@ -10084,7 +10612,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                         </code>
                         <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/fd17b5d6-9ff1-91c5-2d06-47cb5b295e75&quot;/>
                     </action>
-                </action>">Subject: </span>Stelbatolol (<a href="#SubstanceDefinition-substancedefinition-component-substance-dxpq-ex1" title="click to see target - id=substancedefinition-component-substance-dxpq-ex1">SubstanceDefinition</a>)<span class="debugOff"> id: substancedefinition-component-substance-dxpq-ex1</span></span><div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
+                </action>">Subject: </span>Stelbatolol (<a href="#SubstanceDefinition-substancedefinition-component-substance-dxpq-ex1" title="click to see target - id=substancedefinition-component-substance-dxpq-ex1">SubstanceDefinition</a>)<span class="debugOff"> id: substancedefinition-component-substance-dxpq-ex1</span></span><div class="indent summaryUnit planl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -10231,7 +10759,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                     ...
                     <description value=&quot;Description of this step&quot;>">Description of this step</span></div>
 </div>
-<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -10252,7 +10780,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                     <action>
                         <code>
                             <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
-<div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
+<div class="indent summaryUnit obsDef">
 <div class="debugOff"><span>Found a parent (PlanDefinition/action, id: characterizationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763furl (canonical): http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by canonical resource.url</span></div>
 <div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: elementalAnalysisCarbon fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: ElementalAnalysisCarbon)(fullUrl: urn:uuid:fd17b5d6-9fe1-91c2-2d06-47cb5b295e72)
 
@@ -10346,7 +10874,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                         <code value=&quot;ElementalAnalysisCarbon&quot;/>
                         <display value=&quot;Elemental Analysis Carbon (%)&quot;/>
                     </coding>
-                    <text value=&quot;Elemental Analysis Carbon (%)&quot;/>">Code: <span title="
+                    <text value=&quot;Elemental Analysis Carbon (%)&quot;/>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                        <code value=&quot;ElementalAnalysisCarbon&quot;/>
+                        <display value=&quot;Elemental Analysis Carbon (%)&quot;/>
+                    </coding>
+                    <text value=&quot;Elemental Analysis Carbon (%)&quot;/>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -10471,7 +11011,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
 </div>
 </div>
 </div>
-<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -10492,7 +11032,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                     <action>
                         <code>
                             <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
-<div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
+<div class="indent summaryUnit obsDef">
 <div class="debugOff"><span>Found a parent (PlanDefinition/action, id: characterizationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763furl (canonical): http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by canonical resource.url</span></div>
 <div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: elementalAnalysisHydrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: ElementalAnalysisHydrogen)(fullUrl: urn:uuid:fd17b5d6-9fe1-91c2-2d06-47cb5b295e73)
 
@@ -10586,7 +11126,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                         <code value=&quot;ElementalAnalysisHydrogen&quot;/>
                         <display value=&quot;Elemental Analysis Hydrogen (%)&quot;/>
                     </coding>
-                    <text value=&quot;Elemental Analysis Hydrogen (%)&quot;/>">Code: <span title="
+                    <text value=&quot;Elemental Analysis Hydrogen (%)&quot;/>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                        <code value=&quot;ElementalAnalysisHydrogen&quot;/>
+                        <display value=&quot;Elemental Analysis Hydrogen (%)&quot;/>
+                    </coding>
+                    <text value=&quot;Elemental Analysis Hydrogen (%)&quot;/>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -10711,7 +11263,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
 </div>
 </div>
 </div>
-<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -10732,7 +11284,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                     <action>
                         <code>
                             <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
-<div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
+<div class="indent summaryUnit obsDef">
 <div class="debugOff"><span>Found a parent (PlanDefinition/action, id: characterizationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763furl (canonical): http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by canonical resource.url</span></div>
 <div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: elementalAnalysisNitrogen fullUrl: urn:uuid:9c56948c-2a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: ElementalAnalysisNitrogen)(fullUrl: urn:uuid:fd17b5d6-9fe1-91c2-2d06-47cb5b295e74)
 
@@ -10826,7 +11378,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                         <code value=&quot;ElementalAnalysisNitrogen&quot;/>
                         <display value=&quot;Elemental Analysis Nitrogen (%)&quot;/>
                     </coding>
-                    <text value=&quot;Elemental Analysis Nitrogen (%)&quot;/>">Code: <span title="
+                    <text value=&quot;Elemental Analysis Nitrogen (%)&quot;/>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                        <code value=&quot;ElementalAnalysisNitrogen&quot;/>
+                        <display value=&quot;Elemental Analysis Nitrogen (%)&quot;/>
+                    </coding>
+                    <text value=&quot;Elemental Analysis Nitrogen (%)&quot;/>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -10951,7 +11515,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
 </div>
 </div>
 </div>
-<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -10972,7 +11536,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                     <action>
                         <code>
                             <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
-<div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
+<div class="indent summaryUnit obsDef">
 <div class="debugOff"><span>Found a parent (PlanDefinition/action, id: characterizationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763furl (canonical): http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by canonical resource.url</span></div>
 <div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: elementalAnalysisFlourine fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: ElementalAnalysisFlourine)(fullUrl: urn:uuid:fd17b5d6-9fe1-91c2-2d06-47cb5b295e75)
 
@@ -11066,7 +11630,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                         <code value=&quot;ElementalAnalysisFlourine&quot;/>
                         <display value=&quot;Elemental Analysis Flourine (%)&quot;/>
                     </coding>
-                    <text value=&quot;Elemental Analysis Flourine (%)&quot;/>">Code: <span title="
+                    <text value=&quot;Elemental Analysis Flourine (%)&quot;/>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                        <code value=&quot;ElementalAnalysisFlourine&quot;/>
+                        <display value=&quot;Elemental Analysis Flourine (%)&quot;/>
+                    </coding>
+                    <text value=&quot;Elemental Analysis Flourine (%)&quot;/>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -11192,7 +11768,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
 </div>
 </div>
 </div>
-<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -11348,7 +11924,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                     ...
                     <description value=&quot;Description of this step&quot;>">Description of this step</span></div>
 </div>
-<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -11369,7 +11945,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                     <action>
                         <code>
                             <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
-<div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
+<div class="indent summaryUnit obsDef">
 <div class="debugOff"><span>Found a parent (PlanDefinition/action, id: characterizationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763furl (canonical): http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by canonical resource.url</span></div>
 <div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: ionAnalysisCarbon fullUrl: urn:uuid:9c56948c-3a39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: IonAnalysisCarbon)(fullUrl: urn:uuid:fd17b5d6-9fe1-91c3-2d06-47cb5b295e72)
 
@@ -11467,7 +12043,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                         <code value=&quot;IonAnalysisCarbon&quot;/>
                         <display value=&quot;Ion Analysis Carbon (%)&quot;/>
                     </coding>
-                    <text value=&quot;Ion Analysis Carbon (%)&quot;/>">Code: <span title="
+                    <text value=&quot;Ion Analysis Carbon (%)&quot;/>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                        <code value=&quot;IonAnalysisCarbon&quot;/>
+                        <display value=&quot;Ion Analysis Carbon (%)&quot;/>
+                    </coding>
+                    <text value=&quot;Ion Analysis Carbon (%)&quot;/>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -11604,7 +12192,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IonAnalysisCarbonMassAccuracy&quot;/>
                             <display value=&quot;Ion Analysis Carbon - Mass Accuracy&quot;/>
-                        </coding>">Code: <span title="
+                        </coding>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                            <code value=&quot;IonAnalysisCarbonMassAccuracy&quot;/>
+                            <display value=&quot;Ion Analysis Carbon - Mass Accuracy&quot;/>
+                        </coding>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -11620,7 +12219,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
 </div>
 </div>
 </div>
-<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -11641,7 +12240,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                     <action>
                         <code>
                             <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
-<div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
+<div class="indent summaryUnit obsDef">
 <div class="debugOff"><span>Found a parent (PlanDefinition/action, id: characterizationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763furl (canonical): http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by canonical resource.url</span></div>
 <div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: ionAnalysisHydrogen fullUrl: urn:uuid:9c56948c-4a39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: IonAnalysisHydrogen)(fullUrl: urn:uuid:fd17b5d6-9fe1-91c4-2d06-47cb5b295e72)
 
@@ -11730,7 +12329,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                         <code value=&quot;IonAnalysisHydrogen&quot;/>
                         <display value=&quot;Ion Analysis Hydrogen (%)&quot;/>
                     </coding>
-                    <text value=&quot;Ion Analysis Hydrogen (%)&quot;/>">Code: <span title="
+                    <text value=&quot;Ion Analysis Hydrogen (%)&quot;/>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                        <code value=&quot;IonAnalysisHydrogen&quot;/>
+                        <display value=&quot;Ion Analysis Hydrogen (%)&quot;/>
+                    </coding>
+                    <text value=&quot;Ion Analysis Hydrogen (%)&quot;/>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -11835,7 +12446,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
 </div>
 </div>
 </div>
-<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -11856,7 +12467,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                     <action>
                         <code>
                             <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
-<div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
+<div class="indent summaryUnit obsDef">
 <div class="debugOff"><span>Found a parent (PlanDefinition/action, id: characterizationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763furl (canonical): http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by canonical resource.url</span></div>
 <div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: ionAnalysisNitrogen fullUrl: urn:uuid:9c56948c-5a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: IonAnalysisNitrogen)(fullUrl: urn:uuid:fd18b5d6-9fe1-91c4-2d06-47cb5b295e72)
 
@@ -11945,7 +12556,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                         <code value=&quot;IonAnalysisNitrogen&quot;/>
                         <display value=&quot;Ion Analysis Nitrogen (%)&quot;/>
                     </coding>
-                    <text value=&quot;Ion Analysis Nitrogen (%)&quot;/>">Code: <span title="
+                    <text value=&quot;Ion Analysis Nitrogen (%)&quot;/>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                        <code value=&quot;IonAnalysisNitrogen&quot;/>
+                        <display value=&quot;Ion Analysis Nitrogen (%)&quot;/>
+                    </coding>
+                    <text value=&quot;Ion Analysis Nitrogen (%)&quot;/>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -12050,7 +12673,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
 </div>
 </div>
 </div>
-<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -12071,7 +12694,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                     <action>
                         <code>
                             <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
-<div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
+<div class="indent summaryUnit obsDef">
 <div class="debugOff"><span>Found a parent (PlanDefinition/action, id: characterizationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763furl (canonical): http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by canonical resource.url</span></div>
 <div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: ionAnalysisFlourine fullUrl: urn:uuid:9c56948c-6a39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: IonAnalysisFlourine)(fullUrl: urn:uuid:fd17b5d6-9fe1-91c5-2d06-47cb5b295e72)
 
@@ -12160,7 +12783,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                         <code value=&quot;IonAnalysisFlourine&quot;/>
                         <display value=&quot;Ion Analysis Flourine (%)&quot;/>
                     </coding>
-                    <text value=&quot;Ion Analysis Flourine (%)&quot;/>">Code: <span title="
+                    <text value=&quot;Ion Analysis Flourine (%)&quot;/>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                        <code value=&quot;IonAnalysisFlourine&quot;/>
+                        <display value=&quot;Ion Analysis Flourine (%)&quot;/>
+                    </coding>
+                    <text value=&quot;Ion Analysis Flourine (%)&quot;/>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -12266,7 +12901,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
 </div>
 </div>
 </div>
-<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -12380,7 +13015,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                     ...
                     <description value=&quot;Description of this step&quot;>">Description of this step</span></div>
 </div>
-<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -12401,7 +13036,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                     <action>
                         <code>
                             <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
-<div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
+<div class="indent summaryUnit obsDef">
 <div class="debugOff"><span>Found a parent (PlanDefinition/action, id: characterizationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763furl (canonical): http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by canonical resource.url</span></div>
 <div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: structure fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a33)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Structure)(fullUrl: urn:uuid:fd17b5d6-9ff1-91c5-2d06-47cb5b295e72)
 
@@ -12476,7 +13111,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                         <code value=&quot;Chemical Structure&quot;/>
                         <display value=&quot;Chemical Structure&quot;/>
                     </coding>
-                    <text value=&quot;Chemical Structure&quot;/>">Code: <span title="
+                    <text value=&quot;Chemical Structure&quot;/>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                        <code value=&quot;Chemical Structure&quot;/>
+                        <display value=&quot;Chemical Structure&quot;/>
+                    </coding>
+                    <text value=&quot;Chemical Structure&quot;/>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -12493,7 +13140,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
 </div>
 </div>
 </div>
-<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -12653,7 +13300,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                     ...
                     <description value=&quot;Description of this step&quot;>">Description of this step</span></div>
 </div>
-<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -12674,7 +13321,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                     <action>
                         <code>
                             <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
-<div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
+<div class="indent summaryUnit obsDef">
 <div class="debugOff"><span>Found a parent (PlanDefinition/action, id: characterizationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763furl (canonical): http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by canonical resource.url</span></div>
 <div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: nmr3 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e72)<br>which is linked to this by resource.id</span></div>
 <div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: nmr4 fullUrl: urn:uuid:fd27b5d6-9fe2-91c2-2d06-47cb5b295e73)<br>which is linked to this by resource.id</span></div>
@@ -12784,7 +13431,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                         <code value=&quot;NMR&quot;/>
                         <display value=&quot;NMR&quot;/>
                     </coding>
-                    <text value=&quot;NMR&quot;/>">Code: <span title="
+                    <text value=&quot;NMR&quot;/>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                        <code value=&quot;NMR&quot;/>
+                        <display value=&quot;NMR&quot;/>
+                    </coding>
+                    <text value=&quot;NMR&quot;/>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -12832,7 +13491,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;NMR-H&quot;/>
                             <display value=&quot;NMR-H&quot;/>
-                        </coding>">Code: <span title="
+                        </coding>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                            <code value=&quot;NMR-H&quot;/>
+                            <display value=&quot;NMR-H&quot;/>
+                        </coding>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -12880,7 +13550,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;NMR-C&quot;/>
                             <display value=&quot;NMR-C&quot;/>
-                        </coding>">Code: <span title="
+                        </coding>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                            <code value=&quot;NMR-C&quot;/>
+                            <display value=&quot;NMR-C&quot;/>
+                        </coding>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -12929,7 +13610,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;POS&quot;/>
                             <display value=&quot;Structure Position&quot;/>
-                        </coding>">Code: <span title="
+                        </coding>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                            <code value=&quot;POS&quot;/>
+                            <display value=&quot;Structure Position&quot;/>
+                        </coding>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -12946,7 +13638,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
 </div>
 </div>
 </div>
-<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -13063,7 +13755,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                     ...
                     <description value=&quot;Description of this step&quot;>">Description of this step</span></div>
 </div>
-<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -13084,7 +13776,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                     <action>
                         <code>
                             <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
-<div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
+<div class="indent summaryUnit obsDef">
 <div class="debugOff"><span>Found a parent (PlanDefinition/action, id: characterizationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763furl (canonical): http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by canonical resource.url</span></div>
 <div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: fig10molecularstructure fullUrl: urn:uuid:9c56948c-2b39-6619-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: MolecularStructure)(fullUrl: urn:uuid:fd17b5d6-9ff1-91c5-2d06-47cb5b295e74)
 
@@ -13144,7 +13836,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                         <code value=&quot;MolecularStructure&quot;/>
                         <display value=&quot;Molecular Structure&quot;/>
                     </coding>
-                    <text value=&quot;MolecularStructure&quot;/>">Code: <span title="
+                    <text value=&quot;MolecularStructure&quot;/>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                        <code value=&quot;MolecularStructure&quot;/>
+                        <display value=&quot;Molecular Structure&quot;/>
+                    </coding>
+                    <text value=&quot;MolecularStructure&quot;/>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -13161,7 +13865,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
 </div>
 </div>
 </div>
-<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -13278,7 +13982,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                     ...
                     <description value=&quot;Description of this step&quot;>">Description of this step</span></div>
 </div>
-<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -13299,7 +14003,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                     <action>
                         <code>
                             <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
-<div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
+<div class="indent summaryUnit obsDef">
 <div class="debugOff"><span>Found a parent (PlanDefinition/action, id: characterizationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763furl (canonical): http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by canonical resource.url</span></div>
 <div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: fig11xray fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a34)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Diffractogram)(fullUrl: urn:uuid:fd17b5d6-9ff1-91c5-2d06-47cb5b295e73)
 
@@ -13374,7 +14078,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                         <code value=&quot;Diffractogram&quot;/>
                         <display value=&quot;Diffractogram&quot;/>
                     </coding>
-                    <text value=&quot;Diffractogram&quot;/>">Code: <span title="
+                    <text value=&quot;Diffractogram&quot;/>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                        <code value=&quot;Diffractogram&quot;/>
+                        <display value=&quot;Diffractogram&quot;/>
+                    </coding>
+                    <text value=&quot;Diffractogram&quot;/>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -13391,7 +14107,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
 </div>
 </div>
 </div>
-<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -13508,7 +14224,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                     ...
                     <description value=&quot;Description of this step&quot;>">Description of this step</span></div>
 </div>
-<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -13529,7 +14245,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                     <action>
                         <code>
                             <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
-<div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
+<div class="indent summaryUnit obsDef">
 <div class="debugOff"><span>Found a parent (PlanDefinition/action, id: characterizationProtocol fullUrl: urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763furl (canonical): http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f)<br>which is linked to this by canonical resource.url</span></div>
 <div class="debugOff"><span>Found a parent (Observation/instantiatesReference, id: fig8absorption fullUrl: urn:uuid:9c56948c-2b39-6609-1c01-4d197ea57a35)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Absorption)(fullUrl: urn:uuid:fd17b5d6-9ff1-91c5-2d06-47cb5b295e75)
 
@@ -13589,7 +14305,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
                         <code value=&quot;Absorption&quot;/>
                         <display value=&quot;Absorption&quot;/>
                     </coding>
-                    <text value=&quot;Absorption&quot;/>">Code: <span title="
+                    <text value=&quot;Absorption&quot;/>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                        <code value=&quot;Absorption&quot;/>
+                        <display value=&quot;Absorption&quot;/>
+                    </coding>
+                    <text value=&quot;Absorption&quot;/>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -13933,11 +14661,11 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
 </div>
 </div>
 </body>
-<style onLoad="resolveGlobalLinksThatCanBeLocal();">
+<style>
 
 @media all {
 
-    /* consolas works better if text has to align but doesn't look so good.
+    /* Rik - consolas works better if text has to align but doesn't look so good.
        text size adjust gives better scaling on mobile devices, and also overrides default behaviour where
        only "full with" text gets scaled (so some divs do, and others dont) 150% looks ok on iPad Safari, but too big on iPad Chrome */
     .divBody { font:10pt 'Verdana'; margin-right:1.5em; margin-top:0.5em; -webkit-text-size-adjust:150%; }
@@ -14001,6 +14729,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
     .mpd { background-Color:#ffe699 }
     .mpdl2 { background-Color:#fcebb6 }
     .mpdl3 { background-Color:#fcf0ca }
+    .mpdl4 { background-Color:#fff6d9 }
+    .mpdl5 { background-Color:#fffaeb }
 
     .task { background-Color:#fcb568 }
     .task2 { background-Color:#ffd8ad }
@@ -14282,466 +15012,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
 	}
 	td.centred { text-align:center; }
 }
-	</style><SCRIPT><!--
-
-		window.onload=function()
-		{
-			// Rik
-			// first stop spans being clickable, so they can be double clicked to select text, without triggering summary mode
-			var nodesSpan = document.querySelectorAll("span");
-			for (var i=0; i < nodesSpan.length; i++) {
-				var node = nodesSpan[i];
-				node.ondblclick = function() { event.stopPropagation(); };
-			}
-			
-			// add a hidden plus to anything that is a summary unit
-			var nodes = document.querySelectorAll(".summaryUnit");
-			for (var i=0; i < nodes.length; i++) {
-				var node = nodes[i];
-				var span = document.createElement('span');
-            	span.textContent = '+';
-            	span.title = 'This element is summarised - click to expand (or double-click the element background)';
-            	span.className = 'openButton summaryUnit';
-            	span.style.cursor = 'pointer';
-            	node.prepend(span);
-            	span.onclick = function() { summaryHandlerParent(event); };
-			}
-
-			// allow certain sections to load summarised
-			var nodesIs = document.querySelectorAll(".initialSummary");
-			for (var i=0; i < nodesIs.length; i++) {
-				var node = nodesIs[i];
-				toggleSummaryItem(node);
-			}
-
-		}
-
-		function togglePlainMode(item)
-		{
-			toggleBlackAndWhite(item, true);
-		}
-		
-		function toggleBlackAndWhite(item, plain = false)
-		{
-			handleBlackAndWhite(document.getElementsByClassName("greyable")[0]);
-	
-			var nodesTh = document.querySelectorAll("th"); // header from tabular mode
-			for (var i=0; i < nodesTh.length; i++) {
-				var node = nodesTh[i];
-				if (getComputedStyle(node).backgroundColor == 'rgb(255, 255, 255)')
-					node.style.backgroundColor = '#81BEF7'; // blue. should not be hard coded
-				else
-					node.style.backgroundColor = 'white';
-			}
-
-			// not clear why this is needed if have "greyable" above
-			var nodes = document.getElementsByClassName("indent");
-			for (var i=0; i < nodes.length; i++) {
-				var node = nodes[i];
-				if (getComputedStyle(node).borderColor == 'rgb(255, 255, 255)') // this will fail if another mode has changed it
-				{
-					if (plain!=true) // leave at white - so it disappears in effect
-						node.style.borderColor = '#686868'; // grey
-				}
-				else
-					node.style.borderColor = 'white';
-			}
-		}
-		function handleBlackAndWhite(item)
-		{
-			var nodes = item.childNodes	;
-			for (var i=0; i < nodes.length; i++) {
-				var node = nodes[i];
-			    if (node.nodeName.toLowerCase() == 'div')
-			    {
-					if (node.hasAttribute('oldStyle')) // undo b&w
-					{
-      					node.style.background = node.getAttribute('oldStyle');
-						node.removeAttribute('oldStyle');
-					}
-					else
-					{
-						node.setAttribute('oldStyle', getComputedStyle(node).backgroundColor);
-      					node.style.background = 'white';
-					}
-			     }
-			     handleBlackAndWhite(node);
-		     }
-		}
-		function toggleDarkMode(item)
-		{
-			var htmlElement = document.getElementsByTagName("html")[0];
-
-			// make sure B&W mode isn't on because this messes up if it is (but the other way around does work)
-			if (document.querySelectorAll('[oldStyle]').length!=0)
-				return;
-
-			var label = document.getElementById('renderTextLabel');
-			var input = document.getElementById('renderInputfield');
-			var inputPaste = document.getElementById('renderInputfieldPaste');
-			//var renderLabel = document.getElementById('renderLabel'); // this is styled by the app, not here
-			var img = document.getElementById('imgFhirLogo');
-			var table = document.getElementById('tabularModeTable');
-
-			// detect starting as white
-			if ( getComputedStyle(htmlElement).backgroundColor == "rgba(0, 0, 0, 0)" ||   // what happens at first (strangely)
-				 getComputedStyle(htmlElement).backgroundColor == "rgb(255, 255, 255)" || // what happens after we set to "black"
-				 getComputedStyle(htmlElement).backgroundColor == "" ) 		
-			{
-				htmlElement.style.backgroundColor = 'black';
-				if (label) label.style.color = 'gray';
-				if (img) img.classList.add ('greyScale');
-				if (input) input.style.backgroundColor = 'gray';
-				if (inputPaste) inputPaste.style.backgroundColor = 'gray';
-				if (table) {
-					table.style.color = 'gray';
-					table.style.borderColor = 'gray';
-					var td = table.getElementsByTagName("td");
-			  		for (i = 0; i < td.length; i++)
-					    td[i].style.borderColor = "gray";
-				}
-			}
-			else
-			{
-				htmlElement.style.backgroundColor = 'white';
-				if (label) label.style.color = 'black';
-				//if (renderLabel) renderLabel.style.color = 'black';
-				if (input) input.style.backgroundColor = 'white';
-				if (inputPaste) inputPaste.style.backgroundColor = 'white';
-				if (img) img.classList.remove ('greyScale');
-				if (table) {
-					table.style.color = 'black';
-					table.style.borderColor = 'black';
-					var td = table.getElementsByTagName("td");
-			  		for (i = 0; i < td.length; i++)
-					    td[i].style.borderColor = "black";
-				}
-			}
-			// tried using a brightness filter but it doesn't work, because it must change text etc too.
-
-			var nodes = document.querySelectorAll('.indent, .bundle, .bundleBorder, .controls, .renderInputfield');
-			for (var i=0; i < nodes.length; i++)
-			{
-				var node = nodes[i];
-				if (node.hasAttribute('oldBrightColour')) // undo dark mode
-				{
-    				node.style.backgroundColor = node.getAttribute('oldBrightColour');
-					node.removeAttribute('oldBrightColour');
-    				node.style.borderColor = node.getAttribute('oldBrightBorder');
-					node.removeAttribute('oldBrightBorder');
-				}
-				else
-				{
-					var colourRGB = getComputedStyle(node).backgroundColor; // but some browsers may not give it as RGB?
-					var borderRGB = getComputedStyle(node).borderColor;
-					var darkerColour = lightenDarkenColor(rgb2hex(colourRGB), -50);
-					var darkerBorder = lightenDarkenColor(rgb2hex(borderRGB), -50);
-					node.setAttribute('oldBrightColour', colourRGB);
-					node.setAttribute('oldBrightBorder', borderRGB);
-					node.style.backgroundColor = darkerColour;
-					node.style.borderColor = darkerBorder;
-				}
-			}
-			var textXMLnodes = document.querySelectorAll('.text');
-			for (var i=0; i < textXMLnodes.length; i++)
-			{
-				var node = textXMLnodes[i];
-				if (node.hasAttribute('oldDarkText')) // undo dark mode
-				{
-    				node.style.color = node.getAttribute('oldDarkText');
-					node.removeAttribute('oldDarkText');
-				}
-				else
-				{
-					var colourRGB = getComputedStyle(node).color; // but some browsers may not give it as RGB?
-					var lighterColour = 'grey';
-					node.setAttribute('oldDarkText', colourRGB);
-					node.style.color = lighterColour;
-				}
-			}
-		}
-
-		function rgb2hex(rgb)
-		{
-		    if (/^#[0-9A-F]{6}$/i.test(rgb)) return rgb;
-		
-		    rgb = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
-		    function hex(x) {
-		        return ("0" + parseInt(x).toString(16)).slice(-2);
-		    }
-		    return "#" + hex(rgb[1]) + hex(rgb[2]) + hex(rgb[3]);
-		}
-
-		function lightenDarkenColor(col,amt) {
-		    var usePound = false;
-		    if ( col[0] == "#" ) {
-		        col = col.slice(1);
-		        usePound = true;
-		    }
-		
-		    var num = parseInt(col,16);
-		
-		    var r = (num >> 16) + amt;
-		
-		    if ( r > 255 ) r = 255;
-		    else if  (r < 0) r = 0;
-		
-		    var b = ((num >> 8) & 0x00FF) + amt;
-		
-		    if ( b > 255 ) b = 255;
-		    else if  (b < 0) b = 0;
-		
-		    var g = (num & 0x0000FF) + amt;
-		
-		    if ( g > 255 ) g = 255;
-		    else if  ( g < 0 ) g = 0;
-		
-		    return (usePound?"#":"") + (g | (b << 8) | (r << 16)).toString(16);
-		}
-
-		function resolveGlobalLinksThatCanBeLocal()
-		{
-			var nodes = document.querySelectorAll('.external-link');
-			for (var i=0; i < nodes.length; i++) {
-				var node = nodes[i];
-				var href = node.href;
-   				var urlPath = href.split('?url=').pop();
-   				if (urlPath != href) {
-   					var localId = node.getAttribute("localLink");
-	   				var localElement = document.getElementById(localId);
-	   				if (localElement) { 	   					// replace global href with local one if it exists (doesn't check if it is a true global link)
-	   					node.href= '#' + localId;
-	   					node.removeAttribute("localLink");
-	   					node.removeAttribute("class"); // remove the external-link class
-	   					node.title = node.title.replace(" (via server)"," (in page)");
-	   				}
-			   	 }
-    			}
-		}
-
-		function toggleSummary(item)
-		{
-			toggleSummaryItem(document);
-			
-			if (item.innerHTML=='summary off')
-				item.innerHTML='summary on';
-			else
-				item.innerHTML='summary off';
-		}
-
-		function toggleSummaryItem(item)
-		{
-			var els = item.querySelectorAll('.summaryHiddenOff');
-
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'summaryHiddenTemp';
-			}
-			els = item.querySelectorAll('.summaryHidden'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'summaryHiddenOff';
-			}
-			els = item.querySelectorAll('.summaryHiddenTemp'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'summaryHidden';
-			}
-			var els = item.querySelectorAll('.summaryShowsOff'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'summaryShowsTemp';
-			}
-			els = item.querySelectorAll('.summaryShows'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'summaryShowsOff';
-			}
-			els = item.querySelectorAll('.summaryShowsTemp'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'summaryShows';
-			}
-		}
-
-		function toggleCodes(item)
-		{
-			var els = document.querySelectorAll('.greyOff'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'greyTemp';
-			}
-			els = document.querySelectorAll('.grey'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'greyOff';
-			}
-			els = document.querySelectorAll('.greyTemp'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'grey';
-			}
-			if (item.innerHTML=='hide codes')
-				item.innerHTML='show codes';
-			else
-				item.innerHTML='hide codes';
-		}
-		function toggleDebug(item)
-		{
-			var els = document.querySelectorAll('.debugOff'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'debugTemp';
-			}
-			els = document.querySelectorAll('.debug'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'debugOff';
-			}
-			els = document.querySelectorAll('.debugTemp'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'debug';
-			}
-
-			els = document.querySelectorAll('.debugOffBorder'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'debugTemp';
-			}
-			els = document.querySelectorAll('.debugBorder'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'debugOffBorder';
-			}
-			els = document.querySelectorAll('.debugTemp'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'debugBorder';
-			}
-
-			if (item.innerHTML=='hide debug')
-				item.innerHTML='show debug';
-			else
-				item.innerHTML='hide debug';
-		}
-		function debugIsActive()
-		{
-			if (document.getElementsByClassName('debug')[0])
-				return true;
-			else
-				return false;
-		}
-		function summaryIsActive()
-		{
-			if (document.getElementsByClassName('summaryHidden')[0])
-				return true;
-			else
-				return false;
-		}
-		function codeViewIsActive()
-		{
-			if (document.getElementsByClassName('grey')[0])
-				return true;
-			else
-				return false;
-		}
-
-		function toggleRemove(item)
-		{
-			var els = document.querySelectorAll('.removeOff'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'removeTemp';
-			}
-			els = document.querySelectorAll('.remove'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'removeOff';
-			}
-			els = document.querySelectorAll('.removeTemp'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'remove';
-			}
-		}
-		function toggleRemoveProvenance(item)
-		{
-			toggleRemoveStyle('provenance');
-			if (item.innerHTML=='hide provenance')
-				item.innerHTML='show provenance';
-			else
-				item.innerHTML='hide provenance';
-		}
-		function toggleRemoveTask(item)
-		{
-			toggleRemoveStyle('task');
-			if (item.innerHTML=='hide task')
-				item.innerHTML='show task';
-			else
-				item.innerHTML='hide task';
-		}
-		function toggleRemoveTables(item)
-		{
-			toggleRemoveStyle('htmlTable');
-			if (item.innerHTML=='hide tables')
-				item.innerHTML='show tables';
-			else
-				item.innerHTML='hide tables';
-		}
-		function toggleApplyGreyscale(item)
-		{
-			var element = document.getElementsByClassName("greyable")[0];
-			if (element.style.cssText.includes("grayscale"))
-				element.style.cssText = "";
-			else
-				element.style.cssText = "-moz-filter:grayscale(100%);webkit-filter:grayscale(100%);filter:gray;filter:grayscale(100%)";
-		}
-		function toggleRemoveImage(item)
-		{
-			toggleRemoveStyle('image');
-		}
-		function toggleRemoveComment(item)
-		{
-			toggleRemoveStyle('comment');
-		}
-		function toggleRemoveStyle(style)
-		{
-			var els = document.querySelectorAll('.'+style+'RemoveOff'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = style+'RemoveTemp';
-			}
-			els = document.querySelectorAll('.'+style+'Remove'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = style+'RemoveOff';
-			}
-			els = document.querySelectorAll('.'+style+'RemoveTemp'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = style+'Remove';
-			}
-		}
-		function toggleLowerControls(item)
-		{
-			var elements = document.getElementsByClassName("controls"); // because span is clicked, not the "item"
-			if (item.textContent.includes('v') && (elements[0].style.height === ''||elements[0].style.height == "18px"))
-			{
-				//item.innerHTML = "<sup title='shrink this''>v</sup>";
-		 		//elements[0].style.height = "36px";
-		 		elements[0].style.height = "54px";
-			}
-			else
-			{
-				//item.innerHTML = "<sup title='expand this'>v&nbsp;</sup>";
-		 		elements[0].style.height = "18px";
-			}
-		}
-
-		function summaryHandler(event)
-		{
-			summaryHandlerCore(event,event.target);		
-   		}
-		function summaryHandlerParent(event)
-		{
-			summaryHandlerCore(event,event.target.parentElement);
-		}
-		function summaryHandlerCore(event,itemToUse)
-		{
-			// start from parent-or-self that has "summaryUnit" class
-			if (itemToUse.classList.contains('summaryUnit')==false)
-				itemToUse = findAncestor(event.target,'summaryUnit');
-			toggleSummaryItem (itemToUse);
-		    event.cancelBubble = true;
-		    if (event.stopPropagation) event.stopPropagation();
-		}
-		function findAncestor (el, cls)
-		{
-		    while ((el = el.parentElement) && !el.classList.contains(cls));
-		    return el;
-		}
-
-      --></SCRIPT><!--
+	</style><!--
 		Status information:
 		First resource in bundle:PlanDefinition
 		Single resource bundle:false
@@ -14752,4 +15023,5 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-d
 		Not patient related:true
 		=>Patient Centric Mode:false
 		SubstanceDef Centric Mode:true
-		Assumed profile:--></html>
+		Assumed profile:-->
+</html>

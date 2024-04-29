@@ -8,9 +8,8 @@ The HTML rendering below shows a synthetic Quality data example for Common Techn
 					</p>
 </div>
 <div class="greyable">
-<div class="controls remove"><span> </span><span class="button" onclick="toggleSummary(this)" title="summary view">summary on</span><span> </span><span class="button" onclick="toggleCodes(this)" title="details of code systems">show codes</span><span> </span><span class="button" onclick="toggleDebug(this)" title="extra technical info">show debug</span><span style="float:right; margin-right:3px;"><span class="buttonNoUnderlineHidden" onclick="toggleLowerControls(this)"><sup title="expand this"> v </sup></span><span class="buttonNoUnderline" onclick="toggleRemove(this)"><sup title="close this">x</sup></span></span><span> </span><span class="button" onclick="toggleRemoveTask(this)" title="details of tasks for changes">hide task</span><span> </span><span class="button" onclick="toggleRemoveProvenance(this)" title="details of provenance for changes">hide provenance</span><span> </span><span class="button" onclick="toggleRemoveTables(this)" title="tabular data">hide tables</span><br><span> </span><span class="button" onclick="toggleDarkMode(this)" title="darkened display">dark mode</span><span> </span><span class="button" onclick="toggleApplyGreyscale(this)" title="grey and white display">greyscale</span><span> </span><span class="button" onclick="toggleBlackAndWhite(this,false)" title="black and white display">b&amp;w</span><span> </span><span class="button" onclick="togglePlainMode(this);" title="plain text display">text only</span></div>
 <div class="divBody">
-<div style="position:relative" class="summaryUnit" ondblclick="summaryHandler(event)">
+<div style="position:relative" class="summaryUnit">
 <div class="debugOffBorder">
 <div class="bundleBorder">
 <div class="debugOff">
@@ -261,11 +260,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
 <div><span title="
 <Bundle>
     ...
-    <type value=&quot;collection&quot;>">Type: <span>collection</span></span></div>
+    <type value=&quot;collection&quot;>">Type: </span><span title="
+<Bundle>
+    ...
+    <type value=&quot;collection&quot;>"><span>collection</span></span></div>
 </div>
 </div>
 <div>
-<div ondblclick="summaryHandler(event)" class="indent summaryUnit comp"><a class="plainLink"><span class="bold" title="DiagnosticReport (id: microbiologicalReport)(fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)
+<div class="indent summaryUnit comp"><a class="plainLink"><span class="bold" title="DiagnosticReport (id: microbiologicalReport)(fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)
 
 <Bundle>
     <entry>
@@ -334,7 +336,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                         <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-report-type&quot;/>
                         <code value=&quot;Microbiological Attributes Report&quot;/>
                         <display value=&quot;Microbiological Attributes Report&quot;/>
-                    </coding>">Code: <span title="
+                    </coding>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <DiagnosticReport>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://terminology.hl7.org/CodeSystem/pharmaceutical-report-type&quot;/>
+                        <code value=&quot;Microbiological Attributes Report&quot;/>
+                        <display value=&quot;Microbiological Attributes Report&quot;/>
+                    </coding>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -353,7 +366,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
             <DiagnosticReport>
                 ...
                 <subject>
-                    <reference value=&quot;Medication/medication-actual-batch&quot;/>">Subject</span><div class="indent med summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (DiagnosticReport/subject, id: microbiologicalReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: observationDescription fullUrl: urn:uuid:18c2d9e0-08c7-84e2-5e59-8f56321f895d)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Medication (id: medication-actual-batch)(fullUrl: urn:uuid:339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51)
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>">Subject</span><div class="indent med summaryUnit"><div class="debugOff"><span>Found a parent (DiagnosticReport/subject, id: microbiologicalReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: observationDescription fullUrl: urn:uuid:18c2d9e0-08c7-84e2-5e59-8f56321f895d)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Medication (id: medication-actual-batch)(fullUrl: urn:uuid:339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51)
 
 <Bundle>
     <entry>
@@ -387,7 +400,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
             <DiagnosticReport>
                 ...
                 <result>
-                    <reference value=&quot;Observation/observationDescription&quot;/>">Result</span><div ondblclick="summaryHandler(event)" class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: microbiologicalReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: observationDescription)(fullUrl: urn:uuid:18c2d9e0-08c7-84e2-5e59-8f56321f895d)
+                    <reference value=&quot;Observation/observationDescription&quot;/>">Result</span><div class="indent summaryUnit obs"><div class="debugOff"><span>Found a parent (DiagnosticReport/result, id: microbiologicalReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Observation (id: observationDescription)(fullUrl: urn:uuid:18c2d9e0-08c7-84e2-5e59-8f56321f895d)
 
 <Bundle>
     <entry>
@@ -766,7 +779,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                         <code value=&quot;DESC&quot;/>
                         <display value=&quot;Description&quot;/>
                     </coding>
-                    <text value=&quot;Description&quot;/>">Code: <span title="
+                    <text value=&quot;Description&quot;/>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <Observation>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                        <code value=&quot;DESC&quot;/>
+                        <display value=&quot;Description&quot;/>
+                    </coding>
+                    <text value=&quot;Description&quot;/>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -791,7 +816,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
             <Observation>
                 ...
                 <subject>
-                    <reference value=&quot;Medication/medication-actual-batch&quot;/>">Subject</span><div class="indent med summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (DiagnosticReport/subject, id: microbiologicalReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: observationDescription fullUrl: urn:uuid:18c2d9e0-08c7-84e2-5e59-8f56321f895d)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Medication (id: medication-actual-batch)(fullUrl: urn:uuid:339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51)
+                    <reference value=&quot;Medication/medication-actual-batch&quot;/>">Subject</span><div class="indent med summaryUnit"><div class="debugOff"><span>Found a parent (DiagnosticReport/subject, id: microbiologicalReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: observationDescription fullUrl: urn:uuid:18c2d9e0-08c7-84e2-5e59-8f56321f895d)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Medication (id: medication-actual-batch)(fullUrl: urn:uuid:339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51)
 
 <Bundle>
     <entry>
@@ -822,7 +847,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
             <Observation>
                 ...
                 <performer>
-                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDescription fullUrl: urn:uuid:18c2d9e0-08c7-84e2-5e59-8f56321f895d)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
+                    <reference value=&quot;Organization/378fbe5f-5926-3a5c-4c64-5428df877b08&quot;/>">Performer</span><div class="indent org summaryUnit"><div class="debugOff"><span>Found a parent (Observation/performer, id: observationDescription fullUrl: urn:uuid:18c2d9e0-08c7-84e2-5e59-8f56321f895d)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: 378fbe5f-5926-3a5c-4c64-5428df877b08)(fullUrl: urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08)
 
 <Bundle>
     <entry>
@@ -899,7 +924,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
                         <display value=&quot;Analytical Testing - Release&quot;/>">Analytical Testing - Release<span class="greyOff"> [analytical-testing-release]</span><span class="greyOff"> (http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type)</span></span></div></div></div></div></div></div>
 </div>
 </div>
-<div ondblclick="summaryHandler(event)" class="indent mpd summaryUnit"><a class="plainLink"><span class="bold" title="MedicinalProductDefinition (id: medicinalproductdefinition-drug-product-dxpq-ex1)(fullUrl: urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5)
+<div class="indent mpd summaryUnit"><a class="plainLink"><span class="bold" title="MedicinalProductDefinition (id: medicinalproductdefinition-drug-product-dxpq-ex1)(fullUrl: urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5)
 
 <Bundle>
     <entry>
@@ -1066,7 +1091,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
 </div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
-<div class="indent mpdl2 summaryUnit"><span title="Medication resource extension linking back to MedicinalProductDefinition: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">Batch Instance</span><div class="indent med summaryUnit" ondblclick="summaryHandler(event)"><sup class="rotate-left" title="arrow indicates that this Medication resource points back to the parent MedicinalProductDefinition, instead of being linked forwards from it - via extension http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">↸</sup><span class="debugOff">arrow indicates that this Medication resource points back to the parent MedicinalProductDefinition, instead of being linked forwards from it - via extension http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq<br></span><div class="debugOff"><span>Found a parent (DiagnosticReport/subject, id: microbiologicalReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: observationDescription fullUrl: urn:uuid:18c2d9e0-08c7-84e2-5e59-8f56321f895d)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Medication (id: medication-actual-batch)(fullUrl: urn:uuid:339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51)
+<div class="indent mpdl2 summaryUnit"><span title="Medication resource extension linking back to MedicinalProductDefinition: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">Batch Instance</span><div class="indent med summaryUnit"><sup class="rotate-left" title="arrow indicates that this Medication resource points back to the parent MedicinalProductDefinition, instead of being linked forwards from it - via extension http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">↸</sup><span class="debugOff">arrow indicates that this Medication resource points back to the parent MedicinalProductDefinition, instead of being linked forwards from it - via extension http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq<br></span><div class="debugOff"><span>Found a parent (DiagnosticReport/subject, id: microbiologicalReport fullUrl: urn:uuid:b664977d-799d-a1ce-928a-5def2a9955bd)<br>which is linked to this by resource.id</span></div><div class="debugOff"><span>Found a parent (Observation/subject, id: observationDescription fullUrl: urn:uuid:18c2d9e0-08c7-84e2-5e59-8f56321f895d)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Medication (id: medication-actual-batch)(fullUrl: urn:uuid:339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51)
 
 <Bundle>
     <entry>
@@ -1102,11 +1127,11 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
 </div>
 </div>
 </body>
-<style onLoad="resolveGlobalLinksThatCanBeLocal();">
+<style>
 
 @media all {
 
-    /* consolas works better if text has to align but doesn't look so good.
+    /* Rik - consolas works better if text has to align but doesn't look so good.
        text size adjust gives better scaling on mobile devices, and also overrides default behaviour where
        only "full with" text gets scaled (so some divs do, and others dont) 150% looks ok on iPad Safari, but too big on iPad Chrome */
     .divBody { font:10pt 'Verdana'; margin-right:1.5em; margin-top:0.5em; -webkit-text-size-adjust:150%; }
@@ -1170,6 +1195,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
     .mpd { background-Color:#ffe699 }
     .mpdl2 { background-Color:#fcebb6 }
     .mpdl3 { background-Color:#fcf0ca }
+    .mpdl4 { background-Color:#fff6d9 }
+    .mpdl5 { background-Color:#fffaeb }
 
     .task { background-Color:#fcb568 }
     .task2 { background-Color:#ffd8ad }
@@ -1451,466 +1478,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
 	}
 	td.centred { text-align:center; }
 }
-	</style><SCRIPT><!--
-
-		window.onload=function()
-		{
-			// Rik
-			// first stop spans being clickable, so they can be double clicked to select text, without triggering summary mode
-			var nodesSpan = document.querySelectorAll("span");
-			for (var i=0; i < nodesSpan.length; i++) {
-				var node = nodesSpan[i];
-				node.ondblclick = function() { event.stopPropagation(); };
-			}
-			
-			// add a hidden plus to anything that is a summary unit
-			var nodes = document.querySelectorAll(".summaryUnit");
-			for (var i=0; i < nodes.length; i++) {
-				var node = nodes[i];
-				var span = document.createElement('span');
-            	span.textContent = '+';
-            	span.title = 'This element is summarised - click to expand (or double-click the element background)';
-            	span.className = 'openButton summaryUnit';
-            	span.style.cursor = 'pointer';
-            	node.prepend(span);
-            	span.onclick = function() { summaryHandlerParent(event); };
-			}
-
-			// allow certain sections to load summarised
-			var nodesIs = document.querySelectorAll(".initialSummary");
-			for (var i=0; i < nodesIs.length; i++) {
-				var node = nodesIs[i];
-				toggleSummaryItem(node);
-			}
-
-		}
-
-		function togglePlainMode(item)
-		{
-			toggleBlackAndWhite(item, true);
-		}
-		
-		function toggleBlackAndWhite(item, plain = false)
-		{
-			handleBlackAndWhite(document.getElementsByClassName("greyable")[0]);
-	
-			var nodesTh = document.querySelectorAll("th"); // header from tabular mode
-			for (var i=0; i < nodesTh.length; i++) {
-				var node = nodesTh[i];
-				if (getComputedStyle(node).backgroundColor == 'rgb(255, 255, 255)')
-					node.style.backgroundColor = '#81BEF7'; // blue. should not be hard coded
-				else
-					node.style.backgroundColor = 'white';
-			}
-
-			// not clear why this is needed if have "greyable" above
-			var nodes = document.getElementsByClassName("indent");
-			for (var i=0; i < nodes.length; i++) {
-				var node = nodes[i];
-				if (getComputedStyle(node).borderColor == 'rgb(255, 255, 255)') // this will fail if another mode has changed it
-				{
-					if (plain!=true) // leave at white - so it disappears in effect
-						node.style.borderColor = '#686868'; // grey
-				}
-				else
-					node.style.borderColor = 'white';
-			}
-		}
-		function handleBlackAndWhite(item)
-		{
-			var nodes = item.childNodes	;
-			for (var i=0; i < nodes.length; i++) {
-				var node = nodes[i];
-			    if (node.nodeName.toLowerCase() == 'div')
-			    {
-					if (node.hasAttribute('oldStyle')) // undo b&w
-					{
-      					node.style.background = node.getAttribute('oldStyle');
-						node.removeAttribute('oldStyle');
-					}
-					else
-					{
-						node.setAttribute('oldStyle', getComputedStyle(node).backgroundColor);
-      					node.style.background = 'white';
-					}
-			     }
-			     handleBlackAndWhite(node);
-		     }
-		}
-		function toggleDarkMode(item)
-		{
-			var htmlElement = document.getElementsByTagName("html")[0];
-
-			// make sure B&W mode isn't on because this messes up if it is (but the other way around does work)
-			if (document.querySelectorAll('[oldStyle]').length!=0)
-				return;
-
-			var label = document.getElementById('renderTextLabel');
-			var input = document.getElementById('renderInputfield');
-			var inputPaste = document.getElementById('renderInputfieldPaste');
-			//var renderLabel = document.getElementById('renderLabel'); // this is styled by the app, not here
-			var img = document.getElementById('imgFhirLogo');
-			var table = document.getElementById('tabularModeTable');
-
-			// detect starting as white
-			if ( getComputedStyle(htmlElement).backgroundColor == "rgba(0, 0, 0, 0)" ||   // what happens at first (strangely)
-				 getComputedStyle(htmlElement).backgroundColor == "rgb(255, 255, 255)" || // what happens after we set to "black"
-				 getComputedStyle(htmlElement).backgroundColor == "" ) 		
-			{
-				htmlElement.style.backgroundColor = 'black';
-				if (label) label.style.color = 'gray';
-				if (img) img.classList.add ('greyScale');
-				if (input) input.style.backgroundColor = 'gray';
-				if (inputPaste) inputPaste.style.backgroundColor = 'gray';
-				if (table) {
-					table.style.color = 'gray';
-					table.style.borderColor = 'gray';
-					var td = table.getElementsByTagName("td");
-			  		for (i = 0; i < td.length; i++)
-					    td[i].style.borderColor = "gray";
-				}
-			}
-			else
-			{
-				htmlElement.style.backgroundColor = 'white';
-				if (label) label.style.color = 'black';
-				//if (renderLabel) renderLabel.style.color = 'black';
-				if (input) input.style.backgroundColor = 'white';
-				if (inputPaste) inputPaste.style.backgroundColor = 'white';
-				if (img) img.classList.remove ('greyScale');
-				if (table) {
-					table.style.color = 'black';
-					table.style.borderColor = 'black';
-					var td = table.getElementsByTagName("td");
-			  		for (i = 0; i < td.length; i++)
-					    td[i].style.borderColor = "black";
-				}
-			}
-			// tried using a brightness filter but it doesn't work, because it must change text etc too.
-
-			var nodes = document.querySelectorAll('.indent, .bundle, .bundleBorder, .controls, .renderInputfield');
-			for (var i=0; i < nodes.length; i++)
-			{
-				var node = nodes[i];
-				if (node.hasAttribute('oldBrightColour')) // undo dark mode
-				{
-    				node.style.backgroundColor = node.getAttribute('oldBrightColour');
-					node.removeAttribute('oldBrightColour');
-    				node.style.borderColor = node.getAttribute('oldBrightBorder');
-					node.removeAttribute('oldBrightBorder');
-				}
-				else
-				{
-					var colourRGB = getComputedStyle(node).backgroundColor; // but some browsers may not give it as RGB?
-					var borderRGB = getComputedStyle(node).borderColor;
-					var darkerColour = lightenDarkenColor(rgb2hex(colourRGB), -50);
-					var darkerBorder = lightenDarkenColor(rgb2hex(borderRGB), -50);
-					node.setAttribute('oldBrightColour', colourRGB);
-					node.setAttribute('oldBrightBorder', borderRGB);
-					node.style.backgroundColor = darkerColour;
-					node.style.borderColor = darkerBorder;
-				}
-			}
-			var textXMLnodes = document.querySelectorAll('.text');
-			for (var i=0; i < textXMLnodes.length; i++)
-			{
-				var node = textXMLnodes[i];
-				if (node.hasAttribute('oldDarkText')) // undo dark mode
-				{
-    				node.style.color = node.getAttribute('oldDarkText');
-					node.removeAttribute('oldDarkText');
-				}
-				else
-				{
-					var colourRGB = getComputedStyle(node).color; // but some browsers may not give it as RGB?
-					var lighterColour = 'grey';
-					node.setAttribute('oldDarkText', colourRGB);
-					node.style.color = lighterColour;
-				}
-			}
-		}
-
-		function rgb2hex(rgb)
-		{
-		    if (/^#[0-9A-F]{6}$/i.test(rgb)) return rgb;
-		
-		    rgb = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
-		    function hex(x) {
-		        return ("0" + parseInt(x).toString(16)).slice(-2);
-		    }
-		    return "#" + hex(rgb[1]) + hex(rgb[2]) + hex(rgb[3]);
-		}
-
-		function lightenDarkenColor(col,amt) {
-		    var usePound = false;
-		    if ( col[0] == "#" ) {
-		        col = col.slice(1);
-		        usePound = true;
-		    }
-		
-		    var num = parseInt(col,16);
-		
-		    var r = (num >> 16) + amt;
-		
-		    if ( r > 255 ) r = 255;
-		    else if  (r < 0) r = 0;
-		
-		    var b = ((num >> 8) & 0x00FF) + amt;
-		
-		    if ( b > 255 ) b = 255;
-		    else if  (b < 0) b = 0;
-		
-		    var g = (num & 0x0000FF) + amt;
-		
-		    if ( g > 255 ) g = 255;
-		    else if  ( g < 0 ) g = 0;
-		
-		    return (usePound?"#":"") + (g | (b << 8) | (r << 16)).toString(16);
-		}
-
-		function resolveGlobalLinksThatCanBeLocal()
-		{
-			var nodes = document.querySelectorAll('.external-link');
-			for (var i=0; i < nodes.length; i++) {
-				var node = nodes[i];
-				var href = node.href;
-   				var urlPath = href.split('?url=').pop();
-   				if (urlPath != href) {
-   					var localId = node.getAttribute("localLink");
-	   				var localElement = document.getElementById(localId);
-	   				if (localElement) { 	   					// replace global href with local one if it exists (doesn't check if it is a true global link)
-	   					node.href= '#' + localId;
-	   					node.removeAttribute("localLink");
-	   					node.removeAttribute("class"); // remove the external-link class
-	   					node.title = node.title.replace(" (via server)"," (in page)");
-	   				}
-			   	 }
-    			}
-		}
-
-		function toggleSummary(item)
-		{
-			toggleSummaryItem(document);
-			
-			if (item.innerHTML=='summary off')
-				item.innerHTML='summary on';
-			else
-				item.innerHTML='summary off';
-		}
-
-		function toggleSummaryItem(item)
-		{
-			var els = item.querySelectorAll('.summaryHiddenOff');
-
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'summaryHiddenTemp';
-			}
-			els = item.querySelectorAll('.summaryHidden'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'summaryHiddenOff';
-			}
-			els = item.querySelectorAll('.summaryHiddenTemp'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'summaryHidden';
-			}
-			var els = item.querySelectorAll('.summaryShowsOff'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'summaryShowsTemp';
-			}
-			els = item.querySelectorAll('.summaryShows'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'summaryShowsOff';
-			}
-			els = item.querySelectorAll('.summaryShowsTemp'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'summaryShows';
-			}
-		}
-
-		function toggleCodes(item)
-		{
-			var els = document.querySelectorAll('.greyOff'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'greyTemp';
-			}
-			els = document.querySelectorAll('.grey'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'greyOff';
-			}
-			els = document.querySelectorAll('.greyTemp'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'grey';
-			}
-			if (item.innerHTML=='hide codes')
-				item.innerHTML='show codes';
-			else
-				item.innerHTML='hide codes';
-		}
-		function toggleDebug(item)
-		{
-			var els = document.querySelectorAll('.debugOff'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'debugTemp';
-			}
-			els = document.querySelectorAll('.debug'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'debugOff';
-			}
-			els = document.querySelectorAll('.debugTemp'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'debug';
-			}
-
-			els = document.querySelectorAll('.debugOffBorder'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'debugTemp';
-			}
-			els = document.querySelectorAll('.debugBorder'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'debugOffBorder';
-			}
-			els = document.querySelectorAll('.debugTemp'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'debugBorder';
-			}
-
-			if (item.innerHTML=='hide debug')
-				item.innerHTML='show debug';
-			else
-				item.innerHTML='hide debug';
-		}
-		function debugIsActive()
-		{
-			if (document.getElementsByClassName('debug')[0])
-				return true;
-			else
-				return false;
-		}
-		function summaryIsActive()
-		{
-			if (document.getElementsByClassName('summaryHidden')[0])
-				return true;
-			else
-				return false;
-		}
-		function codeViewIsActive()
-		{
-			if (document.getElementsByClassName('grey')[0])
-				return true;
-			else
-				return false;
-		}
-
-		function toggleRemove(item)
-		{
-			var els = document.querySelectorAll('.removeOff'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'removeTemp';
-			}
-			els = document.querySelectorAll('.remove'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'removeOff';
-			}
-			els = document.querySelectorAll('.removeTemp'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'remove';
-			}
-		}
-		function toggleRemoveProvenance(item)
-		{
-			toggleRemoveStyle('provenance');
-			if (item.innerHTML=='hide provenance')
-				item.innerHTML='show provenance';
-			else
-				item.innerHTML='hide provenance';
-		}
-		function toggleRemoveTask(item)
-		{
-			toggleRemoveStyle('task');
-			if (item.innerHTML=='hide task')
-				item.innerHTML='show task';
-			else
-				item.innerHTML='hide task';
-		}
-		function toggleRemoveTables(item)
-		{
-			toggleRemoveStyle('htmlTable');
-			if (item.innerHTML=='hide tables')
-				item.innerHTML='show tables';
-			else
-				item.innerHTML='hide tables';
-		}
-		function toggleApplyGreyscale(item)
-		{
-			var element = document.getElementsByClassName("greyable")[0];
-			if (element.style.cssText.includes("grayscale"))
-				element.style.cssText = "";
-			else
-				element.style.cssText = "-moz-filter:grayscale(100%);webkit-filter:grayscale(100%);filter:gray;filter:grayscale(100%)";
-		}
-		function toggleRemoveImage(item)
-		{
-			toggleRemoveStyle('image');
-		}
-		function toggleRemoveComment(item)
-		{
-			toggleRemoveStyle('comment');
-		}
-		function toggleRemoveStyle(style)
-		{
-			var els = document.querySelectorAll('.'+style+'RemoveOff'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = style+'RemoveTemp';
-			}
-			els = document.querySelectorAll('.'+style+'Remove'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = style+'RemoveOff';
-			}
-			els = document.querySelectorAll('.'+style+'RemoveTemp'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = style+'Remove';
-			}
-		}
-		function toggleLowerControls(item)
-		{
-			var elements = document.getElementsByClassName("controls"); // because span is clicked, not the "item"
-			if (item.textContent.includes('v') && (elements[0].style.height === ''||elements[0].style.height == "18px"))
-			{
-				//item.innerHTML = "<sup title='shrink this''>v</sup>";
-		 		//elements[0].style.height = "36px";
-		 		elements[0].style.height = "54px";
-			}
-			else
-			{
-				//item.innerHTML = "<sup title='expand this'>v&nbsp;</sup>";
-		 		elements[0].style.height = "18px";
-			}
-		}
-
-		function summaryHandler(event)
-		{
-			summaryHandlerCore(event,event.target);		
-   		}
-		function summaryHandlerParent(event)
-		{
-			summaryHandlerCore(event,event.target.parentElement);
-		}
-		function summaryHandlerCore(event,itemToUse)
-		{
-			// start from parent-or-self that has "summaryUnit" class
-			if (itemToUse.classList.contains('summaryUnit')==false)
-				itemToUse = findAncestor(event.target,'summaryUnit');
-			toggleSummaryItem (itemToUse);
-		    event.cancelBubble = true;
-		    if (event.stopPropagation) event.stopPropagation();
-		}
-		function findAncestor (el, cls)
-		{
-		    while ((el = el.parentElement) && !el.classList.contains(cls));
-		    return el;
-		}
-
-      --></SCRIPT><!--
+	</style><!--
 		Status information:
 		First resource in bundle:DiagnosticReport
 		Single resource bundle:false
@@ -1921,4 +1489,5 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-pr
 		Not patient related:true
 		=>Patient Centric Mode:false
 		SubstanceDef Centric Mode:false
-		Assumed profile:--></html>
+		Assumed profile:-->
+</html>

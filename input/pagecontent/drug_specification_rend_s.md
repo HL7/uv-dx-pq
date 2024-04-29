@@ -8,9 +8,8 @@ The HTML rendering below shows a synthetic Quality data example for Common Techn
 					</p>
 </div>
 <div class="greyable">
-<div class="controls remove"><span> </span><span class="button" onclick="toggleSummary(this)" title="summary view">summary on</span><span> </span><span class="button" onclick="toggleCodes(this)" title="details of code systems">show codes</span><span> </span><span class="button" onclick="toggleDebug(this)" title="extra technical info">show debug</span><span style="float:right; margin-right:3px;"><span class="buttonNoUnderlineHidden" onclick="toggleLowerControls(this)"><sup title="expand this"> v </sup></span><span class="buttonNoUnderline" onclick="toggleRemove(this)"><sup title="close this">x</sup></span></span><span> </span><span class="button" onclick="toggleRemoveTask(this)" title="details of tasks for changes">hide task</span><span> </span><span class="button" onclick="toggleRemoveProvenance(this)" title="details of provenance for changes">hide provenance</span><span> </span><span class="button" onclick="toggleRemoveTables(this)" title="tabular data">hide tables</span><br><span> </span><span class="button" onclick="toggleDarkMode(this)" title="darkened display">dark mode</span><span> </span><span class="button" onclick="toggleApplyGreyscale(this)" title="grey and white display">greyscale</span><span> </span><span class="button" onclick="toggleBlackAndWhite(this,false)" title="black and white display">b&amp;w</span><span> </span><span class="button" onclick="togglePlainMode(this);" title="plain text display">text only</span></div>
 <div class="divBody">
-<div style="position:relative" class="summaryUnit" ondblclick="summaryHandler(event)">
+<div style="position:relative" class="summaryUnit">
 <div class="debugOffBorder">
 <div class="bundleBorder">
 <div class="debugOff">
@@ -569,11 +568,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
 <div><span title="
 <Bundle>
     ...
-    <type value=&quot;collection&quot;>">Type: <span>collection</span></span></div>
+    <type value=&quot;collection&quot;>">Type: </span><span title="
+<Bundle>
+    ...
+    <type value=&quot;collection&quot;>"><span>collection</span></span></div>
 </div>
 </div>
 <div>
-<div class="indent plan summaryUnit" ondblclick="summaryHandler(event)"><a class="plainLink"><span class="bold" title="PlanDefinition (id: specificationProtocol)(fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)
+<div class="indent plan summaryUnit"><a class="plainLink"><span class="bold" title="PlanDefinition (id: specificationProtocol)(fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265a)
 
 <Bundle>
     <entry>
@@ -776,7 +778,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                         <!--definitionCanonical value=&quot;ObservationDefinition/Particles&quot;/-->
                         <definitionCanonical value=&quot;http://example-server.com/fhir/ObservationDefinition/233865df-2a71-528d-756c-85f36bd6685f&quot;/>
                     </action>
-                </action>">Subject</span><div class="indent sbd summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (PlanDefinition/subjectReference, id: specificationProtocol fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: substance1)(fullUrl: urn:uuid:03d68d1c-162c-8b6e-70f9-647b0ea97adb)
+                </action>">Subject</span><div class="indent sbd summaryUnit"><div class="debugOff"><span>Found a parent (PlanDefinition/subjectReference, id: specificationProtocol fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="SubstanceDefinition (id: substance1)(fullUrl: urn:uuid:03d68d1c-162c-8b6e-70f9-647b0ea97adb)
 
 <Bundle>
     <entry>
@@ -794,14 +796,20 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
         <resource>
             <SubstanceDefinition>
                 <name>
-                    <name value=&quot;Stelbatolol&quot;>">Name: <span>Stelbatolol</span></span></div></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div class="indent sbddetails2"><span title="
+                    <name value=&quot;Stelbatolol&quot;>">Name: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <SubstanceDefinition>
+                <name>
+                    <name value=&quot;Stelbatolol&quot;>"><span>Stelbatolol</span></span></div></div></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"></div><div class="summaryHiddenOff"><div class="indent sbddetails2"><span title="
 <Bundle>
     <entry>
         <resource>
             <SubstanceDefinition>
                 ...
                 <manufacturer>
-                    <reference value=&quot;Organization/substance-manufacturer&quot;/>">Manufacturer</span><div class="indent org summaryUnit" ondblclick="summaryHandler(event)"><div class="debugOff"><span>Found a parent (SubstanceDefinition/manufacturer, id: substance1 fullUrl: urn:uuid:03d68d1c-162c-8b6e-70f9-647b0ea97adb)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: substance-manufacturer)(fullUrl: urn:uuid:062bf235-44e2-55c4-9213-bbe5e12d5620)
+                    <reference value=&quot;Organization/substance-manufacturer&quot;/>">Manufacturer</span><div class="indent org summaryUnit"><div class="debugOff"><span>Found a parent (SubstanceDefinition/manufacturer, id: substance1 fullUrl: urn:uuid:03d68d1c-162c-8b6e-70f9-647b0ea97adb)<br>which is linked to this by resource.id</span></div><a class="plainLink"><span class="bold" title="Organization (id: substance-manufacturer)(fullUrl: urn:uuid:062bf235-44e2-55c4-9213-bbe5e12d5620)
 
 <Bundle>
     <entry>
@@ -1255,7 +1263,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
 </tr>
 </table>
 </div><br style="line-height:6px;"></div>
-<div class="indent summaryUnit planl2 initialSummary" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2 initialSummary"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1353,7 +1361,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <code>
                         <text value=&quot;Overall set of actions&quot;/>">Code: </span><span style="white-space:normal;">Overall set of actions</span></div>
 </div>
-<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1375,7 +1383,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <action>
                         <code>
                             <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
-<div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
+<div class="indent summaryUnit obsDef">
 <div class="debugOff"><span>Found a parent (PlanDefinition/action, id: specificationProtocol fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by canonical resource.url</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Description)(fullUrl: urn:uuid:52176085-1f30-0c67-9ad7-523c486c82c9)
 
 <Bundle>
@@ -1457,7 +1465,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                         <code value=&quot;DESC&quot;/>
                         <display value=&quot;Description&quot;/>
                     </coding>
-                    <text value=&quot;Description&quot;/>">Code: <span title="
+                    <text value=&quot;Description&quot;/>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                        <code value=&quot;DESC&quot;/>
+                        <display value=&quot;Description&quot;/>
+                    </coding>
+                    <text value=&quot;Description&quot;/>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1474,7 +1494,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
             <ObservationDefinition>
                 ...
                 <method>
-                    <text value=&quot;Visual inspection&quot;/>">Method: <span style="white-space:normal;">Visual inspection</span></span></div>
+                    <text value=&quot;Visual inspection&quot;/>">Method: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <method>
+                    <text value=&quot;Visual inspection&quot;/>"><span style="white-space:normal;">Visual inspection</span></span></div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
 <div class="indent obsDefl2" title="
@@ -1519,7 +1546,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
 </div>
 </div>
 </div>
-<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1541,7 +1568,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <action>
                         <code>
                             <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
-<div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
+<div class="indent summaryUnit obsDef">
 <div class="debugOff"><span>Found a parent (PlanDefinition/action, id: specificationProtocol fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by canonical resource.url</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Identification)(fullUrl: urn:uuid:b50d892c-8980-0774-39d4-d449732873a3)
 
 <Bundle>
@@ -1623,7 +1650,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                         <code value=&quot;IDT&quot;/>
                         <display value=&quot;Identification&quot;/>
                     </coding>
-                    <text value=&quot;Identification&quot;/>">Code: <span title="
+                    <text value=&quot;Identification&quot;/>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                        <code value=&quot;IDT&quot;/>
+                        <display value=&quot;Identification&quot;/>
+                    </coding>
+                    <text value=&quot;Identification&quot;/>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1640,7 +1679,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
             <ObservationDefinition>
                 ...
                 <method>
-                    <text value=&quot;Identification by IR spectroscopy Identification by HPLC&quot;/>">Method: <span style="white-space:normal;">Identification by IR spectroscopy Identification by HPLC</span></span></div>
+                    <text value=&quot;Identification by IR spectroscopy Identification by HPLC&quot;/>">Method: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <method>
+                    <text value=&quot;Identification by IR spectroscopy Identification by HPLC&quot;/>"><span style="white-space:normal;">Identification by IR spectroscopy Identification by HPLC</span></span></div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
 <div class="indent obsDefl2" title="
@@ -1685,7 +1731,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
 </div>
 </div>
 </div>
-<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1707,7 +1753,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <action>
                         <code>
                             <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
-<div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
+<div class="indent summaryUnit obsDef">
 <div class="debugOff"><span>Found a parent (PlanDefinition/action, id: specificationProtocol fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by canonical resource.url</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Assay)(fullUrl: urn:uuid:d460b561-110c-7eb6-5d69-788abcca391a)
 
 <Bundle>
@@ -1802,7 +1848,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                         <code value=&quot;ASSAY&quot;/>
                         <display value=&quot;Assay&quot;/>
                     </coding>
-                    <text value=&quot;Assay&quot;/>">Code: <span title="
+                    <text value=&quot;Assay&quot;/>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                        <code value=&quot;ASSAY&quot;/>
+                        <display value=&quot;Assay&quot;/>
+                    </coding>
+                    <text value=&quot;Assay&quot;/>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1819,7 +1877,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
             <ObservationDefinition>
                 ...
                 <method>
-                    <text value=&quot;Assay by LC&quot;/>">Method: <span style="white-space:normal;">Assay by LC</span></span></div>
+                    <text value=&quot;Assay by LC&quot;/>">Method: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <method>
+                    <text value=&quot;Assay by LC&quot;/>"><span style="white-space:normal;">Assay by LC</span></span></div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
 <div class="indent obsDefl2" title="
@@ -1921,7 +1986,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
 </div>
 </div>
 </div>
-<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -1943,7 +2008,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <action>
                         <code>
                             <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
-<div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
+<div class="indent summaryUnit obsDef">
 <div class="debugOff"><span>Found a parent (PlanDefinition/action, id: specificationProtocol fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by canonical resource.url</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Impurities)(fullUrl: urn:uuid:006a9f7b-91ca-5601-38ef-a3dd26ad7121)
 
 <Bundle>
@@ -2073,7 +2138,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                         <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;DGP-s&quot;/>
                         <display value=&quot;Drug Substance Related Organic impurities&quot;/>
-                    </coding>">Code: <span title="
+                    </coding>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                        <code value=&quot;DGP-s&quot;/>
+                        <display value=&quot;Drug Substance Related Organic impurities&quot;/>
+                    </coding>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2090,7 +2166,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
             <ObservationDefinition>
                 ...
                 <method>
-                    <text value=&quot;Organic impurities by LC&quot;/>">Method: <span style="white-space:normal;">Organic impurities by LC</span></span></div>
+                    <text value=&quot;Organic impurities by LC&quot;/>">Method: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <method>
+                    <text value=&quot;Organic impurities by LC&quot;/>"><span style="white-space:normal;">Organic impurities by LC</span></span></div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
 <div class="indent obsDefl2" title="
@@ -2136,7 +2219,15 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <qualifiedValue>
                     <appliesTo>
                         <!-- could be a code -->
-                        <text value=&quot;Impurity 1&quot;/>">Applies To: <span style="white-space:normal;">Impurity 1</span></span></div>
+                        <text value=&quot;Impurity 1&quot;/>">Applies To: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <appliesTo>
+                        <!-- could be a code -->
+                        <text value=&quot;Impurity 1&quot;/>"><span style="white-space:normal;">Impurity 1</span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -2200,7 +2291,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
             <ObservationDefinition>
                 <qualifiedValue>
                     <appliesTo>
-                        <text value=&quot;Impurity 2&quot;/>">Applies To: <span style="white-space:normal;">Impurity 2</span></span></div>
+                        <text value=&quot;Impurity 2&quot;/>">Applies To: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <appliesTo>
+                        <text value=&quot;Impurity 2&quot;/>"><span style="white-space:normal;">Impurity 2</span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -2264,7 +2362,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
             <ObservationDefinition>
                 <qualifiedValue>
                     <appliesTo>
-                        <text value=&quot;Any individual unspecified impurity&quot;/>">Applies To: <span style="white-space:normal;">Any individual unspecified impurity</span></span></div>
+                        <text value=&quot;Any individual unspecified impurity&quot;/>">Applies To: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <appliesTo>
+                        <text value=&quot;Any individual unspecified impurity&quot;/>"><span style="white-space:normal;">Any individual unspecified impurity</span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -2328,7 +2433,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
             <ObservationDefinition>
                 <qualifiedValue>
                     <appliesTo>
-                        <text value=&quot;Total impurities&quot;/>">Applies To: <span style="white-space:normal;">Total impurities</span></span></div>
+                        <text value=&quot;Total impurities&quot;/>">Applies To: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <appliesTo>
+                        <text value=&quot;Total impurities&quot;/>"><span style="white-space:normal;">Total impurities</span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -2389,7 +2501,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
-                        </coding>">Code: <span title="
+                        </coding>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2405,7 +2528,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
 </div>
 </div>
 </div>
-<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2427,7 +2550,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <action>
                         <code>
                             <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
-<div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
+<div class="indent summaryUnit obsDef">
 <div class="debugOff"><span>Found a parent (PlanDefinition/action, id: specificationProtocol fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by canonical resource.url</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Mutagenic)(fullUrl: urn:uuid:c59deb1b-835c-1be5-4e08-95dea3ae1a17)
 
 <Bundle>
@@ -2526,7 +2649,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                         <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;MUT&quot;/>
                         <display value=&quot;Mutagenic impurities&quot;/>
-                    </coding>">Code: <span title="
+                    </coding>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                        <code value=&quot;MUT&quot;/>
+                        <display value=&quot;Mutagenic impurities&quot;/>
+                    </coding>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2543,7 +2677,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
             <ObservationDefinition>
                 ...
                 <method>
-                    <text value=&quot;Impurity 5 content by LC-MS&quot;/>">Method: <span style="white-space:normal;">Impurity 5 content by LC-MS</span></span></div>
+                    <text value=&quot;Impurity 5 content by LC-MS&quot;/>">Method: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <method>
+                    <text value=&quot;Impurity 5 content by LC-MS&quot;/>"><span style="white-space:normal;">Impurity 5 content by LC-MS</span></span></div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
 <div class="indent obsDefl2" title="
@@ -2593,7 +2734,15 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <qualifiedValue>
                     <appliesTo>
                         <!-- could be a code -->
-                        <text value=&quot;Impurity - Mutagenic&quot;/>">Applies To: <span style="white-space:normal;">Impurity - Mutagenic</span></span></div>
+                        <text value=&quot;Impurity - Mutagenic&quot;/>">Applies To: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <appliesTo>
+                        <!-- could be a code -->
+                        <text value=&quot;Impurity - Mutagenic&quot;/>"><span style="white-space:normal;">Impurity - Mutagenic</span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -2658,7 +2807,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;IMP&quot;/>
                             <display value=&quot;Impurity&quot;/>
-                        </coding>">Code: <span title="
+                        </coding>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                            <code value=&quot;IMP&quot;/>
+                            <display value=&quot;Impurity&quot;/>
+                        </coding>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2674,7 +2834,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
 </div>
 </div>
 </div>
-<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2696,7 +2856,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <action>
                         <code>
                             <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
-<div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
+<div class="indent summaryUnit obsDef">
 <div class="debugOff"><span>Found a parent (PlanDefinition/action, id: specificationProtocol fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by canonical resource.url</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Enantiomeric)(fullUrl: urn:uuid:18e20bae-1a24-202d-11d7-5f354c785e4d)
 
 <Bundle>
@@ -2783,7 +2943,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                         <code value=&quot;enantiomeric-purity&quot;/>
                         <display value=&quot;Enantiomeric purity&quot;/>
                     </coding>
-                    <text value=&quot;Enantiomeric purity&quot;/>">Code: <span title="
+                    <text value=&quot;Enantiomeric purity&quot;/>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                        <code value=&quot;enantiomeric-purity&quot;/>
+                        <display value=&quot;Enantiomeric purity&quot;/>
+                    </coding>
+                    <text value=&quot;Enantiomeric purity&quot;/>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2800,7 +2972,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
             <ObservationDefinition>
                 ...
                 <method>
-                    <text value=&quot;Enantiomeric purity by LC&quot;/>">Method: <span style="white-space:normal;">Enantiomeric purity by LC</span></span></div>
+                    <text value=&quot;Enantiomeric purity by LC&quot;/>">Method: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <method>
+                    <text value=&quot;Enantiomeric purity by LC&quot;/>"><span style="white-space:normal;">Enantiomeric purity by LC</span></span></div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
 <div class="indent obsDefl2" title="
@@ -2864,7 +3043,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
 </div>
 </div>
 </div>
-<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -2886,7 +3065,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <action>
                         <code>
                             <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
-<div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
+<div class="indent summaryUnit obsDef">
 <div class="debugOff"><span>Found a parent (PlanDefinition/action, id: specificationProtocol fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by canonical resource.url</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Solvents)(fullUrl: urn:uuid:22544fa4-0fa2-1d5a-253d-a1fbe8fd61ce)
 
 <Bundle>
@@ -2994,7 +3173,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                         <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;SOL&quot;/>
                         <display value=&quot;Residual solvents&quot;/>
-                    </coding>">Code: <span title="
+                    </coding>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                        <code value=&quot;SOL&quot;/>
+                        <display value=&quot;Residual solvents&quot;/>
+                    </coding>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3011,7 +3201,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
             <ObservationDefinition>
                 ...
                 <method>
-                    <text value=&quot;Residual solvents by headspace GC&quot;/>">Method: <span style="white-space:normal;">Residual solvents by headspace GC</span></span></div>
+                    <text value=&quot;Residual solvents by headspace GC&quot;/>">Method: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <method>
+                    <text value=&quot;Residual solvents by headspace GC&quot;/>"><span style="white-space:normal;">Residual solvents by headspace GC</span></span></div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
 <div class="indent obsDefl2" title="
@@ -3057,7 +3254,15 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <qualifiedValue>
                     <appliesTo>
                         <!-- could be a code -->
-                        <text value=&quot;Solvent 1&quot;/>">Applies To: <span style="white-space:normal;">Solvent 1</span></span></div>
+                        <text value=&quot;Solvent 1&quot;/>">Applies To: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <appliesTo>
+                        <!-- could be a code -->
+                        <text value=&quot;Solvent 1&quot;/>"><span style="white-space:normal;">Solvent 1</span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -3121,7 +3326,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
             <ObservationDefinition>
                 <qualifiedValue>
                     <appliesTo>
-                        <text value=&quot;Solvent 2&quot;/>">Applies To: <span style="white-space:normal;">Solvent 2</span></span></div>
+                        <text value=&quot;Solvent 2&quot;/>">Applies To: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <appliesTo>
+                        <text value=&quot;Solvent 2&quot;/>"><span style="white-space:normal;">Solvent 2</span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -3182,7 +3394,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;SOLV&quot;/>
                             <display value=&quot;Solvent&quot;/>
-                        </coding>">Code: <span title="
+                        </coding>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                            <code value=&quot;SOLV&quot;/>
+                            <display value=&quot;Solvent&quot;/>
+                        </coding>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3198,7 +3421,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
 </div>
 </div>
 </div>
-<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3220,7 +3443,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <action>
                         <code>
                             <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
-<div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
+<div class="indent summaryUnit obsDef">
 <div class="debugOff"><span>Found a parent (PlanDefinition/action, id: specificationProtocol fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by canonical resource.url</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Water)(fullUrl: urn:uuid:b4f736ff-1bbf-6923-4d5c-85d262285d7d)
 
 <Bundle>
@@ -3305,7 +3528,19 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                         <code value=&quot;WaterContent&quot;/>
                         <display value=&quot;Water Content&quot;/>
                     </coding>
-                    <text value=&quot;Water Content&quot;/>">Code: <span title="
+                    <text value=&quot;Water Content&quot;/>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                        <code value=&quot;WaterContent&quot;/>
+                        <display value=&quot;Water Content&quot;/>
+                    </coding>
+                    <text value=&quot;Water Content&quot;/>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3322,7 +3557,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
             <ObservationDefinition>
                 ...
                 <method>
-                    <text value=&quot;USP Karl Fischer titration&quot;/>">Method: <span style="white-space:normal;">USP Karl Fischer titration</span></span></div>
+                    <text value=&quot;USP Karl Fischer titration&quot;/>">Method: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <method>
+                    <text value=&quot;USP Karl Fischer titration&quot;/>"><span style="white-space:normal;">USP Karl Fischer titration</span></span></div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
 <div class="indent obsDefl2" title="
@@ -3378,7 +3620,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
 </div>
 </div>
 </div>
-<div class="indent summaryUnit planl2" ondblclick="summaryHandler(event)"><span title="
+<div class="indent summaryUnit planl2"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3400,7 +3642,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                     <action>
                         <code>
                             <text value=&quot;Test&quot;/>">Code: </span><span style="white-space:normal;">Test</span></div>
-<div ondblclick="summaryHandler(event)" class="indent summaryUnit obsDef">
+<div class="indent summaryUnit obsDef">
 <div class="debugOff"><span>Found a parent (PlanDefinition/action, id: specificationProtocol fullUrl: urn:uuid:bf6b038b-1334-3dd4-a552-65c169e2265aurl (canonical): http://example-server.com/fhir/PlanDefinition/bf6b038b-1334-3dd4-a552-65c169e2265a)<br>which is linked to this by canonical resource.url</span></div><a class="plainLink"><span class="bold" title="ObservationDefinition (id: Particles)(fullUrl: urn:uuid:233865df-2a71-528d-756c-85f36bd6685f)
 
 <Bundle>
@@ -3527,7 +3769,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                         <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                         <code value=&quot;particle-size-distribution&quot;/>
                         <display value=&quot;Particle size distribution&quot;/>
-                    </coding>">Code: <span title="
+                    </coding>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <code>
+                    <coding>
+                        <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                        <code value=&quot;particle-size-distribution&quot;/>
+                        <display value=&quot;Particle size distribution&quot;/>
+                    </coding>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3544,7 +3797,14 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
             <ObservationDefinition>
                 ...
                 <method>
-                    <text value=&quot;Laser diffraction&quot;/>">Method: <span style="white-space:normal;">Laser diffraction</span></span></div>
+                    <text value=&quot;Laser diffraction&quot;/>">Method: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                ...
+                <method>
+                    <text value=&quot;Laser diffraction&quot;/>"><span style="white-space:normal;">Laser diffraction</span></span></div>
 <div class="summaryHiddenOff"></div>
 <div class="summaryHiddenOff"></div>
 <div class="indent obsDefl2" title="
@@ -3594,7 +3854,15 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <qualifiedValue>
                     <appliesTo>
                         <!-- could be a code -->
-                        <text value=&quot;D(v,0.9)&quot;/>">Applies To: <span style="white-space:normal;">D(v,0.9)</span></span></div>
+                        <text value=&quot;D(v,0.9)&quot;/>">Applies To: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <appliesTo>
+                        <!-- could be a code -->
+                        <text value=&quot;D(v,0.9)&quot;/>"><span style="white-space:normal;">D(v,0.9)</span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -3669,7 +3937,15 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <qualifiedValue>
                     <appliesTo>
                         <!-- could be a code -->
-                        <text value=&quot;D(v,0.5)&quot;/>">Applies To: <span style="white-space:normal;">D(v,0.5)</span></span></div>
+                        <text value=&quot;D(v,0.5)&quot;/>">Applies To: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <appliesTo>
+                        <!-- could be a code -->
+                        <text value=&quot;D(v,0.5)&quot;/>"><span style="white-space:normal;">D(v,0.5)</span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -3744,7 +4020,15 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                 <qualifiedValue>
                     <appliesTo>
                         <!-- could be a code -->
-                        <text value=&quot;D(v,0.1)&quot;/>">Applies To: <span style="white-space:normal;">D(v,0.1)</span></span></div>
+                        <text value=&quot;D(v,0.1)&quot;/>">Applies To: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <qualifiedValue>
+                    <appliesTo>
+                        <!-- could be a code -->
+                        <text value=&quot;D(v,0.1)&quot;/>"><span style="white-space:normal;">D(v,0.1)</span></span></div>
 <div><span title="
 <Bundle>
     <entry>
@@ -3809,7 +4093,18 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
                             <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
                             <code value=&quot;particle-size&quot;/>
                             <display value=&quot;Particle size&quot;/>
-                        </coding>">Code: <span title="
+                        </coding>">Code: </span><span title="
+<Bundle>
+    <entry>
+        <resource>
+            <ObservationDefinition>
+                <component>
+                    <code>
+                        <coding>
+                            <system value=&quot;http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example&quot;/>
+                            <code value=&quot;particle-size&quot;/>
+                            <display value=&quot;Particle size&quot;/>
+                        </coding>"><span title="
 <Bundle>
     <entry>
         <resource>
@@ -3835,11 +4130,11 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
 </div>
 </div>
 </body>
-<style onLoad="resolveGlobalLinksThatCanBeLocal();">
+<style>
 
 @media all {
 
-    /* consolas works better if text has to align but doesn't look so good.
+    /* Rik - consolas works better if text has to align but doesn't look so good.
        text size adjust gives better scaling on mobile devices, and also overrides default behaviour where
        only "full with" text gets scaled (so some divs do, and others dont) 150% looks ok on iPad Safari, but too big on iPad Chrome */
     .divBody { font:10pt 'Verdana'; margin-right:1.5em; margin-top:0.5em; -webkit-text-size-adjust:150%; }
@@ -3903,6 +4198,8 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
     .mpd { background-Color:#ffe699 }
     .mpdl2 { background-Color:#fcebb6 }
     .mpdl3 { background-Color:#fcf0ca }
+    .mpdl4 { background-Color:#fff6d9 }
+    .mpdl5 { background-Color:#fffaeb }
 
     .task { background-Color:#fcb568 }
     .task2 { background-Color:#ffd8ad }
@@ -4184,466 +4481,7 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
 	}
 	td.centred { text-align:center; }
 }
-	</style><SCRIPT><!--
-
-		window.onload=function()
-		{
-			// Rik
-			// first stop spans being clickable, so they can be double clicked to select text, without triggering summary mode
-			var nodesSpan = document.querySelectorAll("span");
-			for (var i=0; i < nodesSpan.length; i++) {
-				var node = nodesSpan[i];
-				node.ondblclick = function() { event.stopPropagation(); };
-			}
-			
-			// add a hidden plus to anything that is a summary unit
-			var nodes = document.querySelectorAll(".summaryUnit");
-			for (var i=0; i < nodes.length; i++) {
-				var node = nodes[i];
-				var span = document.createElement('span');
-            	span.textContent = '+';
-            	span.title = 'This element is summarised - click to expand (or double-click the element background)';
-            	span.className = 'openButton summaryUnit';
-            	span.style.cursor = 'pointer';
-            	node.prepend(span);
-            	span.onclick = function() { summaryHandlerParent(event); };
-			}
-
-			// allow certain sections to load summarised
-			var nodesIs = document.querySelectorAll(".initialSummary");
-			for (var i=0; i < nodesIs.length; i++) {
-				var node = nodesIs[i];
-				toggleSummaryItem(node);
-			}
-
-		}
-
-		function togglePlainMode(item)
-		{
-			toggleBlackAndWhite(item, true);
-		}
-		
-		function toggleBlackAndWhite(item, plain = false)
-		{
-			handleBlackAndWhite(document.getElementsByClassName("greyable")[0]);
-	
-			var nodesTh = document.querySelectorAll("th"); // header from tabular mode
-			for (var i=0; i < nodesTh.length; i++) {
-				var node = nodesTh[i];
-				if (getComputedStyle(node).backgroundColor == 'rgb(255, 255, 255)')
-					node.style.backgroundColor = '#81BEF7'; // blue. should not be hard coded
-				else
-					node.style.backgroundColor = 'white';
-			}
-
-			// not clear why this is needed if have "greyable" above
-			var nodes = document.getElementsByClassName("indent");
-			for (var i=0; i < nodes.length; i++) {
-				var node = nodes[i];
-				if (getComputedStyle(node).borderColor == 'rgb(255, 255, 255)') // this will fail if another mode has changed it
-				{
-					if (plain!=true) // leave at white - so it disappears in effect
-						node.style.borderColor = '#686868'; // grey
-				}
-				else
-					node.style.borderColor = 'white';
-			}
-		}
-		function handleBlackAndWhite(item)
-		{
-			var nodes = item.childNodes	;
-			for (var i=0; i < nodes.length; i++) {
-				var node = nodes[i];
-			    if (node.nodeName.toLowerCase() == 'div')
-			    {
-					if (node.hasAttribute('oldStyle')) // undo b&w
-					{
-      					node.style.background = node.getAttribute('oldStyle');
-						node.removeAttribute('oldStyle');
-					}
-					else
-					{
-						node.setAttribute('oldStyle', getComputedStyle(node).backgroundColor);
-      					node.style.background = 'white';
-					}
-			     }
-			     handleBlackAndWhite(node);
-		     }
-		}
-		function toggleDarkMode(item)
-		{
-			var htmlElement = document.getElementsByTagName("html")[0];
-
-			// make sure B&W mode isn't on because this messes up if it is (but the other way around does work)
-			if (document.querySelectorAll('[oldStyle]').length!=0)
-				return;
-
-			var label = document.getElementById('renderTextLabel');
-			var input = document.getElementById('renderInputfield');
-			var inputPaste = document.getElementById('renderInputfieldPaste');
-			//var renderLabel = document.getElementById('renderLabel'); // this is styled by the app, not here
-			var img = document.getElementById('imgFhirLogo');
-			var table = document.getElementById('tabularModeTable');
-
-			// detect starting as white
-			if ( getComputedStyle(htmlElement).backgroundColor == "rgba(0, 0, 0, 0)" ||   // what happens at first (strangely)
-				 getComputedStyle(htmlElement).backgroundColor == "rgb(255, 255, 255)" || // what happens after we set to "black"
-				 getComputedStyle(htmlElement).backgroundColor == "" ) 		
-			{
-				htmlElement.style.backgroundColor = 'black';
-				if (label) label.style.color = 'gray';
-				if (img) img.classList.add ('greyScale');
-				if (input) input.style.backgroundColor = 'gray';
-				if (inputPaste) inputPaste.style.backgroundColor = 'gray';
-				if (table) {
-					table.style.color = 'gray';
-					table.style.borderColor = 'gray';
-					var td = table.getElementsByTagName("td");
-			  		for (i = 0; i < td.length; i++)
-					    td[i].style.borderColor = "gray";
-				}
-			}
-			else
-			{
-				htmlElement.style.backgroundColor = 'white';
-				if (label) label.style.color = 'black';
-				//if (renderLabel) renderLabel.style.color = 'black';
-				if (input) input.style.backgroundColor = 'white';
-				if (inputPaste) inputPaste.style.backgroundColor = 'white';
-				if (img) img.classList.remove ('greyScale');
-				if (table) {
-					table.style.color = 'black';
-					table.style.borderColor = 'black';
-					var td = table.getElementsByTagName("td");
-			  		for (i = 0; i < td.length; i++)
-					    td[i].style.borderColor = "black";
-				}
-			}
-			// tried using a brightness filter but it doesn't work, because it must change text etc too.
-
-			var nodes = document.querySelectorAll('.indent, .bundle, .bundleBorder, .controls, .renderInputfield');
-			for (var i=0; i < nodes.length; i++)
-			{
-				var node = nodes[i];
-				if (node.hasAttribute('oldBrightColour')) // undo dark mode
-				{
-    				node.style.backgroundColor = node.getAttribute('oldBrightColour');
-					node.removeAttribute('oldBrightColour');
-    				node.style.borderColor = node.getAttribute('oldBrightBorder');
-					node.removeAttribute('oldBrightBorder');
-				}
-				else
-				{
-					var colourRGB = getComputedStyle(node).backgroundColor; // but some browsers may not give it as RGB?
-					var borderRGB = getComputedStyle(node).borderColor;
-					var darkerColour = lightenDarkenColor(rgb2hex(colourRGB), -50);
-					var darkerBorder = lightenDarkenColor(rgb2hex(borderRGB), -50);
-					node.setAttribute('oldBrightColour', colourRGB);
-					node.setAttribute('oldBrightBorder', borderRGB);
-					node.style.backgroundColor = darkerColour;
-					node.style.borderColor = darkerBorder;
-				}
-			}
-			var textXMLnodes = document.querySelectorAll('.text');
-			for (var i=0; i < textXMLnodes.length; i++)
-			{
-				var node = textXMLnodes[i];
-				if (node.hasAttribute('oldDarkText')) // undo dark mode
-				{
-    				node.style.color = node.getAttribute('oldDarkText');
-					node.removeAttribute('oldDarkText');
-				}
-				else
-				{
-					var colourRGB = getComputedStyle(node).color; // but some browsers may not give it as RGB?
-					var lighterColour = 'grey';
-					node.setAttribute('oldDarkText', colourRGB);
-					node.style.color = lighterColour;
-				}
-			}
-		}
-
-		function rgb2hex(rgb)
-		{
-		    if (/^#[0-9A-F]{6}$/i.test(rgb)) return rgb;
-		
-		    rgb = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
-		    function hex(x) {
-		        return ("0" + parseInt(x).toString(16)).slice(-2);
-		    }
-		    return "#" + hex(rgb[1]) + hex(rgb[2]) + hex(rgb[3]);
-		}
-
-		function lightenDarkenColor(col,amt) {
-		    var usePound = false;
-		    if ( col[0] == "#" ) {
-		        col = col.slice(1);
-		        usePound = true;
-		    }
-		
-		    var num = parseInt(col,16);
-		
-		    var r = (num >> 16) + amt;
-		
-		    if ( r > 255 ) r = 255;
-		    else if  (r < 0) r = 0;
-		
-		    var b = ((num >> 8) & 0x00FF) + amt;
-		
-		    if ( b > 255 ) b = 255;
-		    else if  (b < 0) b = 0;
-		
-		    var g = (num & 0x0000FF) + amt;
-		
-		    if ( g > 255 ) g = 255;
-		    else if  ( g < 0 ) g = 0;
-		
-		    return (usePound?"#":"") + (g | (b << 8) | (r << 16)).toString(16);
-		}
-
-		function resolveGlobalLinksThatCanBeLocal()
-		{
-			var nodes = document.querySelectorAll('.external-link');
-			for (var i=0; i < nodes.length; i++) {
-				var node = nodes[i];
-				var href = node.href;
-   				var urlPath = href.split('?url=').pop();
-   				if (urlPath != href) {
-   					var localId = node.getAttribute("localLink");
-	   				var localElement = document.getElementById(localId);
-	   				if (localElement) { 	   					// replace global href with local one if it exists (doesn't check if it is a true global link)
-	   					node.href= '#' + localId;
-	   					node.removeAttribute("localLink");
-	   					node.removeAttribute("class"); // remove the external-link class
-	   					node.title = node.title.replace(" (via server)"," (in page)");
-	   				}
-			   	 }
-    			}
-		}
-
-		function toggleSummary(item)
-		{
-			toggleSummaryItem(document);
-			
-			if (item.innerHTML=='summary off')
-				item.innerHTML='summary on';
-			else
-				item.innerHTML='summary off';
-		}
-
-		function toggleSummaryItem(item)
-		{
-			var els = item.querySelectorAll('.summaryHiddenOff');
-
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'summaryHiddenTemp';
-			}
-			els = item.querySelectorAll('.summaryHidden'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'summaryHiddenOff';
-			}
-			els = item.querySelectorAll('.summaryHiddenTemp'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'summaryHidden';
-			}
-			var els = item.querySelectorAll('.summaryShowsOff'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'summaryShowsTemp';
-			}
-			els = item.querySelectorAll('.summaryShows'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'summaryShowsOff';
-			}
-			els = item.querySelectorAll('.summaryShowsTemp'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'summaryShows';
-			}
-		}
-
-		function toggleCodes(item)
-		{
-			var els = document.querySelectorAll('.greyOff'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'greyTemp';
-			}
-			els = document.querySelectorAll('.grey'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'greyOff';
-			}
-			els = document.querySelectorAll('.greyTemp'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'grey';
-			}
-			if (item.innerHTML=='hide codes')
-				item.innerHTML='show codes';
-			else
-				item.innerHTML='hide codes';
-		}
-		function toggleDebug(item)
-		{
-			var els = document.querySelectorAll('.debugOff'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'debugTemp';
-			}
-			els = document.querySelectorAll('.debug'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'debugOff';
-			}
-			els = document.querySelectorAll('.debugTemp'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'debug';
-			}
-
-			els = document.querySelectorAll('.debugOffBorder'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'debugTemp';
-			}
-			els = document.querySelectorAll('.debugBorder'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'debugOffBorder';
-			}
-			els = document.querySelectorAll('.debugTemp'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'debugBorder';
-			}
-
-			if (item.innerHTML=='hide debug')
-				item.innerHTML='show debug';
-			else
-				item.innerHTML='hide debug';
-		}
-		function debugIsActive()
-		{
-			if (document.getElementsByClassName('debug')[0])
-				return true;
-			else
-				return false;
-		}
-		function summaryIsActive()
-		{
-			if (document.getElementsByClassName('summaryHidden')[0])
-				return true;
-			else
-				return false;
-		}
-		function codeViewIsActive()
-		{
-			if (document.getElementsByClassName('grey')[0])
-				return true;
-			else
-				return false;
-		}
-
-		function toggleRemove(item)
-		{
-			var els = document.querySelectorAll('.removeOff'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'removeTemp';
-			}
-			els = document.querySelectorAll('.remove'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'removeOff';
-			}
-			els = document.querySelectorAll('.removeTemp'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = 'remove';
-			}
-		}
-		function toggleRemoveProvenance(item)
-		{
-			toggleRemoveStyle('provenance');
-			if (item.innerHTML=='hide provenance')
-				item.innerHTML='show provenance';
-			else
-				item.innerHTML='hide provenance';
-		}
-		function toggleRemoveTask(item)
-		{
-			toggleRemoveStyle('task');
-			if (item.innerHTML=='hide task')
-				item.innerHTML='show task';
-			else
-				item.innerHTML='hide task';
-		}
-		function toggleRemoveTables(item)
-		{
-			toggleRemoveStyle('htmlTable');
-			if (item.innerHTML=='hide tables')
-				item.innerHTML='show tables';
-			else
-				item.innerHTML='hide tables';
-		}
-		function toggleApplyGreyscale(item)
-		{
-			var element = document.getElementsByClassName("greyable")[0];
-			if (element.style.cssText.includes("grayscale"))
-				element.style.cssText = "";
-			else
-				element.style.cssText = "-moz-filter:grayscale(100%);webkit-filter:grayscale(100%);filter:gray;filter:grayscale(100%)";
-		}
-		function toggleRemoveImage(item)
-		{
-			toggleRemoveStyle('image');
-		}
-		function toggleRemoveComment(item)
-		{
-			toggleRemoveStyle('comment');
-		}
-		function toggleRemoveStyle(style)
-		{
-			var els = document.querySelectorAll('.'+style+'RemoveOff'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = style+'RemoveTemp';
-			}
-			els = document.querySelectorAll('.'+style+'Remove'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = style+'RemoveOff';
-			}
-			els = document.querySelectorAll('.'+style+'RemoveTemp'), i;
-			for (i = 0; i < els.length; i++) {
-   		 		els[i].className = style+'Remove';
-			}
-		}
-		function toggleLowerControls(item)
-		{
-			var elements = document.getElementsByClassName("controls"); // because span is clicked, not the "item"
-			if (item.textContent.includes('v') && (elements[0].style.height === ''||elements[0].style.height == "18px"))
-			{
-				//item.innerHTML = "<sup title='shrink this''>v</sup>";
-		 		//elements[0].style.height = "36px";
-		 		elements[0].style.height = "54px";
-			}
-			else
-			{
-				//item.innerHTML = "<sup title='expand this'>v&nbsp;</sup>";
-		 		elements[0].style.height = "18px";
-			}
-		}
-
-		function summaryHandler(event)
-		{
-			summaryHandlerCore(event,event.target);		
-   		}
-		function summaryHandlerParent(event)
-		{
-			summaryHandlerCore(event,event.target.parentElement);
-		}
-		function summaryHandlerCore(event,itemToUse)
-		{
-			// start from parent-or-self that has "summaryUnit" class
-			if (itemToUse.classList.contains('summaryUnit')==false)
-				itemToUse = findAncestor(event.target,'summaryUnit');
-			toggleSummaryItem (itemToUse);
-		    event.cancelBubble = true;
-		    if (event.stopPropagation) event.stopPropagation();
-		}
-		function findAncestor (el, cls)
-		{
-		    while ((el = el.parentElement) && !el.classList.contains(cls));
-		    return el;
-		}
-
-      --></SCRIPT><!--
+	</style><!--
 		Status information:
 		First resource in bundle:PlanDefinition
 		Single resource bundle:false
@@ -4654,4 +4492,5 @@ Profile: http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-su
 		Not patient related:true
 		=>Patient Centric Mode:false
 		SubstanceDef Centric Mode:true
-		Assumed profile:--></html>
+		Assumed profile:-->
+</html>
