@@ -7,7 +7,10 @@ archivedFHIRversion4.0.1
 temp
 template
 output
-fsh-generated
+fsh-generated/*
+!fsh-generated/resources/
+fsh-generated/resources/*
+!fsh-generated/resources/ImplementationGuide-*.json
 
 # Don't commit txcache or other input-cache files #
 ###########################################

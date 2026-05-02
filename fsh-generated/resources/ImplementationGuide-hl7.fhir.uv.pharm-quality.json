@@ -1,0 +1,1154 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "hl7.fhir.uv.pharm-quality",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "brr"
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/pharm-quality/ImplementationGuide/hl7.fhir.uv.pharm-quality",
+  "version": "1.0.0",
+  "name": "PharmaceuticalQualityIndustry",
+  "title": "Pharmaceutical Quality (Industry)",
+  "status": "active",
+  "publisher": "HL7 International / Biomedical Research and Regulation",
+  "contact": [
+    {
+      "name": "HL7 International / Biomedical Research and Regulation",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/rcrim"
+        }
+      ]
+    }
+  ],
+  "description": "This IG is developed for the HL7 International Pharmaceutical Quality (PQ) - Industry Use Case project, sponsored by the Biomedical Research and Regulation Work Group. * [Project Proposal: PSS-2137](https://jira.hl7.org/browse/PSS-2137) * [Project Scope Statement: PSS-2145](https://jira.hl7.org/browse/PSS-2145)",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "001",
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "display": "World"
+        }
+      ]
+    }
+  ],
+  "packageId": "hl7.fhir.uv.pharm-quality",
+  "license": "CC0-1.0",
+  "fhirVersion": [
+    "5.0.0"
+  ],
+  "definition": {
+    "grouping": [
+      {
+        "id": "domain-bundle-profiles",
+        "name": "Domain Bundle Profiles",
+        "description": "This page provides a list of the FHIR artifacts defined as part of this implementation guide. Note that the mention of CTD sections, and the use of CTD style templates in the examples, are provided as points of reference for implementers and are to facilitate implementer ability to map the new 14 domain/subdomain granular structure to traditional CTD style templates."
+      },
+      {
+        "id": "domain-bundle-examples",
+        "name": "Domain Bundle Examples"
+      },
+      {
+        "id": "building-blocks-1",
+        "name": "Component Building Block Profiles",
+        "description": "FHIR artifacts used across many pharmaceutical quality domains."
+      },
+      {
+        "id": "building-blocks-2",
+        "name": "Component Building Block Examples"
+      },
+      {
+        "id": "extensions1",
+        "name": "Extensions"
+      }
+    ],
+    "resource": [
+      {
+        "reference": {
+          "reference": "ValueSet/vs-batch-designation-pq"
+        },
+        "description": "This value set contains codes for batch designation.",
+        "name": "Batch Designation",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/batch-designation"
+        },
+        "description": "This code system contains codes for batch designation in pharmaceutical quality.",
+        "name": "Batch Designation Codes",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-characterizationStep-pq"
+        },
+        "description": "This value set contains codes for structure characterization technique.",
+        "name": "Characterization Steps",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/container-closure-type"
+        },
+        "description": "This code system contains codes for closure type.",
+        "name": "Closure Type Codes",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-closureTypes-pq"
+        },
+        "description": "This value set contains codes for closure types.",
+        "name": "Closure Types",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-color-pq"
+        },
+        "description": "This value set contains codes for drug substance or product color.",
+        "name": "Colors",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/container-orientation"
+        },
+        "description": "This code system contains codes for container orientation.",
+        "name": "Container Orientation Codes",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-containerOrientation-pq"
+        },
+        "description": "This value set contains codes for container orientation.",
+        "name": "Container Orientations",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-deviceProperty-pq"
+        },
+        "description": "This value set contains codes for device property.",
+        "name": "Device Properties",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/device-property"
+        },
+        "description": "This code system contains codes for device property.",
+        "name": "Device Property Codes",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-deviceType-pq"
+        },
+        "description": "This value set contains example codes for device type in pharmaceutical quality industry.",
+        "name": "Device Type",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/cs-deviceType-pq-example"
+        },
+        "description": "This example code system contains example codes for device type used in pharmaceutical quality industry.",
+        "name": "Device Type - example",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/diagram-type"
+        },
+        "description": "This code system contains codes for diagram type.",
+        "name": "Diagram Type Codes",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-diagramType-pq"
+        },
+        "description": "This value set contains codes for diagram type.",
+        "name": "Diagram Types",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/drug-substance-or-product-color"
+        },
+        "description": "This code system contains codes for color in drug substances or products.",
+        "name": "Drug Substance or Product Color Codes",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-equipmentClass-pq"
+        },
+        "description": "This value set contains codes for manufacturing equipment class.",
+        "name": "Equipment Classes",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/cs-local-codes-drug-pq-example"
+        },
+        "description": "This example code system contains temporary example codes used in pharmaceutical quality industry.",
+        "name": "Example Local Codes - Drug",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-goalPriority-pq"
+        },
+        "description": "This value set contains example codes for goal priority used in pharmaceutical quality industry.",
+        "name": "Goal Priority",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/cs-goalPriority-pq-example"
+        },
+        "description": "This example code system contains example codes for goal priority used in pharmaceutical quality industry.",
+        "name": "Goal Priority - example",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-grade-pq"
+        },
+        "description": "This value set contains codes for package grade.",
+        "name": "Grades",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/impurity-origin"
+        },
+        "description": "This code system contains codes for impurity origin.",
+        "name": "Impurity Origin Codes",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-impurity-origin-pq"
+        },
+        "description": "This value set contains codes for impurity origin.",
+        "name": "Impurity Origins",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/impurity-type"
+        },
+        "description": "This code system contains codes for impurity type.",
+        "name": "Impurity Type Codes",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-impurity-type-pq"
+        },
+        "description": "This value set contains codes for impurity type.",
+        "name": "Impurity Types",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-ingredientFunction-pq"
+        },
+        "description": "This value set contains codes for ingredient function.",
+        "name": "Ingredient Function",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ingredient-function"
+        },
+        "description": "This code system contains codes for ingredient function.",
+        "name": "Ingredient Function Codes",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-country-pq"
+        },
+        "description": "This value set contains codes for ISO Country two letter codes.",
+        "name": "ISO Country two letter codes",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-manufactured-item-property-pq"
+        },
+        "description": "This value set contains example codes for manufactured item property in pharmaceutical quality industry.",
+        "name": "Manufactured Item Property",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/cs-manufactured-item-property-pq-example"
+        },
+        "description": "This example code system contains example codes for manufactured item property used in pharmaceutical quality industry.",
+        "name": "Manufactured Item Property - example",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-manufacturingParticipantRole-pq"
+        },
+        "description": "This value set contains codes for manufacturing participant.",
+        "name": "Manufacturing Participant Role",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/manufacturing-participant-role"
+        },
+        "description": "This code system contains codes for manufacturing participant role.",
+        "name": "Manufacturing Participant Role Codes",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-manufacturingStep-pq"
+        },
+        "description": "This value set contains codes for manufacturing step.",
+        "name": "Manufacturing Step",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/manufacturing-step"
+        },
+        "description": "This code system contains codes for manufacturing step.",
+        "name": "Manufacturing Step Codes",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-manufacturingStepScale-pq"
+        },
+        "description": "This value set contains codes for manufacturing step scale.",
+        "name": "Manufacturing Step Scale",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/manufacturing-step-scale"
+        },
+        "description": "This code system contains codes for manufacturing step scale.",
+        "name": "Manufacturing Step Scale Codes",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-medicinalproduct-characteristic-type"
+        },
+        "description": "Example codes for MedicinalProduct.characteristic.type",
+        "name": "MedicinalProduct Characteristic Type",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-medicine-doseform"
+        },
+        "description": "EDQM (European Directorate for the Quality of Medicines and Healthcare) Dose Form codes.  This Value Set includes all the EDQM Standard Terms having:\n\t\n[Concept Status] = ‘Current’ AND\n\t\n[Concept Class] IN (‘PDF’, ‘CMT’, ‘CDF’, ‘PFT') AND\n\t\n[Domain] = 'Human and Veterinary'\n\t\n\nPDF = 'Pharmaceutical dose form'; CMT = 'Combined terms'; CDF = 'Combined pharmaceutical dose form'; PFT = 'Patient Friendly'",
+        "name": "Medicine Dose Form EDQM",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-medicine-route-of-administration"
+        },
+        "description": "EDQM (European Directorate for the Quality of Medicines and Healthcare) Route of Administration codes.  This Value Set includes all the EDQM Standard Terms having:\n\t\n[Concept Status] = ‘Current’ AND\n\t\n[Concept Class] = 'ROA' AND\n\t\n[Domain] = 'Human and Veterinary'\n\t\n\nROA = 'Route of administration'",
+        "name": "Medicine Route of Administration EDQM",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/observation-qualified-value-criticality"
+        },
+        "description": "This code system contains codes for observation qualified value criticality.",
+        "name": "Observation Qualified Value Criticality Codes",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/package-grade"
+        },
+        "description": "This code system contains codes for package grade.",
+        "name": "Package Grade Codes",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-packageProperty-pq"
+        },
+        "description": "This value set contains codes for package property.",
+        "name": "Package Property",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/package-property"
+        },
+        "description": "This code system contains codes for package property.",
+        "name": "Package Property Codes",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/pharmaceutical-manufacturing-equipment-class"
+        },
+        "description": "This code system contains codes for pharmaceutical manufacturing equipment class.",
+        "name": "Pharmaceutical Manufacturing Equipment Class Codes",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-pharmaceutical-organization-type"
+        },
+        "description": "This value set contains codes for pharmaceutical organization types.",
+        "name": "Pharmaceutical Organization Type",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/pharmaceutical-organization-type"
+        },
+        "description": "This code system contains codes for pharmaceutical organization type.",
+        "name": "Pharmaceutical Organization Type Codes",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/pharmaceutical-plan-type"
+        },
+        "description": "This code system contains codes for pharmaceutical plan type.",
+        "name": "Pharmaceutical Plan Type Codes",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/pharmaceutical-report-type"
+        },
+        "description": "This code system contains  codes for pharmaceutical report type.",
+        "name": "Pharmaceutical Report Type Codes",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/pharmaceutical-test-category"
+        },
+        "description": "This code system contains codes for pharmaceutical test category.",
+        "name": "Pharmaceutical Test Category Codes",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-planType-pq"
+        },
+        "description": "This value set contains codes for pharmaceutical plan type.",
+        "name": "Plan Type",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-processParameter-pq"
+        },
+        "description": "This value set contains codes for process parameter.",
+        "name": "Process Parameter",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/process-parameter"
+        },
+        "description": "This code system contains codes for process parameter.",
+        "name": "Process Parameter Codes",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-process-validation-procedure-pq"
+        },
+        "description": "This value set contains example process validation procedure codes for use in pharmaceutical quality industry.",
+        "name": "Process Validation Procedure",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-productNameType-pq"
+        },
+        "description": "This value set contains example codes for product name type in pharmaceutical quality industry.",
+        "name": "Product Name Type",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/cs-productNameType-pq-example"
+        },
+        "description": "This example code system contains example codes for product name type used in pharmaceutical quality industry.",
+        "name": "Product Name Type - example",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-productSiteUtilizationType-pq"
+        },
+        "description": "This value set contains codes for product site utilization type.",
+        "name": "Product Site Utilization",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/product-site-utilization-type"
+        },
+        "description": "This code system contains codes for product site utilization type.",
+        "name": "Product Site Utilization Type Codes",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-qualifiedValueCriticality-pq"
+        },
+        "description": "This value set contains example codes for observation qualified value criticality.",
+        "name": "Qualified Value Criticality",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-reportType-pq"
+        },
+        "description": "This value set contains codes for pharmaceutical report type.",
+        "name": "Report Type",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-specification-type-pq"
+        },
+        "description": "This value set contains example codes for specification type in pharmaceutical quality industry.",
+        "name": "Specification Type",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/cs-specification-type-pq-example"
+        },
+        "description": "This example code system contains example codes for specification type used in pharmaceutical quality industry.",
+        "name": "Specification Type - example",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/structure-characterization-technique"
+        },
+        "description": "This code system contains codes for structure characterization technique in pharmaceutical quality.",
+        "name": "Structure Characterization Technique Codes",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-substance-property-pq"
+        },
+        "description": "This value set contains example codes for substance property types in pharmaceutical quality industry.",
+        "name": "Substance Property",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/cs-substance-property-pq-example"
+        },
+        "description": "This example code system contains example codes for substance property types used in pharmaceutical quality industry.",
+        "name": "Substance Property - example",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-substance-property-value-pq"
+        },
+        "description": "This value set contains example codes for substance property values in pharmaceutical quality industry.",
+        "name": "Substance Property Value",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/cs-substance-property-value-pq-example"
+        },
+        "description": "This example code system contains example codes for substance property values used in pharmaceutical quality industry.",
+        "name": "Substance Property Value - example",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-testCategory-pq"
+        },
+        "description": "This value set contains codes for test category.",
+        "name": "Test Category",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-test-method-pq"
+        },
+        "description": "This value set contains example codes for test methods in pharmaceutical quality industry.",
+        "name": "Test Method",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-timePointDescription-pq"
+        },
+        "description": "This value set contains codes for time point description.",
+        "name": "Time Point Description",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/time-point-description"
+        },
+        "description": "This code system contains codes for time point description.",
+        "name": "Time Point Description Codes",
+        "isExample": false
+      }
+    ],
+    "page": {
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "title": "Home Page",
+          "generation": "markdown",
+          "name": "index.html",
+          "sourceUrl": "index.html"
+        },
+        {
+          "title": "Getting Started",
+          "generation": "markdown",
+          "name": "gettingstarted.html",
+          "sourceUrl": "gettingstarted.html"
+        },
+        {
+          "title": "Business Use Cases",
+          "generation": "markdown",
+          "name": "use_cases.html",
+          "sourceUrl": "use_cases.html"
+        },
+        {
+          "title": "Domains Overview",
+          "generation": "markdown",
+          "page": [
+            {
+              "title": "Analytical Procedures",
+              "generation": "markdown",
+              "page": [
+                {
+                  "title": "Analytical Procedures: synthetic data rendering - drug product",
+                  "generation": "markdown",
+                  "name": "anal_proc_rend_p.html",
+                  "sourceUrl": "anal_proc_rend_p.html"
+                },
+                {
+                  "title": "Analytical Procedures: synthetic data rendering - drug substance",
+                  "generation": "markdown",
+                  "name": "anal_proc_rend_s.html",
+                  "sourceUrl": "anal_proc_rend_s.html"
+                }
+              ],
+              "name": "anal_proc.html",
+              "sourceUrl": "anal_proc.html"
+            },
+            {
+              "title": "Batch Analysis",
+              "generation": "markdown",
+              "page": [
+                {
+                  "title": "Batch Analysis: synthetic data rendering - drug product",
+                  "generation": "markdown",
+                  "name": "batch_anal_rend_p.html",
+                  "sourceUrl": "batch_anal_rend_p.html"
+                },
+                {
+                  "title": "Batch Analysis: synthetic data rendering - drug substance",
+                  "generation": "markdown",
+                  "name": "batch_anal_rend_s.html",
+                  "sourceUrl": "batch_anal_rend_s.html"
+                }
+              ],
+              "name": "batch_anal.html",
+              "sourceUrl": "batch_anal.html"
+            },
+            {
+              "title": "Batch Formula",
+              "generation": "markdown",
+              "page": [
+                {
+                  "title": "Batch Formula: synthetic data rendering - drug product",
+                  "generation": "markdown",
+                  "name": "batch_formula_rend_p.html",
+                  "sourceUrl": "batch_formula_rend_p.html"
+                }
+              ],
+              "name": "batch_formula.html",
+              "sourceUrl": "batch_formula.html"
+            },
+            {
+              "title": "Batch/Lot Information",
+              "generation": "markdown",
+              "page": [
+                {
+                  "title": "Batch/Lot Information: synthetic data rendering - drug product",
+                  "generation": "markdown",
+                  "name": "batch_info_rend_p.html",
+                  "sourceUrl": "batch_info_rend_p.html"
+                },
+                {
+                  "title": "Batch/Lot Information: synthetic data rendering - drug substance",
+                  "generation": "markdown",
+                  "name": "batch_info_rend_s.html",
+                  "sourceUrl": "batch_info_rend_s.html"
+                }
+              ],
+              "name": "batch_info.html",
+              "sourceUrl": "batch_info.html"
+            },
+            {
+              "title": "Compatibility",
+              "generation": "markdown",
+              "page": [
+                {
+                  "title": "Compatibility: synthetic data rendering - drug product",
+                  "generation": "markdown",
+                  "name": "compatibility_rend_p.html",
+                  "sourceUrl": "compatibility_rend_p.html"
+                }
+              ],
+              "name": "compatibility.html",
+              "sourceUrl": "compatibility.html"
+            },
+            {
+              "title": "Composition",
+              "generation": "markdown",
+              "page": [
+                {
+                  "title": "Composition: synthetic data rendering - drug product",
+                  "generation": "markdown",
+                  "name": "composition_rend_p.html",
+                  "sourceUrl": "composition_rend_p.html"
+                },
+                {
+                  "title": "Composition: synthetic data rendering - drug substance",
+                  "generation": "markdown",
+                  "name": "composition_rend_s.html",
+                  "sourceUrl": "composition_rend_s.html"
+                }
+              ],
+              "name": "composition.html",
+              "sourceUrl": "composition.html"
+            },
+            {
+              "title": "Container Closure System",
+              "generation": "markdown",
+              "page": [
+                {
+                  "title": "Container Closure System: synthetic data rendering - drug product",
+                  "generation": "markdown",
+                  "name": "container_rend_p.html",
+                  "sourceUrl": "container_rend_p.html"
+                },
+                {
+                  "title": "Container Closure System: synthetic data rendering - drug substance",
+                  "generation": "markdown",
+                  "name": "container_rend_s.html",
+                  "sourceUrl": "container_rend_s.html"
+                }
+              ],
+              "name": "container.html",
+              "sourceUrl": "container.html"
+            },
+            {
+              "title": "Drug Specification",
+              "generation": "markdown",
+              "page": [
+                {
+                  "title": "Drug Specification: synthetic data rendering - drug product",
+                  "generation": "markdown",
+                  "name": "drug_specification_rend_p.html",
+                  "sourceUrl": "drug_specification_rend_p.html"
+                },
+                {
+                  "title": "Drug Specification: synthetic data rendering - drug substance",
+                  "generation": "markdown",
+                  "name": "drug_specification_rend_s.html",
+                  "sourceUrl": "drug_specification_rend_s.html"
+                }
+              ],
+              "name": "drug_specification.html",
+              "sourceUrl": "drug_specification.html"
+            },
+            {
+              "title": "Identification",
+              "generation": "markdown",
+              "page": [
+                {
+                  "title": "Identification: synthetic data rendering - drug product",
+                  "generation": "markdown",
+                  "name": "identification_rend_p1.html",
+                  "sourceUrl": "identification_rend_p1.html"
+                },
+                {
+                  "title": "Identification: synthetic data rendering - drug product microbiological attributes",
+                  "generation": "markdown",
+                  "name": "identification_rend_p2.html",
+                  "sourceUrl": "identification_rend_p2.html"
+                },
+                {
+                  "title": "Identification: synthetic data rendering - drug product excipients",
+                  "generation": "markdown",
+                  "name": "identification_rend_p3.html",
+                  "sourceUrl": "identification_rend_p3.html"
+                },
+                {
+                  "title": "Identification: synthetic data rendering - drug substance general properties",
+                  "generation": "markdown",
+                  "name": "identification_rend_s2.html",
+                  "sourceUrl": "identification_rend_s2.html"
+                },
+                {
+                  "title": "Identification: synthetic data rendering - drug substance characterisation, elucidation of structure",
+                  "generation": "markdown",
+                  "name": "identification_rend_s1.html",
+                  "sourceUrl": "identification_rend_s1.html"
+                }
+              ],
+              "name": "identification.html",
+              "sourceUrl": "identification.html"
+            },
+            {
+              "title": "Impurities",
+              "generation": "markdown",
+              "page": [
+                {
+                  "title": "Impurities: synthetic data rendering - drug product",
+                  "generation": "markdown",
+                  "name": "impurities_rend_p.html",
+                  "sourceUrl": "impurities_rend_p.html"
+                },
+                {
+                  "title": "Impurities: synthetic data rendering - drug substance",
+                  "generation": "markdown",
+                  "name": "impurities_rend_s.html",
+                  "sourceUrl": "impurities_rend_s.html"
+                }
+              ],
+              "name": "impurities.html",
+              "sourceUrl": "impurities.html"
+            },
+            {
+              "title": "Manufacturing Process",
+              "generation": "markdown",
+              "page": [
+                {
+                  "title": "Manufacturing Process: synthetic data rendering - drug product",
+                  "generation": "markdown",
+                  "name": "mnf_process_rend_p.html",
+                  "sourceUrl": "mnf_process_rend_p.html"
+                },
+                {
+                  "title": "Manufacturing Process: synthetic data rendering - drug substance",
+                  "generation": "markdown",
+                  "name": "mnf_process_rend_s.html",
+                  "sourceUrl": "mnf_process_rend_s.html"
+                }
+              ],
+              "name": "mnf_process.html",
+              "sourceUrl": "mnf_process.html"
+            },
+            {
+              "title": "Organizations",
+              "generation": "markdown",
+              "page": [
+                {
+                  "title": "Organizations: synthetic data rendering",
+                  "generation": "markdown",
+                  "name": "organizations_rend.html",
+                  "sourceUrl": "organizations_rend.html"
+                }
+              ],
+              "name": "organizations.html",
+              "sourceUrl": "organizations.html"
+            },
+            {
+              "title": "Process Validation",
+              "generation": "markdown",
+              "page": [
+                {
+                  "title": "Process Validation: synthetic data rendering - drug product",
+                  "generation": "markdown",
+                  "name": "process_valid_rend_p.html",
+                  "sourceUrl": "process_valid_rend_p.html"
+                },
+                {
+                  "title": "Process Validation: synthetic data rendering - drug product, biologic",
+                  "generation": "markdown",
+                  "name": "process_valid_rend_pb.html",
+                  "sourceUrl": "process_valid_rend_pb.html"
+                },
+                {
+                  "title": "Process Validation: synthetic data rendering - drug substance",
+                  "generation": "markdown",
+                  "name": "process_valid_rend_s.html",
+                  "sourceUrl": "process_valid_rend_s.html"
+                }
+              ],
+              "name": "process_valid.html",
+              "sourceUrl": "process_valid.html"
+            },
+            {
+              "title": "Stability Study",
+              "generation": "markdown",
+              "page": [
+                {
+                  "title": "Stability Study: synthetic data rendering - drug product",
+                  "generation": "markdown",
+                  "name": "stability_rend_p.html",
+                  "sourceUrl": "stability_rend_p.html"
+                },
+                {
+                  "title": "Stability Study: synthetic data rendering - drug substance",
+                  "generation": "markdown",
+                  "name": "stability_rend_s.html",
+                  "sourceUrl": "stability_rend_s.html"
+                }
+              ],
+              "name": "stability.html",
+              "sourceUrl": "stability.html"
+            }
+          ],
+          "name": "domains.html",
+          "sourceUrl": "domains.html"
+        },
+        {
+          "title": "General Principles & Design",
+          "generation": "markdown",
+          "name": "general_design.html",
+          "sourceUrl": "general_design.html"
+        },
+        {
+          "title": "Downloads",
+          "generation": "markdown",
+          "name": "downloads.html",
+          "sourceUrl": "downloads.html"
+        }
+      ],
+      "name": "toc.html",
+      "sourceUrl": "toc.html"
+    },
+    "parameter": [
+      {
+        "code": {
+          "code": "copyrightyear",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "2023+"
+      },
+      {
+        "code": {
+          "code": "releaselabel",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "STU1"
+      },
+      {
+        "code": {
+          "code": "path-suppressed-warnings",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "input/ignoreWarnings.txt"
+      },
+      {
+        "code": {
+          "code": "autoload-resources",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "true"
+      },
+      {
+        "code": {
+          "code": "auto-oid-root",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "2.16.840.1.113883.4.642.40.41"
+      },
+      {
+        "code": {
+          "code": "special-url",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "http://terminology.hl7.org/CodeSystem/batch-designation"
+      },
+      {
+        "code": {
+          "code": "special-url",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "http://terminology.hl7.org/CodeSystem/container-orientation"
+      },
+      {
+        "code": {
+          "code": "special-url",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "http://terminology.hl7.org/CodeSystem/equipment-class"
+      },
+      {
+        "code": {
+          "code": "special-url",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "http://terminology.hl7.org/CodeSystem/history-of-process"
+      },
+      {
+        "code": {
+          "code": "special-url",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "http://terminology.hl7.org/CodeSystem/impurity-origin"
+      },
+      {
+        "code": {
+          "code": "special-url",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "http://terminology.hl7.org/CodeSystem/impurity-type"
+      },
+      {
+        "code": {
+          "code": "special-url",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "http://terminology.hl7.org/CodeSystem/ingredient-function"
+      },
+      {
+        "code": {
+          "code": "special-url",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "http://terminology.hl7.org/CodeSystem/manufacturing-participant-role"
+      },
+      {
+        "code": {
+          "code": "special-url",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "http://terminology.hl7.org/CodeSystem/manufacturing-step"
+      },
+      {
+        "code": {
+          "code": "special-url",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "http://terminology.hl7.org/CodeSystem/manufacturing-step-scale"
+      },
+      {
+        "code": {
+          "code": "special-url",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "http://terminology.hl7.org/CodeSystem/observation-qualified-value-criticality"
+      },
+      {
+        "code": {
+          "code": "special-url",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "http://terminology.hl7.org/CodeSystem/package-grade"
+      },
+      {
+        "code": {
+          "code": "special-url",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "http://terminology.hl7.org/CodeSystem/package-property"
+      },
+      {
+        "code": {
+          "code": "special-url",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "http://terminology.hl7.org/CodeSystem/pharmaceutical-manufacturing-equipment-class"
+      },
+      {
+        "code": {
+          "code": "special-url",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type"
+      },
+      {
+        "code": {
+          "code": "special-url",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "http://terminology.hl7.org/CodeSystem/pharmaceutical-plan-type"
+      },
+      {
+        "code": {
+          "code": "special-url",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "http://terminology.hl7.org/CodeSystem/pharmaceutical-report-type"
+      },
+      {
+        "code": {
+          "code": "special-url",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "http://terminology.hl7.org/CodeSystem/pharmaceutical-test-category"
+      },
+      {
+        "code": {
+          "code": "special-url",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "http://terminology.hl7.org/CodeSystem/process-parameter"
+      },
+      {
+        "code": {
+          "code": "special-url",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "http://terminology.hl7.org/CodeSystem/product-site-utilization-type"
+      },
+      {
+        "code": {
+          "code": "special-url",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "http://terminology.hl7.org/CodeSystem/structure-characterization-technique"
+      },
+      {
+        "code": {
+          "code": "special-url",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "http://terminology.hl7.org/CodeSystem/time-point-description"
+      },
+      {
+        "code": {
+          "code": "path-history",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "http://hl7.org/fhir/uv/pharm-quality/history.html"
+      }
+    ]
+  }
+}
