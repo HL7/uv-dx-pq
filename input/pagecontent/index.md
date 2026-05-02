@@ -38,7 +38,7 @@
 <!-- WHY STRUCTURED PQ DATA -->
 <div style="text-align:center; padding:48px 20px 16px;">
   <h2 style="font-size:1.5em; font-weight:800; color:#111827; margin-bottom:10px;">Why the industry is adopting structured PQ data</h2>
-  <p style="font-size:.95em; color:#6b7280; max-width:540px; margin:0 auto 36px; line-height:1.55;">Move from unstructured PDFs and Word documents to a real-time, API-driven data exchange model.</p>
+  <p style="font-size:.95em; color:#6b7280; max-width:540px; margin:0 auto 36px; line-height:1.55;">Move from unstructured PDFs and Word documents to a real-time, structured data model.</p>
 </div>
 
 <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:48px;">
