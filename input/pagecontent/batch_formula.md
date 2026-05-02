@@ -1,3 +1,9 @@
+<!-- DOMAIN HEADER -->
+<div style="background:#f9fafb; border:1px solid #e5e7eb; border-left:4px solid #8b5cf6; border-radius:8px; padding:16px 20px; margin-bottom:24px;">
+  <div style="font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#8b5cf6; margin-bottom:4px;">Domain 7</div>
+  <div style="font-weight:700; color:#111827; font-size:1.1em; margin-bottom:6px;">Batch Formula</div>
+</div>
+
 Details about drug product master batch properties and formula.
 
 ### Product 

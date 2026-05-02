@@ -1,0 +1,194 @@
+id: hl7.fhir.uv.pharm-quality
+canonical: http://hl7.org/fhir/uv/pharm-quality
+name: PharmaceuticalQualityIndustry
+title: Pharmaceutical Quality (Industry)
+description: >-
+  This IG is developed for the HL7 International Pharmaceutical Quality (PQ) - Industry Use Case project,
+  sponsored by the Biomedical Research and Regulation Work Group.
+  * [Project Proposal: PSS-2137](https://jira.hl7.org/browse/PSS-2137)
+  * [Project Scope Statement: PSS-2145](https://jira.hl7.org/browse/PSS-2145)
+status: active
+version: 1.0.0
+fhirVersion: 5.0.0
+copyrightYear: 2023+
+releaseLabel: STU1
+license: CC0-1.0
+jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
+publisher:
+  name: HL7 International / Biomedical Research and Regulation
+  url: http://www.hl7.org/Special/committees/rcrim
+
+extension:
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-wg
+    valueCode: brr
+
+pages:
+  index.md:
+    title: Home Page
+  gettingstarted.md:
+    title: Getting Started
+  use_cases.md:
+    title: Business Use Cases
+  domains.md:
+    title: Domains Overview
+    anal_proc.md:
+      title: Analytical Procedures
+      anal_proc_rend_p.md:
+        title: "Analytical Procedures: synthetic data rendering - drug product"
+      anal_proc_rend_s.md:
+        title: "Analytical Procedures: synthetic data rendering - drug substance"
+    batch_anal.md:
+      title: Batch Analysis
+      batch_anal_rend_p.md:
+        title: "Batch Analysis: synthetic data rendering - drug product"
+      batch_anal_rend_s.md:
+        title: "Batch Analysis: synthetic data rendering - drug substance"
+    batch_formula.md:
+      title: Batch Formula
+      batch_formula_rend_p.md:
+        title: "Batch Formula: synthetic data rendering - drug product"
+    batch_info.md:
+      title: Batch/Lot Information
+      batch_info_rend_p.md:
+        title: "Batch/Lot Information: synthetic data rendering - drug product"
+      batch_info_rend_s.md:
+        title: "Batch/Lot Information: synthetic data rendering - drug substance"
+    compatibility.md:
+      title: Compatibility
+      compatibility_rend_p.md:
+        title: "Compatibility: synthetic data rendering - drug product"
+    composition.md:
+      title: Composition
+      composition_rend_p.md:
+        title: "Composition: synthetic data rendering - drug product"
+      composition_rend_s.md:
+        title: "Composition: synthetic data rendering - drug substance"
+    container.md:
+      title: Container Closure System
+      container_rend_p.md:
+        title: "Container Closure System: synthetic data rendering - drug product"
+      container_rend_s.md:
+        title: "Container Closure System: synthetic data rendering - drug substance"
+    drug_specification.md:
+      title: Drug Specification
+      drug_specification_rend_p.md:
+        title: "Drug Specification: synthetic data rendering - drug product"
+      drug_specification_rend_s.md:
+        title: "Drug Specification: synthetic data rendering - drug substance"
+    identification.md:
+      title: Identification
+      identification_rend_p1.md:
+        title: "Identification: synthetic data rendering - drug product"
+      identification_rend_p2.md:
+        title: "Identification: synthetic data rendering - drug product microbiological attributes"
+      identification_rend_p3.md:
+        title: "Identification: synthetic data rendering - drug product excipients"
+      identification_rend_s2.md:
+        title: "Identification: synthetic data rendering - drug substance general properties"
+      identification_rend_s1.md:
+        title: "Identification: synthetic data rendering - drug substance characterisation, elucidation of structure"
+    impurities.md:
+      title: Impurities
+      impurities_rend_p.md:
+        title: "Impurities: synthetic data rendering - drug product"
+      impurities_rend_s.md:
+        title: "Impurities: synthetic data rendering - drug substance"
+    mnf_process.md:
+      title: Manufacturing Process
+      mnf_process_rend_p.md:
+        title: "Manufacturing Process: synthetic data rendering - drug product"
+      mnf_process_rend_s.md:
+        title: "Manufacturing Process: synthetic data rendering - drug substance"
+    organizations.md:
+      title: Organizations
+      organizations_rend.md:
+        title: "Organizations: synthetic data rendering"
+    process_valid.md:
+      title: Process Validation
+      process_valid_rend_p.md:
+        title: "Process Validation: synthetic data rendering - drug product"
+      process_valid_rend_pb.md:
+        title: "Process Validation: synthetic data rendering - drug product, biologic"
+      process_valid_rend_s.md:
+        title: "Process Validation: synthetic data rendering - drug substance"
+    stability.md:
+      title: Stability Study
+      stability_rend_p.md:
+        title: "Stability Study: synthetic data rendering - drug product"
+      stability_rend_s.md:
+        title: "Stability Study: synthetic data rendering - drug substance"
+  general_design.md:
+    title: General Principles & Design
+  downloads.md:
+    title: Downloads
+
+menu:
+  Home: index.html
+  Getting Started: gettingstarted.html
+  Business Use Cases: use_cases.html
+  Domains:
+    Domains Overview: domains.html
+    Analytical Procedures: anal_proc.html
+    Batch Analysis: batch_anal.html
+    Batch Formula: batch_formula.html
+    Batch/Lot Information: batch_info.html
+    Compatibility: compatibility.html
+    Composition: composition.html
+    Container Closure System: container.html
+    Drug Specification: drug_specification.html
+    Identification: identification.html
+    Impurities: impurities.html
+    Manufacturing Process: mnf_process.html
+    Organizations: organizations.html
+    Process Validation: process_valid.html
+    Stability Study: stability.html
+  Technical Details:
+    General Principles & Design: general_design.html
+  Artifacts: artifacts.html
+  Downloads: downloads.html
+
+parameters:
+  path-suppressed-warnings: input/ignoreWarnings.txt
+  autoload-resources: true
+  auto-oid-root: 2.16.840.1.113883.4.642.40.41
+  special-url:
+    - http://terminology.hl7.org/CodeSystem/batch-designation
+    - http://terminology.hl7.org/CodeSystem/container-orientation
+    - http://terminology.hl7.org/CodeSystem/equipment-class
+    - http://terminology.hl7.org/CodeSystem/history-of-process
+    - http://terminology.hl7.org/CodeSystem/impurity-origin
+    - http://terminology.hl7.org/CodeSystem/impurity-type
+    - http://terminology.hl7.org/CodeSystem/ingredient-function
+    - http://terminology.hl7.org/CodeSystem/manufacturing-participant-role
+    - http://terminology.hl7.org/CodeSystem/manufacturing-step
+    - http://terminology.hl7.org/CodeSystem/manufacturing-step-scale
+    - http://terminology.hl7.org/CodeSystem/observation-qualified-value-criticality
+    - http://terminology.hl7.org/CodeSystem/package-grade
+    - http://terminology.hl7.org/CodeSystem/package-property
+    - http://terminology.hl7.org/CodeSystem/pharmaceutical-manufacturing-equipment-class
+    - http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type
+    - http://terminology.hl7.org/CodeSystem/pharmaceutical-plan-type
+    - http://terminology.hl7.org/CodeSystem/pharmaceutical-report-type
+    - http://terminology.hl7.org/CodeSystem/pharmaceutical-test-category
+    - http://terminology.hl7.org/CodeSystem/process-parameter
+    - http://terminology.hl7.org/CodeSystem/product-site-utilization-type
+    - http://terminology.hl7.org/CodeSystem/structure-characterization-technique
+    - http://terminology.hl7.org/CodeSystem/time-point-description
+
+groups:
+  domain-bundle-profiles:
+    name: Domain Bundle Profiles
+    description: >-
+      This page provides a list of the FHIR artifacts defined as part of this implementation guide.
+      Note that the mention of CTD sections, and the use of CTD style templates in the examples,
+      are provided as points of reference for implementers and are to facilitate implementer ability
+      to map the new 14 domain/subdomain granular structure to traditional CTD style templates.
+  domain-bundle-examples:
+    name: Domain Bundle Examples
+  building-blocks-1:
+    name: Component Building Block Profiles
+    description: FHIR artifacts used across many pharmaceutical quality domains.
+  building-blocks-2:
+    name: Component Building Block Examples
+  extensions1:
+    name: Extensions

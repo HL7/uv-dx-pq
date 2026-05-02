@@ -1,3 +1,9 @@
+<!-- DOMAIN HEADER -->
+<div style="background:#f9fafb; border:1px solid #e5e7eb; border-left:4px solid #ea580c; border-radius:8px; padding:16px 20px; margin-bottom:24px;">
+  <div style="font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#ea580c; margin-bottom:4px;">Domain 8</div>
+  <div style="font-weight:700; color:#111827; font-size:1.1em; margin-bottom:6px;">Manufacturing Process</div>
+</div>
+
 
 Manufacturing process description and details about unit operations, process parameters, and in-process controls.
 

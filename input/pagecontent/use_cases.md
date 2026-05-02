@@ -1,131 +1,205 @@
-This implementation guide defines resources to support many scenarios. The following use cases are provided to facilitate implementers understanding how to use and apply this guide. These examples are based on the assumption that the manufacturer owns or has access to the data repository (storage server) that houses test results that are structured in conformance with this implementation guide.
+<div style="background:#eff6ff; border:1px solid #bfdbfe; border-left:4px solid #2563eb; border-radius:8px; padding:12px 18px; margin-bottom:24px; font-size:.85em; color:#1e40af; display:flex; gap:10px; align-items:flex-start;">
+  <span style="flex-shrink:0;">📋</span>
+  <span>This implementation guide defines resources to support many scenarios. The following use cases facilitate understanding of how to use and apply this guide. These examples assume the manufacturer owns or has access to a data repository housing test results structured per this IG.</span>
+</div>
 
-### Stability (new to 18 months)
-A sponsor plans to create a new stability study for a medicinal product with a proposed shelf-life of 18 months at 5 °C, with supporting stability data. Using a FHIR-based exchange mechanism, the sponsor takes the following approach:
+<h2 style="font-size:1.2em; font-weight:700; color:#111827; margin-bottom:16px;">Select a Use Case</h2>
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:36px;">
+  <a href="#stability-new" style="text-decoration:none; background:#fff; border:1px solid #bfdbfe; border-left:4px solid #2563eb; border-radius:8px; padding:16px 20px; display:block;">
+    <div style="font-weight:700; color:#111827; margin-bottom:4px;">🧪 Stability (New to 18 months)</div>
+    <div style="font-size:.82em; color:#6b7280;">Create a new stability study with structured data for a proposed 18-month shelf-life.</div>
+  </a>
+  <a href="#stability-update" style="text-decoration:none; background:#fff; border:1px solid #bbf7d0; border-left:4px solid #10b981; border-radius:8px; padding:16px 20px; display:block;">
+    <div style="font-weight:700; color:#111827; margin-bottom:4px;">🔄 Stability Update (18 to 24 months)</div>
+    <div style="font-size:.82em; color:#6b7280;">Extend shelf-life from 18 to 24 months with updated stability data.</div>
+  </a>
+  <a href="#spec-change" style="text-decoration:none; background:#fff; border:1px solid #e9d5ff; border-left:4px solid #8b5cf6; border-radius:8px; padding:16px 20px; display:block;">
+    <div style="font-weight:700; color:#111827; margin-bottom:4px;">📋 Test Specification Change</div>
+    <div style="font-size:.82em; color:#6b7280;">Update a drug substance identity method and acceptance criteria.</div>
+  </a>
+  <a href="#facility-change" style="text-decoration:none; background:#fff; border:1px solid #fde68a; border-left:4px solid #d97706; border-radius:8px; padding:16px 20px; display:block;">
+    <div style="font-weight:700; color:#111827; margin-bottom:4px;">🏭 Facility Change</div>
+    <div style="font-size:.82em; color:#6b7280;">Document a change to a testing facility's address in the Organization resource.</div>
+  </a>
+</div>
 
-**Step 1: Develop product details**
+<hr style="border:none; border-top:1px solid #e5e7eb; margin:0 0 32px;"/>
 
-Using the [Global Substance Registration System (G-SRS)](https://gsrs.ncats.nih.gov/ginas/app/beta/) as a reference, the sponsor builds a list of Substance Definition and Ingredient resources to support the creation of a Medicinal Product Definition resource. For each medicinal product, the sponsor creates a list of Medication resources for each applicable batch.
+<!-- USE CASE 1: STABILITY NEW -->
+<h2 id="stability-new" style="font-size:1.35em; font-weight:700; color:#111827; margin-bottom:20px;">Stability (New to 18 months)</h2>
+<p style="color:#374151; font-size:.92em; line-height:1.7; margin-bottom:20px;">A sponsor plans to create a new stability study for a medicinal product with a proposed shelf-life of 18 months at 5 °C, with supporting stability data.</p>
 
-Together, the medicinal product, ingredients, substances, and batch details provide a detailed account of what is about to be tested in this stability study. 
+<div style="display:flex; gap:16px; margin-bottom:20px; align-items:flex-start;">
+  <div style="flex-shrink:0; width:36px; height:36px; border-radius:50%; background:#003087; color:#fff; display:flex; align-items:center; justify-content:center; font-size:.85em; font-weight:700; margin-top:2px;">1</div>
+  <div style="flex:1; background:#fff; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden;">
+    <div style="padding:14px 20px 10px; border-bottom:1px solid #e5e7eb; background:#f9fafb;"><div style="font-weight:700; color:#111827; font-size:.97em;">Develop product details</div></div>
+    <div style="padding:14px 20px;">
+      <p style="font-size:.88em; color:#374151; line-height:1.7; margin:0;">Using the <a href="https://gsrs.ncats.nih.gov/ginas/app/beta/" style="color:#003087; font-weight:600;">G-SRS</a> as a reference, build SubstanceDefinition, Ingredient, MedicinalProductDefinition, and Medication resources. These form a reusable library that can be versioned and reused across use cases.</p>
+    </div>
+  </div>
+</div>
+<div style="display:flex; gap:16px; margin-bottom:20px; align-items:flex-start;">
+  <div style="flex-shrink:0; width:36px; height:36px; border-radius:50%; background:#003087; color:#fff; display:flex; align-items:center; justify-content:center; font-size:.85em; font-weight:700; margin-top:2px;">2</div>
+  <div style="flex:1; background:#fff; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden;">
+    <div style="padding:14px 20px 10px; border-bottom:1px solid #e5e7eb; background:#f9fafb;"><div style="font-weight:700; color:#111827; font-size:.97em;">Develop test details</div></div>
+    <div style="padding:14px 20px;">
+      <p style="font-size:.88em; color:#374151; line-height:1.7; margin:0;">Create a library of tests as ObservationDefinition resources (e.g., Identification, Assay by HPLC, Dissolution). Group all tests into an ActivityDefinition resource.</p>
+    </div>
+  </div>
+</div>
+<div style="display:flex; gap:16px; margin-bottom:20px; align-items:flex-start;">
+  <div style="flex-shrink:0; width:36px; height:36px; border-radius:50%; background:#003087; color:#fff; display:flex; align-items:center; justify-content:center; font-size:.85em; font-weight:700; margin-top:2px;">3</div>
+  <div style="flex:1; background:#fff; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden;">
+    <div style="padding:14px 20px 10px; border-bottom:1px solid #e5e7eb; background:#f9fafb;"><div style="font-weight:700; color:#111827; font-size:.97em;">Develop the stability study</div></div>
+    <div style="padding:14px 20px;">
+      <p style="font-size:.88em; color:#374151; line-height:1.7; margin:0;">Create a PlanDefinition resource to define study objective, time point description, and statistical model.</p>
+    </div>
+  </div>
+</div>
+<div style="display:flex; gap:16px; margin-bottom:20px; align-items:flex-start;">
+  <div style="flex-shrink:0; width:36px; height:36px; border-radius:50%; background:#003087; color:#fff; display:flex; align-items:center; justify-content:center; font-size:.85em; font-weight:700; margin-top:2px;">4</div>
+  <div style="flex:1; background:#fff; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden;">
+    <div style="padding:14px 20px 10px; border-bottom:1px solid #e5e7eb; background:#f9fafb;"><div style="font-weight:700; color:#111827; font-size:.97em;">Send stability study to testing lab</div></div>
+    <div style="padding:14px 20px;">
+      <p style="font-size:.88em; color:#374151; line-height:1.7; margin:0;">Bundle the stability study and send it to the testing lab via RESTful API. The lab receives, parses, and conducts the study.</p>
+    </div>
+  </div>
+</div>
+<div style="display:flex; gap:16px; margin-bottom:20px; align-items:flex-start;">
+  <div style="flex-shrink:0; width:36px; height:36px; border-radius:50%; background:#003087; color:#fff; display:flex; align-items:center; justify-content:center; font-size:.85em; font-weight:700; margin-top:2px;">5</div>
+  <div style="flex:1; background:#fff; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden;">
+    <div style="padding:14px 20px 10px; border-bottom:1px solid #e5e7eb; background:#f9fafb;"><div style="font-weight:700; color:#111827; font-size:.97em;">Return results to the sponsor</div></div>
+    <div style="padding:14px 20px;">
+      <p style="font-size:.88em; color:#374151; line-height:1.7; margin:0;">The lab creates Observation resources for each test result and a DiagnosticReport for conclusions. Results are bundled and returned via API.</p>
+    </div>
+  </div>
+</div>
+<div style="display:flex; gap:16px; margin-bottom:20px; align-items:flex-start;">
+  <div style="flex-shrink:0; width:36px; height:36px; border-radius:50%; background:#003087; color:#fff; display:flex; align-items:center; justify-content:center; font-size:.85em; font-weight:700; margin-top:2px;">6</div>
+  <div style="flex:1; background:#fff; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden;">
+    <div style="padding:14px 20px 10px; border-bottom:1px solid #e5e7eb; background:#f9fafb;"><div style="font-weight:700; color:#111827; font-size:.97em;">Receive results</div></div>
+    <div style="padding:14px 20px;">
+      <p style="font-size:.88em; color:#374151; line-height:1.7; margin:0;">The sponsor's system receives the Bundle via API, parses it, notifies personnel, and displays the results.</p>
+    </div>
+  </div>
+</div>
+<div style="display:flex; gap:16px; margin-bottom:28px; align-items:flex-start;">
+  <div style="flex-shrink:0; width:36px; height:36px; border-radius:50%; background:#003087; color:#fff; display:flex; align-items:center; justify-content:center; font-size:.85em; font-weight:700; margin-top:2px;">7</div>
+  <div style="flex:1; background:#fff; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden;">
+    <div style="padding:14px 20px 10px; border-bottom:1px solid #e5e7eb; background:#f9fafb;"><div style="font-weight:700; color:#111827; font-size:.97em;">Develop final study report</div></div>
+    <div style="padding:14px 20px;">
+      <p style="font-size:.88em; color:#374151; line-height:1.7; margin:0;">Create a final DiagnosticReport with conclusions. The complete stability study can be transformed into any output format acceptable to national regulators.</p>
+    </div>
+  </div>
+</div>
 
-The resources associated with the medicinal products, ingredients, substances, and batch details only need to be created once. Once created they form a library of content that can be versioned and reused as needed for the stability use case or other use cases where needed.
+<hr style="border:none; border-top:1px solid #e5e7eb; margin:28px 0;"/>
 
-**Step 2: Develop tests details**
+<!-- USE CASE 2: STABILITY UPDATE -->
+<h2 id="stability-update" style="font-size:1.35em; font-weight:700; color:#111827; margin-bottom:20px;">Stability Update (18 to 24 months)</h2>
+<p style="color:#374151; font-size:.92em; line-height:1.7; margin-bottom:20px;">A sponsor plans to update the shelf life from 18 months to 24 months at 5 °C, with supporting stability data.</p>
 
-Create a library of tests by creating one ObservationDefinition resource per test. E.g., Identification, Assay by HPLC, Dissolution. The ObservationDefinition resource includes details such as the name, identifier, method, and test criteria. As noted above, once the library of tests has been created, that content can be versioned and reused as needed.
+<div style="display:flex; gap:16px; margin-bottom:20px; align-items:flex-start;">
+  <div style="flex-shrink:0; width:36px; height:36px; border-radius:50%; background:#10b981; color:#fff; display:flex; align-items:center; justify-content:center; font-size:.85em; font-weight:700; margin-top:2px;">1</div>
+  <div style="flex:1; background:#fff; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden;">
+    <div style="padding:14px 20px 10px; border-bottom:1px solid #e5e7eb; background:#f9fafb;"><div style="font-weight:700; color:#111827; font-size:.97em;">Acquire previously used stability study data</div></div>
+    <div style="padding:14px 20px;"><p style="font-size:.88em; color:#374151; line-height:1.7; margin:0;">Pull up the previously submitted Stability Bundle from the pharmaceutical quality data repository.</p></div>
+  </div>
+</div>
+<div style="display:flex; gap:16px; margin-bottom:20px; align-items:flex-start;">
+  <div style="flex-shrink:0; width:36px; height:36px; border-radius:50%; background:#10b981; color:#fff; display:flex; align-items:center; justify-content:center; font-size:.85em; font-weight:700; margin-top:2px;">2</div>
+  <div style="flex:1; background:#fff; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden;">
+    <div style="padding:14px 20px 10px; border-bottom:1px solid #e5e7eb; background:#f9fafb;"><div style="font-weight:700; color:#111827; font-size:.97em;">Update resources</div></div>
+    <div style="padding:14px 20px;"><p style="font-size:.88em; color:#374151; line-height:1.7; margin:0;">Update Medication, Stability Study, Specimen Storage, and Stability Test Result resources. The repository creates new versions for tracking and lifecycle management.</p></div>
+  </div>
+</div>
+<div style="display:flex; gap:16px; margin-bottom:20px; align-items:flex-start;">
+  <div style="flex-shrink:0; width:36px; height:36px; border-radius:50%; background:#10b981; color:#fff; display:flex; align-items:center; justify-content:center; font-size:.85em; font-weight:700; margin-top:2px;">3</div>
+  <div style="flex:1; background:#fff; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden;">
+    <div style="padding:14px 20px 10px; border-bottom:1px solid #e5e7eb; background:#f9fafb;"><div style="font-weight:700; color:#111827; font-size:.97em;">Send to regulator</div></div>
+    <div style="padding:14px 20px;"><p style="font-size:.88em; color:#374151; line-height:1.7; margin:0;">Transform the Bundle into an acceptable submission format and submit to the health authority.</p></div>
+  </div>
+</div>
+<div style="display:flex; gap:16px; margin-bottom:20px; align-items:flex-start;">
+  <div style="flex-shrink:0; width:36px; height:36px; border-radius:50%; background:#10b981; color:#fff; display:flex; align-items:center; justify-content:center; font-size:.85em; font-weight:700; margin-top:2px;">4</div>
+  <div style="flex:1; background:#fff; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden;">
+    <div style="padding:14px 20px 10px; border-bottom:1px solid #e5e7eb; background:#f9fafb;"><div style="font-weight:700; color:#111827; font-size:.97em;">Respond to regulator questions</div></div>
+    <div style="padding:14px 20px;"><p style="font-size:.88em; color:#374151; line-height:1.7; margin:0;">If the health authority requests additional data (e.g., microbiological testing), update the Specification Bundle and resubmit.</p></div>
+  </div>
+</div>
+<div style="display:flex; gap:16px; margin-bottom:28px; align-items:flex-start;">
+  <div style="flex-shrink:0; width:36px; height:36px; border-radius:50%; background:#10b981; color:#fff; display:flex; align-items:center; justify-content:center; font-size:.85em; font-weight:700; margin-top:2px;">5</div>
+  <div style="flex:1; background:#fff; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden;">
+    <div style="padding:14px 20px 10px; border-bottom:1px solid #e5e7eb; background:#f9fafb;"><div style="font-weight:700; color:#111827; font-size:.97em;">Receive approval</div></div>
+    <div style="padding:14px 20px;"><p style="font-size:.88em; color:#374151; line-height:1.7; margin:0;">The regulator approves the specification change and shelf-life extension. Update the dataset status in your Quality repository.</p></div>
+  </div>
+</div>
 
-Create an ActivityDefinition resource as a means of grouping all of the tests needed for the study.
+<hr style="border:none; border-top:1px solid #e5e7eb; margin:28px 0;"/>
 
-**Step 3: Develop the stability study**
+<!-- USE CASE 3: SPEC CHANGE -->
+<h2 id="spec-change" style="font-size:1.35em; font-weight:700; color:#111827; margin-bottom:20px;">Test Specification Change</h2>
+<p style="color:#374151; font-size:.92em; line-height:1.7; margin-bottom:20px;">A sponsor plans to execute a change in the drug substance identity method and acceptance criteria, sending the change request to a CMO.</p>
 
-Create a PlanDefinition resource to create the stability study itself to define such details as study objective, time point description, statistical model.
+<div style="display:flex; gap:16px; margin-bottom:20px; align-items:flex-start;">
+  <div style="flex-shrink:0; width:36px; height:36px; border-radius:50%; background:#8b5cf6; color:#fff; display:flex; align-items:center; justify-content:center; font-size:.85em; font-weight:700; margin-top:2px;">1</div>
+  <div style="flex:1; background:#fff; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden;">
+    <div style="padding:14px 20px 10px; border-bottom:1px solid #e5e7eb; background:#f9fafb;"><div style="font-weight:700; color:#111827; font-size:.97em;">Acquire data from the library</div></div>
+    <div style="padding:14px 20px;"><p style="font-size:.88em; color:#374151; line-height:1.7; margin:0;">Access the ObservationDefinition resources (analytical procedures and test methods) from the public repository via RESTful API.</p></div>
+  </div>
+</div>
+<div style="display:flex; gap:16px; margin-bottom:20px; align-items:flex-start;">
+  <div style="flex-shrink:0; width:36px; height:36px; border-radius:50%; background:#8b5cf6; color:#fff; display:flex; align-items:center; justify-content:center; font-size:.85em; font-weight:700; margin-top:2px;">2</div>
+  <div style="flex:1; background:#fff; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden;">
+    <div style="padding:14px 20px 10px; border-bottom:1px solid #e5e7eb; background:#f9fafb;"><div style="font-weight:700; color:#111827; font-size:.97em;">Build test specification</div></div>
+    <div style="padding:14px 20px;"><p style="font-size:.88em; color:#374151; line-height:1.7; margin:0;">Select from common compendial procedures (HPLC, cell-based assay, gene-based assay) or prefabricated specifications. Edit ObservationDefinition parameters as needed.</p></div>
+  </div>
+</div>
+<div style="display:flex; gap:16px; margin-bottom:20px; align-items:flex-start;">
+  <div style="flex-shrink:0; width:36px; height:36px; border-radius:50%; background:#8b5cf6; color:#fff; display:flex; align-items:center; justify-content:center; font-size:.85em; font-weight:700; margin-top:2px;">3</div>
+  <div style="flex:1; background:#fff; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden;">
+    <div style="padding:14px 20px 10px; border-bottom:1px solid #e5e7eb; background:#f9fafb;"><div style="font-weight:700; color:#111827; font-size:.97em;">Send specification to CMO &amp; receive results</div></div>
+    <div style="padding:14px 20px;"><p style="font-size:.88em; color:#374151; line-height:1.7; margin:0;">Package the specification into a Bundle and send to the CMO via API. Test results are returned in the same FHIR format.</p></div>
+  </div>
+</div>
+<div style="display:flex; gap:16px; margin-bottom:28px; align-items:flex-start;">
+  <div style="flex-shrink:0; width:36px; height:36px; border-radius:50%; background:#8b5cf6; color:#fff; display:flex; align-items:center; justify-content:center; font-size:.85em; font-weight:700; margin-top:2px;">4</div>
+  <div style="flex:1; background:#fff; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden;">
+    <div style="padding:14px 20px 10px; border-bottom:1px solid #e5e7eb; background:#f9fafb;"><div style="font-weight:700; color:#111827; font-size:.97em;">Send to regulator</div></div>
+    <div style="padding:14px 20px;"><p style="font-size:.88em; color:#374151; line-height:1.7; margin:0;">Transform the data to meet national requirements and submit to the health authority for review.</p></div>
+  </div>
+</div>
 
-**Step 4: Send stability study to testing lab**
+<hr style="border:none; border-top:1px solid #e5e7eb; margin:28px 0;"/>
 
-The sponsor creates a bundle of the stability study and sends the Bundle to the testing lab (whether that is an internal department or external organization) that will conduct the study and collect the results. The Bundle is sent to the lab via RESTful API (application programming interfaces).
+<!-- USE CASE 4: FACILITY CHANGE -->
+<h2 id="facility-change" style="font-size:1.35em; font-weight:700; color:#111827; margin-bottom:20px;">Facility Change</h2>
+<p style="color:#374151; font-size:.92em; line-height:1.7; margin-bottom:20px;">A sponsor wants to document a change to a testing facility's address in the Organization resource.</p>
 
-The testing lab receives the Stability Study Bundle via RESTful API, their systems automatically parse the contents, notifies the relevant personnel of the request, and displays the study details.
-
-The testing lab conducts the stability study as per the study details and collects the results.
-
-**Step 5: Return stability study results to the sponsor**
-
-The testing lab creates a collection of Observation resources to capture the results of each test. The testing lab also uses the DiagnosticReport resource to capture additional conclusions or other details about the study results.
-
-The testing lab creates a Bundle resource and returns the results to the sponsor via RESTful API.
-
-**Step 6: Receive results of the stability study tests**
-
-The sponsor’s system receives the Bundle with the results via RESTful API. Their system parses the Bundle contents, notifies the relevant personnel that the results have arrived, and displays the study details.
-
-**Step 7: Develop final stability study report**
-
-The sponsor creates a final study report by creating a DiagnosticReport resource to capture their conclusions and any other necessary details.
-
-If needed, this complete stability study can be bundled and transformed into an output format that is acceptable to any given national regulator responsible for the authorization of medicinal products; e.g., XML, JSON, PDF or Word.
-
-
-### Stability Update (18 to 24 months)
-A sponsor plans to submit a request to a health authority to update the shelf life for their medicinal product from 18 months at 5 °C to 24 months at 5 °C, with supporting stability data to provide rationale for the change. Using a FHIR-based exchange mechanism, the sponsor takes the following approach:
-
-**Step 1: Acquire previously used stability study data from the library**
-
-From the pharmaceutical Quality data repository (or library), the sponsor pulls up the previously submitted Stability Bundle.
-
-**Step 2: Update**
-
-The sponsor decides to use the previously submitted Bundle as is, except for the following sections which need to be updated for the new information. The sponsor updates the following sections to include the new information needed to support the stability:
-- Medication
-- Stability Study
-- Specimen Storage
-- Stability Test Result
-
-The sponsor’s Quality data repository creates new versions of the existing resources. This facilitates the sponsor’s ability to perform tracking and lifecycle management activities on what data is available, where it was used or submitted, and its status.
-
-**Step 3: Send to regulator**
-
-The stability update can be bundled and transformed into an output format that is acceptable to any given national regulator responsible for the authorization of medicinal products; e.g., XML, JSON, PDF or Word.
-
-The sponsor submits the updated Stability Bundle to the health authority for review (refer to local regulatory guidance for detail on acceptable submission requirements and methods).
-
-**Step 4: Receive health authority receipt notification**
-
-The regulator confirms receipt of the update.
-
-**Step 5: Receive health authority questions**
-
-The sponsor receives questions from the health authority on the updated Bundle submitted, asking for additional data to support the change. Specifically, the health authority asked the manufacturer to include additional microbiological testing in the drug product specifications to support the extended shelf life.
-
-**Step 6: Update resources**
-
-From the Quality data repository, the sponsor updates the Specification Bundle for Drug Product, adding the new test method with its acceptance criteria.
-
-**Step 7: Send response to regulator questions**
-
-The updated Specification Bundle is submitted in response to the regulator’s request.
-
-**Step 8: Receive regulator approval**
-
-The regulator provides notice that the specification change and shelf-life extension are approved. From there, the sponsor can take the necessary steps to update the status of the dataset in their Quality repository.
-
-
-### Test Specification Change
-A sponsor plans to execute a change in the drug substance identity method and acceptance criteria, which will necessitate a change in the drug substance specification. The sponsor will send the details of the desired change to a contract manufacturing partner (CMO) to conduct the change assessment. To build the change request in FHIR, as described above in the previous examples, the sponsor will need to download and update the Specification Bundle before submitting it to the CMO.
-
-**Step 1: Acquire previously used data from the library**
-To assist with the process of updating the Bundle, the sponsor can access the ObservationDefinition resources that serve as a comprehensive list of analytical procedures and test methods that will be maintained in a public repository, which can be pulled into the Quality Profile Library. Sponsors can access the test library via RESTful API, select the desired tests needed for their specification, and download them into their local repository.
-
-**Step 2: Build test specification**
-
-To build the test specification, the sponsor may choose from the menu of individual tests in the library of ObservationDefinition, PlanDefinition, MedicinalProductDefinition, Ingredient, and SubstanceDefinition resources to initiate build of a custom specification. For example, for a specification related to identity testing, the sponsor can select from a list of common compendial analytical procedures (select examples include: HPLC, cell-based assay, and gene-based assay) and edit the ObservationDefinition resource parameters accordingly. 
-
-Alternatively, the sponsor could choose from a selection of prefabricated specifications that already contain recommended test methods and acceptance criteria. For non-compendial methods, a new library entry may need to be created in the sponsors’ local terminology repository.
-
-**Step 3: Send specification to CMO**
-
-Once the specification is created according to the sponsors’ need, it can be packaged into a bundle and sent to the CMO via RESTful API to run the change assessment for the new specification. 
-
-**Step 4: Return test results to sponsor**
-
-The test results would be sent back to the sponsor in the same FHIR format via RESTful API, and the sponsor would update the Specification and Batch Analyses bundles with any additional contextual information or metadata. 
-
-**Step 5: Send to regulator**
-Once the data has been deemed ready for health authority review, the data can be transformed to meet national regulatory requirements and submitted to a health authority for review.
-
-### Facility Change
-Organization or facility information can be repetitive and challenging to manage throughout a product’s lifecycle and across jurisdictions, as global regulators may have different addresses and/or facility identifiers on file. In this scenario, a sponsor company wants to document a change to a testing facility’s address that is captured in the Organization resource.
-
-**Step 1: Acquire previously used data from the library**
-
-As described previously, the sponsor can download the Organization resource from a library.
-
-**Step 2: Update resources**
-
-Update the information contained within the relevant Organization resource(s). E.g., create a new version to capture a new name; add alias names for this organization in a different language; show a change in address, or add additional identifiers.
-
-The sponsor may update the information for internal or external audit tracking of facilities. Similar to the Specification bundle, the Organization Bundle may leverage auto-population capabilities based on connectivity to external databases containing Organization information, such as the EMA’s Organisation Management Service (OMS) or U.S. FDA’s Data Dashboard. The Organization profile within the Quality Library can contain all identifiers and addresses for a given site, and specific attributes (e.g., SPOR Organisation ID, Firm Establishment Identifier (FEI), Data Universal Number System (DUNS) number) can be pulled into Bundles on an as-needed basis to support both global information management as well as compliance with regional requirements. This functionality reduces or eliminates the need for manual entry, drives consistency, and allows for reuse of information across Bundles.
-
-**Step 3: Send or receive Organization data**
-
-The updated Organization resource(s) can now be sent to an external party (CMO, regulator, or others) using RESTful API. 
+<div style="display:flex; gap:16px; margin-bottom:20px; align-items:flex-start;">
+  <div style="flex-shrink:0; width:36px; height:36px; border-radius:50%; background:#d97706; color:#fff; display:flex; align-items:center; justify-content:center; font-size:.85em; font-weight:700; margin-top:2px;">1</div>
+  <div style="flex:1; background:#fff; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden;">
+    <div style="padding:14px 20px 10px; border-bottom:1px solid #e5e7eb; background:#f9fafb;"><div style="font-weight:700; color:#111827; font-size:.97em;">Acquire Organization data from the library</div></div>
+    <div style="padding:14px 20px;"><p style="font-size:.88em; color:#374151; line-height:1.7; margin:0;">Download the Organization resource from the quality data library.</p></div>
+  </div>
+</div>
+<div style="display:flex; gap:16px; margin-bottom:20px; align-items:flex-start;">
+  <div style="flex-shrink:0; width:36px; height:36px; border-radius:50%; background:#d97706; color:#fff; display:flex; align-items:center; justify-content:center; font-size:.85em; font-weight:700; margin-top:2px;">2</div>
+  <div style="flex:1; background:#fff; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden;">
+    <div style="padding:14px 20px 10px; border-bottom:1px solid #e5e7eb; background:#f9fafb;"><div style="font-weight:700; color:#111827; font-size:.97em;">Update resources</div></div>
+    <div style="padding:14px 20px;">
+      <p style="font-size:.88em; color:#374151; line-height:1.7; margin-bottom:10px;">Update the Organization resource(s) — new name, alias, address, or additional identifiers (e.g., SPOR ID, FEI, DUNS).</p>
+      <div style="background:#fffbeb; border:1px solid #fde68a; border-left:3px solid #d97706; border-radius:6px; padding:10px 14px; font-size:.82em; color:#78350f; display:flex; gap:10px; align-items:flex-start;">
+        <span style="flex-shrink:0;">💡</span>
+        <span><strong>Tip:</strong> The Organization profile can leverage auto-population from external databases such as EMA's OMS or U.S. FDA's Data Dashboard, reducing manual entry and driving consistency.</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div style="display:flex; gap:16px; margin-bottom:28px; align-items:flex-start;">
+  <div style="flex-shrink:0; width:36px; height:36px; border-radius:50%; background:#d97706; color:#fff; display:flex; align-items:center; justify-content:center; font-size:.85em; font-weight:700; margin-top:2px;">3</div>
+  <div style="flex:1; background:#fff; border:1px solid #e5e7eb; border-radius:8px; overflow:hidden;">
+    <div style="padding:14px 20px 10px; border-bottom:1px solid #e5e7eb; background:#f9fafb;"><div style="font-weight:700; color:#111827; font-size:.97em;">Send or receive Organization data</div></div>
+    <div style="padding:14px 20px;"><p style="font-size:.88em; color:#374151; line-height:1.7; margin:0;">The updated Organization resource(s) can be sent to an external party (CMO, regulator, or others) using RESTful API.</p></div>
+  </div>
+</div>

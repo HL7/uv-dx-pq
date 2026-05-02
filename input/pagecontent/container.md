@@ -1,3 +1,9 @@
+<!-- DOMAIN HEADER -->
+<div style="background:#f9fafb; border:1px solid #e5e7eb; border-left:4px solid #059669; border-radius:8px; padding:16px 20px; margin-bottom:24px;">
+  <div style="font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#059669; margin-bottom:4px;">Domain 11</div>
+  <div style="font-weight:700; color:#111827; font-size:1.1em; margin-bottom:6px;">Container Closure System</div>
+</div>
+
 Details about primary and secondary packaging components for drug substance and drug product.
 
 ### Product 

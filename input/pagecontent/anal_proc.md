@@ -1,3 +1,9 @@
+<!-- DOMAIN HEADER -->
+<div style="background:#f9fafb; border:1px solid #e5e7eb; border-left:4px solid #2563eb; border-radius:8px; padding:16px 20px; margin-bottom:24px;">
+  <div style="font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#2563eb; margin-bottom:4px;">Domain 10</div>
+  <div style="font-weight:700; color:#111827; font-size:1.1em; margin-bottom:6px;">Analytical Procedures</div>
+</div>
+
 Details about test methods used to analyze substances and products, including compendial and non-compendial testing.
 
 ### Product 
