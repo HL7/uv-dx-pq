@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drug Substance Stability Study - PQI</title>
+    <style>
+        :root[data-theme="dark"] {
+            --bg-primary: #0a0e27;
+            --bg-secondary: #12183b;
+            --bg-card: rgba(26, 31, 78, 0.6);
+            --bg-card-hover: rgba(36, 41, 88, 0.8);
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent-primary: #6366f1;
+            --accent-secondary: #818cf8;
+            --accent-success: #34d399;
+            --accent-warning: #fbbf24;
+            --accent-danger: #f87171;
+            --border-color: rgba(99, 102, 241, 0.2);
+            --shadow-color: rgba(0,0,0,0.5);
+            --tab-bg-active: #6366f1;
+            --tab-bg-inactive: #1e293b;
+            --table-header: rgba(30, 41, 59, 0.8);
+            --table-row-alt: rgba(15, 23, 42, 0.3);
+            --btn-toggle-bg: #1e293b;
+        }
+
+        :root[data-theme="light"] {
+            --bg-primary: #f8fafc;
+            --bg-secondary: #ffffff;
+            --bg-card: #ffffff;
+            --bg-card-hover: #f1f5f9;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --accent-primary: #4f46e5;
+            --accent-secondary: #6366f1;
+            --accent-success: #059669;
+            --accent-warning: #d97706;
+            --accent-danger: #dc2626;
+            --border-color: #e2e8f0;
+            --shadow-color: rgba(0,0,0,0.05);
+            --tab-bg-active: #4f46e5;
+            --tab-bg-inactive: #e2e8f0;
+            --table-header: #f1f5f9;
+            --table-row-alt: #f8fafc;
+            --btn-toggle-bg: #e2e8f0;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Theme Toggle */
+        .theme-toggle {
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+            background: var(--btn-toggle-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            padding: 0.5rem 1rem;
+            border-radius: 999px;
+            cursor: pointer;
+            font-size: 0.875rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            z-index: 100;
+            transition: all 0.2s;
+        }
+
+        /* Hero */
+        .hero {
+            text-align: center;
+            padding: 4rem 0 2rem;
+        }
+        .hero-brand {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0 0 0.5rem;
+            background: linear-gradient(135deg, var(--text-primary), var(--accent-secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero h2 {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            font-weight: 400;
+            margin-bottom: 2rem;
+        }
+        .badges {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .badge {
+            background: var(--bg-secondary);
+            padding: 0.5rem 1rem;
+            border-radius: 999px;
+            font-size: 0.875rem;
+            border: 1px solid var(--border-color);
+            border-left: 4px solid var(--accent-primary);
+            box-shadow: 0 4px 6px var(--shadow-color);
+        }
+        .badge.status { border-left-color: var(--accent-success); }
+        .badge.duration { border-left-color: var(--accent-warning); }
+
+        /* Cards */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        .card {
+            background: var(--bg-card);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 10px 15px -3px var(--shadow-color);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+            background: var(--bg-card-hover);
+        }
+        .card h3 {
+            margin: 0 0 1rem;
+            font-size: 1.125rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .condition-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .condition-row:last-child { border-bottom: none; }
+        
+        .conclusion-box {
+            background: rgba(52, 211, 153, 0.1);
+            border: 1px solid var(--accent-success);
+            padding: 1rem;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: var(--text-primary);
+        }
+
+        .scope-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .tag {
+            font-size: 0.75rem;
+            padding: 0.25rem 0.75rem;
+            border-radius: 999px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+        .tag::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--accent-primary);
+        }
+
+        /* Matrix Table */
+        .section-title {
+            margin: 3rem 0 1rem;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--bg-card);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+        }
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        th {
+            background: var(--table-header);
+            font-weight: 600;
+        }
+        tr:nth-child(even) { background: var(--table-row-alt); }
+        tr:last-child td { border-bottom: none; }
+
+        .pill {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-align: center;
+            min-width: 2rem;
+        }
+        .pill.xyz { background: var(--accent-primary); color: white; }
+        .pill.x { background: #3b82f6; color: white; }
+        .pill.xy { background: #8b5cf6; color: white; }
+        .pill.none { background: var(--bg-secondary); color: var(--text-secondary); }
+        .pill.amber { background: var(--accent-warning); color: #000; }
+        .pill.optional { border: 1px dashed var(--accent-primary); background: transparent; color: var(--text-primary); }
+
+        /* Chart */
+        .chart-container {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+        .chart-svg {
+            width: 100%;
+            height: 300px;
+        }
+        .chart-legend {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            background: var(--bg-secondary);
+            padding: 1rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            font-size: 0.875rem;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .legend-item:last-child { margin-bottom: 0; }
+        .legend-color { width: 12px; height: 12px; border-radius: 50%; }
+
+        /* Results Table Tabs */
+        .tabs {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .tab-btn {
+            background: var(--tab-bg-inactive);
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+        .tab-btn.active {
+            background: var(--tab-bg-active);
+            color: white;
+            border-color: var(--tab-bg-active);
+        }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+
+        .cell-pass { color: var(--accent-success); font-weight: 500; }
+        .cell-warn { color: var(--accent-warning); font-weight: 500; }
+        .cell-fail { color: var(--accent-danger); font-weight: 500; }
+
+        /* Explorer */
+        .explorer {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 3rem;
+        }
+        .explorer-header {
+            padding: 1rem 1.5rem;
+            background: var(--table-header);
+            font-weight: 600;
+            border-bottom: 1px solid var(--border-color);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+        }
+        .explorer-content {
+            padding: 1.5rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        .resource-chip {
+            background: var(--bg-secondary);
+            padding: 0.75rem;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.875rem;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 3rem 0;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            margin-top: 4rem;
+        }
+        .footer a {
+            color: var(--accent-primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .footer a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+    <button class="theme-toggle" onclick="toggleTheme()">
+        <span id="theme-icon">☀️</span> Toggle Theme
+    </button>
+
+    <div class="container">
+        <!-- Hero -->
+        <div class="hero">
+            <div class="hero-brand">HL7 FHIR® Pharmaceutical Quality</div>
+            <h1>Drug Substance Stability Study</h1>
+            <h2>Stelbatolol — ICH CTD Section 3.2.S.7</h2>
+            <div class="badges">
+                <div class="badge">Study ID: PLO555</div>
+                <div class="badge status">Status: Final</div>
+                <div class="badge duration">Duration: 36 months</div>
+                <div class="badge">Start: 2019-09-08</div>
+            </div>
+        </div>
+
+        <!-- Overview Cards -->
+        <div class="cards-grid">
+            <div class="card">
+                <h3>Storage Conditions</h3>
+                <div class="condition-row">
+                    <span>Long-Term</span>
+                    <strong>30°C / 65% RH</strong>
+                </div>
+                <div class="condition-row">
+                    <span>Accelerated</span>
+                    <strong>40°C / 75% RH</strong>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Study Conclusion</h3>
+                <div class="conclusion-box">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                    <span>The retest period can be <strong>36 months</strong></span>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Test Scope</h3>
+                <div class="scope-tags">
+                    <div class="tag">Description</div>
+                    <div class="tag" style="--accent-primary: #3b82f6;">Assay</div>
+                    <div class="tag" style="--accent-primary: #f59e0b;">Impurities</div>
+                    <div class="tag" style="--accent-primary: #10b981;">Particle Size</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Protocol Matrix -->
+        <h2 class="section-title">Study Protocol Schedule</h2>
+        <div style="overflow-x: auto; margin-bottom: 2rem;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Condition</th>
+                        <th>Initial</th>
+                        <th>3 mo</th>
+                        <th>6 mo</th>
+                        <th>9 mo</th>
+                        <th>12 mo</th>
+                        <th>18 mo</th>
+                        <th>24 mo</th>
+                        <th>36 mo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Long-Term</strong><br><small>30°C/65% RH</small></td>
+                        <td><span class="pill xy">XY</span></td>
+                        <td><span class="pill x">X</span></td>
+                        <td><span class="pill x">X</span></td>
+                        <td><span class="pill x">X</span></td>
+                        <td><span class="pill x">X</span></td>
+                        <td><span class="pill x">X</span></td>
+                        <td><span class="pill x">X</span></td>
+                        <td><span class="pill optional">(X)</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Accelerated</strong><br><small>40°C/75% RH</small></td>
+                        <td><span class="pill xy amber">XY</span></td>
+                        <td><span class="pill x amber">X</span></td>
+                        <td><span class="pill x amber">X</span></td>
+                        <td><span class="pill none">—</span></td>
+                        <td><span class="pill none">—</span></td>
+                        <td><span class="pill none">—</span></td>
+                        <td><span class="pill none">—</span></td>
+                        <td><span class="pill none">—</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="color: var(--text-secondary); font-size: 0.875rem; margin-top: 1rem;">
+                <strong>X</strong> = Description + Assay + Impurities &nbsp;&nbsp;|&nbsp;&nbsp; 
+                <strong>Y</strong> = Particle Size Distribution &nbsp;&nbsp;|&nbsp;&nbsp;
+                <strong>(X)</strong> = Optional Testing
+            </p>
+        </div>
+
+        <!-- Trend Chart -->
+        <h2 class="section-title">Assay Trends — Long-Term 30°C/65% RH</h2>
+        <div class="chart-container">
+            <div class="chart-legend">
+                <div class="legend-item"><div class="legend-color" style="background: #10b981;"></div>Assay (% w/w)</div>
+            </div>
+            
+            <svg class="chart-svg" viewBox="0 0 800 300" preserveAspectRatio="none">
+                <!-- Grid -->
+                <line x1="50" y1="20" x2="800" y2="20" stroke="var(--border-color)" stroke-dasharray="4" />
+                <line x1="50" y1="85" x2="800" y2="85" stroke="var(--border-color)" stroke-dasharray="4" />
+                <line x1="50" y1="150" x2="800" y2="150" stroke="var(--border-color)" stroke-dasharray="4" />
+                <line x1="50" y1="215" x2="800" y2="215" stroke="var(--border-color)" stroke-dasharray="4" />
+                <line x1="50" y1="280" x2="800" y2="280" stroke="var(--border-color)" />
+                
+                <!-- Y-Axis Labels -->
+                <text x="40" y="25" fill="var(--text-secondary)" font-size="12" text-anchor="end">102%</text>
+                <text x="40" y="90" fill="var(--text-secondary)" font-size="12" text-anchor="end">101%</text>
+                <text x="40" y="155" fill="var(--text-secondary)" font-size="12" text-anchor="end">100%</text>
+                <text x="40" y="220" fill="var(--text-secondary)" font-size="12" text-anchor="end">99%</text>
+                <text x="40" y="285" fill="var(--text-secondary)" font-size="12" text-anchor="end">98%</text>
+                
+                <!-- X-Axis Labels -->
+                <text x="100" y="298" fill="var(--text-secondary)" font-size="12" text-anchor="middle">Initial</text>
+                <text x="400" y="298" fill="var(--text-secondary)" font-size="12" text-anchor="middle">18 months</text>
+                <text x="700" y="298" fill="var(--text-secondary)" font-size="12" text-anchor="middle">36 months</text>
+
+                <!-- Limit Lines -->
+                <line x1="50" y1="20" x2="800" y2="20" stroke="var(--accent-warning)" stroke-dasharray="6" stroke-width="2" />
+                <text x="790" y="15" fill="var(--accent-warning)" font-size="12" text-anchor="end">Upper Limit (102.0%)</text>
+                
+                <line x1="50" y1="280" x2="800" y2="280" stroke="var(--accent-warning)" stroke-dasharray="6" stroke-width="2" />
+                <text x="790" y="275" fill="var(--accent-warning)" font-size="12" text-anchor="end">Lower Limit (98.0%)</text>
+
+                <!-- Data Lines -->
+                <polyline points="100,145 400,150 700,165" fill="none" stroke="#10b981" stroke-width="4" />
+                <circle cx="100" cy="145" r="6" fill="#10b981" />
+                <circle cx="400" cy="150" r="6" fill="#10b981" />
+                <circle cx="700" cy="165" r="6" fill="#10b981" />
+                
+                <text x="115" y="140" fill="#10b981" font-size="12" font-weight="bold">100.1%</text>
+                <text x="415" y="145" fill="#10b981" font-size="12" font-weight="bold">100.0%</text>
+                <text x="715" y="160" fill="#10b981" font-size="12" font-weight="bold">99.8%</text>
+            </svg>
+        </div>
+
+        <!-- Results Table -->
+        <h2 class="section-title">Stability Results</h2>
+        <div class="tabs">
+            <button class="tab-btn active" onclick="switchTab('longterm')">Long-Term (30°C/65% RH)</button>
+            <button class="tab-btn" onclick="switchTab('accelerated')">Accelerated (40°C/75% RH)</button>
+        </div>
+
+        <div id="longterm" class="tab-content active" style="overflow-x: auto;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Test</th>
+                        <th>Acceptance Criteria</th>
+                        <th>Initial (CAT1)</th>
+                        <th>Initial (CAT2)</th>
+                        <th>Initial (CAT3)</th>
+                        <th>36m (CAT1)</th>
+                        <th>36m (CAT2)</th>
+                        <th>36m (CAT3)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Description</td>
+                        <td>A white to brown powder</td>
+                        <td class="cell-pass">Complies</td>
+                        <td class="cell-pass">Complies</td>
+                        <td class="cell-pass">Complies</td>
+                        <td class="cell-pass">Complies</td>
+                        <td class="cell-pass">Complies</td>
+                        <td class="cell-pass">Complies</td>
+                    </tr>
+                    <tr>
+                        <td>Assay</td>
+                        <td>98.0 – 102.0% w/w</td>
+                        <td class="cell-pass">100.1</td>
+                        <td class="cell-pass">100.2</td>
+                        <td class="cell-pass">99.9</td>
+                        <td class="cell-pass">99.8</td>
+                        <td class="cell-pass">99.7</td>
+                        <td class="cell-pass">99.9</td>
+                    </tr>
+                    <tr>
+                        <td>Total Impurities</td>
+                        <td>≤ 1.5% w/w</td>
+                        <td class="cell-pass">0.10</td>
+                        <td class="cell-pass">0.12</td>
+                        <td class="cell-pass">0.11</td>
+                        <td class="cell-pass">0.35</td>
+                        <td class="cell-pass">0.38</td>
+                        <td class="cell-pass">0.31</td>
+                    </tr>
+                    <tr>
+                        <td>Particle Size (d50)</td>
+                        <td>≤ 200 μm</td>
+                        <td class="cell-pass">145</td>
+                        <td>152</td>
+                        <td>148</td>
+                        <td>NT</td>
+                        <td>NT</td>
+                        <td>NT</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="accelerated" class="tab-content" style="overflow-x: auto;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Test</th>
+                        <th>Acceptance Criteria</th>
+                        <th>Initial (CAT1)</th>
+                        <th>Initial (CAT2)</th>
+                        <th>Initial (CAT3)</th>
+                        <th>6m (CAT1)</th>
+                        <th>6m (CAT2)</th>
+                        <th>6m (CAT3)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Description</td>
+                        <td>A white to brown powder</td>
+                        <td class="cell-pass">Complies</td>
+                        <td class="cell-pass">Complies</td>
+                        <td class="cell-pass">Complies</td>
+                        <td class="cell-pass">Complies</td>
+                        <td class="cell-pass">Complies</td>
+                        <td class="cell-pass">Complies</td>
+                    </tr>
+                    <tr>
+                        <td>Assay</td>
+                        <td>98.0 – 102.0% w/w</td>
+                        <td class="cell-pass">100.1</td>
+                        <td class="cell-pass">100.2</td>
+                        <td class="cell-pass">99.9</td>
+                        <td class="cell-pass">99.5</td>
+                        <td class="cell-pass">99.4</td>
+                        <td class="cell-pass">99.6</td>
+                    </tr>
+                    <tr>
+                        <td>Total Impurities</td>
+                        <td>≤ 1.5% w/w</td>
+                        <td class="cell-pass">0.10</td>
+                        <td class="cell-pass">0.12</td>
+                        <td class="cell-pass">0.11</td>
+                        <td class="cell-pass">0.45</td>
+                        <td class="cell-pass">0.48</td>
+                        <td class="cell-pass">0.41</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- FHIR Explorer -->
+        <h2 class="section-title">FHIR Resource Explorer</h2>
+        <div class="explorer">
+            <div class="explorer-header" onclick="document.getElementById('explorer-grid').style.display = document.getElementById('explorer-grid').style.display === 'none' ? 'grid' : 'none'">
+                <span>Powered by FHIR R5</span>
+                <span>▼</span>
+            </div>
+            <div class="explorer-content" id="explorer-grid">
+                <div class="resource-chip">DiagnosticReport (1)</div>
+                <div class="resource-chip">PlanDefinition (1)</div>
+                <div class="resource-chip">ActivityDefinition (13)</div>
+                <div class="resource-chip">ObservationDef (18)</div>
+                <div class="resource-chip">Observation (204)</div>
+                <div class="resource-chip">Specimen (32)</div>
+                <div class="resource-chip">SpecimenDef (2)</div>
+                <div class="resource-chip">Substance (3)</div>
+                <div class="resource-chip">Organization (2)</div>
+                <div class="resource-chip">SubstanceDefinition (1)</div>
+            </div>
+        </div>
+
+        <!-- Related Module 3 Resources -->
+        <h2 class="section-title">Related Module 3 Documents</h2>
+        
+        <!-- S.1.3 General Properties -->
+        <div class="card" style="margin-bottom: 2rem;">
+            <h3>3.2.S.1.3 General Properties</h3>
+            <div style="overflow-x: auto;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Property</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Appearance</td>
+                            <td>White to slightly yellow powder</td>
+                        </tr>
+                        <tr>
+                            <td>Solubility (Purified Water, PhEur)</td>
+                            <td>Freely soluble (23 - 27 mg/mL)</td>
+                        </tr>
+                        <tr>
+                            <td>Solubility (Acetone, PhEur)</td>
+                            <td>Slightly soluble (2 - 3 mg/mL)</td>
+                        </tr>
+                        <tr>
+                            <td>Solubility (Ethanol, PhEur)</td>
+                            <td>Soluble (15 - 17 mg/mL)</td>
+                        </tr>
+                        <tr>
+                            <td>pH in aqueous solution</td>
+                            <td>6.7 - 6.8 (10 mg/ml at 25°C)</td>
+                        </tr>
+                        <tr>
+                            <td>Hygroscopy</td>
+                            <td>Hygroscopic</td>
+                        </tr>
+                        <tr>
+                            <td>Stereochemistry</td>
+                            <td>One asymmetric center and one axis of chirality; (S,M) - enantiomer</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- S.4.1 Specification -->
+        <div class="card" style="margin-bottom: 2rem;">
+            <h3>3.2.S.4.1 Specification</h3>
+            <div style="overflow-x: auto;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Test Parameter</th>
+                            <th>Method</th>
+                            <th>Acceptance Criteria</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Description</td>
+                            <td>Visual inspection</td>
+                            <td>A white to brown powder</td>
+                        </tr>
+                        <tr>
+                            <td>Identification</td>
+                            <td>Identification by IR spectroscopy / HPLC</td>
+                            <td>Conforms with reference</td>
+                        </tr>
+                        <tr>
+                            <td>Assay</td>
+                            <td>Assay by LC</td>
+                            <td>98% to 102% w/w</td>
+                        </tr>
+                        <tr>
+                            <td>Drug Substance Related Organic Impurities</td>
+                            <td>Organic impurities by LC</td>
+                            <td>Total impurities ≤ 2.0% w/w</td>
+                        </tr>
+                        <tr>
+                            <td>Mutagenic Impurities</td>
+                            <td>Impurity 5 content by LC-MS</td>
+                            <td>≤ 50 ppm</td>
+                        </tr>
+                        <tr>
+                            <td>Enantiomeric Purity</td>
+                            <td>Enantiomeric purity by LC</td>
+                            <td>≥ 99.6%</td>
+                        </tr>
+                        <tr>
+                            <td>Residual Solvents</td>
+                            <td>Residual solvents by headspace GC</td>
+                            <td>Solvent 1 ≤ 0.1% w/w, Solvent 2 ≤ 2.0% w/w</td>
+                        </tr>
+                        <tr>
+                            <td>Water Content</td>
+                            <td>USP Karl Fischer titration</td>
+                            <td>≤ 1.0% w/w</td>
+                        </tr>
+                        <tr>
+                            <td>Particle Size Distribution</td>
+                            <td>Laser diffraction</td>
+                            <td>D(v,0.9) ≤ 319 µm, D(v,0.5) ≤ 145 µm, D(v,0.1) ≤ 20 µm</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Module 3 Quality Showcase &nbsp;|&nbsp; <a href="stability-product.html">&larr; View Drug Product Stability (P.8)</a></p>
+            <p><small>Based on bundle-drug-stability-pq-ex2-sub.xml</small></p>
+        </div>
+    </div>
+
+    <script>
+        // Theme Toggle Logic
+        function toggleTheme() {
+            const html = document.documentElement;
+            const current = html.getAttribute('data-theme');
+            const next = current === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', next);
+            document.getElementById('theme-icon').textContent = next === 'dark' ? '☀️' : '🌙';
+        }
+
+        // Tab Logic
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+            
+            event.target.classList.add('active');
+            document.getElementById(tabId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
