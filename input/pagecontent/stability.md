@@ -65,8 +65,8 @@
         
         <div style="margin-bottom:12px;">
           <div style="font-size:.75em; font-weight:700; text-transform:uppercase; color:#6b7280; margin-bottom:6px;">FHIR Bundles</div>
-          <a href="Bundle-bundle-drug-stability-pq-ex1-prod.xml.html" style="display:inline-block; background:#f3f4f6; color:#374151; font-size:.8em; padding:4px 10px; border-radius:4px; text-decoration:none; margin-right:6px; margin-bottom:6px;">XML Instance</a>
-          <a href="Bundle-bundle-drug-stability-pq-ex1-prod.json.html" style="display:inline-block; background:#f3f4f6; color:#374151; font-size:.8em; padding:4px 10px; border-radius:4px; text-decoration:none;">JSON Instance</a>
+          <a href="Bundle-bundle-drug-stability-pq-ex1-prod.html" style="display:inline-block; background:#f3f4f6; color:#374151; font-size:.8em; padding:4px 10px; border-radius:4px; text-decoration:none; margin-right:6px; margin-bottom:6px;">XML Instance</a>
+          <a href="Bundle-bundle-drug-stability-pq-ex1-prod.html" style="display:inline-block; background:#f3f4f6; color:#374151; font-size:.8em; padding:4px 10px; border-radius:4px; text-decoration:none;">JSON Instance</a>
         </div>
         
         <div>
@@ -138,8 +138,8 @@
         
         <div style="margin-bottom:12px;">
           <div style="font-size:.75em; font-weight:700; text-transform:uppercase; color:#6b7280; margin-bottom:6px;">FHIR Bundles</div>
-          <a href="Bundle-bundle-drug-stability-pq-ex2-sub.xml.html" style="display:inline-block; background:#f3f4f6; color:#374151; font-size:.8em; padding:4px 10px; border-radius:4px; text-decoration:none; margin-right:6px; margin-bottom:6px;">XML Instance</a>
-          <a href="Bundle-bundle-drug-stability-pq-ex2-sub.json.html" style="display:inline-block; background:#f3f4f6; color:#374151; font-size:.8em; padding:4px 10px; border-radius:4px; text-decoration:none;">JSON Instance</a>
+          <a href="Bundle-bundle-drug-stability-pq-ex2-sub.html" style="display:inline-block; background:#f3f4f6; color:#374151; font-size:.8em; padding:4px 10px; border-radius:4px; text-decoration:none; margin-right:6px; margin-bottom:6px;">XML Instance</a>
+          <a href="Bundle-bundle-drug-stability-pq-ex2-sub.html" style="display:inline-block; background:#f3f4f6; color:#374151; font-size:.8em; padding:4px 10px; border-radius:4px; text-decoration:none;">JSON Instance</a>
         </div>
         
         <div>
