@@ -3364,7 +3364,22 @@ function openDrawer(resourceType) {
 
     document.getElementById('drawer-title').innerText = data.title;
     
-    let html = '<table class="kv-table"><tbody>';
+    let conclusionText = null;
+    try {
+        const jsonObj = JSON.parse(data.json);
+        if (jsonObj.conclusion) {
+            conclusionText = jsonObj.conclusion;
+        }
+    } catch(e) {}
+    
+    let html = '';
+    
+    if (conclusionText) {
+        html += '<h4 style="margin-top:1rem; margin-bottom:0.5rem; color:var(--text-primary); font-size: 1.1rem;">Study Conclusion</h4>';
+        html += `<div style="background: rgba(52, 211, 153, 0.1); border-left: 4px solid var(--accent-success); padding: 1rem; border-radius: 4px; font-size: 1rem; line-height: 1.5; color: var(--text-primary); margin-bottom: 1.5rem;">${conclusionText}</div>`;
+    }
+
+    html += '<table class="kv-table"><tbody>';
     data.details.forEach(item => {
         html += `<tr><td>${item.k}</td><td>${item.v}</td></tr>`;
     });

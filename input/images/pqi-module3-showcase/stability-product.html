@@ -167,6 +167,12 @@
             align-items: center;
             gap: 1rem;
             color: var(--text-primary);
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .conclusion-box:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
         }
 
         .scope-tags {
@@ -495,7 +501,7 @@
             </div>
             <div class="card">
                 <h3>Study Conclusion</h3>
-                <div class="conclusion-box">
+                <div class="conclusion-box" onclick="openDrawer('DiagnosticReport/diagnosticreport-analysis-drug-pq-stability-prod')">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
                     <span>The shelf life can be <strong>18 months</strong></span>
                 </div>
