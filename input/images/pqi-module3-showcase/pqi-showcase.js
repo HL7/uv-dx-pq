@@ -3332,6 +3332,25 @@ const resourceData = {
   }
 };
 
+function renderJSONTree(obj) {
+    if (typeof obj !== 'object' || obj === null) {
+        return `<span style="color: var(--accent-primary); word-break: break-all;">${obj}</span>`;
+    }
+    
+    let html = '<div style="margin-left: 1rem; border-left: 1px dashed var(--border-color); padding-left: 0.75rem; margin-top: 0.25rem; margin-bottom: 0.25rem;">';
+    if (Array.isArray(obj)) {
+        obj.forEach((item, index) => {
+            html += `<div style="margin-bottom: 0.25rem;"><span style="color: var(--text-secondary); font-size: 0.75rem;">[${index}]</span> ${renderJSONTree(item)}</div>`;
+        });
+    } else {
+        for (const [key, value] of Object.entries(obj)) {
+            html += `<div style="margin-bottom: 0.25rem;"><span style="font-weight: 600; color: var(--text-primary);">${key}:</span> ${renderJSONTree(value)}</div>`;
+        }
+    }
+    html += '</div>';
+    return html;
+}
+
 function openDrawer(resourceType) {
     const data = resourceData[resourceType];
     if (!data) {
@@ -3351,7 +3370,17 @@ function openDrawer(resourceType) {
     });
     html += '</tbody></table>';
     
-    html += '<h4 style="margin-top:2rem; margin-bottom:0.5rem; color:var(--text-secondary);">FHIR JSON Source</h4>';
+    html += '<h4 style="margin-top:1.5rem; margin-bottom:1rem; color:var(--text-primary); font-size: 1.1rem;">Structured JSON View</h4>';
+    html += `<div style="background: var(--bg-secondary); padding: 1rem 1rem 1rem 0; border-radius: 8px; border: 1px solid var(--border-color); font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; overflow-x: auto;">`;
+    try {
+        const jsonObj = JSON.parse(data.json);
+        html += renderJSONTree(jsonObj);
+    } catch(e) {
+        html += '<p>Error parsing JSON</p>';
+    }
+    html += `</div>`;
+    
+    html += '<h4 style="margin-top:2.5rem; margin-bottom:0.5rem; color:var(--text-secondary);">FHIR JSON Source</h4>';
     html += `<pre class="json-viewer"><code>${data.json}</code></pre>`;
 
     document.getElementById('drawer-content').innerHTML = html;
