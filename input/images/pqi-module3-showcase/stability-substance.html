@@ -303,36 +303,146 @@
         .cell-warn { color: var(--accent-warning); font-weight: 500; }
         .cell-fail { color: var(--accent-danger); font-weight: 500; }
 
-        /* Explorer */
-        .explorer {
-            background: var(--bg-card);
+        /* Nested Hierarchy Tree */
+        .tree-node {
+            display: block;
             border: 1px solid var(--border-color);
-            border-radius: 12px;
+            border-radius: 8px;
+            margin-bottom: 0.75rem;
+            background: var(--bg-card);
             overflow: hidden;
-            margin-bottom: 3rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
         }
-        .explorer-header {
+        .tree-summary {
             padding: 1rem 1.5rem;
-            background: var(--table-header);
-            font-weight: 600;
-            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
             cursor: pointer;
+            user-select: none;
+            background: var(--bg-card);
+            transition: background 0.2s;
+            font-weight: 500;
+        }
+        .tree-summary:hover {
+            background: var(--bg-card-hover);
+        }
+        .tree-summary::marker { content: ''; }
+        .tree-summary::-webkit-details-marker { display: none; }
+        .tree-icon {
+            margin-right: 0.75rem;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: center;
+        }
+        .tree-badge {
+            margin-left: auto;
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            padding: 0.25rem 0.75rem;
+            border-radius: 999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            border: 1px solid var(--border-color);
+        }
+        .tree-badge.green { background: #10b981; color: white; border-color:#059669; }
+        .tree-badge.blue { background: #3b82f6; color: white; border-color:#2563eb; }
+        .tree-children {
+            padding: 1rem 1.5rem 1.5rem 2.5rem;
+            border-top: 1px solid var(--border-color);
+            background: var(--bg-secondary);
+        }
+        details[open] > .tree-summary {
+            border-bottom: 1px solid var(--border-color);
+        }
+        .view-btn {
+            margin-left: 1rem;
+            padding: 0.25rem 0.75rem;
+            font-size: 0.75rem;
+            border-radius: 4px;
+            border: 1px solid var(--border-color);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .view-btn:hover {
+            background: var(--accent-primary);
+            color: white;
+            border-color: var(--accent-primary);
+        }
+
+        /* Drawer Overlay */
+        .drawer-overlay {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(4px);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s;
+        }
+        .drawer-overlay.open {
+            opacity: 1;
+            visibility: visible;
+        }
+        .drawer {
+            position: fixed;
+            top: 0; right: -500px; bottom: 0;
+            width: 100%;
+            max-width: 500px;
+            background: var(--bg-primary);
+            box-shadow: -5px 0 25px rgba(0,0,0,0.1);
+            z-index: 1000;
+            transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            flex-direction: column;
+            border-left: 1px solid var(--border-color);
+        }
+        .drawer.open {
+            right: 0;
+        }
+        .drawer-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
             display: flex;
             justify-content: space-between;
+            align-items: center;
+            background: var(--bg-card);
         }
-        .explorer-content {
+        .drawer-header h3 { margin: 0; font-size: 1.25rem; }
+        .drawer-close {
+            background: none; border: none; font-size: 1.5rem;
+            cursor: pointer; color: var(--text-secondary);
+            padding: 0.5rem; border-radius: 50%;
+            line-height: 1;
+        }
+        .drawer-close:hover { background: var(--bg-secondary); color: var(--text-primary); }
+        .drawer-content {
             padding: 1.5rem;
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 1rem;
+            overflow-y: auto;
+            flex: 1;
         }
-        .resource-chip {
-            background: var(--bg-secondary);
-            padding: 0.75rem;
-            border-radius: 6px;
-            border: 1px solid var(--border-color);
-            font-family: 'JetBrains Mono', monospace;
+        .kv-table {
+            width: 100%; border-collapse: collapse; margin-bottom: 2rem;
             font-size: 0.875rem;
+            background: transparent;
+            border: none;
+        }
+        .kv-table td { padding: 0.75rem 0; border-bottom: 1px solid var(--border-color); text-align: left; background:transparent;}
+        .kv-table tr:nth-child(even) { background: transparent; }
+        .kv-table td:first-child { color: var(--text-secondary); width: 40%; }
+        .kv-table td:last-child { font-weight: 500; text-align: right; }
+        .json-viewer {
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 1rem;
+            border-radius: 8px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            overflow-x: auto;
+            margin: 0;
+            border: 1px solid #000;
         }
 
         /* Footer */
@@ -614,23 +724,85 @@
 
         <!-- FHIR Explorer -->
         <h2 class="section-title">FHIR Resource Explorer</h2>
-        <div class="explorer">
-            <div class="explorer-header" onclick="document.getElementById('explorer-grid').style.display = document.getElementById('explorer-grid').style.display === 'none' ? 'grid' : 'none'">
-                <span>Powered by FHIR R5</span>
-                <span>▼</span>
-            </div>
-            <div class="explorer-content" id="explorer-grid">
-                <div class="resource-chip">DiagnosticReport (1)</div>
-                <div class="resource-chip">PlanDefinition (1)</div>
-                <div class="resource-chip">ActivityDefinition (13)</div>
-                <div class="resource-chip">ObservationDef (18)</div>
-                <div class="resource-chip">Observation (204)</div>
-                <div class="resource-chip">Specimen (32)</div>
-                <div class="resource-chip">SpecimenDef (2)</div>
-                <div class="resource-chip">Substance (3)</div>
-                <div class="resource-chip">Organization (2)</div>
-                <div class="resource-chip">SubstanceDefinition (1)</div>
-            </div>
+        <div style="margin-bottom: 3rem;">
+            <!-- Tree Root -->
+            <details class="tree-node" open>
+                <summary class="tree-summary">
+                    <span class="tree-icon">▼ 📄</span>
+                    DiagnosticReport
+                    <button class="view-btn" onclick="openDrawer('DiagnosticReport'); event.preventDefault();">View Resource</button>
+                    <span class="tree-badge blue">1 resource</span>
+                </summary>
+                <div class="tree-children">
+                    <!-- Child 1 -->
+                    <details class="tree-node" open>
+                        <summary class="tree-summary">
+                            <span class="tree-icon">▼ 📋</span>
+                            PlanDefinition
+                            <button class="view-btn" onclick="openDrawer('PlanDefinition'); event.preventDefault();">View Resource</button>
+                            <span class="tree-badge green">1 definition</span>
+                        </summary>
+                        <div class="tree-children">
+                            <details class="tree-node">
+                                <summary class="tree-summary">
+                                    <span class="tree-icon">▶ ⚙️</span>
+                                    ActivityDefinition
+                                    <span class="tree-badge">13 activities</span>
+                                </summary>
+                            </details>
+                            <details class="tree-node">
+                                <summary class="tree-summary">
+                                    <span class="tree-icon">▶ 📐</span>
+                                    ObservationDefinition
+                                    <span class="tree-badge">18 definitions</span>
+                                </summary>
+                            </details>
+                        </div>
+                    </details>
+                    <!-- Child 2 -->
+                    <details class="tree-node" open>
+                        <summary class="tree-summary">
+                            <span class="tree-icon">▼ 🧪</span>
+                            Specimen
+                            <button class="view-btn" onclick="openDrawer('Specimen'); event.preventDefault();">View Resource</button>
+                            <span class="tree-badge green">32 samples</span>
+                        </summary>
+                        <div class="tree-children">
+                             <details class="tree-node">
+                                <summary class="tree-summary">
+                                    <span class="tree-icon">▶ 📦</span>
+                                    SpecimenDefinition
+                                    <span class="tree-badge">2 definitions</span>
+                                </summary>
+                            </details>
+                        </div>
+                    </details>
+                    <!-- Child 3 -->
+                    <details class="tree-node">
+                        <summary class="tree-summary">
+                            <span class="tree-icon">▶ 📊</span>
+                            Observation
+                            <button class="view-btn" onclick="openDrawer('Observation'); event.preventDefault();">View Resource</button>
+                            <span class="tree-badge green">204 Observations</span>
+                        </summary>
+                    </details>
+                    <!-- Child 4 -->
+                    <details class="tree-node">
+                        <summary class="tree-summary">
+                            <span class="tree-icon">▶ 🏢</span>
+                            Organization
+                            <span class="tree-badge">2 resources</span>
+                        </summary>
+                    </details>
+                    <details class="tree-node">
+                        <summary class="tree-summary">
+                            <span class="tree-icon">▶ 💠</span>
+                            Substance
+                            <span class="tree-badge">3 resources</span>
+                        </summary>
+                    </details>
+                </div>
+            </details>
         </div>
 
         <!-- Related Module 3 Resources -->
@@ -747,6 +919,18 @@
         <div class="footer">
             <p>Module 3 Quality Showcase &nbsp;|&nbsp; <a href="stability-product.html">&larr; View Drug Product Stability (P.8)</a></p>
             <p><small>Based on bundle-drug-stability-pq-ex2-sub.xml</small></p>
+        </div>
+    </div>
+
+    <!-- Drawer Overlay -->
+    <div class="drawer-overlay" id="drawer-overlay" onclick="closeDrawer()"></div>
+    <div class="drawer" id="resource-drawer">
+        <div class="drawer-header">
+            <h3 id="drawer-title">Resource Detail</h3>
+            <button class="drawer-close" onclick="closeDrawer()">&times;</button>
+        </div>
+        <div class="drawer-content" id="drawer-content">
+            <!-- Dynamic content injected by JS -->
         </div>
     </div>
 
