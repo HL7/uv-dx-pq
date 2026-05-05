@@ -56,7 +56,7 @@
         <p style="font-size:.85em; color:#1e3a8a; line-height:1.6; margin-bottom:16px;">
           Experience how computable FHIR quality data can be dynamically rendered into premium, human-readable stability reports with trend visualizations and protocol matrices.
         </p>
-        <a href="examples-pdf/pqi-module3-showcase/stability-product.html" target="_blank" style="display:inline-block; background:#2563eb; color:#fff; padding:10px 20px; border-radius:6px; font-weight:600; font-size:.9em; text-decoration:none;">View Product Showcase &rarr;</a>
+        <a href="pqi-module3-showcase/stability-product.html" target="_blank" style="display:inline-block; background:#2563eb; color:#fff; padding:10px 20px; border-radius:6px; font-weight:600; font-size:.9em; text-decoration:none;">View Product Showcase &rarr;</a>
       </div>
 
       <!-- Card: Raw Data Examples -->
@@ -129,7 +129,7 @@
         <p style="font-size:.85em; color:#064e3b; line-height:1.6; margin-bottom:16px;">
           View the high-fidelity presentation of Drug Substance stability testing, featuring animated impurity trend charts and automated limits validation.
         </p>
-        <a href="examples-pdf/pqi-module3-showcase/stability-substance.html" target="_blank" style="display:inline-block; background:#10b981; color:#fff; padding:10px 20px; border-radius:6px; font-weight:600; font-size:.9em; text-decoration:none;">View Substance Showcase &rarr;</a>
+        <a href="pqi-module3-showcase/stability-substance.html" target="_blank" style="display:inline-block; background:#10b981; color:#fff; padding:10px 20px; border-radius:6px; font-weight:600; font-size:.9em; text-decoration:none;">View Substance Showcase &rarr;</a>
       </div>
 
       <!-- Card: Raw Data Examples -->
