@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Substance Batch Info -->
+<Bundle xmlns="http://hl7.org/fhir">
+
+    <!--id value="substance-batch-analysis"/-->
+   <id value="bundle-drug-substance-batch-info-pq-ex1"/>
+   <meta>
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-substance-batch-info-pq"/>
+   </meta>
+   <type value="collection"/>
+   <entry>
+      <fullUrl value="urn:uuid:8dae93e0-048d-35a4-71ea-7c603184a130"/>
+      <resource>
+         <SubstanceDefinition>
+        		<!--substance1-->
+            <id value="8dae93e0-048d-35a4-71ea-7c603184a130"/>
+            <manufacturer>
+        			<!--Organization/substance-manufacturer-->
+               <reference value="Organization/3d399cbc-244e-9b5f-838b-b7daa0489330"/>
+            </manufacturer>
+            <name>
+               <name value="Stelbatolol"/>
+            </name>
+         </SubstanceDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:3d399cbc-244e-9b5f-838b-b7daa0489330"/>
+      <resource>
+         <Organization>
+				<!--substance-manufacturer-->
+            <id value="3d399cbc-244e-9b5f-838b-b7daa0489330"/>
+            <identifier>
+					<!-- FDA establishment identifier -->
+               <system value="urn:oid:2.16.840.1.113883.4.82"/>
+               <value value="3003040516"/>
+            </identifier>
+            <active value="true"/>
+            <type>
+               <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type"/>
+                  <code value="drug-substance-manufacture"/>
+                  <display value="Drug Substance Manufacture"/>
+               </coding>
+            </type>
+            <name value="AAA Molybdenum Products, Inc."/>
+            <contact>
+               <address>
+                  <line value="7233 W 116th Pl"/>
+                  <line value="Ste C"/>
+                  <city value="Broomfield"/>
+                  <state value="Colorado"/>
+                  <postalCode value="80020"/>
+                  <country value="USA"/>
+               </address>
+            </contact>
+         </Organization>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
+      <resource>
+         <Substance>
+                <!--substance-dxpq-ex1-->
+            <id value="87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
+            <!-- was actual-batch-substance -->
+            <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+               <extension url="manufacturingDate">
+                  <valueDateTime value="2020-01"/>
+               </extension>
+               <extension url="batchQuantity">
+                  <valueQuantity>
+                     <value value="120"/>
+                     <unit value="kg"/>
+                  </valueQuantity>
+               </extension>
+               <extension url="batchUtilization">
+                  <valueCodeableConcept>
+                     <coding>
+                        <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
+                        <code value="C133990"/>
+                        <display value="Commercial"/>
+                     </coding>
+                     <text value="Production"/>
+                  </valueCodeableConcept>
+               </extension>
+               <extension url="assignedManufacturer">
+                  <valueReference>
+                            <!--Organization/substance-manufacturer-->
+                     <reference value="Organization/3d399cbc-244e-9b5f-838b-b7daa0489330"/>
+                  </valueReference>
+               </extension>
+            </extension>
+            <!-- local extensions -->
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
+               <valueDateTime value="2019-09-08"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq">
+               <valueDateTime value="2022-09-08"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-process-pq">
+               <valueReference>
+                  <display value="Process 1.1"/>
+               </valueReference>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq">
+               <valueQuantity>
+                  <value value="4.8"/>
+                  <unit value="kg"/>
+               </valueQuantity>
+            </extension>
+            <identifier>
+               <value value="CAT1"/>
+            </identifier>
+            <instance value="true"/>
+            <code>
+               <reference>
+                        <!--SubstanceDefinition/substance1-->
+                  <reference value="SubstanceDefinition/8dae93e0-048d-35a4-71ea-7c603184a130"/>
+               </reference>
+            </code>
+         </Substance>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:6412c5d4-1b7d-8405-85dc-75dbaa300ea4"/>
+      <resource>
+         <Substance>
+                <!--actual-batch-substance-2-->
+            <id value="6412c5d4-1b7d-8405-85dc-75dbaa300ea4"/>
+            <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+               <extension url="manufacturingDate">
+                  <valueDateTime value="2020-02"/>
+               </extension>
+               <extension url="batchQuantity">
+                  <valueQuantity>
+                     <value value="120"/>
+                     <unit value="kg"/>
+                  </valueQuantity>
+               </extension>
+               <extension url="batchUtilization">
+                  <valueCodeableConcept>
+                     <coding>
+                        <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
+                        <code value="C133990"/>
+                        <display value="Commercial"/>
+                     </coding>
+                     <text value="Production"/>
+                  </valueCodeableConcept>
+               </extension>
+               <extension url="assignedManufacturer">
+                  <valueReference>
+                            <!--Organization/substance-manufacturer-->
+                     <reference value="Organization/3d399cbc-244e-9b5f-838b-b7daa0489330"/>
+                  </valueReference>
+               </extension>
+            </extension>
+            <!-- local extensions -->
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
+               <valueDateTime value="2019-09-08"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq">
+               <valueDateTime value="2022-09-08"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq">
+               <valueQuantity>
+                  <value value="4.8"/>
+                  <unit value="kg"/>
+               </valueQuantity>
+            </extension>
+            <identifier>
+               <value value="CAT2"/>
+            </identifier>
+            <instance value="true"/>
+            <code>
+               <reference>
+                        <!--SubstanceDefinition/substance1-->
+                  <reference value="SubstanceDefinition/8dae93e0-048d-35a4-71ea-7c603184a130"/>
+               </reference>
+            </code>
+         </Substance>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:ef17cff1-6586-a4a4-9168-2602140548d7"/>
+      <resource>
+         <Substance>
+                <!--actual-batch-substance-3-->
+            <id value="ef17cff1-6586-a4a4-9168-2602140548d7"/>
+            <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+               <extension url="manufacturingDate">
+                  <valueDateTime value="2020-03"/>
+               </extension>
+               <extension url="batchQuantity">
+                  <valueQuantity>
+                     <value value="120"/>
+                     <unit value="kg"/>
+                  </valueQuantity>
+               </extension>
+               <extension url="batchUtilization">
+                  <valueCodeableConcept>
+                     <coding>
+                        <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
+                        <code value="C133990"/>
+                        <display value="Commercial"/>
+                     </coding>
+                     <text value="Production"/>
+                  </valueCodeableConcept>
+               </extension>
+               <extension url="assignedManufacturer">
+                  <valueReference>
+                            <!--Organization/substance-manufacturer-->
+                     <reference value="Organization/3d399cbc-244e-9b5f-838b-b7daa0489330"/>
+                  </valueReference>
+               </extension>
+            </extension>
+            <!-- local extensions -->
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
+               <valueDateTime value="2019-09-08"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq">
+               <valueDateTime value="2022-09-08"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq">
+               <valueQuantity>
+                  <value value="4.8"/>
+                  <unit value="kg"/>
+               </valueQuantity>
+            </extension>
+            <identifier>
+               <value value="CAT3"/>
+            </identifier>
+            <instance value="true"/>
+            <code>
+               <reference>
+                        <!--SubstanceDefinition/substance1-->
+                  <reference value="SubstanceDefinition/8dae93e0-048d-35a4-71ea-7c603184a130"/>
+               </reference>
+            </code>
+         </Substance>
+      </resource>
+   </entry>
+</Bundle>

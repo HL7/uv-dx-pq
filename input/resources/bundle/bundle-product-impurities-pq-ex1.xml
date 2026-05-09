@@ -1,0 +1,1783 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 32P55 Characterization of Impurities -->
+<Bundle xmlns="http://hl7.org/fhir">
+   <id value="bundle-product-impurities-pq-ex1"/>
+   <meta>
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-impurities-pq"/>
+   </meta>
+   <type value="collection"/>
+   <entry>
+      <fullUrl value="urn:uuid:6f4a3311-92c5-2b4a-533e-76341e414c63"/>
+      <resource>
+         <DiagnosticReport>
+                <!-- <id value="studyResultsReport"/>-->
+            <id value="diagnosticreport-product-impurities"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-analysis-drug-pq"/>
+            </meta>
+            <identifier>
+               <system value="https://eudract.europa.eu/example/identifier"/>
+               <value value="ABC1234"/>
+            </identifier>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-report-type"/>
+                  <code value="Impurities Report"/>
+                  <display value="Impurities Report"/>
+               </coding>
+            </code>
+            <effectiveDateTime value="2020-12"/>
+            <!-- start of impurity test -->
+            <performer>
+                    <!--Organization/tester-->
+               <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
+            </performer>
+            <result>
+                    <!--Observation/observationDegradation-impCd-->
+               <reference value="Observation/ab7997fa-7b46-1175-3f01-6f6997f7878a"/>
+            </result>
+            <result>
+                    <!--Observation/observationDegradation-impCd-2-->
+               <reference value="Observation/4052f28b-64a2-392d-35e4-ec8e912434d2"/>
+            </result>
+            <result>
+                    <!--Observation/observationDegradation-impCd-3-->
+               <reference value="Observation/34ebc51d-8105-0589-3c8d-e7aa6bd0a06c"/>
+            </result>
+            <result>
+                    <!--Observation/observationDegradation-impPb-->
+               <reference value="Observation/2940bf11-05bf-6ce2-3c64-457d0d1f9913"/>
+            </result>
+            <result>
+                    <!--Observation/observationDegradation-impPb-2-->
+               <reference value="Observation/332b1e76-6f70-2b4e-5d0c-f22a0e042d3e"/>
+            </result>
+            <result>
+                    <!--Observation/observationDegradation-impPb-3-->
+               <reference value="Observation/f0a13a3b-2e8b-594f-6874-6050511e4c57"/>
+            </result>
+            <result>
+                    <!--Observation/observationDegradation-impAs-->
+               <reference value="Observation/7fe7ccd7-6449-0186-2282-3eeb4cf6a795"/>
+            </result>
+            <result>
+                    <!--Observation/observationDegradation-impAs-2-->
+               <reference value="Observation/be016630-8754-7414-9014-21e020ad66c6"/>
+            </result>
+            <result>
+                    <!--Observation/observationDegradation-impAs-3-->
+               <reference value="Observation/92568f68-78f3-908c-6935-ff5f3d574dd6"/>
+            </result>
+            <result>
+                    <!--Observation/observationDegradation-impHg-->
+               <reference value="Observation/7fe7ccd7-6449-0186-2282-3eeb4cf6a796"/>
+            </result>
+            <result>
+                    <!--Observation/observationDegradation-impHg-2-->
+               <reference value="Observation/be016630-8754-7414-9014-21e020ad66c7"/>
+            </result>
+            <result>
+                    <!--Observation/observationDegradation-impHg-3-->
+               <reference value="Observation/92568f68-78f3-908c-6935-ff5f3d574dd7"/>
+            </result>
+            <result>
+                    <!--Observation/observationDegradation-impCo-->
+               <reference value="Observation/a0ba0f6d-8ec0-846a-a70d-f6bca6d01a12"/>
+            </result>
+            <result>
+                    <!--Observation/observationDegradation-impCo-2-->
+               <reference value="Observation/d8533dcb-03f8-5997-6ccf-4f9b6f7a5745"/>
+            </result>
+            <result>
+                    <!--Observation/observationDegradation-impCo-3-->
+               <reference value="Observation/7cec19a2-34a7-6b80-3d60-083b2cc64fcb"/>
+            </result>
+            <result>
+                    <!--Observation/observationDegradation-impV-->
+               <reference value="Observation/27aa47fd-7964-4f96-6495-b2bec7f160e7"/>
+            </result>
+            <result>
+                    <!--Observation/observationDegradation-impV-2-->
+               <reference value="Observation/6a78bcde-4781-226c-946e-a4b6915c1899"/>
+            </result>
+            <result>
+                    <!--Observation/observationDegradation-impV-3-->
+               <reference value="Observation/f9f11088-7527-947c-3d3f-e71b32e13c78"/>
+            </result>
+            <result>
+                    <!--Observation/observationDegradation-impNi-->
+               <reference value="Observation/27aa47fd-7964-4f96-6495-b2bec7f160e8"/>
+            </result>
+            <result>
+                    <!--Observation/observationDegradation-impNi-2-->
+               <reference value="Observation/6a78bcde-4781-226c-946e-a4b6915c1890"/>
+            </result>
+            <result>
+                    <!--Observation/observationDegradation-impNi-3-->
+               <reference value="Observation/f9f11088-7527-947c-3d3f-e71b32e13c79"/>
+            </result>
+            <result>
+                    <!--Observation/observationDegradation-impCu-->
+               <reference value="Observation/27aa47fd-7964-4f96-6495-b2bec7f160e9"/>
+            </result>
+            <result>
+                    <!--Observation/observationDegradation-impCu-2-->
+               <reference value="Observation/6a78bcde-4781-226c-946e-a4b6915c189b"/>
+            </result>
+            <result>
+                    <!--Observation/observationDegradation-impCu-3-->
+               <reference value="Observation/f9f11088-7527-947c-3d3f-e71b32e13c70"/>
+            </result>
+            <conclusion value="1. Elemental Impurities - No elemental impurities are intentionally added during the manufacturing of drug product..."/>
+         </DiagnosticReport>
+      </resource>
+   </entry>
+   <!-- Section 11 - Stability Study - Results -->
+   <entry>
+      <fullUrl value="urn:uuid:339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
+      <resource>
+         <Medication>
+                <!--medication-actual-batch-->
+            <id value="339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
+            <code>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">
+                  <valueReference> <!-- todo consider change this be the MID? --> 
+                            <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+                     <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
+                  </valueReference>
+               </extension>
+            </code>
+            <batch>
+               <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+                  <extension url="assignedManufacturer">
+                     <valueReference> 
+                                <!--Organization/manufacturer-->
+                        <reference value="Organization/0102bca4-46c1-a6bf-1025-cd403fee710a"/>
+                     </valueReference>
+                  </extension>
+               </extension>
+               <lotNumber value="33445"/>
+            </batch>
+         </Medication>
+      </resource>
+   </entry>
+   <!-- Section 8 - Batch or Lot Information (another batch 2 of 3) -->
+   <entry>
+      <fullUrl value="urn:uuid:a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
+      <resource>
+         <Medication>
+                <!--medication-actual-batch-2-->
+            <id value="a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
+            <code>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">
+                  <valueReference>
+                            <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+                     <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
+                  </valueReference>
+               </extension>
+            </code>
+            <batch>
+               <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+                  <extension url="assignedManufacturer">
+                     <valueReference>
+                                <!--Organization/manufacturer-->
+                        <reference value="Organization/0102bca4-46c1-a6bf-1025-cd403fee710a"/>
+                     </valueReference>
+                  </extension>
+               </extension>
+               <lotNumber value="33446"/>
+            </batch>
+         </Medication>
+      </resource>
+   </entry>
+   <!-- Section 8 - Batch or Lot Information (another batch 3 of 3) -->
+   <entry>
+      <fullUrl value="urn:uuid:c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
+      <resource>
+         <Medication>
+                <!--medication-actual-batch-3-->
+            <id value="c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
+            <code>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">
+                  <valueReference>
+                            <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+                     <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
+                  </valueReference>
+               </extension>
+            </code>
+            <batch>
+               <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+                  <extension url="assignedManufacturer">
+                     <valueReference>
+                                <!--Organization/manufacturer-->
+                        <reference value="Organization/0102bca4-46c1-a6bf-1025-cd403fee710a"/>
+                     </valueReference>
+                  </extension>
+               </extension>
+               <lotNumber value="33447"/>
+            </batch>
+         </Medication>
+      </resource>
+   </entry>
+   <!-- Section 4.1 - Manufacturer -->
+   <entry>
+      <fullUrl value="urn:uuid:0102bca4-46c1-a6bf-1025-cd403fee710a"/>
+      <resource>
+         <Organization>
+                <!--manufacturer-->
+            <id value="0102bca4-46c1-a6bf-1025-cd403fee710a"/>
+            <identifier>
+                    <!-- FDA establishment identifier -->
+               <system value="urn:oid:2.16.840.1.113883.4.82"/>
+               <value value="3010027650"/>
+            </identifier>
+            <active value="true"/>
+            <type>
+               <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type"/>
+                  <code value="drug-product-manufacture"/>
+                  <display value="Drug Product Manufacture"/>
+               </coding>
+            </type>
+            <name value="AAA Pharmaceutical, Inc."/>
+            <contact>
+               <address>
+                  <line value="681 Main Street"/>
+                  <city value="Lumberton"/>
+                  <state value="New Jersey"/>
+                  <postalCode value="08048"/>
+                  <country value="USA"/>
+               </address>
+            </contact>
+         </Organization>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:ab7997fa-7b46-1175-3f01-6f6997f7878a"/>
+      <resource>
+         <Observation>
+                <!--observationDegradation-impCd-->
+            <id value="ab7997fa-7b46-1175-3f01-6f6997f7878a"/>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="DGP"/>
+                  <display value="Degradation Products"/>
+               </coding>
+               <text value="Degradation Products"/>
+            </code>
+            <subject>
+                    <!--Medication/medication-actual-batch-->
+               <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/tester-->
+               <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
+            </performer>
+            <valueQuantity>
+               <value value="5"/>
+               <comparator value="&lt;"/>
+               <unit value="ppm"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="[ppm]"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <coding>
+                     <system value="http://snomed.info/sct"/>
+                     <code value="66586000"/>
+                     <display value="Cadmium (substance)"/>
+                  </coding>
+                  <text value="Cd"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:4052f28b-64a2-392d-35e4-ec8e912434d2"/>
+      <resource>
+         <Observation>
+                <!--observationDegradation-impCd-2-->
+            <id value="4052f28b-64a2-392d-35e4-ec8e912434d2"/>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="DGP"/>
+                  <display value="Degradation Products"/>
+               </coding>
+               <text value="Degradation Products"/>
+            </code>
+            <subject>
+                    <!--Medication/medication-actual-batch-2-->
+               <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/tester-->
+               <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
+            </performer>
+            <valueString value="ND"/>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <coding>
+                     <system value="http://snomed.info/sct"/>
+                     <code value="66586000"/>
+                     <display value="Cadmium (substance)"/>
+                  </coding>
+                  <text value="Cd"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:34ebc51d-8105-0589-3c8d-e7aa6bd0a06c"/>
+      <resource>
+         <Observation>
+                <!--observationDegradation-impCd-3-->
+            <id value="34ebc51d-8105-0589-3c8d-e7aa6bd0a06c"/>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="DGP"/>
+                  <display value="Degradation Products"/>
+               </coding>
+               <text value="Degradation Products"/>
+            </code>
+            <subject>
+                    <!--Medication/medication-actual-batch-3-->
+               <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/tester-->
+               <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
+            </performer>
+            <valueString value="ND"/>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <coding>
+                     <system value="http://snomed.info/sct"/>
+                     <code value="66586000"/>
+                     <display value="Cadmium (substance)"/>
+                  </coding>
+                  <text value="Cd"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:2940bf11-05bf-6ce2-3c64-457d0d1f9913"/>
+      <resource>
+         <Observation>
+                <!--observationDegradation-impPb-->
+            <id value="2940bf11-05bf-6ce2-3c64-457d0d1f9913"/>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="DGP"/>
+                  <display value="Degradation Products"/>
+               </coding>
+               <text value="Degradation Products"/>
+            </code>
+            <subject>
+                    <!--Medication/medication-actual-batch-->
+               <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/tester-->
+               <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
+            </performer>
+            <valueString value="ND"/>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <coding>
+                     <system value="http://snomed.info/sct"/>
+                     <code value="88488004"/>
+                     <display value="Lead (substance)"/>
+                  </coding>
+                  <text value="Pb"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:332b1e76-6f70-2b4e-5d0c-f22a0e042d3e"/>
+      <resource>
+         <Observation>
+                <!--observationDegradation-impPb-2-->
+            <id value="332b1e76-6f70-2b4e-5d0c-f22a0e042d3e"/>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="DGP"/>
+                  <display value="Degradation Products"/>
+               </coding>
+               <text value="Degradation Products"/>
+            </code>
+            <subject>
+                    <!--Medication/medication-actual-batch-2-->
+               <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/tester-->
+               <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
+            </performer>
+            <valueString value="ND"/>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <coding>
+                     <system value="http://snomed.info/sct"/>
+                     <code value="88488004"/>
+                     <display value="Lead (substance)"/>
+                  </coding>
+                  <text value="Pb"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:f0a13a3b-2e8b-594f-6874-6050511e4c57"/>
+      <resource>
+         <Observation>
+                <!--observationDegradation-impPb-3-->
+            <id value="f0a13a3b-2e8b-594f-6874-6050511e4c57"/>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="DGP"/>
+                  <display value="Degradation Products"/>
+               </coding>
+               <text value="Degradation Products"/>
+            </code>
+            <subject>
+                    <!--Medication/medication-actual-batch-3-->
+               <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/tester-->
+               <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
+            </performer>
+            <valueString value="ND"/>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <coding>
+                     <system value="http://snomed.info/sct"/>
+                     <code value="88488004"/>
+                     <display value="Lead (substance)"/>
+                  </coding>
+                  <text value="Pb"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:7fe7ccd7-6449-0186-2282-3eeb4cf6a795"/>
+      <resource>
+         <Observation>
+                <!--observationDegradation-impAs-->
+            <id value="7fe7ccd7-6449-0186-2282-3eeb4cf6a795"/>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="DGP"/>
+                  <display value="Degradation Products"/>
+               </coding>
+               <text value="Degradation Products"/>
+            </code>
+            <subject>
+                    <!--Medication/medication-actual-batch-->
+               <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/tester-->
+               <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
+            </performer>
+            <valueQuantity>
+               <value value="10"/>
+               <comparator value="&lt;"/>
+               <unit value="ppm"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="[ppm]"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <coding>
+                     <system value="http://snomed.info/sct"/>
+                     <code value="47809000"/>
+                     <display value="Arsenic (substance)"/>
+                  </coding>
+                  <text value="As"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:be016630-8754-7414-9014-21e020ad66c6"/>
+      <resource>
+         <Observation>
+                <!--observationDegradation-impAs-2-->
+            <id value="be016630-8754-7414-9014-21e020ad66c6"/>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="DGP"/>
+                  <display value="Degradation Products"/>
+               </coding>
+               <text value="Degradation Products"/>
+            </code>
+            <subject>
+                    <!--Medication/medication-actual-batch-2-->
+               <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/tester-->
+               <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
+            </performer>
+            <valueQuantity>
+               <value value="10"/>
+               <comparator value="&lt;"/>
+               <unit value="ppm"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="[ppm]"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <coding>
+                     <system value="http://snomed.info/sct"/>
+                     <code value="47809000"/>
+                     <display value="Arsenic (substance)"/>
+                  </coding>
+                  <text value="As"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:92568f68-78f3-908c-6935-ff5f3d574dd6"/>
+      <resource>
+         <Observation>
+                <!--observationDegradation-impAs-3-->
+            <id value="92568f68-78f3-908c-6935-ff5f3d574dd6"/>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="DGP"/>
+                  <display value="Degradation Products"/>
+               </coding>
+               <text value="Degradation Products"/>
+            </code>
+            <subject>
+                    <!--Medication/medication-actual-batch-3-->
+               <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/tester-->
+               <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
+            </performer>
+            <valueQuantity>
+               <value value="5"/>
+               <comparator value="&lt;"/>
+               <unit value="ppm"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="[ppm]"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <coding>
+                     <system value="http://snomed.info/sct"/>
+                     <code value="47809000"/>
+                     <display value="Arsenic (substance)"/>
+                  </coding>
+                  <text value="As"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:7fe7ccd7-6449-0186-2282-3eeb4cf6a796"/>
+      <resource>
+         <Observation>
+                <!--observationDegradation-impHg-->
+            <id value="7fe7ccd7-6449-0186-2282-3eeb4cf6a796"/>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="DGP"/>
+                  <display value="Degradation Products"/>
+               </coding>
+               <text value="Degradation Products"/>
+            </code>
+            <subject>
+                    <!--Medication/medication-actual-batch-->
+               <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/tester-->
+               <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
+            </performer>
+            <valueString value="ND"/>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <coding>
+                     <system value="http://snomed.info/sct"/>
+                     <code value="45262002"/>
+                     <display value="Mercury (substance)"/>
+                  </coding>
+                  <text value="Hg"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:be016630-8754-7414-9014-21e020ad66c7"/>
+      <resource>
+         <Observation>
+                <!--observationDegradation-impHg-2-->
+            <id value="be016630-8754-7414-9014-21e020ad66c7"/>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="DGP"/>
+                  <display value="Degradation Products"/>
+               </coding>
+               <text value="Degradation Products"/>
+            </code>
+            <subject>
+                    <!--Medication/medication-actual-batch-2-->
+               <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/tester-->
+               <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
+            </performer>
+            <valueQuantity>
+               <value value="10"/>
+               <comparator value="&lt;"/>
+               <unit value="ppm"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="[ppm]"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <coding>
+                     <system value="http://snomed.info/sct"/>
+                     <code value="45262002"/>
+                     <display value="Mercury (substance)"/>
+                  </coding>
+                  <text value="Hg"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:92568f68-78f3-908c-6935-ff5f3d574dd7"/>
+      <resource>
+         <Observation>
+                <!--observationDegradation-impHg-3-->
+            <id value="92568f68-78f3-908c-6935-ff5f3d574dd7"/>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="DGP"/>
+                  <display value="Degradation Products"/>
+               </coding>
+               <text value="Degradation Products"/>
+            </code>
+            <subject>
+                    <!--Medication/medication-actual-batch-3-->
+               <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/tester-->
+               <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
+            </performer>
+            <valueString value="ND"/>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <coding>
+                     <system value="http://snomed.info/sct"/>
+                     <code value="45262002"/>
+                     <display value="Mercury (substance)"/>
+                  </coding>
+                  <text value="Hg"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:a0ba0f6d-8ec0-846a-a70d-f6bca6d01a12"/>
+      <resource>
+         <Observation>
+                <!--observationDegradation-impCo-->
+            <id value="a0ba0f6d-8ec0-846a-a70d-f6bca6d01a12"/>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="DGP"/>
+                  <display value="Degradation Products"/>
+               </coding>
+               <text value="Degradation Products"/>
+            </code>
+            <subject>
+                    <!--Medication/medication-actual-batch-->
+               <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/tester-->
+               <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
+            </performer>
+            <valueQuantity>
+               <value value="50"/>
+               <comparator value="&lt;"/>
+               <unit value="ppm"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="[ppm]"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <coding>
+                     <system value="http://snomed.info/sct"/>
+                     <code value="54808007"/>
+                     <display value="Cobalt (substance)"/>
+                  </coding>
+                  <text value="Co"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:d8533dcb-03f8-5997-6ccf-4f9b6f7a5745"/>
+      <resource>
+         <Observation>
+                <!--observationDegradation-impCo-2-->
+            <id value="d8533dcb-03f8-5997-6ccf-4f9b6f7a5745"/>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="DGP"/>
+                  <display value="Degradation Products"/>
+               </coding>
+               <text value="Degradation Products"/>
+            </code>
+            <subject>
+                    <!--Medication/medication-actual-batch-2-->
+               <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/tester-->
+               <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
+            </performer>
+            <valueQuantity>
+               <value value="50"/>
+               <comparator value="&lt;"/>
+               <unit value="ppm"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="[ppm]"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <coding>
+                     <system value="http://snomed.info/sct"/>
+                     <code value="54808007"/>
+                     <display value="Cobalt (substance)"/>
+                  </coding>
+                  <text value="Co"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:7cec19a2-34a7-6b80-3d60-083b2cc64fcb"/>
+      <resource>
+         <Observation>
+                <!--observationDegradation-impCo-3-->
+            <id value="7cec19a2-34a7-6b80-3d60-083b2cc64fcb"/>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="DGP"/>
+                  <display value="Degradation Products"/>
+               </coding>
+               <text value="Degradation Products"/>
+            </code>
+            <subject>
+                    <!--Medication/medication-actual-batch-3-->
+               <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/tester-->
+               <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
+            </performer>
+            <valueQuantity>
+               <value value="50"/>
+               <comparator value="&lt;"/>
+               <unit value="ppm"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="[ppm]"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <coding>
+                     <system value="http://snomed.info/sct"/>
+                     <code value="54808007"/>
+                     <display value="Cobalt (substance)"/>
+                  </coding>
+                  <text value="Co"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:27aa47fd-7964-4f96-6495-b2bec7f160e7"/>
+      <resource>
+         <Observation>
+                <!--observationDegradation-impV-->
+            <id value="27aa47fd-7964-4f96-6495-b2bec7f160e7"/>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="DGP"/>
+                  <display value="Degradation Products"/>
+               </coding>
+               <text value="Degradation Products"/>
+            </code>
+            <subject>
+                    <!--Medication/medication-actual-batch-->
+               <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/tester-->
+               <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
+            </performer>
+            <valueQuantity>
+               <value value="10"/>
+               <comparator value="&lt;"/>
+               <unit value="ppm"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="[ppm]"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <coding>
+                     <system value="http://snomed.info/sct"/>
+                     <code value="18925001"/>
+                     <display value="Vanadium (substance)"/>
+                  </coding>
+                  <text value="V"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:6a78bcde-4781-226c-946e-a4b6915c1899"/>
+      <resource>
+         <Observation>
+                <!--observationDegradation-impV-2-->
+            <id value="6a78bcde-4781-226c-946e-a4b6915c1899"/>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="DGP"/>
+                  <display value="Degradation Products"/>
+               </coding>
+               <text value="Degradation Products"/>
+            </code>
+            <subject>
+                    <!--Medication/medication-actual-batch-2-->
+               <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/tester-->
+               <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
+            </performer>
+            <valueQuantity>
+               <value value="10"/>
+               <comparator value="&lt;"/>
+               <unit value="ppm"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="[ppm]"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <coding>
+                     <system value="http://snomed.info/sct"/>
+                     <code value="18925001"/>
+                     <display value="Vanadium (substance)"/>
+                  </coding>
+                  <text value="V"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:f9f11088-7527-947c-3d3f-e71b32e13c78"/>
+      <resource>
+         <Observation>
+                <!--observationDegradation-impV-3-->
+            <id value="f9f11088-7527-947c-3d3f-e71b32e13c78"/>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="DGP"/>
+                  <display value="Degradation Products"/>
+               </coding>
+               <text value="Degradation Products"/>
+            </code>
+            <subject>
+                    <!--Medication/medication-actual-batch-3-->
+               <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/tester-->
+               <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
+            </performer>
+            <valueQuantity>
+               <value value="10"/>
+               <comparator value="&lt;"/>
+               <unit value="ppm"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="[ppm]"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <coding>
+                     <system value="http://snomed.info/sct"/>
+                     <code value="18925001"/>
+                     <display value="Vanadium (substance)"/>
+                  </coding>
+                  <text value="V"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:27aa47fd-7964-4f96-6495-b2bec7f160e8"/>
+      <resource>
+         <Observation>
+                <!--observationDegradation-impNi-->
+            <id value="27aa47fd-7964-4f96-6495-b2bec7f160e8"/>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="DGP"/>
+                  <display value="Degradation Products"/>
+               </coding>
+               <text value="Degradation Products"/>
+            </code>
+            <subject>
+                    <!--Medication/medication-actual-batch-->
+               <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/tester-->
+               <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
+            </performer>
+            <valueString value="ND"/>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <coding>
+                     <system value="http://snomed.info/sct"/>
+                     <code value="33396006"/>
+                     <display value="Nickel (substance)"/>
+                  </coding>
+                  <text value="Ni"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:6a78bcde-4781-226c-946e-a4b6915c1890"/>
+      <resource>
+         <Observation>
+                <!--observationDegradation-impNi-2-->
+            <id value="6a78bcde-4781-226c-946e-a4b6915c1890"/>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="DGP"/>
+                  <display value="Degradation Products"/>
+               </coding>
+               <text value="Degradation Products"/>
+            </code>
+            <subject>
+                    <!--Medication/medication-actual-batch-2-->
+               <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/tester-->
+               <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
+            </performer>
+            <valueString value="ND"/>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <coding>
+                     <system value="http://snomed.info/sct"/>
+                     <code value="33396006"/>
+                     <display value="Nickel (substance)"/>
+                  </coding>
+                  <text value="Ni"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:f9f11088-7527-947c-3d3f-e71b32e13c79"/>
+      <resource>
+         <Observation>
+                <!--observationDegradation-impNi-3-->
+            <id value="f9f11088-7527-947c-3d3f-e71b32e13c79"/>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="DGP"/>
+                  <display value="Degradation Products"/>
+               </coding>
+               <text value="Degradation Products"/>
+            </code>
+            <subject>
+                    <!--Medication/medication-actual-batch-3-->
+               <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/tester-->
+               <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
+            </performer>
+            <valueString value="ND"/>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <coding>
+                     <system value="http://snomed.info/sct"/>
+                     <code value="33396006"/>
+                     <display value="Nickel (substance)"/>
+                  </coding>
+                  <text value="Ni"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:27aa47fd-7964-4f96-6495-b2bec7f160e9"/>
+      <resource>
+         <Observation>
+                <!--observationDegradation-impCu-->
+            <id value="27aa47fd-7964-4f96-6495-b2bec7f160e9"/>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="DGP"/>
+                  <display value="Degradation Products"/>
+               </coding>
+               <text value="Degradation Products"/>
+            </code>
+            <subject>
+                    <!--Medication/medication-actual-batch-->
+               <reference value="Medication/339b69fd-4ab1-a1e9-9ea5-1972ba2f6b51"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/tester-->
+               <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
+            </performer>
+            <valueQuantity>
+               <value value="250"/>
+               <unit value="ppm"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="[ppm]"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <coding>
+                     <system value="http://snomed.info/sct"/>
+                     <code value="66925006"/>
+                     <display value="Copper (substance)"/>
+                  </coding>
+                  <text value="Cu"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:6a78bcde-4781-226c-946e-a4b6915c189b"/>
+      <resource>
+         <Observation>
+                <!--observationDegradation-impCu-2-->
+            <id value="6a78bcde-4781-226c-946e-a4b6915c189b"/>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="DGP"/>
+                  <display value="Degradation Products"/>
+               </coding>
+               <text value="Degradation Products"/>
+            </code>
+            <subject>
+                    <!--Medication/medication-actual-batch-2-->
+               <reference value="Medication/a9dfda53-734b-045f-7ae4-94a6281d53bc"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/tester-->
+               <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
+            </performer>
+            <valueQuantity>
+               <value value="223"/>
+               <unit value="ppm"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="[ppm]"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <coding>
+                     <system value="http://snomed.info/sct"/>
+                     <code value="66925006"/>
+                     <display value="Copper (substance)"/>
+                  </coding>
+                  <text value="Cu"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:f9f11088-7527-947c-3d3f-e71b32e13c70"/>
+      <resource>
+         <Observation>
+                <!--observationDegradation-impCu-3-->
+            <id value="f9f11088-7527-947c-3d3f-e71b32e13c70"/>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="DGP"/>
+                  <display value="Degradation Products"/>
+               </coding>
+               <text value="Degradation Products"/>
+            </code>
+            <subject>
+                    <!--Medication/medication-actual-batch-3-->
+               <reference value="Medication/c6f5fadd-62e6-3a01-93d9-b3b182f67d06"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/tester-->
+               <reference value="Organization/e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
+            </performer>
+            <valueQuantity>
+               <value value="199"/>
+               <unit value="ppm"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="[ppm]"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <coding>
+                     <system value="http://snomed.info/sct"/>
+                     <code value="66925006"/>
+                     <display value="Copper (substance)"/>
+                  </coding>
+                  <text value="Cu"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:fec78d02-1ec2-48ac-bab3-5ed8b6adf9a3"/>
+      <resource>
+         <SubstanceDefinition>
+                <!--substance-cadmium-->
+            <id value="fec78d02-1ec2-48ac-bab3-5ed8b6adf9a3"/>
+            <property>
+               <type>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
+                     <code value="impurityClassificationMCP"/>
+                     <display value="Impurity Classification - Mutagenic and Carcinogenic Potential"/>
+                  </coding>
+               </type>
+               <valueCodeableConcept>
+                  <text value="Class 1"/>
+               </valueCodeableConcept>
+            </property>
+            <code>
+               <code>
+                  <coding>
+                     <system value="http://snomed.info/sct"/>
+                     <code value="66586000"/>
+                     <display value="Cadmium (substance)"/>
+                  </coding>
+               </code>
+            </code>
+         </SubstanceDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:fec78d02-1ec2-48ac-bab3-5ed8b6adf9a4"/>
+      <resource>
+         <SubstanceDefinition>
+                <!--substance-lead-->
+            <id value="fec78d02-1ec2-48ac-bab3-5ed8b6adf9a4"/>
+            <property>
+               <type>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
+                     <code value="impurityClassificationMCP"/>
+                     <display value="Impurity Classification - Mutagenic and Carcinogenic Potential"/>
+                  </coding>
+               </type>
+               <valueCodeableConcept>
+                  <text value="Class 1"/>
+               </valueCodeableConcept>
+            </property>
+            <code>
+               <code>
+                  <coding>
+                     <system value="http://snomed.info/sct"/>
+                     <code value="88488004"/>
+                     <display value="Lead (substance)"/>
+                  </coding>
+               </code>
+            </code>
+         </SubstanceDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:fec78d02-1ec2-48ac-bab3-5ed8b6adf9a5"/>
+      <resource>
+         <SubstanceDefinition>
+                <!--substance-arsenic-->
+            <id value="fec78d02-1ec2-48ac-bab3-5ed8b6adf9a5"/>
+            <property>
+               <type>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
+                     <code value="impurityClassificationMCP"/>
+                     <display value="Impurity Classification - Mutagenic and Carcinogenic Potential"/>
+                  </coding>
+               </type>
+               <valueCodeableConcept>
+                  <text value="Class 1"/>
+               </valueCodeableConcept>
+            </property>
+            <code>
+               <code>
+                  <coding>
+                     <system value="http://snomed.info/sct"/>
+                     <code value="47809000"/>
+                     <display value="Arsenic (substance)"/>
+                  </coding>
+               </code>
+            </code>
+         </SubstanceDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:fec78d02-1ec2-48ac-bab3-5ed8b6adf9a6"/>
+      <resource>
+         <SubstanceDefinition>
+                <!--substance-mercury-->
+            <id value="fec78d02-1ec2-48ac-bab3-5ed8b6adf9a6"/>
+            <property>
+               <type>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
+                     <code value="impurityClassificationMCP"/>
+                     <display value="Impurity Classification - Mutagenic and Carcinogenic Potential"/>
+                  </coding>
+               </type>
+               <valueCodeableConcept>
+                  <text value="Class 1"/>
+               </valueCodeableConcept>
+            </property>
+            <code>
+               <code>
+                  <coding>
+                     <system value="http://snomed.info/sct"/>
+                     <code value="45262002"/>
+                     <display value="Mercury (substance)"/>
+                  </coding>
+               </code>
+            </code>
+         </SubstanceDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:fec78d02-1ec2-48ac-bab3-5ed8b6adf9a7"/>
+      <resource>
+         <SubstanceDefinition>
+                <!--substance-cobalt-->
+            <id value="fec78d02-1ec2-48ac-bab3-5ed8b6adf9a7"/>
+            <property>
+               <type>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
+                     <code value="impurityClassificationMCP"/>
+                     <display value="Impurity Classification - Mutagenic and Carcinogenic Potential"/>
+                  </coding>
+               </type>
+               <valueCodeableConcept>
+                  <text value="Class 2"/>
+               </valueCodeableConcept>
+            </property>
+            <code>
+               <code>
+                  <coding>
+                     <system value="http://snomed.info/sct"/>
+                     <code value="54808007"/>
+                     <display value="Cobalt (substance)"/>
+                  </coding>
+               </code>
+            </code>
+         </SubstanceDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:fec78d02-1ec2-48ac-bab3-5ed8b6adf9a8"/>
+      <resource>
+         <SubstanceDefinition>
+                <!--substance-vanadium-->
+            <id value="fec78d02-1ec2-48ac-bab3-5ed8b6adf9a8"/>
+            <property>
+               <type>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
+                     <code value="impurityClassificationMCP"/>
+                     <display value="Impurity Classification - Mutagenic and Carcinogenic Potential"/>
+                  </coding>
+               </type>
+               <valueCodeableConcept>
+                  <text value="Class 2"/>
+               </valueCodeableConcept>
+            </property>
+            <code>
+               <code>
+                  <coding>
+                     <system value="http://snomed.info/sct"/>
+                     <code value="18925001"/>
+                     <display value="Vanadium (substance)"/>
+                  </coding>
+               </code>
+            </code>
+         </SubstanceDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:fec78d02-1ec2-48ac-bab3-5ed8b6adf9a9"/>
+      <resource>
+         <SubstanceDefinition>
+                <!--substance-nickel-->
+            <id value="fec78d02-1ec2-48ac-bab3-5ed8b6adf9a9"/>
+            <property>
+               <type>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
+                     <code value="impurityClassificationMCP"/>
+                     <display value="Impurity Classification - Mutagenic and Carcinogenic Potential"/>
+                  </coding>
+               </type>
+               <valueCodeableConcept>
+                  <text value="Class 2"/>
+               </valueCodeableConcept>
+            </property>
+            <code>
+               <code>
+                  <coding>
+                     <system value="http://snomed.info/sct"/>
+                     <code value="33396006"/>
+                     <display value="Nickel (substance)"/>
+                  </coding>
+               </code>
+            </code>
+         </SubstanceDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:fec78d02-1ec2-48ac-bab3-5ed8b6adf9a0"/>
+      <resource>
+         <SubstanceDefinition>
+                <!--substance-copper-->
+            <id value="fec78d02-1ec2-48ac-bab3-5ed8b6adf9a0"/>
+            <property>
+               <type>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-substance-property-pq-example"/>
+                     <code value="impurityClassificationMCP"/>
+                     <display value="Impurity Classification - Mutagenic and Carcinogenic Potential"/>
+                  </coding>
+               </type>
+               <valueCodeableConcept>
+                  <text value="Class 3"/>
+               </valueCodeableConcept>
+            </property>
+            <code>
+               <code>
+                  <coding>
+                     <system value="http://snomed.info/sct"/>
+                     <code value="66925006"/>
+                     <display value="Copper (substance)"/>
+                  </coding>
+               </code>
+            </code>
+         </SubstanceDefinition>
+      </resource>
+   </entry>
+   <!-- MedicinalProductDefinition - the main resource in any product scenario -->
+   <entry>
+      <fullUrl value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
+      <resource>
+            <!-- Section 1.1 - DP Identification -->
+         <MedicinalProductDefinition>
+                <!--medicinalproductdefinition-drug-product-dxpq-ex1-->
+            <id value="a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
+            <description value="Textual description of the product"/>
+            <combinedPharmaceuticalDoseForm>
+               <coding>
+                  <system value="http://standardterms.edqm.eu"/>
+                  <code value="10225000"/>
+                  <display value="Gastro-resistant tablet"/>
+               </coding>
+            </combinedPharmaceuticalDoseForm>
+            <route>
+               <coding>
+                  <system value="http://standardterms.edqm.eu"/>
+                  <code value="20053000"/>
+                  <display value="Oral use"/>
+               </coding>
+            </route>
+            <impurity>
+               <reference>
+                        <!--SubstanceDefinition/substance-cadmium-->
+                  <reference value="SubstanceDefinition/fec78d02-1ec2-48ac-bab3-5ed8b6adf9a3"/>
+               </reference>
+            </impurity>
+            <impurity>
+               <reference>
+                        <!--SubstanceDefinition/substance-lead-->
+                  <reference value="SubstanceDefinition/fec78d02-1ec2-48ac-bab3-5ed8b6adf9a4"/>
+               </reference>
+            </impurity>
+            <impurity>
+               <reference>
+                        <!--SubstanceDefinition/substance-arsenic-->
+                  <reference value="SubstanceDefinition/fec78d02-1ec2-48ac-bab3-5ed8b6adf9a5"/>
+               </reference>
+            </impurity>
+            <impurity>
+               <reference>
+                        <!--SubstanceDefinition/substance-mercury-->
+                  <reference value="SubstanceDefinition/fec78d02-1ec2-48ac-bab3-5ed8b6adf9a6"/>
+               </reference>
+            </impurity>
+            <impurity>
+               <reference>
+                        <!--SubstanceDefinition/substance-cobalt-->
+                  <reference value="SubstanceDefinition/fec78d02-1ec2-48ac-bab3-5ed8b6adf9a7"/>
+               </reference>
+            </impurity>
+            <impurity>
+               <reference>
+                        <!--SubstanceDefinition/substance-copper-->
+                  <reference value="SubstanceDefinition/fec78d02-1ec2-48ac-bab3-5ed8b6adf9a0"/>
+               </reference>
+            </impurity>
+            <impurity>
+               <reference>
+                        <!--SubstanceDefinition/substance-vanadium-->
+                  <reference value="SubstanceDefinition/fec78d02-1ec2-48ac-bab3-5ed8b6adf9a8"/>
+               </reference>
+            </impurity>
+            <impurity>
+               <reference>
+                        <!--SubstanceDefinition/substance-nickel-->
+                  <reference value="SubstanceDefinition/fec78d02-1ec2-48ac-bab3-5ed8b6adf9a9"/>
+               </reference>
+            </impurity>
+            <name>
+               <productName value="Stelbat Tablets, 20mg"/>
+               <type>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-pq-example"/>
+                     <code value="Proprietary"/>
+                     <display value="Proprietary"/>
+                  </coding>
+               </type>
+               <part>
+                  <part value="20mg"/>
+                  <type>
+                     <coding>
+                        <system value="http://hl7.org/fhir/medicinal-product-name-part-type"/>
+                        <code value="StrengthPart"/>
+                        <display value="Strength part"/>
+                     </coding>
+                  </type>
+               </part>
+            </name>
+         </MedicinalProductDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
+      <resource>
+         <Organization>
+                <!--tester-->
+            <id value="e3d2bc19-2f10-2b4d-1741-e4135fe612a9"/>
+            <identifier>
+               <system value="urn:oid:2.16.840.1.113883.4.82"/>
+               <value value="3007270600"/>
+               <!-- could also use assigner here, for #74 -->
+            </identifier>
+            <active value="true"/>
+            <type>
+               <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type"/>
+                  <code value="analytical-testing-release"/>
+                  <display value="Analytical Testing - Release"/>
+               </coding>
+            </type>
+            <name value="Advanced Analytical Testing Laboratories Inc."/>
+            <contact>
+               <address>
+                  <line value="30 Silverline Drive"/>
+                  <city value="North Brunswick"/>
+                  <state value="New Jersey"/>
+                  <postalCode value="08902"/>
+                  <country value="USA"/>
+               </address>
+            </contact>
+         </Organization>
+      </resource>
+   </entry>
+</Bundle>

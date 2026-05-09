@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+   <id value="bundle-batch-formula-pq-ex1"/>
+   <meta>
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-formula-pq"/>
+   </meta>
+   <type value="collection"/>
+   <!-- MedicinalProductDefinition - the main resource in any product scenario -->
+   <entry>
+      <fullUrl value="urn:uuid:a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
+      <resource>
+         <!-- Section 1.1 - DP Identification -->
+         <MedicinalProductDefinition>
+            <!--medicinalproductdefinition-drug-product-dxpq-ex1-->
+            <id value="a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
+            <name>
+               <productName value="Stalbatolol"/>
+               <type>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-productNameType-pq-example"/>
+                     <code value="Proprietary"/>
+                     <display value="Proprietary"/>
+                  </coding>
+               </type>
+            </name>
+         </MedicinalProductDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a65"/>
+      <resource>
+         <Ingredient>
+            <!--ingredient1-->
+            <id value="b89ed9d2-80f9-0cfb-70a1-5a6572e73a65"/>
+            <status value="active"/>
+            <for>
+               <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+               <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
+            </for>
+            <role>
+               <coding>
+                  <system value="http://hl7.org/fhir/ingredient-role"/>
+                  <code value="100000072072"/>
+                  <display value="Active"/>
+               </coding>
+            </role>
+            <substance>
+               <code>
+                  <reference>
+                     <!--SubstanceDefinition/substance1-->
+                     <reference value="SubstanceDefinition/4cf2cbba-33e6-1124-9bf2-1c6756380474"/>
+                     <display value="Stelbatolol"/>
+                  </reference>
+               </code>
+               <strength>
+                  <presentationRatio>
+                     <numerator>
+                        <value value="15.2"/>
+                        <unit value="mg"/>
+                     </numerator>
+                     <denominator>
+                        <value value="1"/>
+                        <unit value="tablet"/>
+                     </denominator>
+                  </presentationRatio>
+               </strength>
+            </substance>
+         </Ingredient>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:b89fd9d2-80f9-0cfb-70a1-5a6572e73a65"/>
+      <resource>
+         <Ingredient>
+            <!--excipient1-->
+            <id value="b89fd9d2-80f9-0cfb-70a1-5a6572e73a65"/>
+            <status value="active"/>
+            <for>
+               <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+               <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
+            </for>
+            <role>
+               <coding>
+                  <system value="http://hl7.org/fhir/ingredient-role"/>
+                  <code value="100000072082"/>
+                  <display value="Excipient"/>
+               </coding>
+            </role>
+            <substance>
+               <code>
+                  <reference>
+                     <display value="Mannitol"/>
+                  </reference>
+               </code>
+               <strength>
+                  <presentationRatio>
+                     <numerator>
+                        <value value="145.0"/>
+                        <unit value="mg"/>
+                     </numerator>
+                     <denominator>
+                        <value value="1"/>
+                        <unit value="tablet"/>
+                     </denominator>
+                  </presentationRatio>
+               </strength>
+            </substance>
+         </Ingredient>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:b89ed9d2-81f9-0cfb-70a1-5a6572e73a65"/>
+      <resource>
+         <Ingredient>
+            <!--excipient2-->
+            <id value="b89ed9d2-81f9-0cfb-70a1-5a6572e73a65"/>
+            <status value="active"/>
+            <for>
+               <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+               <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
+            </for>
+            <role>
+               <coding>
+                  <system value="http://hl7.org/fhir/ingredient-role"/>
+                  <code value="100000072082"/>
+                  <display value="Excipient"/>
+               </coding>
+            </role>
+            <substance>
+               <code>
+                  <reference>
+                     <display value="Maize starch"/>
+                  </reference>
+               </code>
+               <strength>
+                  <presentationRatio>
+                     <numerator>
+                        <value value="13.8"/>
+                        <unit value="mg"/>
+                     </numerator>
+                     <denominator>
+                        <value value="1"/>
+                        <unit value="tablet"/>
+                     </denominator>
+                  </presentationRatio>
+               </strength>
+            </substance>
+         </Ingredient>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:b89ed9d2-80f9-0cfb-70a1-5a6572e73a66"/>
+      <resource>
+         <Ingredient>
+            <!--excipient3-->
+            <id value="b89ed9d2-80f9-0cfb-70a1-5a6572e73a66"/>
+            <status value="active"/>
+            <for>
+               <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+               <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
+            </for>
+            <role>
+               <coding>
+                  <system value="http://hl7.org/fhir/ingredient-role"/>
+                  <code value="100000072082"/>
+                  <display value="Excipient"/>
+               </coding>
+            </role>
+            <substance>
+               <code>
+                  <reference>
+                     <display value="Calcium carboxymethylcellulose"/>
+                  </reference>
+               </code>
+               <strength>
+                  <presentationRatio>
+                     <numerator>
+                        <value value="4.0"/>
+                        <unit value="mg"/>
+                     </numerator>
+                     <denominator>
+                        <value value="1"/>
+                        <unit value="tablet"/>
+                     </denominator>
+                  </presentationRatio>
+               </strength>
+            </substance>
+         </Ingredient>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:b89ed9d2-80f9-0cfb-70b1-5a6572e73a66"/>
+      <resource>
+         <Ingredient>
+            <!--excipient4-->
+            <id value="b89ed9d2-80f9-0cfb-70b1-5a6572e73a66"/>
+            <status value="active"/>
+            <for>
+               <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+               <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
+            </for>
+            <role>
+               <coding>
+                  <system value="http://hl7.org/fhir/ingredient-role"/>
+                  <code value="100000072082"/>
+                  <display value="Excipient"/>
+               </coding>
+            </role>
+            <substance>
+               <code>
+                  <reference>
+                     <display value="Magnesium stearate"/>
+                  </reference>
+               </code>
+               <strength>
+                  <presentationRatio>
+                     <numerator>
+                        <value value="2.0"/>
+                        <unit value="mg"/>
+                     </numerator>
+                     <denominator>
+                        <value value="1"/>
+                        <unit value="tablet"/>
+                     </denominator>
+                  </presentationRatio>
+               </strength>
+            </substance>
+         </Ingredient>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:4cf2cbba-33e6-1124-9bf2-1c6756380474"/>
+      <resource>
+         <SubstanceDefinition>
+            <!--substance1-->
+            <id value="4cf2cbba-33e6-1124-9bf2-1c6756380474"/>
+            <name>
+               <name value="Stelbatolol"/>
+            </name>
+         </SubstanceDefinition>
+      </resource>
+   </entry>
+   <!-- Section 7 - Batch Formula -->
+   <entry>
+      <fullUrl value="urn:uuid:bf17176f-9779-180b-5c59-e58cddc11070"/>
+      <resource>
+         <Medication>
+            <!--medication-batch-formula-unlinked-->
+            <id value="bf17176f-9779-180b-5c59-e58cddc11070"/>
+            <contained>
+               <Substance>
+                  <id value="substanceIngredient-1"/>
+                  <instance value="false"/>
+                  <code>
+                     <reference>
+                        <!--SubstanceDefinition/substance1-->
+                        <reference value="SubstanceDefinition/4cf2cbba-33e6-1124-9bf2-1c6756380474"/>
+                     </reference>
+                  </code>
+               </Substance>
+            </contained>
+            <contained>
+               <Substance>
+                  <id value="substanceExcipient-1"/>
+                  <instance value="false"/>
+                  <code>
+                     <reference>
+                        <display value="Mannitol"/>
+                     </reference>
+                  </code>
+               </Substance>
+            </contained>
+            <contained>
+               <Substance>
+                  <id value="substanceExcipient-2"/>
+                  <instance value="false"/>
+                  <code>
+                     <reference>
+                        <display value="Maize starch"/>
+                     </reference>
+                  </code>
+               </Substance>
+            </contained>
+            <contained>
+               <Substance>
+                  <id value="substanceExcipient-3"/>
+                  <instance value="false"/>
+                  <code>
+                     <reference>
+                        <display value="Calcium carboxymethylcellulose"/>
+                     </reference>
+                  </code>
+               </Substance>
+            </contained>
+            <contained>
+               <Substance>
+                  <id value="substanceExcipient-4"/>
+                  <instance value="false"/>
+                  <code>
+                     <reference>
+                        <display value="Magnesium stearate"/>
+                     </reference>
+                  </code>
+               </Substance>
+            </contained>
+            <code>
+               <!-- some other cases link via plandef and activity.product -->
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">
+                  <valueReference>
+                     <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+                     <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
+                  </valueReference>
+               </extension>
+               <text value="Large Batch of Stelbatolol"/>
+            </code>
+            <ingredient>
+               <item>
+                  <reference>
+                     <reference value="#substanceIngredient-1"/>
+                     <display value="Stelbatolol"/>
+                  </reference>
+               </item>
+               <isActive value="true"/>
+               <strengthQuantity>
+                  <value value="10.98"/>
+                  <unit value="kg"/>
+               </strengthQuantity>
+            </ingredient>
+            <ingredient>
+               <item>
+                  <reference>
+                     <reference value="#substanceExcipient-1"/>
+                     <display value="Mannitol"/>
+                  </reference>
+               </item>
+               <isActive value="false"/>
+               <strengthQuantity>
+                  <value value="104.72"/>
+                  <unit value="kg"/>
+               </strengthQuantity>
+            </ingredient>
+            <ingredient>
+               <item>
+                  <reference>
+                     <reference value="#substanceExcipient-2"/>
+                     <display value="Maize starch"/>
+                  </reference>
+               </item>
+               <isActive value="false"/>
+               <strengthQuantity>
+                  <value value="9.98"/>
+                  <unit value="kg"/>
+               </strengthQuantity>
+            </ingredient>
+            <ingredient>
+               <item>
+                  <reference>
+                     <reference value="#substanceExcipient-3"/>
+                     <display value="Calcium carboxymethylcellulose"/>
+                  </reference>
+               </item>
+               <isActive value="false"/>
+               <strengthQuantity>
+                  <value value="2.90"/>
+                  <unit value="kg"/>
+               </strengthQuantity>
+            </ingredient>
+            <ingredient>
+               <item>
+                  <reference>
+                     <reference value="#substanceExcipient-4"/>
+                     <display value="Magnesium stearate"/>
+                  </reference>
+               </item>
+               <isActive value="false"/>
+               <strengthQuantity>
+                  <value value="1.44"/>
+                  <unit value="kg"/>
+               </strengthQuantity>
+            </ingredient>
+            <batch>
+<!--               <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+                  <extension url="batchQuantity">
+                     <valueQuantity>
+                        <value value="722000"/>
+                        <unit value="tablets"/>
+                     </valueQuantity>
+                  </extension>
+               </extension>-->
+               <!--            NEW Extension-->
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-items-pq">
+                  <valueQuantity>
+                     <value value="722000"/>
+                     <unit value="tablets"/>
+                  </valueQuantity>
+               </extension>
+               <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+                  <extension url="batchQuantity">
+                     <valueQuantity>
+                        <value value="130"/>
+                        <unit value="kg"/>
+                     </valueQuantity>
+                  </extension>
+               </extension>
+            </batch>
+         </Medication>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:bf17176f-9779-180b-5c59-e58cddc11071"/>
+      <resource>
+         <Medication>
+            <!--medication-batch-formula-2-unlinked-->
+            <id value="bf17176f-9779-180b-5c59-e58cddc11071"/>
+            <contained>
+               <Substance>
+                  <id value="substanceIngredient-1"/>
+                  <instance value="false"/>
+                  <code>
+                     <reference>
+                        <!--SubstanceDefinition/substance1-->
+                        <reference value="SubstanceDefinition/4cf2cbba-33e6-1124-9bf2-1c6756380474"/>
+                     </reference>
+                  </code>
+               </Substance>
+            </contained>
+            <contained>
+               <Substance>
+                  <id value="substanceExcipient-1"/>
+                  <instance value="false"/>
+                  <code>
+                     <reference>
+                        <display value="Mannitol"/>
+                     </reference>
+                  </code>
+               </Substance>
+            </contained>
+            <contained>
+               <Substance>
+                  <id value="substanceExcipient-2"/>
+                  <instance value="false"/>
+                  <code>
+                     <reference>
+                        <display value="Maize starch"/>
+                     </reference>
+                  </code>
+               </Substance>
+            </contained>
+            <contained>
+               <Substance>
+                  <id value="substanceExcipient-3"/>
+                  <instance value="false"/>
+                  <code>
+                     <reference>
+                        <display value="Calcium carboxymethylcellulose"/>
+                     </reference>
+                  </code>
+               </Substance>
+            </contained>
+            <contained>
+               <Substance>
+                  <id value="substanceExcipient-4"/>
+                  <instance value="false"/>
+                  <code>
+                     <reference>
+                        <display value="Magnesium stearate"/>
+                     </reference>
+                  </code>
+               </Substance>
+            </contained>
+            <code>
+               <!-- some other cases link via plandef and activity.product -->
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-medication-definition-pq">
+                  <valueReference>
+                     <!--MedicinalProductDefinition/medicinalproductdefinition-drug-product-dxpq-ex1-->
+                     <reference value="MedicinalProductDefinition/a0694a7a-aafa-4cbe-8135-c788a9a4d3d5"/>
+                  </valueReference>
+               </extension>
+               <text value="Small Batch of Stelbatolol"/>
+            </code>
+            <ingredient>
+               <item>
+                  <reference>
+                     <reference value="#substanceIngredient-1"/>
+                     <display value="Stelbatolol"/>
+                  </reference>
+               </item>
+               <isActive value="true"/>
+               <strengthQuantity>
+                  <value value="5.98"/>
+                  <unit value="kg"/>
+               </strengthQuantity>
+            </ingredient>
+            <ingredient>
+               <item>
+                  <reference>
+                     <reference value="#substanceExcipient-1"/>
+                     <display value="Mannitol"/>
+                  </reference>
+               </item>
+               <isActive value="false"/>
+               <strengthQuantity>
+                  <value value="52.36"/>
+                  <unit value="kg"/>
+               </strengthQuantity>
+            </ingredient>
+            <ingredient>
+               <item>
+                  <reference>
+                     <reference value="#substanceExcipient-2"/>
+                     <display value="Maize starch"/>
+                  </reference>
+               </item>
+               <isActive value="false"/>
+               <strengthQuantity>
+                  <value value="5.99"/>
+                  <unit value="kg"/>
+               </strengthQuantity>
+            </ingredient>
+            <ingredient>
+               <item>
+                  <reference>
+                     <reference value="#substanceExcipient-3"/>
+                     <display value="Calcium carboxymethylcellulose"/>
+                  </reference>
+               </item>
+               <isActive value="false"/>
+               <strengthQuantity>
+                  <value value="1.45"/>
+                  <unit value="kg"/>
+               </strengthQuantity>
+            </ingredient>
+            <ingredient>
+               <item>
+                  <reference>
+                     <reference value="#substanceExcipient-4"/>
+                     <display value="Magnesium stearate"/>
+                  </reference>
+               </item>
+               <isActive value="false"/>
+               <strengthQuantity>
+                  <value value="0.72"/>
+                  <unit value="kg"/>
+               </strengthQuantity>
+            </ingredient>
+            <batch>
+               <!--               <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+                  <extension url="batchQuantity">
+                     <valueQuantity>
+                        <value value="371000"/>
+                        <unit value="tablets"/>
+                     </valueQuantity>
+                  </extension>
+               </extension>-->
+               <!--            NEW Extension-->
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-number-of-items-pq">
+                  <valueQuantity>
+                     <value value="371000"/>
+                     <unit value="tablets"/>
+                  </valueQuantity>
+               </extension>
+               <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+                  <extension url="batchQuantity">
+                     <valueQuantity>
+                        <value value="65"/>
+                        <unit value="kg"/>
+                     </valueQuantity>
+                  </extension>
+               </extension>
+
+            </batch>
+         </Medication>
+      </resource>
+   </entry>
+</Bundle>

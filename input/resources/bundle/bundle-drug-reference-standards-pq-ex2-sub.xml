@@ -1,0 +1,3133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Substance Reference Standard -->
+<Bundle xmlns="http://hl7.org/fhir">
+   <id value="bundle-drug-reference-standards-pq-ex2-sub"/>
+   <meta>
+      <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-reference-standards-pq"/>
+   </meta>
+   <type value="collection"/>
+   <entry>
+      <fullUrl value="urn:uuid:2038e4c7-22b8-4c56-2d28-6c077648763f"/>
+      <resource>
+         <PlanDefinition>
+                <!--referenceProtocol-->
+            <id value="2038e4c7-22b8-4c56-2d28-6c077648763f"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"/>
+            </meta>
+            <!--http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f-->
+            <url value="http://example-server.com/fhir/PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f"/>
+            <title value="S.2.S.5 Reference Standard Analysis"/>
+            <type>
+               <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-plan-type"/>
+                  <code value="1244578"/>
+                  <display value="Reference Standard Analysis"/>
+               </coding>
+            </type>
+            <status value="active"/>
+            <subjectReference>
+                    <!--SubstanceDefinition/substance1-->
+               <reference value="SubstanceDefinition/8dae93e0-048d-35a4-71ea-7c603184a130"/>
+            </subjectReference>
+            <description value="Narrative description of analysis"/>
+            <action>
+               <title value="Results for Analysis of Stelbatol Reference Standard"/>
+               <code>
+                  <text value="Overall set of actions"/>
+               </code>
+               <action>
+                  <code>
+                     <text value="Test"/>
+                  </code>
+                  <!--ObservationDefinition/TestDate-->
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/13033a89-927a-10e0-503e-5f901bdcb30f"/>
+               </action>
+               <action>
+                  <code>
+                     <text value="Test"/>
+                  </code>
+                  <!--ObservationDefinition/Appearance-->
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/13033a89-927a-10e0-503e-5f901bdca30f"/>
+               </action>
+               <action>
+                  <code>
+                     <text value="Test"/>
+                  </code>
+                  <!--ObservationDefinition/Identification-->
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/8395ae1d-5064-0ab7-a297-6b20285b2230"/>
+               </action>
+               <action>
+                  <code>
+                     <text value="Test"/>
+                  </code>
+                  <!--ObservationDefinition/IdentificationNMR-->
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/8395ae1d-5064-0ab7-a297-6b20285b2231"/>
+               </action>
+               <action>
+                  <code>
+                     <text value="Test"/>
+                  </code>
+                  <!--ObservationDefinition/Impurities-->
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
+               </action>
+               <action>
+                  <code>
+                     <text value="Test"/>
+                  </code>
+                  <!--ObservationDefinition/Water-->
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/17b322fe-53ea-6c1f-521b-3b148ac05eb4"/>
+               </action>
+               <action>
+                  <code>
+                     <text value="Test"/>
+                  </code>
+                  <!--ObservationDefinition/Solvents-->
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/2daba8ca-211f-4f4b-4028-16c30fe22ee8"/>
+               </action>
+               <action>
+                  <code>
+                     <text value="Test"/>
+                  </code>
+                  <!--ObservationDefinition/Elemental-->
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/0634020c-8729-99fc-7637-89799d7c445b"/>
+               </action>
+               <action>
+                  <code>
+                     <text value="Test"/>
+                  </code>
+                  <!--ObservationDefinition/AssignedPurity-->
+                  <definitionCanonical value="http://example-server.com/fhir/ObservationDefinition/0634020c-8729-99fc-7637-897a9d7c445b"/>
+               </action>
+            </action>
+         </PlanDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:13033a89-927a-10e0-503e-5f901bdca31f"/>
+      <resource>
+         <ObservationDefinition>
+                <!--TestDate-->
+            <id value="13033a89-927a-10e0-503e-5f901bdca31f"/>
+            <!--http://example-server.com/fhir/ObservationDefinition/13033a89-927a-10e0-503e-5f901bdcb30f-->
+            <url value="http://example-server.com/fhir/ObservationDefinition/13033a89-927a-10e0-503e-5f901bdca31f"/>
+            <title value="Test Date"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="Test Date"/>
+                  <display value="Test Date"/>
+               </coding>
+               <text value="Test Date"/>
+            </code>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:13033a89-927a-10e0-503e-5f901bdca30f"/>
+      <resource>
+         <ObservationDefinition>
+                <!--Appearance-->
+            <id value="13033a89-927a-10e0-503e-5f901bdca30f"/>
+            <!--http://example-server.com/fhir/ObservationDefinition/13033a89-927a-10e0-503e-5f901bdca30f-->
+            <url value="http://example-server.com/fhir/ObservationDefinition/13033a89-927a-10e0-503e-5f901bdca30f"/>
+            <title value="Appearance"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="Appearance"/>
+                  <display value="Appearance"/>
+               </coding>
+               <text value="Appearance"/>
+            </code>
+            <method>
+               <text value="Visual evaluation"/>
+            </method>
+            <qualifiedValue>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq">
+                  <valueString value="White powder"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:8395ae1d-5064-0ab7-a297-6b20285b2230"/>
+      <resource>
+         <ObservationDefinition>
+                <!--Identification-->
+            <id value="8395ae1d-5064-0ab7-a297-6b20285b2230"/>
+            <!--http://example-server.com/fhir/ObservationDefinition/8395ae1d-5064-0ab7-a297-6b20285b2230-->
+            <url value="http://example-server.com/fhir/ObservationDefinition/8395ae1d-5064-0ab7-a297-6b20285b2230"/>
+            <title value="Identification"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="Identification (FT-IR)"/>
+                  <display value="Identification (FT-IR)"/>
+               </coding>
+               <text value="Identification (FT-IR)"/>
+            </code>
+            <method>
+               <text value="FT-IR"/>
+            </method>
+            <qualifiedValue>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq">
+                  <valueString value="Consistent with structure at release; Conforms to standard at requalification"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:8395ae1d-5064-0ab7-a297-6b20285b2231"/>
+      <resource>
+         <ObservationDefinition>
+                <!--IdentificationNMR-->
+            <id value="8395ae1d-5064-0ab7-a297-6b20285b2231"/>
+            <!--http://example-server.com/fhir/ObservationDefinition/8395ae1d-5064-0ab7-a297-6b20285b2230-->
+            <url value="http://example-server.com/fhir/ObservationDefinition/8395ae1d-5064-0ab7-a297-6b20285b2231"/>
+            <title value="Identification (NMR)"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="Identification (NMR)"/>
+                  <display value="Identification (NMR)"/>
+               </coding>
+               <text value="Identification (NMR)"/>
+            </code>
+            <method>
+               <text value="NMR spectrometry"/>
+            </method>
+            <qualifiedValue>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq">
+                  <valueString value="Consistent with structure"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
+      <resource>
+         <ObservationDefinition>
+                <!--Impurities-->
+            <id value="d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"/>
+            </meta>
+            <!--http://example-server.com/fhir/ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8-->
+            <url value="http://example-server.com/fhir/ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
+            <title value="Organic Impurities (w/w%)"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="DGP-s"/>
+                  <display value="Drug Substance Related Organic impurities"/>
+               </coding>
+            </code>
+            <method>
+               <text value="HPLC"/>
+            </method>
+            <qualifiedValue>
+               <appliesTo> <!-- could be a code -->
+                  <text value="Impurity 1"/>
+               </appliesTo>
+               <range>
+                  <high>
+                     <value value="0.5"/>
+                     <unit value="% w/w"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+            <qualifiedValue>
+               <appliesTo>
+                  <text value="Impurity 2"/>
+               </appliesTo>
+               <range>
+                  <high>
+                     <value value="0.5"/>
+                     <unit value="% w/w"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+            <qualifiedValue>
+               <appliesTo>
+                  <text value="Impurity 3"/>
+               </appliesTo>
+               <range>
+                  <high>
+                     <value value="0.5"/>
+                     <unit value="% w/w"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+            <qualifiedValue>
+               <appliesTo>
+                  <text value="Total impurities"/>
+               </appliesTo>
+               <range>
+                  <high>
+                     <value value="2.0"/>
+                     <unit value="% w/w"/>
+                  </high>
+               </range>
+            </qualifiedValue>
+            <component> <!-- are expected to have a component that says what impurity this one is -->
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+            </component>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:2daba8ca-211f-4f4b-4028-16c30fe22ee8"/>
+      <resource>
+         <ObservationDefinition>
+                <!--Solvents-->
+            <id value="2daba8ca-211f-4f4b-4028-16c30fe22ee8"/>
+            <!--http://example-server.com/fhir/ObservationDefinition/2daba8ca-211f-4f4b-4028-16c30fe22ee8-->
+            <url value="http://example-server.com/fhir/ObservationDefinition/2daba8ca-211f-4f4b-4028-16c30fe22ee8"/>
+            <title value="Residual solvents"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="SOL"/>
+                  <display value="Residual solvents"/>
+               </coding>
+            </code>
+            <method>
+               <text value="GC"/>
+            </method>
+            <qualifiedValue>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq">
+                  <valueString value="Report"/>
+               </extension>
+               <appliesTo> <!-- could be a code -->
+                  <text value="Solvent 1"/>
+               </appliesTo>
+            </qualifiedValue>
+            <qualifiedValue>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq">
+                  <valueString value="Report"/>
+               </extension>
+               <appliesTo>
+                  <text value="Solvent 2"/>
+               </appliesTo>
+            </qualifiedValue>
+            <component> <!-- are expected to have a component that says what solvent this one is -->
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="SOLV"/>
+                     <display value="Solvent"/>
+                  </coding>
+               </code>
+            </component>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:17b322fe-53ea-6c1f-521b-3b148ac05eb4"/>
+      <resource>
+         <ObservationDefinition>
+                <!--Water-->
+            <id value="17b322fe-53ea-6c1f-521b-3b148ac05eb4"/>
+            <!--http://example-server.com/fhir/ObservationDefinition/17b322fe-53ea-6c1f-521b-3b148ac05eb4-->
+            <url value="http://example-server.com/fhir/ObservationDefinition/17b322fe-53ea-6c1f-521b-3b148ac05eb4"/>
+            <title value="Water Content"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="WaterContent"/>
+                  <display value="Water Content"/>
+               </coding>
+               <text value="Water Content"/>
+            </code>
+            <method>
+               <text value="USP Karl Fischer titration"/>
+            </method>
+            <qualifiedValue>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq">
+                  <valueString value="Report"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:0634020c-8729-99fc-7637-89799d7c445b"/>
+      <resource>
+         <ObservationDefinition>
+                <!--Elemental-->
+            <id value="0634020c-8729-99fc-7637-89799d7c445b"/>
+            <!--http://example-server.com/fhir/ObservationDefinition/0634020c-8729-99fc-7637-89799d7c445b-->
+            <url value="http://example-server.com/fhir/ObservationDefinition/0634020c-8729-99fc-7637-89799d7c445b"/>
+            <title value="Elemental impurities"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="ELE"/>
+                  <display value="Elemental impurities"/>
+               </coding>
+            </code>
+            <method>
+               <text value="ICP-MS"/>
+            </method>
+            <qualifiedValue>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq">
+                  <valueString value="Report"/>
+               </extension>
+            </qualifiedValue>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:0634020c-8729-99fc-7637-897a9d7c445b"/>
+      <resource>
+         <ObservationDefinition>
+                <!--AssignedPurity-->
+            <id value="0634020c-8729-99fc-7637-897a9d7c445b"/>
+            <!--http://example-server.com/fhir/ObservationDefinition/0634020c-8729-99fc-7637-89799d7c445b-->
+            <url value="http://example-server.com/fhir/ObservationDefinition/0634020c-8729-99fc-7637-897a9d7c445b"/>
+            <title value="Assigned Purity (w/w%)"/>
+            <status value="active"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="AssignedPurity"/>
+                  <display value="Assigned Purity"/>
+               </coding>
+            </code>
+            <method>
+               <text value="Calculation"/>
+            </method>
+            <qualifiedValue>
+               <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-qualified-value-text-pq">
+                  <valueString value="Report"/>
+               </extension>
+               <appliesTo>
+                  <text value="Assigned Purity"/>
+               </appliesTo>
+            </qualifiedValue>
+            <component> <!-- are expected to have a component that says what impurity this one is -->
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+            </component>
+         </ObservationDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
+      <resource>
+         <Substance>
+			    <!--substance-dxpq-ex1-->
+            <id value="87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
+            <!-- was actual-batch-substance -->
+            <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+               <extension url="manufacturingDate">
+                  <valueDateTime value="2020-01"/>
+               </extension>
+               <extension url="batchQuantity">
+                  <valueQuantity>
+                     <value value="120"/>
+                     <unit value="kg"/>
+                  </valueQuantity>
+               </extension>
+               <extension url="batchUtilization">
+                  <valueCodeableConcept>
+                     <coding>
+                        <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
+                        <code value="C133990"/>
+                        <display value="Commercial"/>
+                        <!-- could also be C185328 Stability Study? -->
+                     </coding>
+                     <text value="Production"/>
+                  </valueCodeableConcept>
+               </extension>
+               <extension url="assignedManufacturer">
+                  <valueReference>
+							<!--Organization/substance-manufacturer-->
+                     <reference value="Organization/3d399cbc-244e-9b5f-838b-b7daa0489330"/>
+                  </valueReference>
+               </extension>
+            </extension>
+            <!-- local extensions -->
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
+               <valueDateTime value="2019-09-08"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq">
+               <valueDateTime value="2022-09-08"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-manufacturing-process-pq">
+               <valueReference>
+			            <!--PlanDefinition/plandefinition-dxpq-ex4-mnf-process-->
+                  <reference value="PlanDefinition/b30a1024-37db-a1bc-05e5-cc4596d92975"/>
+               </valueReference>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq">
+               <valueQuantity>
+                  <value value="4.8"/>
+                  <unit value="kg"/>
+               </valueQuantity>
+            </extension>
+            <identifier>
+               <value value="CAT1"/>
+            </identifier>
+            <instance value="true"/>
+            <code>
+               <reference>
+						<!--SubstanceDefinition/substance1-->
+                  <reference value="SubstanceDefinition/8dae93e0-048d-35a4-71ea-7c603184a130"/>
+               </reference>
+            </code>
+         </Substance>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:6412c5d4-1b7d-8405-85dc-75dbaa300ea4"/>
+      <resource>
+         <Substance>
+				<!--actual-batch-substance-2-->
+            <id value="6412c5d4-1b7d-8405-85dc-75dbaa300ea4"/>
+            <extension url="http://hl7.org/fhir/StructureDefinition/medication-manufacturingBatch">
+               <extension url="manufacturingDate">
+                  <valueDateTime value="2020-02"/>
+               </extension>
+               <extension url="batchQuantity">
+                  <valueQuantity>
+                     <value value="120"/>
+                     <unit value="kg"/>
+                  </valueQuantity>
+               </extension>
+               <extension url="batchUtilization">
+                  <valueCodeableConcept>
+                     <coding>
+                        <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
+                        <code value="C133990"/>
+                        <display value="Commercial"/>
+                     </coding>
+                     <text value="Production"/>
+                  </valueCodeableConcept>
+               </extension>
+               <extension url="assignedManufacturer">
+                  <valueReference>
+							<!--Organization/substance-manufacturer-->
+                     <reference value="Organization/3d399cbc-244e-9b5f-838b-b7daa0489330"/>
+                  </valueReference>
+               </extension>
+            </extension>
+            <!-- local extensions -->
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-release-date-pq">
+               <valueDateTime value="2019-09-08"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-batch-retest-date-pq">
+               <valueDateTime value="2022-09-08"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Extension-actual-yield-pq">
+               <valueQuantity>
+                  <value value="4.8"/>
+                  <unit value="kg"/>
+               </valueQuantity>
+            </extension>
+            <identifier>
+               <value value="CAT2"/>
+            </identifier>
+            <instance value="true"/>
+            <code>
+               <reference>
+						<!--SubstanceDefinition/substance1-->
+                  <reference value="SubstanceDefinition/8dae93e0-048d-35a4-71ea-7c603184a130"/>
+               </reference>
+            </code>
+         </Substance>
+      </resource>
+   </entry>
+   <!-- Section 5 - Manufacturing Process -->
+   <entry>
+      <fullUrl value="urn:uuid:b30a1024-37db-a1bc-05e5-cc4596d92975"/>
+      <resource>
+         <PlanDefinition>
+                <!--id value="manufacturingProcess"/--> 
+                <!--plandefinition-dxpq-ex4-mnf-process-->
+            <id value="b30a1024-37db-a1bc-05e5-cc4596d92975"/>
+            <!--http://example-server.com/fhir/PlanDefinition/b30a1024-37db-a1bc-05e5-cc4596d92975-->
+            <url value="http://example-server.com/fhir/PlanDefinition/b30a1024-37db-a1bc-05e5-cc4596d92975"/>
+            <title value="Process 1.1"/>
+            <type>
+               <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-plan-type"/>
+                  <code value="1244566"/>
+                  <display value="Manufacturing Process"/>
+               </coding>
+            </type>
+            <status value="active"/>
+            <subjectReference>
+            		<!--SubstanceDefinition/substance1-->
+               <reference value="SubstanceDefinition/8dae93e0-048d-35a4-71ea-7c603184a130"/>
+            </subjectReference>
+         </PlanDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:8dae93e0-048d-35a4-71ea-7c603184a130"/>
+      <resource>
+         <SubstanceDefinition>
+        		<!--substance1-->
+            <id value="8dae93e0-048d-35a4-71ea-7c603184a130"/>
+            <manufacturer>
+        			<!--Organization/substance-manufacturer-->
+               <reference value="Organization/3d399cbc-244e-9b5f-838b-b7daa0489330"/>
+            </manufacturer>
+            <name>
+               <name value="Stelbatolol"/>
+            </name>
+         </SubstanceDefinition>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:3d399cbc-244e-9b5f-838b-b7daa0489330"/>
+      <resource>
+         <Organization>
+				<!--substance-manufacturer-->
+            <id value="3d399cbc-244e-9b5f-838b-b7daa0489330"/>
+            <identifier>
+					<!-- FDA establishment identifier -->
+               <system value="urn:oid:2.16.840.1.113883.4.82"/>
+               <value value="3003040516"/>
+            </identifier>
+            <active value="true"/>
+            <type>
+               <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type"/>
+                  <code value="drug-substance-manufacture"/>
+                  <display value="Drug Substance Manufacture"/>
+               </coding>
+            </type>
+            <name value="AAA Molybdenum Products, Inc."/>
+            <contact>
+               <address>
+                  <line value="7233 W 116th Pl"/>
+                  <line value="Ste C"/>
+                  <city value="Broomfield"/>
+                  <state value="Colorado"/>
+                  <postalCode value="80020"/>
+                  <country value="USA"/>
+               </address>
+            </contact>
+         </Organization>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+      <resource>
+         <Organization>
+                <!--testing lab-->
+                <!--378fbe5f-5926-3a5c-4c64-5428df877b08-->
+            <id value="378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            <identifier>
+               <system value="urn:oid:2.16.840.1.113883.4.82"/>
+               <value value="3007270600"/>
+            </identifier>
+            <active value="true"/>
+            <type>
+               <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-organization-type"/>
+                  <code value="analytical-testing-release"/>
+                  <display value="Analytical Testing - Release"/>
+               </coding>
+            </type>
+            <name value="Testing Lab"/>
+         </Organization>
+      </resource>
+   </entry>
+   <!-- Diagnostic report doesn't carry much extra value but does collect all the observations -->
+   <entry>
+      <fullUrl value="urn:uuid:01a5777c-4b48-a0df-2963-02cd63339006"/>
+      <resource>
+         <DiagnosticReport>
+            <id value="referenceStandardReport"/>
+            <extension url="http://hl7.org/fhir/StructureDefinition/workflow-triggeredBy">
+               <valueReference>
+						<!--PlanDefinition/referenceProtocol-->
+                  <reference value="PlanDefinition/2038e4c7-22b8-4c56-2d28-6c077648763f"/>
+               </valueReference>
+            </extension>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/pharmaceutical-report-type"/>
+                  <code value="Reference Standard Report"/>
+                  <display value="Reference Standard Report"/>
+               </coding>
+            </code>
+            <effectiveDateTime value="2020-12"/>
+            <!-- start of stability test -->
+            <result>
+			        <!--Observation/testDate1-->
+               <reference value="Observation/82f553f9-8458-3cf4-8379-eea5417a9de2"/>
+            </result>
+            <result>
+			        <!--Observation/testDate2-->
+               <reference value="Observation/82f552f9-8458-3cff-8379-eea5417a9de2"/>
+            </result>
+            <result>
+			        <!--Observation/testDate3-->
+               <reference value="Observation/82f552f7-8458-3cff-8379-eea5417a9de2"/>
+            </result>
+            <result>
+			        <!--Observation/testDateSecond1-->
+               <reference value="Observation/83f552f7-8458-3cff-8379-eea5417a9de2"/>
+            </result>
+            <result>
+			        <!--Observation/Observation-test-result-pq-ex2-->
+               <reference value="Observation/82f552f9-8458-3cf4-8379-eea5417a9de2"/>
+            </result>
+            <result>
+					<!--Observation/observationDescription2-->
+               <reference value="Observation/50bf6f69-a3f5-678b-469b-c5df5cca4c86"/>
+            </result>
+            <result>
+					<!--Observation/observationDescription3-->
+               <reference value="Observation/145fd3b7-3678-867f-4298-a6c781b86de3"/>
+            </result>
+            <result>
+			        <!--Observation/observationDescriptionSecond1-->
+               <reference value="Observation/81f552f9-8458-3cf4-8379-eea5417a9de2"/>
+            </result>
+            <result>
+					<!--Observation/observationIdentification-->
+               <reference value="Observation/55c89944-60d1-4eea-a2c3-6c53e3622bc5"/>
+            </result>
+            <result>
+					<!--Observation/observationIdentification2-->
+               <reference value="Observation/adb51ab6-00a9-1078-69e5-d32c025a857c"/>
+            </result>
+            <result>
+					<!--Observation/observationIdentification3-->
+               <reference value="Observation/916a0ae2-9c43-72f0-a22a-c5f8ce902125"/>
+            </result>
+            <result>
+			        <!--Observation/observationIdentificationSecond1-->
+               <reference value="Observation/55d89944-60d1-4eea-a2c3-6c53e3622bc5"/>
+            </result>
+            <result>
+			        <!--Observation/observationIdentificationNMR1-->
+               <reference value="Observation/55c89954-60d1-4eea-a2c3-6c53e3622bc5"/>
+            </result>
+            <result>
+			        <!--Observation/observationIdentificationNMR2-->
+               <reference value="Observation/55c89954-60d1-4eea-b2c3-6c53e3622bc5"/>
+            </result>
+            <result>
+			        <!--Observation/observationIdentificationNMR3-->
+               <reference value="Observation/55c89955-60d1-4eea-b2c3-6c53e3622bc5"/>
+            </result>
+            <result>
+			        <!--Observation/observationIdentificationNMRSecond1-->
+               <reference value="Observation/55c89955-60d1-4eea-a2c3-6c53e3622bc5"/>
+            </result>
+            <result>
+					<!--Observation/observationDegradation-imp1-->
+               <reference value="Observation/02d9e6be-833c-1c6d-a64a-baa3935c959d"/>
+            </result>
+            <result>
+					<!--Observation/observationDegradation-imp1-2-->
+               <reference value="Observation/d3e572b7-14fd-744b-4123-58741d75571e"/>
+            </result>
+            <result>
+					<!--Observation/observationDegradation-imp1-3-->
+               <reference value="Observation/fe6ca484-a755-9a0b-a074-b6ee0a907ff8"/>
+            </result>
+            <result>
+			        <!--Observation/observationDegradation-imp1Second-->
+               <reference value="Observation/02d9e6be-833c-2c6d-a64a-baa3935c959d"/>
+            </result>
+            <result>
+					<!--Observation/observationDegradation-imp2-->
+               <reference value="Observation/da92c71f-a12a-1980-11a3-80e3d1852244"/>
+            </result>
+            <result>
+					<!--Observation/observationDegradation-imp2-2-->
+               <reference value="Observation/8bf75da1-9221-66fe-6725-c64cb45a57e6"/>
+            </result>
+            <result>
+					<!--Observation/observationDegradation-imp2-3-->
+               <reference value="Observation/31bfeff4-4a7d-3be5-878e-fb674d3d5487"/>
+            </result>
+            <result>
+			        <!--Observation/observationDegradation-imp2Second-->
+               <reference value="Observation/da92c71f-a12a-1980-21a3-80e3d1852244"/>
+            </result>
+            <result>
+					<!--Observation/observationDegradation-imp3-->
+               <reference value="Observation/732237a9-4b3b-27cc-99ca-6b913e622a29"/>
+            </result>
+            <result>
+					<!--Observation/observationDegradation-imp3-2-->
+               <reference value="Observation/52afbeb4-4958-a275-a0ca-d70b2b5240ec"/>
+            </result>
+            <result>
+					<!--Observation/observationDegradation-imp3-3-->
+               <reference value="Observation/7fc395b1-59e4-78be-0512-cf92133c0fac"/>
+            </result>
+            <result>
+			        <!--Observation/observationDegradation-imp3Second-->
+               <reference value="Observation/732237a9-4b3b-27dc-99ca-6b913e622a29"/>
+            </result>
+            <result>
+					<!--Observation/observationDegradation-imp-total-->
+               <reference value="Observation/10b80cbd-45d3-9be1-63b9-29f04b47376c"/>
+            </result>
+            <result>
+					<!--Observation/observationDegradation-imp-total-2-->
+               <reference value="Observation/84f015ac-9572-324f-8013-0b999cc95bbd"/>
+            </result>
+            <result>
+					<!--Observation/observationDegradation-imp-total-3-->
+               <reference value="Observation/987daeaa-4c2a-72b7-780f-4a9403163a3e"/>
+            </result>
+            <result>
+			        <!--Observation/observationDegradation-imp-totalSecond-->
+               <reference value="Observation/10b80cbd-45d4-9be1-63b9-29f04b47376c"/>
+            </result>
+            <result>
+				    <!--Observation/observationElemental-->
+               <reference value="Observation/ff26533d-88a8-7f18-a275-42dc1373a388"/>
+            </result>
+            <result>
+				    <!--Observation/observationElemental2-->
+               <reference value="Observation/c99666d2-7962-9a71-58f6-7b2e5aa662f5"/>
+            </result>
+            <result>
+				    <!--Observation/observationElemental3-->
+               <reference value="Observation/c18e21d3-7113-4d08-4ff3-0c9718596f64"/>
+            </result>
+            <result>
+			        <!--Observation/observationElementalSecond-->
+               <reference value="Observation/ff26533d-88a8-7f18-a275-52dc1373a388"/>
+            </result>
+            <result>
+					<!--Observation/observationSolvents-sol1-->
+               <reference value="Observation/f8160692-a7a8-3fa6-9f35-e7df35f51ac0"/>
+            </result>
+            <result>
+					<!--Observation/observationSolvents-sol1-2-->
+               <reference value="Observation/a531aee9-4c21-06af-352c-a3615b5d957e"/>
+            </result>
+            <result>
+					<!--Observation/observationSolvents-sol1-3-->
+               <reference value="Observation/033ce81d-5f0d-7a3e-93d3-fc64e122a1fd"/>
+            </result>
+            <result>
+			        <!--Observation/observationSolvents-sol1Second-->
+               <reference value="Observation/f8160692-b7a8-3fa6-9f35-e7df35f51ac0"/>
+            </result>
+            <result>
+					<!--Observation/observationSolvents-sol2-->
+               <reference value="Observation/ba8a182e-8571-6cbd-047b-612735d599d2"/>
+            </result>
+            <result>
+					<!--Observation/observationSolvents-sol2-2-->
+               <reference value="Observation/0b5b94cc-7a1a-4ada-66c7-954ceb528d67"/>
+            </result>
+            <result>
+					<!--Observation/observationSolvents-sol2-3-->
+               <reference value="Observation/6afaacee-11a6-58b2-47df-5f79722c66ac"/>
+            </result>
+            <result>
+			        <!--Observation/observationSolvents-sol2Second-->
+               <reference value="Observation/ba8a182e-9571-6cbd-047b-612735d599d2"/>
+            </result>
+            <result>
+					<!--Observation/observationWater-->
+               <reference value="Observation/c2644a86-1684-286e-00e2-dcaf907a8970"/>
+            </result>
+            <result>
+					<!--Observation/observationWater2-->
+               <reference value="Observation/cb5f6872-6eeb-727a-7c33-f2c438581a1c"/>
+            </result>
+            <result>
+					<!--Observation/observationWater3-->
+               <reference value="Observation/7faaf980-7c10-7b9a-9572-1bacd485824e"/>
+            </result>
+            <result>
+			        <!--Observation/observationWaterSecond-->
+               <reference value="Observation/c2644a86-1685-286e-00e2-dcaf907a8970"/>
+            </result>
+            <result>
+			        <!--Observation/observationAssignedPurity1-->
+               <reference value="Observation/ff26533d-88b8-7f18-a275-42dc1373a388"/>
+            </result>
+            <result>
+			        <!--Observation/observationAssignedPurity2-->
+               <reference value="Observation/ff26534d-88b8-7f18-a275-42dc1373a388"/>
+            </result>
+            <result>
+			        <!--Observation/observationAssignedPurity3-->
+               <reference value="Observation/ff26544d-88b8-7f18-a275-42dc1373a388"/>
+            </result>
+            <result>
+			        <!--Observation/observationAssignedPurity1second-->
+               <reference value="Observation/ff36533d-88b8-7f18-a275-42dc1373a388"/>
+            </result>
+            <conclusion value="The samples have been assessed and the conclusion is..."/>
+         </DiagnosticReport>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:82f553f9-8458-3cf4-8379-eea5417a9de2"/>
+      <resource>
+         <Observation>
+			    <!--testDate1-->
+            <id value="82f553f9-8458-3cf4-8379-eea5417a9de2"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
+            </meta>
+            <instantiatesReference>
+			        <!--ObservationDefinition/TestDate-->
+               <reference value="ObservationDefinition/13033a89-927a-10e0-503e-5f901bdca31f"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="Test Date"/>
+                  <display value="Test Date"/>
+               </coding>
+               <text value="est Date"/>
+            </code>
+            <subject>
+				    <!--Substance/substance-dxpq-ex1-->
+               <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+				    
+				    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueDateTime value="2021-07"/>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:82f552f9-8458-3cff-8379-eea5417a9de2"/>
+      <resource>
+         <Observation>
+                <!--testDate2-->
+            <id value="82f552f9-8458-3cff-8379-eea5417a9de2"/>
+            <!-- was observationDescription -->
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
+            </meta>
+            <instantiatesReference>
+                    <!--ObservationDefinition/TestDate-->
+               <reference value="ObservationDefinition/13033a89-927a-10e0-503e-5f901bdca31f"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="Test Date"/>
+                  <display value="Test Date"/>
+               </coding>
+               <text value="Test Date"/>
+            </code>
+            <subject>
+                    <!--Substance/substance-dxpq-ex1-->
+               <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+                    
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueDateTime value="2022-07"/>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:82f552f7-8458-3cff-8379-eea5417a9de2"/>
+      <resource>
+         <Observation>
+                <!--testDate3-->
+            <id value="82f552f7-8458-3cff-8379-eea5417a9de2"/>
+            <!-- was observationDescription -->
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
+            </meta>
+            <instantiatesReference>
+                    <!--ObservationDefinition/TestDate-->
+               <reference value="ObservationDefinition/13033a89-927a-10e0-503e-5f901bdca31f"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="Test Date"/>
+                  <display value="Test Date"/>
+               </coding>
+               <text value="Test Date"/>
+            </code>
+            <subject>
+                    <!--Substance/substance-dxpq-ex1-->
+               <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+                    
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueDateTime value="2023-07"/>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:83f552f7-8458-3cff-8379-eea5417a9de2"/>
+      <resource>
+         <Observation>
+                <!--testDateSecond1-->
+            <id value="83f552f7-8458-3cff-8379-eea5417a9de2"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
+            </meta>
+            <instantiatesReference>
+                    <!--ObservationDefinition/TestDate-->
+               <reference value="ObservationDefinition/13033a89-927a-10e0-503e-5f901bdca31f"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="Test Date"/>
+                  <display value="Test Date"/>
+               </coding>
+               <text value="Test Date"/>
+            </code>
+            <subject>
+                    <!--Substance/actual-batch-substance-2-->
+               <reference value="Substance/6412c5d4-1b7d-8405-85dc-75dbaa300ea4"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+                    
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueDateTime value="2024-07"/>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:82f552f9-8458-3cf4-8379-eea5417a9de2"/>
+      <resource>
+         <Observation>
+			    <!--Observation-test-result-pq-ex2-->
+            <id value="82f552f9-8458-3cf4-8379-eea5417a9de2"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
+            </meta>
+            <instantiatesReference>
+					<!--ObservationDefinition/Appearance-->
+               <reference value="ObservationDefinition/13033a89-927a-10e0-503e-5f901bdca30f"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="Appearance"/>
+                  <display value="Appearance"/>
+               </coding>
+               <text value="Appearance"/>
+            </code>
+            <subject>
+					
+				    <!--Substance/substance-dxpq-ex1-->
+               <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+				    
+				    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueString value="White Powder"/>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:50bf6f69-a3f5-678b-469b-c5df5cca4c86"/>
+      <resource>
+         <Observation>
+				<!--observationDescription2-->
+            <id value="50bf6f69-a3f5-678b-469b-c5df5cca4c86"/>
+            <instantiatesReference>
+				    <!--ObservationDefinition/Appearance-->
+               <reference value="ObservationDefinition/13033a89-927a-10e0-503e-5f901bdca30f"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="DESC"/>
+                  <display value="Description"/>
+               </coding>
+               <text value="Description"/>
+            </code>
+            <subject>
+				    <!--Substance/substance-dxpq-ex1-->
+               <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueString value="White Powder"/>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:145fd3b7-3678-867f-4298-a6c781b86de3"/>
+      <resource>
+         <Observation>
+				<!--observationDescription3-->
+            <id value="145fd3b7-3678-867f-4298-a6c781b86de3"/>
+            <instantiatesReference>
+				    <!--ObservationDefinition/Appearance-->
+               <reference value="ObservationDefinition/13033a89-927a-10e0-503e-5f901bdca30f"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="DESC"/>
+                  <display value="Description"/>
+               </coding>
+               <text value="Description"/>
+            </code>
+            <subject>
+				    <!--Substance/substance-dxpq-ex1-->
+               <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueString value="White Powder"/>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:81f552f9-8458-3cf4-8379-eea5417a9de2"/>
+      <resource>
+         <Observation>
+                <!--observationDescriptionSecond1-->
+            <id value="81f552f9-8458-3cf4-8379-eea5417a9de2"/>
+            <meta>
+               <profile value="http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"/>
+            </meta>
+            <instantiatesReference>
+                    <!--ObservationDefinition/Appearance-->
+               <reference value="ObservationDefinition/13033a89-927a-10e0-503e-5f901bdca30f"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="Appearance"/>
+                  <display value="Appearance"/>
+               </coding>
+               <text value="Appearance"/>
+            </code>
+            <subject>
+                    
+                    <!--Substance/actual-batch-substance-2-->
+               <reference value="Substance/6412c5d4-1b7d-8405-85dc-75dbaa300ea4"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+                    
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueString value="Off-white Powder"/>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:55c89944-60d1-4eea-a2c3-6c53e3622bc5"/>
+      <resource>
+         <Observation>
+                <!--observationIdentification-->
+            <id value="55c89944-60d1-4eea-a2c3-6c53e3622bc5"/>
+            <instantiatesReference>
+                    <!--ObservationDefinition/Identification-->
+               <reference value="ObservationDefinition/8395ae1d-5064-0ab7-a297-6b20285b2230"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="IDT"/>
+                  <display value="Identification"/>
+               </coding>
+               <text value="Identification"/>
+            </code>
+            <subject>
+                    <!--Substance/substance-dxpq-ex1-->
+               <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueString value="Consistent with structure"/>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:adb51ab6-00a9-1078-69e5-d32c025a857c"/>
+      <resource>
+         <Observation>
+                <!--observationIdentification2-->
+            <id value="adb51ab6-00a9-1078-69e5-d32c025a857c"/>
+            <instantiatesReference>
+                    <!--ObservationDefinition/Identification-->
+               <reference value="ObservationDefinition/8395ae1d-5064-0ab7-a297-6b20285b2230"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="IDT"/>
+                  <display value="Identification"/>
+               </coding>
+               <text value="Identification"/>
+            </code>
+            <subject>
+                    <!--Substance/substance-dxpq-ex1-->
+               <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueString value="Conforms to standard"/>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:916a0ae2-9c43-72f0-a22a-c5f8ce902125"/>
+      <resource>
+         <Observation>
+                <!--observationIdentification3-->
+            <id value="916a0ae2-9c43-72f0-a22a-c5f8ce902125"/>
+            <instantiatesReference>
+                    <!--ObservationDefinition/Identification-->
+               <reference value="ObservationDefinition/8395ae1d-5064-0ab7-a297-6b20285b2230"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="IDT"/>
+                  <display value="Identification"/>
+               </coding>
+               <text value="Identification"/>
+            </code>
+            <subject>
+                    <!--Substance/substance-dxpq-ex1-->
+               <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueCodeableConcept>
+               <text value="Conforms to standard"/>
+            </valueCodeableConcept>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:55d89944-60d1-4eea-a2c3-6c53e3622bc5"/>
+      <resource>
+         <Observation>
+                <!--observationIdentificationSecond1-->
+            <id value="55d89944-60d1-4eea-a2c3-6c53e3622bc5"/>
+            <instantiatesReference>
+                    <!--ObservationDefinition/Identification-->
+               <reference value="ObservationDefinition/8395ae1d-5064-0ab7-a297-6b20285b2230"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="IDT"/>
+                  <display value="Identification"/>
+               </coding>
+               <text value="Identification"/>
+            </code>
+            <subject>
+                    <!--Substance/actual-batch-substance-2-->
+               <reference value="Substance/6412c5d4-1b7d-8405-85dc-75dbaa300ea4"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueString value="Conforms to standard"/>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:55c89954-60d1-4eea-a2c3-6c53e3622bc5"/>
+      <resource>
+         <Observation>
+                <!--observationIdentificationNMR1-->
+            <id value="55c89954-60d1-4eea-a2c3-6c53e3622bc5"/>
+            <instantiatesReference>
+                    <!--ObservationDefinition/IdentificationNMR-->
+               <reference value="ObservationDefinition/8395ae1d-5064-0ab7-a297-6b20285b2231"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="Identification (NMR)"/>
+                  <display value="Identification (NMR)"/>
+               </coding>
+               <text value="Identification (NMR)"/>
+            </code>
+            <subject>
+                    <!--Substance/substance-dxpq-ex1-->
+               <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueString value="Consistent with structure"/>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:55c89954-60d1-4eea-b2c3-6c53e3622bc5"/>
+      <resource>
+         <Observation>
+                <!--observationIdentificationNMR2-->
+            <id value="55c89954-60d1-4eea-b2c3-6c53e3622bc5"/>
+            <instantiatesReference>
+                    <!--ObservationDefinition/IdentificationNMR-->
+               <reference value="ObservationDefinition/8395ae1d-5064-0ab7-a297-6b20285b2231"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="Identification (NMR)"/>
+                  <display value="Identification (NMR)"/>
+               </coding>
+               <text value="Identification (NMR)"/>
+            </code>
+            <subject>
+                    <!--Substance/substance-dxpq-ex1-->
+               <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <dataAbsentReason>
+               <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/data-absent-reason"/>
+                  <code value="not-performed"/>
+                  <display value="Not Performed"/>
+               </coding>
+               <text value="Not tested"/>
+            </dataAbsentReason>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:55c89955-60d1-4eea-b2c3-6c53e3622bc5"/>
+      <resource>
+         <Observation>
+                <!--observationIdentificationNMR3-->
+            <id value="55c89955-60d1-4eea-b2c3-6c53e3622bc5"/>
+            <instantiatesReference>
+                    <!--ObservationDefinition/IdentificationNMR-->
+               <reference value="ObservationDefinition/8395ae1d-5064-0ab7-a297-6b20285b2231"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="Identification (NMR)"/>
+                  <display value="Identification (NMR)"/>
+               </coding>
+               <text value="Identification (NMR)"/>
+            </code>
+            <subject>
+                    <!--Substance/substance-dxpq-ex1-->
+               <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <dataAbsentReason>
+               <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/data-absent-reason"/>
+                  <code value="not-performed"/>
+                  <display value="Not Performed"/>
+               </coding>
+               <text value="Not tested"/>
+            </dataAbsentReason>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:55c89955-60d1-4eea-a2c3-6c53e3622bc5"/>
+      <resource>
+         <Observation>
+                <!--observationIdentificationNMRSecond1-->
+            <id value="55c89955-60d1-4eea-a2c3-6c53e3622bc5"/>
+            <instantiatesReference>
+                    <!--ObservationDefinition/IdentificationNMR-->
+               <reference value="ObservationDefinition/8395ae1d-5064-0ab7-a297-6b20285b2231"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="Identification (NMR)"/>
+                  <display value="Identification (NMR)"/>
+               </coding>
+               <text value="Identification (NMR)"/>
+            </code>
+            <subject>
+                    <!--Substance/actual-batch-substance-2-->
+               <reference value="Substance/6412c5d4-1b7d-8405-85dc-75dbaa300ea4"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueString value="Consistent with structure"/>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:02d9e6be-833c-1c6d-a64a-baa3935c959d"/>
+      <resource>
+         <Observation>
+                <!--observationDegradation-imp1-->
+            <id value="02d9e6be-833c-1c6d-a64a-baa3935c959d"/>
+            <instantiatesReference>
+                    <!--ObservationDefinition/Impurities-->
+               <reference value="ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="Impurities"/>
+                  <display value="Impurities"/>
+               </coding>
+               <text value="Impurities"/>
+            </code>
+            <subject>
+                    <!--Substance/substance-dxpq-ex1-->
+               <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="0.5"/>
+               <comparator value="&lt;"/>
+               <unit value="% w/w"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <text value="Impurity 1"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:d3e572b7-14fd-744b-4123-58741d75571e"/>
+      <resource>
+         <Observation>
+                <!--observationDegradation-imp1-2-->
+            <id value="d3e572b7-14fd-744b-4123-58741d75571e"/>
+            <instantiatesReference>
+                    <!--ObservationDefinition/Impurities-->
+               <reference value="ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="Impurities"/>
+                  <display value="Impurities"/>
+               </coding>
+               <text value="Impurities"/>
+            </code>
+            <subject>
+                    <!--Substance/substance-dxpq-ex1-->
+               <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="0.4"/>
+               <comparator value="&lt;"/>
+               <unit value="% w/w"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <text value="Impurity 1"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:fe6ca484-a755-9a0b-a074-b6ee0a907ff8"/>
+      <resource>
+         <Observation>
+                <!--observationDegradation-imp1-3-->
+            <id value="fe6ca484-a755-9a0b-a074-b6ee0a907ff8"/>
+            <instantiatesReference>
+                    <!--ObservationDefinition/Impurities-->
+               <reference value="ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="Impurities"/>
+                  <display value="Impurities"/>
+               </coding>
+               <text value="Impurities"/>
+            </code>
+            <subject>
+                    <!--Substance/substance-dxpq-ex1-->
+               <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="0.2"/>
+               <comparator value="&lt;"/>
+               <unit value="% w/w"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <text value="Impurity 1"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:02d9e6be-833c-2c6d-a64a-baa3935c959d"/>
+      <resource>
+         <Observation>
+                <!--observationDegradation-imp1Second-->
+            <id value="02d9e6be-833c-2c6d-a64a-baa3935c959d"/>
+            <instantiatesReference>
+                    <!--ObservationDefinition/Impurities-->
+               <reference value="ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="Impurities"/>
+                  <display value="Impurities"/>
+               </coding>
+               <text value="Impurities"/>
+            </code>
+            <subject>
+                    <!--Substance/actual-batch-substance-2-->
+               <reference value="Substance/6412c5d4-1b7d-8405-85dc-75dbaa300ea4"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="0.55"/>
+               <comparator value="&lt;"/>
+               <unit value="% w/w"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <text value="Impurity 1"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:da92c71f-a12a-1980-11a3-80e3d1852244"/>
+      <resource>
+         <Observation>
+                <!--observationDegradation-imp2-->
+            <id value="da92c71f-a12a-1980-11a3-80e3d1852244"/>
+            <instantiatesReference>
+                    <!--ObservationDefinition/Impurities-->
+               <reference value="ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="Impurities"/>
+                  <display value="Impurities"/>
+               </coding>
+               <text value="Impurities"/>
+            </code>
+            <subject>
+                    <!--Substance/substance-dxpq-ex1-->
+               <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="0.5"/>
+               <comparator value="&lt;"/>
+               <unit value="% w/w"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <text value="Impurity 2"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:8bf75da1-9221-66fe-6725-c64cb45a57e6"/>
+      <resource>
+         <Observation>
+                <!--observationDegradation-imp2-2-->
+            <id value="8bf75da1-9221-66fe-6725-c64cb45a57e6"/>
+            <instantiatesReference>
+                    <!--ObservationDefinition/Impurities-->
+               <reference value="ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="Impurities"/>
+                  <display value="Impurities"/>
+               </coding>
+               <text value="Impurities"/>
+            </code>
+            <subject>
+                    <!--Substance/substance-dxpq-ex1-->
+               <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="0.4"/>
+               <comparator value="&lt;"/>
+               <unit value="% w/w"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <text value="Impurity 2"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:31bfeff4-4a7d-3be5-878e-fb674d3d5487"/>
+      <resource>
+         <Observation>
+                <!--observationDegradation-imp2-3-->
+            <id value="31bfeff4-4a7d-3be5-878e-fb674d3d5487"/>
+            <instantiatesReference>
+                    <!--ObservationDefinition/Impurities-->
+               <reference value="ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="Impurities"/>
+                  <display value="Impurities"/>
+               </coding>
+               <text value="Impurities"/>
+            </code>
+            <subject>
+                    <!--Substance/substance-dxpq-ex1-->
+               <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="0.2"/>
+               <comparator value="&lt;"/>
+               <unit value="% w/w"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <text value="Impurity 2"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:da92c71f-a12a-1980-21a3-80e3d1852244"/>
+      <resource>
+         <Observation>
+                <!--observationDegradation-imp2Second-->
+            <id value="da92c71f-a12a-1980-21a3-80e3d1852244"/>
+            <instantiatesReference>
+                    <!--ObservationDefinition/Impurities-->
+               <reference value="ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="Impurities"/>
+                  <display value="Impurities"/>
+               </coding>
+               <text value="Impurities"/>
+            </code>
+            <subject>
+                    <!--Substance/actual-batch-substance-2-->
+               <reference value="Substance/6412c5d4-1b7d-8405-85dc-75dbaa300ea4"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="0.56"/>
+               <comparator value="&lt;"/>
+               <unit value="% w/w"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <text value="Impurity 2"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:732237a9-4b3b-27cc-99ca-6b913e622a29"/>
+      <resource>
+         <Observation>
+                <!--observationDegradation-imp3-->
+            <id value="732237a9-4b3b-27cc-99ca-6b913e622a29"/>
+            <instantiatesReference>
+                    <!--ObservationDefinition/Impurities-->
+               <reference value="ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="Impurities"/>
+                  <display value="Impurities"/>
+               </coding>
+               <text value="Impurities"/>
+            </code>
+            <subject>
+                    <!--Substance/substance-dxpq-ex1-->
+               <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="0.1"/>
+               <comparator value="&lt;"/>
+               <unit value="% w/w"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <text value="Impurity 3"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:732237a9-4b3b-27dc-99ca-6b913e622a29"/>
+      <resource>
+         <Observation>
+                <!--observationDegradation-imp3Second-->
+            <id value="732237a9-4b3b-27dc-99ca-6b913e622a29"/>
+            <instantiatesReference>
+                    <!--ObservationDefinition/Impurities-->
+               <reference value="ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="Impurities"/>
+                  <display value="Impurities"/>
+               </coding>
+               <text value="Impurities"/>
+            </code>
+            <subject>
+                    <!--Substance/actual-batch-substance-2-->
+               <reference value="Substance/6412c5d4-1b7d-8405-85dc-75dbaa300ea4"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="0.13"/>
+               <comparator value="&lt;"/>
+               <unit value="% w/w"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <text value="Impurity 3"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:52afbeb4-4958-a275-a0ca-d70b2b5240ec"/>
+      <resource>
+         <Observation>
+                <!--observationDegradation-imp3-2-->
+            <id value="52afbeb4-4958-a275-a0ca-d70b2b5240ec"/>
+            <instantiatesReference>
+                    <!--ObservationDefinition/Impurities-->
+               <reference value="ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="Impurities"/>
+                  <display value="Impurities"/>
+               </coding>
+               <text value="Impurities"/>
+            </code>
+            <subject>
+                    <!--Substance/substance-dxpq-ex1-->
+               <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="0.1"/>
+               <comparator value="&lt;"/>
+               <unit value="% w/w"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <text value="Impurity 3"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:7fc395b1-59e4-78be-0512-cf92133c0fac"/>
+      <resource>
+         <Observation>
+                <!--observationDegradation-imp3-3-->
+            <id value="7fc395b1-59e4-78be-0512-cf92133c0fac"/>
+            <instantiatesReference>
+                    <!--ObservationDefinition/Impurities-->
+               <reference value="ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="Impurities"/>
+                  <display value="Impurities"/>
+               </coding>
+               <text value="Impurities"/>
+            </code>
+            <subject>
+                    <!--Substance/substance-dxpq-ex1-->
+               <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="0.1"/>
+               <comparator value="&lt;"/>
+               <unit value="% w/w"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <text value="Impurity 3"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:10b80cbd-45d3-9be1-63b9-29f04b47376c"/>
+      <resource>
+         <Observation>
+                <!--observationDegradation-imp-total-->
+            <id value="10b80cbd-45d3-9be1-63b9-29f04b47376c"/>
+            <instantiatesReference>
+                    <!--ObservationDefinition/Impurities-->
+               <reference value="ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="Impurities"/>
+                  <display value="Impurities"/>
+               </coding>
+               <text value="Impurities"/>
+            </code>
+            <subject>
+                    <!--Substance/substance-dxpq-ex1-->
+               <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="0.02"/>
+               <comparator value="&lt;"/>
+               <unit value="% w/w"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <text value="Total impurities"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:84f015ac-9572-324f-8013-0b999cc95bbd"/>
+      <resource>
+         <Observation>
+                <!--observationDegradation-imp-total-2-->
+            <id value="84f015ac-9572-324f-8013-0b999cc95bbd"/>
+            <instantiatesReference>
+                    <!--ObservationDefinition/Impurities-->
+               <reference value="ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="Impurities"/>
+                  <display value="Impurities"/>
+               </coding>
+               <text value="Impurities"/>
+            </code>
+            <subject>
+                    <!--Substance/substance-dxpq-ex1-->
+               <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="0.02"/>
+               <comparator value="&lt;"/>
+               <unit value="% w/w"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <text value="Total impurities"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:987daeaa-4c2a-72b7-780f-4a9403163a3e"/>
+      <resource>
+         <Observation>
+                <!--observationDegradation-imp-total-3-->
+            <id value="987daeaa-4c2a-72b7-780f-4a9403163a3e"/>
+            <instantiatesReference>
+                    <!--ObservationDefinition/Impurities-->
+               <reference value="ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="Impurities"/>
+                  <display value="Impurities"/>
+               </coding>
+               <text value="Impurities"/>
+            </code>
+            <subject>
+                    <!--Substance/substance-dxpq-ex1-->
+               <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="0.02"/>
+               <comparator value="&lt;"/>
+               <unit value="% w/w"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                        <!-- could have the code of an imr substance, or could have an extension to point to it as a resource -->
+                  <text value="Total impurities"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:10b80cbd-45d4-9be1-63b9-29f04b47376c"/>
+      <resource>
+         <Observation>
+                <!--observationDegradation-imp-totalSecond-->
+            <id value="10b80cbd-45d4-9be1-63b9-29f04b47376c"/>
+            <instantiatesReference>
+                    <!--ObservationDefinition/Impurities-->
+               <reference value="ObservationDefinition/d04e0f2a-6ee7-6c2e-1db8-7df394c927b8"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="Impurities"/>
+                  <display value="Impurities"/>
+               </coding>
+               <text value="Impurities"/>
+            </code>
+            <subject>
+                    <!--Substance/actual-batch-substance-2-->
+               <reference value="Substance/6412c5d4-1b7d-8405-85dc-75dbaa300ea4"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="0.18"/>
+               <comparator value="&lt;"/>
+               <unit value="% w/w"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <text value="Total impurities"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:ff26533d-88a8-7f18-a275-42dc1373a388"/>
+      <resource>
+         <Observation>
+			    <!--observationElemental-->
+            <id value="ff26533d-88a8-7f18-a275-42dc1373a388"/>
+            <instantiatesReference>
+				    <!--ObservationDefinition/Elemental-->
+               <reference value="ObservationDefinition/0634020c-8729-99fc-7637-89799d7c445b"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="Elemental"/>
+                  <display value="Elemental"/>
+               </coding>
+            </code>
+            <subject>
+				    <!--Substance/substance-dxpq-ex1-->
+               <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueString value="As, Cd, Hg, Pb: Not detected. Pd: &lt; 29 ppm"/>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <text value="Impurity - Elemental"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:c99666d2-7962-9a71-58f6-7b2e5aa662f5"/>
+      <resource>
+         <Observation>
+			    <!--observationElemental2-->
+            <id value="c99666d2-7962-9a71-58f6-7b2e5aa662f5"/>
+            <instantiatesReference>
+				    <!--ObservationDefinition/Elemental-->
+               <reference value="ObservationDefinition/0634020c-8729-99fc-7637-89799d7c445b"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="Elemental"/>
+                  <display value="Elemental"/>
+               </coding>
+               <text value="Elemental"/>
+            </code>
+            <subject>
+				    <!--Substance/substance-dxpq-ex1-->
+               <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <dataAbsentReason>
+               <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/data-absent-reason"/>
+                  <code value="not-performed"/>
+                  <display value="Not Performed"/>
+               </coding>
+               <text value="Not tested"/>
+            </dataAbsentReason>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:c18e21d3-7113-4d08-4ff3-0c9718596f64"/>
+      <resource>
+         <Observation>
+			    <!--observationElemental3-->
+            <id value="c18e21d3-7113-4d08-4ff3-0c9718596f64"/>
+            <instantiatesReference>
+				    <!--ObservationDefinition/Elemental-->
+               <reference value="ObservationDefinition/0634020c-8729-99fc-7637-89799d7c445b"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="Elemental"/>
+                  <display value="Elemental"/>
+               </coding>
+               <text value="Elemental"/>
+            </code>
+            <subject>
+				    <!--Substance/substance-dxpq-ex1-->
+               <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <dataAbsentReason>
+               <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/data-absent-reason"/>
+                  <code value="not-performed"/>
+                  <display value="Not Performed"/>
+               </coding>
+               <text value="Not tested"/>
+            </dataAbsentReason>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:ff26533d-88a8-7f18-a275-52dc1373a388"/>
+      <resource>
+         <Observation>
+                <!--observationElementalSecond-->
+            <id value="ff26533d-88a8-7f18-a275-52dc1373a388"/>
+            <instantiatesReference>
+                    <!--ObservationDefinition/Elemental-->
+               <reference value="ObservationDefinition/0634020c-8729-99fc-7637-89799d7c445b"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="Elemental"/>
+                  <display value="Elemental"/>
+               </coding>
+            </code>
+            <subject>
+                    <!--Substance/actual-batch-substance-2-->
+               <reference value="Substance/6412c5d4-1b7d-8405-85dc-75dbaa300ea4"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueString value="As, Cd, Hg, Pb: Not detected. Pd: &lt; 31 ppm"/>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <text value="Impurity - Elemental"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:ff26533d-88b8-7f18-a275-42dc1373a388"/>
+      <resource>
+         <Observation>
+                <!--observationAssignedPurity1-->
+            <id value="ff26533d-88b8-7f18-a275-42dc1373a388"/>
+            <instantiatesReference>
+                    <!--ObservationDefinition/AssignedPurity-->
+               <reference value="ObservationDefinition/0634020c-8729-99fc-7637-897a9d7c445b"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="AssignedPurity"/>
+                  <display value="Assigned Purity"/>
+               </coding>
+            </code>
+            <subject>
+                    <!--Substance/substance-dxpq-ex1-->
+               <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
+            </subject>
+            <effectiveDateTime value="2021-01-01T12:00:00Z"/>
+            <performer>
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="85.22"/>
+               <unit value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <text value="Impurity - Elemental"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:ff26534d-88b8-7f18-a275-42dc1373a388"/>
+      <resource>
+         <Observation>
+                <!--observationAssignedPurity2-->
+            <id value="ff26534d-88b8-7f18-a275-42dc1373a388"/>
+            <instantiatesReference>
+                    <!--ObservationDefinition/AssignedPurity-->
+               <reference value="ObservationDefinition/0634020c-8729-99fc-7637-897a9d7c445b"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="AssignedPurity"/>
+                  <display value="Assigned Purity"/>
+               </coding>
+            </code>
+            <subject>
+                    <!--Substance/substance-dxpq-ex1-->
+               <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
+            </subject>
+            <effectiveDateTime value="2022-01-01T12:00:00Z"/>
+            <performer>
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="85.33"/>
+               <unit value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <text value="Impurity - Elemental"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:ff26544d-88b8-7f18-a275-42dc1373a388"/>
+      <resource>
+         <Observation>
+                <!--observationAssignedPurity3-->
+            <id value="ff26544d-88b8-7f18-a275-42dc1373a388"/>
+            <instantiatesReference>
+                    <!--ObservationDefinition/AssignedPurity-->
+               <reference value="ObservationDefinition/0634020c-8729-99fc-7637-897a9d7c445b"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="AssignedPurity"/>
+                  <display value="Assigned Purity"/>
+               </coding>
+            </code>
+            <subject>
+                    <!--Substance/substance-dxpq-ex1-->
+               <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="85.44"/>
+               <unit value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <text value="Impurity - Elemental"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:ff36533d-88b8-7f18-a275-42dc1373a388"/>
+      <resource>
+         <Observation>
+                <!--observationAssignedPurity1second-->
+            <id value="ff36533d-88b8-7f18-a275-42dc1373a388"/>
+            <instantiatesReference>
+                    <!--ObservationDefinition/AssignedPurity-->
+               <reference value="ObservationDefinition/0634020c-8729-99fc-7637-897a9d7c445b"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="AssignedPurity"/>
+                  <display value="Assigned Purity"/>
+               </coding>
+            </code>
+            <subject>
+                    <!--Substance/actual-batch-substance-2-->
+               <reference value="Substance/6412c5d4-1b7d-8405-85dc-75dbaa300ea4"/>
+            </subject>
+            <effectiveDateTime value="2021-01-01T12:00:00Z"/>
+            <performer>
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="75.22"/>
+               <unit value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="IMP"/>
+                     <display value="Impurity"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <text value="Impurity - Elemental"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:f8160692-a7a8-3fa6-9f35-e7df35f51ac0"/>
+      <resource>
+         <Observation>
+				<!--observationSolvents-sol1-->
+            <id value="f8160692-a7a8-3fa6-9f35-e7df35f51ac0"/>
+            <instantiatesReference>
+					<!--ObservationDefinition/Solvents-->
+               <reference value="ObservationDefinition/2daba8ca-211f-4f4b-4028-16c30fe22ee8"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="SOL"/>
+                  <display value="Residual solvents"/>
+               </coding>
+            </code>
+            <subject>
+				    <!--Substance/substance-dxpq-ex1-->
+               <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="0.1"/>
+               <unit value="% w/w"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="SOLV"/>
+                     <display value="Solvent"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <text value="Solvent 1"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:a531aee9-4c21-06af-352c-a3615b5d957e"/>
+      <resource>
+         <Observation>
+				<!--observationSolvents-sol1-2-->
+            <id value="a531aee9-4c21-06af-352c-a3615b5d957e"/>
+            <instantiatesReference>
+					<!--ObservationDefinition/Solvents-->
+               <reference value="ObservationDefinition/2daba8ca-211f-4f4b-4028-16c30fe22ee8"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="SOL"/>
+                  <display value="Residual solvents"/>
+               </coding>
+            </code>
+            <subject>
+				    <!--Substance/substance-dxpq-ex1-->
+               <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="0.1"/>
+               <unit value="% w/w"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="SOLV"/>
+                     <display value="Solvent"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <text value="Solvent 1"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:033ce81d-5f0d-7a3e-93d3-fc64e122a1fd"/>
+      <resource>
+         <Observation>
+				<!--observationSolvents-sol1-3-->
+            <id value="033ce81d-5f0d-7a3e-93d3-fc64e122a1fd"/>
+            <instantiatesReference>
+					<!--ObservationDefinition/Solvents-->
+               <reference value="ObservationDefinition/2daba8ca-211f-4f4b-4028-16c30fe22ee8"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="SOL"/>
+                  <display value="Residual solvents"/>
+               </coding>
+            </code>
+            <subject>
+				    <!--Substance/substance-dxpq-ex1-->
+               <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="0.1"/>
+               <unit value="% w/w"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="SOLV"/>
+                     <display value="Solvent"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <text value="Solvent 1"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:f8160692-b7a8-3fa6-9f35-e7df35f51ac0"/>
+      <resource>
+         <Observation>
+                <!--observationSolvents-sol1Second-->
+            <id value="f8160692-b7a8-3fa6-9f35-e7df35f51ac0"/>
+            <instantiatesReference>
+                    <!--ObservationDefinition/Solvents-->
+               <reference value="ObservationDefinition/2daba8ca-211f-4f4b-4028-16c30fe22ee8"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="SOL"/>
+                  <display value="Residual solvents"/>
+               </coding>
+            </code>
+            <subject>
+                    <!--Substance/actual-batch-substance-2-->
+               <reference value="Substance/6412c5d4-1b7d-8405-85dc-75dbaa300ea4"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="0.13"/>
+               <unit value="% w/w"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="SOLV"/>
+                     <display value="Solvent"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <text value="Solvent 1"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:ba8a182e-8571-6cbd-047b-612735d599d2"/>
+      <resource>
+         <Observation>
+				<!--observationSolvents-sol2-->
+            <id value="ba8a182e-8571-6cbd-047b-612735d599d2"/>
+            <instantiatesReference>
+					<!--ObservationDefinition/Solvents-->
+               <reference value="ObservationDefinition/2daba8ca-211f-4f4b-4028-16c30fe22ee8"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="SOL"/>
+                  <display value="Residual solvents"/>
+               </coding>
+            </code>
+            <subject>
+				    <!--Substance/substance-dxpq-ex1-->
+               <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="1.4"/>
+               <unit value="% w/w"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="SOLV"/>
+                     <display value="Solvent"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <text value="Solvent 2"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:0b5b94cc-7a1a-4ada-66c7-954ceb528d67"/>
+      <resource>
+         <Observation>
+				<!--observationSolvents-sol2-2-->
+            <id value="0b5b94cc-7a1a-4ada-66c7-954ceb528d67"/>
+            <instantiatesReference>
+					<!--ObservationDefinition/Solvents-->
+               <reference value="ObservationDefinition/2daba8ca-211f-4f4b-4028-16c30fe22ee8"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="SOL"/>
+                  <display value="Residual solvents"/>
+               </coding>
+            </code>
+            <subject>
+				    <!--Substance/substance-dxpq-ex1-->
+               <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="1.5"/>
+               <unit value="% w/w"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="SOLV"/>
+                     <display value="Solvent"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <text value="Solvent 2"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:6afaacee-11a6-58b2-47df-5f79722c66ac"/>
+      <resource>
+         <Observation>
+				<!--observationSolvents-sol2-3-->
+            <id value="6afaacee-11a6-58b2-47df-5f79722c66ac"/>
+            <instantiatesReference>
+					<!--ObservationDefinition/Solvents-->
+               <reference value="ObservationDefinition/2daba8ca-211f-4f4b-4028-16c30fe22ee8"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="SOL"/>
+                  <display value="Residual solvents"/>
+               </coding>
+            </code>
+            <subject>
+				    <!--Substance/substance-dxpq-ex1-->
+               <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="1.2"/>
+               <unit value="% w/w"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="SOLV"/>
+                     <display value="Solvent"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <text value="Solvent 2"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:ba8a182e-9571-6cbd-047b-612735d599d2"/>
+      <resource>
+         <Observation>
+                <!--observationSolvents-sol2Second-->
+            <id value="ba8a182e-9571-6cbd-047b-612735d599d2"/>
+            <instantiatesReference>
+                    <!--ObservationDefinition/Solvents-->
+               <reference value="ObservationDefinition/2daba8ca-211f-4f4b-4028-16c30fe22ee8"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="SOL"/>
+                  <display value="Residual solvents"/>
+               </coding>
+            </code>
+            <subject>
+                    <!--Substance/actual-batch-substance-2-->
+               <reference value="Substance/6412c5d4-1b7d-8405-85dc-75dbaa300ea4"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="1.43"/>
+               <unit value="% w/w"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+            <component>
+               <code>
+                  <coding>
+                     <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                     <code value="SOLV"/>
+                     <display value="Solvent"/>
+                  </coding>
+               </code>
+               <valueCodeableConcept>
+                  <text value="Solvent 2"/>
+               </valueCodeableConcept>
+            </component>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:c2644a86-1684-286e-00e2-dcaf907a8970"/>
+      <resource>
+         <Observation>
+				<!--observationWater-->
+            <id value="c2644a86-1684-286e-00e2-dcaf907a8970"/>
+            <instantiatesReference>
+					<!--ObservationDefinition/Water-->
+               <reference value="ObservationDefinition/17b322fe-53ea-6c1f-521b-3b148ac05eb4"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="WaterContent"/>
+                  <display value="Water Content"/>
+               </coding>
+               <text value="Water Content"/>
+            </code>
+            <subject>
+				    <!--Substance/substance-dxpq-ex1-->
+               <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="0.8"/>
+               <unit value="% w/w"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:cb5f6872-6eeb-727a-7c33-f2c438581a1c"/>
+      <resource>
+         <Observation>
+				<!--observationWater2-->
+            <id value="cb5f6872-6eeb-727a-7c33-f2c438581a1c"/>
+            <instantiatesReference>
+					<!--ObservationDefinition/Water-->
+               <reference value="ObservationDefinition/17b322fe-53ea-6c1f-521b-3b148ac05eb4"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="WaterContent"/>
+                  <display value="Water Content"/>
+               </coding>
+               <text value="Water Content"/>
+            </code>
+            <subject>
+				    <!--Substance/substance-dxpq-ex1-->
+               <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="0.8"/>
+               <unit value="% w/w"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:7faaf980-7c10-7b9a-9572-1bacd485824e"/>
+      <resource>
+         <Observation>
+				<!--observationWater3-->
+            <id value="7faaf980-7c10-7b9a-9572-1bacd485824e"/>
+            <instantiatesReference>
+					<!--ObservationDefinition/Water-->
+               <reference value="ObservationDefinition/17b322fe-53ea-6c1f-521b-3b148ac05eb4"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="WaterContent"/>
+                  <display value="Water Content"/>
+               </coding>
+               <text value="Water Content"/>
+            </code>
+            <subject>
+				    <!--Substance/substance-dxpq-ex1-->
+               <reference value="Substance/87ef899b-14dd-26b7-7416-7ec1d01b62a1"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+					<!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="0.8"/>
+               <unit value="% w/w"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+         </Observation>
+      </resource>
+   </entry>
+   <entry>
+      <fullUrl value="urn:uuid:c2644a86-1685-286e-00e2-dcaf907a8970"/>
+      <resource>
+         <Observation>
+                <!--observationWaterSecond-->
+            <id value="c2644a86-1685-286e-00e2-dcaf907a8970"/>
+            <instantiatesReference>
+                    <!--ObservationDefinition/Water-->
+               <reference value="ObservationDefinition/17b322fe-53ea-6c1f-521b-3b148ac05eb4"/>
+            </instantiatesReference>
+            <status value="final"/>
+            <code>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-local-codes-drug-pq-example"/>
+                  <code value="WaterContent"/>
+                  <display value="Water Content"/>
+               </coding>
+               <text value="Water Content"/>
+            </code>
+            <subject>
+                    <!--Substance/actual-batch-substance-2-->
+               <reference value="Substance/6412c5d4-1b7d-8405-85dc-75dbaa300ea4"/>
+            </subject>
+            <effectiveDateTime value="2023-01-01T12:00:00Z"/>
+            <performer>
+                    <!--Organization/378fbe5f-5926-3a5c-4c64-5428df877b08-->
+               <reference value="Organization/378fbe5f-5926-3a5c-4c64-5428df877b08"/>
+            </performer>
+            <valueQuantity>
+               <value value="0.79"/>
+               <unit value="% w/w"/>
+               <system value="http://unitsofmeasure.org"/>
+               <code value="%"/>
+            </valueQuantity>
+         </Observation>
+      </resource>
+   </entry>
+</Bundle>
