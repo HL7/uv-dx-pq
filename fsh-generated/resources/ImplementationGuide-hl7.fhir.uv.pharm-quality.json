@@ -136,7 +136,7 @@
           "reference": "ObservationDefinition/accelerated40X"
         },
         "name": "accelerated40X",
-        "groupingId": "stability",
+        "groupingId": "building-blocks",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"
@@ -147,7 +147,7 @@
           "reference": "ObservationDefinition/accelerated40Y"
         },
         "name": "accelerated40Y",
-        "groupingId": "stability",
+        "groupingId": "building-blocks",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"
@@ -158,7 +158,7 @@
           "reference": "ObservationDefinition/accelerated40Z"
         },
         "name": "accelerated40Z",
-        "groupingId": "stability",
+        "groupingId": "building-blocks",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"
@@ -545,7 +545,7 @@
           "reference": "DiagnosticReport/diagnosticreport-analysis-drug-pq-stability-prod"
         },
         "name": "diagnosticreport-analysis-drug-pq-stability-prod",
-        "groupingId": "stability",
+        "groupingId": "building-blocks",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-analysis-drug-pq"
@@ -632,6 +632,30 @@
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-test-drug-pq"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Bundle/bundle-drug-stability-pq-ex1-prod"
+        },
+        "name": "Example: Bundle – Stability, product",
+        "description": "Example of Bundle – Stability for drug product.",
+        "groupingId": "stability",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-stability-pq"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Bundle/bundle-drug-stability-pq-ex2-sub"
+        },
+        "name": "Example: Bundle – Stability, substance",
+        "description": "Example of Bundle – Stability for drug substance.",
+        "groupingId": "stability",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-stability-pq"
         ]
       },
       {
@@ -1059,7 +1083,7 @@
           "reference": "ObservationDefinition/longTerm25X"
         },
         "name": "longTerm25X",
-        "groupingId": "stability",
+        "groupingId": "building-blocks",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"
@@ -1070,7 +1094,7 @@
           "reference": "ObservationDefinition/longTerm25Y"
         },
         "name": "longTerm25Y",
-        "groupingId": "stability",
+        "groupingId": "building-blocks",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"
@@ -1081,7 +1105,7 @@
           "reference": "ObservationDefinition/longTerm25Z"
         },
         "name": "longTerm25Z",
-        "groupingId": "stability",
+        "groupingId": "building-blocks",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"
@@ -1092,7 +1116,7 @@
           "reference": "ObservationDefinition/longTerm30X"
         },
         "name": "longTerm30X",
-        "groupingId": "stability",
+        "groupingId": "building-blocks",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"
@@ -1103,7 +1127,7 @@
           "reference": "ObservationDefinition/longTerm30Y"
         },
         "name": "longTerm30Y",
-        "groupingId": "stability",
+        "groupingId": "building-blocks",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"
@@ -1279,7 +1303,7 @@
           "reference": "Observation/observation-test-result-longterm25c-initial-1"
         },
         "name": "observation-test-result-longterm25c-initial-1",
-        "groupingId": "stability",
+        "groupingId": "building-blocks",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"
@@ -1777,7 +1801,7 @@
         },
         "name": "Stability Monitoring Program",
         "description": "Narrative description of Stability Study",
-        "groupingId": "stability",
+        "groupingId": "building-blocks",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"

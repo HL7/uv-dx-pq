@@ -144,7 +144,7 @@
                   <description value="25°C/60% RH"/>
                   <action> <!-- 0 months -->
                      <title value="Initial"/>
-                     <timingTiming>
+                     <timing>
                         <repeat>
                            <boundsRange>
                               <low>
@@ -162,7 +162,7 @@
                            </boundsRange>
                            <frequency value="1"/>
                         </repeat>
-                     </timingTiming>
+                     </timing>
                      <action> <!-- the categories to do at this step -->
                         <title value="XYZ"/>
                         <!-- Long term -->
@@ -174,7 +174,7 @@
                   <!-- todo put comments back in? -->
                   <action>
                      <title value="3"/>
-                     <timingTiming>
+                     <timing>
                         <repeat>
                            <boundsRange>
                               <low>
@@ -192,7 +192,7 @@
                            </boundsRange>
                            <frequency value="1"/>
                         </repeat>
-                     </timingTiming>
+                     </timing>
                      <action>
                         <title value="X"/>
                         <!--ActivityDefinition/activitydefinition-stability-test-dxpq-ex1-->
@@ -202,7 +202,7 @@
                   <!-- 6 months -->
                   <action>
                      <title value="6"/>
-                     <timingTiming>
+                     <timing>
                         <repeat>
                            <boundsRange>
                               <low>
@@ -220,7 +220,7 @@
                            </boundsRange>
                            <frequency value="1"/>
                         </repeat>
-                     </timingTiming>
+                     </timing>
                      <action>
                         <title value="X"/>
                         <!--ActivityDefinition/activityLongTerm25X-6-->
@@ -230,7 +230,7 @@
                   <!-- 9 months -->
                   <action>
                      <title value="9"/>
-                     <timingTiming>
+                     <timing>
                         <repeat>
                            <boundsRange>
                               <low>
@@ -248,7 +248,7 @@
                            </boundsRange>
                            <frequency value="1"/>
                         </repeat>
-                     </timingTiming>
+                     </timing>
                      <action>
                         <title value="X"/>
                         <!--ActivityDefinition/activityLongTerm25X-9-->
@@ -258,7 +258,7 @@
                   <!-- 12 months -->
                   <action>
                      <title value="12"/>
-                     <timingTiming>
+                     <timing>
                         <repeat>
                            <boundsRange>
                               <low>
@@ -276,7 +276,7 @@
                            </boundsRange>
                            <frequency value="1"/>
                         </repeat>
-                     </timingTiming>
+                     </timing>
                      <action>
                         <title value="XY"/>
                         <!--ActivityDefinition/activityLongTerm25XY-12-->
@@ -286,7 +286,7 @@
                   <!-- 18 months -->
                   <action>
                      <title value="18"/>
-                     <timingTiming>
+                     <timing>
                         <repeat>
                            <boundsRange>
                               <low>
@@ -304,7 +304,7 @@
                            </boundsRange>
                            <frequency value="1"/>
                         </repeat>
-                     </timingTiming>
+                     </timing>
                      <action>
                         <title value="XY"/>
                         <!--ActivityDefinition/activityLongTerm25XY-18-->
@@ -314,7 +314,7 @@
                   <!-- 24 months -->
                   <action>
                      <title value="24"/>
-                     <timingTiming>
+                     <timing>
                         <repeat>
                            <boundsRange>
                               <low>
@@ -332,7 +332,7 @@
                            </boundsRange>
                            <frequency value="1"/>
                         </repeat>
-                     </timingTiming>
+                     </timing>
                      <action>
                         <title value="XY"/>
                         <!--ActivityDefinition/activityLongTerm25XY-24-->
@@ -347,7 +347,7 @@
                   <description value="40°C/75% RH"/>
                   <action>
                      <title value="Initial"/>
-                     <timingTiming>
+                     <timing>
                         <repeat>
                            <boundsRange>
                               <low>
@@ -365,7 +365,7 @@
                            </boundsRange>
                            <frequency value="1"/>
                         </repeat>
-                     </timingTiming>
+                     </timing>
                      <action>
                         <title value="XYZ"/>
                         <!--ActivityDefinition/activityAccelerated40XYZ-Initial-->
@@ -374,7 +374,7 @@
                   </action>
                   <action>
                      <title value="3"/>
-                     <timingTiming>
+                     <timing>
                         <repeat>
                            <boundsRange>
                               <low>
@@ -392,7 +392,7 @@
                            </boundsRange>
                            <frequency value="1"/>
                         </repeat>
-                     </timingTiming>
+                     </timing>
                      <action>
                         <title value="X"/>
                         <!--ActivityDefinition/activityAccelerated40X-3-->
@@ -401,7 +401,7 @@
                   </action>
                   <action>
                      <title value="6"/>
-                     <timingTiming>
+                     <timing>
                         <repeat>
                            <boundsRange>
                               <low>
@@ -419,7 +419,7 @@
                            </boundsRange>
                            <frequency value="1"/>
                         </repeat>
-                     </timingTiming>
+                     </timing>
                      <action>
                         <title value="X"/>
                         <!--ActivityDefinition/activityAccelerated40X-6-->
@@ -428,7 +428,7 @@
                   </action>
                   <action>
                      <title value="9"/>
-                     <timingTiming>
+                     <timing>
                         <repeat>
                            <boundsRange>
                               <low>
@@ -446,14 +446,14 @@
                            </boundsRange>
                            <frequency value="1"/>
                         </repeat>
-                     </timingTiming>
+                     </timing>
                      <action>
                         <title value="-"/>
                      </action>
                   </action>
                   <action>
                      <title value="12"/>
-                     <timingTiming>
+                     <timing>
                         <repeat>
                            <boundsRange>
                               <low>
@@ -471,14 +471,14 @@
                            </boundsRange>
                            <frequency value="1"/>
                         </repeat>
-                     </timingTiming>
+                     </timing>
                      <action>
                         <title value="-"/>
                      </action>
                   </action>
                   <action>
                      <title value="18"/>
-                     <timingTiming>
+                     <timing>
                         <repeat>
                            <boundsRange>
                               <low>
@@ -496,14 +496,14 @@
                            </boundsRange>
                            <frequency value="1"/>
                         </repeat>
-                     </timingTiming>
+                     </timing>
                      <action>
                         <title value="-"/>
                      </action>
                   </action>
                   <action>
                      <title value="24"/>
-                     <timingTiming>
+                     <timing>
                         <repeat>
                            <boundsRange>
                               <low>
@@ -521,7 +521,7 @@
                            </boundsRange>
                            <frequency value="1"/>
                         </repeat>
-                     </timingTiming>
+                     </timing>
                      <action>
                         <title value="-"/>
                      </action>

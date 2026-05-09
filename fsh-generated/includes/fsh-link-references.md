@@ -55,6 +55,8 @@
 [VsEquipmentClassPQ]: ValueSet-vs-equipmentClass-pq.html
 [CsLocalCodesDrugPQ]: CodeSystem-cs-local-codes-drug-pq-example.html
 [activitydefinition-test-drug-pq-ex1]: ActivityDefinition-activitydefinition-test-drug-pq-ex1.html
+[bundle-drug-stability-pq-ex1-prod]: Bundle-bundle-drug-stability-pq-ex1-prod.html
+[bundle-drug-stability-pq-ex2-sub]: Bundle-bundle-drug-stability-pq-ex2-sub.html
 [ExtensionActualYieldPq]: StructureDefinition-Extension-actual-yield-pq.html
 [ExtensionActualYieldUnfilteredPq]: StructureDefinition-Extension-actual-yield-unfiltered-pq.html
 [ExtensionBatchDerivedFromPq]: StructureDefinition-Extension-batch-derived-from-pq.html

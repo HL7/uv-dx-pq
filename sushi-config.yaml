@@ -279,17 +279,9 @@ groups:
     name: Stability Study
     resources:
       - BundleDrugStabilityPq
-      - accelerated40X
-      - accelerated40Y
-      - accelerated40Z
-      - diagnosticreport-analysis-drug-pq-stability-prod
-      - longTerm25X
-      - longTerm25Y
-      - longTerm25Z
-      - longTerm30X
-      - longTerm30Y
-      - observation-test-result-longterm25c-initial-1
-      - plandefinition-drug-pq-ex5-stability-study-protocol
+      - bundle-drug-stability-pq-ex1-prod
+      - bundle-drug-stability-pq-ex2-sub
+      - BundleDrugStabilityPq
   extensions:
     name: Extensions
     resources:
@@ -323,3 +315,14 @@ groups:
       - specimenDefStoredAt40
       - specimendefinition-drug-pq-ex1
       - vs-testCategory-pq
+      - accelerated40X
+      - accelerated40Y
+      - accelerated40Z
+      - diagnosticreport-analysis-drug-pq-stability-prod
+      - longTerm25X
+      - longTerm25Y
+      - longTerm25Z
+      - longTerm30X
+      - longTerm30Y
+      - observation-test-result-longterm25c-initial-1
+      - plandefinition-drug-pq-ex5-stability-study-protocol
