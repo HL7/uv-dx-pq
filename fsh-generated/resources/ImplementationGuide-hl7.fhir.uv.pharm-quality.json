@@ -44,26 +44,68 @@
   "definition": {
     "grouping": [
       {
-        "id": "domain-bundle-profiles",
-        "name": "Domain Bundle Profiles",
-        "description": "This page provides a list of the FHIR artifacts defined as part of this implementation guide. Note that the mention of CTD sections, and the use of CTD style templates in the examples, are provided as points of reference for implementers and are to facilitate implementer ability to map the new 14 domain/subdomain granular structure to traditional CTD style templates."
+        "id": "analytical-procedures",
+        "name": "Analytical Procedures"
       },
       {
-        "id": "domain-bundle-examples",
-        "name": "Domain Bundle Examples"
+        "id": "batch-analysis",
+        "name": "Batch Analysis"
       },
       {
-        "id": "building-blocks-1",
-        "name": "Component Building Block Profiles",
-        "description": "FHIR artifacts used across many pharmaceutical quality domains."
+        "id": "batch-formula",
+        "name": "Batch Formula"
       },
       {
-        "id": "building-blocks-2",
-        "name": "Component Building Block Examples"
+        "id": "batch-information",
+        "name": "Batch/Lot Information"
       },
       {
-        "id": "extensions1",
+        "id": "compatibility",
+        "name": "Compatibility"
+      },
+      {
+        "id": "composition",
+        "name": "Composition"
+      },
+      {
+        "id": "container",
+        "name": "Container Closure System"
+      },
+      {
+        "id": "drug-specification",
+        "name": "Drug Specification"
+      },
+      {
+        "id": "identification",
+        "name": "Identification"
+      },
+      {
+        "id": "impurities",
+        "name": "Impurities"
+      },
+      {
+        "id": "manufacturing-process",
+        "name": "Manufacturing Process"
+      },
+      {
+        "id": "organizations",
+        "name": "Organizations"
+      },
+      {
+        "id": "process-validation",
+        "name": "Process Validation"
+      },
+      {
+        "id": "stability",
+        "name": "Stability Study"
+      },
+      {
+        "id": "extensions",
         "name": "Extensions"
+      },
+      {
+        "id": "building-blocks",
+        "name": "Component Building Blocks"
       }
     ],
     "resource": [
@@ -72,6 +114,7 @@
           "reference": "Composition/composition-drug-pq-formulation"
         },
         "name": "3.2.P.2.2.1 - Formulation Development",
+        "groupingId": "composition",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-drug-pq"
@@ -82,6 +125,7 @@
           "reference": "Composition/composition-drug-pq-risk"
         },
         "name": "3.2.P.2.2.4 - Summary for Risk of Impurities",
+        "groupingId": "composition",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-drug-pq"
@@ -92,6 +136,7 @@
           "reference": "ObservationDefinition/accelerated40X"
         },
         "name": "accelerated40X",
+        "groupingId": "stability",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"
@@ -102,6 +147,7 @@
           "reference": "ObservationDefinition/accelerated40Y"
         },
         "name": "accelerated40Y",
+        "groupingId": "stability",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"
@@ -112,6 +158,7 @@
           "reference": "ObservationDefinition/accelerated40Z"
         },
         "name": "accelerated40Z",
+        "groupingId": "stability",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"
@@ -123,6 +170,7 @@
         },
         "name": "ActivityDefinition - Test Drug PQ",
         "description": "This ActivityDefinition profile represents a set of tests and their acceptance criteria through the contained ObservationDefinition resources.",
+        "groupingId": "building-blocks",
         "isExample": false
       },
       {
@@ -130,6 +178,7 @@
           "reference": "ObservationDefinition/Assay"
         },
         "name": "Assay",
+        "groupingId": "analytical-procedures",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"
@@ -157,6 +206,7 @@
         },
         "name": "Bundle - Drug Product Compatibility PQ",
         "description": "Compatibility domain: This Bundle profile represents the structured data used in CTD section 3.2.P.2 Pharmaceutical Development, subsection 3.2.P.2.6 Compatibility.",
+        "groupingId": "compatibility",
         "isExample": false
       },
       {
@@ -165,6 +215,7 @@
         },
         "name": "Bundle - Drug Product PQ",
         "description": "Identification domain: This Bundle profile represents the structured data used in CTD section 3.2.P.2 Pharmaceutical Development, subsection 3.2.P.2.2 Drug Product.",
+        "groupingId": "building-blocks",
         "isExample": false
       },
       {
@@ -173,6 +224,7 @@
         },
         "name": "Bundle - Organizations PQ",
         "description": "Organizations domain: This Bundle profile represents the structured data used in CTD section 3.2.P.3 Manufacture, subsection 3.2.P.3.1 Manufacturer(s) and CTD section 3.2.S.2 Manufacture, subsection 3.2.S.2.1 Manufacturer(s).",
+        "groupingId": "organizations",
         "isExample": false
       },
       {
@@ -181,6 +233,7 @@
         },
         "name": "Bundle - Product Impurities PQ",
         "description": "Impurities domain: This Bundle profile represents the structured data used in CTD section 3.2.P.5 Control of Drug Product, subsection 3.2.P.5.5 Characterisation of Impurities and CTD section 3.2.S.3 Characterisation, subsection 3.2.S.3.2 Impurities.",
+        "groupingId": "impurities",
         "isExample": false
       },
       {
@@ -189,6 +242,7 @@
         },
         "name": "Bundle - Product Manufacturing PQ",
         "description": "Manufacturing Process domain: This Bundle profile represents the structured data used in CTD section 3.2.P.3 Manufacture, subsection 3.2.P.3.3 Description of Manufacturing Process and Process Controls and CTD section 3.2.S.2 Manufacture, subsection 3.2.S.2.2 Description of Manufacturing Process and Process Controls.",
+        "groupingId": "manufacturing-process",
         "isExample": false
       },
       {
@@ -197,6 +251,7 @@
         },
         "name": "Bundle - Product Process Validation PQ",
         "description": "Process Validation domain: This Bundle profile represents the structured data used in CTD section 3.2.P.3 Manufacture, subsection 3.2.P.3.5 Process Validation and/or Evaluation and CTD section 3.2.S.2 Manufacture, subsection 3.2.S.2.5 Process Validation and/or Evaluation.",
+        "groupingId": "manufacturing-process",
         "isExample": false
       },
       {
@@ -205,6 +260,7 @@
         },
         "name": "Bundle – Analytical Procedure PQ",
         "description": "Analytical Procedure domain: This Bundle profile represents the structured data used in CTD section 3.2.P.5 Control of Drug Product, subsection 3.2.P.5.2 Analytical Procedures and section 3.2.S.4 Control of Drug Substance, subsection 3.2.S.4.2 Analytical Procedures.",
+        "groupingId": "analytical-procedures",
         "isExample": false
       },
       {
@@ -213,6 +269,7 @@
         },
         "name": "Bundle – Batch Analysis PQ",
         "description": "Batch Analysis domain: This Bundle profile represents the structured data used in CTD section 3.2.P.5 Control of Drug Product, subsection 3.2.P.5.4 Batch Analyses and CTD section 3.2.S.4 Control of Drug Substance, subsection 3.2.S.4.4 Batch Analyses.",
+        "groupingId": "batch-information",
         "isExample": false
       },
       {
@@ -221,6 +278,7 @@
         },
         "name": "Bundle – Batch Formula PQ",
         "description": "Batch Formula domain: This Bundle profile represents the structured data used in CTD section 3.2.P.3 Manufacture, subsection 3.2.P.3.2 Batch Formula.",
+        "groupingId": "batch-information",
         "isExample": false
       },
       {
@@ -229,6 +287,7 @@
         },
         "name": "Bundle – Container Closure System PQ",
         "description": "Container Closure System domain: This Bundle profile represents the structured data in CTD sections 3.2.P.7 Container Closure System and 3.2.S.6 Container Closure System.",
+        "groupingId": "container",
         "isExample": false
       },
       {
@@ -237,6 +296,7 @@
         },
         "name": "Bundle – drug Product Batch Information PQ",
         "description": "Batch/Lot Information domain: This Bundle profile represents the structured data used in CTD section 3.2.P.5 Control of Drug Product, subsection 3.2.P.5.4 Batch Analyses.",
+        "groupingId": "batch-information",
         "isExample": false
       },
       {
@@ -245,6 +305,7 @@
         },
         "name": "Bundle – Drug Product Composition PQ",
         "description": "Composition domain: This Bundle profile represents the structured data used in CTD section 3.2.P.1 Description and Composition of the Drug Product.",
+        "groupingId": "composition",
         "isExample": false
       },
       {
@@ -253,6 +314,7 @@
         },
         "name": "Bundle – Drug Product Excipients PQ",
         "description": "Identification domain: This Bundle profile represents the structured data used in CTD section 3.2.P.4 Control of Excipients, subsections 3.2.P.4.5 Excipients of Human or Animal Origin and 3.2.P.4.6 Novel Excipients.",
+        "groupingId": "building-blocks",
         "isExample": false
       },
       {
@@ -261,6 +323,7 @@
         },
         "name": "Bundle – Drug Product Microbiological Attributes PQ",
         "description": "Identification domain: This Bundle profile represents the structured data used in CTD section 3.2.P.2 Pharmaceutical Development, subsection 3.2.P.2.5 Microbiological Attributes.",
+        "groupingId": "analytical-procedures",
         "isExample": false
       },
       {
@@ -269,6 +332,7 @@
         },
         "name": "Bundle – Drug Product Specification PQ",
         "description": "Specification domain: This Bundle profile represents the structured data used in CTD section 3.2.P.5 Control of Drug Product, subsection 3.2.P.5.1 Specification(s).",
+        "groupingId": "drug-specification",
         "isExample": false
       },
       {
@@ -277,6 +341,7 @@
         },
         "name": "Bundle – Drug Reference Standards PQ",
         "description": "Composition domain: This Bundle profile represents the structured data in CTD sections 3.2.P.6 Reference Standards or Materials and 3.2.S.5 Reference Standards or Materials.",
+        "groupingId": "building-blocks",
         "isExample": false
       },
       {
@@ -285,6 +350,7 @@
         },
         "name": "Bundle – Drug Stability PQ",
         "description": "Stability Study domain: This Bundle profile represents the structured data used in CTD section 3.2.P.8 Stability, subsection 3.2.P.8.3 Stability Data, and CTD section 3.2.S.7 Stability, subsection 3.2.S.7.3 Stability Data.",
+        "groupingId": "stability",
         "isExample": false
       },
       {
@@ -293,6 +359,7 @@
         },
         "name": "Bundle – Drug Substance Batch Information PQ",
         "description": "Batch/Lot Information domain: This Bundle profile represents the structured data used in CTD section 3.2.S.4 Control of Drug Substance, subsection 3.2.S.4.4 Batch Analyses.",
+        "groupingId": "batch-information",
         "isExample": false
       },
       {
@@ -301,6 +368,7 @@
         },
         "name": "Bundle – Drug Substance Characterization PQ",
         "description": "Identification domain: This Bundle profile represents the structured data used in CTD section 3.2.S.3 Characterisation, subsection 3.2.S.3.1 – Elucidation of Structure and Other Characteristics.",
+        "groupingId": "composition",
         "isExample": false
       },
       {
@@ -309,6 +377,7 @@
         },
         "name": "Bundle – Drug Substance General Properties PQ",
         "description": "Identification domain: This Bundle profile represents the structured data used in CTD section 3.2.S.1 General Information, subsection 3.2.S.1.3 General Properties.",
+        "groupingId": "composition",
         "isExample": false
       },
       {
@@ -317,6 +386,7 @@
         },
         "name": "Bundle – Drug Substance Specification PQ",
         "description": "Specification domain: This Bundle profile represents the structured data used in CTD section 3.2.S.4 Control of Drug Substance, subsection 3.2.S.4.1 Specification.",
+        "groupingId": "composition",
         "isExample": false
       },
       {
@@ -324,6 +394,7 @@
           "reference": "Bundle/bundle-organizations-pq-ex1"
         },
         "name": "bundle-organizations-pq-ex1",
+        "groupingId": "organizations",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organizations-pq"
@@ -367,6 +438,7 @@
         },
         "name": "Composition - Drug PQ",
         "description": "This Composition profile represents narrative text necessary for pharmaceutical quality (PQ) data exchange.",
+        "groupingId": "composition",
         "isExample": false
       },
       {
@@ -390,6 +462,7 @@
           "reference": "ObservationDefinition/Degradation"
         },
         "name": "Degradation",
+        "groupingId": "impurities",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"
@@ -400,6 +473,7 @@
           "reference": "ObservationDefinition/Description"
         },
         "name": "Description",
+        "groupingId": "analytical-procedures",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"
@@ -443,6 +517,7 @@
         },
         "name": "DeviceDefinition - Drug PQ",
         "description": "This DeviceDefinition profile represents information about devices and equipment used in pharmaceutical quality (PQ) data gathering.",
+        "groupingId": "building-blocks",
         "isExample": false
       },
       {
@@ -450,6 +525,7 @@
           "reference": "DeviceDefinition/devicedefinition-drug-pq-ex1"
         },
         "name": "devicedefinition-drug-pq-ex1",
+        "groupingId": "building-blocks",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DeviceDefinition-drug-pq"
@@ -461,6 +537,7 @@
         },
         "name": "DiagnosticReport - Analysis Drug PQ",
         "description": "This DiagnosticReport profile represents results from a batch analysis, stability study, characterization study, impurities analysis, manufacturing process validation study, etc.",
+        "groupingId": "building-blocks",
         "isExample": false
       },
       {
@@ -468,6 +545,7 @@
           "reference": "DiagnosticReport/diagnosticreport-analysis-drug-pq-stability-prod"
         },
         "name": "diagnosticreport-analysis-drug-pq-stability-prod",
+        "groupingId": "stability",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-analysis-drug-pq"
@@ -495,6 +573,7 @@
         },
         "name": "DocumentReference - Drug PQ",
         "description": "This DocumentReference profile references a document of any kind, including a diagram or image, that is necessary for pharmaceutical quality (PQ) data exchange.",
+        "groupingId": "building-blocks",
         "isExample": false
       },
       {
@@ -502,6 +581,7 @@
           "reference": "DocumentReference/documentreference-drug-pq-process-flow-diagram"
         },
         "name": "documentreference-drug-pq-process-flow-diagram",
+        "groupingId": "manufacturing-process",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DocumentReference-drug-pq"
@@ -513,6 +593,7 @@
         },
         "name": "DP PROCESS VALIDATION",
         "description": "Pre-defined validation acceptance criteria were established based on manufacturing development data derived from process characterization studies...",
+        "groupingId": "process-validation",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"
@@ -547,6 +628,7 @@
           "reference": "ActivityDefinition/activitydefinition-test-drug-pq-ex1"
         },
         "name": "Example of ActivityDefinition - Test for test set: Long-term - 25°C/60% RH - XYZ.",
+        "groupingId": "building-blocks",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-test-drug-pq"
@@ -558,6 +640,7 @@
         },
         "name": "Extension - Actual Yield PQ",
         "description": "The actual weight of a batch",
+        "groupingId": "extensions",
         "isExample": false
       },
       {
@@ -662,6 +745,7 @@
         },
         "name": "Extension - Formulation Number PQ",
         "description": "An identifying number for the particular substance formulation in the batch",
+        "groupingId": "extensions",
         "isExample": false
       },
       {
@@ -726,6 +810,7 @@
         },
         "name": "Extension - Packaging Date PQ",
         "description": "The date when the batch was packaged",
+        "groupingId": "extensions",
         "isExample": false
       },
       {
@@ -742,6 +827,7 @@
         },
         "name": "Extension - Plan Document Reference PQ",
         "description": "A link to a document or image that describes the process of this plan",
+        "groupingId": "extensions",
         "isExample": false
       },
       {
@@ -766,6 +852,7 @@
         },
         "name": "Extension - Qualified Value Criticality PQ",
         "description": "A measure of how important the control value of this process step is",
+        "groupingId": "extensions",
         "isExample": false
       },
       {
@@ -885,6 +972,7 @@
           "reference": "ObservationDefinition/Identification"
         },
         "name": "Identification",
+        "groupingId": "identification",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"
@@ -895,6 +983,7 @@
           "reference": "ObservationDefinition/Impurities"
         },
         "name": "Impurities",
+        "groupingId": "impurities",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"
@@ -938,6 +1027,7 @@
         },
         "name": "Ingredient - Drug Pq",
         "description": "This Ingredient profile represents the active ingredient(s) of a drug substance or product. It references one SubstanceDefinition resource and can include the strength or concentration of that substance.",
+        "groupingId": "composition",
         "isExample": false
       },
       {
@@ -969,6 +1059,7 @@
           "reference": "ObservationDefinition/longTerm25X"
         },
         "name": "longTerm25X",
+        "groupingId": "stability",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"
@@ -979,6 +1070,7 @@
           "reference": "ObservationDefinition/longTerm25Y"
         },
         "name": "longTerm25Y",
+        "groupingId": "stability",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"
@@ -989,6 +1081,7 @@
           "reference": "ObservationDefinition/longTerm25Z"
         },
         "name": "longTerm25Z",
+        "groupingId": "stability",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"
@@ -999,6 +1092,7 @@
           "reference": "ObservationDefinition/longTerm30X"
         },
         "name": "longTerm30X",
+        "groupingId": "stability",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"
@@ -1009,6 +1103,7 @@
           "reference": "ObservationDefinition/longTerm30Y"
         },
         "name": "longTerm30Y",
+        "groupingId": "stability",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"
@@ -1019,6 +1114,7 @@
           "reference": "ActivityDefinition/LyophilizationAct"
         },
         "name": "Lyophilization",
+        "groupingId": "building-blocks",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-test-drug-pq"
@@ -1046,6 +1142,7 @@
         },
         "name": "ManufacturedItemDefinition - Drug PQ",
         "description": "This ManufacturedItemDefinition profile represents information about the physical packaged medication item, such as a tablet or capsule.",
+        "groupingId": "building-blocks",
         "isExample": false
       },
       {
@@ -1102,6 +1199,7 @@
         },
         "name": "Medication - Batch Information Drug PQ",
         "description": "This Medication profile represents information about the batches that underwent testing or analysis.",
+        "groupingId": "batch-information",
         "isExample": false
       },
       {
@@ -1109,6 +1207,7 @@
           "reference": "Medication/medication-batch-information-drug-pq-ex1"
         },
         "name": "medication-batch-information-drug-pq-ex1",
+        "groupingId": "batch-information",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-batch-information-drug-pq"
@@ -1128,6 +1227,7 @@
         },
         "name": "MedicinalProductDefinition - Drug Product PQ",
         "description": "This MedicinalProductDefinition profile represents information that identifies the drug product.",
+        "groupingId": "building-blocks",
         "isExample": false
       },
       {
@@ -1151,6 +1251,7 @@
           "reference": "ObservationDefinition/Microbiological"
         },
         "name": "Microbiological",
+        "groupingId": "analytical-procedures",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"
@@ -1162,6 +1263,7 @@
         },
         "name": "Observation - Test Result Drug PQ",
         "description": "This Observation profile represents the result of a specific test defined by an ObservationDefinition resource.",
+        "groupingId": "building-blocks",
         "isExample": false
       },
       {
@@ -1177,6 +1279,7 @@
           "reference": "Observation/observation-test-result-longterm25c-initial-1"
         },
         "name": "observation-test-result-longterm25c-initial-1",
+        "groupingId": "stability",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"
@@ -1187,6 +1290,7 @@
           "reference": "Observation/observation-test-result-lt25c-i1-degradation-imp-total"
         },
         "name": "observation-test-result-lt25c-i1-degradation-imp-total",
+        "groupingId": "impurities",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"
@@ -1197,6 +1301,7 @@
           "reference": "Observation/observation-test-result-lt25c-i1-degradation-imp-unspecified"
         },
         "name": "observation-test-result-lt25c-i1-degradation-imp-unspecified",
+        "groupingId": "impurities",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"
@@ -1207,6 +1312,7 @@
           "reference": "Observation/observation-test-result-lt25c-i1-degradation-imp1"
         },
         "name": "observation-test-result-lt25c-i1-degradation-imp1",
+        "groupingId": "impurities",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"
@@ -1217,6 +1323,7 @@
           "reference": "Observation/observation-test-result-lt25c-i1-degradation-imp2"
         },
         "name": "observation-test-result-lt25c-i1-degradation-imp2",
+        "groupingId": "impurities",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"
@@ -1227,6 +1334,7 @@
           "reference": "Observation/observation-test-result-lt25c-i1-degradation-imp3"
         },
         "name": "observation-test-result-lt25c-i1-degradation-imp3",
+        "groupingId": "impurities",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"
@@ -1237,6 +1345,7 @@
           "reference": "Observation/observation-test-result-lt25c-i1-description"
         },
         "name": "observation-test-result-lt25c-i1-description",
+        "groupingId": "analytical-procedures",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"
@@ -1247,6 +1356,7 @@
           "reference": "Observation/observation-test-result-lt25c-i1-microbiological"
         },
         "name": "observation-test-result-lt25c-i1-microbiological",
+        "groupingId": "analytical-procedures",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"
@@ -1257,6 +1367,7 @@
           "reference": "Observation/observation-test-result-lt25c-i1-uniformity"
         },
         "name": "observation-test-result-lt25c-i1-uniformity",
+        "groupingId": "analytical-procedures",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"
@@ -1267,6 +1378,7 @@
           "reference": "Observation/observation-test-result-lt25c-i1-water"
         },
         "name": "observation-test-result-lt25c-i1-water",
+        "groupingId": "analytical-procedures",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"
@@ -1278,6 +1390,7 @@
         },
         "name": "ObservationDefinition - Test Method PQ",
         "description": "This ObservationDefinition profile represents information about pharmaceutical quality (PQ) tests and acceptance criteria.",
+        "groupingId": "building-blocks",
         "isExample": false
       },
       {
@@ -1286,6 +1399,7 @@
         },
         "name": "Organization - Drug PQ",
         "description": "This Organization profile represents information about a pharmaceutical company or site that performed drug testing or manufacturing.",
+        "groupingId": "organizations",
         "isExample": false
       },
       {
@@ -1293,6 +1407,7 @@
           "reference": "Organization/organization-drug-pq-ex1"
         },
         "name": "organization-drug-pq-ex1",
+        "groupingId": "organizations",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq"
@@ -1303,6 +1418,7 @@
           "reference": "Organization/organization-drug-pq-ex2"
         },
         "name": "organization-drug-pq-ex2",
+        "groupingId": "organizations",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq"
@@ -1313,6 +1429,7 @@
           "reference": "Organization/organization-drug-pq-ex3"
         },
         "name": "organization-drug-pq-ex3",
+        "groupingId": "organizations",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq"
@@ -1323,6 +1440,7 @@
           "reference": "Organization/organization-drug-pq-ex4"
         },
         "name": "organization-drug-pq-ex4",
+        "groupingId": "organizations",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq"
@@ -1333,6 +1451,7 @@
           "reference": "Organization/organization-drug-pq-ex5"
         },
         "name": "organization-drug-pq-ex5",
+        "groupingId": "organizations",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq"
@@ -1368,6 +1487,7 @@
         },
         "name": "PackagedProductDefinition - Drug PQ",
         "description": "This PackagedProductDefinition profile represents information about the packaging for a drug product or drug substance.",
+        "groupingId": "container",
         "isExample": false
       },
       {
@@ -1432,6 +1552,7 @@
         },
         "name": "PlanDefinition - Drug PQ",
         "description": "This PlanDefinition profile represents a protocol, analytical procedure, manufacturing process, or other workflow definition used in pharmaceutical quality (PQ) data gathering.",
+        "groupingId": "building-blocks",
         "isExample": false
       },
       {
@@ -1440,6 +1561,7 @@
         },
         "name": "Procedure - Drug PQ",
         "description": "This Procedure profile represents the actual performance of a manufacturing step, so that measurements can be recorded (via Observations), such as the actual “hold time” used, or the “bioburden” at the beginning or end of the step. The Procedure may record which device was used in the performance of a manufacturing step.",
+        "groupingId": "manufacturing-process",
         "isExample": false
       },
       {
@@ -1447,6 +1569,7 @@
           "reference": "Procedure/procedure-drug-pq-ex1"
         },
         "name": "procedure-drug-pq-ex1",
+        "groupingId": "manufacturing-process",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Procedure-drug-pq"
@@ -1457,6 +1580,7 @@
           "reference": "Procedure/procedure-drug-pq-ex2"
         },
         "name": "procedure-drug-pq-ex2",
+        "groupingId": "manufacturing-process",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Procedure-drug-pq"
@@ -1468,6 +1592,7 @@
         },
         "name": "Process 1.0",
         "description": "Narrative description of manufacturing process (5)",
+        "groupingId": "manufacturing-process",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"
@@ -1478,6 +1603,7 @@
           "reference": "PlanDefinition/plandefinition-drug-pq-ex4-mnf-process"
         },
         "name": "Process 1.0",
+        "groupingId": "manufacturing-process",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"
@@ -1577,6 +1703,7 @@
         },
         "name": "SPECIFICATION(S) FOR DRUG PRODUCT",
         "description": "Narrative description of specifications",
+        "groupingId": "drug-specification",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"
@@ -1588,6 +1715,7 @@
         },
         "name": "Specimen - Drug PQ",
         "description": "This Specimen profile represents identifying information about an individual specimen (an instance).",
+        "groupingId": "building-blocks",
         "isExample": false
       },
       {
@@ -1595,6 +1723,7 @@
           "reference": "Specimen/specimen-drug-pq-ex1"
         },
         "name": "specimen-drug-pq-ex1",
+        "groupingId": "building-blocks",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Specimen-drug-pq"
@@ -1606,6 +1735,7 @@
         },
         "name": "SpecimenDefinition - Drug PQ",
         "description": "This SpecimenDefinition profile represents information about the treatment of a specimen, such as storage conditions and test duration.",
+        "groupingId": "building-blocks",
         "isExample": false
       },
       {
@@ -1613,6 +1743,7 @@
           "reference": "SpecimenDefinition/specimendefinition-drug-pq-ex1"
         },
         "name": "specimendefinition-drug-pq-ex1",
+        "groupingId": "building-blocks",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-drug-pq"
@@ -1623,6 +1754,7 @@
           "reference": "SpecimenDefinition/specimenDefStoredAt30"
         },
         "name": "specimenDefStoredAt30",
+        "groupingId": "building-blocks",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-drug-pq"
@@ -1633,6 +1765,7 @@
           "reference": "SpecimenDefinition/specimenDefStoredAt40"
         },
         "name": "specimenDefStoredAt40",
+        "groupingId": "building-blocks",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-drug-pq"
@@ -1644,6 +1777,7 @@
         },
         "name": "Stability Monitoring Program",
         "description": "Narrative description of Stability Study",
+        "groupingId": "stability",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"
@@ -1663,6 +1797,7 @@
         },
         "name": "Substance - Drug PQ",
         "description": "This Substance profile represents identifying information about an actual batch of substance (an instance).",
+        "groupingId": "composition",
         "isExample": false
       },
       {
@@ -1702,6 +1837,7 @@
           "reference": "Substance/substance-drug-pq-ex1"
         },
         "name": "substance-drug-pq-ex1",
+        "groupingId": "composition",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq"
@@ -1713,6 +1849,7 @@
         },
         "name": "SubstanceDefinition - Component Substance Drug PQ",
         "description": "This SubstanceDefinition profile represents the chemical or biological details about a substance associated with an active ingredient (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits).",
+        "groupingId": "composition",
         "isExample": false
       },
       {
@@ -1721,6 +1858,7 @@
         },
         "name": "Test Category",
         "description": "This value set contains codes for test category.",
+        "groupingId": "building-blocks",
         "isExample": false
       },
       {
@@ -1745,6 +1883,7 @@
         },
         "name": "Time Point Description Codes",
         "description": "This code system contains codes for time point description.",
+        "groupingId": "analytical-procedures",
         "isExample": false
       },
       {
@@ -1752,6 +1891,7 @@
           "reference": "ObservationDefinition/Uniformity"
         },
         "name": "Uniformity",
+        "groupingId": "analytical-procedures",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"
@@ -1762,6 +1902,7 @@
           "reference": "ObservationDefinition/Water"
         },
         "name": "Water",
+        "groupingId": "analytical-procedures",
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"

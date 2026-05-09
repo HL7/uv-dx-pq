@@ -176,19 +176,150 @@ parameters:
     - http://terminology.hl7.org/CodeSystem/time-point-description
 
 groups:
-  domain-bundle-profiles:
-    name: Domain Bundle Profiles
-    description: >-
-      This page provides a list of the FHIR artifacts defined as part of this implementation guide.
-      Note that the mention of CTD sections, and the use of CTD style templates in the examples,
-      are provided as points of reference for implementers and are to facilitate implementer ability
-      to map the new 14 domain/subdomain granular structure to traditional CTD style templates.
-  domain-bundle-examples:
-    name: Domain Bundle Examples
-  building-blocks-1:
-    name: Component Building Block Profiles
-    description: FHIR artifacts used across many pharmaceutical quality domains.
-  building-blocks-2:
-    name: Component Building Block Examples
-  extensions1:
+  analytical-procedures:
+    name: Analytical Procedures
+    resources:
+      - Assay
+      - BundleAnalyticalProcedurePq
+      - BundleDrugProductMicrobiologicalAttributesPq
+      - Description
+      - Microbiological
+      - Uniformity
+      - Water
+      - observation-test-result-lt25c-i1-description
+      - observation-test-result-lt25c-i1-microbiological
+      - observation-test-result-lt25c-i1-uniformity
+      - observation-test-result-lt25c-i1-water
+      - time-point-description
+  batch-analysis:
+    name: Batch Analysis
+    resources:
+  batch-formula:
+    name: Batch Formula
+    resources:
+  batch-information:
+    name: Batch/Lot Information
+    resources:
+      - BundleBatchAnalysisPq
+      - BundleBatchFormulaPq
+      - BundleDrugProductBatchInfoPq
+      - BundleDrugSubstanceBatchInfoPq
+      - MedicationBatchInformationDrugPq
+      - medication-batch-information-drug-pq-ex1
+  compatibility:
+    name: Compatibility
+    resources:
+      - BundleDrugProductCompatibilityPq
+  composition:
+    name: Composition
+    resources:
+      - BundleDrugProductCompositionPq
+      - BundleDrugSubstanceCharacterizationPq
+      - BundleDrugSubstanceGeneralPropertiesPq
+      - BundleDrugSubstanceSpecificationPq
+      - CompositionDrugPQ
+      - IngredientDrugPq
+      - SubstanceDefinitionComponentSubstanceDrugPq
+      - SubstanceDrugPq
+      - composition-drug-pq-formulation
+      - composition-drug-pq-risk
+      - substance-drug-pq-ex1
+  container:
+    name: Container Closure System
+    resources:
+      - BundleContainerClosureSystemPq
+      - PackagedProductDefinitionDrugPq
+  drug-specification:
+    name: Drug Specification
+    resources:
+      - BundleDrugProductSpecificationPq
+      - plandefinition-drug-pq-ex3-drug-specification
+  identification:
+    name: Identification
+    resources:
+      - Identification
+  impurities:
+    name: Impurities
+    resources:
+      - BundleProductImpuritiesPq
+      - Degradation
+      - Impurities
+      - observation-test-result-lt25c-i1-degradation-imp-total
+      - observation-test-result-lt25c-i1-degradation-imp-unspecified
+      - observation-test-result-lt25c-i1-degradation-imp1
+      - observation-test-result-lt25c-i1-degradation-imp2
+      - observation-test-result-lt25c-i1-degradation-imp3
+  manufacturing-process:
+    name: Manufacturing Process
+    resources:
+      - BundleProductManufacturingPq
+      - BundleProductProcessValidationPq
+      - ProcedureDrugPq
+      - documentreference-drug-pq-process-flow-diagram
+      - plandefinition-drug-pq-ex2-manufacturing-plan
+      - plandefinition-drug-pq-ex4-mnf-process
+      - procedure-drug-pq-ex1
+      - procedure-drug-pq-ex2
+  organizations:
+    name: Organizations
+    resources:
+      - BundleOrganizationsPq
+      - OrganizationDrugPq
+      - bundle-organizations-pq-ex1
+      - organization-drug-pq-ex1
+      - organization-drug-pq-ex2
+      - organization-drug-pq-ex3
+      - organization-drug-pq-ex4
+      - organization-drug-pq-ex5
+  process-validation:
+    name: Process Validation
+    resources:
+      - plandefinition-drug-pq-ex1-validation-protocol
+  stability:
+    name: Stability Study
+    resources:
+      - BundleDrugStabilityPq
+      - accelerated40X
+      - accelerated40Y
+      - accelerated40Z
+      - diagnosticreport-analysis-drug-pq-stability-prod
+      - longTerm25X
+      - longTerm25Y
+      - longTerm25Z
+      - longTerm30X
+      - longTerm30Y
+      - observation-test-result-longterm25c-initial-1
+      - plandefinition-drug-pq-ex5-stability-study-protocol
+  extensions:
     name: Extensions
+    resources:
+      - ExtensionActualYieldPq
+      - ExtensionFormulationNumberPq
+      - ExtensionPackagingDatePq
+      - ExtensionPlanDocumentReferencePq
+      - ExtensionQualifiedValueCriticalityPq
+  building-blocks:
+    name: Component Building Blocks
+    resources:
+      - ActivityDefinitionDrugTestPq
+      - BundleDrugProductExcipientsPq
+      - BundleDrugProductPq
+      - BundleDrugReferenceStandardsPq
+      - DeviceDefinitionDrugPq
+      - DiagnosticReportAnalysisDrugPQ
+      - DocumentReferenceDrugPq
+      - LyophilizationAct
+      - ManufacturedItemDefinitionDrugPq
+      - MedicinalProductDefinitionDrugProductPq
+      - ObservationDefinitionTestMethodPq
+      - ObservationTestResultDrugPq
+      - PlanDefinitionDrugPq
+      - SpecimenDefinitionDrugPq
+      - SpecimenDrugPq
+      - activitydefinition-test-drug-pq-ex1
+      - devicedefinition-drug-pq-ex1
+      - specimen-drug-pq-ex1
+      - specimenDefStoredAt30
+      - specimenDefStoredAt40
+      - specimendefinition-drug-pq-ex1
+      - vs-testCategory-pq
