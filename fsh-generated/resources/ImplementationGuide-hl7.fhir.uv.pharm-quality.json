@@ -69,554 +69,1178 @@
     "resource": [
       {
         "reference": {
+          "reference": "StructureDefinition/ActivityDefinition-test-drug-pq"
+        },
+        "name": "ActivityDefinition - Test Drug PQ",
+        "description": "This ActivityDefinition profile represents a set of tests and their acceptance criteria through the contained ObservationDefinition resources.",
+        "isExample": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/vs-batch-designation-pq"
         },
-        "description": "This value set contains codes for batch designation.",
         "name": "Batch Designation",
+        "description": "This value set contains codes for batch designation.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "CodeSystem/batch-designation"
         },
-        "description": "This code system contains codes for batch designation in pharmaceutical quality.",
         "name": "Batch Designation Codes",
+        "description": "This code system contains codes for batch designation in pharmaceutical quality.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Bundle-drug-product-compatibility-pq"
+        },
+        "name": "Bundle - Drug Product Compatibility PQ",
+        "description": "Compatibility domain: This Bundle profile represents the structured data used in CTD section 3.2.P.2 Pharmaceutical Development, subsection 3.2.P.2.6 Compatibility.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Bundle-drug-product-pq"
+        },
+        "name": "Bundle - Drug Product PQ",
+        "description": "Identification domain: This Bundle profile represents the structured data used in CTD section 3.2.P.2 Pharmaceutical Development, subsection 3.2.P.2.2 Drug Product.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Bundle-organizations-pq"
+        },
+        "name": "Bundle - Organizations PQ",
+        "description": "Organizations domain: This Bundle profile represents the structured data used in CTD section 3.2.P.3 Manufacture, subsection 3.2.P.3.1 Manufacturer(s) and CTD section 3.2.S.2 Manufacture, subsection 3.2.S.2.1 Manufacturer(s).",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Bundle-product-impurities-pq"
+        },
+        "name": "Bundle - Product Impurities PQ",
+        "description": "Impurities domain: This Bundle profile represents the structured data used in CTD section 3.2.P.5 Control of Drug Product, subsection 3.2.P.5.5 Characterisation of Impurities and CTD section 3.2.S.3 Characterisation, subsection 3.2.S.3.2 Impurities.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Bundle-product-manufacturing-pq"
+        },
+        "name": "Bundle - Product Manufacturing PQ",
+        "description": "Manufacturing Process domain: This Bundle profile represents the structured data used in CTD section 3.2.P.3 Manufacture, subsection 3.2.P.3.3 Description of Manufacturing Process and Process Controls and CTD section 3.2.S.2 Manufacture, subsection 3.2.S.2.2 Description of Manufacturing Process and Process Controls.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Bundle-product-process-validation-pq"
+        },
+        "name": "Bundle - Product Process Validation PQ",
+        "description": "Process Validation domain: This Bundle profile represents the structured data used in CTD section 3.2.P.3 Manufacture, subsection 3.2.P.3.5 Process Validation and/or Evaluation and CTD section 3.2.S.2 Manufacture, subsection 3.2.S.2.5 Process Validation and/or Evaluation.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Bundle-analytical-procedure-pq"
+        },
+        "name": "Bundle – Analytical Procedure PQ",
+        "description": "Analytical Procedure domain: This Bundle profile represents the structured data used in CTD section 3.2.P.5 Control of Drug Product, subsection 3.2.P.5.2 Analytical Procedures and section 3.2.S.4 Control of Drug Substance, subsection 3.2.S.4.2 Analytical Procedures.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Bundle-batch-analysis-pq"
+        },
+        "name": "Bundle – Batch Analysis PQ",
+        "description": "Batch Analysis domain: This Bundle profile represents the structured data used in CTD section 3.2.P.5 Control of Drug Product, subsection 3.2.P.5.4 Batch Analyses and CTD section 3.2.S.4 Control of Drug Substance, subsection 3.2.S.4.4 Batch Analyses.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Bundle-batch-formula-pq"
+        },
+        "name": "Bundle – Batch Formula PQ",
+        "description": "Batch Formula domain: This Bundle profile represents the structured data used in CTD section 3.2.P.3 Manufacture, subsection 3.2.P.3.2 Batch Formula.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Bundle-container-closure-system-pq"
+        },
+        "name": "Bundle – Container Closure System PQ",
+        "description": "Container Closure System domain: This Bundle profile represents the structured data in CTD sections 3.2.P.7 Container Closure System and 3.2.S.6 Container Closure System.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Bundle-drug-product-batch-info-pq"
+        },
+        "name": "Bundle – drug Product Batch Information PQ",
+        "description": "Batch/Lot Information domain: This Bundle profile represents the structured data used in CTD section 3.2.P.5 Control of Drug Product, subsection 3.2.P.5.4 Batch Analyses.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Bundle-drug-product-composition-pq"
+        },
+        "name": "Bundle – Drug Product Composition PQ",
+        "description": "Composition domain: This Bundle profile represents the structured data used in CTD section 3.2.P.1 Description and Composition of the Drug Product.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Bundle-drug-product-excipients-pq"
+        },
+        "name": "Bundle – Drug Product Excipients PQ",
+        "description": "Identification domain: This Bundle profile represents the structured data used in CTD section 3.2.P.4 Control of Excipients, subsections 3.2.P.4.5 Excipients of Human or Animal Origin and 3.2.P.4.6 Novel Excipients.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Bundle-drug-product-microbiological-attributes-pq"
+        },
+        "name": "Bundle – Drug Product Microbiological Attributes PQ",
+        "description": "Identification domain: This Bundle profile represents the structured data used in CTD section 3.2.P.2 Pharmaceutical Development, subsection 3.2.P.2.5 Microbiological Attributes.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Bundle-drug-product-specification-pq"
+        },
+        "name": "Bundle – Drug Product Specification PQ",
+        "description": "Specification domain: This Bundle profile represents the structured data used in CTD section 3.2.P.5 Control of Drug Product, subsection 3.2.P.5.1 Specification(s).",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Bundle-drug-reference-standards-pq"
+        },
+        "name": "Bundle – Drug Reference Standards PQ",
+        "description": "Composition domain: This Bundle profile represents the structured data in CTD sections 3.2.P.6 Reference Standards or Materials and 3.2.S.5 Reference Standards or Materials.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Bundle-drug-stability-pq"
+        },
+        "name": "Bundle – Drug Stability PQ",
+        "description": "Stability Study domain: This Bundle profile represents the structured data used in CTD section 3.2.P.8 Stability, subsection 3.2.P.8.3 Stability Data, and CTD section 3.2.S.7 Stability, subsection 3.2.S.7.3 Stability Data.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Bundle-drug-substance-batch-info-pq"
+        },
+        "name": "Bundle – Drug Substance Batch Information PQ",
+        "description": "Batch/Lot Information domain: This Bundle profile represents the structured data used in CTD section 3.2.S.4 Control of Drug Substance, subsection 3.2.S.4.4 Batch Analyses.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Bundle-drug-substance-characterization-pq"
+        },
+        "name": "Bundle – Drug Substance Characterization PQ",
+        "description": "Identification domain: This Bundle profile represents the structured data used in CTD section 3.2.S.3 Characterisation, subsection 3.2.S.3.1 – Elucidation of Structure and Other Characteristics.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Bundle-drug-substance-general-properties-pq"
+        },
+        "name": "Bundle – Drug Substance General Properties PQ",
+        "description": "Identification domain: This Bundle profile represents the structured data used in CTD section 3.2.S.1 General Information, subsection 3.2.S.1.3 General Properties.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Bundle-drug-substance-specification-pq"
+        },
+        "name": "Bundle – Drug Substance Specification PQ",
+        "description": "Specification domain: This Bundle profile represents the structured data used in CTD section 3.2.S.4 Control of Drug Substance, subsection 3.2.S.4.1 Specification.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "ValueSet/vs-characterizationStep-pq"
         },
-        "description": "This value set contains codes for structure characterization technique.",
         "name": "Characterization Steps",
+        "description": "This value set contains codes for structure characterization technique.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "CodeSystem/container-closure-type"
         },
-        "description": "This code system contains codes for closure type.",
         "name": "Closure Type Codes",
+        "description": "This code system contains codes for closure type.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "ValueSet/vs-closureTypes-pq"
         },
-        "description": "This value set contains codes for closure types.",
         "name": "Closure Types",
+        "description": "This value set contains codes for closure types.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "ValueSet/vs-color-pq"
         },
-        "description": "This value set contains codes for drug substance or product color.",
         "name": "Colors",
+        "description": "This value set contains codes for drug substance or product color.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Composition-drug-pq"
+        },
+        "name": "Composition - Drug PQ",
+        "description": "This Composition profile represents narrative text necessary for pharmaceutical quality (PQ) data exchange.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "CodeSystem/container-orientation"
         },
-        "description": "This code system contains codes for container orientation.",
         "name": "Container Orientation Codes",
+        "description": "This code system contains codes for container orientation.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "ValueSet/vs-containerOrientation-pq"
         },
-        "description": "This value set contains codes for container orientation.",
         "name": "Container Orientations",
+        "description": "This value set contains codes for container orientation.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "ValueSet/vs-deviceProperty-pq"
         },
-        "description": "This value set contains codes for device property.",
         "name": "Device Properties",
+        "description": "This value set contains codes for device property.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "CodeSystem/device-property"
         },
-        "description": "This code system contains codes for device property.",
         "name": "Device Property Codes",
+        "description": "This code system contains codes for device property.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "ValueSet/vs-deviceType-pq"
         },
-        "description": "This value set contains example codes for device type in pharmaceutical quality industry.",
         "name": "Device Type",
+        "description": "This value set contains example codes for device type in pharmaceutical quality industry.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "CodeSystem/cs-deviceType-pq-example"
         },
-        "description": "This example code system contains example codes for device type used in pharmaceutical quality industry.",
         "name": "Device Type - example",
+        "description": "This example code system contains example codes for device type used in pharmaceutical quality industry.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/DeviceDefinition-drug-pq"
+        },
+        "name": "DeviceDefinition - Drug PQ",
+        "description": "This DeviceDefinition profile represents information about devices and equipment used in pharmaceutical quality (PQ) data gathering.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/DiagnosticReport-analysis-drug-pq"
+        },
+        "name": "DiagnosticReport - Analysis Drug PQ",
+        "description": "This DiagnosticReport profile represents results from a batch analysis, stability study, characterization study, impurities analysis, manufacturing process validation study, etc.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "CodeSystem/diagram-type"
         },
-        "description": "This code system contains codes for diagram type.",
         "name": "Diagram Type Codes",
+        "description": "This code system contains codes for diagram type.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "ValueSet/vs-diagramType-pq"
         },
-        "description": "This value set contains codes for diagram type.",
         "name": "Diagram Types",
+        "description": "This value set contains codes for diagram type.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/DocumentReference-drug-pq"
+        },
+        "name": "DocumentReference - Drug PQ",
+        "description": "This DocumentReference profile references a document of any kind, including a diagram or image, that is necessary for pharmaceutical quality (PQ) data exchange.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "CodeSystem/drug-substance-or-product-color"
         },
-        "description": "This code system contains codes for color in drug substances or products.",
         "name": "Drug Substance or Product Color Codes",
+        "description": "This code system contains codes for color in drug substances or products.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "ValueSet/vs-equipmentClass-pq"
         },
-        "description": "This value set contains codes for manufacturing equipment class.",
         "name": "Equipment Classes",
+        "description": "This value set contains codes for manufacturing equipment class.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "CodeSystem/cs-local-codes-drug-pq-example"
         },
-        "description": "This example code system contains temporary example codes used in pharmaceutical quality industry.",
         "name": "Example Local Codes - Drug",
+        "description": "This example code system contains temporary example codes used in pharmaceutical quality industry.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-actual-yield-pq"
+        },
+        "name": "Extension - Actual Yield PQ",
+        "description": "The actual weight of a batch",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-actual-yield-unfiltered-pq"
+        },
+        "name": "Extension - Actual Yield Unfiltered PQ",
+        "description": "The actual weight of a batch, before filtering",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-batch-derived-from-pq"
+        },
+        "name": "Extension - Batch Derived From PQ",
+        "description": "A reference to another batch that this batch is derived from",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-batch-designation-pq"
+        },
+        "name": "Extension - Batch Designation PQ",
+        "description": "A batch's type in terms of its general size",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-batch-number-of-full-shelves-pq"
+        },
+        "name": "Extension - Batch Number of Full Shelves PQ",
+        "description": "The count of full shelves from which batches are selected for testing",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-batch-number-of-items-pq"
+        },
+        "name": "Extension - Batch Number of Items PQ",
+        "description": "The number of items (e.g., tablets) produced in a manufacturing batch.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-batch-number-of-partial-shelves-pq"
+        },
+        "name": "Extension - Batch Number of Partial Shelves PQ",
+        "description": "The number of partially filled shelves from which batches are selected for testing",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-batch-number-of-vials-pq"
+        },
+        "name": "Extension - Batch Number of Vials PQ",
+        "description": "The count of vials selected for testing",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-batch-release-date-pq"
+        },
+        "name": "Extension - Batch Release Date PQ",
+        "description": "The date when a batch was made available",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-batch-retest-date-pq"
+        },
+        "name": "Extension - Batch Retest Date PQ",
+        "description": "The date that a batch is due to be tested again",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-batch-storage-duration-pq"
+        },
+        "name": "Extension - Batch Storage Duration PQ",
+        "description": "The length of time for which a batch is stored, before being tested",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-batch-substance-batch-pq"
+        },
+        "name": "Extension - Batch Substance Batch PQ",
+        "description": "A reference to a substance that this batch consists of",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-container-orientation-pq"
+        },
+        "name": "Extension - Container Orientation PQ",
+        "description": "The spatial orientation of the container when tested, for instance horizontal or vertical",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-formulation-number-pq"
+        },
+        "name": "Extension - Formulation Number PQ",
+        "description": "An identifying number for the particular substance formulation in the batch",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-history-of-process-pq"
+        },
+        "name": "Extension - History of Process PQ",
+        "description": "A textual description of the previous versions, decisions and development of this process",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-impurity-origin-pq"
+        },
+        "name": "Extension - Impurity Origin PQ",
+        "description": "The source of this impurity",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-manufacturing-participant-pq"
+        },
+        "name": "Extension - Manufacturing Participant PQ",
+        "description": "A reference to a substance that takes part in a process step",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-manufacturing-process-pq"
+        },
+        "name": "Extension - Manufacturing Process PQ",
+        "description": "A reference to the process of manufacture of this batch (PlanDefinition)",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-medication-definition-pq"
+        },
+        "name": "Extension - Medication Definition PQ",
+        "description": "The MedicinalProductDefinition that corresponds to a medication",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-novel-excipient-pq"
+        },
+        "name": "Extension - Novel Excipient PQ",
+        "description": "Whether or not an excipient (inactive ingredient) in a product is considered 'novel'",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-package-definition-pq"
+        },
+        "name": "Extension - Package Definition PQ",
+        "description": "A reference to the packaging for a medication (PackagedProductDefinition)",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-packaging-date-pq"
+        },
+        "name": "Extension - Packaging Date PQ",
+        "description": "The date when the batch was packaged",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-packaging-site-pq"
+        },
+        "name": "Extension - Packaging Site PQ",
+        "description": "The organization that packaged this batch (reference to an Organization)",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-plan-document-reference-pq"
+        },
+        "name": "Extension - Plan Document Reference PQ",
+        "description": "A link to a document or image that describes the process of this plan",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-process-parameters-pq"
+        },
+        "name": "Extension - Process Parameters PQ",
+        "description": "A property value or setting that this process step must use, e.g., a certain temperature or duration",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-process-step-scale-pq"
+        },
+        "name": "Extension - Process Step Scale PQ",
+        "description": "A scale size description that applies to a process step, such as 'production' or 'laboratory'",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-qualified-value-criticality-pq"
+        },
+        "name": "Extension - Qualified Value Criticality PQ",
+        "description": "A measure of how important the control value of this process step is",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-qualified-value-display-pq"
+        },
+        "name": "Extension - Qualified Value Display PQ",
+        "description": "A displayable version of a qualified value, formatted for showing to a user",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-qualified-value-target-pq"
+        },
+        "name": "Extension - Qualified Value Target PQ",
+        "description": "A target, desired, amount for a qualified value, from within the allowable range",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-qualified-value-text-pq"
+        },
+        "name": "Extension - Qualified Value Text PQ",
+        "description": "A string based acceptable range description",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-site-utilization-pq"
+        },
+        "name": "Extension - Site Utilization PQ",
+        "description": "The role that the site performs, in the overall context of manufacturing",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-statistical-model-pq"
+        },
+        "name": "Extension - Statistical Model PQ",
+        "description": "Information about the statistical model utilized to interpret results",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-substance-property-parameter-pq"
+        },
+        "name": "Extension - Substance Property Parameter PQ",
+        "description": "A parameter to a substance property, such as the concentration or pH at which the property value applies",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-substance-property-range-pq"
+        },
+        "name": "Extension - Substance Property Range PQ",
+        "description": "Allows a characteristic or property to use a range datatype, instead of a single value",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-suitability-for-use-pq"
+        },
+        "name": "Extension - Suitability for Use PQ",
+        "description": "Whether an excipient is considered suitable for use in this product or item",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-test-comment-pq"
+        },
+        "name": "Extension - Test Comment PQ",
+        "description": "A textual comment that further describes an aspect of a test requirement",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-time-point-description-pq"
+        },
+        "name": "Extension - Time Point Description PQ",
+        "description": "A code that further describes a time point, such as 'delayed start'",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-target-fill-weight-pq"
+        },
+        "name": "Extension Target Fill Weight PQ",
+        "description": "The desired amount of substance in each item to be made from the batch (e.g., a vial)",
         "isExample": false
       },
       {
         "reference": {
           "reference": "ValueSet/vs-goalPriority-pq"
         },
-        "description": "This value set contains example codes for goal priority used in pharmaceutical quality industry.",
         "name": "Goal Priority",
+        "description": "This value set contains example codes for goal priority used in pharmaceutical quality industry.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "CodeSystem/cs-goalPriority-pq-example"
         },
-        "description": "This example code system contains example codes for goal priority used in pharmaceutical quality industry.",
         "name": "Goal Priority - example",
+        "description": "This example code system contains example codes for goal priority used in pharmaceutical quality industry.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "ValueSet/vs-grade-pq"
         },
-        "description": "This value set contains codes for package grade.",
         "name": "Grades",
+        "description": "This value set contains codes for package grade.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "CodeSystem/impurity-origin"
         },
-        "description": "This code system contains codes for impurity origin.",
         "name": "Impurity Origin Codes",
+        "description": "This code system contains codes for impurity origin.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "ValueSet/vs-impurity-origin-pq"
         },
-        "description": "This value set contains codes for impurity origin.",
         "name": "Impurity Origins",
+        "description": "This value set contains codes for impurity origin.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "CodeSystem/impurity-type"
         },
-        "description": "This code system contains codes for impurity type.",
         "name": "Impurity Type Codes",
+        "description": "This code system contains codes for impurity type.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "ValueSet/vs-impurity-type-pq"
         },
-        "description": "This value set contains codes for impurity type.",
         "name": "Impurity Types",
+        "description": "This value set contains codes for impurity type.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Ingredient-drug-pq"
+        },
+        "name": "Ingredient - Drug Pq",
+        "description": "This Ingredient profile represents the active ingredient(s) of a drug substance or product. It references one SubstanceDefinition resource and can include the strength or concentration of that substance.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "ValueSet/vs-ingredientFunction-pq"
         },
-        "description": "This value set contains codes for ingredient function.",
         "name": "Ingredient Function",
+        "description": "This value set contains codes for ingredient function.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "CodeSystem/ingredient-function"
         },
-        "description": "This code system contains codes for ingredient function.",
         "name": "Ingredient Function Codes",
+        "description": "This code system contains codes for ingredient function.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "ValueSet/vs-country-pq"
         },
-        "description": "This value set contains codes for ISO Country two letter codes.",
         "name": "ISO Country two letter codes",
+        "description": "This value set contains codes for ISO Country two letter codes.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "ValueSet/vs-manufactured-item-property-pq"
         },
-        "description": "This value set contains example codes for manufactured item property in pharmaceutical quality industry.",
         "name": "Manufactured Item Property",
+        "description": "This value set contains example codes for manufactured item property in pharmaceutical quality industry.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "CodeSystem/cs-manufactured-item-property-pq-example"
         },
-        "description": "This example code system contains example codes for manufactured item property used in pharmaceutical quality industry.",
         "name": "Manufactured Item Property - example",
+        "description": "This example code system contains example codes for manufactured item property used in pharmaceutical quality industry.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ManufacturedItemDefinition-drug-pq"
+        },
+        "name": "ManufacturedItemDefinition - Drug PQ",
+        "description": "This ManufacturedItemDefinition profile represents information about the physical packaged medication item, such as a tablet or capsule.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "ValueSet/vs-manufacturingParticipantRole-pq"
         },
-        "description": "This value set contains codes for manufacturing participant.",
         "name": "Manufacturing Participant Role",
+        "description": "This value set contains codes for manufacturing participant.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "CodeSystem/manufacturing-participant-role"
         },
-        "description": "This code system contains codes for manufacturing participant role.",
         "name": "Manufacturing Participant Role Codes",
+        "description": "This code system contains codes for manufacturing participant role.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "ValueSet/vs-manufacturingStep-pq"
         },
-        "description": "This value set contains codes for manufacturing step.",
         "name": "Manufacturing Step",
+        "description": "This value set contains codes for manufacturing step.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "CodeSystem/manufacturing-step"
         },
-        "description": "This code system contains codes for manufacturing step.",
         "name": "Manufacturing Step Codes",
+        "description": "This code system contains codes for manufacturing step.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "ValueSet/vs-manufacturingStepScale-pq"
         },
-        "description": "This value set contains codes for manufacturing step scale.",
         "name": "Manufacturing Step Scale",
+        "description": "This value set contains codes for manufacturing step scale.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "CodeSystem/manufacturing-step-scale"
         },
-        "description": "This code system contains codes for manufacturing step scale.",
         "name": "Manufacturing Step Scale Codes",
+        "description": "This code system contains codes for manufacturing step scale.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Medication-batch-information-drug-pq"
+        },
+        "name": "Medication - Batch Information Drug PQ",
+        "description": "This Medication profile represents information about the batches that underwent testing or analysis.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "ValueSet/vs-medicinalproduct-characteristic-type"
         },
-        "description": "Example codes for MedicinalProduct.characteristic.type",
         "name": "MedicinalProduct Characteristic Type",
+        "description": "Example codes for MedicinalProduct.characteristic.type",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/MedicinalProductDefinition-drug-product-pq"
+        },
+        "name": "MedicinalProductDefinition - Drug Product PQ",
+        "description": "This MedicinalProductDefinition profile represents information that identifies the drug product.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "ValueSet/vs-medicine-doseform"
         },
-        "description": "EDQM (European Directorate for the Quality of Medicines and Healthcare) Dose Form codes.  This Value Set includes all the EDQM Standard Terms having:\n\t\n[Concept Status] = ‘Current’ AND\n\t\n[Concept Class] IN (‘PDF’, ‘CMT’, ‘CDF’, ‘PFT') AND\n\t\n[Domain] = 'Human and Veterinary'\n\t\n\nPDF = 'Pharmaceutical dose form'; CMT = 'Combined terms'; CDF = 'Combined pharmaceutical dose form'; PFT = 'Patient Friendly'",
         "name": "Medicine Dose Form EDQM",
+        "description": "EDQM (European Directorate for the Quality of Medicines and Healthcare) Dose Form codes.  This Value Set includes all the EDQM Standard Terms having:\n\n[Concept Status] = ‘Current’ AND\n\n[Concept Class] IN (‘PDF’, ‘CMT’, ‘CDF’, ‘PFT') AND\n\n[Domain] = 'Human and Veterinary'\n\n\nPDF = 'Pharmaceutical dose form'; CMT = 'Combined terms'; CDF = 'Combined pharmaceutical dose form'; PFT = 'Patient Friendly'",
         "isExample": false
       },
       {
         "reference": {
           "reference": "ValueSet/vs-medicine-route-of-administration"
         },
-        "description": "EDQM (European Directorate for the Quality of Medicines and Healthcare) Route of Administration codes.  This Value Set includes all the EDQM Standard Terms having:\n\t\n[Concept Status] = ‘Current’ AND\n\t\n[Concept Class] = 'ROA' AND\n\t\n[Domain] = 'Human and Veterinary'\n\t\n\nROA = 'Route of administration'",
         "name": "Medicine Route of Administration EDQM",
+        "description": "EDQM (European Directorate for the Quality of Medicines and Healthcare) Route of Administration codes.  This Value Set includes all the EDQM Standard Terms having:\n\n[Concept Status] = ‘Current’ AND\n\n[Concept Class] = 'ROA' AND\n\n[Domain] = 'Human and Veterinary'\n\n\nROA = 'Route of administration'",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Observation-test-result-drug-pq"
+        },
+        "name": "Observation - Test Result Drug PQ",
+        "description": "This Observation profile represents the result of a specific test defined by an ObservationDefinition resource.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "CodeSystem/observation-qualified-value-criticality"
         },
-        "description": "This code system contains codes for observation qualified value criticality.",
         "name": "Observation Qualified Value Criticality Codes",
+        "description": "This code system contains codes for observation qualified value criticality.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ObservationDefinition-test-method-drug-pq"
+        },
+        "name": "ObservationDefinition - Test Method PQ",
+        "description": "This ObservationDefinition profile represents information about pharmaceutical quality (PQ) tests and acceptance criteria.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Organization-drug-pq"
+        },
+        "name": "Organization - Drug PQ",
+        "description": "This Organization profile represents information about a pharmaceutical company or site that performed drug testing or manufacturing.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "CodeSystem/package-grade"
         },
-        "description": "This code system contains codes for package grade.",
         "name": "Package Grade Codes",
+        "description": "This code system contains codes for package grade.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "ValueSet/vs-packageProperty-pq"
         },
-        "description": "This value set contains codes for package property.",
         "name": "Package Property",
+        "description": "This value set contains codes for package property.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "CodeSystem/package-property"
         },
-        "description": "This code system contains codes for package property.",
         "name": "Package Property Codes",
+        "description": "This code system contains codes for package property.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/PackagedProductDefinition-drug-pq"
+        },
+        "name": "PackagedProductDefinition - Drug PQ",
+        "description": "This PackagedProductDefinition profile represents information about the packaging for a drug product or drug substance.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "CodeSystem/pharmaceutical-manufacturing-equipment-class"
         },
-        "description": "This code system contains codes for pharmaceutical manufacturing equipment class.",
         "name": "Pharmaceutical Manufacturing Equipment Class Codes",
+        "description": "This code system contains codes for pharmaceutical manufacturing equipment class.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "ValueSet/vs-pharmaceutical-organization-type"
         },
-        "description": "This value set contains codes for pharmaceutical organization types.",
         "name": "Pharmaceutical Organization Type",
+        "description": "This value set contains codes for pharmaceutical organization types.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "CodeSystem/pharmaceutical-organization-type"
         },
-        "description": "This code system contains codes for pharmaceutical organization type.",
         "name": "Pharmaceutical Organization Type Codes",
+        "description": "This code system contains codes for pharmaceutical organization type.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "CodeSystem/pharmaceutical-plan-type"
         },
-        "description": "This code system contains codes for pharmaceutical plan type.",
         "name": "Pharmaceutical Plan Type Codes",
+        "description": "This code system contains codes for pharmaceutical plan type.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "CodeSystem/pharmaceutical-report-type"
         },
-        "description": "This code system contains  codes for pharmaceutical report type.",
         "name": "Pharmaceutical Report Type Codes",
+        "description": "This code system contains  codes for pharmaceutical report type.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "CodeSystem/pharmaceutical-test-category"
         },
-        "description": "This code system contains codes for pharmaceutical test category.",
         "name": "Pharmaceutical Test Category Codes",
+        "description": "This code system contains codes for pharmaceutical test category.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "ValueSet/vs-planType-pq"
         },
-        "description": "This value set contains codes for pharmaceutical plan type.",
         "name": "Plan Type",
+        "description": "This value set contains codes for pharmaceutical plan type.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/PlanDefinition-drug-pq"
+        },
+        "name": "PlanDefinition - Drug PQ",
+        "description": "This PlanDefinition profile represents a protocol, analytical procedure, manufacturing process, or other workflow definition used in pharmaceutical quality (PQ) data gathering.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Procedure-drug-pq"
+        },
+        "name": "Procedure - Drug PQ",
+        "description": "This Procedure profile represents the actual performance of a manufacturing step, so that measurements can be recorded (via Observations), such as the actual “hold time” used, or the “bioburden” at the beginning or end of the step. The Procedure may record which device was used in the performance of a manufacturing step.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "ValueSet/vs-processParameter-pq"
         },
-        "description": "This value set contains codes for process parameter.",
         "name": "Process Parameter",
+        "description": "This value set contains codes for process parameter.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "CodeSystem/process-parameter"
         },
-        "description": "This code system contains codes for process parameter.",
         "name": "Process Parameter Codes",
+        "description": "This code system contains codes for process parameter.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "ValueSet/vs-process-validation-procedure-pq"
         },
-        "description": "This value set contains example process validation procedure codes for use in pharmaceutical quality industry.",
         "name": "Process Validation Procedure",
+        "description": "This value set contains example process validation procedure codes for use in pharmaceutical quality industry.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "ValueSet/vs-productNameType-pq"
         },
-        "description": "This value set contains example codes for product name type in pharmaceutical quality industry.",
         "name": "Product Name Type",
+        "description": "This value set contains example codes for product name type in pharmaceutical quality industry.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "CodeSystem/cs-productNameType-pq-example"
         },
-        "description": "This example code system contains example codes for product name type used in pharmaceutical quality industry.",
         "name": "Product Name Type - example",
+        "description": "This example code system contains example codes for product name type used in pharmaceutical quality industry.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "ValueSet/vs-productSiteUtilizationType-pq"
         },
-        "description": "This value set contains codes for product site utilization type.",
         "name": "Product Site Utilization",
+        "description": "This value set contains codes for product site utilization type.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "CodeSystem/product-site-utilization-type"
         },
-        "description": "This code system contains codes for product site utilization type.",
         "name": "Product Site Utilization Type Codes",
+        "description": "This code system contains codes for product site utilization type.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "ValueSet/vs-qualifiedValueCriticality-pq"
         },
-        "description": "This value set contains example codes for observation qualified value criticality.",
         "name": "Qualified Value Criticality",
+        "description": "This value set contains example codes for observation qualified value criticality.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "ValueSet/vs-reportType-pq"
         },
-        "description": "This value set contains codes for pharmaceutical report type.",
         "name": "Report Type",
+        "description": "This value set contains codes for pharmaceutical report type.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "ValueSet/vs-specification-type-pq"
         },
-        "description": "This value set contains example codes for specification type in pharmaceutical quality industry.",
         "name": "Specification Type",
+        "description": "This value set contains example codes for specification type in pharmaceutical quality industry.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "CodeSystem/cs-specification-type-pq-example"
         },
-        "description": "This example code system contains example codes for specification type used in pharmaceutical quality industry.",
         "name": "Specification Type - example",
+        "description": "This example code system contains example codes for specification type used in pharmaceutical quality industry.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Specimen-drug-pq"
+        },
+        "name": "Specimen - Drug PQ",
+        "description": "This Specimen profile represents identifying information about an individual specimen (an instance).",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/SpecimenDefinition-drug-pq"
+        },
+        "name": "SpecimenDefinition - Drug PQ",
+        "description": "This SpecimenDefinition profile represents information about the treatment of a specimen, such as storage conditions and test duration.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "CodeSystem/structure-characterization-technique"
         },
-        "description": "This code system contains codes for structure characterization technique in pharmaceutical quality.",
         "name": "Structure Characterization Technique Codes",
+        "description": "This code system contains codes for structure characterization technique in pharmaceutical quality.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Substance-drug-pq"
+        },
+        "name": "Substance - Drug PQ",
+        "description": "This Substance profile represents identifying information about an actual batch of substance (an instance).",
         "isExample": false
       },
       {
         "reference": {
           "reference": "ValueSet/vs-substance-property-pq"
         },
-        "description": "This value set contains example codes for substance property types in pharmaceutical quality industry.",
         "name": "Substance Property",
+        "description": "This value set contains example codes for substance property types in pharmaceutical quality industry.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "CodeSystem/cs-substance-property-pq-example"
         },
-        "description": "This example code system contains example codes for substance property types used in pharmaceutical quality industry.",
         "name": "Substance Property - example",
+        "description": "This example code system contains example codes for substance property types used in pharmaceutical quality industry.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "ValueSet/vs-substance-property-value-pq"
         },
-        "description": "This value set contains example codes for substance property values in pharmaceutical quality industry.",
         "name": "Substance Property Value",
+        "description": "This value set contains example codes for substance property values in pharmaceutical quality industry.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "CodeSystem/cs-substance-property-value-pq-example"
         },
-        "description": "This example code system contains example codes for substance property values used in pharmaceutical quality industry.",
         "name": "Substance Property Value - example",
+        "description": "This example code system contains example codes for substance property values used in pharmaceutical quality industry.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/SubstanceDefinition-component-substance-drug-pq"
+        },
+        "name": "SubstanceDefinition - Component Substance Drug PQ",
+        "description": "This SubstanceDefinition profile represents the chemical or biological details about a substance associated with an active ingredient (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits).",
         "isExample": false
       },
       {
         "reference": {
           "reference": "ValueSet/vs-testCategory-pq"
         },
-        "description": "This value set contains codes for test category.",
         "name": "Test Category",
+        "description": "This value set contains codes for test category.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "ValueSet/vs-test-method-pq"
         },
-        "description": "This value set contains example codes for test methods in pharmaceutical quality industry.",
         "name": "Test Method",
+        "description": "This value set contains example codes for test methods in pharmaceutical quality industry.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "ValueSet/vs-timePointDescription-pq"
         },
-        "description": "This value set contains codes for time point description.",
         "name": "Time Point Description",
+        "description": "This value set contains codes for time point description.",
         "isExample": false
       },
       {
         "reference": {
           "reference": "CodeSystem/time-point-description"
         },
-        "description": "This code system contains codes for time point description.",
         "name": "Time Point Description Codes",
+        "description": "This code system contains codes for time point description.",
         "isExample": false
       }
     ],
