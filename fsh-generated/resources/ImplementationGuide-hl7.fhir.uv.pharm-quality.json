@@ -69,11 +69,71 @@
     "resource": [
       {
         "reference": {
+          "reference": "Composition/composition-drug-pq-formulation"
+        },
+        "name": "3.2.P.2.2.1 - Formulation Development",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-drug-pq"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Composition/composition-drug-pq-risk"
+        },
+        "name": "3.2.P.2.2.4 - Summary for Risk of Impurities",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Composition-drug-pq"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/accelerated40X"
+        },
+        "name": "accelerated40X",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/accelerated40Y"
+        },
+        "name": "accelerated40Y",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/accelerated40Z"
+        },
+        "name": "accelerated40Z",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"
+        ]
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ActivityDefinition-test-drug-pq"
         },
         "name": "ActivityDefinition - Test Drug PQ",
         "description": "This ActivityDefinition profile represents a set of tests and their acceptance criteria through the contained ObservationDefinition resources.",
         "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/Assay"
+        },
+        "name": "Assay",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"
+        ]
       },
       {
         "reference": {
@@ -261,6 +321,16 @@
       },
       {
         "reference": {
+          "reference": "Bundle/bundle-organizations-pq-ex1"
+        },
+        "name": "bundle-organizations-pq-ex1",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organizations-pq"
+        ]
+      },
+      {
+        "reference": {
           "reference": "ValueSet/vs-characterizationStep-pq"
         },
         "name": "Characterization Steps",
@@ -317,6 +387,26 @@
       },
       {
         "reference": {
+          "reference": "ObservationDefinition/Degradation"
+        },
+        "name": "Degradation",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/Description"
+        },
+        "name": "Description",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"
+        ]
+      },
+      {
+        "reference": {
           "reference": "ValueSet/vs-deviceProperty-pq"
         },
         "name": "Device Properties",
@@ -357,11 +447,31 @@
       },
       {
         "reference": {
+          "reference": "DeviceDefinition/devicedefinition-drug-pq-ex1"
+        },
+        "name": "devicedefinition-drug-pq-ex1",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DeviceDefinition-drug-pq"
+        ]
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/DiagnosticReport-analysis-drug-pq"
         },
         "name": "DiagnosticReport - Analysis Drug PQ",
         "description": "This DiagnosticReport profile represents results from a batch analysis, stability study, characterization study, impurities analysis, manufacturing process validation study, etc.",
         "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "DiagnosticReport/diagnosticreport-analysis-drug-pq-stability-prod"
+        },
+        "name": "diagnosticreport-analysis-drug-pq-stability-prod",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DiagnosticReport-analysis-drug-pq"
+        ]
       },
       {
         "reference": {
@@ -389,6 +499,27 @@
       },
       {
         "reference": {
+          "reference": "DocumentReference/documentreference-drug-pq-process-flow-diagram"
+        },
+        "name": "documentreference-drug-pq-process-flow-diagram",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/DocumentReference-drug-pq"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "PlanDefinition/plandefinition-drug-pq-ex1-validation-protocol"
+        },
+        "name": "DP PROCESS VALIDATION",
+        "description": "Pre-defined validation acceptance criteria were established based on manufacturing development data derived from process characterization studies...",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"
+        ]
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/drug-substance-or-product-color"
         },
         "name": "Drug Substance or Product Color Codes",
@@ -410,6 +541,16 @@
         "name": "Example Local Codes - Drug",
         "description": "This example code system contains temporary example codes used in pharmaceutical quality industry.",
         "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ActivityDefinition/activitydefinition-test-drug-pq-ex1"
+        },
+        "name": "Example of ActivityDefinition - Test for test set: Long-term - 25°C/60% RH - XYZ.",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-test-drug-pq"
+        ]
       },
       {
         "reference": {
@@ -741,6 +882,26 @@
       },
       {
         "reference": {
+          "reference": "ObservationDefinition/Identification"
+        },
+        "name": "Identification",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/Impurities"
+        },
+        "name": "Impurities",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"
+        ]
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/impurity-origin"
         },
         "name": "Impurity Origin Codes",
@@ -802,6 +963,66 @@
         "name": "ISO Country two letter codes",
         "description": "This value set contains codes for ISO Country two letter codes.",
         "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/longTerm25X"
+        },
+        "name": "longTerm25X",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/longTerm25Y"
+        },
+        "name": "longTerm25Y",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/longTerm25Z"
+        },
+        "name": "longTerm25Z",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/longTerm30X"
+        },
+        "name": "longTerm30X",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/longTerm30Y"
+        },
+        "name": "longTerm30Y",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "ActivityDefinition/LyophilizationAct"
+        },
+        "name": "Lyophilization",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ActivityDefinition-test-drug-pq"
+        ]
       },
       {
         "reference": {
@@ -885,6 +1106,16 @@
       },
       {
         "reference": {
+          "reference": "Medication/medication-batch-information-drug-pq-ex1"
+        },
+        "name": "medication-batch-information-drug-pq-ex1",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Medication-batch-information-drug-pq"
+        ]
+      },
+      {
+        "reference": {
           "reference": "ValueSet/vs-medicinalproduct-characteristic-type"
         },
         "name": "MedicinalProduct Characteristic Type",
@@ -917,6 +1148,16 @@
       },
       {
         "reference": {
+          "reference": "ObservationDefinition/Microbiological"
+        },
+        "name": "Microbiological",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"
+        ]
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/Observation-test-result-drug-pq"
         },
         "name": "Observation - Test Result Drug PQ",
@@ -933,6 +1174,106 @@
       },
       {
         "reference": {
+          "reference": "Observation/observation-test-result-longterm25c-initial-1"
+        },
+        "name": "observation-test-result-longterm25c-initial-1",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-test-result-lt25c-i1-degradation-imp-total"
+        },
+        "name": "observation-test-result-lt25c-i1-degradation-imp-total",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-test-result-lt25c-i1-degradation-imp-unspecified"
+        },
+        "name": "observation-test-result-lt25c-i1-degradation-imp-unspecified",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-test-result-lt25c-i1-degradation-imp1"
+        },
+        "name": "observation-test-result-lt25c-i1-degradation-imp1",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-test-result-lt25c-i1-degradation-imp2"
+        },
+        "name": "observation-test-result-lt25c-i1-degradation-imp2",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-test-result-lt25c-i1-degradation-imp3"
+        },
+        "name": "observation-test-result-lt25c-i1-degradation-imp3",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-test-result-lt25c-i1-description"
+        },
+        "name": "observation-test-result-lt25c-i1-description",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-test-result-lt25c-i1-microbiological"
+        },
+        "name": "observation-test-result-lt25c-i1-microbiological",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-test-result-lt25c-i1-uniformity"
+        },
+        "name": "observation-test-result-lt25c-i1-uniformity",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-test-result-lt25c-i1-water"
+        },
+        "name": "observation-test-result-lt25c-i1-water",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Observation-test-result-drug-pq"
+        ]
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ObservationDefinition-test-method-drug-pq"
         },
         "name": "ObservationDefinition - Test Method PQ",
@@ -946,6 +1287,56 @@
         "name": "Organization - Drug PQ",
         "description": "This Organization profile represents information about a pharmaceutical company or site that performed drug testing or manufacturing.",
         "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "Organization/organization-drug-pq-ex1"
+        },
+        "name": "organization-drug-pq-ex1",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Organization/organization-drug-pq-ex2"
+        },
+        "name": "organization-drug-pq-ex2",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Organization/organization-drug-pq-ex3"
+        },
+        "name": "organization-drug-pq-ex3",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Organization/organization-drug-pq-ex4"
+        },
+        "name": "organization-drug-pq-ex4",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Organization/organization-drug-pq-ex5"
+        },
+        "name": "organization-drug-pq-ex5",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Organization-drug-pq"
+        ]
       },
       {
         "reference": {
@@ -1053,6 +1444,47 @@
       },
       {
         "reference": {
+          "reference": "Procedure/procedure-drug-pq-ex1"
+        },
+        "name": "procedure-drug-pq-ex1",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Procedure-drug-pq"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Procedure/procedure-drug-pq-ex2"
+        },
+        "name": "procedure-drug-pq-ex2",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Procedure-drug-pq"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "PlanDefinition/plandefinition-drug-pq-ex2-manufacturing-plan"
+        },
+        "name": "Process 1.0",
+        "description": "Narrative description of manufacturing process (5)",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "PlanDefinition/plandefinition-drug-pq-ex4-mnf-process"
+        },
+        "name": "Process 1.0",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"
+        ]
+      },
+      {
+        "reference": {
           "reference": "ValueSet/vs-processParameter-pq"
         },
         "name": "Process Parameter",
@@ -1141,6 +1573,17 @@
       },
       {
         "reference": {
+          "reference": "PlanDefinition/plandefinition-drug-pq-ex3-drug-specification"
+        },
+        "name": "SPECIFICATION(S) FOR DRUG PRODUCT",
+        "description": "Narrative description of specifications",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"
+        ]
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/Specimen-drug-pq"
         },
         "name": "Specimen - Drug PQ",
@@ -1149,11 +1592,62 @@
       },
       {
         "reference": {
+          "reference": "Specimen/specimen-drug-pq-ex1"
+        },
+        "name": "specimen-drug-pq-ex1",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Specimen-drug-pq"
+        ]
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/SpecimenDefinition-drug-pq"
         },
         "name": "SpecimenDefinition - Drug PQ",
         "description": "This SpecimenDefinition profile represents information about the treatment of a specimen, such as storage conditions and test duration.",
         "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "SpecimenDefinition/specimendefinition-drug-pq-ex1"
+        },
+        "name": "specimendefinition-drug-pq-ex1",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-drug-pq"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "SpecimenDefinition/specimenDefStoredAt30"
+        },
+        "name": "specimenDefStoredAt30",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-drug-pq"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "SpecimenDefinition/specimenDefStoredAt40"
+        },
+        "name": "specimenDefStoredAt40",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SpecimenDefinition-drug-pq"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "PlanDefinition/plandefinition-drug-pq-ex5-stability-study-protocol"
+        },
+        "name": "Stability Monitoring Program",
+        "description": "Narrative description of Stability Study",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PlanDefinition-drug-pq"
+        ]
       },
       {
         "reference": {
@@ -1205,6 +1699,16 @@
       },
       {
         "reference": {
+          "reference": "Substance/substance-drug-pq-ex1"
+        },
+        "name": "substance-drug-pq-ex1",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Substance-drug-pq"
+        ]
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/SubstanceDefinition-component-substance-drug-pq"
         },
         "name": "SubstanceDefinition - Component Substance Drug PQ",
@@ -1242,6 +1746,26 @@
         "name": "Time Point Description Codes",
         "description": "This code system contains codes for time point description.",
         "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/Uniformity"
+        },
+        "name": "Uniformity",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "ObservationDefinition/Water"
+        },
+        "name": "Water",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/ObservationDefinition-test-method-drug-pq"
+        ]
       }
     ],
     "page": {
