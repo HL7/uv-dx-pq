@@ -45,6 +45,10 @@
         <td style="padding:8px 12px; color:#4b5563;">Specimen handling instructions, storage conditions (25°C/60% RH, 40°C/75% RH), container orientation</td>
       </tr>
     </table>
+    <div style="margin-top:20px;">
+      <p style="font-size:.8em; color:#6b7280; font-style:italic; margin:0 0 10px;">The diagram below shows how each source system feeds into the corresponding FHIR resources in Station 2:</p>
+      <img src="station1-to-station2-mapping.png" style="width:100%; max-width:820px; border-radius:8px; border:1px solid #e5e7eb; box-shadow:0 2px 8px rgba(0,0,0,0.05);" alt="Station 1 to Station 2 — Source Systems to FHIR Resource Mapping"/>
+    </div>
   </div>
 
   <!-- Station 2 -->
@@ -146,7 +150,7 @@
       <span style="background:#fff7ed; color:#9a3412; font-size:.75em; font-weight:500; padding:4px 10px; border-radius:4px; border:1px dashed #fdba74;">Batch-Lot-Information (0..*)</span>
     </div>
     <p style="font-size:.82em; color:#6b7280; margin:0;">
-      Each entry must include a <code>fullUrl</code> and a <code>resource</code>. Validate with <code>sushi .</code> and confirm <strong>0 errors</strong> before proceeding.
+      Each entry must include a <code>fullUrl</code> and a <code>resource</code>.
     </p>
   </div>
 
