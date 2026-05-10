@@ -269,7 +269,7 @@
         },
         "name": "Bundle – Batch Analysis PQ",
         "description": "Batch Analysis domain: This Bundle profile represents the structured data used in CTD section 3.2.P.5 Control of Drug Product, subsection 3.2.P.5.4 Batch Analyses and CTD section 3.2.S.4 Control of Drug Substance, subsection 3.2.S.4.4 Batch Analyses.",
-        "groupingId": "batch-information",
+        "groupingId": "batch-analysis",
         "isExample": false
       },
       {
@@ -278,7 +278,7 @@
         },
         "name": "Bundle – Batch Formula PQ",
         "description": "Batch Formula domain: This Bundle profile represents the structured data used in CTD section 3.2.P.3 Manufacture, subsection 3.2.P.3.2 Batch Formula.",
-        "groupingId": "batch-information",
+        "groupingId": "batch-formula",
         "isExample": false
       },
       {
@@ -391,6 +391,39 @@
       },
       {
         "reference": {
+          "reference": "Bundle/bundle-analytical-procedure-pq-ex1"
+        },
+        "name": "bundle-analytical-procedure-pq-ex1",
+        "groupingId": "analytical-procedures",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-analytical-procedure-pq"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Bundle/bundle-batch-analysis-pq-ex1"
+        },
+        "name": "bundle-batch-analysis-pq-ex1",
+        "groupingId": "batch-analysis",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-analysis-pq"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Bundle/bundle-batch-formula-pq-ex1"
+        },
+        "name": "bundle-batch-formula-pq-ex1",
+        "groupingId": "batch-formula",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-batch-formula-pq"
+        ]
+      },
+      {
+        "reference": {
           "reference": "Bundle/bundle-container-closure-system-pq-ex1"
         },
         "name": "bundle-container-closure-system-pq-ex1",
@@ -398,6 +431,28 @@
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-container-closure-system-pq"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Bundle/bundle-drug-product-batch-info-pq-ex1"
+        },
+        "name": "bundle-drug-product-batch-info-pq-ex1",
+        "groupingId": "batch-information",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-batch-info-pq"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Bundle/bundle-drug-product-compatibility-pq-ex1"
+        },
+        "name": "bundle-drug-product-compatibility-pq-ex1",
+        "groupingId": "compatibility",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-compatibility-pq"
         ]
       },
       {
@@ -413,6 +468,17 @@
       },
       {
         "reference": {
+          "reference": "Bundle/bundle-drug-product-specification-pq-ex1"
+        },
+        "name": "bundle-drug-product-specification-pq-ex1",
+        "groupingId": "drug-specification",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-specification-pq"
+        ]
+      },
+      {
+        "reference": {
           "reference": "Bundle/bundle-organizations-pq-ex1"
         },
         "name": "bundle-organizations-pq-ex1",
@@ -424,6 +490,17 @@
       },
       {
         "reference": {
+          "reference": "Bundle/bundle-product-impurities-pq-ex1"
+        },
+        "name": "bundle-product-impurities-pq-ex1",
+        "groupingId": "impurities",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-impurities-pq"
+        ]
+      },
+      {
+        "reference": {
           "reference": "Bundle/bundle-product-manufacturing-pq-ex1"
         },
         "name": "bundle-product-manufacturing-pq-ex1",
@@ -431,6 +508,17 @@
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-manufacturing-pq"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Bundle/bundle-product-process-validation-pq-ex1"
+        },
+        "name": "bundle-product-process-validation-pq-ex1",
+        "groupingId": "process-validation",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-process-validation-pq"
         ]
       },
       {

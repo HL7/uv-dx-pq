@@ -183,6 +183,7 @@ groups:
     resources:
       - Assay
       - BundleAnalyticalProcedurePq
+      - bundle-analytical-procedure-pq-ex1
       - BundleDrugProductMicrobiologicalAttributesPq
       - Description
       - Microbiological
@@ -196,15 +197,18 @@ groups:
   batch-analysis:
     name: Batch Analysis
     resources:
+      - BundleBatchAnalysisPq
+      - bundle-batch-analysis-pq-ex1
   batch-formula:
     name: Batch Formula
     resources:
+      - BundleBatchFormulaPq
+      - bundle-batch-formula-pq-ex1
   batch-information:
     name: Batch/Lot Information
     resources:
-      - BundleBatchAnalysisPq
-      - BundleBatchFormulaPq
       - BundleDrugProductBatchInfoPq
+      - bundle-drug-product-batch-info-pq-ex1
       - BundleDrugSubstanceBatchInfoPq
       - MedicationBatchInformationDrugPq
       - medication-batch-information-drug-pq-ex1
@@ -212,6 +216,7 @@ groups:
     name: Compatibility
     resources:
       - BundleDrugProductCompatibilityPq
+      - bundle-drug-product-compatibility-pq-ex1
   composition:
     name: Composition
     resources:
@@ -241,6 +246,7 @@ groups:
     name: Drug Specification
     resources:
       - BundleDrugProductSpecificationPq
+      - bundle-drug-product-specification-pq-ex1
       - plandefinition-drug-pq-ex3-drug-specification
   identification:
     name: Identification
@@ -250,6 +256,7 @@ groups:
     name: Impurities
     resources:
       - BundleProductImpuritiesPq
+      - bundle-product-impurities-pq-ex1
       - Degradation
       - Impurities
       - observation-test-result-lt25c-i1-degradation-imp-total
@@ -283,6 +290,7 @@ groups:
   process-validation:
     name: Process Validation
     resources:
+      - bundle-product-process-validation-pq-ex1
       - plandefinition-drug-pq-ex1-validation-protocol
   stability:
     name: Stability Study
