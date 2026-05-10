@@ -391,6 +391,28 @@
       },
       {
         "reference": {
+          "reference": "Bundle/bundle-container-closure-system-pq-ex1"
+        },
+        "name": "bundle-container-closure-system-pq-ex1",
+        "groupingId": "container",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-container-closure-system-pq"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Bundle/bundle-drug-product-composition-pq-ex1"
+        },
+        "name": "bundle-drug-product-composition-pq-ex1",
+        "groupingId": "composition",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-drug-product-composition-pq"
+        ]
+      },
+      {
+        "reference": {
           "reference": "Bundle/bundle-organizations-pq-ex1"
         },
         "name": "bundle-organizations-pq-ex1",
@@ -398,6 +420,17 @@
         "isExample": true,
         "profile": [
           "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-organizations-pq"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Bundle/bundle-product-manufacturing-pq-ex1"
+        },
+        "name": "bundle-product-manufacturing-pq-ex1",
+        "groupingId": "manufacturing-process",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Bundle-product-manufacturing-pq"
         ]
       },
       {
@@ -1072,6 +1105,17 @@
       },
       {
         "reference": {
+          "reference": "Ingredient/ingredient-drug-pq-ex1"
+        },
+        "name": "ingredient-drug-pq-ex1",
+        "groupingId": "composition",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/Ingredient-drug-pq"
+        ]
+      },
+      {
+        "reference": {
           "reference": "ValueSet/vs-country-pq"
         },
         "name": "ISO Country two letter codes",
@@ -1253,6 +1297,17 @@
         "description": "This MedicinalProductDefinition profile represents information that identifies the drug product.",
         "groupingId": "building-blocks",
         "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "MedicinalProductDefinition/medicinalproductdefinition-drug-product-pq-ex1"
+        },
+        "name": "medicinalproductdefinition-drug-product-pq-ex1",
+        "groupingId": "composition",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/MedicinalProductDefinition-drug-product-pq"
+        ]
       },
       {
         "reference": {
@@ -1516,6 +1571,18 @@
       },
       {
         "reference": {
+          "reference": "PackagedProductDefinition/packagedproductdefinition-drug-pq-ex1"
+        },
+        "name": "packagedproductdefinition-drug-pq-ex1",
+        "description": "Bottle of 30 tablets",
+        "groupingId": "composition",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/PackagedProductDefinition-drug-pq"
+        ]
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/pharmaceutical-manufacturing-equipment-class"
         },
         "name": "Pharmaceutical Manufacturing Equipment Class Codes",
@@ -1612,10 +1679,9 @@
       },
       {
         "reference": {
-          "reference": "PlanDefinition/plandefinition-drug-pq-ex2-manufacturing-plan"
+          "reference": "PlanDefinition/plandefinition-drug-pq-ex4-mnf-process"
         },
         "name": "Process 1.0",
-        "description": "Narrative description of manufacturing process (5)",
         "groupingId": "manufacturing-process",
         "isExample": true,
         "profile": [
@@ -1624,9 +1690,10 @@
       },
       {
         "reference": {
-          "reference": "PlanDefinition/plandefinition-drug-pq-ex4-mnf-process"
+          "reference": "PlanDefinition/plandefinition-drug-pq-ex2-manufacturing-plan"
         },
         "name": "Process 1.0",
+        "description": "Narrative description of manufacturing process (5)",
         "groupingId": "manufacturing-process",
         "isExample": true,
         "profile": [
@@ -1875,6 +1942,17 @@
         "description": "This SubstanceDefinition profile represents the chemical or biological details about a substance associated with an active ingredient (molecular weight, molecular formula, stereochemistry, protein or nucleic acid subunits).",
         "groupingId": "composition",
         "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "SubstanceDefinition/substancedefinition-component-substance-drug-pq-ex1"
+        },
+        "name": "substancedefinition-component-substance-drug-pq-ex1",
+        "groupingId": "composition",
+        "isExample": true,
+        "profile": [
+          "http://hl7.org/fhir/uv/pharm-quality/StructureDefinition/SubstanceDefinition-component-substance-drug-pq"
+        ]
       },
       {
         "reference": {

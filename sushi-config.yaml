@@ -216,6 +216,11 @@ groups:
     name: Composition
     resources:
       - BundleDrugProductCompositionPq
+      - bundle-drug-product-composition-pq-ex1
+      - medicinalproductdefinition-drug-product-pq-ex1
+      - ingredient-drug-pq-ex1
+      - substancedefinition-component-substance-drug-pq-ex1
+      - packagedproductdefinition-drug-pq-ex1
       - BundleDrugSubstanceCharacterizationPq
       - BundleDrugSubstanceGeneralPropertiesPq
       - BundleDrugSubstanceSpecificationPq
@@ -230,6 +235,7 @@ groups:
     name: Container Closure System
     resources:
       - BundleContainerClosureSystemPq
+      - bundle-container-closure-system-pq-ex1
       - PackagedProductDefinitionDrugPq
   drug-specification:
     name: Drug Specification
@@ -255,6 +261,7 @@ groups:
     name: Manufacturing Process
     resources:
       - BundleProductManufacturingPq
+      - bundle-product-manufacturing-pq-ex1
       - BundleProductProcessValidationPq
       - ProcedureDrugPq
       - documentreference-drug-pq-process-flow-diagram
