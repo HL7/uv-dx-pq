@@ -2230,6 +2230,12 @@
               "generation": "markdown",
               "page": [
                 {
+                  "title": "Resource Fabrication Guide",
+                  "generation": "markdown",
+                  "name": "stability-resource-guide.html",
+                  "sourceUrl": "stability-resource-guide.html"
+                },
+                {
                   "title": "Stability Study: synthetic data rendering - drug product",
                   "generation": "markdown",
                   "name": "stability_rend_p.html",

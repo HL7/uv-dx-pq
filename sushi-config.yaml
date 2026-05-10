@@ -113,6 +113,8 @@ pages:
         title: "Process Validation: synthetic data rendering - drug substance"
     stability.md:
       title: Stability Study
+      stability-resource-guide.md:
+        title: "Resource Fabrication Guide"
       stability_rend_p.md:
         title: "Stability Study: synthetic data rendering - drug product"
       stability_rend_s.md:
