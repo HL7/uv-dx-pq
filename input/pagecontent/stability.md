@@ -1,7 +1,6 @@
 <!-- DOMAIN HEADER -->
 <div style="margin-bottom:32px;">
-  <div style="font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#2563eb; margin-bottom:4px;">Domain 12</div>
-  <h2 style="font-size:1.7em; font-weight:800; color:#111827; margin-bottom:10px; margin-top:0;">Stability Study</h2>
+  <div style="font-size:.72em; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#2563eb; margin-bottom:4px;">Domain 12 • Stability Study</div>
   <p style="font-size:.95em; color:#6b7280; line-height:1.6; max-width:640px;">
     Stability studies are critical for establishing the shelf-life and storage conditions of pharmaceutical products. This domain standardizes the exchange of stability study designs, conditions, batch testing results, degradation trends, and final conclusions using structured FHIR resources.
   </p>
@@ -13,7 +12,7 @@
 <div style="margin-bottom:48px;">
   <h2 style="font-size:1.4em; font-weight:800; color:#111827; margin-bottom:8px;">How to Build a Stability Bundle</h2>
   <p style="font-size:.9em; color:#6b7280; line-height:1.6; max-width:720px; margin-bottom:24px;">
-    Think of creating a Stability Bundle like a <strong>manufacturing line for data</strong>. Raw data enters from your source systems, gets fabricated into standardized FHIR resources, wired together with references, packaged into a Bundle, and delivered to downstream consumers. Follow the five stations below.
+    Think of creating a Stability Bundle like a <strong>manufacturing line for data</strong>. Raw data enters from your source systems, gets fabricated into standardized FHIR resources, wired together with references, packaged into a Bundle, and delivered to downstream consumers. The diagram below shows the full pipeline — then read each station for detailed instructions.
   </p>
 
   <img src="stability-pipeline-overview.png" style="width:100%; max-width:900px; border-radius:10px; border:1px solid #e5e7eb; box-shadow:0 4px 12px rgba(0,0,0,0.06); margin-bottom:32px;" alt="Stability Bundle Pipeline — 5 Station Overview"/>
@@ -45,10 +44,6 @@
         <td style="padding:8px 12px; color:#4b5563;">Specimen handling instructions, storage conditions (25°C/60% RH, 40°C/75% RH), container orientation</td>
       </tr>
     </table>
-    <div style="margin-top:20px;">
-      <p style="font-size:.8em; color:#6b7280; font-style:italic; margin:0 0 10px;">The diagram below shows how each source system feeds into the corresponding FHIR resources in Station 2:</p>
-      <img src="station1-to-station2-mapping.png" style="width:100%; max-width:820px; border-radius:8px; border:1px solid #e5e7eb; box-shadow:0 2px 8px rgba(0,0,0,0.05);" alt="Station 1 to Station 2 — Source Systems to FHIR Resource Mapping"/>
-    </div>
   </div>
 
   <!-- Station 2 -->
@@ -79,7 +74,7 @@
       <h3 style="margin:0; font-size:1.05em; font-weight:700; color:#047857;">Reference Wiring — Connect Resources Together</h3>
     </div>
     <p style="font-size:.85em; color:#4b5563; line-height:1.6; margin:0 0 12px;">
-      Wire <code>Reference()</code> and <code>canonical</code> links between your resources to form a connected graph. The key connections are:
+      Think of this step like plugging cables between electrical sockets — each resource has ports that accept <code>Reference()</code> or <code>canonical</code> links to other resources. Before wiring, your resources are standalone and disconnected. After wiring, they form a connected graph. The key connections are:
     </p>
     <table style="font-size:.82em; width:100%; border-collapse:collapse; background:#fff; border-radius:6px; overflow:hidden; border:1px solid #e5e7eb;">
       <tr style="border-bottom:1px solid #e5e7eb; background:#f0fdf4;">
