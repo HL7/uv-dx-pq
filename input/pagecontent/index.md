@@ -151,7 +151,7 @@
 
 <p style="font-size:.92em; color:#374151; line-height:1.7; margin-bottom:16px;">The following figure depicts a potential future data pipeline for implementers and the intended scope of this IG relative to the regulatory submission workflow.</p>
 
-***Figure: FHIR Data Pipeline for Pharmaceutical Quality (Industry)***
+***Figure: FHIR Data Pipeline for Pharmaceutical Quality Information***
 <table><tr><td><img src="FHIR_Data_Pipeline_PQ_Industry_840.png" /></td></tr></table>
 
 <div style="display:flex; gap:0; margin:24px 0 32px; flex-wrap:wrap;">
@@ -205,7 +205,7 @@
 
 <!-- ACKNOWLEDGEMENTS -->
 <h2 style="font-size:1.3em; font-weight:700; color:#111827; margin-bottom:12px;">Acknowledgements</h2>
-<p style="font-size:.88em; color:#374151; line-height:1.7; margin-bottom:16px;">This guide is developed and produced through the efforts of Health Level Seven International (HL7) as part of the Pharmaceutical Quality (Industry) project (<a href="https://www.hl7.org/special/Committees/projman/searchableProjectIndex.cfm?action=edit&ProjectNumber=1800" style="color:#003087; font-weight:600;">Project ID 1800</a> and <a href="https://jira.hl7.org/browse/PSS-2145" style="color:#003087; font-weight:600;">Project Scope Statement: PSS-2145</a>).</p>
+<p style="font-size:.88em; color:#374151; line-height:1.7; margin-bottom:16px;">This guide is developed and produced through the efforts of Health Level Seven International (HL7) as part of the Pharmaceutical Quality Information project (<a href="https://www.hl7.org/special/Committees/projman/searchableProjectIndex.cfm?action=edit&ProjectNumber=1800" style="color:#003087; font-weight:600;">Project ID 1800</a> and <a href="https://jira.hl7.org/browse/PSS-2145" style="color:#003087; font-weight:600;">Project Scope Statement: PSS-2145</a>).</p>
 <p style="font-size:.88em; color:#374151; line-height:1.7; margin-bottom:16px;">The project team appreciates the support and sponsorship of the HL7 Public Health Work Group, and all volunteers and staff associated with the creation of this resource. The team appreciates the comments and input from the biopharmaceutical community as well as the HL7 volunteers who participate in the Biomedical Research and Regulation Work Group.</p>
 <p style="font-size:.88em; color:#374151; line-height:1.7; margin-bottom:16px;">Health Level Seven, HL7, FHIR and the [FLAME DESIGN] are registered trademarks of Health Level Seven International, registered in the US Trademark Office. For acknowledgement of terminology content, please see the <a href="general_design.html#ip-statements" style="color:#003087; font-weight:600;">IP Statements section</a>.</p>
 

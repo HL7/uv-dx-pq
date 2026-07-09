@@ -167,7 +167,7 @@ The Quality sections of regulatory applications are organized into a table of co
 <table class="tg">
 <thead>
   <tr>
-    <td class="tg-0lax">Pharmaceutical Quality (Industry) FHIR IG component profiles</td>
+    <td class="tg-0lax">Pharmaceutical Quality Information FHIR IG component profiles</td>
     <td class="tg-0lax">1. Drug Identification </td>
     <td class="tg-0lax">2. Composition</td>
     <td class="tg-0lax">3. Impurities</td>

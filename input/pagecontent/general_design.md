@@ -5,7 +5,7 @@
 
 <div style="background:#f0fdf4; border:1px solid #bbf7d0; border-left:4px solid #10b981; border-radius:8px; padding:14px 18px; margin-bottom:32px; font-size:.85em; color:#065f46; display:flex; gap:10px; align-items:flex-start;">
   <span style="flex-shrink:0;">💡</span>
-  <span><strong>Lessons from ePI:</strong> This approach is adopted as a result of implementation experience gained by the Electronic Medicinal Product Information (ePI) FHIR IG project. Early ePI implementers identified greater value in example files than profiles. These lessons are being adapted for the PQ (Industry) project.</span>
+  <span><strong>Lessons from ePI:</strong> This approach is adopted as a result of implementation experience gained by the Electronic Medicinal Product Information (ePI) FHIR IG project. Early ePI implementers identified greater value in example files than profiles. These lessons are being adapted for the PQI project.</span>
 </div>
 
 ### Terminology
