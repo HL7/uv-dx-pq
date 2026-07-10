@@ -9,8 +9,8 @@
   ],
   "url": "http://hl7.org/fhir/uv/pharm-quality/ImplementationGuide/hl7.fhir.uv.pharm-quality",
   "version": "1.0.0",
-  "name": "PharmaceuticalQualityIndustry",
-  "title": "Pharmaceutical Quality (Industry)",
+  "name": "PharmaceuticalQualityInformation",
+  "title": "Pharmaceutical Quality Information (PQI)",
   "status": "active",
   "publisher": "HL7 International / Biomedical Research and Regulation",
   "contact": [
@@ -24,7 +24,7 @@
       ]
     }
   ],
-  "description": "This IG is developed for the HL7 International Pharmaceutical Quality (PQ) - Industry Use Case project, sponsored by the Biomedical Research and Regulation Work Group. * [Project Proposal: PSS-2137](https://jira.hl7.org/browse/PSS-2137) * [Project Scope Statement: PSS-2145](https://jira.hl7.org/browse/PSS-2145)",
+  "description": "This IG is developed for the HL7 International Pharmaceutical Quality Information (PQI) IG, sponsored by the Biomedical Research and Regulation Work Group. * [Project Proposal: PSS-2137](https://jira.hl7.org/browse/PSS-2137) * [Project Scope Statement: PSS-2145](https://jira.hl7.org/browse/PSS-2145)",
   "jurisdiction": [
     {
       "coding": [
