@@ -223,6 +223,16 @@
         <a href="pqi-module3-showcase/stability-product.html" target="_blank" style="display:inline-block; background:#2563eb; color:#fff; padding:10px 20px; border-radius:6px; font-weight:600; font-size:.9em; text-decoration:none;">View Product Showcase &rarr;</a>
       </div>
 
+      <!-- Feature Card: Authoring Template -->
+      <div style="background:linear-gradient(135deg,#ecfeff,#eff6ff); border:1px solid #a5f3fc; border-radius:10px; padding:24px;">
+        <div style="font-size:2em; margin-bottom:12px;">📝</div>
+        <h3 style="font-size:1.15em; font-weight:800; color:#0e7490; margin-bottom:8px; margin-top:0;">Bundle Authoring Template</h3>
+        <p style="font-size:.85em; color:#155e75; line-height:1.6; margin-bottom:16px;">
+          A guided, business-friendly form that assembles a compliant Bundle-drug-stability-pq package and exports FHIR R5 JSON. Every field is mapped to its CTD section (3.2.P.8.x), with a paper/PDF dossier view for CMC reviewers.
+        </p>
+        <a href="pqi-module3-showcase/stability-template-mockup.html" target="_blank" style="display:inline-block; background:#0e7490; color:#fff; padding:10px 20px; border-radius:6px; font-weight:600; font-size:.9em; text-decoration:none;">Open Authoring Template &rarr;</a>
+      </div>
+
       <!-- Card: Raw Data Examples -->
       <div style="background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:20px;">
         <h3 style="font-size:1em; font-weight:700; color:#111827; margin-bottom:12px; margin-top:0;">Technical Artifacts</h3>
