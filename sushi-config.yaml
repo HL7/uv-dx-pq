@@ -2,7 +2,7 @@ id: hl7.fhir.uv.pharm-quality
 canonical: http://hl7.org/fhir/uv/pharm-quality
 name: PharmaceuticalQualityInformation
 title: Pharmaceutical Quality Information (PQI)
-description:
+description: >-
   This IG is developed for the HL7 International Pharmaceutical Quality Information (PQI) IG,
   sponsored by the Biomedical Research and Regulation Work Group.
   * [Project Proposal: PSS-2137](https://jira.hl7.org/browse/PSS-2137)
