@@ -8,10 +8,21 @@
   <span><strong>Lessons from ePI:</strong> This approach is adopted as a result of implementation experience gained by the Electronic Medicinal Product Information (ePI) FHIR IG project. Early ePI implementers identified greater value in example files than profiles. These lessons are being adapted for the PQI project.</span>
 </div>
 
+### Documents and collections
+
+This IG uses two kinds of Bundle:
+
+* **Domain Bundles** (`type = collection`, e.g. [Organizations](organizations.html), [Stability Study](stability.html)) exchange one kind of quality data between systems, such as a stability protocol sent to a contract lab and its results sent back.
+* **PQI documents** (`type = document`, [PQI Types 1–4](build.html)) carry the content of one CTD Module 2.3 document, or of one level-3 Module 3.2 heading, from a structured document (Type 1) to a data-first document (Type 4). Documents sent together are grouped in a [PQI document collection](StructureDefinition-Bundle-document-collection-pq.html). In Types 2–4 the domain profiles are reused inside the documents; in Type 4 they become the content model of the sections whose narrative they replace.
+
+### Design principle: structure in profiles, quality in validation
+
+Profiles carry the structural rules, and quality checks live in external validation. Rules that FHIRPath cannot check reliably – such as narrative anchors and image references – are stated as conformance rules and enforced by implementers' validation apps rather than by ever more complex profiles. See [Validate and QA a PQI document](build_validate.html).
+
 ### Terminology
 
 <div style="background:#f9fafb; border:1px solid #e5e7eb; border-radius:8px; padding:18px; margin-bottom:32px;">
-  <p style="font-size:.92em; color:#374151; line-height:1.7; margin:0;">This IG prioritizes international standards. <strong>ISO IDMP</strong> is the relevant international standard and designates the <strong>European Directorate for the Quality of Medicines and Healthcare (EDQM)</strong> for dose form, route of administration, unit of presentation, pack type, and closure type. This IG references EDQM as the preferred terminology for these topics.</p>
+  <p style="font-size:.92em; color:#374151; line-height:1.7; margin:0;">CTD section headings in PQI documents are coded with the [CtdSectionPq](CodeSystem-ctd-section-pq.html) CodeSystem (ICH M4Q(R1) headings), defined in this IG for now. This IG prioritizes international standards. <strong>ISO IDMP</strong> is the relevant international standard and designates the <strong>European Directorate for the Quality of Medicines and Healthcare (EDQM)</strong> for dose form, route of administration, unit of presentation, pack type, and closure type. This IG references EDQM as the preferred terminology for these topics.</p>
   <div style="margin-top:12px; font-size:.85em; color:#6b7280; line-height:1.6;">This supports data alignment/reuse across pharmaceutical Quality, clinical, ePI, artwork, and defect reporting — and facilitates implementation since most RIM software developers are pre-loading their systems with this terminology for EMA SPOR compliance.</div>
 </div>
 

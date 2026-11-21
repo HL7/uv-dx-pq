@@ -16,7 +16,7 @@ Description: "Specification domain: This Bundle profile represents the structure
     Product-Identification 1..1 and
     Drug-Ingredient 1..* and
     Component-Substance 1..* and
-    Protocol 1..1 and
+    Protocol 1..* and
     Test-Method 1..* and
     Organization 1..*
 * entry[Product-Identification].resource only MedicinalProductDefinitionDrugProductPq

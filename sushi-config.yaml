@@ -29,6 +29,18 @@ pages:
     title: Getting Started
   use_cases.md:
     title: Business Use Cases
+  build.md:
+    title: Build a PQI Document
+    build_type1.md:
+      title: "Build PQI Type 1: Structured document"
+    build_type2.md:
+      title: "Build PQI Type 2: Document + product data"
+    build_type3.md:
+      title: "Build PQI Type 3: Linked document"
+    build_type4.md:
+      title: "Build PQI Type 4: Data-first document"
+    build_validate.md:
+      title: Validate and QA a PQI Document
   domains.md:
     title: Domains Overview
     anal_proc.md:
@@ -123,11 +135,20 @@ pages:
     title: General Principles & Design
   downloads.md:
     title: Downloads
+  changes.md:
+    title: Change Log
 
 menu:
   Home: index.html
   Getting Started: gettingstarted.html
   Business Use Cases: use_cases.html
+  Build:
+    Overview and maturity types: build.html
+    PQI Type 1: build_type1.html
+    PQI Type 2: build_type2.html
+    PQI Type 3: build_type3.html
+    PQI Type 4: build_type4.html
+    Validate and QA: build_validate.html
   Domains:
     Domains Overview: domains.html
     Analytical Procedures: anal_proc.html
@@ -148,6 +169,7 @@ menu:
     General Principles & Design: general_design.html
   Artifacts: artifacts.html
   Downloads: downloads.html
+  Change Log: changes.html
 
 parameters:
   path-suppressed-warnings: input/ignoreWarnings.txt
@@ -178,6 +200,25 @@ parameters:
     - http://terminology.hl7.org/CodeSystem/time-point-description
 
 groups:
+  document-types:
+    name: PQI Document Types
+    description: Document and collection profiles for PQI maturity Types 1-4, and their starter examples.
+    resources:
+      - BundleDocumentPq
+      - CompositionDocumentPq
+      - BundleDocumentType1Pq
+      - CompositionType1Pq
+      - CompositionProductPq
+      - BundleDocumentType2Pq
+      - CompositionType2Pq
+      - CompositionLinkedPq
+      - BundleDocumentType3Pq
+      - CompositionType3Pq
+      - BundleDocumentType4Pq
+      - CompositionType4Pq
+      - BundleDocumentCollectionPq
+      - bundle-document-type1-pq-m23-r1-skeleton
+      - bundle-document-collection-pq-m32-r1-skeleton
   analytical-procedures:
     name: Analytical Procedures
     resources:
@@ -310,6 +351,8 @@ groups:
   building-blocks:
     name: Component Building Blocks
     resources:
+      - AdministrableProductDefinitionPq
+      - RegulatedAuthorizationPq
       - ActivityDefinitionDrugTestPq
       - BundleDrugProductExcipientsPq
       - BundleDrugProductPq

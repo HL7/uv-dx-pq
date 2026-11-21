@@ -6,6 +6,10 @@
 
 <hr style="border:none; border-top:1px solid #e5e7eb; margin:0 0 32px;"/>
 
+<div style="background:#eff6ff; border:1px solid #bfdbfe; border-left:4px solid #2563eb; border-radius:8px; padding:14px 18px; margin-bottom:24px; font-size:.88em; color:#1e40af;">
+  <strong>New to PQI?</strong> Start with a <a href="build_type1.html" style="color:#1e40af; font-weight:600;">PQI Type 1 document</a>: convert your Module 2.3 or Module 3 Word document into a FHIR document with coded CTD headings. Then add product data (Type 2), links to data (Type 3) and data-first sections (Type 4). See <a href="build.html" style="color:#1e40af; font-weight:600;">Build a PQI Document</a>.
+</div>
+
 <!-- PERSONA ROUTING GRID -->
 <h2 style="font-size:1.2em; font-weight:700; color:#111827; margin-bottom:16px;">Choose Your Path</h2>
 <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px; margin-bottom:36px;">

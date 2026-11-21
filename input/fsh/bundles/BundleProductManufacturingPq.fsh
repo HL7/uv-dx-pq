@@ -16,7 +16,7 @@ Description: "Manufacturing Process domain: This Bundle profile represents the s
     Product-Definition 0..1 and
     Drug-Ingredient 0..* and
     Component-Substance 1..* and
-    Protocol 1..1 and
+    Protocol 1..* and
     Test-Device 1..* and
     Process-Diagram 1..* and
     Organization 1..*

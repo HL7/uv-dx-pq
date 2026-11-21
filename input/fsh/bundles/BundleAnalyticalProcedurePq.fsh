@@ -16,7 +16,7 @@ Description: "Analytical Procedure domain: This Bundle profile represents the st
     Product-Identification 0..1 and
     Component-Substance 1..* and
     Specimen-Definition 1..* and
-    Protocol 1..1 and
+    Protocol 1..* and
     Test-Method 1..* and
     Test-Device 0..* and
     Image 0..*

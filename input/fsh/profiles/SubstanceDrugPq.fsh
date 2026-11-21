@@ -5,7 +5,7 @@ Title: "Substance - Drug PQ"
 Description: "This Substance profile represents identifying information about an actual batch of substance (an instance)."
 * ^status = #active
 * extension contains
-    MedManufacturingBatch named medication-manufacturingBatch 0..* MS and
+    MedManufacturingBatch named medication-manufacturingBatch 0..1 MS and
     ExtensionBatchReleaseDatePq named batch-release-date 0..* MS and
     ExtensionBatchRetestDatePq named batch-retest-date 0..* MS and
     ExtensionManufacturingProcessPq named manufacturing-process 0..* MS and

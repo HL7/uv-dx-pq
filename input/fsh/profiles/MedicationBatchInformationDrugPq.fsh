@@ -17,7 +17,7 @@ Description: "This Medication profile represents information about the batches t
 * code.extension[package-definition] ^mustSupport = true
 * batch MS
 * batch.extension contains
-    MedManufacturingBatch named manufacturing-batch-weight 0..* MS and
+    MedManufacturingBatch named manufacturing-batch-weight 0..1 MS and
     ExtensionBatchNumberOfItemsPq named manufacturing-batch-number-of-items 0..* MS and
     ExtensionActualYieldPq named actual-yield 0..* MS and
     ExtensionActualYieldUnfilteredPq named actual-yield-unfiltered 0..* MS and

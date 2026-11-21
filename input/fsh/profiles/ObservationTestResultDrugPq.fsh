@@ -6,7 +6,7 @@ Description: "This Observation profile represents the result of a specific test 
 * ^meta.versionId = "5"
 * ^meta.lastUpdated = "2022-12-21T15:45:12.730+00:00"
 * ^meta.source = "#85sGshju1xdy9VCv"
-* extension contains TriggeredBy named workflow-triggeredBy 0..* MS
+* extension contains TriggeredBy named workflow-triggeredBy 0..1 MS
 * extension[workflow-triggeredBy] ^short = "workflow-triggeredBy"
 * status MS
 * code MS

@@ -15,3 +15,4 @@ Alias: $manufacturing-step = http://terminology.hl7.org/CodeSystem/manufacturing
 Alias: $v3-ObservationValue = http://terminology.hl7.org/CodeSystem/v3-ObservationValue
 Alias: $pharmaceutical-test-category = http://terminology.hl7.org/CodeSystem/pharmaceutical-test-category
 Alias: $cs-goalPriority-pq-example = http://hl7.org/fhir/uv/pharm-quality/CodeSystem/cs-goalPriority-pq-example
+Alias: $textLink = http://hl7.org/fhir/StructureDefinition/textLink

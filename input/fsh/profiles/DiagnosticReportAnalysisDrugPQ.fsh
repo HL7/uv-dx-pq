@@ -6,7 +6,7 @@ Description: "This DiagnosticReport profile represents results from a batch anal
 * ^status = #active
 * contained MS
 * extension contains
-    TriggeredBy named workflow-triggeredBy 0..* MS and
+    TriggeredBy named workflow-triggeredBy 0..1 MS and
     ExtensionStatisticalModelPq named statistical-model 0..* MS and
     ExtensionContainerOrientationPq named container-orientation 0..* MS
 * extension[workflow-triggeredBy] ^short = "A ‘step’ dictated within the protocol."

@@ -73,7 +73,7 @@ Extension: ExtensionBatchStorageDurationPq
 Id: Extension-batch-storage-duration-pq
 Title: "Extension - Batch Storage Duration PQ"
 Description: "The length of time for which a batch is stored, before being tested"
-Context: Specimen.processing.timePeriod
+Context: Specimen.processing.time[x]
 * value[x] only Duration
 
 Extension: ExtensionBatchSubstanceBatchPq

@@ -14,7 +14,7 @@ Description: "Specification domain: This Bundle profile represents the structure
 * entry ^slicing.rules = #open
 * entry contains
     Component-Substance 1..* and
-    Protocol 1..1 and
+    Protocol 1..* and
     Test-Method 1..* and
     Organization 1..*
 * entry[Component-Substance].resource only SubstanceDefinitionComponentSubstanceDrugPq

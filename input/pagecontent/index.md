@@ -35,6 +35,21 @@
   <a href="domains.html" style="color:#003087; font-weight:600; font-size:.88em; text-decoration:none;">Explore all 14 PQ Domains →</a>
 </div>
 
+<!-- PQI MATURITY TYPES -->
+<div style="padding:40px 20px 8px; text-align:center;">
+  <h2 style="font-size:1.5em; font-weight:800; color:#111827; margin-bottom:10px;">From documents to data: PQI Types 1–4</h2>
+  <p style="font-size:.95em; color:#6b7280; max-width:600px; margin:0 auto 24px; line-height:1.55;">Start with your Module 2.3 and Module 3 Word documents and move, one step at a time, to fully structured quality data.</p>
+</div>
+<div style="display:grid; grid-template-columns:1fr 1fr 1fr 1fr; gap:12px; margin-bottom:16px;">
+  <a href="build_type1.html" style="text-decoration:none; background:#f9fafb; border:1px solid #e5e7eb; border-radius:10px; padding:18px;"><div style="font-weight:700; color:#003087;">Type 1</div><div style="font-size:.82em; color:#4b5563; line-height:1.5;">Structured document: CTD headings coded, narrative as is.</div></a>
+  <a href="build_type2.html" style="text-decoration:none; background:#f9fafb; border:1px solid #e5e7eb; border-radius:10px; padding:18px;"><div style="font-weight:700; color:#003087;">Type 2</div><div style="font-size:.82em; color:#4b5563; line-height:1.5;">Adds product, packaging, organization, substance and authorization data.</div></a>
+  <a href="build_type3.html" style="text-decoration:none; background:#f9fafb; border:1px solid #e5e7eb; border-radius:10px; padding:18px;"><div style="font-weight:700; color:#003087;">Type 3</div><div style="font-size:.82em; color:#4b5563; line-height:1.5;">Links each section's narrative to the PQI resources it discusses.</div></a>
+  <a href="build_type4.html" style="text-decoration:none; background:#f9fafb; border:1px solid #e5e7eb; border-radius:10px; padding:18px;"><div style="font-weight:700; color:#003087;">Type 4</div><div style="font-size:.82em; color:#4b5563; line-height:1.5;">Data-first: resources replace narrative where they carry the content.</div></a>
+</div>
+<div style="text-align:center; padding:8px 0 24px;">
+  <a href="build.html" style="color:#003087; font-weight:600; font-size:.88em; text-decoration:none;">How to build a PQI document →</a>
+</div>
+
 <!-- WHY STRUCTURED PQ DATA -->
 <div style="text-align:center; padding:48px 20px 16px;">
   <h2 style="font-size:1.5em; font-weight:800; color:#111827; margin-bottom:10px;">Why the industry is adopting structured PQ data</h2>

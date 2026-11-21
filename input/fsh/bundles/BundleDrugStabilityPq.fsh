@@ -20,7 +20,7 @@ Description: "Stability Study domain: This Bundle profile represents the structu
     Batch-Lot-Information 0..* and
     Actual-Batch-Substance 1..* and
     Actual-Batch-Specimen 1..* and
-    Protocol 1..1 and
+    Protocol 1..* and
     Test-Set 1..* and
     Test-Method 1..* and
     Report 1..* and
