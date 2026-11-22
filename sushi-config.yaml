@@ -25,8 +25,6 @@ extension:
 pages:
   index.md:
     title: Home Page
-  gettingstarted.md:
-    title: Getting Started
   use_cases.md:
     title: Business Use Cases
   build.md:
@@ -131,8 +129,6 @@ pages:
         title: "Stability Study: synthetic data rendering - drug product"
       stability_rend_s.md:
         title: "Stability Study: synthetic data rendering - drug substance"
-  general_design.md:
-    title: General Principles & Design
   downloads.md:
     title: Downloads
   changes.md:
@@ -140,7 +136,6 @@ pages:
 
 menu:
   Home: index.html
-  Getting Started: gettingstarted.html
   Business Use Cases: use_cases.html
   Build:
     Overview and maturity types: build.html
@@ -165,8 +160,6 @@ menu:
     Organizations: organizations.html
     Process Validation: process_valid.html
     Stability Study: stability.html
-  Technical Details:
-    General Principles & Design: general_design.html
   Artifacts: artifacts.html
   Downloads: downloads.html
   Change Log: changes.html

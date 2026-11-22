@@ -3,7 +3,7 @@
   <div style="font-size:.75em; font-weight:700; text-transform:uppercase; letter-spacing:.22em; color:#003087; margin-bottom:16px;">HL7 FHIR R5 · BR&R Work Group</div>
   <h1 style="font-size:2.4em; font-weight:800; line-height:1.15; margin-bottom:16px; color:#111827;">Pharmaceutical Quality,<br/><span style="background:linear-gradient(135deg,#003087,#2563eb); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">structured.</span></h1>
   <p style="font-size:1.05em; color:#6b7280; max-width:540px; margin:0 auto 32px; line-height:1.55;">A universal FHIR specification for creating and exchanging structured pharmaceutical quality data internationally — within or between biopharmaceutical companies and their stakeholders.</p>
-  <a href="gettingstarted.html" style="display:inline-block; background:#003087; color:#fff; padding:14px 28px; border-radius:8px; font-weight:700; font-size:1em; text-decoration:none;">Get Started</a>
+  <a href="build.html" style="display:inline-block; background:#003087; color:#fff; padding:14px 28px; border-radius:8px; font-weight:700; font-size:1em; text-decoration:none;">Get Started</a>
 </div>
 
 <!-- DOMAIN SHOWCASE STRIP -->
@@ -218,11 +218,48 @@
   </div>
 </div>
 
+<!-- TECHNICAL NOTES (moved from General Principles & Design) -->
+<h2 style="font-size:1.3em; font-weight:700; color:#111827; margin:32px 0 12px;">How to Use This IG</h2>
+
+<div style="background:#eff6ff; border:1px solid #bfdbfe; border-left:4px solid #2563eb; border-radius:8px; padding:14px 18px; margin-bottom:24px; font-size:.85em; color:#1e40af; display:flex; gap:10px; align-items:flex-start;">
+  <span style="flex-shrink:0;">📋</span>
+  <span><strong>How to Use This IG:</strong> This implementation guide relies on example files as a priority. Profiles were designed with extra flexibility to facilitate implementation by early adopters. Profiles will be refined and progressively become stricter as implementers gain practical experience with production environments.</span>
+</div>
+
+<div style="background:#f0fdf4; border:1px solid #bbf7d0; border-left:4px solid #10b981; border-radius:8px; padding:14px 18px; margin-bottom:32px; font-size:.85em; color:#065f46; display:flex; gap:10px; align-items:flex-start;">
+  <span style="flex-shrink:0;">💡</span>
+  <span><strong>Lessons from ePI:</strong> This approach is adopted as a result of implementation experience gained by the Electronic Medicinal Product Information (ePI) FHIR IG project. Early ePI implementers identified greater value in example files than profiles. These lessons are being adapted for the PQI project.</span>
+</div>
+
+### Terminology
+
+<div style="background:#f9fafb; border:1px solid #e5e7eb; border-radius:8px; padding:18px; margin-bottom:32px;">
+  <p style="font-size:.92em; color:#374151; line-height:1.7; margin:0;">CTD section headings in PQI documents are coded with the [CtdSectionPq](CodeSystem-ctd-section-pq.html) CodeSystem (ICH M4Q(R1) headings), defined in this IG for now. This IG prioritizes international standards. <strong>ISO IDMP</strong> is the relevant international standard and designates the <strong>European Directorate for the Quality of Medicines and Healthcare (EDQM)</strong> for dose form, route of administration, unit of presentation, pack type, and closure type. This IG references EDQM as the preferred terminology for these topics.</p>
+  <div style="margin-top:12px; font-size:.85em; color:#6b7280; line-height:1.6;">This supports data alignment/reuse across pharmaceutical Quality, clinical, ePI, artwork, and defect reporting — and facilitates implementation since most RIM software developers are pre-loading their systems with this terminology for EMA SPOR compliance.</div>
+</div>
+
+### Cross Version Analysis
+*(None available.)*
+
+{% include cross-version-analysis.xhtml %}
+
+### Dependency Table
+
+{% include dependency-table.xhtml %}
+
+### Global Profiles Table
+
+{% include globals-table.xhtml %}
+
+### IP Statements
+
+{% include ip-statements.xhtml %}
+
 <!-- ACKNOWLEDGEMENTS -->
 <h2 style="font-size:1.3em; font-weight:700; color:#111827; margin-bottom:12px;">Acknowledgements</h2>
 <p style="font-size:.88em; color:#374151; line-height:1.7; margin-bottom:16px;">This guide is developed and produced through the efforts of Health Level Seven International (HL7) as part of the Pharmaceutical Quality Information project (<a href="https://www.hl7.org/special/Committees/projman/searchableProjectIndex.cfm?action=edit&ProjectNumber=1800" style="color:#003087; font-weight:600;">Project ID 1800</a> and <a href="https://jira.hl7.org/browse/PSS-2145" style="color:#003087; font-weight:600;">Project Scope Statement: PSS-2145</a>).</p>
 <p style="font-size:.88em; color:#374151; line-height:1.7; margin-bottom:16px;">The project team appreciates the support and sponsorship of the HL7 Public Health Work Group, and all volunteers and staff associated with the creation of this resource. The team appreciates the comments and input from the biopharmaceutical community as well as the HL7 volunteers who participate in the Biomedical Research and Regulation Work Group.</p>
-<p style="font-size:.88em; color:#374151; line-height:1.7; margin-bottom:16px;">Health Level Seven, HL7, FHIR and the [FLAME DESIGN] are registered trademarks of Health Level Seven International, registered in the US Trademark Office. For acknowledgement of terminology content, please see the <a href="general_design.html#ip-statements" style="color:#003087; font-weight:600;">IP Statements section</a>.</p>
+<p style="font-size:.88em; color:#374151; line-height:1.7; margin-bottom:16px;">Health Level Seven, HL7, FHIR and the [FLAME DESIGN] are registered trademarks of Health Level Seven International, registered in the US Trademark Office. For acknowledgement of terminology content, please see the <a href="#ip-statements" style="color:#003087; font-weight:600;">IP Statements section</a>.</p>
 
 <!-- FEEDBACK -->
 <h2 style="font-size:1.3em; font-weight:700; color:#111827; margin-bottom:12px;">Providing Feedback</h2>

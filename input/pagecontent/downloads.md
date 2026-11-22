@@ -21,7 +21,7 @@ In addition there are format specific definitions files.
 
 Before use, replace the bracketed metadata ([Product name], [Applicant], subject and document date), give each Bundle a new identifier, and for each heading you complete set the narrative status to "additional" and remove its emptyReason.
 
-**Sakura Bloom examples:** 3.2.P.3, 3.2.P.7 and 3.2.R (US) from the ICH Sakura Bloom mock-up, at each type:
+**Synthetic data examples:** 3.2.P.3, 3.2.P.7 and 3.2.R (US), at each type:
 
 * [Type 1](Bundle-bundle-document-collection-pq-sakura-bloom-type1.html) · [Type 2](Bundle-bundle-document-collection-pq-sakura-bloom-type2.html) · [Type 3](Bundle-bundle-document-collection-pq-sakura-bloom-type3.html) · [Type 4](Bundle-bundle-document-collection-pq-sakura-bloom-type4.html)
 

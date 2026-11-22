@@ -1,537 +1,65 @@
-The Quality sections of regulatory applications are organized into a table of contents that includes sections and sub-sections under the titles “Drug Substance” and “Drug Product”. The structure is defined in the ICH [*Common Technical Document for the Registration of Pharmaceuticals for Human Use*](https://database.ich.org/sites/default/files/M4Q_R1_Guideline.pdf). This Common Technical Document (CTD) structure is designed for unstructured PDF and Word documents.
+<p style="margin:0 0 12px; max-width:780px; font-size:1em; line-height:1.65; color:#374151;">FHIR PQI reimagines CMC information as small, structured components instead of pages in a Word or PDF file. Once the data is in this form, components can be combined, reused across submissions, and adapted as regulations change, without being tied to the CTD table of contents.</p>
+<p style="margin:0 0 12px; max-width:780px; font-size:1em; line-height:1.65; color:#374151;">Freed from document constraints, CMC organizes into 14 domains, each built around one quality concept. Click a domain in the figure to open its page.</p>
+<div style="border:1px solid #e5e7eb; border-radius:10px; padding:16px; margin:16px 0 20px; max-width:1100px;">
+{% include pqi-domains.svg %}
+</div>
+<p style="margin:0 0 12px; max-width:780px; font-size:1em; line-height:1.65; color:#374151;">How much of each domain a document uses depends on its <a href="build.html" style="font-weight:600;">PQI type</a>.</p>
 
-<div style="background:#eff6ff; border:1px solid #bfdbfe; border-left:4px solid #2563eb; border-radius:8px; padding:14px 18px; margin-bottom:24px; font-size:.85em; color:#1e40af; display:flex; gap:10px; align-items:flex-start;">
-  <span style="flex-shrink:0;">📋</span>
-  <span>Rather than recreating the legacy ICH CTD table of contents in FHIR, pharmaceutical quality data are organized into <strong>14 new domains</strong> designed to maximize structured data use and deliver benefits in flexibility, efficiency, and data reuse. <a href="gettingstarted.html" style="color:#1d4ed8; font-weight:600;">New here? Start with the Getting Started guide →</a></span>
+### Domains at each PQI type
+
+<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:12px; margin-bottom:32px;">
+  <a href="build_type1.html" style="text-decoration:none; color:inherit; display:flex; flex-direction:column; gap:8px; border:1px solid #e5e7eb; border-radius:10px; padding:18px; background:#ffffff;">
+    <div style="font-size:.72em; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:#6b7280;">Type 1</div>
+    <div style="font-size:1.05em; font-weight:700; color:#111827;">Structured document</div>
+    <div style="font-size:.88em; line-height:1.55; color:#4b5563;">A near 1:1 conversion of one Word CMC document into a FHIR document. All the content is kept, now semi-structured under coded CTD headings. No domain data yet.</div>
+    <div style="margin-top:auto; padding-top:10px; border-top:1px solid #f3f4f6; font-size:.82em; font-weight:600; color:#6b7280;">0 domains</div>
+  </a>
+  <a href="build_type2.html" style="text-decoration:none; color:inherit; display:flex; flex-direction:column; gap:8px; border:1px solid #e5e7eb; border-radius:10px; padding:18px; background:#ffffff;">
+    <div style="font-size:.72em; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:#6b7280;">Type 2</div>
+    <div style="font-size:1.05em; font-weight:700; color:#111827;">Document + product data</div>
+    <div style="font-size:.88em; line-height:1.55; color:#4b5563;">Adds product master data from four domains, plus the marketing authorization.</div>
+    <div style="display:flex; flex-wrap:wrap; gap:5px;"><span style="font-size:.75em; font-weight:600; background:#eff6ff; color:#1e40af; border-radius:999px; padding:3px 9px;">Identification</span><span style="font-size:.75em; font-weight:600; background:#eff6ff; color:#1e40af; border-radius:999px; padding:3px 9px;">Composition</span><span style="font-size:.75em; font-weight:600; background:#eff6ff; color:#1e40af; border-radius:999px; padding:3px 9px;">Organizations</span><span style="font-size:.75em; font-weight:600; background:#eff6ff; color:#1e40af; border-radius:999px; padding:3px 9px;">Container Closure</span></div>
+    <div style="margin-top:auto; padding-top:10px; border-top:1px solid #f3f4f6; font-size:.82em; font-weight:600; color:#1e40af;">4 domains</div>
+  </a>
+  <a href="build_type3.html" style="text-decoration:none; color:inherit; display:flex; flex-direction:column; gap:8px; border:1px solid #e5e7eb; border-radius:10px; padding:18px; background:#ffffff;">
+    <div style="font-size:.72em; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:#6b7280;">Type 3</div>
+    <div style="font-size:1.05em; font-weight:700; color:#111827;">Linked document</div>
+    <div style="font-size:.88em; line-height:1.55; color:#4b5563;">The text reads the same, but key phrases become links. For example, “stored at 25°C for 36 months” can link to a structured stability study holding every test, time point and result behind that sentence.</div>
+    <div style="margin-top:auto; padding-top:10px; border-top:1px solid #f3f4f6; font-size:.82em; font-weight:600; color:#1e40af;">All 14 domains, linked</div>
+  </a>
+  <a href="build_type4.html" style="text-decoration:none; color:inherit; display:flex; flex-direction:column; gap:8px; border:1px solid #003087; border-radius:10px; padding:18px; background:#f8fafc;">
+    <div style="font-size:.72em; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:#6b7280;">Type 4</div>
+    <div style="font-size:1.05em; font-weight:700; color:#111827;">Data-first document</div>
+    <div style="font-size:.88em; line-height:1.55; color:#4b5563;">This is where fully structured content starts to replace narrative. Text that only repeats the data, such as tables of results typed out as prose, is dropped. The structured data becomes the section, and narrative stays only where it adds meaning.</div>
+    <div style="margin-top:auto; padding-top:10px; border-top:1px solid #f3f4f6; font-size:.82em; font-weight:600; color:#003087;">All 14 domains, as content</div>
+  </a>
 </div>
 
-<h2 style="font-size:1.3em; font-weight:700; color:#111827; margin-bottom:16px;">Browse All 14 Domains</h2>
-<div style="display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-bottom:36px;">
-  <a href="identification.html" style="text-decoration:none; background:#fff; border:1px solid #e5e7eb; border-radius:8px; padding:16px; display:block;"><div style="font-weight:700; color:#111827; font-size:.9em; margin-bottom:2px;">1. Identification</div><div style="font-size:.78em; color:#6b7280;">Drug product &amp; substance identification, properties, excipients</div></a>
-  <a href="composition.html" style="text-decoration:none; background:#fff; border:1px solid #e5e7eb; border-radius:8px; padding:16px; display:block;"><div style="font-weight:700; color:#111827; font-size:.9em; margin-bottom:2px;">2. Composition</div><div style="font-size:.78em; color:#6b7280;">Product description, formulation, reference standards</div></a>
-  <a href="impurities.html" style="text-decoration:none; background:#fff; border:1px solid #e5e7eb; border-radius:8px; padding:16px; display:block;"><div style="font-weight:700; color:#111827; font-size:.9em; margin-bottom:2px;">3. Impurities</div><div style="font-size:.78em; color:#6b7280;">Characterisation of product &amp; substance impurities</div></a>
-  <a href="organizations.html" style="text-decoration:none; background:#fff; border:1px solid #e5e7eb; border-radius:8px; padding:16px; display:block;"><div style="font-weight:700; color:#111827; font-size:.9em; margin-bottom:2px;">4. Organizations</div><div style="font-size:.78em; color:#6b7280;">Manufacturers, testing labs, packaging sites</div></a>
-  <a href="batch_info.html" style="text-decoration:none; background:#fff; border:1px solid #e5e7eb; border-radius:8px; padding:16px; display:block;"><div style="font-weight:700; color:#111827; font-size:.9em; margin-bottom:2px;">5. Batch/Lot Info</div><div style="font-size:.78em; color:#6b7280;">Batch details for products and substances</div></a>
-  <a href="batch_anal.html" style="text-decoration:none; background:#fff; border:1px solid #e5e7eb; border-radius:8px; padding:16px; display:block;"><div style="font-weight:700; color:#111827; font-size:.9em; margin-bottom:2px;">6. Batch Analysis</div><div style="font-size:.78em; color:#6b7280;">Structured test results per batch</div></a>
-  <a href="batch_formula.html" style="text-decoration:none; background:#fff; border:1px solid #e5e7eb; border-radius:8px; padding:16px; display:block;"><div style="font-weight:700; color:#111827; font-size:.9em; margin-bottom:2px;">7. Batch Formula</div><div style="font-size:.78em; color:#6b7280;">Manufacturing batch formulation details</div></a>
-  <a href="mnf_process.html" style="text-decoration:none; background:#fff; border:1px solid #e5e7eb; border-radius:8px; padding:16px; display:block;"><div style="font-weight:700; color:#111827; font-size:.9em; margin-bottom:2px;">8. Manufacturing</div><div style="font-size:.78em; color:#6b7280;">Process description, controls, critical steps</div></a>
-  <a href="process_valid.html" style="text-decoration:none; background:#fff; border:1px solid #e5e7eb; border-radius:8px; padding:16px; display:block;"><div style="font-weight:700; color:#111827; font-size:.9em; margin-bottom:2px;">9. Process Validation</div><div style="font-size:.78em; color:#6b7280;">Validation protocols, results, evaluation</div></a>
-  <a href="anal_proc.html" style="text-decoration:none; background:#fff; border:1px solid #e5e7eb; border-radius:8px; padding:16px; display:block;"><div style="font-weight:700; color:#111827; font-size:.9em; margin-bottom:2px;">10. Analytical Procedures</div><div style="font-size:.78em; color:#6b7280;">Test methods and analytical techniques</div></a>
-  <a href="container.html" style="text-decoration:none; background:#fff; border:1px solid #e5e7eb; border-radius:8px; padding:16px; display:block;"><div style="font-weight:700; color:#111827; font-size:.9em; margin-bottom:2px;">11. Container Closure</div><div style="font-size:.78em; color:#6b7280;">Packaging components and closure systems</div></a>
-  <a href="stability.html" style="text-decoration:none; background:#fff; border:1px solid #e5e7eb; border-radius:8px; padding:16px; display:block;"><div style="font-weight:700; color:#111827; font-size:.9em; margin-bottom:2px;">12. Stability Study</div><div style="font-size:.78em; color:#6b7280;">Protocols, conditions, test results, conclusions</div></a>
-  <a href="drug_specification.html" style="text-decoration:none; background:#fff; border:1px solid #e5e7eb; border-radius:8px; padding:16px; display:block;"><div style="font-weight:700; color:#111827; font-size:.9em; margin-bottom:2px;">13. Drug Specification</div><div style="font-size:.78em; color:#6b7280;">Test specifications and acceptance criteria</div></a>
-  <a href="compatibility.html" style="text-decoration:none; background:#fff; border:1px solid #e5e7eb; border-radius:8px; padding:16px; display:block;"><div style="font-weight:700; color:#111827; font-size:.9em; margin-bottom:2px;">14. Compatibility</div><div style="font-size:.78em; color:#6b7280;">Drug product pharmaceutical development compatibility</div></a>
-</div>
+### The 14 domains
 
-<hr style="border:none; border-top:1px solid #e5e7eb; margin:0 0 32px;"/>
-
-### Figure: Pharmaceutical Quality FHIR IG Data Domains
-<p style="font-size:.88em; color:#374151; line-height:1.6; margin-bottom:12px;">The 14 pharmaceutical Quality (PQ) domains and their supporting sub-domains. Each domain is based on a major Quality concept. Click on any section in the figure below to navigate to its detail page.</p>
-<table><tr><td><img src="all-domains-dx-PQ.png" usemap="#hotspots"/></td></tr></table>
-
-### Table: Mapping the legacy ICH CTD Drug Substance and Drug Product sections to the new FHIR Quality Domains
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-0lax{text-align:left;vertical-align:top}
-</style>
-<table class="tg">
-<thead>
-  <tr>
-    <th class="tg-0lax"><b>FHIR IG Domain</b></th>
-    <th class="tg-0lax"><b>Drug Product</b></th>
-        <th class="tg-0lax"><b>Drug Substance</b></th>
-  </tr>
-</thead>
+<p style="margin:0 0 10px; font-size:.9em; color:#4b5563;">Grouped by CTD area. The type columns show how each domain is used in a document of that type: <span style="font-size:.72em; font-weight:700; background:#eff6ff; color:#1e40af; border-radius:4px; padding:2px 6px; white-space:nowrap;">Data</span> master data in the document, <span style="font-size:.72em; font-weight:700; background:#e0e7ff; color:#3730a3; border-radius:4px; padding:2px 6px; white-space:nowrap;">Linked</span> linked from the narrative, <span style="font-size:.72em; font-weight:700; background:#003087; color:#ffffff; border-radius:4px; padding:2px 6px; white-space:nowrap;">Content</span> replaces the narrative. DP = drug product, DS = drug substance.</p>
+<div style="overflow-x:auto; border:1px solid #d0d0d0; border-radius:8px; margin-bottom:24px;">
+<table style="width:100%; min-width:900px; border-collapse:collapse; font-size:.88em;">
+<thead><tr style="background:#f9fafb;"><th style="padding:10px 12px; border-bottom:1px solid #d0d0d0; text-align:left; font-weight:700;">Domain</th><th style="padding:10px 12px; border-bottom:1px solid #d0d0d0; text-align:left; font-weight:700;">CTD sections</th><th style="padding:10px 12px; border-bottom:1px solid #d0d0d0; text-align:center; font-weight:700;">Type 1</th><th style="padding:10px 12px; border-bottom:1px solid #d0d0d0; text-align:center; font-weight:700;">Type 2</th><th style="padding:10px 12px; border-bottom:1px solid #d0d0d0; text-align:center; font-weight:700;">Type 3</th><th style="padding:10px 12px; border-bottom:1px solid #d0d0d0; text-align:center; font-weight:700;">Type 4</th><th style="padding:10px 12px; border-bottom:1px solid #d0d0d0; text-align:left; font-weight:700;">Synthetic data renderings</th></tr></thead>
 <tbody>
-  <tr>
-    <td class="tg-0lax">1. Identification</td>
-    <td class="tg-0lax">3.2.P.2 Pharmaceutical Development
-        <br>&nbsp;&nbsp;&nbsp;3.2.P.2.2 Drug Product 
-        <br>&nbsp;&nbsp;&nbsp;3.2.P.2.5 Microbiological Attributes
-    <br>3.2.P.4 Control of Excipients
-        <br>&nbsp;&nbsp;&nbsp;3.2.P.4.5 Excipients of Human or Animal Origin 
-        <br>&nbsp;&nbsp;&nbsp;3.2.P.4.6 Novel Excipients</td>
-    <td class="tg-0lax">3.2.S.1 General Information
-        <br>&nbsp;&nbsp;&nbsp;3.2.S.1.3 General Properties
-    <br>3.2.S.3 Characterisation
-        <br>&nbsp;&nbsp;&nbsp;3.2.S.3.1 Elucidation of Structure and Other Characteristics</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">2. Composition</td>
-    <td class="tg-0lax">3.2.P.1 Description and Composition of the Drug Product
-    <br>&nbsp;&nbsp;&nbsp;3.2.P.6 Reference Standards or Materials</td>
-    <td class="tg-0lax">3.2.S.5 Reference Standards or Materials</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">3. Impurities</td>
-    <td class="tg-0lax">3.2.P.5 Control of Drug Product
-    <br>&nbsp;&nbsp;&nbsp;3.2.P.5.5 Characterisation of Impurities</td>
-    <td class="tg-0lax">3.2.S.3 Characterisation
-    <br>&nbsp;&nbsp;&nbsp;3.2.S.3.2 Impurities</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">4. Organizations</td>
-    <td class="tg-0lax">3.2.P.3 Manufacture
-    <br>&nbsp;&nbsp;&nbsp;3.2.P.3.1 Manufacturer(s)</td>
-    <td class="tg-0lax">3.2.S.2 Manufacture
-    <br>&nbsp;&nbsp;&nbsp;3.2.S.2.1 Manufacturer(s)</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">5. Batch or Lot Information</td>
-    <td class="tg-0lax">3.2.P.5 Control of Drug Product
-    <br>&nbsp;&nbsp;&nbsp;3.2.P.5.4 Batch Analyses</td>
-    <td class="tg-0lax">3.2.S.4 Control of Drug Substance
-    <br>&nbsp;&nbsp;&nbsp;3.2.S.4.4 Batch Analyses</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">6. Batch Analysis</td>
-    <td class="tg-0lax">3.2.P.5 Control of Drug Product
-    <br>&nbsp;&nbsp;&nbsp;3.2.P.5.4 Batch Analyses</td>
-    <td class="tg-0lax">3.2.S.4 Control of Drug Substance
-    <br>&nbsp;&nbsp;&nbsp;3.2.S.4.4 Batch Analyses</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">7. Batch Formula</td>
-    <td class="tg-0lax">3.2.P.3 Manufacture
-    <br>&nbsp;&nbsp;&nbsp;3.2.P.3.2 Batch Formula</td>
-    <td class="tg-0lax"><i>Not Applicable</i></td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">8. Manufacturing Process</td>
-    <td class="tg-0lax">3.2.P.3 Manufacture
-    <br>&nbsp;&nbsp;&nbsp;3.2.P.3.3 Description of Manufacturing Process and Process Controls
-    <br>&nbsp;&nbsp;&nbsp;3.2.P.3.4 Controls of Critical Steps and Intermediates</td>
-    <td class="tg-0lax">3.2.S.2 Manufacture
-    <br>&nbsp;&nbsp;&nbsp;3.2.S.2.2 Description of Manufacturing Process and Process Controls</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">9. Process Validation</td>
-    <td class="tg-0lax">3.2.P.3 Manufacture
-    <br>&nbsp;&nbsp;&nbsp;3.2.P.3.5 Process Validation and/or Evaluation</td>
-    <td class="tg-0lax">3.2.S.2 Manufacture
-    <br>&nbsp;&nbsp;&nbsp;3.2.S.2.5 Process Validation and/or Evaluation</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">10. Analytical Procedures</td>
-    <td class="tg-0lax">3.2.P.5 Control of Drug Product
-    <br>&nbsp;&nbsp;&nbsp;3.2.P.5.2 Analytical Procedures</td>
-    <td class="tg-0lax">3.2.S.4 Control of Drug Substance
-    <br>&nbsp;&nbsp;&nbsp;3.2.S.4.2 Analytical Procedures</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">11. Container Closure System</td>
-    <td class="tg-0lax">3.2.P.2 Pharmaceutical Development
-   <br>&nbsp;&nbsp;&nbsp;3.2.P.2.4 Container Closure System
-   <br>3.2.P.7 Container Closure System</td>
-    <td class="tg-0lax">3.2.S.6 Container Closure System</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">12. Stability Study</td>
-    <td class="tg-0lax">3.2.P.8 Stability
-    <br>&nbsp;&nbsp;&nbsp;3.2.P.8.1 Stability Summary and Conclusions
-    <br>&nbsp;&nbsp;&nbsp;3.2.P.8.3 Stability Data</td>
-    <td class="tg-0lax">3.2.S.7 Stability
-    <br>&nbsp;&nbsp;&nbsp;3.2.S.7.1 Stability Summary and Conclusions
-    <br>&nbsp;&nbsp;&nbsp;3.2.S.7.3 Stability Data</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">13. Drug Specifications</td>
-    <td class="tg-0lax">3.2.P.5 Control of Drug Product
-    <br>&nbsp;&nbsp;&nbsp;3.2.P.5.1 Specification(s)</td>
-    <td class="tg-0lax">3.2.S.4 Control of Drug Substance
-    <br>&nbsp;&nbsp;&nbsp;3.2.S.4.1 Specification</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">14. Compatibility</td>
-    <td class="tg-0lax">3.2.P.2 Pharmaceutical Development
-    <br>&nbsp;&nbsp;&nbsp;3.2.P.2.6 Compatibility</td>
-    <td class="tg-0lax"><i>Not Applicable</i></td>
-  </tr>
+<tr><td colspan="7" style="padding:8px 12px; background:#f1f5f9; border-top:1px solid #d0d0d0; font-size:.8em; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:#1d4ed8;">Product and substance</td></tr>
+<tr><td style="padding:10px 12px; vertical-align:top; text-align:left; border-top:1px solid #e5e7eb;"><a href="identification.html" style="font-weight:600;">Identification</a><div style="font-size:.85em; color:#6b7280; margin-top:2px;">Properties, excipients, structure</div></td><td style="padding:10px 12px; vertical-align:top; text-align:left; border-top:1px solid #e5e7eb;"><div><span style="color:#6b7280;">DP</span> 3.2.P.2.2, 3.2.P.2.5, 3.2.P.4.5–6</div><div><span style="color:#6b7280;">DS</span> 3.2.S.1.3, 3.2.S.3.1</div></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="color:#9ca3af;">–</span></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="font-size:.72em; font-weight:700; background:#eff6ff; color:#1e40af; border-radius:4px; padding:2px 6px; white-space:nowrap;">Data</span></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="font-size:.72em; font-weight:700; background:#e0e7ff; color:#3730a3; border-radius:4px; padding:2px 6px; white-space:nowrap;">Linked</span></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="font-size:.72em; font-weight:700; background:#003087; color:#ffffff; border-radius:4px; padding:2px 6px; white-space:nowrap;">Content</span></td><td style="padding:10px 12px; vertical-align:top; text-align:left; border-top:1px solid #e5e7eb;"><a href="identification_rend_p1.html">DP</a> · <a href="identification_rend_p2.html">DP microbiological</a> · <a href="identification_rend_p3.html">DP excipients</a> · <a href="identification_rend_s2.html">DS properties</a> · <a href="identification_rend_s1.html">DS structure</a></td></tr>
+<tr><td style="padding:10px 12px; vertical-align:top; text-align:left; border-top:1px solid #e5e7eb;"><a href="composition.html" style="font-weight:600;">Composition</a><div style="font-size:.85em; color:#6b7280; margin-top:2px;">Formulation, reference standards</div></td><td style="padding:10px 12px; vertical-align:top; text-align:left; border-top:1px solid #e5e7eb;"><div><span style="color:#6b7280;">DP</span> 3.2.P.1, 3.2.P.6</div><div><span style="color:#6b7280;">DS</span> 3.2.S.5</div></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="color:#9ca3af;">–</span></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="font-size:.72em; font-weight:700; background:#eff6ff; color:#1e40af; border-radius:4px; padding:2px 6px; white-space:nowrap;">Data</span></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="font-size:.72em; font-weight:700; background:#e0e7ff; color:#3730a3; border-radius:4px; padding:2px 6px; white-space:nowrap;">Linked</span></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="font-size:.72em; font-weight:700; background:#003087; color:#ffffff; border-radius:4px; padding:2px 6px; white-space:nowrap;">Content</span></td><td style="padding:10px 12px; vertical-align:top; text-align:left; border-top:1px solid #e5e7eb;"><a href="composition_rend_p.html">DP</a> · <a href="composition_rend_s.html">DS</a></td></tr>
+<tr><td style="padding:10px 12px; vertical-align:top; text-align:left; border-top:1px solid #e5e7eb;"><a href="impurities.html" style="font-weight:600;">Impurities</a><div style="font-size:.85em; color:#6b7280; margin-top:2px;">Characterisation of impurities</div></td><td style="padding:10px 12px; vertical-align:top; text-align:left; border-top:1px solid #e5e7eb;"><div><span style="color:#6b7280;">DP</span> 3.2.P.5.5</div><div><span style="color:#6b7280;">DS</span> 3.2.S.3.2</div></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="color:#9ca3af;">–</span></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="color:#9ca3af;">–</span></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="font-size:.72em; font-weight:700; background:#e0e7ff; color:#3730a3; border-radius:4px; padding:2px 6px; white-space:nowrap;">Linked</span></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="font-size:.72em; font-weight:700; background:#003087; color:#ffffff; border-radius:4px; padding:2px 6px; white-space:nowrap;">Content</span></td><td style="padding:10px 12px; vertical-align:top; text-align:left; border-top:1px solid #e5e7eb;"><a href="impurities_rend_p.html">DP</a> · <a href="impurities_rend_s.html">DS</a></td></tr>
+<tr><td style="padding:10px 12px; vertical-align:top; text-align:left; border-top:1px solid #e5e7eb;"><a href="compatibility.html" style="font-weight:600;">Compatibility</a><div style="font-size:.85em; color:#6b7280; margin-top:2px;">Pharmaceutical development</div></td><td style="padding:10px 12px; vertical-align:top; text-align:left; border-top:1px solid #e5e7eb;"><div><span style="color:#6b7280;">DP</span> 3.2.P.2.6</div><div><span style="color:#6b7280;">DS</span> Not applicable</div></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="color:#9ca3af;">–</span></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="color:#9ca3af;">–</span></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="font-size:.72em; font-weight:700; background:#e0e7ff; color:#3730a3; border-radius:4px; padding:2px 6px; white-space:nowrap;">Linked</span></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="font-size:.72em; font-weight:700; background:#003087; color:#ffffff; border-radius:4px; padding:2px 6px; white-space:nowrap;">Content</span></td><td style="padding:10px 12px; vertical-align:top; text-align:left; border-top:1px solid #e5e7eb;"><a href="compatibility_rend_p.html">DP</a></td></tr>
+<tr><td colspan="7" style="padding:8px 12px; background:#f1f5f9; border-top:1px solid #d0d0d0; font-size:.8em; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:#b45309;">Manufacture</td></tr>
+<tr><td style="padding:10px 12px; vertical-align:top; text-align:left; border-top:1px solid #e5e7eb;"><a href="organizations.html" style="font-weight:600;">Organizations</a><div style="font-size:.85em; color:#6b7280; margin-top:2px;">Manufacturers, testing sites, suppliers</div></td><td style="padding:10px 12px; vertical-align:top; text-align:left; border-top:1px solid #e5e7eb;"><div><span style="color:#6b7280;">DP</span> 3.2.P.3.1</div><div><span style="color:#6b7280;">DS</span> 3.2.S.2.1</div></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="color:#9ca3af;">–</span></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="font-size:.72em; font-weight:700; background:#eff6ff; color:#1e40af; border-radius:4px; padding:2px 6px; white-space:nowrap;">Data</span></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="font-size:.72em; font-weight:700; background:#e0e7ff; color:#3730a3; border-radius:4px; padding:2px 6px; white-space:nowrap;">Linked</span></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="font-size:.72em; font-weight:700; background:#003087; color:#ffffff; border-radius:4px; padding:2px 6px; white-space:nowrap;">Content</span></td><td style="padding:10px 12px; vertical-align:top; text-align:left; border-top:1px solid #e5e7eb;"><a href="organizations_rend.html">Rendering</a></td></tr>
+<tr><td style="padding:10px 12px; vertical-align:top; text-align:left; border-top:1px solid #e5e7eb;"><a href="batch_formula.html" style="font-weight:600;">Batch Formula</a><div style="font-size:.85em; color:#6b7280; margin-top:2px;">Batch formulation</div></td><td style="padding:10px 12px; vertical-align:top; text-align:left; border-top:1px solid #e5e7eb;"><div><span style="color:#6b7280;">DP</span> 3.2.P.3.2</div><div><span style="color:#6b7280;">DS</span> Not applicable</div></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="color:#9ca3af;">–</span></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="color:#9ca3af;">–</span></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="font-size:.72em; font-weight:700; background:#e0e7ff; color:#3730a3; border-radius:4px; padding:2px 6px; white-space:nowrap;">Linked</span></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="font-size:.72em; font-weight:700; background:#003087; color:#ffffff; border-radius:4px; padding:2px 6px; white-space:nowrap;">Content</span></td><td style="padding:10px 12px; vertical-align:top; text-align:left; border-top:1px solid #e5e7eb;"><a href="batch_formula_rend_p.html">DP</a></td></tr>
+<tr><td style="padding:10px 12px; vertical-align:top; text-align:left; border-top:1px solid #e5e7eb;"><a href="mnf_process.html" style="font-weight:600;">Manufacturing Process</a><div style="font-size:.85em; color:#6b7280; margin-top:2px;">Process, controls, critical steps</div></td><td style="padding:10px 12px; vertical-align:top; text-align:left; border-top:1px solid #e5e7eb;"><div><span style="color:#6b7280;">DP</span> 3.2.P.3.3–4</div><div><span style="color:#6b7280;">DS</span> 3.2.S.2.2</div></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="color:#9ca3af;">–</span></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="color:#9ca3af;">–</span></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="font-size:.72em; font-weight:700; background:#e0e7ff; color:#3730a3; border-radius:4px; padding:2px 6px; white-space:nowrap;">Linked</span></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="font-size:.72em; font-weight:700; background:#003087; color:#ffffff; border-radius:4px; padding:2px 6px; white-space:nowrap;">Content</span></td><td style="padding:10px 12px; vertical-align:top; text-align:left; border-top:1px solid #e5e7eb;"><a href="mnf_process_rend_p.html">DP</a> · <a href="mnf_process_rend_s.html">DS</a></td></tr>
+<tr><td style="padding:10px 12px; vertical-align:top; text-align:left; border-top:1px solid #e5e7eb;"><a href="process_valid.html" style="font-weight:600;">Process Validation</a><div style="font-size:.85em; color:#6b7280; margin-top:2px;">Protocols, results, evaluation</div></td><td style="padding:10px 12px; vertical-align:top; text-align:left; border-top:1px solid #e5e7eb;"><div><span style="color:#6b7280;">DP</span> 3.2.P.3.5</div><div><span style="color:#6b7280;">DS</span> 3.2.S.2.5</div></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="color:#9ca3af;">–</span></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="color:#9ca3af;">–</span></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="font-size:.72em; font-weight:700; background:#e0e7ff; color:#3730a3; border-radius:4px; padding:2px 6px; white-space:nowrap;">Linked</span></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="font-size:.72em; font-weight:700; background:#003087; color:#ffffff; border-radius:4px; padding:2px 6px; white-space:nowrap;">Content</span></td><td style="padding:10px 12px; vertical-align:top; text-align:left; border-top:1px solid #e5e7eb;"><a href="process_valid_rend_p.html">DP</a> · <a href="process_valid_rend_pb.html">DP biologic</a> · <a href="process_valid_rend_s.html">DS</a></td></tr>
+<tr><td colspan="7" style="padding:8px 12px; background:#f1f5f9; border-top:1px solid #d0d0d0; font-size:.8em; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:#0f766e;">Control and testing</td></tr>
+<tr><td style="padding:10px 12px; vertical-align:top; text-align:left; border-top:1px solid #e5e7eb;"><a href="drug_specification.html" style="font-weight:600;">Drug Specification</a><div style="font-size:.85em; color:#6b7280; margin-top:2px;">Tests and acceptance criteria</div></td><td style="padding:10px 12px; vertical-align:top; text-align:left; border-top:1px solid #e5e7eb;"><div><span style="color:#6b7280;">DP</span> 3.2.P.5.1</div><div><span style="color:#6b7280;">DS</span> 3.2.S.4.1</div></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="color:#9ca3af;">–</span></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="color:#9ca3af;">–</span></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="font-size:.72em; font-weight:700; background:#e0e7ff; color:#3730a3; border-radius:4px; padding:2px 6px; white-space:nowrap;">Linked</span></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="font-size:.72em; font-weight:700; background:#003087; color:#ffffff; border-radius:4px; padding:2px 6px; white-space:nowrap;">Content</span></td><td style="padding:10px 12px; vertical-align:top; text-align:left; border-top:1px solid #e5e7eb;"><a href="drug_specification_rend_p.html">DP</a> · <a href="drug_specification_rend_s.html">DS</a></td></tr>
+<tr><td style="padding:10px 12px; vertical-align:top; text-align:left; border-top:1px solid #e5e7eb;"><a href="anal_proc.html" style="font-weight:600;">Analytical Procedures</a><div style="font-size:.85em; color:#6b7280; margin-top:2px;">Test methods</div></td><td style="padding:10px 12px; vertical-align:top; text-align:left; border-top:1px solid #e5e7eb;"><div><span style="color:#6b7280;">DP</span> 3.2.P.5.2</div><div><span style="color:#6b7280;">DS</span> 3.2.S.4.2</div></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="color:#9ca3af;">–</span></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="color:#9ca3af;">–</span></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="font-size:.72em; font-weight:700; background:#e0e7ff; color:#3730a3; border-radius:4px; padding:2px 6px; white-space:nowrap;">Linked</span></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="font-size:.72em; font-weight:700; background:#003087; color:#ffffff; border-radius:4px; padding:2px 6px; white-space:nowrap;">Content</span></td><td style="padding:10px 12px; vertical-align:top; text-align:left; border-top:1px solid #e5e7eb;"><a href="anal_proc_rend_p.html">DP</a> · <a href="anal_proc_rend_s.html">DS</a></td></tr>
+<tr><td style="padding:10px 12px; vertical-align:top; text-align:left; border-top:1px solid #e5e7eb;"><a href="batch_info.html" style="font-weight:600;">Batch/Lot Information</a><div style="font-size:.85em; color:#6b7280; margin-top:2px;">Batches tested</div></td><td style="padding:10px 12px; vertical-align:top; text-align:left; border-top:1px solid #e5e7eb;"><div><span style="color:#6b7280;">DP</span> 3.2.P.5.4</div><div><span style="color:#6b7280;">DS</span> 3.2.S.4.4</div></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="color:#9ca3af;">–</span></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="color:#9ca3af;">–</span></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="font-size:.72em; font-weight:700; background:#e0e7ff; color:#3730a3; border-radius:4px; padding:2px 6px; white-space:nowrap;">Linked</span></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="font-size:.72em; font-weight:700; background:#003087; color:#ffffff; border-radius:4px; padding:2px 6px; white-space:nowrap;">Content</span></td><td style="padding:10px 12px; vertical-align:top; text-align:left; border-top:1px solid #e5e7eb;"><a href="batch_info_rend_p.html">DP</a> · <a href="batch_info_rend_s.html">DS</a></td></tr>
+<tr><td style="padding:10px 12px; vertical-align:top; text-align:left; border-top:1px solid #e5e7eb;"><a href="batch_anal.html" style="font-weight:600;">Batch Analysis</a><div style="font-size:.85em; color:#6b7280; margin-top:2px;">Test results per batch</div></td><td style="padding:10px 12px; vertical-align:top; text-align:left; border-top:1px solid #e5e7eb;"><div><span style="color:#6b7280;">DP</span> 3.2.P.5.4</div><div><span style="color:#6b7280;">DS</span> 3.2.S.4.4</div></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="color:#9ca3af;">–</span></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="color:#9ca3af;">–</span></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="font-size:.72em; font-weight:700; background:#e0e7ff; color:#3730a3; border-radius:4px; padding:2px 6px; white-space:nowrap;">Linked</span></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="font-size:.72em; font-weight:700; background:#003087; color:#ffffff; border-radius:4px; padding:2px 6px; white-space:nowrap;">Content</span></td><td style="padding:10px 12px; vertical-align:top; text-align:left; border-top:1px solid #e5e7eb;"><a href="batch_anal_rend_p.html">DP</a> · <a href="batch_anal_rend_s.html">DS</a></td></tr>
+<tr><td colspan="7" style="padding:8px 12px; background:#f1f5f9; border-top:1px solid #d0d0d0; font-size:.8em; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:#7c3aed;">Packaging and stability</td></tr>
+<tr><td style="padding:10px 12px; vertical-align:top; text-align:left; border-top:1px solid #e5e7eb;"><a href="container.html" style="font-weight:600;">Container Closure System</a><div style="font-size:.85em; color:#6b7280; margin-top:2px;">Packaging components</div></td><td style="padding:10px 12px; vertical-align:top; text-align:left; border-top:1px solid #e5e7eb;"><div><span style="color:#6b7280;">DP</span> 3.2.P.2.4, 3.2.P.7</div><div><span style="color:#6b7280;">DS</span> 3.2.S.6</div></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="color:#9ca3af;">–</span></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="font-size:.72em; font-weight:700; background:#eff6ff; color:#1e40af; border-radius:4px; padding:2px 6px; white-space:nowrap;">Data</span></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="font-size:.72em; font-weight:700; background:#e0e7ff; color:#3730a3; border-radius:4px; padding:2px 6px; white-space:nowrap;">Linked</span></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="font-size:.72em; font-weight:700; background:#003087; color:#ffffff; border-radius:4px; padding:2px 6px; white-space:nowrap;">Content</span></td><td style="padding:10px 12px; vertical-align:top; text-align:left; border-top:1px solid #e5e7eb;"><a href="container_rend_p.html">DP</a> · <a href="container_rend_s.html">DS</a></td></tr>
+<tr><td style="padding:10px 12px; vertical-align:top; text-align:left; border-top:1px solid #e5e7eb;"><a href="stability.html" style="font-weight:600;">Stability Study</a><div style="font-size:.85em; color:#6b7280; margin-top:2px;">Protocols, conditions, results</div></td><td style="padding:10px 12px; vertical-align:top; text-align:left; border-top:1px solid #e5e7eb;"><div><span style="color:#6b7280;">DP</span> 3.2.P.8.1, 3.2.P.8.3</div><div><span style="color:#6b7280;">DS</span> 3.2.S.7.1, 3.2.S.7.3</div></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="color:#9ca3af;">–</span></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="color:#9ca3af;">–</span></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="font-size:.72em; font-weight:700; background:#e0e7ff; color:#3730a3; border-radius:4px; padding:2px 6px; white-space:nowrap;">Linked</span></td><td style="padding:10px 12px; vertical-align:top; text-align:center; border-top:1px solid #e5e7eb;"><span style="font-size:.72em; font-weight:700; background:#003087; color:#ffffff; border-radius:4px; padding:2px 6px; white-space:nowrap;">Content</span></td><td style="padding:10px 12px; vertical-align:top; text-align:left; border-top:1px solid #e5e7eb;"><a href="stability_rend_p.html">DP</a> · <a href="stability_rend_s.html">DS</a></td></tr>
 </tbody>
 </table>
-
-### Matrix: Reuse of FHIR Component Building Blocks Across Pharmaceutical Quality Domains
-
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-0lax{text-align:left;vertical-align:top}
-</style>
-<table class="tg">
-<thead>
-  <tr>
-    <td class="tg-0lax">Pharmaceutical Quality Information FHIR IG component profiles</td>
-    <td class="tg-0lax">1. Drug Identification </td>
-    <td class="tg-0lax">2. Composition</td>
-    <td class="tg-0lax">3. Impurities</td>
-    <td class="tg-0lax">4. Organizations </td>
-    <td class="tg-0lax">5. Batch/Lot Information</td>
-    <td class="tg-0lax">6. Batch Analysis</td>
-    <td class="tg-0lax">7. Batch Formula</td>
-    <td class="tg-0lax">8. Manufacturing Process</td>
-    <td class="tg-0lax">9. Process Validation</td>
-    <td class="tg-0lax">10. Analytical Procedures</td>
-    <td class="tg-0lax">11. Container Closure System</td>
-    <td class="tg-0lax">12. Stability Study</td>
-    <td class="tg-0lax">13. Drug Specification</td>
-    <td class="tg-0lax">14. Compatibility</td>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td class="tg-0lax">ActivityDefinition - Test</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Composition - Drug</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">DeviceDefinition - Drug</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">DiagnosticReport - Drug Analysis</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">DocumentReference - Drug</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Ingredient - Drug</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">ManufacturedItemDefinition - Drug</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Medication - Batch Information</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">MedicinalProductDefinition - Drug Product</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Observation - Test Result</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">ObservationDefinition - Test Method</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Organization - Drug</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">PackagedProductDefinition - Drug</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">PlanDefinition - Drug</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">Procedure - Drug</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-  </tr>
-    <tr>
-    <td class="tg-0lax">Specimen - Drug</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">SpecimenDefinition - Drug</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-  </tr>
-    <tr>
-    <td class="tg-0lax">Substance - Drug</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">SubstanceDefinition - Component Drug</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax">&nbsp;&nbsp;&nbsp;X</td>
-    <td class="tg-0lax"></td>
-  </tr>
-</tbody>
-</table>
-
-<map name="hotspots">
-  <area shape='rect' coords='43,45,451,192' title='Identification' href='identification.html' alt='Identification' />
-			<area shape='rect' coords='-4,201,301,312' title='Composition' href='composition.html' alt='Composition' />
-			<area shape='rect' coords='21,325,368,394' title='Impurities' href='impurities.html' alt='Impurities' />
-			<area shape='rect' coords='144,401,416,517' title='Organization' href='organizations.html' alt='Organization' />
-			<area shape='rect' coords='48,522,404,596' title='Batch / Lot Information' href='batch_info.html' alt='Batch / Lot Information' />
-			<area shape='rect' coords='49,603,403,678' title='Batch Analysis' href='batch_anal.html' alt='Batch Analysis' />
-			<area shape='rect' coords='746,42,1096,193' title='Manufacturing' href='mnf_process.html' alt='Manufacturing' />
-			<area shape='rect' coords='90,684,418,759' title='Batch Formula' href='batch_formula.html' alt='Batch Formula' />
-			<area shape='rect' coords='746,199,1078,276' title='Process Validation' href='process_valid.html' alt='Process Validation' />
-			<area shape='rect' coords='746,289,1100,364' title='Analytical Procedures' href='anal_proc.html' alt='Analytical Procedures' />
-			<area shape='rect' coords='801,367,1233,460' title='Container Closure System' href='container.html' alt='Container Closure System' />
-			<area shape='rect' coords='787,463,1104,571' title='Stability Study' href='stability.html' alt='Stability Study' />
-			<area shape='rect' coords='809,579,1120,659' title='Specification' href='drug_specification.html' alt='Specification' />
-			<area shape='rect' coords='780,662,1115,754' title='Compatibility' href='compatibility.html' alt='Compatibility' />
-			<area shape='rect' coords='453,41,745,754' title='Click on the sections' href='domains.html' />
-  
-  
-</map>
-
-### Summary of Domain Resources
-The resources that are used across all domains are summarized in this diagram:
-<table><tr><td><img src="resources overview (complete).png" width="800"/></td></tr></table>
-
+</div>
