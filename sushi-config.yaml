@@ -131,6 +131,8 @@ pages:
         title: "Stability Study: synthetic data rendering - drug substance"
   downloads.md:
     title: Downloads
+  acknowledgements.md:
+    title: Acknowledgements
   changes.md:
     title: Change Log
 
@@ -163,6 +165,7 @@ menu:
   Artifacts: artifacts.html
   Downloads: downloads.html
   Change Log: changes.html
+  Acknowledgements: acknowledgements.html
 
 parameters:
   path-suppressed-warnings: input/ignoreWarnings.txt
