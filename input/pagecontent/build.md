@@ -112,3 +112,7 @@
     <div style="font-size:.82em; color:#6b7280;">Validator commands, invariants and the quality checks for validation apps.</div>
   </a>
 </div>
+<div style="background:#fffbeb; border:1px solid #fde68a; border-left:3px solid #d97706; border-radius:6px; padding:10px 14px; margin-bottom:10px; font-size:.82em; color:#78350f; display:flex; gap:10px; align-items:flex-start;">
+  <span style="flex-shrink:0;">💡</span>
+  <span><strong>Synthetic example data:</strong> the worked examples in this guide are fictitious. They use synthetic data from the ICH M4Q(R2) Sakura Bloom mock-up, the FDA example Quality Overall Summaries and the HL7 FHIR PQI team. They do not describe a real product, company or authorization, and every document is labelled as test data (HTEST).</span>
+</div>

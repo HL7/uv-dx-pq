@@ -202,7 +202,7 @@ parameters:
 groups:
   document-types:
     name: PQI Document Types
-    description: Document and collection profiles for PQI maturity Types 1-4, and their starter examples.
+    description: "Document and collection profiles for PQI maturity Types 1-4, and their examples. The Sakura Bloom examples are synthetic: their data comes from the ICH M4Q(R2) Sakura Bloom mock-up, the FDA example Quality Overall Summaries and the HL7 FHIR PQI team."
     resources:
       - BundleDocumentPq
       - CompositionDocumentPq
@@ -217,8 +217,31 @@ groups:
       - BundleDocumentType4Pq
       - CompositionType4Pq
       - BundleDocumentCollectionPq
-      - bundle-document-type1-pq-m23-r1-skeleton
-      - bundle-document-collection-pq-m32-r1-skeleton
+      - bundle-pqi-type1-template-m23
+      - bundle-pqi-type1-template-3-2-s-1
+      - bundle-pqi-type1-template-3-2-s-2
+      - bundle-pqi-type1-template-3-2-s-3
+      - bundle-pqi-type1-template-3-2-s-4
+      - bundle-pqi-type1-template-3-2-s-5
+      - bundle-pqi-type1-template-3-2-s-6
+      - bundle-pqi-type1-template-3-2-s-7
+      - bundle-pqi-type1-template-3-2-p-1
+      - bundle-pqi-type1-template-3-2-p-2
+      - bundle-pqi-type1-template-3-2-p-3
+      - bundle-pqi-type1-template-3-2-p-4
+      - bundle-pqi-type1-template-3-2-p-5
+      - bundle-pqi-type1-template-3-2-p-6
+      - bundle-pqi-type1-template-3-2-p-7
+      - bundle-pqi-type1-template-3-2-p-8
+      - bundle-pqi-type1-template-3-2-a-1
+      - bundle-pqi-type1-template-3-2-a-2
+      - bundle-pqi-type1-template-3-2-a-3
+      - bundle-pqi-type1-template-3-2-r
+      - bundle-pqi-type1-template-m32-collection
+      - bundle-document-collection-pq-sakura-bloom-type1
+      - bundle-document-collection-pq-sakura-bloom-type2
+      - bundle-document-collection-pq-sakura-bloom-type3
+      - bundle-document-collection-pq-sakura-bloom-type4
   analytical-procedures:
     name: Analytical Procedures
     resources:

@@ -125,6 +125,10 @@
     <tr><td style="padding:9px 12px; border:1px solid #d0d0d0; vertical-align:top;"><strong>4</strong></td><td style="padding:9px 12px; border:1px solid #d0d0d0; vertical-align:top;">Absent, or generated from the Organizations</td><td style="padding:9px 12px; border:1px solid #d0d0d0; vertical-align:top;"><code style="font-family:monospace; font-size:.8em; color:#0891b2;">Organization</code> (one per site)</td></tr>
   </tbody>
 </table>
+<div style="background:#fffbeb; border:1px solid #fde68a; border-left:3px solid #d97706; border-radius:6px; padding:10px 14px; margin-bottom:10px; font-size:.82em; color:#78350f; display:flex; gap:10px; align-items:flex-start;">
+  <span style="flex-shrink:0;">💡</span>
+  <span><strong>Example:</strong> <a href="Bundle-bundle-document-collection-pq-sakura-bloom-type4.html" style="color:#92400e; font-weight:600;">Sakura Bloom Type 4 collection</a> — 3.2.P.3, 3.2.P.7 and 3.2.R (US) from the ICH Sakura Bloom mock-up. 3.2.P.7 is carried by PackagedProductDefinition resources with generated narrative. All example data is synthetic, drawn from the ICH Sakura Bloom mock-up, the FDA example Quality Overall Summaries and the HL7 FHIR PQI team’s example data; anything none of these provide is marked as synthetic where it appears.</span>
+</div>
 <h3 style="font-size:1.35em; font-weight:700; color:#111827; margin-bottom:12px;">Checklist</h3>
 <div style="background:#fff; border:1px solid #e5e7eb; border-radius:8px; padding:14px 20px; margin-bottom:16px;">
   <div style="font-size:.88em; color:#374151; line-height:1.6; padding:5px 0; border-bottom:1px dashed #f1f5f9;"><span style="color:#16a34a; font-weight:700; margin-right:8px;">☐</span>Only replaceable headings omit authored narrative</div>

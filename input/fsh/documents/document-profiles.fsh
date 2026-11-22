@@ -52,14 +52,13 @@ Title: "Composition - PQI Type 1"
 Description: "PQI Type 1 (structured document): a 1:1 conversion of a CTD Module 2.3 or Module 3.2 template into coded sections with narrative. Images are separate Bundle entries (Binary + DocumentReference); no other resources are referenced."
 * ^status = #active
 * ^abstract = false
-* obeys pqi-txt-1 and pqi-t1-1
+* obeys pqi-txt-1 and pqi-t1-1 and pqi-t1-2
 * category = PqiMaturityType#type-1
 * subject.reference 0..0
 * subject ^short = "Display text only (e.g. drug substance or product name)"
 * author.reference 0..0
 * author ^short = "Display text only (e.g. applicant name)"
 * contained 0..0
-* section.text.status = #additional
 * section.entry only Reference(DocumentReferenceDrugPq)
 * section.entry ^short = "Image DocumentReferences only"
 

@@ -1,4 +1,8 @@
 <!-- PQI TYPE 1 — Build Guide | Target: business/regulatory users -->
+<div style="background:#eff6ff; border:1px solid #bfdbfe; border-left:4px solid #2563eb; border-radius:8px; padding:12px 18px; margin-bottom:24px; font-size:.85em; color:#1e40af; display:flex; gap:10px; align-items:flex-start;">
+  <span style="flex-shrink:0; font-size:1em;">📥</span>
+  <span><strong>Download the templates:</strong> <a href="pqi-type1-templates.zip" style="color:#1e40af; font-weight:600;">pqi-type1-templates.zip</a> contains a blank PQI Type 1 document for every Module 2.3 and Module 3.2 heading, in XML and JSON. Load them into your structured authoring tool, fill in the bracketed metadata and start adding content.</span>
+</div>
 <!-- PRE-REQUISITES -->
 <div id="prerequisites" style="margin-bottom:32px;">
 <h3 style="font-size:1.35em; font-weight:700; color:#111827; margin-bottom:6px;">Before You Start</h3>
@@ -65,7 +69,7 @@
 </table>
 <div style="background:#fffbeb; border:1px solid #fde68a; border-left:3px solid #d97706; border-radius:6px; padding:10px 14px; margin-bottom:10px; font-size:.82em; color:#78350f; display:flex; gap:10px; align-items:flex-start;">
   <span style="flex-shrink:0;">💡</span>
-  <span><strong>Start from a skeleton:</strong> the <a href="Bundle-bundle-document-type1-pq-m23-r1-skeleton.html" style="color:#92400e; font-weight:600;">Module 2.3 skeleton</a> and the <a href="Bundle-bundle-document-collection-pq-m32-r1-skeleton.html" style="color:#92400e; font-weight:600;">Module 3.2 skeleton collection</a> contain every M4Q(R1) heading, coded, with no content.</span>
+  <span><strong>Start from a template:</strong> the <a href="pqi-type1-templates.zip" style="color:#92400e; font-weight:600;">PQI Type 1 templates</a> (XML and JSON) hold every M4Q(R1) heading, coded, with each lowest-level heading marked "Not started": one document for 2.3 and one per level-3 Module 3.2 heading (7 for S, 8 for P, 3 appendices, and 3.2.R). Each is also on its own example page, e.g. <a href="Bundle-bundle-pqi-type1-template-m23.html" style="color:#92400e; font-weight:600;">2.3</a> and the <a href="Bundle-bundle-pqi-type1-template-m32-collection.html" style="color:#92400e; font-weight:600;">Module 3.2 collection</a>.</span>
 </div>
     </div>
   </div>
@@ -201,7 +205,7 @@
 }</code></pre>
 <div style="background:#fffbeb; border:1px solid #fde68a; border-left:3px solid #d97706; border-radius:6px; padding:10px 14px; margin-bottom:10px; font-size:.82em; color:#78350f; display:flex; gap:10px; align-items:flex-start;">
   <span style="flex-shrink:0;">💡</span>
-  <span><strong>Examples:</strong> worked examples based on the ICH Sakura Bloom mock-up will be added at every type. The full set of templates and examples will be published in the GitHub parking lot.</span>
+  <span><strong>Example:</strong> <a href="Bundle-bundle-document-collection-pq-sakura-bloom-type1.html" style="color:#92400e; font-weight:600;">Sakura Bloom Type 1 collection</a> — 3.2.P.3, 3.2.P.7 and 3.2.R (US) from the ICH Sakura Bloom mock-up. The mock-up extract has no image files, so figures are labelled placeholder images. All example data is synthetic, drawn from the ICH Sakura Bloom mock-up, the FDA example Quality Overall Summaries and the HL7 FHIR PQI team’s example data; anything none of these provide is marked as synthetic where it appears.</span>
 </div>
 <hr style="border:none; border-top:1px solid #e5e7eb; margin:28px 0;"/>
 <h3 style="font-size:1.35em; font-weight:700; color:#111827; margin-bottom:12px;">Checklist</h3>
@@ -213,7 +217,7 @@
   <div style="font-size:.88em; color:#374151; line-height:1.6; padding:5px 0; border-bottom:1px dashed #f1f5f9;"><span style="color:#16a34a; font-weight:700; margin-right:8px;">☐</span>No contained resources and no other resources in the Bundle</div>
   <div style="font-size:.88em; color:#374151; line-height:1.6; padding:5px 0; border-bottom:1px dashed #f1f5f9;"><span style="color:#16a34a; font-weight:700; margin-right:8px;">☐</span>Repeated 2.3.S / 2.3.P sections have distinct titles</div>
 </div>
-<p style="font-size:.88em; color:#374151; line-height:1.7; margin-bottom:10px;">Profiles: <a href="StructureDefinition-Bundle-document-type1-pq.html" style="color:#2563eb; font-weight:600;">BundleDocumentType1Pq</a>, <a href="StructureDefinition-Composition-type1-pq.html" style="color:#2563eb; font-weight:600;">CompositionType1Pq</a>. Invariants: <code style="font-family:monospace; font-size:.8em; color:#0891b2;">pqi-doc-1</code>, <code style="font-family:monospace; font-size:.8em; color:#0891b2;">pqi-sec-0</code>, <code style="font-family:monospace; font-size:.8em; color:#0891b2;">pqi-sec-1</code>, <code style="font-family:monospace; font-size:.8em; color:#0891b2;">pqi-sec-2</code>, <code style="font-family:monospace; font-size:.8em; color:#0891b2;">pqi-gran-1</code>, <code style="font-family:monospace; font-size:.8em; color:#0891b2;">pqi-foc-1</code>, <code style="font-family:monospace; font-size:.8em; color:#0891b2;">pqi-foc-3</code>, <code style="font-family:monospace; font-size:.8em; color:#0891b2;">pqi-txt-1</code>, <code style="font-family:monospace; font-size:.8em; color:#0891b2;">pqi-t1-1</code>.</p>
+<p style="font-size:.88em; color:#374151; line-height:1.7; margin-bottom:10px;">Profiles: <a href="StructureDefinition-Bundle-document-type1-pq.html" style="color:#2563eb; font-weight:600;">BundleDocumentType1Pq</a>, <a href="StructureDefinition-Composition-type1-pq.html" style="color:#2563eb; font-weight:600;">CompositionType1Pq</a>. Invariants: <code style="font-family:monospace; font-size:.8em; color:#0891b2;">pqi-doc-1</code>, <code style="font-family:monospace; font-size:.8em; color:#0891b2;">pqi-sec-0</code>, <code style="font-family:monospace; font-size:.8em; color:#0891b2;">pqi-sec-1</code>, <code style="font-family:monospace; font-size:.8em; color:#0891b2;">pqi-sec-2</code>, <code style="font-family:monospace; font-size:.8em; color:#0891b2;">pqi-gran-1</code>, <code style="font-family:monospace; font-size:.8em; color:#0891b2;">pqi-foc-1</code>, <code style="font-family:monospace; font-size:.8em; color:#0891b2;">pqi-foc-3</code>, <code style="font-family:monospace; font-size:.8em; color:#0891b2;">pqi-txt-1</code>, <code style="font-family:monospace; font-size:.8em; color:#0891b2;">pqi-t1-1</code>, <code style="font-family:monospace; font-size:.8em; color:#0891b2;">pqi-t1-2</code>.</p>
 <hr style="border:none; border-top:1px solid #e5e7eb; margin:28px 0;"/>
 <h3 style="font-size:1.1em; font-weight:700; color:#111827; margin-bottom:12px;">What's next?</h3>
 <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">

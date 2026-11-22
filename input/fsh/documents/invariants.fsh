@@ -53,6 +53,11 @@ Description: "Every leaf section (a section without sub-sections) has narrative.
 Severity: #error
 Expression: "repeat(section).where(section.empty()).all(text.exists())"
 
+Invariant: pqi-t1-2
+Description: "In a PQI Type 1 document, section narrative is authored (status additional) or, in a blank template, not started (status empty, with emptyReason notstarted)."
+Severity: #error
+Expression: "repeat(section).where(text.exists()).all(text.status = 'additional' or (text.status = 'empty' and emptyReason.coding.where(code = 'notstarted').exists()))"
+
 Invariant: pqi-t1-1
 Description: "In a PQI Type 1 document, section entries only reference image DocumentReferences."
 Severity: #error
