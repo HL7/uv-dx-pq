@@ -39,6 +39,10 @@ pages:
       title: "Build PQI Type 4: Data-first document"
     build_validate.md:
       title: Validate and QA a PQI Document
+    build_lifecycle.md:
+      title: Lifecycle of a PQI Document
+    build_cpid_ca.md:
+      title: "Regional: Health Canada CPID-CE and CPID-B"
   domains.md:
     title: Domains Overview
     anal_proc.md:
@@ -146,6 +150,8 @@ menu:
     PQI Type 3: build_type3.html
     PQI Type 4: build_type4.html
     Validate and QA: build_validate.html
+    Lifecycle: build_lifecycle.html
+    Health Canada CPID: build_cpid_ca.html
   Domains:
     Domains Overview: domains.html
     Analytical Procedures: anal_proc.html
